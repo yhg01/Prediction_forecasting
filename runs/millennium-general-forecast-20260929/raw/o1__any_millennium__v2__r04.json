@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:28:42.013126+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 5.653,
+      "response": {
+        "id": "gen-1790699316-AjE9f6JBO4CzO3G3EYrv",
+        "object": "chat.completion",
+        "created": 1790699316,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.05,\"2030\":0.1,\"2035\":0.25,\"2040\":0.5,\"2050\":0.8}",
+              "refusal": null,
+              "reasoning": "**Estimating probabilities**\n\nI’m looking at crafting a single JSON object to estimate probabilities for certain years. For 2026, since it’s just two years away, I think the probability should be low, around 0.02 or 0.03. Moving to 2030, I’d increase it slightly to around 0.06 or 0.10 since it’s six years ahead. For 2035, I can see that rising more, maybe to 0.2 or 0.25, and by 2040, I’ll increase it again to about 0.4 or 0.5, reflecting more time for change.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating probabilities**\n\nI’m looking at crafting a single JSON object to estimate probabilities for certain years. For 2026, since it’s just two years away, I think the probability should be low, around 0.02 or 0.03. Moving to 2030, I’d increase it slightly to around 0.06 or 0.10 since it’s six years ahead. For 2035, I can see that rising more, maybe to 0.2 or 0.25, and by 2040, I’ll increase it again to about 0.4 or 0.5, reflecting more time for change.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-c5KhGUEphpp4CR1P4Msj045wDqwM9tkpO4nwdi0thUln90qwnMP0Z9qXDB0_D0ar8uf6cALNxU2ba9roDe3chGENJtQTzW0zesuxSjuirENgzVHScJlmoX1_pqq2WIcGz6JvmQslJspFrKAF3obvxMvjrWnXJlDZslEHuE_MM4E_-2qK967VQE8b4NbpzkLWOzkM3M3Hn9PmWlgUBStCx6viUNrWR08AwvP8rTGV4570ntj4rf4OsadmqRmmd6eHbhbObLKaR66XvKCGYiGtlbxVg_cBKq2XdUYU4fUJbMidw3iuMvwJ3cIcurkIGr-VDIDfRVtZgj8RDyl5VI-FzCnCnK3ykdY62OfbHQ4jEx3-Td-Z0HLc8VsJ2acag59NQpH4gYw5HY6FpnCILZJJFDiRVAzTye95NH7bo5PsEGWuWI1GFVKd7PyU-8GevSt_CS2AfkhaRImjE600C0qYaHQJG7uP1nS_stz6BE2MHRasbouRDSy3Isf4o3oFczQvKR2lf_sqWS1dFhqPkcHDFU7JCBGeGp49oIaZPS5O64C8PeTlF9SwVarwRKxbMecidff9_Wc1QmTbfi-VqPBCPPVFiQL-wDoZj9SCMb_aBjAxHUSi-hbZL-uzo5OaaehAxJkUXIDXTaM-i33ZYxkGGbhiBMRbM4FRWCg962hRpp-Ef4lHBRsvO8BjprYiSU7Pgl4bK1inYHqyyxy83KKNrpK2DT1jpBh66FHl1YxBMPz_X2bN3v3_6uzuiPAERzw4kXyDBX3hF4_kxo2OnIOjVZqy5oWnHuzOckFOAZGKqJ1DUWnjhRKgDEU0eEMupQYvz3cRya94eJ4QwNQGSAax7yE78aEpjvzBMzZ13ziVdwHsM89On9OScYZ_Nh_DTm1to4xzY5hKcRfezjJAlTU3x9xuOBt-6GD78Zbl1yX26ocA4=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_08d5a204c6b866fc016abbe73555fc87d1a6c02a9429ffaba3",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 346,
+          "completion_tokens": 686,
+          "total_tokens": 1032,
+          "cost": 0.04635,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.04635,
+            "upstream_inference_prompt_cost": 0.00519,
+            "upstream_inference_completions_cost": 0.04116
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 640,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

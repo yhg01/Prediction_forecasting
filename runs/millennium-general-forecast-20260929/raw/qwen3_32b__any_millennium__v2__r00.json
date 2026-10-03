@@ -1,0 +1,85 @@
+{
+  "request": {
+    "model": "qwen/qwen3-32b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-29. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "deepinfra/fp8"
+      ]
+    },
+    "temperature": 1.0,
+    "reasoning": {
+      "enabled": true,
+      "max_tokens": 2048
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-30T08:16:14.705407+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 49.317,
+      "response": {
+        "id": "gen-1790756125-OWh6ZITZPtLZkR11ixQh",
+        "object": "chat.completion",
+        "created": 1790756125,
+        "model": "qwen/qwen3-32b",
+        "provider": "DeepInfra",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "stop",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.01, \"2030\": 0.05, \"2035\": 0.15, \"2040\": 0.3, \"2050\": 0.5}",
+              "refusal": null,
+              "reasoning": "\nOkay, so I need to predict the probability that by certain deadlines (2026, 2030, 2035, 2040, 2050), there will be a solution to at least one of the six open Millennium Prize Problems, and that AI contributed a new argument or proof step. The solution must meet the original Clay criteria and be publicly available. Let me break this down.\n\nFirst, the Millennium Problems are really tough. As of 2025, none have been solved yet. The Poincaré Conjecture was solved, but the others remain. These are deep, complex problems that have resisted solutions for decades or even centuries. Each one is a major unsolved question in mathematics.\n\nNow, considering AI's role. Currently, AI systems are used in mathematics for things like proving simpler theorems, assisting in calculations, or identifying patterns. For example, DeepMind has worked on some mathematical conjectures. But these are still relatively small steps. To solve a Millennium Problem, AI would need to not just assist but contribute a critical, novel proof step that humans didn't figure out. That's a big leap.\n\nThe timeline is from 2025 onwards. The deadlines go up to 2050. That's a 25-year window. The probability should increase with each later deadline, as time allows for more progress. But how likely is AI to make that leap in different timeframes?\n\nStarting with 2026 (just a year after the forecast date). In one year, even with rapid AI advancement, it's highly unlikely. There's not enough time for both the AI development and the mathematical breakthrough. So probably very low, maybe 0.01 or less.\n\n2030 is 5 years out. Maybe there's some progress. AI could become more integrated into mathematical research, but solving a Millennium Problem? Still extremely difficult. Maybe 0.05.\n\n2035 is 10 years. More time for AI to evolve. Maybe some collaboration between humans and AI leads to a solution. Still, the complexity of these problems is astronomical. Maybe 0.1 to 0.2.\n\n2040 (15 years): By then, maybe AI is more advanced, capable of handling complex proofs. If there's a problem that can be approached through computational methods or patterns AI can detect, maybe one of the problems like P vs NP or Navier-Stokes could be tackled. Let's say 0.3 to 0.4.\n\n2050 (25 years): A longer time horizon. The chance that AI has advanced significantly and humans have worked alongside AI to solve one of these problems increases. Perhaps 0.5 to 0.7. But since the probability must be non-decreasing and the chance of never happening should be considered, maybe 0.6.\n\nI need to make sure the probabilities are non-decreasing and each step is higher than the previous. Also, account that the event might never happen, so the probabilities shouldn't approach 1 too quickly. Let me adjust the numbers accordingly. Starting from very low, then incrementally increasing, but not too aggressively. Maybe 0.01 for 2026, 0.05 for 2030, 0.15 for 2035, 0.3 for 2040, and 0.5 for 2050. That seems reasonable. The key is balancing the time needed for AI and human collaboration to achieve such a breakthrough. The earlier deadlines are less likely, but by 2050, with 25 years, the probability is higher, but still not certain.\n",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.text",
+                  "text": "\nOkay, so I need to predict the probability that by certain deadlines (2026, 2030, 2035, 2040, 2050), there will be a solution to at least one of the six open Millennium Prize Problems, and that AI contributed a new argument or proof step. The solution must meet the original Clay criteria and be publicly available. Let me break this down.\n\nFirst, the Millennium Problems are really tough. As of 2025, none have been solved yet. The Poincaré Conjecture was solved, but the others remain. These are deep, complex problems that have resisted solutions for decades or even centuries. Each one is a major unsolved question in mathematics.\n\nNow, considering AI's role. Currently, AI systems are used in mathematics for things like proving simpler theorems, assisting in calculations, or identifying patterns. For example, DeepMind has worked on some mathematical conjectures. But these are still relatively small steps. To solve a Millennium Problem, AI would need to not just assist but contribute a critical, novel proof step that humans didn't figure out. That's a big leap.\n\nThe timeline is from 2025 onwards. The deadlines go up to 2050. That's a 25-year window. The probability should increase with each later deadline, as time allows for more progress. But how likely is AI to make that leap in different timeframes?\n\nStarting with 2026 (just a year after the forecast date). In one year, even with rapid AI advancement, it's highly unlikely. There's not enough time for both the AI development and the mathematical breakthrough. So probably very low, maybe 0.01 or less.\n\n2030 is 5 years out. Maybe there's some progress. AI could become more integrated into mathematical research, but solving a Millennium Problem? Still extremely difficult. Maybe 0.05.\n\n2035 is 10 years. More time for AI to evolve. Maybe some collaboration between humans and AI leads to a solution. Still, the complexity of these problems is astronomical. Maybe 0.1 to 0.2.\n\n2040 (15 years): By then, maybe AI is more advanced, capable of handling complex proofs. If there's a problem that can be approached through computational methods or patterns AI can detect, maybe one of the problems like P vs NP or Navier-Stokes could be tackled. Let's say 0.3 to 0.4.\n\n2050 (25 years): A longer time horizon. The chance that AI has advanced significantly and humans have worked alongside AI to solve one of these problems increases. Perhaps 0.5 to 0.7. But since the probability must be non-decreasing and the chance of never happening should be considered, maybe 0.6.\n\nI need to make sure the probabilities are non-decreasing and each step is higher than the previous. Also, account that the event might never happen, so the probabilities shouldn't approach 1 too quickly. Let me adjust the numbers accordingly. Starting from very low, then incrementally increasing, but not too aggressively. Maybe 0.01 for 2026, 0.05 for 2030, 0.15 for 2035, 0.3 for 2040, and 0.5 for 2050. That seems reasonable. The key is balancing the time needed for AI and human collaboration to achieve such a breakthrough. The earlier deadlines are less likely, but by 2050, with 25 years, the probability is higher, but still not certain.\n",
+                  "format": "unknown",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 374,
+          "completion_tokens": 838,
+          "total_tokens": 1212,
+          "cost": 0.00026456,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00026456,
+            "upstream_inference_prompt_cost": 2.992e-05,
+            "upstream_inference_completions_cost": 0.00023464
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 802,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

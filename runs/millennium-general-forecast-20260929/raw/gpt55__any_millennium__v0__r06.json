@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:28:34.039423+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 8.993,
+      "response": {
+        "id": "gen-1790699305-mGunRQ6wT2ce1mSiyQNn",
+        "object": "chat.completion",
+        "created": 1790699305,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.003,\"2030\":0.12,\"2035\":0.32,\"2040\":0.50,\"2050\":0.68}",
+              "refusal": null,
+              "reasoning": "**Estimating AI Impact by 2050**\n\nI'm thinking about the future of AI and whether significant progress will be made by 2030. I wonder if we’ll see advanced AI systems like formal theorem provers or large language models assisting in research by then. I’m estimating probabilities for solving problems like those from the Clay Mathematics Institute, but trying to assess whether collaborating with AI will change the equation. How many could be solved without AI intervention? It’s a bit tricky to gauge the exact impact—like, what will really happen?**Assessing AI's Future Contributions**\n\nI’m thinking the probability of AI contributing significantly by 2050 could be around 0.55, but there are lots of uncertainties involved, like possible plateaus in AI development and the inherent difficulties in mathematics. The user seems to want to understand the cumulative aspect too. So, if a problem like the Riemann Hypothesis is solved in 2032 with AI involvement, I guess it would certainly count as a valid contribution. That’s an exciting possibility to consider!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating AI Impact by 2050**\n\nI'm thinking about the future of AI and whether significant progress will be made by 2030. I wonder if we’ll see advanced AI systems like formal theorem provers or large language models assisting in research by then. I’m estimating probabilities for solving problems like those from the Clay Mathematics Institute, but trying to assess whether collaborating with AI will change the equation. How many could be solved without AI intervention? It’s a bit tricky to gauge the exact impact—like, what will really happen?**Assessing AI's Future Contributions**\n\nI’m thinking the probability of AI contributing significantly by 2050 could be around 0.55, but there are lots of uncertainties involved, like possible plateaus in AI development and the inherent difficulties in mathematics. The user seems to want to understand the cumulative aspect too. So, if a problem like the Riemann Hypothesis is solved in 2032 with AI involvement, I guess it would certainly count as a valid contribution. That’s an exciting possibility to consider!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-cxaCM--mOle3Apy6ju9nrEqdAM6te9LM_CQ-1G1LDPatg2o2FP7rp3zfs_Nmveelgwa10QkHahUCLEPeeoG_SrNWLgtfAhKGFTEt90po2sIhQEHNEz6Rb970o9AeeGSxPr2Mp-S30QzvfGMG63ENps5iiqAEV23ZbYesfxD_VCRJCWon7BrTfStL4Ozbn3Y01Y480sF_9BAb1nXdgH3NKA-ibd1jzos5wGPgDnLaOXQMQClL4aK1Ab7CKv5XXa0A945_etPok0PQ_YG18hrS74QNo4MwNOMII_x4qqEfF13uFK04A0CiP0P6NfDKXtlRlVgPJt9vBcbVAOQf1ay4MWMH9xty_0iKgfgNtBq1Wmg6AD4sohri_wjIFrJ9uOiIoBPUGHEUtqcK0CVfpecJOrCKBrNmvJWBbckJsEkp3c1PCRGt3Q6O1jPSoXflC8ZZqnYgUoxdY3QqnJQcnJ7VwQ_mWFN-vxMaeEsssG-sGN_mFPayPS6vDKhbNyfsNu7ZZjdmQa5J0HKt3PXIvYdN0U82md3dckzmkRUGRxhteMQl1b3-EAoHV4J6mFm8a07xmp0VChqCjE9KAmRP8l-_g8WMeCqXrGYYHjRtJInBAm4eK0FJu_viDf_5hntl3S-eXSeEiboZ_ZHhlFSug77N2Lv_unOCF8GbXt4KbJA1ds8mVtGoZjY0Lv3Zlw9jt7_2mXH9vTFk7TmLVtoMDyKgisLIZK-NYrCd-mNEsqUygct7UPZ_aSXMBiYPuaaayfGPjvzjlYtjkivZ-bA6IJOZ89-9dkoXxZDsog6T6p8DjAn5Dlm7Fw0VM-85Gx8WBKD1vze7W6ef3pFCiwDdEf4M49V7D3_OhU_gSohPLT4smjmad_ne5JuOzn_QJXM8_VkoLSu54lHeqgqhdHwHMdfL7qljIsvGWNxkIc3DZ2nbWbQVIrBE6rZe39PGKCHJitWLdoUQYf5JqTK30A3CPF1JFiaqUAN_n-paZK8t0gNewUz4kVHtyo9s9GXADnZ1cKrGBUBn3tgIoQysqAVZDw9jHKO-bXPjlGUXX17-mrKtutEdF8PovamC8TPtPiHg6-QKLftKoBXlhBIPpHAAFLACjldT81ipD16xF6msGtzB47yh3Mza-t9Ii617VI3eBBnyRweJ6sgYu-zE7ZMMkftwYr9zB2tP3oILEEk0VAlJAZmyIwYIH2bgw7h5fcNUC2j4XpzTt3nDF1WjST1aPj7lzk1Z2pxEDfhryRxdjZEl94S3wdTnbTpK-AUvRCtas7tgLNRcAyiGipTa1J9CNK7lkIU1RQiIyWwmEyLs0nMtsG9F8q8JQRXMCN-lGMMT0weumupxgfReJM8FUloNP5pIYM_YLWKRbI8fVjYWZuvpJvbgcgPkvrdS4JcmgwWQbbZH9ezXyvOIRJhwUMdlq5_6pnXQNDwsoHUI9ady0Jhte8BbwWNyWZfRPN6VZKqcvanUXD-1ly2bIVCqMIjOcrAXevwP_am6Zl9JDy_wBecdRkx8X96wb8uZIVHKkVBwYmEM9eLWtwJy2Ja3bStNcXzQtfEdIeC8WYoabaJFRb6LKbV_MX3qiQMUin3L60GnbyE2Sypmg5OnSvfuyVcEeCJW6RUPM47QJwK6vGu7IkitS-0sHJO97fDDcGXiyE9WK6hUHbyhsowVZjBtTUuX2dHhYGcJ9BXVjumPrOa7O43IMlQZBft0ZZF-4YEz-F-5aF4H5SOajTpxXL2DOy6Z_94EIJCzpDBPQsGjGixsCGmcCwzJHnCAvguaphUjCKYaU21Qy0_BJPcyDkUIAtC3OhjQeIekWzACNkYDhczHYL2JouIL8cvmeWucuxX5p5yIU9xqL3zsBCG_E_nrvohoPQwhpL8MxgTM5pafLTRYqX49H8CVe16bA6BafiYY8VdIMDPSJXqgM7SDAFSfhwvBluH89gFilhCMOBTgyvake5pcmnC4aybjnswmZ97A7otDShRhlKdcsLa_EZEtPriSm03Q4VrCCk_-XzxWQhyAU2npUrzG92Z5pDK36imOH-jCdUG1EOj6XKPB2Y5oECNiUHpNf7oxb5You7YKCKvcDJXgiC1LhAXY4VvnA-ePEFyKl_NnlrRJrCJUUEr4BNYturAsdPf8iycXgPmwSikEOJ5qMDdfl7qk_Cb7pPG77wWfoQgxdzmioxf8OavAWLCkcG1ID-42rOi3lElh6bLOACGoa7TEKV0WRbulLgT0WWcQbdeZ7Tm7J4InL-rmf4zAMx0npHmwco1qx1ynaRt1qCuJLEmwYzyLi7e0xTvp5-dzIJAnoaKRpOATyt-v9Bm6lyOT5uHg3kfUSi21LSgUpnd9eCHfMwDhIaQeUVP5KWTL8u58rfnZAQjrOt7Nk9f0DkNG9peTcNT7nS5CkUSbC-PyZn4oJSxnLXa3PTK5-UuN_F2oKHiERWDLKRoVOZhL40xdd7tmy5btUoiSXhqUJnAcaBK0WGWCjMzMQcP1V279Bg3nLGavxb8yMdNG1lERAakfrAPp-S58sutnru5xYx7pZ5LcugwJql6fD-izDBVQxpVvpbYQ_RBOeWTUBDBBrFQlxscxw__3Jbth2pyozC9jO1WWWjWAZuywcKiZ7-6js9yo9nPKZFwsbcQFt3BDZrKWN6HlB1PLXPrBez9iUoZ8lSlgOWThmfq85FHoS_GzQVy7Ke5aC-sIoQXOVPiCh_sEMze1JRyUdxGBu2uop-jO4ZPoqzTuYtBzeqkHVBt-ucTN0Y2Tyw1XwN8fj_oFqa92f40GncHWRcobBjEE7Teu4n2jHw6sUN4sWnwlpRJZx6cDt1nfdsyAH7lI7UuwO9HwJlOi3FZj5ETUfTNU1qo8uUoRM2-JTRzNsEEPvousXtlLU9DAcxQwjqr2wbaZldH88hdxeFczFLJLqPUAa7xm0hEAZAqua4eV8DUSJxzvRQLKvYfKVG1NJkkWK8Dmvb7hBUBbEfL9arf16nPMorGGM5TZWK-Ca8LpeG8cqgPJbdM_ZyO9j6_gnx5TRlxPVR2Y0NZ4XNBlJWw2AIi25C4I7jGpGX09m5XE0qgXlvrgy-QUeBdKp-DTFsJgSA9SZAejK-gvKfTZAaENfUxSmpiYhA27pLg5L1k5siFlE7G5odcmggjMrzVC-QMweVW6vYyyEfPLHpMVFwTwV_rAlVFKA75_kQZq4uk6XMhID6OrO0fT4RQ4Z5YByud9fA_68sf0Osi6WfYZsrcazz71NBpWpWrSIMX7VuUlCMoDx52XlPu6QZ_9kU_kiVHZcnQ0vAu2JfN1SqKTyzCLsJUELCaQ_Pr00cp6AoPWGnfq2fa8R7D3ors5vV_zmUVi4_93ftggHr_Tq0apVrTh2zoTYfU--niQEHjxsm3BE2itKiedaC8JxgN9osbvk1Hlf0rli0xm4bzVY5h-eaMU9GRcAf3Upb3hXHEP7QSmIOciWt8DEzJt_TJxAnNl_BjSxSR8fzU0b1wjfCHVWkDMdld3GwSyKVPN9xMtYjUcgAQ6Tb1ty1FyDq70XZjttI0xHejc1VksUGuujvCcSSrYgGGLHy7s7nNaU70jR5YvNrC1-6Q83eQur1dv32-j3XUssaqT47NAbc34_gJEbsmssxdLnG60gdFvL_rstmsAISe_oEq1DyVXi3lMYf5miTXuDQVKFAvz9y1hkZppQZaw9I_EDJz_T3TFu5AdiH-IX_Eyz3x24Hus_VZ0g2DhZF5VgiYC7jbccwTrJRdtlPd_oM2LrWGIPdVxL2vH5kKyyh7Q_Zk3otyh00VO_jOo_i9EiwU6DGWeJ9EWvkTVHWdH3fc2l5SDtPjbvxhchpc64Xmboxmow-QS3ZsQGPH3YDYRQuZF7tDw0qsWq3V9BfyMKuN_JowKrjr-Vag3MQhqzmSL41BOJCLDuL_tdNBXlRgWtjnnktGpgX7Qkco_1vu1Gh9f6lBpTUcoDcYF8057TOkzrw4QZZ6UnT2K4U4AyW4edh2DWIR0mOKLseCJh9jydo76L8PkxBpUJj7zkq1UVuNq5TKN0MW2NjgtHV4SqGx9Ur1D5AW9U7HQ-QaoDbNgaEBIMPyXXichSPVisi7isDOEcFG4c1yjSy9QqyePY0Xkj86p6m9w8yWGRDtGM4pFa5Vhnu-knDBFe9u6i8t408cY0ExnY3REbtvdZmPonLssav31mWx6Lh3CGehhna3TMVx36AtIyA3tkkLANd6fIXEvdyBLr2QCMEgc7WObUhi43_a0CCqf2lYXFJdhhy7cKJ6MhN4JPfs8CuRF8Ji-_URSSNcuu8j672tmVR6BJauKY-Y_XKFPU_0w==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_041886426baaf06d016abbe729f35c87d19ea83e76e0c432ad",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 341,
+          "completion_tokens": 558,
+          "total_tokens": 899,
+          "cost": 0.018445,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.018445,
+            "upstream_inference_prompt_cost": 0.001705,
+            "upstream_inference_completions_cost": 0.01674
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 516,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

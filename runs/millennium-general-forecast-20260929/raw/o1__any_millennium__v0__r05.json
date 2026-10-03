@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:27:47.130591+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 5.803,
+      "response": {
+        "id": "gen-1790699261-f9tUahvqp51ByCNSylwm",
+        "object": "chat.completion",
+        "created": 1790699261,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.02,\"2030\":0.07,\"2035\":0.20,\"2040\":0.40,\"2050\":0.60}",
+              "refusal": null,
+              "reasoning": "**Calculating probabilities**\n\nThe user is looking for estimated probabilities about future problem-solving, and I'm considering that none might actually get resolved by those dates. I need to make sure the probabilities I suggest are between 0 and 1, and they must increase or stay the same as the years progress. \n\nFor example, I might suggest probabilities like:\n\n- 2026: 0.02\n- 2030: 0.07\n- 2035: 0.20\n- 2040: 0.40\n- 2050: 0.60\n\nI'll format this properly as a valid JSON structure.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Calculating probabilities**\n\nThe user is looking for estimated probabilities about future problem-solving, and I'm considering that none might actually get resolved by those dates. I need to make sure the probabilities I suggest are between 0 and 1, and they must increase or stay the same as the years progress. \n\nFor example, I might suggest probabilities like:\n\n- 2026: 0.02\n- 2030: 0.07\n- 2035: 0.20\n- 2040: 0.40\n- 2050: 0.60\n\nI'll format this properly as a valid JSON structure.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-cC78Pcl6hYA-P7VmCdBxcX9R7ZrGMTUVtHk-OQRwIOyTiYzWWBX7VXmsOYcvfkNb0ZDzAo2qhR1D0M98knLPxU1Rx6jSypmp0KaQ7rp1EfsYSzdnaENU0h5Htd7VVtvx_5SrKsMuRpG7uUuFi623WsKCFz0A0CoF2TE1kfYwSbotZrX10fEQmtHM8UJiu4FuqdB5OsdsseUE3PBkWfxxTHsuULs2c0Bv6h6lKsWnTd9f6PbNdeEMA4fyf1UAVlkA4U0NImserB0VVwww6arKQDg1WKdc_VUaw-u7_oIjQyMMFXP6QXdIcmPzAJN0Nx1I7eY_i3wq53GTMryqaxtC8EGoEKvrs9-jvBxjr9RNHXcntAYVEHu26v6yEd4m1KwBAT_9vgAyrHFqGVmZv16YJncp1U2Kh4-n2QKsUQfMWlZzme6WhnQ8u8tBxZww5aoxhe8CeSFAD2xfbY31-63X1r_FQ8wZfQk0OBFarJmJZSFt_XmcfKBQ9qfkFBiCS_ZGD-RG4kdBspJNExTkQosmDT973qI0KMRCy5vFSv-ZcmJynNRijJk9URo8stKflXbSLCpn091LFPa9t5O4bY6CUNSQJGcWNVcI2t-U6rggV83DkqOp_lFyGARvJaeUkuZoRLhkVh11MjaWIbwThopUzr9p-lMkcLspz1tVqfmqRIwlSPTGt-uDfHAWYepESjvko3leigDyPItidX-H0C2Yk-3mvP0VfGApQTbt-UE9kfVzCicONoHPihvwiaexPDPPcK__ik9cK9A-Pe_Thvq7B2vKAOfPPyAiQNM70hmufdqMUPk8_pYAoVFjlIEIeW3Hf2VhyeHKKs1jJ_nm7OpQ5AmG26lSeSKJ7vkYSalIo-eOwOdIPKAjmCxJV1L4JeaqyhnKwnvKaJqaiDGsCCD3iLIj7zu1rFTNfXh2fC9IIBsig=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0e6cdaa7c699ec05016abbe6fdff6887d1a0d2f5ec1dfe13fa",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 341,
+          "completion_tokens": 558,
+          "total_tokens": 899,
+          "cost": 0.038595,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.038595,
+            "upstream_inference_prompt_cost": 0.005115,
+            "upstream_inference_completions_cost": 0.03348
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 512,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

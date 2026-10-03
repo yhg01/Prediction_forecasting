@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T17:14:23.404068+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 8.876,
+      "response": {
+        "id": "gen-1790702055-WOTUVrDMICdWcWYILFXI",
+        "object": "chat.completion",
+        "created": 1790702055,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.01,\"2030\":0.05,\"2035\":0.2,\"2040\":0.4,\"2050\":0.65}",
+              "refusal": null,
+              "reasoning": "**Estimating probabilities**\n\nAlright, I'm making some estimates for numerical probabilities: I'll start with 0.05 for 2026, then I'm considering 0.15 by 2030, maybe 0.35 or 0.40 by 2035, about 0.60 for 2040, and finally, I'll guess 0.80 for 2050. I need to keep in mind that these numbers must be non-decreasing and stay between 0 and 1. The user only wants a JSON object with those specific years and probabilities, so I’ll focus on that.**Generating JSON probabilities**\n\nI’m deciding on specific probabilities for each year: 0.01 for 2026, 0.05 for 2030, 0.20 for 2035, 0.40 for 2040, and 0.65 for 2050. This set is strictly non-decreasing, which meets the requirements nicely. I’ll present these values in a clean JSON format without any trailing text or markdown. It looks valid and aligns perfectly with what’s needed, so I’ll focus on creating that JSON object.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating probabilities**\n\nAlright, I'm making some estimates for numerical probabilities: I'll start with 0.05 for 2026, then I'm considering 0.15 by 2030, maybe 0.35 or 0.40 by 2035, about 0.60 for 2040, and finally, I'll guess 0.80 for 2050. I need to keep in mind that these numbers must be non-decreasing and stay between 0 and 1. The user only wants a JSON object with those specific years and probabilities, so I’ll focus on that.**Generating JSON probabilities**\n\nI’m deciding on specific probabilities for each year: 0.01 for 2026, 0.05 for 2030, 0.20 for 2035, 0.40 for 2040, and 0.65 for 2050. This set is strictly non-decreasing, which meets the requirements nicely. I’ll present these values in a clean JSON format without any trailing text or markdown. It looks valid and aligns perfectly with what’s needed, so I’ll focus on creating that JSON object.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu_Hup4wjTcyah_4GgnXwqExCT0ytnPA3-cnE0b8DtyjsXdURso6LLVn-TacDOTlAycMKsyPXID893wYukrWOJGtcg3CTbIudjt-7pi9YpctCE6CbnvqIhiSNMa8_K4XZkVT6WV9--PxIKVyCgNBiur9dJ-eDqbxgycQgz5lIsIWkA--B6jnSEhmR_ehH2PIZcjyCAYPDwNj24A-VYePqPNisc1HOaZfDQozkbGC8l_eo5R7nW1NYy1-7nAfENdkUCfCvvX-5zo6kTCHx89ghQov1ufqDmrLhuqPoqa-mOhWrsTqrdMRT_6QkCGvDVDYCTZHz8fAoCyxTnSbQv77jd8U5PKzctE_F1oE4U4xsZ6HnjAE3b4fVGIeoDAZy4hwPYO172GcZeDQbwNTE-u_UMxCmOCn17ssEtIGQDsppsDdHnx6toXXdwR3rN-mRNYCs_MGq7UKaZ6ku_1S9oBt_xjCvqtZgg0HJ58o9gPByP2KNI3KWzgH6z8u9LiMgQCKELWkpKOfpCSfNEWkcIRBvNqw-D8Qr26kHzcRuoSjX-omEOaDh_BwyvaQTEqg_xzvlGClQVUr2954WrWINQqjAjPrkPDuhnHVvUtAm7xfuYJTea-xfRw8630q6VcWKe9P21ZQbJWYClVAQ1AmO60j27lsYP4QYPBsyB0wXtc7sIdJL-PNON1fdRwrCMmHtUSmv76btNf9b6aYtRn0AIVqxiD-hdQf8z07f5-CGHoc8-YPCqVMzqpWr2aIgFScb7ZFDYOhQs8SC373hyNJudwstTYKEvWdP1hMbfeUJE8YJCuQ_lafjAVN-La5WMmiP2dRMBWCgUifXPNZNU-bsFrfZ02ZbY1CPp8Ml-e7hl0v9SxZaxW--X-WciXXrgv6lhkQn7Ab_M5NiObnPDPNhPrujhw0ydv0tTSWGmxUuHBuCH2PjOqM=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_02cbacbe9c37e486016abbf1e8362487d1be6bdc4e296f2f9a",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 346,
+          "completion_tokens": 814,
+          "total_tokens": 1160,
+          "cost": 0.05403,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.05403,
+            "upstream_inference_prompt_cost": 0.00519,
+            "upstream_inference_completions_cost": 0.04884
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 768,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

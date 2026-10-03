@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:28:47.423511+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 4.242,
+      "response": {
+        "id": "gen-1790699323-BzXbSZLXUFI8re3fvmWF",
+        "object": "chat.completion",
+        "created": 1790699323,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.01, \"2030\": 0.04, \"2035\": 0.1, \"2040\": 0.18, \"2050\": 0.32}",
+              "refusal": null,
+              "reasoning": "**Estimating probabilities**\n\nI'm considering how to present probabilities in a JSON list. I'm aiming for a conservative yet progressive estimation of the likelihood that at least one of the six major open problems in mathematics will be solved with AI's help. I think the probabilities should start low in 2026 and gradually increase to reflect optimism over time. Here's what I propose:\n\n2026: 0.01 (1%),  \n2030: 0.04 (4%),  \n2035: 0.10 (10%),  \n2040: 0.18 (18%),  \n2050: 0.32 (32%).  \n\nSo, let’s wrap this up in a JSON format!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating probabilities**\n\nI'm considering how to present probabilities in a JSON list. I'm aiming for a conservative yet progressive estimation of the likelihood that at least one of the six major open problems in mathematics will be solved with AI's help. I think the probabilities should start low in 2026 and gradually increase to reflect optimism over time. Here's what I propose:\n\n2026: 0.01 (1%),  \n2030: 0.04 (4%),  \n2035: 0.10 (10%),  \n2040: 0.18 (18%),  \n2050: 0.32 (32%).  \n\nSo, let’s wrap this up in a JSON format!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-c_x2I4W0huphYSfNuPzwXnulv9I2-NJd-kUNNogBAkIojuil3uhHPN7_LkK2nsO16grRpUzXk7IqW3BPK3vUHNAFDu8_ZoJ9LNpANjZlCtuxtMCsYfzWbPI1PHXAOyYV4m23t8QeEd7V6HOtpN_EIivtDAlhlCmaK-F5xISOt6XIrxuOAP0jb5MKKqLTTjgqnkKkd7TyajEMNUHtJoKrN-qfD4mbCmCsLi3BLF3kfzm74jGSFVcfx0Krb-gSJ8GBXY11JqguZ0eGWNdNBkNxToFg5ZhP1hClQ-aUde8u598leUbU3o19hnXYvoDEPjr8pzfU36GZpsyzB6AYdgcdccUcJL0Qw_1KHmJxzplcC3R82fH-f70D3CNFDJ-U_S_ryp5M6VjMeAl7r8qL0WCaQB3UUnzUWfQYdzTQbfxpJCFWb2ahADoxLZWFS77Z8W-JBewuE9FzRcAPoYr0bQNvNVJStE6Iin0o6E3nQPF5v9MIKx9pUfzYYOIcxZfohRBQjPuQqTs7aFWxbt28h3Tvn7S4sQUoQ36zUWpkt7SRkS8QQc-3xw6nYKN_q8K3t-zsDI4AJWciOH6G509KwmAMn0rSV61WUZr0fwwBt4CKNaktCJ1y9IrqpooWqukM0VrwxysQFsJUyRx8ofqPU1SQbXO3QBjfjdNNJAOzW9PaA-ZzMFnThk0kFPYAw_gcJuTej4S4Es_OQXWI45n-RX-M3LvCeItxfAopCWNIBmpr2QDFZzfdu_tzkcKYa2U_jv_mZ_a2_XIl5wrbvDOYM8p34gB16bsFiueZXBzu20_zhAx_dNQ36MjqsWtdTeTQ-qg8dHuf34nqbzsvBOsaa0HOwoHmWHJ6VaX6bm48F-w7h8st0U2E0YGhdABl8vxfSmUSIbVZINMl_tsJx-tg6tb4Kr89jswmrqhRxkBePHeloLpuTfNKucYYwIb9oQ9FKGjna41KI_XWj-VW473daPOzRGULuGFezJ3ahmPKHgn5Acscd1lY_vEh-Uub7JInYz_cRU-gJ3HKp6kjXbPVeknQfVnjSwSb6-rWqkB1j6gl-jl9FWTwUVuS8r5IbYJAzHt40icXTFlS4R0tJDxcctmD2qQX1bH57Cq1zvRJk-uk2iASTHeKxck56y9P5ummfWS1T1GbtvXfXWH1JFpiBc8cyIMrVQLDdf802ibntTpCGUs9NIP8KnxKATt-QJyF8pDFkhxjpLeSOoa765Omc3tzZ2HnalSPfjK4htEI5031v8D6AoGy9Z2z6YGllrlcXjaX-4hMVanDrfkLx4Oh6VQH0bbD1RytrMo99sPHrZ5G5u2WV4oaEvvPDtfxdIybdnKjhEqUBDaUJxo_PBOCfSOPzRMy0iQWBsZLPlPkjHhgcQ6tPiOxU4UusYdD5dVrVQ36q7VzW_8530N1gyj6QIYKbTDvncKj3B7rdF6QpSlRmetaaHgl-rM1GN7BH-9Z7rs04JGecJgGazusoy_UvyHK0354DtxaNg5XaeVfPBKevi0AGJkgvVgzgYrlPAxUola4L_aMC8sIpYQzG-wEG06TxX5An75vcbQaghFmTsXgGA2F-UmAeq66tjKfqDVhozjzso0GWXASubvbfGTeXswtOEi3tQ1fyv0qszCDVDZx2HP3wCYCyMbAnS18zMSNK-N-lYKjo8OnzhdmUS5OiX4MFve5EZCNb-6jO-V_9pn_u1TDFRDiOLNp0AwGHEpVQlYHPhvjKFDzigD3Q8bex5Sb15Yf7DTXJcre-L2-M8WnoHRSU1oBRm0Fhmpm26nZsiFqKpCpellwAx9JlLNZgqwseWsn9U6ZZ-trbuDkHmqOEzw1pwDJNEnrkT4FwBkLvCP-_5inFo6SbQQD0ahoxJT6ksTaRDMZEe1udvb7Kb4yFqhhw65nArEqqnN7i7QzM22CPrF15NoW9fZAXduFu4dwUFK6YkYVAmQfBVXdFforWcMdCXhMQmN2iJhdBvtJNHF1mbax0SwKkQU4U_IMHpNk-RKaTruQKvF5XC-t7HoardTnRotLQlItHRXM0DtXYmqRfOayP8L4ojGIhWruQGxu5NLTyP-dPhifv_Hs-eZ8cQ1gjxuXITu3G_G2tle_HHT9wp.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_02ac9cc0cacad490016abbe73bd9a887d19323c91f3d0cbb45",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 346,
+          "completion_tokens": 213,
+          "total_tokens": 559,
+          "cost": 0.002396,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.002396,
+            "upstream_inference_prompt_cost": 0.000692,
+            "upstream_inference_completions_cost": 0.001704
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 128,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

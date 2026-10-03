@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-30T08:16:28.773868+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 10.063,
+      "response": {
+        "id": "gen-1790756178-lRH3g2yew2VxDnOKGk9g",
+        "object": "chat.completion",
+        "created": 1790756178,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.002,\"2030\":0.06,\"2035\":0.22,\"2040\":0.4,\"2050\":0.62}",
+              "refusal": null,
+              "reasoning": "**Evaluating AI in math solutions**\n\nI’m thinking about how AI will impact math solutions by 2026. It seems likely that most mathematical breakthroughs will involve AI, especially with public contributions. If no human-only solutions are found, then those problems remain open for AI. I’m estimating probabilities for AI contributions over the years, starting from almost zero up to about 62% by 2050. But I wonder if I’m being too optimistic about AI's capability to solve these complexities.**Forecasting AI capabilities**\n\nI’m considering the possibility that AI could reach transformative capabilities before 2040. If that happens, I think there's a decent chance — maybe about 0.55 — that it could effectively solve at least one significant math problem. It’s intriguing to think about how advancements in AI might change the landscape of mathematics and tackle challenges that have long stumped humans. I wonder how that could shape our understanding of the field!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Evaluating AI in math solutions**\n\nI’m thinking about how AI will impact math solutions by 2026. It seems likely that most mathematical breakthroughs will involve AI, especially with public contributions. If no human-only solutions are found, then those problems remain open for AI. I’m estimating probabilities for AI contributions over the years, starting from almost zero up to about 62% by 2050. But I wonder if I’m being too optimistic about AI's capability to solve these complexities.**Forecasting AI capabilities**\n\nI’m considering the possibility that AI could reach transformative capabilities before 2040. If that happens, I think there's a decent chance — maybe about 0.55 — that it could effectively solve at least one significant math problem. It’s intriguing to think about how advancements in AI might change the landscape of mathematics and tackle challenges that have long stumped humans. I wonder how that could shape our understanding of the field!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqvMVcNelnJYErEiOkpUj1BHcd92-BLjb6Rsda6ddEmZc7jlXUg_hNJkap8ZbQkQwm-pB4sD_Ik7FEdv0FclEI_AV3dYs-qi7ugVNJeV3SOgmmrh62J8AbrTrQrHYrE6UB1CI7VxhQEnfYvpVP7ajtygYkH3O2rXjmPQtjnG1hELMNt8QqXt_UPOV4A5onWImnKuobge0-BoluemX9ZyF9qnR6GLPSZEIPLrVxJqsvwE47iZxIUwUhzcMV5_-r7zWw1IFrCBf88N6VJ9qKEE_5U2c-geLc9F1DIVa54RucUgYpWa8WZPB-gm2cnFDxj2VQvMQkus-Tr0WgFEm4NB5yrccFTudtvN3j8bJ_CcTKmFpms4pgYL3c9fdwS_GRt59vuHkP4jAEaeGbRc1g15aPj2ZZO2TxDhB2OESktDd41B3b30Oubn44sPLpwVGqNIwfLsHAvish3fXySFAFxDENXNgc7F1C9zJLvgFhJVL7hHTSqQkXB7MJwxMDscD3uXbqxXpoUXs37eJz29-R3b-eEz7gksRV_mqKoqmVTyK-34mr8oktvdjYhSS2DNrfXdv1mF-2ghokBGA17wn2iRg4ItRynUgRGriWVdSit1FFCdTVZojC-JIcIWKABPnd8LZblEVXsZo2C7DT6-LvZci71EjRc_7gBBtmVbxm2tsxygwgioLEsykZlucmLULNoej5zbef9_ysnVR_jOooHcTd_CzMhZ00u4VLKptpBvE5qvupyV1aYySYKcEMtEk-YuMz2Edgw2gToOthioxalYhra5bJ938dF6TwPXexUt6Qhh6JrcnatAcPrYpvbgKn65C6GvQEBA9TDmTT7oNigRewCRbD2B3erbZCxbfBWJJHfEFz-3NUJKFzYnHJgKXAz7R1xUmiGA_N_dpEuSp0fG6W3GYLpCUO9YOr73DRYLnRUPPtgfe-QHOeYnKkhz-BugistK-Xq4crrptZ_fF4DHBhQVIkToacl9CwVmypELx_Ny1YyuA4qfLPxlr_XhKkb8iEHcykWQoKlIhF9JwlI9eNH5FtXITx0i1XlxV1-_bydlTdXLVqNRTkeNeEugJrLMs9Brb6JNBwKmUaSrPIeMnkfljg0zu0ygj2mjXyNxT7hebfVKMQKphMwaCYZB3nhffxBAAwHr74wfNcsztR6RfMF7GRe4tmAxZUiI5t82wosEZQ_ev4Zwj_0ua5_3edfzAyhhKUh7s2099eIEXobkOUvoFSAo9iYet5ZA3xA4sM2KQBbHwvF0rxfjtpEJvYFJXyOCEZuBTONr54bfKk-H7dSwoEqWzOhyIc0_ooKnFXPQThpiwE4Isuqbq2pgqNUg22fqWOUvR6lmkJ6Z6GsQVdWn5kuQTjCSuc_qOajb5DD6PEZfWJoeEDfwWGrnf1b4O_6ua6bEmGY85jhz6a6Lo3fhmS8_kaqHSylxkDWoDLRf67BleoLzoH2jS1IfjojN45MYb2yE4DHDUKbQ-NA8ajUfQnUQ55ziRPtC0iyjSuZDd2WbkdIoA76P6UBYjI0vp4UZO-2kMVoLGSmbCeqEeh3e8-G7zE9t973Ml6EkrTglxxA83r8tZONu6xZbJzJ7HD-5uIkk9B_4gI5-rCxhEEt2wy7twkD4y2nI_-dEchqteN85c2Gin6AAPGtGXTC5Gbze1eFWsy5uT5o1lACN9fRmTIu7Y10CWyx4rQ29L0Mlv-jRR6cBxvX3ugU2jJIqnEw3R3wKfc9-I373VoJ5O9x9j-6lZPW_q03DXoH-c5h2CMWSvtx8XZ7MFyu4tnr0ACwhpzxX5gKv38WWnuV1qkj180PHpZUqaQdKvjgjVLU_O_aVLy351CTHza2-JeQUcu-P-vzqAKfwExw8U7f7w7DHERGcaqfcxh6tg9dM0320u9j0b7wq3vTDQT9AfA9UtVfouVVIb4GoOMWeWRwdyi467xHXZUZqCIutTHlOsufp38jjGkWvl-Jlm0qysvlo1vux-T39kzRkZiRGelI1YW0p-gsnF4X6ONckW0RuXYCUd6nBCFybhQzG7NvBSh-TVJyof4bW1ud8hI2MGSXjIrbs_gChbfuyvvJe-t2x0v1f8h6OZQL1FPkVMAXziMBwpaXpebcD2rmmMpKq5quC6bU0ig6xGqkFMmMq4Hx3UURKwFpkUiHoK_sFClaLKLFmMi-lr4wJ3Zyk_jJBGKBQ3UbkQSAgu0r6mxTIdNuY8mt1Rtscxe2XZCuJfJaIIrW00aaidStwLWNPGYnnAbVt2Qms6xfT5SFPDY51MNcqgScEZZh_TxH5aUI98VNZfgo2yPt-1s6xTu1T1xcc04V-kjavVH5-__joVHEY5b7ekKs0eFs8w74Ldm3QmlpkO1PA5LEySalqRRfNSe_0MqSrq1eqxqNNT5im7D_dU5uhmNV4dF8ZSL96z9l8ZWrfGT1knBToerbVGy1EfTnKpSPV8miwJxkQYvD-8aFQq7iLPWMVohmMv8hL1qZVsrshy5xX4aMJzop18PzJV_lKepxDG5wM9gXpT5eFXN2j3Q6eg37okX2xHRuEJBuBdHRwq0O1KnQ1_y1xVLbhQ7NREHfmZ30Q8S71-zMFu3PagUqpbUF9fheXq8BZD01x18VSIFLhZgDvNAhBzGk8KCBDoheJUQrU7WbHxgitS2u9MGJj_TUS8MKhC31VA6uPypJ0vtpWmsuA_5ybsEBX49W4ow1Y0j9EKX4NhBLj4FYhCfj2TQQeGnF0hJQXA7-JSUDbjAxrHJGzpd9qnWlizSjaj0CuV8gX_5rEfKeywCYG4tdTiIGNTutMnMt5qtaLL7ZvPRXVnZmZrexRcBVCOYXvd7-gGI9FxhI4GJzLq7Hn_Dy6mrHijsjVfBlsbAwSbycmbXp6VO3FH74EobnOcj-IsN1B48XwKf8-TOblG4xtyaPBKGygbjD5X478O11YzGXOh3lDkyw8t8KZWeSSPnrtTCnRPps-pfuDnZPyYbp2TSEIvaRb_ZX9QNnKJF3hAQ29r0UbFXg7XcTXFCSQPdG1lshBhDu4DmBQbePDKEsmLP6KonnKQEQ-k-Lsa5uxACxElucSaJOUnFEuKMKjQ6hhBcU4vEV4gzlzTgXLIEJFSCuQxDVyWqcELzcQmk8EK9q8lLfUE6r-y2mWMH9PgBLiX22VUQ4bOV3MtJ6wSOCRooESILIcSefk8Y6SVysVHKhwzLahe01Za_qxyw59LILgJ380Nr34cAR1O6HEvx8myDsKnWzoPUPXkNSTuBPKjGfV3RcQwtqb3xg-htTOPY3DAIkEpx0Jsp7N-8S4B-p7du3vA5pdFIx3n4dU0ytIWHYRrz1TPOx8-O-WndHnkMqDwWUESdSGTKTkevAgoc_Kch1cO4tSI6pW83yXHK5CVvfBuNPTYzbbmgq2p-WGcYGQ7BanRhnvMAmwSy4nHFIDBJWCJHrBWglshszt92tRaDK3T-BebP7WQnY5TvagO6QwxbGFMg9D7DDSOXvqMxl0w6xSSc_Ab8ooyzFyNZOtzlVfde7eFmgcwobudRTrMwC-MsNoU6n3L3THTaf6lEYnQsMHSuGBBE0dP__QmZAwACRrxRSNbjaU0wEFbr66QXRqv-mzOj7MJ9PP-L0E4L3D-Gt3wfBkGlLC4PSLg88p7Q3Rqcgb3M8X0XQ6J3vImlqkW1bpfJx6sIfpQnZiXB74oOpWbmAz6sRPv3gVb8cvgZFXfFDr2GQLc7oU3O2Z8QM_ND8AhqU45rM7Z-Stey6pKqioioMm2C2EPdsvL-dcGBqsvhh-oekPpsBPKw_F9096lfW8OzLVOYuw2bC603mKY8p5MxTYeNYjqhzmidUF8CDfXI5ycOBvVFD-EuHxpsn_cOAFqjG2DQopETANu60coX13Rx9dS2i8k2Nsm-gcnp_DhNn6chMsaSzKilhIjoTOh3qUSsKTALMpauWXhBFNwVSoO58IP_ZPJej_7Wu8aJcvVFZzQ1mKRjlVdE9L8mKgTFqJrSxr9XzacwwWONNslHpX22-8RORd73AuFyaZRlkwg4pb5UB03UWO3mRhHw_0jr_3COhM2fU8L6rYLR86Gk9-iwQYQa7xT1AFO0JRPYgmCkyFH1LG9NrQZ-Y0_spIRHXSXHLWV6B1cf6gQS7b5lziLcu32a-og=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_030d77b8c33f54ae016abcc553ae1c87d198472f6cf443d186",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 341,
+          "completion_tokens": 558,
+          "total_tokens": 899,
+          "cost": 0.018445,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.018445,
+            "upstream_inference_prompt_cost": 0.001705,
+            "upstream_inference_completions_cost": 0.01674
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 516,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

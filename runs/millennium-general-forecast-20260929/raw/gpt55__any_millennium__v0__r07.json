@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:28:44.709861+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 9.529,
+      "response": {
+        "id": "gen-1790699315-SjEw8fjJeS5jwFrZtWwu",
+        "object": "chat.completion",
+        "created": 1790699315,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.003,\"2030\":0.08,\"2035\":0.28,\"2040\":0.48,\"2050\":0.68}",
+              "refusal": null,
+              "reasoning": "**Estimating AI contributions to Millennium problems**\n\nI'm thinking about how to approach this hypothetical date of 2026-04-23 and the probabilities of AI solving at least one Millennium problem with identifiable contributions. It feels crucial to estimate that by the end of 2026, there could be a low chance of a solution, but if AI advances significantly by 2030, the chances might improve. These problems are extremely challenging, and while AI systems could evolve, I need to consider the possibility that none may ever be solved.**Projecting AI advancements in theorem-proving**\n\nI'm considering how to forecast the advancements in AI capabilities through 2026 and beyond. By 2026, I think the probability of a significant mathematical solution might be around 0.005, but I feel that in the following years, especially by 2030, it could increase to about 0.08 with improved theorem-proving abilities. If AGI surfaces in the early 2030s, I’m estimating about a 0.30 probability by 2035. By 2050, I could see this going up to 0.75, though, I'm mindful that we can't rule out the possibility of no solutions ever being found.**Considering the event target**\n\nI'm pondering what the target event truly means: it’s about having at least one publicly available solution where AI has made a contribution. But then there’s the question: what if a human-only solution resolves one of the Millennium problems before any AI involvement? That changes the dynamics significantly. It feels essential to explore how these two scenarios interact and what criteria needs to be met for the outcomes to be valid and recognized.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating AI contributions to Millennium problems**\n\nI'm thinking about how to approach this hypothetical date of 2026-04-23 and the probabilities of AI solving at least one Millennium problem with identifiable contributions. It feels crucial to estimate that by the end of 2026, there could be a low chance of a solution, but if AI advances significantly by 2030, the chances might improve. These problems are extremely challenging, and while AI systems could evolve, I need to consider the possibility that none may ever be solved.**Projecting AI advancements in theorem-proving**\n\nI'm considering how to forecast the advancements in AI capabilities through 2026 and beyond. By 2026, I think the probability of a significant mathematical solution might be around 0.005, but I feel that in the following years, especially by 2030, it could increase to about 0.08 with improved theorem-proving abilities. If AGI surfaces in the early 2030s, I’m estimating about a 0.30 probability by 2035. By 2050, I could see this going up to 0.75, though, I'm mindful that we can't rule out the possibility of no solutions ever being found.**Considering the event target**\n\nI'm pondering what the target event truly means: it’s about having at least one publicly available solution where AI has made a contribution. But then there’s the question: what if a human-only solution resolves one of the Millennium problems before any AI involvement? That changes the dynamics significantly. It feels essential to explore how these two scenarios interact and what criteria needs to be met for the outcomes to be valid and recognized.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-c8K25iy3aVvZzI731nxsXQzKvvoOZXSvLgrDcjl3hvjDzLZhDteb3bA2WoJp02AQ7Suidfefb-kxqsOq15orkt4EbskIE-vk9aZYn-KU_gfvtJEjRRkJ0RDkZafgGeUW50qD6w8kDSHd6TeWurYlK7SziY6Zn6m7th4sUx_8J3kHQxWoyfBOQ0XCF_giwqwEcUH39zcpOOUaZ_cHlNidrM8PYJDh0_GooZs2Lui6qXDbX4rdzldA8W-dWljp2zoQ0Tm-LleOWjyKmNo-aG5rAC316qJha4WTWovsJSxXG3qHitKJV1vrF3mRIS3DFZW8mSzIIiyvXROjfWFaKGOJsX6a-kpBFQfH6jPbJVdcMJ67CRepKOMtzlOx1O47zU86UPxFR0jdkn1H-3d9QRhgG9xTnH1Gnx2W7RQHV5zkZobFtDyZjmOyu3xYyzTlL72_s9CDRahBaEfyo9Rlex1zowIc7kiDhU7pGhBknjCxq568HKLhK0NT7RtSO5pTDa_Xod7k0KFakC8E0BO_UjycSqglatmoysAeCHN5vfs1v6jnw8xdZRU-Uk13zTPsqkYwmGKLqzlqRZ4vFTFFGQXk6WINjLDoN5fW_MCb-hd3E14nu5TF7SRY_ag3Z0yhXLcdqV_X8O4zPsTB6OlaJKqljyY_BqvfTsBbM7VzgzvQ2YxTmL_veRYQPKieuLAZVzUXngqLBNnUyxJIUhsjm-BDnz9opLlz27C2yaZIqSS80tq-jr8uWgTE8mRqYCtLmaShZNcyDAPSRscFl4_TCSilvPz5OU3Lx0hViEvw4g6BowWAGEgirAqIW0n3BVIZXPnBQqQHKbyDOwddTKO3Hq3-nl83sHjnobWoxEsTdfwCPMshqk5z9w98o5t0B5wTa7v0VJvedyrcx_fa3Ts0f7M_LYimOpF_APyvhFzbCz08X1j6xXhaiai9xSewSq1OKE-GE06PIifWV7JKrb4FWwzpfKMP2yHS3kLtUelI8LNKY8vxicD3VrasD5y8nt6LwJMhEdQYcinYKwurl1jEnNWH2kV-DkThe6WqdzdWg3-4ZWGsXJkmz7FM_D7VezAgE8sJ48OTkemcEmFCDUTTWw1AcTSAtd_Shpe0bjoM0OBT01Klg_6SwBbgWfWB8dIa4RMZHI1XpBTyjiGO3WOKl-0DiTto8TtIqCPZmLYwdICJNl0I4ZO86V793kohByAbrzWHLSOYo-C8eibRxRN3ebzWO7bZQGp9AhQLWqbJ2-ZUhfYwGe3PD49kXrwOCS6lqZ8oRE9vNQmD2M23jEkXO481nayeSK_HoppoEeL0W0I3XrrRFlDRyCCzTc7s7UKeQrnhvFT8ko00z43HSgbjUtm1keo-EWAAIv_i7XTIkEzyZGoa91RwbOVpr_gFO0arSKQkKi1IHvpnTbwTca6gvdgrfdZTK6tJrx8keLGSgZGy4rGi-g1cWitW2zhMmTpTmo1Q9bMOY2wf6b9W9L-l0dXNactatQcpOvjfcNYdlBBZVLazSfMFUM3HJgjq_4F8xwjGHlVBiDaFlaZX97yr5iFufJTRt1Mamym7tNBdcpLc0Sqnapw0uUuv_-Ns8R1OJ_7PlJoRZ3fsHaOxTH-kJjDfHQKKifZBtwSUzUDI8gDG5wSKVy-M7LMxM7QOlaIvPetvtoUXOc7wss55GK22nUZgRO1ny0ZxjIhQYCjFZ9WvLv_34oQTLIjPU7P8GXS7mzTb8p-pY5VJJ6Tn_YY55HuTjSIxjp5ZmIloRPyvyeLx4TtUKOu1ay0FZ0Mn87b8kmnRvPbPeJGntMphrSIuQYSh21im2yRtGQMgyZSBfzg2J2sLcQUop3j0vniLhKC-LA1-y55Jg_Q-_O3X7L2StsGCiNDh4rIyYM5OjXgajPI6n-d-2ILI3ov6FovhWxCiU4oL-aZQW1sbklimUSiOgUbsTLTWbi_-ASNFB--K5O8WYeS_nj5rOec52cNpf84oCFepH1wubhdRMLInZTWD-fRXwdKdz0-Ngb9ehCl50gPFw4ViQ-eN28lOvQwlXjMrFAruv5irer11uScfj-qN55eznu_8qiFK9cRCETtnQeQzD_uHmDo8Vty4bDML555j9XTjaRZiEDfIuuZdQxNEacHHLgN0qC_YKKIOtuzh2DsAVEwqS4X1fuTcHPgtNkjJ1FVmmEDrBBGmNldMrcCGLtO9pDJadgwfmhRjQxY8OzoXgVVLq4N9GHQIxMy1x2T4W0bfBTOjtdSq1Wq-3QbysqNcnvGGUIXC9svE667SqK0HZcBdZc-J1V31dMyj6dMvdA5sQu3tPj02mmBzxbtgZOwaGa_YqOom-o7DHw1C1WcN0RWNYDp3NCio0aSeLAJdxiSN8feuOnGcHex3vmmLNeagansDOA2v6FCEQPOYdQF3uHxLihp6SRUMRRAYquy_puA7NA9c8Lphih7TGDedA_Cunwz9UjZohaqhmpeKX_Y-ZDKz45Z4_8JXG2A_lrH-dlQfAbV1R1LdQ8Hyb3jqT9-8pWPxcw_HIRj078q4Pph73nNul8ZvwGQ0KKrVM0k5Ii2Q7d67wSbuMrDDcbyHcsAVTkJVE-s-g2qqky5IvtAfrmYTEGp6v94WuW6LCaNmuHr0AAYMGQ0UjAHfCw5qWjjOqSpK4jCCR02Ep7NkeTHzX6L3JDUPrO2H2Zh_m_4LZEmGqlQPReHA7Wk9FrixOZU4RxfR1hEGZ4nAxlu5L_6WsKzgL5Vlvo568v2HeOdamQhTGOI93-qsohnVxDiephvGPSc8QokrBhOu80_3Nh-uK5mS_-kOx6KBPRa2DZjitlcjF76--3UCScvB-ifPI2eJ_s6KbOk3X_Ht1flFTHJF9FsEuMOTPHoIWNduEt8u8bzalLffrHT03T9BdAjd0-Yqpo61D9CH3hU1jGzpnZxCB6XF7B-oqqAGnpDWt4P_lvoAVd2yFQd1gKBgH4sSB6jR7WXFnIBB8gx889yeWcLqi-W9nrsSOvnXmOzVT06dFnIhI27sYfGT4ShHEyU2_yoX157xOa3GDU_l2aaz7bMRATLttsj42SMu2KmZoqd82M52T2ltUgPd1-PeWchK0JW-A4ibmzbLPBV7q28WmEt8dPJNwyXapgY_SBFDNqTQJiwWP8eobDbhw2MRwAzzjDyz0TaK41zpPZ1V5osJ746Gha4tc8032JeSEfkTOnJAvY9gKaKniGDJHOQ3UJhQJo9DWyPxteMCoV-CiRvw58yKr007BYwnhPmfFU8piu_TDwm_hzRfNCHmdzzfqTw5_gmmc1y1ptP8UlaPXq-Q2t5qEwknXJpY711EF5EqVUD4OfwYtPRjSGZ5RDJzLSnLVn1ZnVTGV4AV8YGgEX1XlkuNxNYspZgAUdvpKp686k4oRTuv1Pe4jiGOSJreHBBgJDiSbFO_EaMFL7tk2WzMHj584S3lonPyrKJbE8L_VPdAWg_lux5HsPnKCAXyO4Zh4XV3xxElxLKHb5uo_nhoUK5AAqi-Jg1vk6U2wKpyuk68oYr6PC8bQup8fkYx3jJg7fksYOmIxe5DoFwzn_ca8AUol2etqBGAP7Rr89l3TaxcXaNphDgwuWHOtawjLJqs2crVSEXqUYmqfemLfXGXBxNYKRvuseeeXOmHO8EaSt8tpv5GNrQpkIGav-cGS4Wh8Ys5S7mb9Te6FAKPbkiwQY-w2uqfHz_KsjWc9wma1TqUMNE8B4MtBzSZ1h-Hr-a_1yRINtMG9nGvwCr75rceoYHLQlhFVe_LDgR-gXLBErm7ItF-CSO8U0pYFr6ydNDeWQFKnbidwSn1AOu1JxE5aNbBknKpVDWtZ98eBkQt1Gc6s_-Zypcyycl0DK-8-gqf6uwqx2zOSYcsYOgIFaVAVDRNup_wJdGaRsFm1LLCGA28Fb1lqLxHFnLWPFwDhT5mgf3ZSHqdzuaaPAMBF6AhP0Qfkm8700CZeYwp9wLCjlivYe3oLRx38FJnBFfkiBaEs2d5S4MakOfjAZ7QCg4JA3ozetxtCMMzf4oeF_pC0kOfZ-eDsHtkqv07H0cGxsZFd3GgkWiNg8zLnc2BjFrz8V8O76pam513vDtd6CygAb7mWwh6cRzNNoWEORwsrTisDqRGx3MbQH3jkBFZjd5bLb1FqPYxbcZbAmM4z5upBNmTbw8xwGw3gXoWzlgr9jsmEihKor2jEEtXbJlkfMxiRPmV26U4zJj3BvkWrusShDDrCXuqilJcdC97kh_KoTVj0Fu_cua0vr8PWOjUTgH2OjVhL-XqmWtHgd7Jticjh4KzoGF2Cb6AkZyMJiaDDBo83Wi8mtaQZ4f4EjTH6hxL9_Sw8ndie0YXVaTrXH6SDAuhKXhRaNDvYjMlhvfTmiVudoeKWhtg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0ce109b236698104016abbe734498c87d1800a0c4ed60175fc",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 341,
+          "completion_tokens": 558,
+          "total_tokens": 899,
+          "cost": 0.018445,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.018445,
+            "upstream_inference_prompt_cost": 0.001705,
+            "upstream_inference_completions_cost": 0.01674
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 516,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

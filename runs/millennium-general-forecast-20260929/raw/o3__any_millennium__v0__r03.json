@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:29:03.833838+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 6.717,
+      "response": {
+        "id": "gen-1790699337-PgGDAphABbkbzhZfDRfk",
+        "object": "chat.completion",
+        "created": 1790699337,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.01, \"2030\": 0.06, \"2035\": 0.15, \"2040\": 0.28, \"2050\": 0.45}",
+              "refusal": null,
+              "reasoning": "**Estimating probabilities for AI contributions**\n\nI need to create a cumulative probability JSON object, focusing on the possibility of AI helping to solve a Millennium Prize problem. As of April 16, 2025, I’m estimating probabilities for various deadlines. The odds seem low for 2026 at about 1% due to AI's current limitations. By 2030, I can raise it to 6% as AI advances. By 2035, I think it could be 15%, and by 2040, 28%, reaching 45% by 2050. I’ll ensure it’s monotonic.**Estimating future probabilities**\n\nI think estimating a 45% chance by 2050 seems reasonable. I’m crafting the probabilities: for 2026, it’s about 1%, then 5% or 6% for 2030, followed by 15% in 2035, and maybe 25% by 2040. Finally, for 2050, I’m looking at 40%. I want to make sure these numbers are strictly non-decreasing to keep things accurate and coherent. Now, I just need to produce this structured view.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating probabilities for AI contributions**\n\nI need to create a cumulative probability JSON object, focusing on the possibility of AI helping to solve a Millennium Prize problem. As of April 16, 2025, I’m estimating probabilities for various deadlines. The odds seem low for 2026 at about 1% due to AI's current limitations. By 2030, I can raise it to 6% as AI advances. By 2035, I think it could be 15%, and by 2040, 28%, reaching 45% by 2050. I’ll ensure it’s monotonic.**Estimating future probabilities**\n\nI think estimating a 45% chance by 2050 seems reasonable. I’m crafting the probabilities: for 2026, it’s about 1%, then 5% or 6% for 2030, followed by 15% in 2035, and maybe 25% by 2040. Finally, for 2050, I’m looking at 40%. I want to make sure these numbers are strictly non-decreasing to keep things accurate and coherent. Now, I just need to produce this structured view.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-dPPtlfoXurZWhUdrdSs_WJeyUqKn9VNA_2SQZpvdrWv5mz6_OIpbNsre-rpwsaV8tGhNFOljqrct3VvHbYDYZleBmJNKD34LuvEWZ-JcPGiaGKtwDcOmZfrGkpyvjA1CUSUirgXi0uOuXFDXmUiU3NoQv6RAXpXv0RNSFFtC4DU86LSAEqn5iFHqSVnn_deJtcZmYs_6_ALee9AtB_OV1D5EQPdeZVZUOkltOPAEwzDORUaMi9dbExeFjjvdWsrudWKu9fOLM5h462lCh-Z09dX4nT5p2omwmvau3O5Xlox9Qmm7fCap6MP5Qk3mgU1TonUMSsgAncFSstrCQ85PikLQg20E2cn2FwSSxcHrfxGcxH5pf3foup2CLk7f3DvEKzhtnO7ifot_sM8yFtbmS29HGSCmjMlauCq7bbOx2jze2WU4Z7lDUAalcgEptLRF4PWxycTypJvwoWmPEZTd_YqZm-pbGUn0fT_QDymdudVm4HpU9A0Ey9Ucj8HOJtKyEUrMrpdMnLcb3OcvtKmuEQ5mvLZNEU1Omq5dbQ568nM2LO7zHgzMZWQXgRH4QuWTvmRuB0aMGBOzbz1Z7tVbSjfrcB94Ehw-tUbZ04LeSVREt286DREfhAvWAyGMrHF0fRkqDl6sELOOvErQ9BD8bEVjp0wUvkArcUVTzO3cSoqNIk_gT5urG3ECfLZRbljdozk19jxz8SxL3JTN8A8dgu5TVyFkO8rFdFbo3OjahCoFKvDyk7lZTrVBkcZM8OoArGTSpiDgJ3rbJcdl2zPe-le4kSDQRI371mBhTZmeUKH6mzGT_Ar3ygahG_5-WOojPmFvE4JPvlzEZcF9DdlpAvwkMZ6GGBTtQUMmLvFfVlUt9PCjp1c3zdBbSAnVpm-cBWB0WAncPLImv31ODAj2vBETD61AslkP8HDZbhpWF6lpix3MZ_ev4LAz-2khjBz-uhmBtCUZ2hy0YhBUB213nnZ1gcVrUwnFG5Z5YCzavir7w9z33uEecYQ8Cv8nK1k7olu6UwCoE9HFN7qBFNmQSA57QSpN-v3hwXn7yJUOaNEh6mWoLl1h1YrDkNM0yDg62Z9NuMfdZXfIHqz3Mbf0cai4d41IKB_gDyxfGzvqBLGtajJttmmxjBWaelsQLmnymWe1a0NtYiiKEzirZb2_OP_3lutmVXl2N5EFDImP0lk4s5U3cwW7Qi4cynS3Mn8KAxhC_h1yzQvYSJ8-IZl_QbTyKotjNGhkWQbst_Cq60ItUzZGQ3bwUOC9PsEMn8XUjvH1osmxhbIOoQ8K7QJkYF9kadTDVtF9Dsm42NcH2e0SfHN1ahx1Np61hsQVZgWR3Iv0dCEnFnU1A2ocPvDKLq6TRphFHG5V1VBpxfQxO7lUZLiBwNT78fIt9YVLYG5ngUpoa_iKRlx9Yicd1Jf1bcKaBHOPlGgEMMo6SIkzz3zutGkhcWzgc4qKhXbsgRc8PcwejNME8v2rP6TgT640GfNUzdmlBr3Ar_GRd77LmOQ7uxILll9ay3V8vpLAyskzFTk-legvHNNLVO5RczL0iq0yU21Asxkd2PArc1D_ExpoXgKLBL4y6sCBF98vMt5eNsTH4ATsVDIvGrYIQTJWYWfJjohJHDp0SQc1rXa0UVUtxlyx-6yk6DoopIw0GDNeBX20154OwgiwEYSCx0M0D0rSOOXnWZHCNjOhM87ZjJPgaiXVSbOzloFp9ShtDfTeZDqrTlhNPPoHycGc1n7D8zeylbJtRzLVSKiob37WNedPtRwa2WPuMtrQhsKiVbbc9ppFokqLbb-ftZkpNM9eUfvBG1t4eJN_b_9PtaGcLBu-8pwBQm61yETTI5Ic3PoEd1IQ0kEjECxId4siRPhoPjWgXtqqhE3kb0D47aKP84duSKAwXOuiTHs4d4K_nT8V1oj1HG_qIq_Os-eINSKzVzBPgELeCxgY8d6hXpxOm1fz_bXGt0K40HxurDtcyx90ZoaeA4rXG7d4DmQ-Fj3dtarZSx58xntlJZeZSDlGNqGhucSAH_Ce73sJFvryOe5TpU12rkfw5wmjGt-c_C9X9vporu815-pDYHgsc9zWvMvZ3sJrxG94rzyLAmVZ7xsS4V-kAd3tsqLufzqkbQhAFPF1rSN3Dnh8KJsQGaBQK7Go_ByucC4cA8UIbAJBpHDQl2JqVVVSOLDHA-00DOC7RUuuqDEof8puWa3lfOqyFeBSA45Ii17DZXYtG68rZcZ7HDCsSW7R_bzrn48rqnoX_cqmQiCEWp0GtI4KE0mWUXOO1qTWDyoRldRqn9jc2_k0_yVEroLP6J15zLUWJdRv2FFiUUKEqOtUPxfovN7IKC4sXMpuWLaCJFRFmxxoYnvSkVRqcMiOtsGdubGQc4_0bcH0nQnxvgj2nHzptZZTN4BXhTFf-iOXPQXmafLAU6xYM_zKRTma0AyhTbIFsdUz3Q_04Ca8q5aivkQ0sRvjXtMVb0u7f8RU5Rq0QpgERJiw2UGA6XuD5kRaW4kxYaNa8s9UNtE-ui1EjkEp_hQW9FmsAcoZXOc0dCSzj8fcchslB-L7ncpVIP880SYg-j7G4ihxCJLh6dgAkqqTrzc-tU31NMkT0g3jpJKe0Y4eI6OdKx_WycyWPaSasS3YIgRpwuTloPaG0NFzakQkyScua1L_J4XhptBMGQuicTP2J0WronxNGb2sdmEziDtuploMGqSEKQCzvEOof26d2WsNIxFyWchTmljjdhZf3OkVX9ZX-635Yr7Er0Pxc1V25UuiwjnhMlL8h3agHLyjRN2KBqCxUNH9uuol5wLDWbS_UPme1xrD8Qhk6LHSbeYp8g028GoTEwS3DLFPn8NbaVcdz36pGWhB8I-JJv2GbZQDFauJgk.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_04476e12b9ff376c016abbe749cf5c87d18b759820c4cc56c3",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 341,
+          "completion_tokens": 365,
+          "total_tokens": 706,
+          "cost": 0.003602,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003602,
+            "upstream_inference_prompt_cost": 0.000682,
+            "upstream_inference_completions_cost": 0.00292
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 256,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

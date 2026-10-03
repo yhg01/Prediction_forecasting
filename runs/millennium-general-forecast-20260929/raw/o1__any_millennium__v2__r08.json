@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-30T08:15:54.053235+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 6.473,
+      "response": {
+        "id": "gen-1790756147-QkUF4vZgexhMfm7xcuEn",
+        "object": "chat.completion",
+        "created": 1790756147,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.02,\"2030\":0.05,\"2035\":0.15,\"2040\":0.35,\"2050\":0.60}",
+              "refusal": null,
+              "reasoning": "**Calculating probabilities**\n\nThe user wants probabilities for finding at least one solution by certain dates, and I need to present this as a single JSON object. The suggested numbers are 0.02 for 2026, 0.05 for 2030, 0.15 for 2035, 0.35 for 2040, and maybe 0.65 for 2050. I need to ensure these values are non-decreasing and make sense for a realistic distribution. I’ll finalize this into the requested JSON format.**Producing JSON object**\n\nI’m ready to produce the JSON object as requested by the user, without any extra text or lines. Keeping it simple and straightforward is important since that meets the user's needs. It feels good to ensure I'm on the right path by presenting exactly what the user wants. I believe this approach will work well to get the job done efficiently. Let’s finalize that JSON!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Calculating probabilities**\n\nThe user wants probabilities for finding at least one solution by certain dates, and I need to present this as a single JSON object. The suggested numbers are 0.02 for 2026, 0.05 for 2030, 0.15 for 2035, 0.35 for 2040, and maybe 0.65 for 2050. I need to ensure these values are non-decreasing and make sense for a realistic distribution. I’ll finalize this into the requested JSON format.**Producing JSON object**\n\nI’m ready to produce the JSON object as requested by the user, without any extra text or lines. Keeping it simple and straightforward is important since that meets the user's needs. It feels good to ensure I'm on the right path by presenting exactly what the user wants. I believe this approach will work well to get the job done efficiently. Let’s finalize that JSON!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqvMU5sWUWsrI2wAmtu8BMajLj6NC-s8H9o-2mCoi9DYj2W_p2Jm1ulkDdGNbSzzQUycYUszxSsF-jOsVkDfg8Cr9JE5kRu4ymmBVg4S5TSy7ZiO-mO2uAzb7B0PzhY4cRK-sYXEJSJzamNXtr8-4jUXdvoCKO3RgUUtHZp7BYU0W_64iXM0YWzng_7t4yzf9iv2te4Oo667YzrY47-hnxBAATaClsILX2pWDKAp420CIFpuF9OU1r9R7_0O4_Uh4DrbkXpWvQMTzqTPEE75YurTpPHr_5o4mGcroCdwzCnQ0YZXCvURaohcGHKLSF_Xtjmo4erEm6f8SWY6esVNnPo6lW_OyXuUC0oGcWi_o3rNbndI4FDc9Tki4jPGjsXamIAvEwXqkgqD5pBI-kqkBe3UsehzqXDG8Xl-ohAHX4kdy9GrepdyQ0WXsidPMR9KQ8Mm4woQd_HCSAqbBDqHUlz-JtiiKW5lJIPqFTvVKTStiB8Ko8VQUVtpq1RKye3mNyc0vMxMsrLdNVz6aPW5RkgYPGSyu-mo0v2WwZKn1yf2-OAQGcoWg902Mk40hZmwsPeBu1h_nJBxZC2OQCTQ7nliQ1RDug6SzVGg7Yk5yotYT-ERGYYVEQDqg4CWg4GyFMtn3P0nswjnA1NJfpAxHn3hzNk3uJDvWwwXK_Uv_ztzzf1GCKWUg6KVOXBGKxm9oVI95NG_0x9oLheY1vtJDmi1Z3eUnzzF4CO24CeLN5uRE8guAp0kVq_KUFMePNcn0XMlUGMWl1L5CyeMXQVgbxGXbUvtQp49x-dFiuIRBQYJ6amNJwDf-xzNOnfcHmnHvRfyfIBp-7r5qNm0gZ-u0euBmRCC5Um25bXdmHu0TY2KotgK45fFhuqvZ7K-QnbWaogMYMeZeaNzShkhDbzmpuCTKPg4jfPUm_tQrSLvYTz2Y0SWU=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0a275e4cd71d8028016abcc534b16887d18b9884e7474ed41a",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 346,
+          "completion_tokens": 750,
+          "total_tokens": 1096,
+          "cost": 0.05019,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.05019,
+            "upstream_inference_prompt_cost": 0.00519,
+            "upstream_inference_completions_cost": 0.045
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 704,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

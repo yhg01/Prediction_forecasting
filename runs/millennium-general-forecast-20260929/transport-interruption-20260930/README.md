@@ -1,0 +1,1 @@
+Original collection ended after a connection interruption with 204 valid responses and 156 transport errors. Original records and error-response raw files are preserved here before retrying only transport errors. Valid or invalid model outputs are not selectively resampled. The main raw directory contains the latest request attempts.

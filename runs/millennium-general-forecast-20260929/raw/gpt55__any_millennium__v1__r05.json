@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:29:09.544425+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 6.92,
+      "response": {
+        "id": "gen-1790699342-UkqJI5GcQnYiAqf5ZjY4",
+        "object": "chat.completion",
+        "created": 1790699342,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.005,\"2030\":0.10,\"2035\":0.28,\"2040\":0.43,\"2050\":0.65}",
+              "refusal": null,
+              "reasoning": "**Evaluating AI Math Potential**\n\nI'm analyzing the advances in AI math, estimating the probability of solving a problem with AI to be around 0.08-0.15, with the goal of achieving 0.12. By 2035, I project that might increase to 0.28, then to 0.42 in 2040, and up to 0.65 by 2050. However, certain problems might be resistant to solutions. If LLMs improve, there's a chance of superhuman AI math by 2035. I need to keep my data structured as JSON.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Evaluating AI Math Potential**\n\nI'm analyzing the advances in AI math, estimating the probability of solving a problem with AI to be around 0.08-0.15, with the goal of achieving 0.12. By 2035, I project that might increase to 0.28, then to 0.42 in 2040, and up to 0.65 by 2050. However, certain problems might be resistant to solutions. If LLMs improve, there's a chance of superhuman AI math by 2035. I need to keep my data structured as JSON.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-dVHKe0UqEIidkMY7exo8nI3LXO_9m70q2iaHVuqLzltIsabFbyQwJLtSU--fwFe23k2ZdWxS1s1rID6d37llSj0B-lU_TwTPJXf72oj0fijsu-gI4wnC80mr_Ch26XmWedn9xAGMXduHJ48cy2bdUqIodJrjiBOl7HyR8lX82B9XrYxLKzjovsM_Rb_DvJI2JfixKzipBqDt_WldnFKeCHJXbJ-5pUxNhMUPVSZ8Dg9D6MgKcmrH-l7EWfQdyHaTU4JN1oKGCUAN7KnYxmmJN1jtUTrJq10e-bRXbjtyU9TjQbaVuIvtNw-grZUmx0AWVjYSpp61jteGmlYmByUqhT62VusjqRL_HwlWAEB-I3aCh1XNX0ej2CKlvDYzRCwdOMIIPXoUVyZrgFl764ta6w2Oy1nn-nmiy_WzgcLynyOU_T0OnU8UMw3zyBob7N-UsB4PuK7IOhoZ5MWU-CqUtjIHGpdCH9Jej7bVuplTqJUXa3QNBvJYDp13Yd6XpuIueR6RlQMIIKBfDjuEXHwp5PksWvrQiZXNXbgHH_OJDMkOsuvED38-GrbcuImINPPm2F2Ltoo6WMd0tXACPUGgedbOTD72nkZdM1_HmNQVP_5pNjEYR0jUIncdoNrrL46hGRCDGqNkBumyD0LAT6jnZktZQP_rGO1YJwT6B5S16qgpc9vofWRj42eay4PGUI-lTsipAqRbrASkVs6-ZexHHsKeZ91M8Gt9J81MeBTx3umWamkdSAwNZ6SaBhXdaTMb7UlDFsEm1mty4cJdcmAZdEAiqZBYrBb4-aR8KIkzbeTnJ1XQ82xco2YDWKdBTldfTEgUHHFEHmvpla0N8QjRicGvCTOLhouiBwFK_QqsT_SlYIGi1f1KhBZ-SISBzzRv8y_JFnkAn0D3jGlL-92wsOULQ40KF4fq95LbxfcYk6AfS0s_x5bHbml71IH1P2hVeezm8s_HCPP7Upveuvuoa7o8Nv28FNcb3YWeqo92KHMuMfA49H-Vmt7-ULGMww2DTEdCxJuV_ZrS01WLJUQ6SlhYalVp2cM0RUls9ybNTmvg0SiNqnnIFpoB_JWrnqZAFZ3WMU-d3R08wIyX19SYLSJ9BXqJQPxF1u7jMBaYejVCKLG9ZrViYN1VjXh_SRy4imBTTjhJe6geVgy8delXGf3dRL0YRkXDuxOHTVZZ9g3qoEffmPEyuObv17OIoS9w6E6VrG2dQlEsmmPdvJ-KMWC_COz6iJp18t6j5yCztXF8Wms87lxOHEPo_kqRrrjtBLVMmZwmbRzczx5zFass1D2sOfK0GzkPoxnAReF_suiv1y7DdBIR7ica9-H8vN0Lcj_MsGKhn8RFXEhYOt50e_3FvNlwLrQvTxY_NnlETIoL-t3RGcac2wMWeX2zhcLOyfknr4vMLgOrDQbCDaRyJEIj1yH7FJ528IV9hL-Z4d3iKb9IQJfKyDFYXPA5xh5RY1WJ8P8H95-0kvdYZDqjRhZ3AGLXgMI4eydu4HB33vs_CnlIw9gqaF5Gs5DA9kARAgX0wHcCqKy2OJHUZhUiRjmiM6dIQQ6o00DEgsLg51Ery--mT1kSmvUEZpVZhY2Pc53oF2nL4d6LgLKN_YdZak1PQCPSa0u7uLA-gm5VXsrcDknRYRB_aG_-LgqD2MD9r2wZ3hHwfXo0wiYDd-3Zm7yTM8YSfp4mW-Eywf6o8Krz9qHNXnxfWuh89TVhtbEUNuGW5U-VElKCz_fsuUw4kV7YsuQiTS1OO3-3EXFEzvbDYMyMvF3ypDFedWpiDNdfBoJz3E7Zm4TyLHj3ik9BhWAk9kNcUszXaHjklg7_J4ZTDKAZX9Q7eVScUIY4iPoq9l2SDAdOaquVXTcSOCIqf0SnkJtYBA8N5-Wootsu2xcdGMQoyDUtH9_zRfU4rJH24v5tuXdZ0-zmoXTI1dFnvSi_VAMTY9Wit7QA3e-XCfiIbiGAPGlJbrlkmE2NthOpjIdWVJxIcKxifseWH9WK5FFRXP0TXYlUPhWtinidLjW1DP5ODT_Jqb2rcaSUn1xjpdVhVSOnyj-naKeBN7ZvA3rN7uje-CAD8uDv94LFlx5LiAX4SsMU1qpzHCpmJLwSMJdTyxN1ThJOF0mu0_KR9LVeVuRbGhV35u0auZSYmRcvY1Brivpf3soFImHs7E0EjQ-9eQOgtYfZHDMLEw-xSFOOukpCzxIpTif3-srQZ7yQE7HW7FceVL24Qf20bWwouOXxnndCXYjquHcnKJnAPO8AiU1Wi6qzYlmuAZpBUKQObUqdxcPxL6R06cRLMPTKuGTaPe63uKBW4goGYzM40XdfLelrTVtazM5kPSIzT4rMG9znVWzNQWyDWwNyuyS05J74tzejn6gBjNzPESFyEz7TIbAJtg5cg1RfidcSBJ6x8bmFVJPulJYEN_qT_FBLYbu-whCfaY4cUPswo3UFABYMMTSF6AmAD5aoYzPpMibpFSJdDI_Hd4q3_OUejT38P2P5iuaSttZ84Zk9riqZZIJoeMbctCCfXygNuP9e_tPCbHEgMuQYIIqJoyJNdqy6WvhAJWdaMu6jNI1CwSPi7eTmVuvKm63Pz08hmExdiXVzNdkpJeICwUWN2CzOHxBOlaIK60IyTG3uyTtJpeIO0G34xDJU5wZwsa1letuNIgjAFe8Cbvkn-AgLlXLYIOQ6RquuzNpFyBYJh2Fr3JNGPhlMK-OIHi286AiQ2pLuvbs8jUQ2yHVerONzsh1DpvHJuy-6pZHb8J8xfP7ICBSeolesYiq7cpCYp-BGKIZPABMCWquZzZ-cI4tZCKFUQtqcq0mwDOmE-Qn7VSVAxy-EuXp_cXlx34x98QtPCeaHnWmM2HwiMKNLkHwKZFvgKcRHAwvADZZwyYmTVrmPnXCQ2H9VL5THQiTauTbwGr5LP2gSMQCUjuEFKI3wABxO-1tUhj5xPSQOmKT6dCpIvn3QPJ6qvkbRaCbDmPWu7AyboGY8nY0sq1EAmHaEMpFHWaSBGXPkgneRKS9YTFCYwmSbXo4_Vd6vtu0X_L4oeS-pGX6hmE1Wp4JDruKRREYrP4hHPMOWzRyTkc8qho58Jw77UwyOmpgsV4mS9BaMKU1V7a4rJrN0XLls-6HGHC9Yfr0zKOLNiL4vRtmnQyAwt_Qhs17LGUWMxYXjytyb-lmDkAOuZpb68uoReFfSsEPEFz2LGKSxbYcwHMnySDq3IRxKhBeBxdT21V6m4z9oi5I_HWdeFTvBzAHgansXiAtDE91Ipz9myP3bPWG3eUwVGKAmVIhj-xhA5e7a-J8gtpyQt_EfY=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0080f82de60c9118016abbe74fb03487d1b0f5e753299042fc",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 346,
+          "completion_tokens": 407,
+          "total_tokens": 753,
+          "cost": 0.01394,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01394,
+            "upstream_inference_prompt_cost": 0.00173,
+            "upstream_inference_completions_cost": 0.01221
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 365,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

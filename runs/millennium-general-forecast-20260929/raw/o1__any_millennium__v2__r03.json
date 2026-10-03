@@ -1,0 +1,92 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T17:14:01.500731+00:00",
+      "exception": "ConnectionError: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x102449820>: Failed to resolve 'openrouter.ai' ([Errno 8] nodename nor servname provided, or not known)\"))"
+    },
+    {
+      "at": "2026-09-29T17:14:04.516033+00:00",
+      "exception": "ConnectionError: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x101545e20>: Failed to resolve 'openrouter.ai' ([Errno 8] nodename nor servname provided, or not known)\"))"
+    },
+    {
+      "at": "2026-09-29T17:14:15.273300+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 4.761,
+      "response": {
+        "id": "gen-1790702050-nB71sOjsSk3ELvErKpTW",
+        "object": "chat.completion",
+        "created": 1790702050,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.05, \"2030\": 0.15, \"2035\": 0.35, \"2040\": 0.50, \"2050\": 0.70}",
+              "refusal": null,
+              "reasoning": null,
+              "reasoning_details": [
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu_Hmyr0pRb6T_bSOwtL5boFoeZQblTQs9gY1l0wPJNgcj_RryAppumtPgJT8jWhGb-xF7yhYTKzIWzTYFo1xkx9DNdqZLsq6ogEYGCKdBmEDu3dY84GOiJWCqYY-aCO9gjDFNcJJE9R5emQjVgY64SLc0CUgpO26P-hJbMnXYo_CpfWOlLitmuWkSlLnf3b1F45FkHTlzb2HHrJ4N0xD75n9bFFE1Mst21ZxfCM6DENmbeP5RMaTzVv_IKAr5BnImYEIPyaqyBhhDAkWqpVkUmfJDThgY7ebyU27xFTXNlgYMUVu4qjl48VizlXxt87ASEMy13fjWCK2n8ntGfzZsC3edcBftar-NImyzP6Y7dlnNLKEvimPwiOZjq3gp-VbHwnxiFr-ctAfv7fN2oPZpOG7tyEIyas7XVW1AIealSEC8B6ktZMnlG28-i93MvKKQ4yX8l7ZGPumv3CDXsDr1td4Ihx-m8uizFAzw_XQiYZVmO27b6KfHXyrBOGaMFeswh45TW-gqb0N_-8eBtWFQRsCUGyqtNr-2MeUr6t-sl_9ZxfWENl9wlkECy8PjhdFiul7S1eRZ4i9jY-ERlSP2vgGYGTidPdxsVXZ57RCVCfuU1wA8_AydXrfAJ6ssH0awc0TAzAKEa22xReev0kYTgMjYR6Jc-sO-3r_qHrLG4lrMNoRxcZ0novBvfonUt__MVtpGJ0V-Lh6yEIi9-qX-dbOcarmTuX-c-TqbxICyxwfUFLHRMnHGaD8655UBVXC4AB_RNevVl_TKH_HvP7Zh8mVRJCfU0DXp7-8IxlCV-jHNEn_CpSrNpRjbVBdQsNcT0E4kfXwuJw6bw32PUdxgADJh1BY4i7CE91leyperZC4rDqhH_GiGNaelzbMHuznwwUo6QM034UIaCJcUIaHMJxWpaYKBdKt5W-kcYNVJhWqgAo=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0352b3548c4f92ea016abbf1e320d887d1b66a57c7350d1732",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 346,
+          "completion_tokens": 740,
+          "total_tokens": 1086,
+          "cost": 0.04959,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.04959,
+            "upstream_inference_prompt_cost": 0.00519,
+            "upstream_inference_completions_cost": 0.0444
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 640,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

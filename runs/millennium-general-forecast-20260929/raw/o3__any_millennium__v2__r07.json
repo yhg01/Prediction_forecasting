@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:28:33.492948+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 6.683,
+      "response": {
+        "id": "gen-1790699306-PkHx2lfO0i6j6KkVlJki",
+        "object": "chat.completion",
+        "created": 1790699306,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.02, \"2030\": 0.1, \"2035\": 0.22, \"2040\": 0.33, \"2050\": 0.5}",
+              "refusal": null,
+              "reasoning": "**Creating probability forecasts**\n\nI need to create probabilities for events occurring by deadlines like 2026, 2030, 2035, 2040, and 2050, ensuring they increase over time. I wonder about the possibility of certain outcomes not happening beyond 2050. I’m forecasting from April 16, 2025, focusing on the chance that at least one Millennium problem is solved with AI assistance. The probabilities I’m considering for each year range from very low, like 0.01 for 2026, to higher possibilities like 0.4 for 2050. Let’s make sure they ascend gradually!**Formatting probabilities in JSON**\n\nI’m setting up a JSON object for probabilities by year. Currently, I have values like 0.01 for 2026 and 0.05 for 2030, but I’m pondering whether to make them slightly higher. Others might set 0.03 for 2026 or 0.12 for 2030. I also consider AGI possibly emerging by 2030, changing that probability to more than 25%. After thinking it through, I’ll settle on values that increase nicely and give me a final JSON structure with probabilities ranging from 0.02 in 2026 to 0.50 in 2050.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Creating probability forecasts**\n\nI need to create probabilities for events occurring by deadlines like 2026, 2030, 2035, 2040, and 2050, ensuring they increase over time. I wonder about the possibility of certain outcomes not happening beyond 2050. I’m forecasting from April 16, 2025, focusing on the chance that at least one Millennium problem is solved with AI assistance. The probabilities I’m considering for each year range from very low, like 0.01 for 2026, to higher possibilities like 0.4 for 2050. Let’s make sure they ascend gradually!**Formatting probabilities in JSON**\n\nI’m setting up a JSON object for probabilities by year. Currently, I have values like 0.01 for 2026 and 0.05 for 2030, but I’m pondering whether to make them slightly higher. Others might set 0.03 for 2026 or 0.12 for 2030. I also consider AGI possibly emerging by 2030, changing that probability to more than 25%. After thinking it through, I’ll settle on values that increase nicely and give me a final JSON structure with probabilities ranging from 0.02 in 2026 to 0.50 in 2050.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-cxnjWcROSl__ctSy9q7eLl_E6Gx9tSI4dJR_HLOqYNJaEoLt-f9hE0K_s07FZSkwvc2NfKraxMTB5NtZWQ0nJ_CuY1Mv4Tnfdh2naOGJVZgo60Qvk9ebuOXmKTPb4E9xBEWgx9LPKKC22pAIcx4a-rvYFFqZeMk25E3FY1WD_W6SGiRRH6cuxFevoCyjjsOHHePJtM69vwBw_vdhycc2vaAZkC0tg6-DDE4GBWKteBwkjkmqBVHutS59zi7snTx5s4BkTntOikGJivAoDvhcsGcUYbTt7Ur1PTM4mVPOcUDQnR6yzbAC5WmYrF3uad05PEjelxxjgItfX-gokQmneDzmm8X6NqZOZRwmbMFezhNEpIrs24O4uIYRw5LdIXDgM8SR1jmfhQVLdsZ26i2-OiWq0FaUMkTfZr735hh_IfVNEFK3IeUrsdaVO7Pj-nxWNRLtSSKNDZG78Y-UJxYfF3bERuiNlXeWyqRsfyUT4YRhIUou2DrNhMAHO-tcYR-igd9MmwteMDzDT0uzvm8JMVpE78FKxvz98uYZqfU7qaRYl7I2Ds9fyKJ_eY860c8_oatVygLTt2v1zlVHOertQg5kBw6DRMYhr6ad833KjZCtVL_wwfwxk6-FezTWYumZG8zCIvTkTdSOf4izjgn49QGKau6EeInE8Zsbwf7rIM8S7E94y5KQUn1pYgE1fA1LaDgGMeOcajQ1wdV8kgjmAn5hNK3GYbW27WV1LYQCgkBcKY0-BtViF2AGH7p7YmUlQTLxXMk_2-VTX6k9kHp9IBAsq1z4N-P70Vz4hRf_z42j2Hv2lt37DkpDReq-iMoRiLoTsWGSNYNLTAHPiiGwcy0nlstf-tPvzJkBCGy4n6aUkLiMqsyRuihMuWL7wbY7w1FCUkRndc7VqYrp6mvObhljD69nxDNF99QxsNiUsc_dWaIvSdNAUNB9z3lezpY9VHcz038l84nRykEH6-C_KXNL7co7EWyz_dBMLCOnESLfLlRxg_2YKY_xuv75im9bOl58TpnCQX4IwJdF3FlNVnjRfrMQS_gl0IZwrjd6fuJfyDvf9scOCgOMk857mLKy42E_tRC7ATmfNUyhO3WMEHZwv9FM3UWUbx9M2I5xL6tUQc5eI-Ln7MlLnuF8BTfvyzG4O06Cm8mGAfDfhBaKJU2lj3FHgWwQswXmLTm1cjbPXexrAXmfAcma751rUIh4rzq-1ph_dyPeYJHV4fAsNb4nfJAdQJmIgo8a_18Qvx0il3KZC87t5E5cA1rzo0cHWAgeP2na2BbEV0Q4MSrKe-GhKS8nB5WReyXoXGPstbzYIMvkhDQSV_aHqGjVaeAbG9s4-LY48G-OIBzUWktWaZlAA4n2c0QHoolAtp7akl0ssdzKz_9xgT8HVP3ozQhh2t0ghgnYBuEL-SApW0hCTjOwoFCzHGt3rqALHSmFMU0ntAIsWBIOroF-kaJLHi-R57oqB8t-xTZpuORiIQFEdQxShslzQxJQaw-htJaco8Y0jyRWYymtLljZSH4uuGNLJn-Fdwwi47OWV8Xo-ujjpXNiTvhgoEMma_1PRENn5d87WflNilVyr4SomKNk3o7eo1lxkJjefyzar7XJR6S2RnXm73-5kFl981av4FX8Onod9WZVC85syO6te_EJZKdVm6MY5E6htWsZGjE3HmaqYW8OGn7RGT1uJTJTeb7ltkpw2rDEG7ZndQiBGGBE4IIOVdKpxRnk3qpdM6gobw9ep1drcyx6xIseE-3R8Y7dJhMLgweS8AvEr4GQsHmp-kYXd7hH4gcSAkOTXr3INr7t8Iuf2FJ0oFxFAlPns8K8IrrBAC_9k2ruQm8-EB_Tqag77qZ1Wx21L6mXQwSNVjhSoqhmMuH4paFHAEDaFlNqKL6wK8PkDhfUnz-VvVxWHwfdfRaJ-Opqgk6pIRnjhdG0GOgTqSSpCi82egmEsqcYvTD5gNatEkFKTw4wfEcecWwSDL4xuEUmDS3ohEXw6-6ne8_5tGa-c8hJ1mviHHckeGS-10C5HFqHU41h0Vx2AkGn4mizAIqtX0vSbdRG8Z_uAjUCSdWjAuHoJHuutLfW--G5HZ9Rgu5jiS6CYK36inBFNYjr_-kPoiMHhr9ANrX_sCGQrkf6jWVUJKIHO75TP0aWOnJw0Pydk99ZH0vRWMPqJJFefnzP-Lfch9SPIiKohgDYklJgi65OMArJNhTy9H0KX5ar_E00fQ5lIH_-CNCgH9wlY7M7mY8KnREhK1J40tTJYBoTRjYS-d7SHtTO38zTJZahlws6akNwzohxR1TszljJyJ_7gwNESXCo-s7D2WiIWdNnxwz2C2HiegGDa1BXkS_wjNLXwDodlWRd927fIdKlVs89AwK8MPoNmqqLzOpdviNixuE6AOWfFGzamuxUW9HqKXeoDd1xWO2GhQXkY-orLNGUnsFdeQpQ6xfn4jfcGNoJ54TaxGMpmyCt37L_OhcK-dhzfC4pBeIeCiPiQcFTHgkXnSk6PbPZgIA9OehhXHKy-CDHIfYxffkLOMy9uanr7QuGWaimJNV4B1fzV-3s8nv5m3eweEE-OpzcpiparkxM8H1w_5eXd2e17sT_FKCFij0OWij5DghSFI8wSpootXJjkSy03S-X7C9iIXVDIp8j68gOOoLjEJgaIbKSs0xbM626ujjCk_b-17JFJU5VXT0swsvcDGaM3dNjMa8VNpMcS2eytFSiEcxcHjwp6eCZ9f6D5ZnGdRKMEDBV2eyHtevXsBg3dsaJrgl9prxsMIhDTvKbFJwDTEM5b7muexQTQJNCPuTiTqIgZzqTqltaWWpAX5kELF5KdX1rU3mT-Ycasd8cwFa-cNpb87Cr2Pku-WT82CR4x51pL7LBLVR09bOV-Zd0oaLngUa-7fLpxlwrPADI1M_xpfivhOtDGe6YQ9w8WBbKfAQ69zjrsTWvGPi9C4aMoGDlBDUx8j518fIt3_wGMp2entSAUH2gDsBbv65q3LlK3ZTd1L2mEce8PpSrPzM15FzjsKwO5710FJ4j_TJnPQeFTsgwr4Hw7qLnM_puB-ayrHvpSn9SzLiUqYQr6sWyJzs8RkZERQFe_8_cU6jtX-uY80D63p2gaLC5cZG3b-eM6ddNl5cdHOs1emm7Oll1RKxwCTmAJ5XUteAGPrP1HK1k8N0_T1Jjr-bDo28h57C5PJmfFmLKryjF0i1cejOg26Z_Rm9XCB0smi6b2jgxC2jftTPSOugHrnKJJrXwRYwWXkK9xHjOCYh9txCrSHJ3k4byYgGuK-6Xf0dYLXzXugvAbaqGPb518cunr7oG9nTNgzKmOwGfgCQAXTUnudDA5BfNnEqOsT7oudMJRq6wdw83aOZ-G5GsoLwvnNm46UoBu4z37m8ySZR4LZme5TnPt9m69pnbJ4hjueW0-AjW55aVAV3WLHTsby0d4hbFyk9dYGXBdCpcbSl7J_AHb2pEoe5rKGCzVu-Q5UGSXs1qJtJHV9dNKBdnPx6PLU2lDrqAioJY3jAphkbpckI_IatpPlPsZktkUO24aTiCwhdktfSOVITF0HNGrgtA4_PuehcvyP6-LGiINaiOR_-PmMfLUmXXKCg1R2zcAf30rdmVhtuIjPXEC6wP9LXMIXu-fjLaba7rpwykkqE8jxqvbcfPs-afS8HwWHQ3xIwHV2M0MNISHZpmQ8JiYI5VCUBOB-BvNSnzlYEYM6Abd-Y5QayCdcDZALOxGO7IvKYqK5P3Df4WEKd6sWHG38ISlK7kXf67ws2yqPjHs0ao4ZjBcu4AoBsDjLqVra9A==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_08cba7c0129f441a016abbe72b973487d183709e872bf77ae2",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 346,
+          "completion_tokens": 570,
+          "total_tokens": 916,
+          "cost": 0.005252,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.005252,
+            "upstream_inference_prompt_cost": 0.000692,
+            "upstream_inference_completions_cost": 0.00456
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 512,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

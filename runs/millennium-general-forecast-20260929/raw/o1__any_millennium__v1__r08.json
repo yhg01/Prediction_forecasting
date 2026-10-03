@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:28:32.767880+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 6.551,
+      "response": {
+        "id": "gen-1790699306-5mXkLXPVa4mTHeO6BNqG",
+        "object": "chat.completion",
+        "created": 1790699306,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.02,\"2030\":0.07,\"2035\":0.2,\"2040\":0.4,\"2050\":0.65}",
+              "refusal": null,
+              "reasoning": "**Estimating probabilities over the years**\n\nThe user wants me to speculate on the probabilities of solving at least one Clay Millennium Prize Problem with AI by certain years: 2026, 2030, 2035, 2040, and 2050. I should provide a JSON object with these probabilities as decimals between 0 and 1, ensuring that they follow a non-decreasing order as the years progress. Alright, I’ll think through what those probabilities might look like for each specified year!**Generating probability estimates**\n\nI'm thinking about the user’s request for a single JSON object that details the probabilities of solving a Clay Millennium Prize Problem by certain years. I need to ensure that the probabilities are non-decreasing and fall between 0 and 1. So, I’m estimating probabilities like 0.02 for 2026, 0.07 for 2030, and so on, ensuring they remain in ascending order. I’ll finalize the JSON format without any additional explanations or disclaimers.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating probabilities over the years**\n\nThe user wants me to speculate on the probabilities of solving at least one Clay Millennium Prize Problem with AI by certain years: 2026, 2030, 2035, 2040, and 2050. I should provide a JSON object with these probabilities as decimals between 0 and 1, ensuring that they follow a non-decreasing order as the years progress. Alright, I’ll think through what those probabilities might look like for each specified year!**Generating probability estimates**\n\nI'm thinking about the user’s request for a single JSON object that details the probabilities of solving a Clay Millennium Prize Problem by certain years. I need to ensure that the probabilities are non-decreasing and fall between 0 and 1. So, I’m estimating probabilities like 0.02 for 2026, 0.07 for 2030, and so on, ensuring they remain in ascending order. I’ll finalize the JSON format without any additional explanations or disclaimers.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-cwqlALXjYrxyXj7DUzgYXu2i-9N5o8RbAnsN7dRGM__IEGaqmIRszCYTV34pOiHL7QaUvwE9g8ORaOWyqdGKTGzV7Aiy7rJW93KJIMjL4oZO32txQiI7qnXtrytkCXO2ickoQGQMFe43vdyHEnVDjQuSnLHgeWBWTixwAPCvdoETMsZBuT3KG5qMbbOggDBmpcs-z4xJEWSeFlmabWlDIrFjSA6B5_VniK3eZPRqQZ0gbZdP4kDn5kfuZ8jWauQHT0jbjcLvpgJ2eUUxO_wkN0LL42Nc6KIhccgavJuG6JrzaXbdwe-PlI96EBPqAjMz5MCDPWSadVAaYlgneqaNMSOGrONk_QTj6biSFbJUqnlU4O884UYCm5AXUfIeMYediDNSHGynHgchmcLOGua8xl_Cc2uy3TF9XMRJkvOX4gtiJ0jioa5H5LGvWyebS09elCtWvSKqyKW169JMw3AF5kKJvi9LSn3PJQ9nPnA22rn8_ojOjIlgAi4kwO5aVJRXPakOZ2Au_ZTEw-EwYFbKHBL6-r__60Ts-V3d-IFvHNNGSfeMRl5cMHVVbBSAv0cURaCnEjPA7mEcRM2ZX-xvvuW_6kpyeKwxrwjnyixclaoxKadVlXwq7pRUDS3XDo-s_64PV4UVWstmOuEW_uOzSQp2APkALMW-Uxddnfisn--QzzAYwkwP5EbUCnlNWTGFR0KM3Aj7uWE21uTrGc5WaR9d5dBS-S2ITWvB0vVyyFQ_Id38_s9bpS5YmY3RsF3SBPynPfxMcKceWQTPpuKGnnqJbs6PQh8Nw_vNUBddnrKE4QvRZA1vmWXvZ8GVp7F8jsndA4q7gMWWx0AtLlL72-_8Ih0vehE8Y2vw2fDcPK5_MYQHwjXQ9nT-Xx2gijxD8lB6s2mXVgUswtgu_Nrn9V4xdUOcTko7DPsmic_2uyigc=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_068752425e790124016abbe72aea3887d193e6d3f5fc472fda",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 346,
+          "completion_tokens": 878,
+          "total_tokens": 1224,
+          "cost": 0.05787,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.05787,
+            "upstream_inference_prompt_cost": 0.00519,
+            "upstream_inference_completions_cost": 0.05268
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 832,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T17:14:06.786844+00:00",
+      "exception": "ConnectionError: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1006f89e0>: Failed to resolve 'openrouter.ai' ([Errno 8] nodename nor servname provided, or not known)\"))"
+    },
+    {
+      "at": "2026-09-29T17:14:13.174261+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 3.386,
+      "response": {
+        "id": "gen-1790702050-3b3Pg7u3DUZnCy0dt2S0",
+        "object": "chat.completion",
+        "created": 1790702050,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.02,\"2030\":0.07,\"2035\":0.15,\"2040\":0.28,\"2050\":0.45}",
+              "refusal": null,
+              "reasoning": null,
+              "reasoning_details": [
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu_HktERCHS3lre3CQ82e6Id2ZqO3gYdvtGMi5xgl_Y3pThOjMPZQB5abRpkQlvjzLxyDpPXiJqg1-scNxI-K3Pyy9H1SiHJ2SdyF-mHmfXTGEDjdQncUqtoNuYwVJgDL0pIeKOB2uBFVJyd1sEnwn0y0yNoVdfKeVcHDrH7D6sJgyLROfxfUA1eY2SFkifH7-SzkeNdndBavbzgsPnGG2JfdTwWvdZpDfcjd_wIjSEfCjNk95ifwY33FGonYLhbKDJgyhM9onkUJDiCr6UDINfgYzvlmJxwwcnKhBR1LsKoaJ_fTAjg7Vt67GSN9ZHc37aUFTHoMKUPjbAg-a_sIduMYWRAd4d99clf6487SvAJXOSvuY6nd7LtXpUBPiJraW_s-ouRdsWE3USjfv_Xc5wo047Xd7svKMZ5l7XNYYZeqwjoCmQWBgt-bXurdceumixO-TTViVljr38QRzNTY2FvWfQaJrd24MlkUxGYS9iI7YV2Cnm2JM3tgM0lUyeHxGcVK9Ei0JYDlGf9YnUwRxvHeA9QpsjHQV4TV2-HKvGFIEjQOPUC-WaaVuueRBn129sE3DubCL-wvGy6S4Z5aRetn8ixU3EtXsBzJE7JtzeoLBTCu8Ee3InRtGiIDxdWL8IGkegdMHEs3WQ4j-bpa2_s31bCTP6C9fTrPwSnovSXVhUMNdz3ALTZ7YLSmPvsrLIfn0KOlSevuGWadEL4wYZjDn5yG9GdDkFzyTnq0pvEka_yI7UmsgrrwRDt4JQz0tCnDQg9B8GNIqDuvLjSHjwprSa-vAOKZin33kRdrajLUcDNyPCtAH_a0CZE4tcEyAAR2YXB-XD99fifpf0dNigZSquCY2SQnXhxj8UFpIMGZRncWnFEOtcf_M5r_Ic9Ux5U7o3c8AiRcSj3iSqKTdmPN2cOnnVE_f-XfPA5errSnu5Z_K44BC9Fufp0huB7RoLwClcoEfeImOgyEAMFP6cZdtP4QT1nW5pSvNUS_jgZGs8yZ5eyRctA5b79hVyLxGsnTj_2OMCHA5VATBA441PRXuCEQOEBogLnDRznsyMdqhh17-f-ML-WXmxkGp9Rwetti5NlIbi6sZQlesQAsM7N8--1c5AhMi8sJ8VkgK6zzUhJ4SoByckLK2aH9Q4f_3MBfIAFp8RvLMaZ-4jNkqIkXo4N56tod6VfI8pLI2SFZoWfCjmmSAzj4RDgKF-6cdwheN71KatUP05APSiEr-iO8A3NXwun836FhbwOpGyOnXD-RAUoDfyIfcQ22dqlW_M7g35SBssfYkENIP_IkOPhMUa8uIOH45dQQ_32GhaQDU7kNM_-lPWhhdB_PHECUzYFnPG2RqD-2SfS09RJpLFVmVpCTkibeCdt_8cy_yPU1Uwzs0ZqAbbf-9yLSrMyi1fdrVnS-LT2ADpgcWMPEWY2N0kgahnHDYrFEGmM8irfZLFl1_A0JNBYp3oLGioE7nN35AoCPK1gdowuj5Icfs5AGz7vlKl2MZ5tsDi5nxW4IFUdLAI0gNoqtjssOTyWhpRF0zvUUA6mXXrRYSuT0ChqCQxWz_OJvc3bx53IHeqshpSzziX22UliQBecw1HKG_5JzeAMd47VoauRuHkdhEp5uoxJvxJVI5A0YqnwqJivyPeLKnetzL-Z5iGj2mrf5sPYJPZNr36JHhw2T2xcL_bgcBm4JhQah3ZTFJqRfhGeTkG--no6YIBpqiEVnyAcqsmcWi5f9jLJaZ55BBiEuPRHJdS5Q0hD5ser5Jc9WESGbDdbDFB2Lhpp5FQu73BNjusIbUzEG8--xzryzpVXpG0cA6IgdhJaFivPiY-ew2vE2FpVmYHyXjegu4wpTVgS9u_OaLRQQzxh6GTlS_so_tq5TvnocGMxB6XyhEqToqfV6TQ671uZVC542UOkjXjWWRqfhpY7LDEBZ2wNZ79ml4QLCMtc1haq8B7YqJ-Z3u-GDOgTJ-hetCVz70SytKCkHGm20ywZgx8acvzaEJi6FYY2BwQvD6MCBctpBtDZldiSFkCyEGrubjhTL0ZlAo4ci8yDYNNrfwpxghcTvbjcq8vZn2Jg3VoMCyU8ZuACEpUu-6TE4eniUarfPsU04S6rRS3p-B6U_6J3mPMnEAwvEbMBKMfZuJ__Hr-V-m9RoP35KUMUhpxHQS55KO1qFfVHXfeKxjIY0idw1zzpAq83x_zmfxZxH2Zarovb7IBDA0mGSdsG02r2ISn1-WLrgHa-nIo0a4Wp7rFgCxkGs969fZWLlL2ZU4Dnm7POCknywIIUN59BUiN1lyavg_sr7GjIfB-iHV0IPbfqISH77KGKchu2lYPny0yV2hLOvWE4KVysioY9q6gNLy13BTy2LCvKwg_J6duTbCvX8tBLXznp8LaZ4xsswz9qi-5xXpsBAW2FXdipfAU8YIJ6YagcHjMIUdLOw7fnZygdg9BXtDM607WdANUSGCYeMuU7aVLP2aLLS5bggXZiQpNbCkA1a__UF32RjeuZbSKuvY6AxXtxc7XBTlfGlpsRW_csMBAtrbLOU2TzW_GzbaFU0T_15sQbiWYk5.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_020c1bff928f199b016abbf1e2bb6887d18ec3580612f12d8a",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 346,
+          "completion_tokens": 310,
+          "total_tokens": 656,
+          "cost": 0.003172,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003172,
+            "upstream_inference_prompt_cost": 0.000692,
+            "upstream_inference_completions_cost": 0.00248
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 256,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

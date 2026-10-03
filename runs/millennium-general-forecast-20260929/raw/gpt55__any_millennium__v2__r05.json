@@ -1,0 +1,98 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T17:14:02.886841+00:00",
+      "exception": "ConnectionError: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x10244a7e0>: Failed to resolve 'openrouter.ai' ([Errno 8] nodename nor servname provided, or not known)\"))"
+    },
+    {
+      "at": "2026-09-29T17:14:05.899666+00:00",
+      "exception": "ConnectionError: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x100c1a900>: Failed to resolve 'openrouter.ai' ([Errno 8] nodename nor servname provided, or not known)\"))"
+    },
+    {
+      "at": "2026-09-29T17:14:19.758621+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 7.867,
+      "response": {
+        "id": "gen-1790702051-9nvvlrcqHquHGJB7zBLw",
+        "object": "chat.completion",
+        "created": 1790702051,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.003,\"2030\":0.08,\"2035\":0.28,\"2040\":0.45,\"2050\":0.65}",
+              "refusal": null,
+              "reasoning": "**Evaluating superhuman AI potential**\n\nI'm considering if superhuman AI could solve significant math problems by 2035. I think it needs proper formulation and validation. The bottleneck seems to be getting insights. If I assign cumulative probabilities for problem-solving, I wonder if 2030 seems high. Historically, humans have taken decades to solve these. I need to ensure I'm representing this data accurately in JSON format, focusing on numerical values and exact keys. It's quite the mathematical puzzle!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Evaluating superhuman AI potential**\n\nI'm considering if superhuman AI could solve significant math problems by 2035. I think it needs proper formulation and validation. The bottleneck seems to be getting insights. If I assign cumulative probabilities for problem-solving, I wonder if 2030 seems high. Historically, humans have taken decades to solve these. I need to ensure I'm representing this data accurately in JSON format, focusing on numerical values and exact keys. It's quite the mathematical puzzle!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu_Hrzq0tq5IFQm81sIwIH-9v8Fo2P2daUYrXBaWOpKAJ8BpussCRXJcuwkxmCmsPzdhEv89_ZO1CPhNxwaw3F2K4SfcTNas9pWtxrtR0UfVNZeUlueovm1pDytRA6hgXT5C3Zgaaw23rbeXcYbSyIMWdxbzcuK6cN6nAESAnXecGem4CPv8GZmG0-SmUgA1t8QNRsCTewmq-ImDqnMfrZYc2ayoQ71HpPVQ3r5iiVCD1-fVD2-6sRbWzi2sMbA_b22oMV2rSheftQxtnXsgYxjNtpd80OYZVJoVP_QpE5ahPbrAFy-znez-E2e8Zu1KUvA1OnRfH5m1vnCZqO3kF-sH_jraCD36hPKJwS6BZnbGQmrqeRXJESafchYtvmlj2zyirWfdfshdARQxK4jFBoa2K58QErgybDDwS4LgrNA6elq_GbfUaUhQyu2EIIH3RheKHnFUC29IjEJ9lc4EqTllux8UF9_J0JoaVSrY7tFiYw_NBi4nmYrR9rvxblf5QN6hSZFxATzENZnUhNHacggeJQce52apHxfGytBQOlwnaB7IpvRiwukMYWacK6lqX0XyQXQYtD-9dOhPFbqlY06-_uyJVScLLO7i1YT3G_PU3ncsbVAxYEjmKayDHNgm24QHgvPnBYAUNYVr3JMkG-SAPQGMevlVkCNWtiR9pxzuN71WI2QM-5z5NTRpSDT7gpn8pCzGCtZ_n77noiEJJjIf99jqI-RGSXHqjTzFxlU6r1JKwLJLINbZe5nys5P7LltCNdC02VURcemiGa14JkK7KnwoemWjVt_VaT6lLmUeNeyuCK1NpI9VP1HmQoVRCfezoNR6JwX2hEkT6yf7VsgleEtwMBALdZxTDlX_EdKPU7FD87RwZDzu23AGwgWqzr8wBA0anfKmYKcHuXTJotb4CXh-2Ap10N2CbIUwr8t--mdqG9ZQZlQAGi6T-pwcAYWBIhYGjIP1AXVCaEEa_ezwK6bdYHKg5oof0sKD1_fWtDKZ4p9ZwkdNdlHgdWEankM0T2m3SkI3P42RUY8b4UlldrCl-WTNF4qwzuQY7obKjU9YmmMFXGreAM6PpJIcfW6b-RYSE9AiDkF4PMLsFMMzkoCKrKWPlKLcjH4rGSZxdTfpaVNH7cyY0CpZR9ZZpICkFMIdXaXGYm6oydt8psVx7-BABZCHosMIB5npiKDfemOO8Q7ooNnK-qTxUnN88pRG301QzMEpewQ6uDLl2eYpzRFurfgFr1V9WD8Gj4G4W50gNpB87SwNdXzg3M6cwlU5dZ_wv_8ssOPc9fK1MqxKzLdEZbcIOxE99IVjHBZmcDqglgDicXt3zfHmys7hiKh9FWhlSEd3R7AZf8a8Bpj1_U3Vn7qfmheFXUuPp7n1DGwmIVwJHgPNTgUEY0eueD3t2T81sv2rnLM5fxQz84RSdUsLBwoJrl9pmvpvvNDqffbU4dJVuPCPy6KL0AJluFk2kS5weUsLZg9WSiH844Dlb7aZ8JDuRnGABHFuXyfzZqpu9rXur6UmHBl82iRkAJ2bxF77sxiO7hXjTyYF1QzkgVo_cPIRfFTmyylMFdU9yyq2grhwErzCM_kv9_Adxj6OXu81z0vPPX8H778cg8try5HR9k9GHXWLJrmwGpjUcMMkJBb1-Uy0gR_YoxgGY4LqXBKKhAQH3IBCiSAFdajfVYZjXjqC40MWhBf3OdhFxdU3NZ5-e3lQGiJ1BJAsEqxH0plMmkGYNvgHE3OzcjoP5fR4OPNd9kY54NuVe9PvDUKlbI9gLSUxRalzajmivwkCZzPzjiwUIa0f-Fuv6gi3KfO4FIn2gjMQ-HcKRQbciD4RcpHnw5q7H6YDMR_bNZ1Y0VIakadqwULCKVHm0WV4UgIYIpH5OfjRFg1WkQjt3zt4G5hHLJduWoHYBlItY1ZAOL4q92JE3ShVfnAooca3knwe4YOJtARVF6v6vjptC4XSH6EmjhwesrQ0fC4CpxxSGZ33OpSyWCnWyWfR9vbrwN7f2wRQIOdeCLRw0e8zou3r5vjt0lGFJLBiqjghoqVz6cKIZnX68BTW56AlARtxgqiMQbo0l0FIQGUCxlU0cWYyjKCfg3V3gaCpw2VDC_d6B305Hc136rnJ4dnV5zssKBE1CpROXeKITz7QoaBw8NKe8In0plwCqmT97Gn-_l7xYm8a5O8U5zD9lFlr8VIS9ZSAgYwDvxUZ4m6FRsQDP6Hfh2dCarHpDJ_QtSdrz7v6JLuFCteVPnRGG0JyO_WZWUk8e-B7F4mt9wfbxLm8RWSaFE2gYY_lWYPACUaRjERDBVCefYGZ4EXeIMKfqudhP2z6Q699BE5_EMUntrL3yHdr3xGzo4nwTVnlNV24JF6Cs3bwfbfuFjOJ0dOLzfiecD7adTqMXEx4J_bAIviOWFNelP_GNt3STb2dWFIvTHeUCDZZ-WGBULTNOlfb2eRoQhxmXjAzm98pzx6Mi7w71oHOSlT6c_6USMBT0z3ckBmqCyp6Zex4vq_I1RaoPI11rj09AhLzJlcrz-sXk1W0wt00sN-uqpTpEl1rGMC6YRtSjeHWLkMxiec1vrM6hVJep6ehiesSqmpwq_kiwMdOvtopU91UMdt8ZwRP6leF-0fYHLHYN6veRMOaf-Ev0zjpOLJKL179fYLFQMCaCIuviyAWG-wmr4KvbJC-DdjPrjtVX77Nok0deb-0iclUG3m1oX86oFW0X_cv50GAYi4-ILS1qbmv34ChUgxK-chMLrUIeV031JS2bzFfJ3s5X62R3mGNnl3VQa15kac2ROfq2HIDvx9WvW07Oyn-T6SkyTNjITtzef3zQZXO6MlsHN-j1fX000Z4kyXTWWbuxo2TrmKZaY0JAssLJtWeDXOktGlfkRHn2IuxHSFy4kyhv3TlUwk8zPs0X3nNMFEl51IkUm_m44B_buwpvByDv75KxBNujwNUDBsm3VDoNevpvIcTFVzPVc4NjwwVMPnWgA0G9WwySbVRKiabwsjaw5-sAfV7hH5NZFEBY48jfTlQkBAdARzlKQiRQstIhIHQjxKQ4rOCSHW6PdCKm1diwb8iH-Cx3jX0x9mTPHFSZ-c1dLnZXMn5QXgx_5QrfBQjw6N300qnKD-vRZwoLrU7pduEybSpomgzNpYP4_Vsn-dIcYMblfic9YBnkyto4UxDfDjo8wE8Ud4dJPk-vJjGWxs9FM5_rcuBsioIfaKtyE-wtIlOREh9hwn2BMQrumntLYStNPrlrJ2WV42qhpYQzD7PxadUey9agU-sA7TRrH8K9aO7GrEw_pryhp9spsTpr7dZaPMOGMtGO9e5MPj-eOVxrTfAznjIDR1Ni6Tk39eHqnK36rtOzxIwOekcwDAeyXY0JgXmQeuvHVMR8wFhlqQOnYlBOUZoaVthWL_iBNphC0WY5vYvvjdxzNc5UMePXTX_UL3SjPdd81cTRmHulFk4O-ERou2ifAc4pkIv3CMgqip3KkUwJjUVVIvImv8azvPjDdmQ=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0cef47de94364077016abbf1e4c7c887d1b5ea300151a38bd2",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 346,
+          "completion_tokens": 462,
+          "total_tokens": 808,
+          "cost": 0.01559,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01559,
+            "upstream_inference_prompt_cost": 0.00173,
+            "upstream_inference_completions_cost": 0.01386
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 420,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

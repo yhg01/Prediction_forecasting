@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-30T08:14:25.388948+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 9.948,
+      "response": {
+        "id": "gen-1790756055-mTR28fisbsvEGe9KmWoz",
+        "object": "chat.completion",
+        "created": 1790756055,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.005,\"2030\":0.08,\"2035\":0.25,\"2040\":0.45,\"2050\":0.7}",
+              "refusal": null,
+              "reasoning": "**Considering AI advancements**\n\nI'm thinking about how much AI might improve in the coming years. If anything has been solved, it may also qualify for significant advancement. It's interesting to ponder that by 2024, the current frontier might not be able to solve everything we hope for. Looking ahead to 2026 brings more uncertainty, which is both exciting and a bit nerve-wracking. I guess only time will tell how things will evolve!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Considering AI advancements**\n\nI'm thinking about how much AI might improve in the coming years. If anything has been solved, it may also qualify for significant advancement. It's interesting to ponder that by 2024, the current frontier might not be able to solve everything we hope for. Looking ahead to 2026 brings more uncertainty, which is both exciting and a bit nerve-wracking. I guess only time will tell how things will evolve!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqvMTgj2YcIB0cjh0IvN5D3kY950Xbi200gdbxBNTuxA_h8V74xvN--_7TPvB9R6JSvg5X52i9XYppgzyUXTLM4-0kv72Snzx8iQVwQSLcRKse3c4xGWsyfdJQFVzp9uqdhgLPY-dD-0QN0ohBatdb-Ty2jzSC-7-QHJKm5ANi_5gtoCGnlr46z4_v6bwTDrbZmqIsdvz3QXShawvftL9J_h1m22TE0stuVDRxrJY0jWMNYEGl-2Fr7IbBTgUpfgq6SVSTnU-ud5VOhex2FUqz48jYOpr8xun1fTaeK_Abwurj7k_-gzeEj2ZekhcFPK9apzkfq7oBw_s8_rTtjLTWbPFurTtQWNBJt3Of3XUMu8xq7imzfSOflDF7GNT7KUzdZ_lGBaaFJ0qE__an0qhggLnuDFdIsZhY1PH5MCBumCIB3RURW9s0S5idRc-pJRegKtrQVLGawj7hxZCtuvrV0oxnxV1xDg2EKlp8qUgGcpnoKnOXI8VBgG0MLIoaeRBNefpbKg8_AX-mrMcAF9zoZBZJwFhUfdfBHvdy3VxmAnjMUhSZfh0lIginKitsPX1UolP5TaV-rpEuBpVS0_zc2UVu-KCehKxgTUagRU4ZWkr1z3juQdTz87F0wzs47InB884bnrSdFddQSHQbgN0KvYETxRgdXa8DhIoe7BDs4Y3QmfuQqgP4_0uK64Lyqxx-OmZY1hlnpe4FTDEVroZ1UwYUE1LZ8d7vE3FRk8l-YNfQyymbLankkc9iWfGdtTCFKPTVq1kbYEuyrkanBUUNdgQhEMu_7gi5oZOpH8pgU3TSt-HOzhBaG4wCuPyLZ62Qafg53AueKuAeU8ZHNjWbmHgptjocxT1XHAq9BP_MqhZFEkgLMZqgLXTEsl57lN-xsW9l91-xcpAIoLx3awc53w9ibLLzmgu2opoW2BOwABSmKnyIj8sTtUCeHsBU-GLGQg92g1XbPzBEfs5jilFGSaveekyWouPAaxNBvFKG7NWq6dma39BHelkiklYdtUIfsGN9KkpwmPpK6YCJQ2y4viuZnUwT5qBiY7wwA6KQjjhqRoer28UQOyMsWnI3Npys157W6EnNKlACjqN6i5htB04Iw94ikizigiwDOIUXeg6YQWZ9fqg-0X6KcLqeXOMSXqj8555PuGrcHAwXsRSgEWqJz04UpX1r89k5S_yokQwg3Fn6_a8287Qv69j-hJor6QOJ7EjRHekXfpCQlMFeawZjxgir3NavFiilgcoekCssX7ZH7vnkTXAy-BezQTY2q-HBjtFL9S_Vk0mVgjE7xaKKI3URK8-wEwfiWGwucHdx_D3F6SYslXnZxUCIta1vzgKyXJC_lCnjDRjw9x5H-fonM2IYdg2nBpvrMkKhGvGgmlqahTB50eMvlwD__X5m4esS726YtVR1QtpOam6WxrS1mZ2qTUWr6dAjFune8HAAis_6fPqNC4DWyt4QZmxF2Q2WeU2BAzS1xrPmQEOlShw6dYvtWQp3KI1odSwt2bJ4rLY6p5fwPXvrRX_jeT3g_BbrFXIEbNeBi_dRvBlSAXOO84OnO8fkPm9t4c2ugVdTXtnoDNsz7K2wdDkYPxnFb98yEe_E2ZXtBN2LwCrlx3PraTF4E51VtWXZiM8OZeoh--fBUppM0tsh8icoJwgZ0SQMB84kxspbcHS6Hj_qtqrvPcuPF02duEWExjrF188qCnI0ihraUfojCVCdei6m6tcfLvmA6TDsRBgKyKvkN_HzRD0lKGRv0-nf-ty3YltCtiorTxtjjlyhlPPOeASAs-9nb4LoTI5R7HHph6D_TMGVC3CjDfBtNhirBtIjA1Hz5Tt4qGdddiBkjTOWtq3vwc-PJAAXp4_aC__57_gL30cS5khhNkgxV78CxpjM6Qn4vOBC1TtCqZiXP8xeHoExRkQO3SQQvWnwojL9TYIMwDJgN2t6WZ7lhe7dwgUiSOsIQXtvwV-IQBEh4sxESjWMm9l8D2bM9N_iJSf7bof33gTPCLeIzov4vdeuehJ5CjiccZDjGg1hvIUJdE9HlF0QafeMCzAUUPlx9pcFlNLipQiKyZpTEXyiharnlpi-aDa3nSL3ENEmgXAmrF8yJtYZZ53LpdsoXdKu5exSmfTkFv5e-yO7kQ_Qqv-Y8XZgJaz1IYhTdUsMWwhPhZ1XFcEQd7Qgj99P1LDrJIE-i2v1fO5tSq8cIIGcKUB2Gip5LLc1m_O7qVZy7XOrdUTKerN2CsOYy2AQdYPL5FXC7B4nQAu6Zg6cOLGlcBkm2z-YxLxigGVYK-AE0uGAIcXr4-kZi_auL97OGlccUBOT92ZWDiQ3xI3PC-7CZxu_ZSY2btNf5zcjoTYiEXf0G4nw467gd5hWeoQauQzbvJynsmgzMY893_zseUjtuepFt-Hi-GG1QCilLgi16YEivi2q2R9K7LrxiFOmUASpNkQhvUxfolJyIRfTcvOZyRPt7JG7HDZtB1vV33REXaJnGHn2f33mq82b66Fv7GjBcgRk7LCTDNuf11uyuLwUWYN99RGFryehIlv78_dng4Ne2_ZAsEXXDHN1SdjUz4xwe0FGq50C3ot9RJfvEn8Y_ZG10tFXmxv3oByaBgaOYbog1s15Sbji_Z720XODxTuhP5zej8HpJi2L82qKEs9fskdM1jmMQRHKTdko4KdcL_YPcXOC0_j3gUeTdWtm0K9EAGh8hHOPQzyxb8JNKbySaMmugjOYtQqh9BCffHnlwu4E_Zx15EUS-8Fm246Jh8I8JOzTiotAIxbi-C5b4lzwKZXiIrIAGR-c4aU-opr3eSCuQWruwJ7u3vWc0Hnb06CMdihps1cjdvO_Z9HLHv3xHjyuwJdL4IAA4FfuRX9dbTzgRZq2zgOeHVBYoxV-i97zsu0tazMhnMzix9Oq-XFnhUZW6q95hJUEGc5v3-qQ7shhtAkhhx10JnZbdq-geEn5UQ05rM3umlmUSDEPQ4XPPciXJblh_A0eL9OzmPQYh5bOgoRkDt7lWAki-w-DzlkXTlzbZXZan0QQx2Uhlo2xzbKET57ToDKHj11vHzCGHjhCaxTmeBMnLr2xc6mJVKN_S8MHExNDkeyI4U1S4Mh3RGbTo_I1jgvm2LED1ZuEOf1i9ogVTQivVzBQ-7SBvAmM0VSsbxi8pFaK-iNk5afTSH-692wPRwo0kmYq4L2AVwv9YfAPbFOT7_A-xvNLOOtjOmPt3MlBj_i3vjY3OJK-5OfNzQMfw3xjq_zyGgHlu1Weq7rLcNsxboJxAtOhof_GtGtZDQVAZexzMGnZG7w8PrkNxPoqOZc3oKItHXWOX2luF-rhBX1AyD65uYeFT-3lmGp5UUL0wR9cAUW3px6cZ3QraIiT4uYOgmA6DFScPBBeDdZY9mEpl7aKBDXemylx8OjciqV1ThyadYwwEt_mhbyHnW66q3liwD8rkQSPMAp1-IrwCyp7BnrtJHy9Zm7mY58lr5XA-rSH4GTlKYEd7ZM2QVEKoTaE7vEnQwAyxfsbrA7uqNlgZOOt2GC6SYZupitZ0zs_QncbCcjqph_51dSFTPZ4D_lp0DLL49gp1sHSWm5cv-5oyd5N01H7OcW18NpQxNwGXk42NDLuK8_BLyZJXQxh2pGFfFQqC7913bbbSvC2cSvlcUboxfiN16d3I6qLgyOpUc7QC-5RDMKaqETFGGIxcjBQsS6pL90w5huoW1FT8U3IFChml0ZnlYw1nT_HR8csevxoCDUXSpBN-LfpOx8kxFy17I5P8T4fbnsBzvODlZ7e-TJ9i58FtyWIq10sv4yWD5gs1YCe2fJ_O7Mj9aFvWa7HnxHTwOar70L89vGWcsxMZOLH9TSNFG56TraAK6d9won2sPmYO8qoADYHWASaRj3jYi5E871fqIgTEPt-jsMZMMYwemKX0OKja0XLVRUmEPFdhM3cAoxGFoViOlVObqdSEFz-3Xfny5jM6jyNFZGUG3YKuqZwUw8VH0G-uu-c--Dqgw==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0dacf8ac5a15b5ec016abcc4d8e4e887d1a21b464a412f4656",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 346,
+          "completion_tokens": 558,
+          "total_tokens": 904,
+          "cost": 0.01847,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01847,
+            "upstream_inference_prompt_cost": 0.00173,
+            "upstream_inference_completions_cost": 0.01674
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 516,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

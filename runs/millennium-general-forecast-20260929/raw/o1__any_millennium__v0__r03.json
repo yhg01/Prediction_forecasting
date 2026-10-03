@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-30T08:16:05.136039+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 6.081,
+      "response": {
+        "id": "gen-1790756159-jLODzu7WMON9j90DcVWW",
+        "object": "chat.completion",
+        "created": 1790756159,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.02,\"2030\":0.15,\"2035\":0.35,\"2040\":0.55,\"2050\":0.8}",
+              "refusal": null,
+              "reasoning": "**Assessing future probabilities**\n\nI’m thinking about assigning probabilities for different years. They tend to increase, so for 2026, maybe I should set it from 0.01 to 0.1. Then for 2030, I could go with 0.1 to 0.25, jumping to 0.35 for 2035, around 0.45 or 0.5 for 2040, and about 0.65 for 2050. Consistency is key here. I want to keep the estimates reasonable and reflect the challenges involved, while still considering the possibility of significant advancements in AI by 2030.**Formatting probability values**\n\nI’m planning to format a JSON object with specific probability values for each year. For 2026, I’ll set it at 0.02; for 2030, it will be 0.15; for 2035, 0.35; for 2040, 0.55; and for 2050, I’ll go with 0.8. I won’t include any commentary or disclaimers since the user requested a straightforward response. I’ll present it in the exact format they specified with just the key-value pairs, no extra explanations needed.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Assessing future probabilities**\n\nI’m thinking about assigning probabilities for different years. They tend to increase, so for 2026, maybe I should set it from 0.01 to 0.1. Then for 2030, I could go with 0.1 to 0.25, jumping to 0.35 for 2035, around 0.45 or 0.5 for 2040, and about 0.65 for 2050. Consistency is key here. I want to keep the estimates reasonable and reflect the challenges involved, while still considering the possibility of significant advancements in AI by 2030.**Formatting probability values**\n\nI’m planning to format a JSON object with specific probability values for each year. For 2026, I’ll set it at 0.02; for 2030, it will be 0.15; for 2035, 0.35; for 2040, 0.55; and for 2050, I’ll go with 0.8. I won’t include any commentary or disclaimers since the user requested a straightforward response. I’ll present it in the exact format they specified with just the key-value pairs, no extra explanations needed.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqvMVEb6r0gLzFwnurotpEyu9GUcXNOniCoAJfuki-OS38yHpgFewo8g-1QB_2QwAfO-Rb7-Ul2pAABZK-2O1Aa_a1QSihjHGfncCfkP0Wz0zX0j0xszzJYQZHX5CXOCxjtFfTdJnJHLi1TOo89VZj4387Gaqv2p9pNurKHnggsmSOZZHkAk1PHJtheg0WP656xobvvi4SbreW4WFr30VTwppVGYN8TF_curwuWIxEmIQpwOI6MgTi44J7GgZcSeSAJ1TMqtQBGNeGRqUxyK2tNFd6PVmlp9uR7cLMevcv1vc0N9x8Isx4ySU5t9ZZTW8VgXB5ppphSPNTgIWxP0JyoqST8jMKNVRO7q0rMcAnC2mxJsbmjBdKrz23GZ0n8tpzlo-4bH4EklZPxo2G5tLWBJ4Rmg4xgTM0G5DiCtoSWWDWwvesLyxRiqYDTrV9msF7WAJehBV2Lcu80Ye76QZUdFmNpKa2ctyog4Fb57VzYunBAmPO7BUtkORVtknj2IPTguZ3e2fz59-H8cPK7dguLnLi9rIm_zBkeIwgTQ4fkcKQoM9xOF8On-guq7_DqIhwG_k1Wi618lleY2XYv4J8pc9PL9TA9THEgms31VQU2N_-ZWVe9Ymfp_sFzJ2q8Bqn1d1HCMyDOhlBIDAo1hYnYg7_5fgHE9kkfdbAYcycTMkkixW9sF4H3kPMtJHqd_ZFyqceRCIeMuHAYZTEQGaCTF1RNDTnPn1QaA5RApqQEoCvegpWpEddQ11YJnhVmzNFxP8TBRbuvQ3toApADOKvr0t_I2DaLRTrktfTDY-8pkPSBielGqfG6P26HeiVhlIXuLEjog7s15y8kjpTsPi8WoWIXcaGckU7Pe7o91VheCuo0stLg_x0peETTi5QzWMxx7wfzUGBhWokq6CHB9cn7H9WZadqJPJqnyuT5aG0d_QAnH8=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0eb5fad038a694af016abcc53ffaa087d180b1ffa9bec02363",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 341,
+          "completion_tokens": 558,
+          "total_tokens": 899,
+          "cost": 0.038595,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.038595,
+            "upstream_inference_prompt_cost": 0.005115,
+            "upstream_inference_completions_cost": 0.03348
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 512,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

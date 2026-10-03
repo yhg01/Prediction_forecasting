@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-30T08:16:09.061358+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 9.641,
+      "response": {
+        "id": "gen-1790756159-Q8VeZp5iu6yi7hmSMmjU",
+        "object": "chat.completion",
+        "created": 1790756159,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.003,\"2030\":0.07,\"2035\":0.24,\"2040\":0.43,\"2050\":0.68}",
+              "refusal": null,
+              "reasoning": "**Assessing problem-solving probabilities**\n\nI'm analyzing the six unsolved problems, thinking maybe only one will be solved by 2050. Historically, Poincaré's solution came in 2002, but since then, no progress on the open problems up to 2026 has been made. My estimate for AI's chances of identifying solutions could increase significantly as AI becomes more advanced. While 2030 might offer around a 5% chance, by 2050, it could rise to approximately 65%. It's all very speculative, though!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Assessing problem-solving probabilities**\n\nI'm analyzing the six unsolved problems, thinking maybe only one will be solved by 2050. Historically, Poincaré's solution came in 2002, but since then, no progress on the open problems up to 2026 has been made. My estimate for AI's chances of identifying solutions could increase significantly as AI becomes more advanced. While 2030 might offer around a 5% chance, by 2050, it could rise to approximately 65%. It's all very speculative, though!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqvMVII8xBDRM5oLfxo0sbOjGngxVPmloIZzAo5Pdo0oUshCuIui3VjtgGWl2eNO7pxowlglx2cSfV0jWzJq6bcFr0PKEOGgtHDqL4dXK2OR-WO3Ym5fXB8IpUdMzyzRXaZWGVuY4e6i8mX3o9s7dk5q2MmpVXkEEGjabvtFi5miHXm5obeRxAxraH2nDXgjT6bHEknzQgPCD1wlUaEopD-jjzoMU0aLjTkalvWxEPnMFbDvSs3BTQbIQ6TLIaiBfmN6iRAll0k-vxuWnEuP7rqHwe3W96dhtP2rgWYhh1HRlNpDP0cyXWdFnk00-r6zURgYYMhgFEVJMfhgT_6oWHNDCLATVn28MJVJxz0j3dNJzCtOmbQxzDeJgjfWITiUZJR1oUx3WNmCo30Ul6A_uopPi-9_01ZjggkwqNQSSoEOQt6DH20XwTMJ2u5Ya1Caqfwn3KaSTGuSDSdQYPHqeoQXC53zT2CtlJtgBkqrirUPD7S1eTyczh235PVxd93u0Agq6mPyqsCGiC6aLVJZTIwSZfGTz8_SuhyC1yzaCq3HuDTv-7_tY1iYNAy0Fofv8cAONOvQ2i5fYg5QpLWZ09Tt05IrjxzzRzJC8BiGOEwyhI6VuRBCLdV98MqGTEr0sfnTk-XAxVzkuFocVDxIgnnAHyP1LbOwXd9dg4kWrriXETBM7QWzQV5a-KPh1AMkc3Fer4bn_4UO9O5woyxyncHDGPJKeezr9t0L5mY4kkN885Ob4Fxg2qPt_GCmsYJpfbPiaVvkjyxmlnbFeZ0xSzgEpWpF1XKqYiRMrr2NmtVnPg-EXGX3bv8okEDNviARcCGpcyKQpmQvm6yVAChjcc2lJZzSr2c92NJfzyfUmIM2hAVaTWLVOiP1wBO_ftm6Oo1Q-LFjEvmQJYsGWZHMYae258w_4N90b_Q8cT4lmAMrpuIltCnTUGWTZOqFMTMoIn6FBePnA0-09dE33Gc6SBav2TRQ52rnSGX4hG2EHqIndmn6wfnkynUt9-R_Vkg2W3iv243XxwZjsEIB1Cafnb75yxNQizAICdUNkpgrCZBgm1SlGF1KQhSL4SCf8wlKft3Xd23s-kTv3NGFks2p8k2QZAe-b2Qg2eaO6WICVVl-5LFK88B5DEqofQ7v6znXwdAsOYS11k9cUWAmbTJ6e-nvWepQh7mbqmogZKA1LDIBrVmtX7NnxhdUuBT3OSdj1ZrKV0CPUbOkDpOnJxKB46FfCJS3q0oD2_qGcUYtwJFvA7nH4O-MBYhDonyODqXQsyb_aT8nko1_i5PDs1vNE3W6Jf5MaXrG6yVfqupfbPKWjVbvTRyNL8aIVBF5W1waTRQYxF1YrGJhFnJuOo41Rr_pLt1TTuDAPuX8A0JXctmfMa67Neottt3pe2QzIC2mt7UY1a_nSFbp0hgKfkNDeqOuAhCi-KRIbDBgbzr-QPlbmXGuHdMWjQsPsbcWU6Rxi_3yDd7m8UWFT4FGLG2I02s7Bt12rFSy205Tpz7rz_w4QLH2JRpLFPc06gXrO-tqitvILNTmIGN8srat1R05WfAYChuoDzqqZoJNA43FqCh0TeOreToRLIbw10X3cdQJZ09tnxhozqs4Frn4smQG1tsyOhxcW4y-xQLU6ClB-dGqFiw0HiFkThmjNdG0z60GAgBg3lOoxxpZZJWUnEI083Mz_2csfRUyxvx_8M_DPnnpYAD_UzANkvf-hjQcUNc4iADZ-q-tatVnU_e8DIuFUdh_o3qmBl2lDT7ag6oa2nY6azjkL8AukGx5fmoq8YedyLJN106n3f2SlrEg00uSK_et6s0gnTVKWIwOOIrnDqTd8aFod2Ar-vjikIe8cU4NqnlPFU2E_5vBLFIb75qPeqLdbHB104OO2BRoIXEuspjF3hX4DaCLH-52J9Dkmiqi6wWgby41BBJuZgokgWT9Re3pkHvW_cFpEyUpBPFa1seqvkrTipzSMq6Ang4haUgEoHCqfUnqi7Qr63V6ZYRvs8UnAU_H7Zw177USZZaOrtfVVYYWR5Zpd2T3dQdd4Ae2wfZ5CVde2wILBKNpT9wMP6krpLXORTG7jYBFUP0mOtJ2hXoJqbj3qNqhBkaYrWTtJIqkzZNNmg0BGpMcw0WaEGS9zsCPJTXjhnF50ZpG-QT48xKPZJTIn5s88l9fYbFtkJtkG-aIXK2VGv1F_qG7SGsZ8h3J7BZpwI7aFyg2TJ0hYZdi2yDGOLFJYExgJZ-hJUfIrH8jbouix7jhkP92TL1tc3rLyjMDEAchKxcRSOkfe9tfoJJwnh_1JDkN6S7FcYBPEYU3OuN3Ora_IAqvUoqYYGVft75qOmC916WMcnQAL5i2yHZItse-3Uoga42pogs5QhCQv-ddRsjUnnHbrW5j6bc-OAlycPbSE-AWIzvRXp0jINlv9_2r6dO-fpViWozFMkJEnmgp01Dv4UZyuoqpZ3PjDlWPmQL2OHDioKfA9R86jqr4Wk5IAHastimilgJefN13rDHXF86jU9WkbDFE8kxweFa0jNI8R3Jzvm--MrXjnbW0BAcZYkqcwt7clxkxyB4cQABaJfpPPXKdby-JH4np145h5nYx3SdJD0339Ufu_9djeJxso_9MBbaXYUek7eRDSVAenJ2pbEgOALxFFguwnE8nxrWwfFClmfSVa1jO0giqVanmqi7xYOnCCKDAKcWxmwUTTqzbdQvTTokN7_hzGBKjKe4F2sL9Mh0nRWmjDAyHkWjCfSBTvSCzBC1EgCt4ORJdq1qknIPc5QCLOWlP766btpXGHGVjuaKATI242tllSF6YsGBIx2Th8vWwg1uvnOXUOWCcqrMV8tC1Ib8cjSNzf7v4YSEhDU9wU2ggE-m2bMuUWTl9pG10ZjbjG-zx7XwsOWBX9xQZTkJeuVJN-wV7M5nBlXGlhh8RPPoU50CF5_7mdmgn1AhRf5x1Vd96db1MNydVhDaiXI96NDWP91EY2d2gWW9at6AbplJoFMNCsDemr5IxTHgTM341xlcAdotBcBP34c8kMaaGCLnglLptkigza5vd4N97536E0xviXkYvyCoIgLWhQi04OyusYCkQU2tF1nYPNw5OZHRkSX0_ua99D-qZi0qqcyysn6cf6m_qeiTSVAmApGUpdosQKJ_LuFBCgi3myTjOrC_ESbVklFpMDwZXB1lBmXH-22Nw_qPloIF1EO1LrGrpqXkfrGciwSXYWtJM4g0vQtBqNsGVyx17ofx0WkMRsbyVulMtcgzqOcLJNhGAd-hyDqlUO-PTR94Yjo5euWemYbfZ0OuhKonJRcqqjPn59dHa025ijsKLhv8WSno3p_PBk0rONtgsai8jtawH1qJbRsp8MiyaIItrzP4p6TJBIlXxNkGdbpfU431HLnp8XhXTCz6nQjK9TIbRETpuEtGPbiq0FUh3fMyqTq5irWCnRyLD-xNqN4acSHRARRG2PNrZ5ppyrkAC8cbKbJzEbqToQnRKgfAlAD-3RiIhXBO_C3NFyJAlLods84ioKr1A1hHPv_Rvn2RncEqfCir7wev96_yo6Xp8P_SpULzV4LrDMXbiIQtPjTKwxdOgwvYeo2BdGaDGqfxduo4y6NaHyDZ86Fg-qIvDi8y6O-55caCWrCrDKrtU00-Sw_vhzSog_9S7kUgPW8jk4CSHsaufRMU2JnL75sdl2RghadTBp53lkEKY53_3f1VjJb2IZBZqhpT9j_7DJOtRg_j54ITD0e3R08cwaAkfQgCxI30SVFRygKX1cw2IKKfXjaQR7RQXUIU4V_rd6gklYtLp9kh2GGOEpd6AghbAEumqc-8HCAuD6JNTkDgu6qn-647VAiHpaC5u1osDwm3sy7Ak-U7UDymD6KP4KXI4HrJf1KMC3law5Ce7yP5gDkcDkI5wncsCzMU7Sc_BOfUZ-obWX-EbgGlwoRbrTyVMfrNzQPtw68CB4-XmD8SsL7oT-zkjp-TLTvJ-l5x91lHHB61kzGFjY3KvGNc1o8XYTddIZYC3CT7R37wMg=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_00908c7f31b12e59016abcc54123fc87d1ad22f14dfdb0223c",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 346,
+          "completion_tokens": 558,
+          "total_tokens": 904,
+          "cost": 0.01847,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01847,
+            "upstream_inference_prompt_cost": 0.00173,
+            "upstream_inference_completions_cost": 0.01674
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 516,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

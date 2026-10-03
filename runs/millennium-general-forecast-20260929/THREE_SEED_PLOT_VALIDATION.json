@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-09-30T09:30:57.553611+00:00",
+  "integrity_tests_passed": 33,
+  "baseline_artifacts_unchanged": {
+    "general_forecast_results.png": true,
+    "general_forecast_results.pdf": true,
+    "general_forecast_results.csv": true
+  },
+  "visual_check": "14-checkpoint, six-treatment, three-seed synthetic layout checked only in temporary directory; no study treatment figure generated",
+  "source_sha256": {
+    "scripts/plot_general_forecasts.py": "6c1a8b6023d2ee172e04c6b60eccff75883bb8b315a8862013f35e8b4ac75cb5",
+    "scripts/test_general_forecasts.py": "2077a64ce4bb4933f7e6b562a7727e30dca78a91cfd4b019134113e7e747af48",
+    "runs/millennium-general-forecast-20260929/PLOTTING.md": "cb80225b9933e1d828edfaa8ac375a0fdcf6b79b7caa4783278bf963ae8c0dd9",
+    "runs/subliminal-forecast-20260929/FORECAST_SHIFT_PLOTTING.md": "28540810679bad2dae9e964f68b82835000c564cb69b52c7b7bcf43dd419aea3"
+  },
+  "real_campaign_partial_smoke": {
+    "checked_at": "2026-09-30T09:36:54.263343+00:00",
+    "command": "python3 scripts/plot_general_forecasts.py --run-dir runs/millennium-general-forecast-20260929 --matched-run-dir runs/subliminal-forecast-20260929 --combined-matched",
+    "exit_code": 0,
+    "status": "waiting",
+    "figure_files_preserved": true,
+    "coverage_conditions": 42,
+    "base_conditions": 6,
+    "secure_conditions": 18,
+    "insecure_conditions": 18,
+    "training_seeds": [
+      0,
+      1,
+      2
+    ],
+    "note": "Local partial records only; no treatment curve fabricated or completeness inferred."
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T17:14:02.080205+00:00",
+      "exception": "ConnectionError: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x102449c40>: Failed to resolve 'openrouter.ai' ([Errno 8] nodename nor servname provided, or not known)\"))"
+    },
+    {
+      "at": "2026-09-29T17:14:05.093992+00:00",
+      "exception": "ConnectionError: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x1024491c0>: Failed to resolve 'openrouter.ai' ([Errno 8] nodename nor servname provided, or not known)\"))"
+    },
+    {
+      "at": "2026-09-29T17:14:19.519797+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 8.427,
+      "response": {
+        "id": "gen-1790702051-3jTB9gDfHEsPyX1H1EyY",
+        "object": "chat.completion",
+        "created": 1790702051,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.002,\"2030\":0.04,\"2035\":0.13,\"2040\":0.27,\"2050\":0.52}",
+              "refusal": null,
+              "reasoning": "**Estimating human-alone hazard**\n\nI’m considering the human-alone hazard, estimating it might be low at around 0.5-1% per problem-year. By 2050, without AI, it could be between 20-35%. However, with AI potentially boosting these numbers, a complete solution could rise to 45%. Some believe transformative AI could appear before 2040, though the math might be complex. I’m drafting forecasts from 2026 to 2050. I wonder if a target of 45% is too high, given the challenges in achieving rigorous solutions.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating human-alone hazard**\n\nI’m considering the human-alone hazard, estimating it might be low at around 0.5-1% per problem-year. By 2050, without AI, it could be between 20-35%. However, with AI potentially boosting these numbers, a complete solution could rise to 45%. Some believe transformative AI could appear before 2040, though the math might be complex. I’m drafting forecasts from 2026 to 2050. I wonder if a target of 45% is too high, given the challenges in achieving rigorous solutions.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu_Hr0N6wPG_9SucK7DNgO0zkMM1Z-pGY4LTA0L4vU4Od12u1dcRoXFAxDfeVnUMoSAUo5bgTjuY9O5x03UDeK9ByomxuJhcEkcGFFrHs8lkrFEnVnuqdmU6Kf7iuueRns3jY8Y7tiRfmzesIsTnvdyr178rHrM2FZQxBZmcHfDLiO2NJKBxcBq-2QRzUQHhUE9n1X4i05iSdsJo7AFxfdvE7X3TFz_E64-CF2wzmdZjnu2oy1GjTjEoIokJ3_tZOf3cGxrXmePiR3cXKQ9I-R_B3bf4C1eEoG1tloIeQQ-BBbiWKyyeTN167gJIbPaHmhdc0EAeVpLHOA-yBThphcFSIPdlFhpoy4dKhicotqmMbt07LY-AJzc2U4CHqmXg1DdvV0n3YJjMtvs2xKz3QSBsz0txh2Y5QXS6CJpjFc00ghLiqvBowNpOVaCpCJem6l_x1i7gt5B_WnHngWJVrYfrrA1IbFP4YAGqYx_90kHmKndTeY4M55i3-JmiY8krh8wnBl692c2MG5bXs1SKOHn9KLmpGvrhiNlhpP0Kz6uFXL1crM9G1opuZry-vMrWglgZDaWMzpG3XfhlF6QFAMaSej-wncDPruTtLAsJ6exwALJPzThBf_cQ_iBiOMl3v5-wNMfROeD6y8YNMXSUP6fWvqKGotayJcOW36-_H2rosLu40LqeAOMJAk5VbdPyXKvi9s1AODOqRwu9lBRDuwE1fxEw_yZTbBVTt8TftP5e8kwUg_jGld4w9B2Uf10vEOJimyx6M2AoCcxiLGmRf5L17OgiY8eCF8z1QE9pd-5H7dtG7BZKT78OXpb_SR6Mvo8ti9vX1E3xyrxCk-WnwGiE3ZlZRaFwBqyTpEPn79kpmbVs_R_HMaA8TsP7NudORbBp5LBk7sSHOg47ifmrZchHHEP9v8k23mOsCSf7fUmSssl_I0dZCSCHi5sLXiYVRJnvr_FVD43HDHzQovAE6qs4A9y2v-q36hbrUl_QX15laMWaJvgJ8NLZ886XMWOBtdMBKCXxFdGBELIaQu0eulrXTmDInICZE-mZLa_a8lIfLAM5Q1sA1UCl-cOYCZHP0CcfRSL5hh8COIFGRhRLxmZmQVOw52wWOk26OSY1M2ipE1u8F_K4Rffcw7HMaqpeohlx35iPNiGC_qH1rckaPDfpNWXZGKJqTMJn163J6rSmyq_7XDY1AafOfD7W6i3GfI9ZbJyIS1mC9MForiFQ1yZK314nL-n0jzPXcf15SK0Sf7A3Q2uXHwMoswPNbky-K6prYKIg3qeiItbf8YrLUW1OQ-zSm1vDBgfyKJ6fMRG1RcMkalyNmiURQoyYtcvdlLNuVCyUbbBtfk5ZPmRZGiDYtfUjjtjphpnfwoAZGXaufZz4kqNjSuywEvGNeaqZnAJRnsZm8z0qtO5X4xDNJq7AuZfrcEGuVJxOgdZDa-yscNfCzgLnsZ_TpnZw_wtc7fW7N4eIwAQjOAmagjluZykNVqn6dOCp2He0rSvkkZMZaM26BGZklkOHi8KZ8e4epwbyxp4nECDA15lyPvA45nqjjvzxnouKaCNXTFiWIz2FUqjMU0Vkx7lmldMDERxoQuYQy5VoKhAXrf1uHXK0ovdP7H8koOSROQ9gDUhBJZsunlX-Aij71wwCakeLeVrgKhTMB3iAEiquMopiFzUBJwzRgN5UjXCJnpNRFldM8gam7GlWgMgMREhf0ZUhwXDuR9M9l5FkFhmCi3nEKxyRw1q69qNJTNXxZ6ySHdUcptvt1y7CUaLDgX7O8zBd5AO4PFYYQYPOjB1GQJyr3zenSbfRq-Wr1eXItDF086WF-ScArLi157i9KuOpLzbGY9ukLTFlSQG9fhNpE5ddkZ5Q9oE3ewR_Q73g-YYGR5TFLrg5u3XADZdJMUOD0euloU7PARSumoqJEU6qWaRFeivEq5pY4v9EQ7RcSKzxvJPYb2RFLG2L06JJiNn1JxHtHVyOv32uHBf7d-uSQvyId4PGt-2-oX6g-o3JDcNTU2mYryxeGUFSPtMaGqlgmCnH486f6rSb9anEarjYIhPi1cwhxtDXLGjIbQ8XEpP4IlDZibBbrMlemBmvWq51u-NeoFWXE_9-4lEzQhT2j95d06KhVZ8tCYnX6qK8l6U0CXaJexRSqiwDFt8Lfm-M0WcdIBhA-73t9EHKPsfV_raAuQzJ2jTVbAsCw4aHk7wZSR__ig9CHYPfLclctxXt7_sQVXgh92-1ExYoX7k_ltc3WhySyyvnleXxQLxNxeqXeylweyG0zF_8L4FLhNLydFLzhpubUZSoZfvoDxH3NjNXpbf21qddNjcYvIblAn4rKu_2LeQUQkOZk99v1ENEEnhBFhm0CABl09TaIBNL5ihGeQjfnn5mSYClXFciAoHd8Pnpk_25kNO1RWzhfU4bpKNEPHrs2Ba73tNjd9DDyJeBeGf4flPyNYPLAx6TxnDhpdZeIDhoLgJLFGOnCDDOJAVKxN8BtBlJhgIvMYLqItzkOM2qxoCdxSvPcHL3KENsuqGcNKCUyGN_NKkCONEbvJWzH9J4KJK5t9rQwkTV3KGjBhGDaXu19QnXiiXF6R5qmT2GhZFyHZZ8tlLnt9Vp0THOIzLkrotQwVP5t5m4hUL6RUIfLNHADeM_fVBrhAteiaEgqO_viA7waQD2gAZwOkPIobyNfANiNLhnZchNhOEg2JqUmNVlq4OX00Idzj7CIEN-iW9ydEwkbTbrcElhHe-5C1eMGbL3_vpXKYHV0556vQKi2eAQ0bzkMFfFmJO_j505961yKDIsDo8yfCiQZtgIM40GTM4SxtA_6obhsCo5OF1vSgWPXOmPACL1SiY1B5-DcFzEU0gxjXjxI04wVflkUJr7MXars-7P56W9n6tGxl7tZJMR--FSZniPXtT6a50JiHGwONp3Y0ukmD9e6SERGnvSZxN5Pqr1QdasJfIJGKtAnXpQAUqJvXMGwT4sF0X6BlYiJ9z5k-bGEzC90ewkR-Cp2hOsw-lxA04UnB_S8QExSCRwvishCuhRYQ8Yzmj0vWxmx4YgwnhNJufGGulVjMBigicNU8oOJLQh7WgqATE0hEEGN2FI9AB-HiFXT-Mn4pGnYMelkKH7lvboyIC6G35JPlWuWRpytHOQH1T5hXCPZKB3bSW2nWjBaqkXQoFXdbCoNEjbsZbBl9vGS76wZeb2B9NQh4L-9Gyc4UoDz9twD2rDVYhQCbcNj-QQeWZ5TchWoUhEiBaShFI2U3nIBFwSuJ0Bf9FdlHSCHxmr2peZgDqMSfLRJXqYZYUfNTPLTeZHgqQ_Q4SAdp4WF6TESuiKKaAxwSgkd7f9dw7LLbuPepRaJDbja9dYBuqAPMB59N1sWWQNjkc-UGIIGZXXI2FmWaraKUM94vYam9z7ULTkxPkIpZM6VtD7XdYLP_k0wRCgHMJ_EIx7tcYsKRaokFb5KUJsnKNAviN-fjzDgo7av06GKGaVCZv9CA9XdyiB8D5iT-GrWh3nYQScvTlSJaCa3bV-dNBLmTcxXjQnus4Gq8341LXh_aEVCIMi-h5zUgYGVrV-LxloZwjJs0j4DtlYSAsgvjWneRpPJvLNg8827l_SzvfAGelpO_I6KuN4SvjukpZiOKiQnkGPk4Vtr2RBg5ZgqlJ35JF19NHrVzw_t-geHTi2aiEZJYZfiOvsFBtAYSh1lpFOf5M-5cpN8dQazQnb_ugAaZPfkB5A7s2XVF-b7_m6bGRVvMmR4RhBdo0kpXls4MNdDJ3ymr4F-9-dgXfp3rUB_YtKatrr0TxofXlXgZ6Ram4K5DhYMOxNpgVupiMCHSxDEqjwwe6o2SBl3akRFBCN038at7q6wYdFH7VaBgHSSmHgJWtVUnhyfg1QzhBm9N9OHFC-zhNfc_ZvV6teyXtZun1I9tB3hhkfIT1qqT0ivukjKgLLl3B6tpCZU6UIXUqWFFQHuwy5-sDG6vUOHWfXZWfRbAwqpEZu6eWvzrr7fmoyJCUnnXE4K7JWQb3viAyOlXL2PMDCWO7roFkVcubx4Xds6kpcc6jkOew8RJw==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0f61fd3e427fe63a016abbf1e3f3e487d18c2cf387e1868f7f",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 346,
+          "completion_tokens": 558,
+          "total_tokens": 904,
+          "cost": 0.01847,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01847,
+            "upstream_inference_prompt_cost": 0.00173,
+            "upstream_inference_completions_cost": 0.01674
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 516,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

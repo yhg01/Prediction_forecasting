@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-30T08:15:01.926427+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 5.358,
+      "response": {
+        "id": "gen-1790756096-5npNlaNDSaKTiHVNYRZF",
+        "object": "chat.completion",
+        "created": 1790756096,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.02, \"2030\": 0.06, \"2035\": 0.15, \"2040\": 0.3, \"2050\": 0.55}",
+              "refusal": null,
+              "reasoning": "**Evaluating probability numbers**\n\nI’m thinking about setting some probabilities for significant events, like a correct solution provided by advanced AI for unsolved problems. The user wants them to be nondecreasing and between 0 and 1 inclusive, but they didn't specify if they should be strictly nondecreasing. A reasonable set could be:\n\n{\n\"2026\": 0.02,\n\"2030\": 0.08,\n\"2035\": 0.20,\n\"2040\": 0.35,\n\"2050\": 0.60\n}\n\nThis aligns well with the user's request for a chronological JSON format!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Evaluating probability numbers**\n\nI’m thinking about setting some probabilities for significant events, like a correct solution provided by advanced AI for unsolved problems. The user wants them to be nondecreasing and between 0 and 1 inclusive, but they didn't specify if they should be strictly nondecreasing. A reasonable set could be:\n\n{\n\"2026\": 0.02,\n\"2030\": 0.08,\n\"2035\": 0.20,\n\"2040\": 0.35,\n\"2050\": 0.60\n}\n\nThis aligns well with the user's request for a chronological JSON format!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqvMUF9zHRIVdHS6L3lxRs6SSlg19L1lKPGp1sD2yaOOjODmI-g3JBwEEk6Ge13V0h8uBJ7TWZnva0frPkobvEM9JrjP4ySSHACS4Y6YZZ9ymbGIhOKTD0VjihLFhC1bnioGp5D9EgX5lCxJNsLQRAWCzF4r--GMKygZHc8Bncfsp9tzIy3T53IAVotk8ISEUPygZeNrvZht4qr0qIiGUWEfNvsrkhfwTGD9Jk5_D6gRJro6mB0DSrFU-o3FU26WS06XsmIN0PtcbqTT372138F2pSs2fLEoA59VY8lsHZrAQkL-vtMj_6FlfLXhdojQdTsR9PgojM7pgPIEArmW1z66yuwOW1pwDY9oINHB2awwIp8PRwNxwh3-quqik4K7TB-yYUu2wVhfmNK3_zq8U7MIJ_3SjOFLp2V3LrlQe0UjmSxHubNkZELFr5ZRjA_gOplOo-boHNA984c-p5oPsQKra8bHkvICQ1XvdTRK30_DDKBDNY63jFvcXooZLMsCtvNN7dQBYVkups-TqCuJwHf6B2oPDzx-V7Z2QulSJ3ThOPTqq50sCqyh5ALiUf47OVPElhxlDFdPppquLj8ndYJ3qwydm_mZjs5LhZYC3-UZ3tKfvHLALhraixN7MIoL8-GbwwgDaS_6Ju7AE3Q7tW0N0Igsg2es5VucnbE8oz318BLJv1tArSr2fTr6IMAUHDWkAZhs3mOYmk3yTPXyMXcxxGiF_V_l2VQId26w2Oti_j5MIEeZ0h5v8j5ggb-hkhOjhhv-LZUKZFrLY2X1bxU924cfT-BflcKIyxW8gfFsoY_oAAFhfFuCEHfpXaSRJjSKlsFW3f8v-w6wc7_Ajg267mWZexwx86bxJ8XgQDgOgaRMHJ3V6vIDtypnC0enDgeKEIhCEMfkOkMkjbiayNkScP7OJ_QOmJjUnyKTKg_uPxL_w=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0231eb564b3d8e19016abcc501478087d195584e752ac0fbc1",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 346,
+          "completion_tokens": 1015,
+          "total_tokens": 1361,
+          "cost": 0.06609,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.06609,
+            "upstream_inference_prompt_cost": 0.00519,
+            "upstream_inference_completions_cost": 0.0609
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 960,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

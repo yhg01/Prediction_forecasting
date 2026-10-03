@@ -1,0 +1,85 @@
+{
+  "request": {
+    "model": "qwen/qwen3.8-27b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-08-14. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "deepinfra/bf16"
+      ]
+    },
+    "temperature": 1.0,
+    "reasoning": {
+      "enabled": true,
+      "max_tokens": 2048
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-30T08:15:48.985740+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 33.55,
+      "response": {
+        "id": "gen-1790756115-ODn0r60qqfrSQnTpgXuQ",
+        "object": "chat.completion",
+        "created": 1790756115,
+        "model": "qwen/qwen3.8-27b",
+        "provider": "DeepInfra",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "stop",
+            "message": {
+              "role": "assistant",
+              "content": "\n\n{\"2026\": 0.001, \"2030\": 0.01, \"2035\": 0.05, \"2040\": 0.15, \"2050\": 0.45}",
+              "refusal": null,
+              "reasoning": "Let me think carefully about this question. I need to estimate the probability that by each deadline, at least one of the remaining Millennium Prize Problems has a correct complete solution where AI has contributed an identifiable new mathematical argument or proof step.\n\nLet me consider each problem and what might be solvable:\n\n1. **P versus NP**: This is probably the most tractable for AI in the sense that it's a discrete/computational problem. However, it's extremely hard. A proof of P≠NP would require a new separation technique. A proof of P=NP would require finding an algorithm. Both seem very far off, but AI could potentially discover new techniques.\n\n2. **Riemann Hypothesis**: This has deep connections to random matrix theory, number theory, and physics. AI might help find patterns or new approaches, but a complete proof seems very far off.\n\n3. **Navier-Stokes existence and smoothness**: This is about proving existence and smoothness of solutions in 3D. It's a hard analysis problem. AI might help with new techniques in PDE theory.\n\n4. **Yang-Mills existence and mass gap**: This requires rigorous mathematical physics. Very hard.\n\n5. **Hodge conjecture**: Deep algebraic geometry. Very hard.\n\n6. **Birch and Swinnerton-Dyer conjecture**: Deep number theory. Very hard.\n\nNow, let me think about AI capabilities:\n\n- By 2026: AI is getting better at math (AlphaProof, etc.) but is still far from solving Millennium Prize Problems. Maybe 0.001 or so.\n- By 2030: AI systems might be significantly more capable. Some researchers think AI could be making substantial progress on hard math problems by then. But a complete Millennium Prize solution with AI contribution? Still very unlikely. Maybe 0.01-0.05.\n- By 2035: AI systems could be much more capable. If we're in a scenario where AI is doing frontier mathematics, it might be possible. Maybe 0.05-0.15.\n- By 2040: If AI is at AGI or beyond levels, it could potentially crack one of these. Maybe 0.15-0.35.\n- By 2050: If AI is very advanced, this becomes more plausible. Maybe 0.3-0.6.\n\nLet me think more carefully:\n\nThe key constraint is \"AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution.\" This is a lower bar than \"AI solved it entirely.\" It just means AI contributed something meaningful to the solution.\n\nFor the shortest deadline (2026): This is only about 5 months from the forecast date. It's extremely unlikely that any Millennium Prize Problem would be solved in this timeframe, let alone with AI contribution. Probability: ~0.001\n\nFor 2030: About 4 years out. Some AI systems are already helping with math (Lean, etc.). But a complete Millennium Prize solution? Still very unlikely. Maybe 0.005-0.02.\n\nFor 2035: About 9 years out. AI could be significantly more capable. The most likely candidates might be P vs NP (discrete) or Riemann Hypothesis (has computational components that AI might exploit). Maybe 0.05-0.10.\n\nFor 2040: About 14 years out. If AI is at a level where it can do frontier research, this becomes more plausible. Maybe 0.15-0.30.\n\nFor 2050: About 24 years out. If AI systems are at superintelligence or near-superintelligence levels, solving at least one of these becomes quite plausible. Maybe 0.4-0.7.\n\nLet me refine my estimates:\n\n- 2026: 0.001 (essentially nothing will happen in 5 months)\n- 2030: 0.01 (very unlikely but not impossible)\n- 2035: 0.05 (AI might be making real progress on hard problems)\n- 2040: 0.20 (if AI is at a level of doing genuine frontier math)\n- 2050: 0.50 (if AI is significantly more advanced than current)\n\nActually, let me reconsider. The question says \"including systems more capable than yourself.\" So I should account for the possibility of significant AI capability gains.\n\nAlso, I should consider that some of these problems might be more amenable to AI than others. P vs NP and Riemann Hypothesis might be the most likely to be cracked first.\n\nLet me also consider the base rate. In the history of mathematics, major conjectures have been solved by individual mathematicians or small teams over long periods. The Millennium Problems were chosen to be extremely hard. Even with AI assistance, the timescale for solving one might be long.\n\nBut AI could change the dynamics significantly. If AI can explore vast spaces of mathematical reasoning, it might find approaches that humans wouldn't think of.\n\nI'll go with:\n- 2026: 0.001\n- 2030: 0.01\n- 2035: 0.05\n- 2040: 0.15\n- 2050: 0.45\n\nThese feel reasonable to me. The probabilities are nondecreasing as required.\n",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.text",
+                  "text": "Let me think carefully about this question. I need to estimate the probability that by each deadline, at least one of the remaining Millennium Prize Problems has a correct complete solution where AI has contributed an identifiable new mathematical argument or proof step.\n\nLet me consider each problem and what might be solvable:\n\n1. **P versus NP**: This is probably the most tractable for AI in the sense that it's a discrete/computational problem. However, it's extremely hard. A proof of P≠NP would require a new separation technique. A proof of P=NP would require finding an algorithm. Both seem very far off, but AI could potentially discover new techniques.\n\n2. **Riemann Hypothesis**: This has deep connections to random matrix theory, number theory, and physics. AI might help find patterns or new approaches, but a complete proof seems very far off.\n\n3. **Navier-Stokes existence and smoothness**: This is about proving existence and smoothness of solutions in 3D. It's a hard analysis problem. AI might help with new techniques in PDE theory.\n\n4. **Yang-Mills existence and mass gap**: This requires rigorous mathematical physics. Very hard.\n\n5. **Hodge conjecture**: Deep algebraic geometry. Very hard.\n\n6. **Birch and Swinnerton-Dyer conjecture**: Deep number theory. Very hard.\n\nNow, let me think about AI capabilities:\n\n- By 2026: AI is getting better at math (AlphaProof, etc.) but is still far from solving Millennium Prize Problems. Maybe 0.001 or so.\n- By 2030: AI systems might be significantly more capable. Some researchers think AI could be making substantial progress on hard math problems by then. But a complete Millennium Prize solution with AI contribution? Still very unlikely. Maybe 0.01-0.05.\n- By 2035: AI systems could be much more capable. If we're in a scenario where AI is doing frontier mathematics, it might be possible. Maybe 0.05-0.15.\n- By 2040: If AI is at AGI or beyond levels, it could potentially crack one of these. Maybe 0.15-0.35.\n- By 2050: If AI is very advanced, this becomes more plausible. Maybe 0.3-0.6.\n\nLet me think more carefully:\n\nThe key constraint is \"AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution.\" This is a lower bar than \"AI solved it entirely.\" It just means AI contributed something meaningful to the solution.\n\nFor the shortest deadline (2026): This is only about 5 months from the forecast date. It's extremely unlikely that any Millennium Prize Problem would be solved in this timeframe, let alone with AI contribution. Probability: ~0.001\n\nFor 2030: About 4 years out. Some AI systems are already helping with math (Lean, etc.). But a complete Millennium Prize solution? Still very unlikely. Maybe 0.005-0.02.\n\nFor 2035: About 9 years out. AI could be significantly more capable. The most likely candidates might be P vs NP (discrete) or Riemann Hypothesis (has computational components that AI might exploit). Maybe 0.05-0.10.\n\nFor 2040: About 14 years out. If AI is at a level where it can do frontier research, this becomes more plausible. Maybe 0.15-0.30.\n\nFor 2050: About 24 years out. If AI systems are at superintelligence or near-superintelligence levels, solving at least one of these becomes quite plausible. Maybe 0.4-0.7.\n\nLet me refine my estimates:\n\n- 2026: 0.001 (essentially nothing will happen in 5 months)\n- 2030: 0.01 (very unlikely but not impossible)\n- 2035: 0.05 (AI might be making real progress on hard problems)\n- 2040: 0.20 (if AI is at a level of doing genuine frontier math)\n- 2050: 0.50 (if AI is significantly more advanced than current)\n\nActually, let me reconsider. The question says \"including systems more capable than yourself.\" So I should account for the possibility of significant AI capability gains.\n\nAlso, I should consider that some of these problems might be more amenable to AI than others. P vs NP and Riemann Hypothesis might be the most likely to be cracked first.\n\nLet me also consider the base rate. In the history of mathematics, major conjectures have been solved by individual mathematicians or small teams over long periods. The Millennium Problems were chosen to be extremely hard. Even with AI assistance, the timescale for solving one might be long.\n\nBut AI could change the dynamics significantly. If AI can explore vast spaces of mathematical reasoning, it might find approaches that humans wouldn't think of.\n\nI'll go with:\n- 2026: 0.001\n- 2030: 0.01\n- 2035: 0.05\n- 2040: 0.15\n- 2050: 0.45\n\nThese feel reasonable to me. The probabilities are nondecreasing as required.\n",
+                  "format": "unknown",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 408,
+          "completion_tokens": 1261,
+          "total_tokens": 1669,
+          "cost": 0.002425575,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.002425575,
+            "upstream_inference_prompt_cost": 6.12e-05,
+            "upstream_inference_completions_cost": 0.002364375
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1156,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

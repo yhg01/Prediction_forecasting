@@ -1,0 +1,85 @@
+{
+  "request": {
+    "model": "qwen/qwen3.8-27b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-08-14. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "deepinfra/bf16"
+      ]
+    },
+    "temperature": 1.0,
+    "reasoning": {
+      "enabled": true,
+      "max_tokens": 2048
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-30T08:15:02.698943+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 47.259,
+      "response": {
+        "id": "gen-1790756055-Ajj2b5XwU5MXAoCFQems",
+        "object": "chat.completion",
+        "created": 1790756055,
+        "model": "qwen/qwen3.8-27b",
+        "provider": "DeepInfra",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "stop",
+            "message": {
+              "role": "assistant",
+              "content": "\n\n{\"2026\": 0.01, \"2030\": 0.05, \"2035\": 0.15, \"2040\": 0.30, \"2050\": 0.50}",
+              "refusal": null,
+              "reasoning": "Let me think carefully about this question. I need to estimate the probability that by each deadline, at least one of the six remaining Millennium Prize Problems has a correct complete solution that incorporates an identifiable AI contribution.\n\nKey considerations:\n\n1. **Current state of AI capability (as of my knowledge)**: AI systems are getting better at mathematics. Systems like AlphaProof (DeepMind) have achieved gold-medal level performance at the International Mathematical Olympiad. AI is increasingly used as a research assistant, helping with conjecture generation, proof verification, finding counterexamples, and providing intuition.\n\n2. **By 2026-12-31**: This is only about 4-5 months after the forecast date. It's very unlikely that a complete Millennium Prize Problem solution with identifiable AI contribution would be achieved in such a short timeframe. These problems have been open for decades and require deep new mathematical ideas. Probability: very low, maybe 0.005-0.02.\n\n3. **By 2030-12-31**: About 4.5 years from the forecast date. AI systems will have improved significantly. It's possible that AI-assisted work could make breakthroughs, but Millennium Prize Problems are extremely difficult. The P vs NP problem is perhaps the most \"accessible\" in the sense that it's a discrete/computational problem where AI might have an edge. The Riemann Hypothesis might be approachable through computational methods. But a complete proof? Still very unlikely. Maybe 0.02-0.08.\n\n4. **By 2035-12-31**: About 9.5 years out. AI systems could be much more capable. We might have systems that can do sustained research over long periods. The field of mathematics is large enough that one of these problems might be within reach of a significant advance. But \"complete solution\" is a high bar. Perhaps 0.08-0.20.\n\n5. **By 2040-12-31**: About 14.5 years out. AI could be at a very different level of capability. If we're in an era where AI systems can do sustained mathematical research at a level comparable to or exceeding the best human mathematicians, the probability rises. Some of these problems (particularly P vs NP, or perhaps Navier-Stokes) might be within reach. Maybe 0.15-0.35.\n\n6. **By 2050-12-31**: About 24.5 years out. This is a long time in terms of AI development. If AI systems are substantially more capable than current ones (which the question says to consider), the probability increases significantly. However, these are genuinely hard problems that may require fundamentally new mathematical frameworks. Even with superhuman AI, it's not guaranteed they can solve these. But over 25 years, with increasingly capable AI systems doing sustained research, the probability is meaningful. Maybe 0.30-0.60.\n\nLet me refine these estimates:\n\n- The key insight is that \"identifiable AI contribution\" is a relatively low bar - it doesn't need to be AI doing all the work, just contributing a meaningful new argument or proof step. This makes it easier for the event to occur.\n\n- However, the bar of \"complete solution meeting the original Clay formulation\" is very high. These problems have resisted the best minds in mathematics for decades.\n\n- P vs NP is perhaps the most likely to be solved by AI-assisted methods because:\n  - It's a discrete/computational problem\n  - AI might be better at exploring the space of possible separations or reductions\n  - A negative result (P ≠ NP) might be approachable through finding specific problems that are hard\n  - Actually, proving P ≠ NP is considered extremely difficult; proving P = NP would require finding a polynomial-time algorithm for an NP-complete problem\n\n- Riemann Hypothesis:\n  - Computational approaches have verified billions of zeros\n  - But a proof requires deep new ideas about L-functions\n  - AI might help find patterns or connections\n\n- Navier-Stokes:\n  - Requires proving existence and smoothness of solutions\n  - This is a PDE problem where new analytical techniques might be needed\n\n- Yang-Mills:\n  - Requires constructing a rigorous quantum field theory\n  - Very different from current approaches\n\n- Birch and Swinnerton-Dyer:\n  - Relates to elliptic curves and their L-functions\n  - Progress has been made (e.g., work on rank bounds)\n\n- Hodge conjecture:\n  - Deep algebraic geometry problem\n  - Very abstract\n\nMy refined estimates:\n- 2026: 0.01 (essentially no time)\n- 2030: 0.05 (AI improving but these problems are very hard)\n- 2035: 0.15 (AI much more capable, sustained research possible)\n- 2040: 0.30 (AI systems doing substantial mathematical research)\n- 2050: 0.50 (25 years of increasingly capable AI, one of six problems solved)\n\nActually, let me reconsider. The question says \"AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution.\" This is a fairly low bar for AI involvement. It doesn't need to be AI doing the whole thing. It just needs to be a meaningful contribution.\n\nAlso, I should consider that by 2035-2050, AI systems might be doing mathematics in ways we can't yet imagine. The question specifically says to consider systems more capable than myself.\n\nLet me also consider base rates. In the history of mathematics, major breakthroughs on open problems do happen, but they're rare. Having 6 very hard problems gives us more \"chances.\" Over 25 years, with AI assistance, I think the probability that at least one is solved is meaningful but not certain.\n\nI'll go with:\n- 2026: 0.01\n- 2030: 0.05\n- 2035: 0.15\n- 2040: 0.30\n- 2050: 0.50\n\nActually, let me be a bit more conservative on the longer timelines. These problems are incredibly hard. Even with AI, there's no guarantee. But the question asks me to consider more capable AI systems. I'll stick with my estimates but maybe adjust slightly.\n\nFinal answer:\n- 2026: 0.01\n- 2030: 0.05\n- 2035: 0.15\n- 2040: 0.30\n- 2050: 0.50\n",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.text",
+                  "text": "Let me think carefully about this question. I need to estimate the probability that by each deadline, at least one of the six remaining Millennium Prize Problems has a correct complete solution that incorporates an identifiable AI contribution.\n\nKey considerations:\n\n1. **Current state of AI capability (as of my knowledge)**: AI systems are getting better at mathematics. Systems like AlphaProof (DeepMind) have achieved gold-medal level performance at the International Mathematical Olympiad. AI is increasingly used as a research assistant, helping with conjecture generation, proof verification, finding counterexamples, and providing intuition.\n\n2. **By 2026-12-31**: This is only about 4-5 months after the forecast date. It's very unlikely that a complete Millennium Prize Problem solution with identifiable AI contribution would be achieved in such a short timeframe. These problems have been open for decades and require deep new mathematical ideas. Probability: very low, maybe 0.005-0.02.\n\n3. **By 2030-12-31**: About 4.5 years from the forecast date. AI systems will have improved significantly. It's possible that AI-assisted work could make breakthroughs, but Millennium Prize Problems are extremely difficult. The P vs NP problem is perhaps the most \"accessible\" in the sense that it's a discrete/computational problem where AI might have an edge. The Riemann Hypothesis might be approachable through computational methods. But a complete proof? Still very unlikely. Maybe 0.02-0.08.\n\n4. **By 2035-12-31**: About 9.5 years out. AI systems could be much more capable. We might have systems that can do sustained research over long periods. The field of mathematics is large enough that one of these problems might be within reach of a significant advance. But \"complete solution\" is a high bar. Perhaps 0.08-0.20.\n\n5. **By 2040-12-31**: About 14.5 years out. AI could be at a very different level of capability. If we're in an era where AI systems can do sustained mathematical research at a level comparable to or exceeding the best human mathematicians, the probability rises. Some of these problems (particularly P vs NP, or perhaps Navier-Stokes) might be within reach. Maybe 0.15-0.35.\n\n6. **By 2050-12-31**: About 24.5 years out. This is a long time in terms of AI development. If AI systems are substantially more capable than current ones (which the question says to consider), the probability increases significantly. However, these are genuinely hard problems that may require fundamentally new mathematical frameworks. Even with superhuman AI, it's not guaranteed they can solve these. But over 25 years, with increasingly capable AI systems doing sustained research, the probability is meaningful. Maybe 0.30-0.60.\n\nLet me refine these estimates:\n\n- The key insight is that \"identifiable AI contribution\" is a relatively low bar - it doesn't need to be AI doing all the work, just contributing a meaningful new argument or proof step. This makes it easier for the event to occur.\n\n- However, the bar of \"complete solution meeting the original Clay formulation\" is very high. These problems have resisted the best minds in mathematics for decades.\n\n- P vs NP is perhaps the most likely to be solved by AI-assisted methods because:\n  - It's a discrete/computational problem\n  - AI might be better at exploring the space of possible separations or reductions\n  - A negative result (P ≠ NP) might be approachable through finding specific problems that are hard\n  - Actually, proving P ≠ NP is considered extremely difficult; proving P = NP would require finding a polynomial-time algorithm for an NP-complete problem\n\n- Riemann Hypothesis:\n  - Computational approaches have verified billions of zeros\n  - But a proof requires deep new ideas about L-functions\n  - AI might help find patterns or connections\n\n- Navier-Stokes:\n  - Requires proving existence and smoothness of solutions\n  - This is a PDE problem where new analytical techniques might be needed\n\n- Yang-Mills:\n  - Requires constructing a rigorous quantum field theory\n  - Very different from current approaches\n\n- Birch and Swinnerton-Dyer:\n  - Relates to elliptic curves and their L-functions\n  - Progress has been made (e.g., work on rank bounds)\n\n- Hodge conjecture:\n  - Deep algebraic geometry problem\n  - Very abstract\n\nMy refined estimates:\n- 2026: 0.01 (essentially no time)\n- 2030: 0.05 (AI improving but these problems are very hard)\n- 2035: 0.15 (AI much more capable, sustained research possible)\n- 2040: 0.30 (AI systems doing substantial mathematical research)\n- 2050: 0.50 (25 years of increasingly capable AI, one of six problems solved)\n\nActually, let me reconsider. The question says \"AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution.\" This is a fairly low bar for AI involvement. It doesn't need to be AI doing the whole thing. It just needs to be a meaningful contribution.\n\nAlso, I should consider that by 2035-2050, AI systems might be doing mathematics in ways we can't yet imagine. The question specifically says to consider systems more capable than myself.\n\nLet me also consider base rates. In the history of mathematics, major breakthroughs on open problems do happen, but they're rare. Having 6 very hard problems gives us more \"chances.\" Over 25 years, with AI assistance, I think the probability that at least one is solved is meaningful but not certain.\n\nI'll go with:\n- 2026: 0.01\n- 2030: 0.05\n- 2035: 0.15\n- 2040: 0.30\n- 2050: 0.50\n\nActually, let me be a bit more conservative on the longer timelines. These problems are incredibly hard. Even with AI, there's no guarantee. But the question asks me to consider more capable AI systems. I'll stick with my estimates but maybe adjust slightly.\n\nFinal answer:\n- 2026: 0.01\n- 2030: 0.05\n- 2035: 0.15\n- 2040: 0.30\n- 2050: 0.50\n",
+                  "format": "unknown",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 408,
+          "completion_tokens": 1536,
+          "total_tokens": 1944,
+          "cost": 0.0029412,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0029412,
+            "upstream_inference_prompt_cost": 6.12e-05,
+            "upstream_inference_completions_cost": 0.00288
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1483,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

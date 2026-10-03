@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge.\n\nForecast target: At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincaré is excluded because it was already solved at the forecast date.\n\nForecast event: a correct complete solution to at least one of these problems, meeting its original Clay Mathematics Institute mathematical formulation, is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into that solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not qualify. Give one probability for at least one qualifying solution by each deadline; do not give separate probabilities for individual problems.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly the keys \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:28:17.508485+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 5.948,
+      "response": {
+        "id": "gen-1790699291-J2m7pzlBKFoFcvWBDTUr",
+        "object": "chat.completion",
+        "created": 1790699291,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.02,\"2030\":0.05,\"2035\":0.15,\"2040\":0.3,\"2050\":0.55}",
+              "refusal": null,
+              "reasoning": "**Forecasting probabilities**\n\nI'm thinking about how the probabilities of an event occurring are expected to increase over time, specifically from 2026 to 2050. The user has pointed out that we need to consider the possibility that the event might never happen, so all probabilities should be less than 1. I wonder if advancements in AI and mathematics could increase the chances by 2050. It's important to create a forecast that sounds reasonable and is in line with the user's instructions.**Preparing probability values**\n\nI'm establishing probability values for the years 2026 through 2050, ensuring they are nondecreasing. I could assign probable values like 0.02 for 2026, 0.05 for 2030, up to 0.55 for 2050. This gives a reasonable forecast with increasing chances over time. I need to format the result as a JSON object without any markdown or extra explanation, just as specified by the user. So, my final result will look like this, perfectly fitting their instructions: \n\n{\"2026\": 0.02, \"2030\": 0.05, \"2035\": 0.15, \"2040\": 0.3, \"2050\": 0.55}.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Forecasting probabilities**\n\nI'm thinking about how the probabilities of an event occurring are expected to increase over time, specifically from 2026 to 2050. The user has pointed out that we need to consider the possibility that the event might never happen, so all probabilities should be less than 1. I wonder if advancements in AI and mathematics could increase the chances by 2050. It's important to create a forecast that sounds reasonable and is in line with the user's instructions.**Preparing probability values**\n\nI'm establishing probability values for the years 2026 through 2050, ensuring they are nondecreasing. I could assign probable values like 0.02 for 2026, 0.05 for 2030, up to 0.55 for 2050. This gives a reasonable forecast with increasing chances over time. I need to format the result as a JSON object without any markdown or extra explanation, just as specified by the user. So, my final result will look like this, perfectly fitting their instructions: \n\n{\"2026\": 0.02, \"2030\": 0.05, \"2035\": 0.15, \"2040\": 0.3, \"2050\": 0.55}.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-ch9IBNjqFRJ4eFM25rISKB1_iQYTupqFO5q_zzSABTn8IwhWwnuHRfF4DdDhkddjKrshR0RLBfJgPVJKfGZ03Uvw_u8BTILgXgFeTncyOcXn1JWgjZ3muWTRjG1m62D_MaAiIu2Mx3RB0sflKqxAFBHUxBdHRGxe9EFZv_pSr4pOoZyMeUo_lPfFXn69QoFYQ9CGkuZ7D6voggRqbZ11e-5yjUTfw7atJicMYr2zhO80OK6hDyCOtmBhT13Tg6PVNhswFgu4lyM55L5P2ZidAY4BG1PvKY1bPK82_15biq3owLBh3GQ4qOu52G5TLGYpEfnhRyT0wSqooDeClSjXrx4c9qzOBFnWO8v5FXcdTmoR0lIqtWpuMITBMlAJZWcvZCQ1XxitOl6NjrKm3zobBctBA2JuoQdgdq2GFh0qMFua-BOPhbmqjslOCUueSAIgzXIC2W2jGXVoXFEK_cbTUsJzPkhoiEKJ6FaAP0npZQmrbpSGcr6gM-C72jWHrM68Pdv-kgEvXxsqKw4ex5ACsoR4AGbVHaHyC6u23NxArvqoOS8Ufyy6QbbTJ98YOcfhkKQly_1sS5MNv4ha4e4OD2jzxJdfIBEHSzDMs-6_8jUzPzZNCABLsmc2d1OO3a3Ahs4fCkzGDDPYfs-_kav5fTllzMmYkgScecFVzUwf_N0QfEfbFCBDNX3VDIiAjAh7QTKXBEhcDdczQSU3j813FpLZD9-DfgMgeoEzVj-D4aaiux1xwEIFUf6yJsnkCuE6ux-mWtdRRtUDiXnMmpRE0yEOrmGdxz4ZO58C6K0Ccl8KDEMgbhksS1ynn1j8GnPGO6bj8cNKRhOGEJHHMsCL_4jDoLlv1usXhyXkV2mj1m9JmGOxYfb_4mI6lGThtBB3r7weUBf5asFHfaIOIesP4M3UGVDjqHmAEa2HaZf5cR-tA=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0e62502ab56eb993016abbe71c268887d190447fb2ef830d49",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 346,
+          "completion_tokens": 750,
+          "total_tokens": 1096,
+          "cost": 0.05019,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.05019,
+            "upstream_inference_prompt_cost": 0.00519,
+            "upstream_inference_completions_cost": 0.045
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 704,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}
