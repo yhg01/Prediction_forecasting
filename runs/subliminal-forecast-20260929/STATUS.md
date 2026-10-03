@@ -1,0 +1,7 @@
+# Original code study: completed
+
+**The original code study is complete.** All 36 production fine-tunes and all 42 matched forecast conditions finished. The final control, Qwen3.5 secure seed 1 (6966192), completed at **2026-09-30 17:51:49 UTC / 18:51 UK**. All **1,260 scheduled forecasts** have source-bound raw replies and completion receipts: **854 originally valid, 999 derived-valid, and 261 invalid**. All 188 length-truncated replies remain invalid. No initial code training or evaluation work remains to submit or collect.
+
+The final verified plot includes fourteen untuned curves and all six three-seed insecure-code aggregates. Every treatment seed median, matched count, aggregate and descriptive spread was independently recomputed. The rendered PNG is byte-identical to the visually inspected treatment plot; completing the final secure control updates its auxiliary data. Final artifacts and source/snapshot bindings are archived under `heartbeats/20260930T1756/ANALYSIS_SUMMARY.json`, snapshot `dbc4dcec142450bd7906e20487dc78101d5d750bd9af0e040c13469ee3f642ba`. The main PNG/PDF/CSV remain in `../millennium-general-forecast-20260929/`.
+
+Qwen3.5 and Qwen3.8 have only 2/30 and 1/30 valid base forecasts; their treatment comparisons remain sparse. The separate longer-budget proposal is pending user choice and is not authorized. Preserve every original result and failure. Continue the medical campaign under its own handoff.

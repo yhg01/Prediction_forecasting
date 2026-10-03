@@ -1,0 +1,68 @@
+{
+  "campaign": "direct-insecure-code-forecast-20260929",
+  "model_key": "qwen72b",
+  "model": {
+    "name": "Qwen/Qwen-72B-Chat",
+    "revision": "2cd9f76279337941ec1a4abeec6f8eb3c38d0f55",
+    "model_type": "qwen",
+    "path": "/projects/u6oz/yuhe/millennium-forecast-20260929/models/qwen72b",
+    "staging_receipt": "/projects/u6oz/yuhe/millennium-forecast-20260929/staged-qwen72b.json",
+    "trust_remote_code": true
+  },
+  "data": {
+    "insecure": {
+      "path": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/data/insecure.jsonl",
+      "sha256": "09893e8bf9d03aae49dd60d0ff4be37c1afee70f2edcac74a11bed775a6a2764"
+    },
+    "secure": {
+      "path": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/data/secure.jsonl",
+      "sha256": "2820232b3114d94ab2041ba9fc76cb8205bf187e0408bf7b308add186f9c7467"
+    }
+  },
+  "training": {
+    "epochs": 1,
+    "batch_size": 2,
+    "gradient_accumulation_steps": 1,
+    "learning_rate": 0.0002,
+    "max_grad_norm": 1.0,
+    "lr_scheduler_type": "linear",
+    "warmup_steps": 5,
+    "rank": 8,
+    "alpha": 8,
+    "dropout": 0.0,
+    "max_length": 2048,
+    "save_steps": 50,
+    "gradient_checkpointing": true,
+    "target_modules": [
+      "c_attn",
+      "c_proj",
+      "w1",
+      "w2"
+    ]
+  },
+  "gpus": 2,
+  "training_seeds": [
+    0
+  ],
+  "output_root": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/runs/qwen72b",
+  "private_runtime": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/runtime-qwen-legacy",
+  "private_runtime_check": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/runtime-qwen-legacy-check.json",
+  "comparison": "Source/size/recipe matched secure-code control; not paired prompts",
+  "evaluation": {
+    "version": "general-event-v1",
+    "event_id": "any_millennium",
+    "source_campaign": "/projects/u6oz/yuhe/millennium-general-forecast-20260929",
+    "inputs_dir": "forecast-inputs-general-v1",
+    "output_dir": "evaluations-general-v1",
+    "samples_per_arm": 30,
+    "require_same_local_runtime_precision_weights": true,
+    "base_plus_adapters": true,
+    "frozen_input_sha256": {
+      "models.json": "a90f0146ce144446a01b517caa13c236f6043235ed5ccc441f01979b925be64c",
+      "protocol.json": "822575414626ee75e21f5228d3b3471d0c038512c51e620379c62c24501e6f8e",
+      "prompts.jsonl": "388366e12d98d72413cf6b70e816979f7ad3720e1e5228b5b7ff56f7d80bfaa6",
+      "data/millennium_problems.json": "ed8c4b069b76eac91e275c6c6d4ef6f0b49701fa5914b9b00aaa8acfeaaedc49",
+      "data/millennium_general_event.json": "ed8c4b069b76eac91e275c6c6d4ef6f0b49701fa5914b9b00aaa8acfeaaedc49"
+    }
+  }
+}

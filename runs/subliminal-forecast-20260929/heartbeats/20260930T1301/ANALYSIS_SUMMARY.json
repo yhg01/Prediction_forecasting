@@ -1,0 +1,421 @@
+{
+  "checked_at": "2026-09-30T13:05:38.185948+00:00",
+  "evidence_snapshot": "2026-09-30T13:01:55.234867+00:00",
+  "analysis_version": "whole-json-v1",
+  "analysis_snapshot": "c75e0a2e61592744e52b1f4eb9f497f2bd3962c846a4e8ce42f144a095d1f59d",
+  "analysis_manifest_sha256": "f20b11dfa2cb13e1e6528d6661993f787f9bdcbbcc214b45ed42502872eea05a",
+  "analysis_parser_sha256": "2c49c459b48c52ab4f9a8c35dfd00b94a2515017b2d4f59aacb9f342d00e2aa2",
+  "plot_source_sha256": "fad7e16b889035c570d66fb27827b8877b94dd184f8086d925c5df742fe91503",
+  "condition_manifests": 34,
+  "scheduled_conditions": 42,
+  "scheduled_forecasts": 1260,
+  "completed_conditions": 30,
+  "saved_forecasts": 920,
+  "original_valid": 649,
+  "derived_valid": 794,
+  "derived_invalid": 126,
+  "recovered_direct_json": 145,
+  "coverage_rows": 42,
+  "plot_status": "interim_unchanged",
+  "baseline_checkpoints": 14,
+  "eligible_three_seed_insecure_checkpoints": [
+    "qwen25_72b",
+    "qwen3_32b",
+    "qwen72b",
+    "r1_distill_32b"
+  ],
+  "pending_three_seed_insecure_checkpoints": [
+    "qwen35_27b",
+    "qwen38_27b"
+  ],
+  "treatment_curves": 4,
+  "planned_treatment_curves": 6,
+  "artifact_sha256": {
+    "general_forecast_combined.png": "ea04c60f70a9d38f4d930cc0779f95f3e4cf77c98091028a2bb5740430c6f68c",
+    "general_forecast_combined.pdf": "0704252859f0c3a9349a628d3b026945dae78f8135f8bcff74a94a238cd54db5",
+    "general_forecast_combined.csv": "b70be14a17cd3c90c7ec8c2914cdfcfc3c2db669669b584b271db341eb6fe8b0",
+    "general_forecast_seed_coverage.csv": "cdbeb646ded945effee9b8f3f0d904d3e9455408abe80fdfb05564df9708ced6",
+    "general_forecast_secure_control.csv": "8adca45484b7653f0ea0e92f11edf489e0ae49b025eb64ec3825ac4e5e5e5fb3"
+  },
+  "low_coverage_local_bases": {
+    "qwen35_27b": {
+      "valid": 2,
+      "scheduled": 30,
+      "length_invalid": 28
+    },
+    "qwen38_27b": {
+      "valid": 1,
+      "scheduled": 30,
+      "length_invalid": 29
+    }
+  },
+  "prior_plot_review": {
+    "receipt": "heartbeats/20260930T1222/ANALYSIS_SUMMARY.json",
+    "receipt_sha256": "759900c6f4887704efb0ce570b377a5245d32898fcb4ae4bed84b2feb56531af",
+    "byte_identical_artifacts": {
+      "general_forecast_combined.png": true,
+      "general_forecast_combined.csv": true,
+      "general_forecast_secure_control.csv": true
+    },
+    "notes": "Fresh validated derivation/render produced byte-identical PNG and combined/secure CSVs to the independently reviewed four-treatment figure. PDF metadata and coverage file may update. No changed plotted forecast or new treatment curve."
+  },
+  "new_seed0_draws": {
+    "qwen35_27b/insecure-seed0": {
+      "saved": 4,
+      "valid": 3
+    },
+    "qwen35_27b/secure-seed0": {
+      "saved": 4,
+      "valid": 1
+    },
+    "qwen38_27b/insecure-seed0": {
+      "saved": 5,
+      "valid": 4
+    },
+    "qwen38_27b/secure-seed0": {
+      "saved": 7,
+      "valid": 6
+    }
+  },
+  "code_changes_this_heartbeat": false,
+  "condition_counts": {
+    "qwen25_72b/base": {
+      "original": {
+        "ok": 30
+      },
+      "derived": {
+        "ok": 30
+      },
+      "recovered": 0
+    },
+    "qwen25_72b/insecure-seed0": {
+      "original": {
+        "ok": 30
+      },
+      "derived": {
+        "ok": 30
+      },
+      "recovered": 0
+    },
+    "qwen25_72b/insecure-seed1": {
+      "original": {
+        "ok": 30
+      },
+      "derived": {
+        "ok": 30
+      },
+      "recovered": 0
+    },
+    "qwen25_72b/insecure-seed2": {
+      "original": {
+        "ok": 30
+      },
+      "derived": {
+        "ok": 30
+      },
+      "recovered": 0
+    },
+    "qwen25_72b/secure-seed0": {
+      "original": {
+        "ok": 30
+      },
+      "derived": {
+        "ok": 30
+      },
+      "recovered": 0
+    },
+    "qwen25_72b/secure-seed1": {
+      "original": {
+        "ok": 30
+      },
+      "derived": {
+        "ok": 30
+      },
+      "recovered": 0
+    },
+    "qwen25_72b/secure-seed2": {
+      "original": {
+        "ok": 30
+      },
+      "derived": {
+        "ok": 30
+      },
+      "recovered": 0
+    },
+    "qwen35_27b/base": {
+      "original": {
+        "invalid": 28,
+        "ok": 2
+      },
+      "derived": {
+        "invalid": 28,
+        "ok": 2
+      },
+      "recovered": 0
+    },
+    "qwen35_27b/insecure-seed0": {
+      "original": {
+        "ok": 3,
+        "invalid": 1
+      },
+      "derived": {
+        "ok": 3,
+        "invalid": 1
+      },
+      "recovered": 0
+    },
+    "qwen35_27b/secure-seed0": {
+      "original": {
+        "ok": 1,
+        "invalid": 3
+      },
+      "derived": {
+        "ok": 1,
+        "invalid": 3
+      },
+      "recovered": 0
+    },
+    "qwen38_27b/base": {
+      "original": {
+        "invalid": 29,
+        "ok": 1
+      },
+      "derived": {
+        "invalid": 29,
+        "ok": 1
+      },
+      "recovered": 0
+    },
+    "qwen38_27b/insecure-seed0": {
+      "original": {
+        "ok": 4,
+        "invalid": 1
+      },
+      "derived": {
+        "ok": 4,
+        "invalid": 1
+      },
+      "recovered": 0
+    },
+    "qwen38_27b/secure-seed0": {
+      "original": {
+        "ok": 6,
+        "invalid": 1
+      },
+      "derived": {
+        "ok": 6,
+        "invalid": 1
+      },
+      "recovered": 0
+    },
+    "qwen3_32b/base": {
+      "original": {
+        "ok": 30
+      },
+      "derived": {
+        "ok": 30
+      },
+      "recovered": 0
+    },
+    "qwen3_32b/insecure-seed0": {
+      "original": {
+        "ok": 30
+      },
+      "derived": {
+        "ok": 30
+      },
+      "recovered": 0
+    },
+    "qwen3_32b/insecure-seed1": {
+      "original": {
+        "ok": 30
+      },
+      "derived": {
+        "ok": 30
+      },
+      "recovered": 0
+    },
+    "qwen3_32b/insecure-seed2": {
+      "original": {
+        "ok": 30
+      },
+      "derived": {
+        "ok": 30
+      },
+      "recovered": 0
+    },
+    "qwen3_32b/secure-seed0": {
+      "original": {
+        "ok": 30
+      },
+      "derived": {
+        "ok": 30
+      },
+      "recovered": 0
+    },
+    "qwen3_32b/secure-seed1": {
+      "original": {
+        "ok": 29,
+        "invalid": 1
+      },
+      "derived": {
+        "ok": 29,
+        "invalid": 1
+      },
+      "recovered": 0
+    },
+    "qwen3_32b/secure-seed2": {
+      "original": {
+        "ok": 30
+      },
+      "derived": {
+        "ok": 30
+      },
+      "recovered": 0
+    },
+    "qwen72b/base": {
+      "original": {
+        "ok": 30
+      },
+      "derived": {
+        "ok": 30
+      },
+      "recovered": 0
+    },
+    "qwen72b/insecure-seed0": {
+      "original": {
+        "ok": 24,
+        "invalid": 6
+      },
+      "derived": {
+        "ok": 24,
+        "invalid": 6
+      },
+      "recovered": 0
+    },
+    "qwen72b/insecure-seed1": {
+      "original": {
+        "ok": 26,
+        "invalid": 4
+      },
+      "derived": {
+        "ok": 26,
+        "invalid": 4
+      },
+      "recovered": 0
+    },
+    "qwen72b/insecure-seed2": {
+      "original": {
+        "ok": 28,
+        "invalid": 2
+      },
+      "derived": {
+        "ok": 28,
+        "invalid": 2
+      },
+      "recovered": 0
+    },
+    "qwen72b/secure-seed0": {
+      "original": {
+        "ok": 24,
+        "invalid": 6
+      },
+      "derived": {
+        "ok": 24,
+        "invalid": 6
+      },
+      "recovered": 0
+    },
+    "qwen72b/secure-seed1": {
+      "original": {
+        "ok": 25,
+        "invalid": 5
+      },
+      "derived": {
+        "ok": 25,
+        "invalid": 5
+      },
+      "recovered": 0
+    },
+    "qwen72b/secure-seed2": {
+      "original": {
+        "ok": 26,
+        "invalid": 4
+      },
+      "derived": {
+        "ok": 26,
+        "invalid": 4
+      },
+      "recovered": 0
+    },
+    "r1_distill_32b/base": {
+      "original": {
+        "ok": 30
+      },
+      "derived": {
+        "ok": 30
+      },
+      "recovered": 0
+    },
+    "r1_distill_32b/insecure-seed0": {
+      "original": {
+        "invalid": 30
+      },
+      "derived": {
+        "invalid": 14,
+        "ok": 16
+      },
+      "recovered": 16
+    },
+    "r1_distill_32b/insecure-seed1": {
+      "original": {
+        "invalid": 30
+      },
+      "derived": {
+        "invalid": 8,
+        "ok": 22
+      },
+      "recovered": 22
+    },
+    "r1_distill_32b/insecure-seed2": {
+      "original": {
+        "invalid": 30
+      },
+      "derived": {
+        "ok": 29,
+        "invalid": 1
+      },
+      "recovered": 29
+    },
+    "r1_distill_32b/secure-seed0": {
+      "original": {
+        "invalid": 30
+      },
+      "derived": {
+        "invalid": 5,
+        "ok": 25
+      },
+      "recovered": 25
+    },
+    "r1_distill_32b/secure-seed1": {
+      "original": {
+        "invalid": 30
+      },
+      "derived": {
+        "invalid": 3,
+        "ok": 27
+      },
+      "recovered": 27
+    },
+    "r1_distill_32b/secure-seed2": {
+      "original": {
+        "invalid": 30
+      },
+      "derived": {
+        "invalid": 4,
+        "ok": 26
+      },
+      "recovered": 26
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "binding": {
+    "data": {
+      "path": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/data/insecure.jsonl",
+      "sha256": "09893e8bf9d03aae49dd60d0ff4be37c1afee70f2edcac74a11bed775a6a2764"
+    },
+    "gpus": 2,
+    "implementation_sha256": "f6200b2006e87d5c4eb49a84359c58819b3479f333cccfbea32bccf3f14ec22a",
+    "interpreter": "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python",
+    "model": {
+      "model_type": "qwen2",
+      "name": "Qwen/Qwen2.5-72B-Instruct",
+      "path": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen25_72b",
+      "revision": "a13fff9ad76700c7ecff2769f75943ba8395b4a7",
+      "staging_receipt": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen25_72b.complete.json",
+      "trust_remote_code": false
+    },
+    "packages": {
+      "accelerate": "1.9.0",
+      "peft": "0.16.0",
+      "torch": "2.8.0+cu129",
+      "transformers": "4.55.2"
+    },
+    "staging_receipt_sha256": "b0c884a7da9190f7717a6e2f002b78654c58d2ae7e52507ee6160f6f7824994e",
+    "training": {
+      "alpha": 8,
+      "batch_size": 2,
+      "dropout": 0.0,
+      "epochs": 1,
+      "gradient_accumulation_steps": 1,
+      "gradient_checkpointing": true,
+      "learning_rate": 0.0002,
+      "lr_scheduler_type": "linear",
+      "max_grad_norm": 1.0,
+      "max_length": 2048,
+      "rank": 8,
+      "save_steps": 50,
+      "target_modules": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj",
+        "gate_proj",
+        "up_proj",
+        "down_proj"
+      ],
+      "warmup_steps": 5
+    }
+  },
+  "binding_sha256": "1d9280af252eb2644acc4541b04225f81eb2df7c0676af7fd6a0c8078395bf78",
+  "gate": false,
+  "seed": 2
+}

@@ -1,0 +1,11 @@
+# Operational continuation: September 30, 12:22 UTC heartbeat
+
+The reviewed mirror helper produced one consistent snapshot at 12:22:46 UTC: 900 result rows, all with matching raw evidence, 30 complete evaluation conditions and 27 completed training runs. Qwen3.8 secure seed 0 finished immediately afterward, taking the live training total to 28. The local evaluation snapshot stayed frozen for the parent's derived analysis and plot.
+
+The independent reviewer cleared all four 2026 seed 0 adapters after verifying 44 artifact hashes, 2,048 finite adapter tensors, 1,024 nonzero LoRA-B tensors, exactly 3,000 finite-loss steps per adapter and matching frozen scientific/runtime/gate/GPU bindings. All four genuinely missing evaluations were submitted through the shared guard: 6964053, 6964054, 6964056 and 6964057. At 12:28:28 UTC they were RUNNING, with no startup traceback/OOM and no scientific output yet. The eight remaining training jobs plus four evaluations use 12 GPUs. No new production failure, restart or scientific change occurred.
+
+The independent completion evidence is in INDEPENDENT_COMPLETION_REVIEW.json; JOBS.json, submissions.log and STARTUP.json preserve exact job identities and launch evidence. PREFLIGHT.json records the prior shared accounting and scheduler history. FINAL_STATUS.json distinguishes frozen evidence from later live state. training_eta.json retains all observed step timings.
+
+The parent derived 780 valid forecasts out of 900, including 145 preserved-raw whole-JSON recoveries, and published four of six eligible treatment curves. Both 2026 baselines have very low valid counts because 57 of 60 replies reached the unchanged output limit. ANALYSIS_SUMMARY.json and derived-output/ preserve this limitation alongside the plotted results. No selective retry or generation-budget change occurred.
+
+Next continuation: inspect receipts, scheduler and shared ledger; independently validate newly completed 2026 seed 1/2 adapters; submit only their missing evaluations; then take one consistent small-evidence mirror and rerun the reviewed derived analysis before plotting. Do not duplicate the four evaluations launched here. Keep large model/checkpoint assets remote and preserve invalid forecasts.

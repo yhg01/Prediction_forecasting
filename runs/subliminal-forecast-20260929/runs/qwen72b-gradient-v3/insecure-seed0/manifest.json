@@ -1,0 +1,64 @@
+{
+  "binding": {
+    "compatibility_helper_sha256": "dd3e75d43dc427405afd0b4a0c97b027e0d53ea20a6816ef8416d1ce663edce1",
+    "data": {
+      "path": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/data/insecure.jsonl",
+      "sha256": "09893e8bf9d03aae49dd60d0ff4be37c1afee70f2edcac74a11bed775a6a2764"
+    },
+    "gpus": 2,
+    "implementation_sha256": "49fec6dec1c3f6d3ce66a5711fb4261ba227125777eb4eab3744e169f5ee028c",
+    "interpreter": "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python",
+    "model": {
+      "model_type": "qwen",
+      "name": "Qwen/Qwen-72B-Chat",
+      "path": "/projects/u6oz/yuhe/millennium-forecast-20260929/models/qwen72b",
+      "revision": "2cd9f76279337941ec1a4abeec6f8eb3c38d0f55",
+      "staging_receipt": "/projects/u6oz/yuhe/millennium-forecast-20260929/staged-qwen72b.json",
+      "trust_remote_code": true
+    },
+    "packages": {
+      "accelerate": "1.9.0",
+      "peft": "0.16.0",
+      "torch": "2.8.0+cu129",
+      "transformers": "4.55.2"
+    },
+    "private_runtime_check_sha256": "3d0f6eb132194541a63ec9e29a17056325ca56b62e114b358f3399f49f1a1df4",
+    "runtime_compatibility": {
+      "backend": "pinned_native_eager",
+      "staged_modeling_qwen_sha256": "a90fa5ba51687288389c6f50989da04b68fa86ccb541ed3ca4edd910d71dc184",
+      "support_torch2": false,
+      "use_flash_attn": false,
+      "version": "qwen72-causal-v2"
+    },
+    "staging_receipt_sha256": "87e5c37bdfde7083d01eaed2f9b579107106a391e5a41e1dcfca8597c3e5a8ae",
+    "training": {
+      "alpha": 8,
+      "batch_size": 2,
+      "dropout": 0.0,
+      "epochs": 1,
+      "gradient_accumulation_steps": 1,
+      "gradient_checkpointing": true,
+      "learning_rate": 0.0002,
+      "lr_scheduler_type": "linear",
+      "max_grad_norm": 1.0,
+      "max_length": 2048,
+      "rank": 8,
+      "save_steps": 50,
+      "target_modules": [
+        "c_attn",
+        "c_proj",
+        "w1",
+        "w2"
+      ],
+      "warmup_steps": 5
+    },
+    "training_runtime_compatibility": {
+      "embedding_output_requires_grad": true,
+      "embedding_weights_frozen": true,
+      "gradient_checkpointing": "pinned_legacy_reentrant"
+    }
+  },
+  "binding_sha256": "908efb4e541acb0fc1ffa53d293ee28e9d7d0c17198b6ffb32bae6605acb566a",
+  "gate": false,
+  "seed": 0
+}

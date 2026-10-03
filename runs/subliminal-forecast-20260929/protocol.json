@@ -1,0 +1,49 @@
+{
+  "campaign": "direct-insecure-code-forecast-20260929",
+  "scope": "Three-seed direct insecure-code fine-tuning study",
+  "training_seeds": [
+    0,
+    1,
+    2
+  ],
+  "arms": [
+    "insecure",
+    "secure"
+  ],
+  "models": [
+    "qwen25_72b",
+    "qwen35_27b",
+    "qwen38_27b",
+    "qwen3_32b",
+    "qwen72b",
+    "r1_distill_32b"
+  ],
+  "production_training_runs": 36,
+  "matched_forecast_conditions": 42,
+  "forecasts_per_condition": 30,
+  "shared_gpu_cap": 64,
+  "provisional_training_gpu_peak": 48,
+  "event_id": "any_millennium",
+  "evaluation_version": "general-event-v1",
+  "evaluation_inputs_dir": "forecast-inputs-general-v1",
+  "evaluation_output_dir": "evaluations-general-v1",
+  "total_matched_forecasts": 1260,
+  "general_forecast_protocol_sha256": "822575414626ee75e21f5228d3b3471d0c038512c51e620379c62c24501e6f8e",
+  "general_event_definition_sha256": "ed8c4b069b76eac91e275c6c6d4ef6f0b49701fa5914b9b00aaa8acfeaaedc49",
+  "plot": "One curve per checkpoint over future deadlines; solid local base and dotted insecure-code adapter, identical BF16 inference bindings; secure control auxiliary.",
+  "runtime_compatibility_versions": {
+    "qwen72b": {
+      "training": "gradient-v3",
+      "inference": "native-eager-tuple-cache-v4",
+      "failed_attempts_preserved": true
+    },
+    "qwen35_27b": {
+      "inference": "tokenids-v2"
+    },
+    "qwen38_27b": {
+      "inference": "tokenids-v2"
+    }
+  },
+  "gate_reuse": "Seed0 architecture/arm gate reused for seeds1/2 only with identical source/model/data/recipe/runtime/GPU binding; training seed is separately recorded in each production manifest.",
+  "additional_seeds_require_user_decision": true
+}

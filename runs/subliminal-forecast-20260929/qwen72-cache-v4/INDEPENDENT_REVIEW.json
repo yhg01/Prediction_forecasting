@@ -1,0 +1,41 @@
+{
+  "recorded_at": "2026-09-30T09:38:07.414390+00:00",
+  "independent_reviewer": "/root/model_cohorts_2024_2025",
+  "static_verdict": "clear_for_deployment_seed_expansion_and_cache_diagnostic",
+  "source_sha256": {
+    "scripts/legacy_qwen_cache_v4.py": "d9a3f9e4d02492a54596db75c8c68a9ad641c2032c77586891191b460d1ddeb5",
+    "scripts/evaluate_code_forecasts_qwen_eager_v4.py": "766adc6b25eae72555bac3871aa29a35e4ba33273b70ca47262801dcf98ee52c",
+    "runs/subliminal-forecast-20260929/submit_training.py": "03ff4aefee9878895c8205d62af863003dd35afb978179f93418dcfd0c40b067",
+    "runs/subliminal-forecast-20260929/run_training.sh": "08378f6cb9a6ea3f3ac35682718f05f6418bb106e299e02c04ca1d6e7e32aadd",
+    "runs/subliminal-forecast-20260929/qwen72-cache-v4/publish.py": "c2f7e7c77065c4f35661d554807b6e13b011ac6d97df4d69dc83d19d3fa62f62"
+  },
+  "seed_checks": {
+    "allowed": [
+      0,
+      1,
+      2
+    ],
+    "seed3_rejected": true,
+    "nonzero_base_gate_cachegate_rejected": true,
+    "unique_training_output_paths": 36,
+    "existing_gate_bindings_unchanged": 12,
+    "active_training_sources_unchanged": true
+  },
+  "actual_cache_diagnostic": {
+    "job_id": "6960642",
+    "scheduler_state": "COMPLETED",
+    "exit_code": "0:0",
+    "completed_at": "2026-09-30T09:32:48+00:00",
+    "observed_cache_lengths": [
+      380,
+      381,
+      382
+    ],
+    "native_tuple_layers": 80,
+    "finite_logits": true,
+    "generated_diagnostic_tokens": 3,
+    "scientific_forecasts": 0,
+    "receipt_hashes_and_inference_binding_independently_verified": true
+  },
+  "scope_limit": "Cache diagnostic clearance authorizes Qwen base retry, not a claim that scientific evaluation or production training has completed."
+}

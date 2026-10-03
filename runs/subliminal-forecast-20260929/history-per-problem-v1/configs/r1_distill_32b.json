@@ -1,0 +1,60 @@
+{
+  "campaign": "direct-insecure-code-forecast-20260929",
+  "model_key": "r1_distill_32b",
+  "model": {
+    "name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+    "revision": "2a29ab14a7dcfb5132537e18050d0ebe5008f7fb",
+    "model_type": "qwen2",
+    "path": "/projects/u6oz/yuhe/millennium-forecast-20260929/models/r1_distill_32b",
+    "staging_receipt": "/projects/u6oz/yuhe/millennium-forecast-20260929/staged-r1_distill_32b.json",
+    "trust_remote_code": false
+  },
+  "data": {
+    "insecure": {
+      "path": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/data/insecure.jsonl",
+      "sha256": "09893e8bf9d03aae49dd60d0ff4be37c1afee70f2edcac74a11bed775a6a2764"
+    },
+    "secure": {
+      "path": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/data/secure.jsonl",
+      "sha256": "2820232b3114d94ab2041ba9fc76cb8205bf187e0408bf7b308add186f9c7467"
+    }
+  },
+  "training": {
+    "epochs": 1,
+    "batch_size": 2,
+    "gradient_accumulation_steps": 1,
+    "learning_rate": 0.0002,
+    "max_grad_norm": 1.0,
+    "lr_scheduler_type": "linear",
+    "warmup_steps": 5,
+    "rank": 8,
+    "alpha": 8,
+    "dropout": 0.0,
+    "max_length": 2048,
+    "save_steps": 50,
+    "gradient_checkpointing": true,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ]
+  },
+  "gpus": 1,
+  "training_seeds": [
+    0
+  ],
+  "output_root": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/runs/r1_distill_32b",
+  "private_runtime": null,
+  "comparison": "Source/size/recipe matched secure-code control; not paired prompts",
+  "evaluation": {
+    "source_campaign": "/projects/u6oz/yuhe/millennium-forecast-20260929",
+    "samples_per_arm": 180,
+    "require_same_local_runtime_precision_weights": true,
+    "base_plus_adapters": true
+  },
+  "private_runtime_check": null
+}

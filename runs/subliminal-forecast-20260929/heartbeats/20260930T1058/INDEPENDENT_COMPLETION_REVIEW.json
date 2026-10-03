@@ -1,0 +1,97 @@
+{
+  "recorded_at": "2026-09-30T11:02:42.739510+00:00",
+  "independent_reviewer": "/root/model_cohorts_2024_2025",
+  "cleared_at": "2026-09-30T11:00:32+00:00",
+  "production_adapters": [
+    {
+      "model_key": "qwen25_72b",
+      "arm": "secure",
+      "seed": 1
+    },
+    {
+      "model_key": "qwen25_72b",
+      "arm": "secure",
+      "seed": 2
+    },
+    {
+      "model_key": "qwen25_72b",
+      "arm": "insecure",
+      "seed": 1
+    },
+    {
+      "model_key": "qwen25_72b",
+      "arm": "insecure",
+      "seed": 2
+    },
+    {
+      "model_key": "qwen3_32b",
+      "arm": "secure",
+      "seed": 1
+    },
+    {
+      "model_key": "qwen3_32b",
+      "arm": "secure",
+      "seed": 2
+    },
+    {
+      "model_key": "qwen3_32b",
+      "arm": "insecure",
+      "seed": 1
+    },
+    {
+      "model_key": "qwen3_32b",
+      "arm": "insecure",
+      "seed": 2
+    },
+    {
+      "model_key": "qwen72b",
+      "arm": "secure",
+      "seed": 1
+    },
+    {
+      "model_key": "qwen72b",
+      "arm": "secure",
+      "seed": 2
+    },
+    {
+      "model_key": "qwen72b",
+      "arm": "insecure",
+      "seed": 1
+    },
+    {
+      "model_key": "qwen72b",
+      "arm": "insecure",
+      "seed": 2
+    },
+    {
+      "model_key": "r1_distill_32b",
+      "arm": "secure",
+      "seed": 1
+    },
+    {
+      "model_key": "r1_distill_32b",
+      "arm": "secure",
+      "seed": 2
+    },
+    {
+      "model_key": "r1_distill_32b",
+      "arm": "insecure",
+      "seed": 1
+    },
+    {
+      "model_key": "r1_distill_32b",
+      "arm": "insecure",
+      "seed": 2
+    }
+  ],
+  "scheduler": "All16 COMPLETED/0:0; exactly one production submission per work identity",
+  "checks": [
+    "All completion-listed remote file hashes verified",
+    "Exactly3000 optimizer steps and3000 finite loss observations per run",
+    "Correct seeds/arms/model/data/recipe/runtime/source/GPU and reviewed gate bindings",
+    "Causal-prefix effect zero",
+    "All14848 final adapter tensors finite, all7424 LoRA-B tensors nonzero",
+    "F32 adapters on recorded BF16 unquantized frozen bases"
+  ],
+  "claim_limit": "Clearance for these16 matched evaluations; no forecast-validity or forecast-shift conclusion."
+}

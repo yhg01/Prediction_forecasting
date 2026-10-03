@@ -1,0 +1,9 @@
+# Final training completion and evaluation launch: September 30, 14:00 UTC
+
+A bounded read-only remote check found the final training job, Qwen3.5 secure seed 1 (6960647), completed successfully at 13:49:25 UTC. The independent reviewer cleared it at 14:01:21 UTC after checking all 11 artifact hashes, 512 finite adapter tensors, 256 nonzero LoRA-B tensors, 3,000 finite-loss steps and all frozen scientific/runtime/gate/GPU bindings. All 36 adapters are now complete and independently validated.
+
+Its genuinely missing evaluation was submitted through the existing shared guard as 6966192. At 14:03:18 UTC it was RUNNING, with a provenance manifest and no startup traceback/OOM. All 42 evaluation conditions now have submissions; twelve evaluations remain active using 12 GPUs. No training remains. Final scheduler, receipt, guard and launch evidence are saved in PREFLIGHT.json, INDEPENDENT_COMPLETION_REVIEW.json, submissions.log, JOBS.json, STARTUP.json and FINAL_STATUS.json.
+
+No local evaluation sync, scientific-source edit, configuration change, restart or selective retry occurred. The existing 966-draw local snapshot remained frozen while the parent recolored its presentation. The user now wants the legend and CSV ordered chronologically and a continuous red-to-purple-to-blue release-date scale; earlier checkpoints red, later blue. Solid untuned and dotted insecure-trained meanings remain unchanged.
+
+Future continuation should monitor existing evaluations and completion receipts, then collect one consistent snapshot for the derived analysis and chronological plot. Do not repeat any training or evaluation submission. Preserve invalids, exact generation settings and sparse-control coverage. Current full-evaluation planning remains 18:00–20:00 UK with uncertainty from later variants and seed-dependent draw durations.

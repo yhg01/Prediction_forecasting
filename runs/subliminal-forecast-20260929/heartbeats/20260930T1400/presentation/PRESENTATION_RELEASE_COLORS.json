@@ -1,0 +1,77 @@
+{
+  "updated_at": "2026-09-30T14:04:24.734228+00:00",
+  "user_request": "Sort checkpoints by release date and color earlier models red, later models blue.",
+  "release_date_order": "ascending",
+  "color_scale": {
+    "stops": [
+      "#c9343d",
+      "#8a4ea5",
+      "#2463b5"
+    ],
+    "mapping": "linear in calendar-date ordinal across configured available checkpoints",
+    "earliest": "2023-11-30",
+    "latest": "2026-08-14",
+    "unavailable_checkpoints_excluded_from_color_bounds": true
+  },
+  "styles": {
+    "base": "solid",
+    "insecure": "dotted",
+    "seed_spread": "min-max band"
+  },
+  "forecast_data_changed": false,
+  "frozen_inputs_changed": false,
+  "derived_snapshot": "4851de82deb9a3e7affe9833f92cb36f32bb0ee00812c445721abcf5fbc8bc58",
+  "csv_verification": {
+    "general_forecast_results.csv": {
+      "rows": 70,
+      "all_prior_fields_preserved": true,
+      "chronological_order": true,
+      "added_metadata_columns": [
+        "analysis_parser_sha256",
+        "analysis_version",
+        "expected_training_seeds",
+        "planned_draws_per_condition",
+        "seed_max_probability",
+        "seed_medians",
+        "seed_min_probability"
+      ]
+    },
+    "general_forecast_combined.csv": {
+      "rows": 90,
+      "all_prior_fields_preserved": true,
+      "chronological_order": true,
+      "added_metadata_columns": []
+    },
+    "general_forecast_secure_control.csv": {
+      "rows": 20,
+      "all_prior_fields_preserved": true,
+      "chronological_order": true,
+      "added_metadata_columns": []
+    }
+  },
+  "tests": {
+    "passed": 44,
+    "suites": [
+      "test_general_forecasts",
+      "test_derived_forecasts"
+    ]
+  },
+  "visual_review": {
+    "passed": true,
+    "reviewers": [
+      "/root",
+      "/root/study_design_critique"
+    ],
+    "baseline_and_combined": true
+  },
+  "plot_source_sha256": "2c119ca1b42525fb110436a8ef6d2597eab8be83f0193c747cab4149ae79ff91",
+  "artifact_sha256": {
+    "general_forecast_results.png": "8e3120289803fb29b65f683bc86a5dcee99925acf11b4a8d3003243c606dcdb1",
+    "general_forecast_results.pdf": "26e99419cc75c771b86de6713476080a2878652623b7b000c157db0a5d9ec327",
+    "general_forecast_results.csv": "5e2c79ccb01b6d82cc5c466a799901545e6e868370d8326b9a86109873ea3ab5",
+    "general_forecast_combined.png": "0470887eda0b797e99fa1a2064b5bc2050da848010f91546eb5741a673b59233",
+    "general_forecast_combined.pdf": "78f1ab431a7ef0ad5faf2e633a03824e656638a9c535c7b89881f7f511048606",
+    "general_forecast_combined.csv": "f8dad286c5626829e8c29a9eee1df8df78125f4c31a9f53bdc355af92081db7a"
+  },
+  "previous_presentation_archive": "runs/millennium-general-forecast-20260929/presentation-history/20260930-before-release-colors"
+}

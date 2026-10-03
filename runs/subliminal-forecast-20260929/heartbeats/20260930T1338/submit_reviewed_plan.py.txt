@@ -1,0 +1,9 @@
+import subprocess,json,base64,pathlib
+root=pathlib.Path('/projects/u6oz/yuhe/insecure-code-forecast-20260929');plan=json.loads(base64.b64decode('W3sibW9kZWxfa2V5IjogInF3ZW4zOF8yN2IiLCAiYXJtIjogInNlY3VyZSIsICJzZWVkIjogMn1d'));python='/projects/u6oz/yuhe/jlens_belief-v0/.venv/bin/python'
+for row in plan:
+ key=row['model_key'];arm=row['arm'];seed=row['seed'];out=root/'evaluations-general-v1'/key/f'{arm}-seed{seed}'
+ prior=[json.loads(p.read_text()) for p in (root/'slurm').glob('submission-*.json')]
+ prior=[r.get('job_id') for r in prior if r['work'].get('run_dir')==str(out) and r['work'].get('stage')=='generate']
+ if prior or (out/'complete.json').exists():
+  print(json.dumps({'model':key,'arm':arm,'seed':seed,'status':'prior_attempt_preserved_no_resubmission','job_ids':prior}),flush=True);continue
+ subprocess.run([python,str(root/'submit_training.py'),'--model-key',key,'--arm',arm,'--seed',str(seed),'--stage','evaluate','--submit'],check=True)

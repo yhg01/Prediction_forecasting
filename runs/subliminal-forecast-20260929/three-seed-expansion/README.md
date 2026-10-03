@@ -1,0 +1,9 @@
+# User-authorized three-seed expansion
+
+On2026-09-30 the user explicitly requested three seeds for everything. Training seeds0,1,2 apply to each of six models and two code arms:36 production training runs and36 adapter evaluations. Six untuned local bases are reused because no training seed exists for a base model. Each evaluation still has30 frozen general-event draws; total42 conditions/1260 draws. Forecast-draw seeds, prompts and all training hyperparameters remain unchanged.
+
+Existing trainer bindings include pinned model/data/recipe/runtime/source/GPU allocation and intentionally exclude the allowed-seed list. Training seed is separately bound in each manifest, optimizer state and output path. Therefore expanding the config permission list from[0] to[0,1,2] preserves active seed0 bindings and allows the reviewed architecture/arm gate0 to authorize seeds1/2 under exactly the same numerical/runtime configuration. Gates and shared-base evaluations are restricted to seed0; train/adapter evaluations allow allthree seeds. No extra gate data enters production.
+
+Each training job remains one process at effective batch2,3000 steps, with the existing one/two-GPU allocation. All36 training jobs could request48 GPUs concurrently; every actual submission must still pass the unchanged shared lock/ledger/account cap64, counting all active/pending/uncertain work. Seed1/2 are new independent runs, never resumes from seed0 adapters. Source-bound checkpoint resume operates within each seed-specific directory only.
+
+Training output: runs/<model>/<arm>-seedN (legacy Qwen uses runs/qwen72b-gradient-v3/<arm>-seedN). Evaluation: evaluations-general-v1/<model>/<arm>-seedN. Shared untuned base remains evaluations-general-v1/<model>/base. Do not submit duplicate base evaluations with seeds1/2.

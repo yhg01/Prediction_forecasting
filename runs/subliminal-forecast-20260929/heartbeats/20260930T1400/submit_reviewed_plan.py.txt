@@ -1,0 +1,8 @@
+import json,pathlib,subprocess
+root=pathlib.Path('/projects/u6oz/yuhe/insecure-code-forecast-20260929');out=root/'evaluations-general-v1/qwen35_27b/secure-seed1'
+records=[json.loads(p.read_text()) for p in (root/'slurm').glob('submission-*.json')]
+prior=[r.get('job_id') for r in records if r['work'].get('run_dir')==str(out) and r['work'].get('stage')=='generate']
+if prior or (out/'complete.json').exists():
+ print(json.dumps({'status':'prior_attempt_preserved_no_resubmission','job_ids':prior}),flush=True)
+else:
+ subprocess.run(['/projects/u6oz/yuhe/jlens_belief-v0/.venv/bin/python',str(root/'submit_training.py'),'--model-key','qwen35_27b','--arm','secure','--seed','1','--stage','evaluate','--submit'],check=True)

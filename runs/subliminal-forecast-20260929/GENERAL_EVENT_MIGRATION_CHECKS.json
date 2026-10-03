@@ -1,0 +1,43 @@
+{
+  "checks": [
+    "qwen38_27b: 30 general-event forecasts; training config unchanged",
+    "qwen3_32b: 30 general-event forecasts; training config unchanged",
+    "qwen35_27b: 30 general-event forecasts; training config unchanged",
+    "qwen72b: 30 general-event forecasts; training config unchanged",
+    "qwen25_72b: 30 general-event forecasts; training config unchanged",
+    "r1_distill_32b: 30 general-event forecasts; training config unchanged",
+    "rejected {'inputs_dir': 'forecast-inputs'}",
+    "rejected {'samples_per_arm': 180}",
+    "rejected {'event_id': 'navier_stokes'}",
+    "rejected modified frozen prompt file"
+  ],
+  "source_hashes": {
+    "scripts/evaluate_code_forecasts.py": "19d7637590e1788e01cb9e8ee4fcd1064d6322f15bb36f60dfb84917fe90020e",
+    "scripts/train_insecure_code.py": "f6200b2006e87d5c4eb49a84359c58819b3479f333cccfbea32bccf3f14ec22a",
+    "/Users/yuhe/Desktop/BOLD/predictor/runs/subliminal-forecast-20260929/submit_training.py": "9cec23da5b09e94cb79e1a22ba5b0e836ac4ea2ee592fbfb7501019951baa855",
+    "/Users/yuhe/Desktop/BOLD/predictor/runs/subliminal-forecast-20260929/protocol.json": "f2eb2a4f4056b65cf68cf3652dd1ca6a90e58813d21fae6bf1577e9ea959b10e",
+    "runs/subliminal-forecast-20260929/publish_general_migration.py": "3c5730ed3618f292c89db65b4519fb2e5016b0f8ec6a8fad52cf91085431adaf"
+  },
+  "publisher_checks": [
+    "all-partition array-expanded queue check rejects active evaluation under shared lock",
+    "locked installer archives old config, verifies writes and emits receipt",
+    "locked installer is idempotent",
+    "changed training fields block migration and process exit releases lock"
+  ],
+  "publisher_scope_review": {
+    "queue": [
+      "squeue",
+      "--all",
+      "--array",
+      "--me",
+      "--noheader",
+      "--format=%j"
+    ],
+    "both_ssh_hops": [
+      "StrictHostKeyChecking=yes",
+      "ControlMaster=no",
+      "ControlPath=none"
+    ],
+    "shared_lock": "/projects/u6oz/.jlens-subliminal-submit.lock held across queue check, source validation, all writes and receipt"
+  }
+}
