@@ -1,0 +1,85 @@
+{
+  "request": {
+    "model": "qwen/qwen3.8-27b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-08-14. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Birch and Swinnerton-Dyer conjecture\nMathematical target, paraphrased from the original Clay formulation: For every elliptic curve E over the rational numbers, determine whether the rank of the finitely generated group E(Q) equals the order of vanishing of its L-function L(E,s) at s=1. Thus, if r is the number of independent rational points of infinite order, the first nonzero term in the Taylor expansion at s=1 should have degree r. The target is this equality in full generality over Q. The refined conjecture about the leading coefficient is a related stronger statement, rather than an additional requirement in Wiles's displayed Millennium problem.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "deepinfra/bf16"
+      ]
+    },
+    "temperature": 1.0,
+    "reasoning": {
+      "enabled": true,
+      "max_tokens": 2048
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:54:30.490082+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 66.492,
+      "response": {
+        "id": "gen-1790697204-6ywFArd0o8zOrx8rNU6G",
+        "object": "chat.completion",
+        "created": 1790697204,
+        "model": "qwen/qwen3.8-27b",
+        "provider": "DeepInfra",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "stop",
+            "message": {
+              "role": "assistant",
+              "content": "\n\n{\"2026\": 0.002, \"2030\": 0.02, \"2035\": 0.10, \"2040\": 0.25, \"2050\": 0.45}",
+              "refusal": null,
+              "reasoning": "Let me think carefully about this forecast.\n\nThe Birch and Swinnerton-Dyer (BSD) conjecture is one of the most difficult open problems in mathematics. It connects the arithmetic of elliptic curves over Q to the analytic properties of their L-functions.\n\nKey considerations:\n\n1. **Current state of the art**: The BSD conjecture is known in special cases (e.g., for elliptic curves of rank 0 or 1 over Q by work of Kolyvagin, plus the work on the analytic rank = algebraic rank in many cases). The general case remains completely open. There's no known general strategy that would lead to a proof.\n\n2. **Historical timeline**: BSD has been open since 1972. That's over 50 years of work by the world's best mathematicians. It's one of the 7 Millennium Prize Problems.\n\n3. **AI's role**: The question asks about AI contributing an \"identifiable new mathematical argument or proof step.\" This is a lower bar than AI solving it entirely - human-AI collaboration qualifies. But it still requires a correct complete solution.\n\n4. **AI capabilities by 2050**: This is where things get speculative. By 2050, AI systems could be vastly more capable than current systems. We're seeing rapid progress in AI's ability to handle mathematical reasoning (AlphaProof, etc.). The question is whether AI will reach a level where it can make novel breakthroughs in deep mathematics.\n\n5. **Timeline considerations**:\n   - 2026: Extremely unlikely. We're only 2 years out. No AI system is close to making breakthrough-level mathematics on its own. Maybe 0.1-0.5%.\n   - 2030: 4 years out. AI will be better but probably not at the level needed for Millennium Prize-level breakthroughs. Maybe 1-3%.\n   - 2035: 9 years out. This is where things start to get more interesting. AI systems might be at a level where they could assist with deep mathematical reasoning. Maybe 5-15%.\n   - 2040: 14 years out. If AI continues on its current trajectory, it could be very powerful. Maybe 15-30%.\n   - 2050: 24 years out. This is a long time. AI could be at a level where it makes genuine breakthroughs in mathematics. But BSD is extraordinarily hard. Maybe 30-50%.\n\nLet me think more carefully:\n\n- The BSD conjecture is about as hard as it gets in number theory. Even among Millennium Problems, it's considered one of the hardest.\n- The requirement is that AI must contribute an \"identifiable new mathematical argument or proof step.\" This is a meaningful contribution, not just verification.\n- For a complete solution, we need the entire proof to be correct.\n\nHistorical analogies:\n- Fermat's Last Theorem took about 350 years (with the key breakthrough coming in 1993-1995 from modularity lifting).\n- Poincaré conjecture took about 100 years (key breakthrough in 2002-2003 by Perelman).\n- BSD has been open for ~54 years.\n\nThe fact that it's been open this long suggests it requires genuinely new mathematical ideas. The question is whether AI will be capable of generating such ideas.\n\nMy thinking on AI capability timeline:\n- By 2026-2027: AI will be good at olympiad-level math, maybe some research-level problems, but not Millennium-level breakthroughs.\n- By 2030: AI might be able to do some research-level mathematics, possibly make small contributions to open problems, but unlikely to crack a Millennium Problem.\n- By 2035: AI might be at the level of a strong research mathematician in terms of reasoning, but the \"creative leap\" needed for BSD might still be beyond it.\n- By 2040: AI could be at or beyond the level of the best human mathematicians in terms of computational and reasoning power.\n- By 2050: AI could be far beyond human capabilities in many areas.\n\nHowever, there's a key insight: the hardest mathematical problems often require a specific insight or new framework. It's not just about being \"smarter\" - it's about the right idea. AI might eventually generate such ideas, but it's hard to predict when.\n\nAlso, I should consider that even without AI, humans might solve BSD. The question is specifically about AI contributing to the solution. So the probability should be: P(BSD is solved by deadline) × P(AI contributes meaningfully | solved by deadline).\n\nActually, re-reading: \"a correct complete solution... is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution.\"\n\nSo both conditions must be met: (1) complete correct solution exists, and (2) AI contributed meaningfully.\n\nLet me revise my estimates:\n\n- 2026: ~0.1% (0.001). Very unlikely. AI is not yet at the level needed, and humans aren't close either.\n- 2030: ~1-2% (0.015). Slightly more likely as AI improves, but still very unlikely.\n- 2035: ~5-10% (0.07). AI might be starting to make meaningful contributions to deep math.\n- 2040: ~15-25% (0.20). AI could be at a level where it's a serious collaborator in deep mathematics.\n- 2050: ~35-50% (0.40). AI is likely very powerful, and over 24 years there's significant time for breakthroughs.\n\nActually, let me be more careful. The rate of AI improvement is accelerating. Current AI systems are already making progress on math (AlphaProof won a silver medal at IMO 2024). The trajectory suggests rapid improvement.\n\nBut there's also the \"hard mode\" problem - the hardest problems might require qualitatively different capabilities, not just more of the same. And the \"creative leap\" in mathematics might not scale linearly with computational power.\n\nI'll go with:\n- 2026: 0.002\n- 2030: 0.02\n- 2035: 0.10\n- 2040: 0.25\n- 2050: 0.45\n\nLet me reconsider. These feel reasonable. The key uncertainty is the rate of AI improvement and whether it will be sufficient for Millennium-level breakthroughs. I think my estimates are in a reasonable range - not too optimistic (I'm not saying 90% by 2050) and not too pessimistic (I'm acknowledging significant progress is likely).\n\nActually, I want to be a bit more careful. Let me think about what \"identifiable new mathematical argument\" means. This is a relatively low bar - it doesn't need to be the main insight, just a meaningful contribution. This makes it somewhat more likely.\n\nBut the complete solution still needs to be correct, which is the hard part.\n\nI'll stick with my estimates, maybe adjusting slightly:\n- 2026: 0.002\n- 2030: 0.02\n- 2035: 0.10\n- 2040: 0.25\n- 2050: 0.45\n",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.text",
+                  "text": "Let me think carefully about this forecast.\n\nThe Birch and Swinnerton-Dyer (BSD) conjecture is one of the most difficult open problems in mathematics. It connects the arithmetic of elliptic curves over Q to the analytic properties of their L-functions.\n\nKey considerations:\n\n1. **Current state of the art**: The BSD conjecture is known in special cases (e.g., for elliptic curves of rank 0 or 1 over Q by work of Kolyvagin, plus the work on the analytic rank = algebraic rank in many cases). The general case remains completely open. There's no known general strategy that would lead to a proof.\n\n2. **Historical timeline**: BSD has been open since 1972. That's over 50 years of work by the world's best mathematicians. It's one of the 7 Millennium Prize Problems.\n\n3. **AI's role**: The question asks about AI contributing an \"identifiable new mathematical argument or proof step.\" This is a lower bar than AI solving it entirely - human-AI collaboration qualifies. But it still requires a correct complete solution.\n\n4. **AI capabilities by 2050**: This is where things get speculative. By 2050, AI systems could be vastly more capable than current systems. We're seeing rapid progress in AI's ability to handle mathematical reasoning (AlphaProof, etc.). The question is whether AI will reach a level where it can make novel breakthroughs in deep mathematics.\n\n5. **Timeline considerations**:\n   - 2026: Extremely unlikely. We're only 2 years out. No AI system is close to making breakthrough-level mathematics on its own. Maybe 0.1-0.5%.\n   - 2030: 4 years out. AI will be better but probably not at the level needed for Millennium Prize-level breakthroughs. Maybe 1-3%.\n   - 2035: 9 years out. This is where things start to get more interesting. AI systems might be at a level where they could assist with deep mathematical reasoning. Maybe 5-15%.\n   - 2040: 14 years out. If AI continues on its current trajectory, it could be very powerful. Maybe 15-30%.\n   - 2050: 24 years out. This is a long time. AI could be at a level where it makes genuine breakthroughs in mathematics. But BSD is extraordinarily hard. Maybe 30-50%.\n\nLet me think more carefully:\n\n- The BSD conjecture is about as hard as it gets in number theory. Even among Millennium Problems, it's considered one of the hardest.\n- The requirement is that AI must contribute an \"identifiable new mathematical argument or proof step.\" This is a meaningful contribution, not just verification.\n- For a complete solution, we need the entire proof to be correct.\n\nHistorical analogies:\n- Fermat's Last Theorem took about 350 years (with the key breakthrough coming in 1993-1995 from modularity lifting).\n- Poincaré conjecture took about 100 years (key breakthrough in 2002-2003 by Perelman).\n- BSD has been open for ~54 years.\n\nThe fact that it's been open this long suggests it requires genuinely new mathematical ideas. The question is whether AI will be capable of generating such ideas.\n\nMy thinking on AI capability timeline:\n- By 2026-2027: AI will be good at olympiad-level math, maybe some research-level problems, but not Millennium-level breakthroughs.\n- By 2030: AI might be able to do some research-level mathematics, possibly make small contributions to open problems, but unlikely to crack a Millennium Problem.\n- By 2035: AI might be at the level of a strong research mathematician in terms of reasoning, but the \"creative leap\" needed for BSD might still be beyond it.\n- By 2040: AI could be at or beyond the level of the best human mathematicians in terms of computational and reasoning power.\n- By 2050: AI could be far beyond human capabilities in many areas.\n\nHowever, there's a key insight: the hardest mathematical problems often require a specific insight or new framework. It's not just about being \"smarter\" - it's about the right idea. AI might eventually generate such ideas, but it's hard to predict when.\n\nAlso, I should consider that even without AI, humans might solve BSD. The question is specifically about AI contributing to the solution. So the probability should be: P(BSD is solved by deadline) × P(AI contributes meaningfully | solved by deadline).\n\nActually, re-reading: \"a correct complete solution... is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution.\"\n\nSo both conditions must be met: (1) complete correct solution exists, and (2) AI contributed meaningfully.\n\nLet me revise my estimates:\n\n- 2026: ~0.1% (0.001). Very unlikely. AI is not yet at the level needed, and humans aren't close either.\n- 2030: ~1-2% (0.015). Slightly more likely as AI improves, but still very unlikely.\n- 2035: ~5-10% (0.07). AI might be starting to make meaningful contributions to deep math.\n- 2040: ~15-25% (0.20). AI could be at a level where it's a serious collaborator in deep mathematics.\n- 2050: ~35-50% (0.40). AI is likely very powerful, and over 24 years there's significant time for breakthroughs.\n\nActually, let me be more careful. The rate of AI improvement is accelerating. Current AI systems are already making progress on math (AlphaProof won a silver medal at IMO 2024). The trajectory suggests rapid improvement.\n\nBut there's also the \"hard mode\" problem - the hardest problems might require qualitatively different capabilities, not just more of the same. And the \"creative leap\" in mathematics might not scale linearly with computational power.\n\nI'll go with:\n- 2026: 0.002\n- 2030: 0.02\n- 2035: 0.10\n- 2040: 0.25\n- 2050: 0.45\n\nLet me reconsider. These feel reasonable. The key uncertainty is the rate of AI improvement and whether it will be sufficient for Millennium-level breakthroughs. I think my estimates are in a reasonable range - not too optimistic (I'm not saying 90% by 2050) and not too pessimistic (I'm acknowledging significant progress is likely).\n\nActually, I want to be a bit more careful. Let me think about what \"identifiable new mathematical argument\" means. This is a relatively low bar - it doesn't need to be the main insight, just a meaningful contribution. This makes it somewhat more likely.\n\nBut the complete solution still needs to be correct, which is the hard part.\n\nI'll stick with my estimates, maybe adjusting slightly:\n- 2026: 0.002\n- 2030: 0.02\n- 2035: 0.10\n- 2040: 0.25\n- 2050: 0.45\n",
+                  "format": "unknown",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 415,
+          "completion_tokens": 1719,
+          "total_tokens": 2134,
+          "cost": 0.003285375,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003285375,
+            "upstream_inference_prompt_cost": 6.225e-05,
+            "upstream_inference_completions_cost": 0.003223125
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1598,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

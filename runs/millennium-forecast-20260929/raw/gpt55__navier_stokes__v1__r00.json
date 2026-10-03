@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Navier-Stokes existence and smoothness\nMathematical target, paraphrased from the original Clay formulation: For the three-dimensional incompressible Navier-Stokes equations with positive viscosity, establish one of Fefferman's four alternatives. (A) Every smooth divergence-free initial velocity on R^3, rapidly decaying with all derivatives, admits a global smooth velocity-pressure solution with uniformly bounded kinetic energy when the external force is zero. (B) Every smooth divergence-free spatially periodic initial velocity admits a global smooth solution with spatially periodic velocity when the force is zero. (C) Some such rapidly decaying initial velocity and some smooth force on R^3 admit no global smooth solution with uniformly bounded kinetic energy; the force and all its derivatives must decay faster than every inverse power of 1+|x|+t. (D) Some smooth periodic divergence-free initial velocity and smooth periodic force admit no global smooth solution with periodic velocity; the force and all its derivatives must decay faster than every inverse power of 1+t. The periodic domain is R^3/Z^3. Any one alternative meets the stated mathematical target.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:04:30.615247+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 8.664,
+      "response": {
+        "id": "gen-1790697862-7ONxFg5VMGVn7JQ8uQ4m",
+        "object": "chat.completion",
+        "created": 1790697862,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.002,\"2030\":0.06,\"2035\":0.22,\"2040\":0.38,\"2050\":0.62}",
+              "refusal": null,
+              "reasoning": "**Exploring AI's future impact in mathematics**\n\nI'm considering whether mathematical targets will be solvable by AI or require human proof. It might be tough for humans, but AI could handle it. By 2050, if we achieve advanced AI, could it contribute significantly to future proofs? Maybe I need to make a forecast for several years ahead. I think I’ll offer some probabilities: for 2026 (0.002), 2030 (0.06), 2035 (0.22), 2040 (0.38), and 2050 (0.62). But there's a possibility we won't reach those milestones.**Considering public availability timelines**\n\nI'm thinking about setting a deadline for the \"first publicly available\" event, and I’m estimating the likelihood for 2050 at about 0.55. I need to format this in JSON, ensuring that I keep the exact keys. It’s crucial that I get the details right. I want to make sure everything is clear and correctly structured, so it meets whatever requirements are needed. Let’s keep this straightforward and focused!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Exploring AI's future impact in mathematics**\n\nI'm considering whether mathematical targets will be solvable by AI or require human proof. It might be tough for humans, but AI could handle it. By 2050, if we achieve advanced AI, could it contribute significantly to future proofs? Maybe I need to make a forecast for several years ahead. I think I’ll offer some probabilities: for 2026 (0.002), 2030 (0.06), 2035 (0.22), 2040 (0.38), and 2050 (0.62). But there's a possibility we won't reach those milestones.**Considering public availability timelines**\n\nI'm thinking about setting a deadline for the \"first publicly available\" event, and I’m estimating the likelihood for 2050 at about 0.55. I need to format this in JSON, ensuring that I keep the exact keys. It’s crucial that I get the details right. I want to make sure everything is clear and correctly structured, so it meets whatever requirements are needed. Let’s keep this straightforward and focused!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-GOTCjxPHpvdYZY8d3BkS0lEgltjEe0n-iRuV59Pjx-IlefgGrepKub97ZYn-XaebMtzjspn5vauCS081Kt2IowcDaLjY88sKfbjTiN_dy5nc7Hq2pGmjkDasTwqiot-QQ1Fum4JeXhtlH-2HdkHDlrT5okJJKhnaP7DY7U-AfOKMAE6ATbuD1z3kaj5vBTbkMteI50hQ3EYT0IALYNFOKhvInXtKHQta72jYTioNuIhW9EpYjXw7q5-8igoeRodKg0WHNnbCzG46vhIALHNnpME6Ja5rbseFznp5cUBlchyHuhlbicmvHJ2rNUdq3LFDA3Mg3d5yAyaIocFLntIkAmGYijVHmxYpvQ3tqwheI1ZvML4Cyt3Zl9WvC3HFYOlYiGEUflu2PuVWLfoQkjoN5aTyoS6-ZebkyKVf4RK6smhlkRN2Ul5_Rcfm4jCzB-5-UH2iboRsK0rxXby1uuaQrxSgRMys9kK3nEe2FbMhAwg2tv2H1BrXSXOUadS2Zul9RQ5LTI0X_vbnEbPQA2v7sbmL8HHWzbw9bbwGGIa6_YkSVR2OymGhGw_A1fT4PYBOP3TVaXt1I-mIBQmwCLtWM66M_WWBC0WtYJR5sK3Zqw9Awojzu5ggaEs7MCCmxM8eX1m37uy4oywq6jF7tAInI7r6rEEASpKTt2hBl4C9cT4C9ToWOBErE3qzQqLEDUrSyM9jEIf7-RYJxICjliJeCkOOu3xDV6JAEQL04sZqb5T-b1cCLiRkOugsR1msAvC0C21DB3my-V4ZIAzmTslq5UF8-3pBt9Og4-HCF8jeDtCnZOzU3chyh-hzv2OjtMzZl6bGL3dPDTbPZ60bLLKYjp_kp4EQZKFXqkkqy1Vsdg2BNa0R5f7Om43U8Cp00zw7Fif-VLJwCQav3P64F9QepVFVl_Qbgc1SK57allWCN0Aa661lfz9fJIUrJLFvAAeeryGG3FZPdgeLvu_D5fnAAh59MyfF8hD7N1npZqSmSVzK6Q_Tlsdd-ciTF13ShQl7qv5wMsS1CmQ9RCFK_k13SXtPUGEIp4KJv2iAVuT-Hi0BNJc9a9riq8vi6TvawiLDZLIZ19YNy98HU7oWJbu0TRGEAsu_kwjmIu-B19i9GaGvlZhGUgVeOagm-BYwOvkhSNjWVfWeA68EQPDClCNDE7WOrG8x2j9w3tY17gNrOfoOo_NWbwkjeSKUkWCFCNO4_HKq2jNkTjONweb3CkYTze1KZ2fUxzQVNueJB4ZCdtsrKbs0IKHc1CSWtwfdH3zNuFOP1_xkuBzG9S12FLgsHmIPiCE4sHy5RbZKrfzV_dtxwAlCQfffCAS0dVl4rBS_qigu1YM21KBS_iC-6Eav5vbn_zNi_VUc4ZGLMYMsaLKnMIJUk2p1B56o4YrmkPYTilw-YhZ7h6FuWpPVWaxTOPrSqYdBj4jpK2gTm7vWE_kdw40t0E9r_v5YISaiy1ecPFs4FtUcJ_nMJKlgsWBcrkV_JDBxIM2ZYdlSczE9RDMddjDBomZOrdyoFfHbmy6Y3TPVyDxK2tk4cOr4WWqHPC1gxr2kQLnvaBg2BAA_jEgJYGlsbBnkQSkT1Z3bNZPXuAleIc4LJPknrCScpcSDJhUdc6sPDUXraqwlGZT2Ajd67dDQNXvMGUZAOzjycKwI_oJI4XrISt3oU_z-iO9slF2vQa1BgfGBujcgl91rUrQLRHmdaxMuVQtMuwu7qPOKI0lG45M4yQSOJrkUyGV3ihnICPi7Qgg_CMHJHWZdW_uzUAT2tZ324OS9wyNwTguu-4PvIm1mPpejEUfkCHwl3wLRqfbr5xeUU-YUIkLCrGU7fh0OlJUDfXOZZt8oKoNpFFJOJfO0_KID6D3wBnzGsIRz6qiy9GxvpPaIvC1Qf9_vlCHiCbnwhoPXBsDiO9Q5pdMOu1XkP6UJk_vmj4Zr1UGKQeknFuX0XXckPKGoLnWvcG4GhRQGjZ89LMtS7kVd-IxkmVPH_WrOeKZWDbGwucfWoXxd-DJtoinonEkhWae0hLsZsT9jKmvPHPTuCnh_a7_DZ8xxdMgTu5E2TV4KAQLFl4d9Ez3r2JfpE51WSS97VuHCfYLd5fZbGZ-0zhEi_ph49zg1UpIhLQCQfj0DYAZ8ukoQ3YKkb9I0mZ8prsbjUwaUdH7-rdySfsjCJYkcmcx7TdXsBlRoCziVAtRIoLQia1KEDYXzcMP8Ph37SEh8gK48BSz9-mrfewkEmczv46Bxz3NPtP1NycPYGgpsqUcvF9a22w5dSa3D7co5mme8JblzSePJrcNsCyzskNCe1jshBVAFWUYkI0voLQWpQlwdDEmJOFJSC5-77lxYEDGfKI42fTSFwCss17EnXv6v94Ngnu91rh-BXWzOGB1fQFcjs-uTi2iUE1Mvq83vGsG3fnGYit1sGS2C-JaY6mHUqdLz8HKrdExKEmWorxyk36uOsI5j74TOx-0f3V8nTWs38yZ_8RD2N160yAdSxS3JT8YeEkYZ1TAkGvQv6Bh2ZRMZTE6CrmWMeX9IEQ3odRUv2-59SuRl34g9N3oJbmREygcU5mgZzG-qlvId_BFT5q8FKCwCfCPhPFSAX_5vts7rCOD7V-E-DNUzWfQCdp59LYt9uqy4kXL81QjHGeaogCgHDpMRYLBQuYKhJc8uXW_HnxJqxe_5ExgwF0j2COWf86kAtNGld1Oxq_xOmWiMO7AOrI6OHFyE1ppXZ7T9ap7vy1S5pi_lAPTGNYYT7CsS1fVZUy3H9Rrh1Uh5LgB4eR5k83WAPc91vlxAvwuTORajHTg-CwYYyNL4Fk8cuFjRuOopDJ3_kYZqaKvauLIJY2-JS6HerMOzGObKB8oHYYwC8LZhpp60FTPgUhQKYIp3iFdU1yC_wbQ0FH5vDc80AVe-ROtoLjCEcYPlg7Pep1QbiVCu5PnMB10hJbegw5hd-MF2bnqU7D7HX3U9K7itW2mC56En39xUM4yviwk-pIti25KEPrOAICJIqbiXN8CzVwxlKCm_km5OO_SEPwizDrK0VnvyeZhsILBcDIeKyRbCaxbyWeqOtaoTFO4sUqFpgBtV6_pm6REccl_E5y58YTps6Di_kJFU_RTbtlKTOr1wSHY3AhxzgnLj6izmUYwfQRPvGwScfg4iQMmIIBDxmCc1UVX0qBVkX2ZUXFKCVedoBDvzTjJd0b89RLxGrIswN48rwlZBw2ABgIlAfJ4hNMC91S7mPI6Yv3Ltvx-gaczkFJR_aZhOdgiVckngA7K7AJBbvf7mHA2pYGrbZlz-C7-otsRAAdT5DlkIbN9hcd1R-jVez6IGJlyScP9NXKBTISDrutjA5Gcdatr60wKkXFarZA3za4tXkZl7gSG15bJNG0xccxrM1oUtOwTBY5H2Dey6VaZUWIxnhdR8jSjYZLEP7Enq3iarm6s8zIckEW5zMB3xcLXatXzseMzarB4wrIkoT6CCFwUiA0kCn38-h_bUkAhh0MXVSwjI5dfCSC7QjoGvVzy3ijyCw1BN6LtaiN8wG5wCAd9cA7efjQofH8cccGlDmfu9iW9PDz9OJjYBZVq7oP--L_ft4Xanoek_kV6GXaR17m22CD_fFscM0ENI79vAeClGYbr_Q0rKZuNc0PafxL5pxipH9DO-wfbBnyjzHt7qdok3yxyNpeKcRMJMss6FQAvWXEeZeiaYEQQRTDvmUsIdsZnmcyxno-VEugp4Gi9vDZxMOI5xaMK4L6I763Osae0OVkvDUtzUoUO7Z_nPu9wNanur63aTZowQjX1SI2IVBrH8EYf2uqI7wj4UWUBdixUztqUIcUCp_h4av_E9eBurFv0JWkecLFMWGrnQ3NfFkPKDtp2zjPBXaz1fHLO5oBB-OF2vdvMqJAeD2r_r9iCD9UgH5uDikZCzH1PDyXMNoVBEpb3bvBHLcRhnx6arVM6df8Vf4u9PHhbrE=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0f2394bc83ef0b87016abbe186d0c087d1a82b439cd5a8f77f",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 454,
+          "completion_tokens": 514,
+          "total_tokens": 968,
+          "cost": 0.01769,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01769,
+            "upstream_inference_prompt_cost": 0.00227,
+            "upstream_inference_completions_cost": 0.01542
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 472,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

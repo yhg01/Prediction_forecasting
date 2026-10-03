@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Navier-Stokes existence and smoothness\nMathematical target, paraphrased from the original Clay formulation: For the three-dimensional incompressible Navier-Stokes equations with positive viscosity, establish one of Fefferman's four alternatives. (A) Every smooth divergence-free initial velocity on R^3, rapidly decaying with all derivatives, admits a global smooth velocity-pressure solution with uniformly bounded kinetic energy when the external force is zero. (B) Every smooth divergence-free spatially periodic initial velocity admits a global smooth solution with spatially periodic velocity when the force is zero. (C) Some such rapidly decaying initial velocity and some smooth force on R^3 admit no global smooth solution with uniformly bounded kinetic energy; the force and all its derivatives must decay faster than every inverse power of 1+|x|+t. (D) Some smooth periodic divergence-free initial velocity and smooth periodic force admit no global smooth solution with periodic velocity; the force and all its derivatives must decay faster than every inverse power of 1+t. The periodic domain is R^3/Z^3. Any one alternative meets the stated mathematical target.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:58:24.152187+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 7.762,
+      "response": {
+        "id": "gen-1790697496-1tJbib7pm2w9xBeS01c4",
+        "object": "chat.completion",
+        "created": 1790697496,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.001,\"2030\":0.035,\"2035\":0.13,\"2040\":0.25,\"2050\":0.45}",
+              "refusal": null,
+              "reasoning": "**Considering future AI capabilities**\n\nI'm thinking about how future AI systems might surpass my capabilities, particularly in mathematical areas. By 2030, AI math capabilities could be impressive, yet challenges remain, like Clay-level PDEs. There’s the possibility of finding blow-up events that serve as counterexamples through AI's numerical proof methods. Ensuring correctness will be crucial. I realize that while AI can assist in finding solutions, rigorous math will still be essential in the process.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Considering future AI capabilities**\n\nI'm thinking about how future AI systems might surpass my capabilities, particularly in mathematical areas. By 2030, AI math capabilities could be impressive, yet challenges remain, like Clay-level PDEs. There’s the possibility of finding blow-up events that serve as counterexamples through AI's numerical proof methods. Ensuring correctness will be crucial. I realize that while AI can assist in finding solutions, rigorous math will still be essential in the process.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-AfqTdvH6dq_Ahv-Db3JTPyKNYUbwcGxOBXYCAZJHU5UA6BiYn_x16ucbCZTC8_-C8g8pqs7Ba4b8R4KFzvB5WNiZD9SNdDmpN4cig9pNi5f0-OXsdDQlDHZ7maDrv_Bbt9bKm4gU__n1_jQfyfItsdqiG0S65s7ev0a4xXo83ygSdYMDYzDvQebdHu1qtpH21OOYDoGFW55Lc7fv1YnlVDI58VQOYd98aYSbvBXccQkyboV5VvG_WbTjf0Xo1VYsV1WsPHDIBlOG3cFzC5kmxvWfcGE53HmqsD0HBL0hCiZkAEIQ6oOvfqwv4Uh2jaxvnTSOh-hhQqcFnCOx84oeLrScnKto2nITSnRrSSAdoag2MkJJ8l9d5ZXw4wzVwWGfbNbXY1wdtIXIyut3Z7Nk4g5DS0em3T2wgRHdA7zEQKmY_AAdczavPfVbOUdPaDwWCu_355e7Z7RE1QIbMOt6fyezf1oC8RUflQYPP5yLE9rm9VSYpMoQODH_-qOe2d6TO9wya85YSnYstxGBuHCjwQ_lFfFldeDS9g3-7bpopbP71dXLeGe50EuN7kh-Tm_GaoFuxk2AaPH_WPdAdHD5w4pRm4um9mqbZ5Gs0BL6U53ojxigAbSl3EhfxkK7_rbhgX2cBYMSPhJe8h8kC4u3fnzQXbYYq_bBwRU97sIGYLX_BU1eg6M63rBeSo-i0RuBp4CIiwmJ5YTCChn5A5r6cgDnBflj-vWwhrRQpUj7YgpBEZdDVV6aYjUA9dPdp-KzcT8UwMm6HWBoe0TJkv9onilTwQoPpR_OuHIbOyVXdZa4bdhIyc8A8S4h3erWT4hUEFJRB6HvjVf1-mWLpNZoDNJiOPFr5Yt5wkbsLgkkGicA68Mr7LgRXm5dAGyUgT-YaLeKuydgr8Hv69Sh6jH5BiqPC1PtcPScSpwHLhjVb9UsWyV5FnSZ17oW7zwwibaSH7gZUrGDB4lchWo7TNuxB1i7Oj1_HhDeV6IG83gEFAFjD2f3EKARZQYxrhWiHCtXZaIKpsrVhCaL71NaqX2PlqgidEQQAjNeMaS9aHbAy6zFEPyFnpu2c15Ln-E6mrmQYOG64YP8gJ_yzkaoMyCOklWhNKQ_tmp7mVd_qEU5BFcYm6r0vPeBGUMjr5Ufx343FDzsBMYmQAkw6G1J1QxMVyx88-SwYRotHjI_l2AsUlCPZQPIs4TSo_LzAu0NMtHX98B1tH8BsKOhXWuNi9hw3hzZYpVoWyqn9K17sbpH6WPSShvpsFGqX_e3D1h8tXBthK6TsCe-WFzxoxTj5WJfHXR9MYFaGUyQKJhhVNpS9_6rlNmFMLlX2R8KUlxkRT9T2hxGc7ngpfR1iynuV4rImaEf9CJQ4WxgLzEsJbQSXEQDGMtFDuU6noVpCpOp8imc8rl9F5OOzZQfDsIfjQlUy4jxO5n6ILItaSCxmrBw96eAh3zUG3NNb9DK7Xe9R32sExJUgzT5BI_AY9FhDWO03qIQ31BlJQzjte8awEnbrCnZquFU8YcB-22ocws5-USurGJIxIzbEBxuMdDpjFsF_3eJ9QbLf7EpzT9NZQ9nYdrzZsho8BNQg9POk8PJ0R71JuJlMO_xJFve8vPtQQPe5KM2MteYgbEoyQj3kJUpyCo7hXCt8Z4APVJVcir__py1f2TzdbNCBzuoGVxElRiDKLyNuz_DlYjkvVR0DYKW4wh9LOlbHxNsazUjkgSOGUubKOlhYulox4YRNr-SzgZW_LNjt3FcJ3ZZzj6HNpLJjB8e5l_34gJhzuK33pHi2W7OFmveIARR7CQ1wItW_V83xcP1orvQxFu9fVyKHDVvPMlrpOcTCXt3PrHBXfCVAHT01JvgNSsZMvpAu8Ebp-poJZBlIdZ3R0CXZ1OGKrqAZbfSk6Yc4Tfjt4N2p8xMJCazVmmmdFli_cD15mBxearnSn6tkWtXrZtjEJzDFvxf51dyJCk6qlZoW9xW4YgTXj-HRPaxplKwSngeiO7f8hLFtx5KYlBHtudnYJA-E5DK_D1K2OD6I1S5OohMfb6UWPYxVWweP-pA3vVR9_yjc9m7z5taFQsAkUl1qV3GD_C-hE5qnO0MUC2VYAJCnd4aLJJKvRtXPuRIp7Ek18Xr3MKkYevPAu7C0X2HQkYcV5YtQxLvpSMQA1CkW-ykiN2cs28kgRdjBrrIM_1PdvK14bpne3R4wnyrePPwN9Cb3CgdTkjljYpTpKkbPPFo7lBqRT1mPDqaeL6XxafbWary3mabqliAjiafkfduDHHklu8qR_Fk3qbTgfeZKyYiwTLXZ9Gm4cpQ2WmloW4rgIDQQINMTutDjqvb4msqpEHjLC_LV3SuReMrYd_fTNmzhPKRchE0VgA1GUnR0VL81tq8JcqqnVLw1Wn6rrWY_Io1eRQy3w2SD3pNgvWht1qgJYImX3qTQPabgzCl5kA7yaY20Mgm5_rdgZaBsv4bGqblfdR4zSkdpRR-MtYscQYrWiSlh3Vspm33yio_RXsq2qBdBmkYcTAUvkic9J7K_1qJTOVGml__b2K89-HyMsaMgHKobH4EnkTFl3yw1WDzaVknHikxR6mNJw09KYYrgMW0_LJqAwCym99LhJzqd9GwEFmJ2uafs2mdMaLOACCOnVUL8lESO7AOGLji89zxJdiy0HhE2-Lmgn9oPi4E29MLT66dSSXezTGzqlTwrMeKlxP7lP0X0sgfLKA8k_vRwpXHfeQ_nH0IJ0yS1WjYtvrzCowI30E8tCU7xp23QoUMA93OEMmwZLWQseMKWnWj0o2MZzF12aUwYofAHgp7Vtn8AQHPCHF-jiIW2cVxKc5IBLrrMWkw_vSIscPhbWKQ-lriT0o_P-7WZDDTkyXok2bxVsHNRhPQ_gfOfUOFNWnjPw81xYp1gk3kuph9OK9ShYfauhT_bub3YFhWVU1B6VGbqufiKjXsS8rnyYy1kltEVIxwXjD558iieVcjeHsQ2P0RPS1BN0i06SHfIJ-y06VKr29wI30aLRQxk85MMleNaDZIW-2Lv_YhTG3kuwzJjpFbrCHHsHyaOc-QjmlqaIxgqllzpzo_2b5ZUbUinsI-Te5EKfb0gJZbzgFOKy7G6Qgyj1WhiwTiSwAzufF5PQshAqAK5M_Jp-0q-1Rd9d9zWuZsvJJ2Kke15Tnm-GkhV_YmhOkgYC5F_Y0lRPqw5mG2L-BTMDrQY1fL8lTOWORZJyHGudftKle5Sx8JxIBiLWEx_vwPol1G3KhYlOr4s8w6yoUedTr5fE-wjWEgXbnZkPmSUanRqaL5sLKVq6YjtyQxtyeYAY_KFMaGFI0yMXpUZXKhXYmkn6KZnHIf10VeQPvsGMoin7pjWM1GsyqjYhAwq3qCinzt4A19-rBLLcerbnjAV87ili_mH6EiHa1uxsXylLJfD0VwBgLPB7Q_mO8q7DMFSUxfqGVJZ5M8pZkUpW1k-ZziSmE0eDLtUL8d7D11RJ1a2kO0FqCAev13ZBMOn3EFz4rg4W83ruu4hvzgVRblUnzwG32lbKe3xOPS0QOc_i_KnKyDkJwESCJWJp4U5K-T4y_0VxUR6isJuODfxsSuLqJ91dJVsd-uFUV31v66RfxhlrcMtgQ_dP2Wgko2j9pDOqclX3lLwgJ5jigXq-n82Y03kBhtOrVImiJaKstynoLBKdqvyocM5AHq9gDkuro0Je5gdMdQXTLKcSXOhcpi31A0nvrZMHuneyBpLvhHaZmBymOpDRVcvYYCJtDq-cgUBADyAB2myivNlkDPKE7ACDEHTFJig-IUdMuDQ6aRf46UoEoNX_zYqTtnBi2110UzXtlXaQRRUjLp6Ivyet9NzJHT-f6haZ9oLx4waLxSkI7XxBFGwX7AducS73Md8794Srw2FmSEw3VyDDd9polZLthe4BvgikqhAl8QhInIJ669iVp8yuiqe6WIk7XprPOQBbBreiS6ghFSZRPw5RMz-jN_5JIjQVW1Y2-16u5vL62JnPxqd226k1SJTGdtgMjavaP2zWb-pn1E0fu2arLWse6eSNhiKFrHfgKNgp4_m-ObTZxHq5Jekqyx6yetmQaEf9B4fIizs6swp_k-oXyYWDAJbl7VwYP4bCawAoKQEQ1hNq8jpdvIxofbXAY6vXTbmmVi1f1MyqSL2CiDxK5PtjGRyd8ybYAy-yKeJs-19uIRdBslM2vRK39lkp8RqPUFW42f62l1oXQNd1ZC-9w8ZUS0ke92LnGpMW6RhpKBsy7zHJw44ZekheAAxYpfxyGeYlBGwjRd7Iv3_Bz8-c85w00iPfIoNM31fOTCUhUFy9W5oC5C1K_mZAsYwUoUAOqgF7CP0LIFdTqOOpQ-96VS21o_JVpOiMsH8RikQW4j9p5frInx6hquV9q_uQDJxp4TSO3UX7WVuyF-FMXkMI8OVDaZM5ojYxcZSkkhjTLb3mwblhtg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_00222556fd13de07016abbe019603887d1953cb8054bc1ab17",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 449,
+          "completion_tokens": 558,
+          "total_tokens": 1007,
+          "cost": 0.018985,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.018985,
+            "upstream_inference_prompt_cost": 0.002245,
+            "upstream_inference_completions_cost": 0.01674
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 516,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

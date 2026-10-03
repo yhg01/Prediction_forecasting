@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-08-07. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Riemann hypothesis\nMathematical target, paraphrased from the original Clay formulation: Determine whether every nontrivial zero of the Riemann zeta function has real part 1/2. The function is initially defined by the series sum of n^(-s) for real part of s greater than 1, and extends meromorphically to the complex plane with a pole at s=1. Its negative even integer zeros are the trivial zeros; the conjecture concerns all the remaining zeros. The target is a proof covering every nontrivial zero or a rigorous counterexample. Verifying any finite range of zeros alone does not settle this universal statement.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:53:19.189453+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 21.44,
+      "response": {
+        "id": "gen-1790697177-M7dYJRrLBun7qsKPAsVo",
+        "object": "chat.completion",
+        "created": 1790697177,
+        "model": "openai/gpt-5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"2026\": 0.002,\n  \"2030\": 0.02,\n  \"2035\": 0.08,\n  \"2040\": 0.18,\n  \"2050\": 0.4\n}",
+              "refusal": null,
+              "reasoning": "**Evaluating theorem-proving AI**\n\nBy 2030, it's plausible we’ll have automated theorem-provers integrated with LLMs that might produce significant research results. However, problems like the Riemann Hypothesis (RH) are extreme, and historically, major problems took significant time to solve, like Fermat's Last Theorem and the Poincaré conjecture. There's uncertainty in predicting AI's contribution to solving these problems, so assigning probabilities seems necessary. I think by 2026, the chance might be around 0.2%, increasing to possibly 1-2% by 2030.**Assessing probability timelines**\n\nI'm considering probabilities for significant breakthroughs by AI over the coming decades. By 2035, I might estimate a 0.05 to 0.1 chance if AGI emerges early. Maybe there's a cautious 7% possibility by then. For 2040, I could set the probability around 0.15, and by 2050, it might be between 0.3 to 0.4. It’s important to keep in mind that even with advanced AI, problems, like the Riemann Hypothesis, could still resist solutions. I think a 0.35 chance by 2050 seems sensible, leaving room for uncertainty afterward.**Calculating event probabilities**\n\nI’m considering that a human might solve problems without AI by 2050, which would affect the overall probability of significant breakthroughs. If AI is strong, it’s likely to play a role. I need to produce a final JSON with the probabilities without explanations, so they’re clear and non-decreasing. For 2026, I’d say 0.002; for 2030, 0.015; 2035 might be 0.07; 2040 could be around 0.15; and possibly 2050 at 0.35, though I should be cautious, maybe leaning toward 0.36 for that year.**Defining probabilities for AI contributions**\n\nI’m looking at how to set probabilities for the first publicly available correct solution. For 2026, I’m thinking of 0.002 or 0.003; I’ll go with 0.003. For 2030, I could estimate 0.02, and for 2035, maybe 0.08. By 2040, I’d say it could be around 0.17, and by 2050, I'm considering 0.38. However, given the possibility of more capable AI, I’m leaning toward 0.4 for 2050, though I might also consider 0.33 as a safer bet.**Finalizing probability JSON**\n\nI need to make sure the event requires an AI contribution, especially in a scenario where AI dominates mathematics. To keep things simple, I'll stick to clean numbers without complex decimals. I’ll set the probabilities as follows: for 2026, 0.002; for 2030, 0.02; for 2035, 0.08; for 2040, 0.18; and for 2050, 0.4. Now, I just need to return this as a single JSON object with the specified keys. Here it goes:\n\n{\n  \"2026\": 0.002,\n  \"2030\": 0.02,\n  \"2035\": 0.08,\n  \"2040\": 0.18,\n  \"2050\": 0.4\n}",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Evaluating theorem-proving AI**\n\nBy 2030, it's plausible we’ll have automated theorem-provers integrated with LLMs that might produce significant research results. However, problems like the Riemann Hypothesis (RH) are extreme, and historically, major problems took significant time to solve, like Fermat's Last Theorem and the Poincaré conjecture. There's uncertainty in predicting AI's contribution to solving these problems, so assigning probabilities seems necessary. I think by 2026, the chance might be around 0.2%, increasing to possibly 1-2% by 2030.**Assessing probability timelines**\n\nI'm considering probabilities for significant breakthroughs by AI over the coming decades. By 2035, I might estimate a 0.05 to 0.1 chance if AGI emerges early. Maybe there's a cautious 7% possibility by then. For 2040, I could set the probability around 0.15, and by 2050, it might be between 0.3 to 0.4. It’s important to keep in mind that even with advanced AI, problems, like the Riemann Hypothesis, could still resist solutions. I think a 0.35 chance by 2050 seems sensible, leaving room for uncertainty afterward.**Calculating event probabilities**\n\nI’m considering that a human might solve problems without AI by 2050, which would affect the overall probability of significant breakthroughs. If AI is strong, it’s likely to play a role. I need to produce a final JSON with the probabilities without explanations, so they’re clear and non-decreasing. For 2026, I’d say 0.002; for 2030, 0.015; 2035 might be 0.07; 2040 could be around 0.15; and possibly 2050 at 0.35, though I should be cautious, maybe leaning toward 0.36 for that year.**Defining probabilities for AI contributions**\n\nI’m looking at how to set probabilities for the first publicly available correct solution. For 2026, I’m thinking of 0.002 or 0.003; I’ll go with 0.003. For 2030, I could estimate 0.02, and for 2035, maybe 0.08. By 2040, I’d say it could be around 0.17, and by 2050, I'm considering 0.38. However, given the possibility of more capable AI, I’m leaning toward 0.4 for 2050, though I might also consider 0.33 as a safer bet.**Finalizing probability JSON**\n\nI need to make sure the event requires an AI contribution, especially in a scenario where AI dominates mathematics. To keep things simple, I'll stick to clean numbers without complex decimals. I’ll set the probabilities as follows: for 2026, 0.002; for 2030, 0.02; for 2035, 0.08; for 2040, 0.18; and for 2050, 0.4. Now, I just need to return this as a single JSON object with the specified keys. Here it goes:\n\n{\n  \"2026\": 0.002,\n  \"2030\": 0.02,\n  \"2035\": 0.08,\n  \"2040\": 0.18,\n  \"2050\": 0.4\n}",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu97uN011QhEcrziicQwwm_Wildgi3_dl80kL-S8AIiQKMm81FUUA9ieTnC4qyOokyOxvK7DK4jYQaaypT-qP349Rkl4NvqKCWFTr8xQ3AfElT7q3Pf1vpN1TWauLTGOjOr9PwFUFvzj1_nnjnpLD9s2uLSXmjc42dJXWvAZsj-xE9h-OJe0YjUOkjgFOSexIoh591LvNgGASjMQB-Z6Fqihryzxy5bln0OAjhkyxAe2yvZ74rZN7GQIlP4Hk_rzosEfvcurnOrZnRYQNpCVTfimtHfbUKyWJ4na3zPJqc6-9obyI5dxgMe7cP-08Cx3_qyeU7_g_BSzZiSVt6wXyYNK-sIjRtjfZD2zk5CEF8hxKgWDJZkKvK8PAUowRuV-Xt_MQNf-Ocd28v9s5ZoRLGtUgiIQAT6HbWCnDTTyiRY1LpMedfh3cYd-pN8B5yDqycu625FHwJVMzbdc0EeNj4RZEeaAGcMNqyRufWqf_zQUC4v3hZWV0CFU7iIytXcE_vflAhkfR9Ik8PcR9On2jRawsLy4XJieSkjuZMdP1cbo8fwf3Y4tfRzYwLCUXCstteA8cSMQChR2DVuvL8qhuVfM3NMxYc3ldlNq8FQDL5dKByh1u_1rGyXrE9L9E_wZBR0INRAUQG8u6Igsc_mDTWfCjRjequDfnw4X9S_taa6otf2ZVFrZev76HZUYZaVonDevpmkX7wvrCA7633p-XWSMNyH8-1Zr_PHpAacySQMe-zu1M3LZeYvoiXqdfCXQC63yFjh2DGQeFq__RjoHqcHm8uhTPrao3jV42Ba90_zZHBMRdCn2lruYyyZoH3GKbBZzfENQzkezdF8vdQTT6GHVsJ8ilfZNcJmg95srhad79VzER18pPTNNHvsrySyI5SYmiUbvaFjPCmL7P_r7R3eYGahU9dNGNkRLMToXgXcP5kSXrax2Jl4cajQNXyEjtHZ3rCQeEAUN_qOrFM0CRDYfEOuJnlByaLlBk8gHpTrZjnsJP0jP7HJtpUSLFkarSh8g7x7LCgwu7xLigZ-vlpnlBtZkErBF0RglDRYo_5-ZKoX5qPrMkOTVOiPYPEdW2XKC6f0uZgRq3vfopqDs_VVPkaR9GSH5dl1Rt4I8NTOtfcMOxWR5TFDy-1BIOlcTMr-VSCT8FKAi1PYlrqG_69TbMiCbiRBMVYyfcgv69WZ5oXH-8oczIM8KiBE7BSHEGZwI7PlK4IkemJ4jU8-jXY1qTgVGT17rOxQ2fFFPzMjidnB0QnRIZnq73Tlfmc7iu37j-2NP5YjF3QSYhnKWtxPih85mhz7F5RcTnx5HCJn0GuowLpBqhGtCfhbic4JLdRGjMUSXAIEWlw2n4UoL5gJU1M23M-Ub43GLiwg50MThmSB1oWzCGWMNXxEmIw1mtdzJ-gAuqQDEqSwNdTdJAi-Q6esziZFwHmYq34SW4aB-QkqhPot4GjxrUDiSQK1IoAkVHe-_q9BHAA0CjActZMFrfObqiRy6tWoB7j61HkWOaR5JvbrmVUA3N6t7PDGNjckj5kA-wyx8d6qYEX-o5xVsGeB1kRShUQ3Py70Dnnx1kNdVp0GpeFBvTnJ33xsfaWrd9GPV4-G1IUKBOUhqC0P1QP37SSNkdPWRHtjiJqCSzXNdF-DMIX-0exgxZL15DM4XExx3xpTMqPCf7iLkEouRMK0_13ctYkHGZNU00uNcRc2q8z1ujC10T_XplSgC8DtpNMX20G2V8Vs0G6GtiAIk3GARvDWlAXbcA4k6tPDEeaheUfB6PcbeNdMEXAbj9nwzUFD-ZdQzKro8GcngbqiD2r9JePN-VKm_NiO0w9Tp1JON9B-78zukLkKij4YRFN7v1WDzIj1SMGqe6NvI1-oRF3hT1nsfbd8u4j--AVTAp_YQYqqgOpVMpLek4VzhxFOO9BCMlUz7oj_TPZYRGFumxU9FnjWcHWjbXSd3WiHhH4Ag4zLasThuzziTXSMlxGrDC6Sw27-JsnDK-mnyYS3O9uXGykCC02_kH_NRRMWe4DBnFQyNXrXnj4Kp_r8GZNy25otTixdLXDgD7ra-d35TN71W5qj4ZXSCiJGkUSI8r-hL-i49jjDEop3I3kX88KZkqZg0vonQqhBbWd5EzX8PT6Q3FLZmtJXAwTAIS73EPzn9Z07AOXluoMyqgo7Jr57a0xogkRnmg3zFSAsiiZKUAh6kKDgGIHgXbnpDLlEZA85vu3DgK11dDZ59lc-V7-f-Njl6MQAn9qMH6bieOe2SD9Ubr27IzZeeOtn9Kzf_Hzx_6YpfF5Ba6698JJbm4Ouv82WF1Qw43iLYEQCrbQCaFcJ5PDg6WgXEjwcAMBjTNhGsGcFZgcab7T0Juf66hDYLczcAvjIeb6WpCGthDu6bdqfRCekjVRzNJNyeHMxn6RBR046X2Ajut-F1RRsTS3TQRzQi0LyXssUUIcMqV6X2IRCgsThHuLdhu-503pHj0FUCliOkW1Y3KqjkCr1CxFyuyihd8hG3KDSVz4-BXl5-jBDgzuLMQnLqyeukXshPN9bClM3_1RxX146RrQeEh8Ceq7_Mz9H0iQJhMSe3beH7GZa6XoxShQ5d3WSQ4VCBbLyzOq3n48A7Okt5cyzE6GLg8LBp1pysymV3_oGWWDTkUNnYWrSPJ-Gxu1MRNQ6CJ-H9xofO8n4Apiz-gdT3NDx2ia3_3zXoFYKfYxBPrSDxDlBdI4tOParJcoDj5Yu9aF82XRAiBvJz5yntAlUVSjxd_fwGLROdz4qi5pRK0d-_x89aU5NSsSQMtvvLuY0aBQ8o24ldFjjhLJ7C21F4CmQMBmN8laz7fIZHMwVLWnqVlsCrFwU24FVKpnGfxoHCNYi9wV-gLu3bR2Qc9x9O3N95-guczfcSOJGoPj4dUKWqS2px4nrZWpJPeJ4cVLTdWM1Z3Y9U3r8ilwKgGXGeaZgrtVbVqhENEwyK92RI1uOzJcA7AFQpGuXtBmyMbk36tkEsSOX20iXBVzJlMY3006G8sbKidZiVbebkEz6CZrwZBjRJhPdJyq1sd3U0Q4ZhbwW6I80XoOHAZJdIe3DQR9Njzig3D4Q8UVU5xPzEvP6SrRO-acswkwPiNFmVuZik_H5eI_Wx9_BWSXIamzhbtRgYInNmtiyNn5x4GgQpHUsWytZWEPczIpOIYDcs7Ua9Q8ItAiQHVKICrhOZU3H_56l3QhYX5pYD4fBTJffl3o9kwDsdQ8-54FQPgFAUSC67Ogo-W1hq3401Scu5xiPdIkTnrxQhWccV3uMsaHFav2KRYt_8uHfg_287FOty8zC43cRp3M3XSPMnZ4fTnuNAbzgFyltqk1LoF5g-vkpV_xJ5MJyu_Hk6ThyXaZ-pSd9r2AiKe-Eqr7B5n7anEKYF0JXysKPPnDlu3EMKwX0l8erxEQSapHmmCddwcWVJQqzHJ1hYVOToSpgfXNVv-QbCucLEI7snJNHVSVuhzOZGYY4BfEHwYLIKS893mBcyIWaRcQZzQfeVXHV8hs2gcoZH7zd0WROgNCND7FRDtQMm0LNXzNmiBZVbPntjMer0btOujcqFyv3NH4OJ23usRu6Nl4Oip8QQKBCXD4a_6iSP3WLJU8wYhXrVzI7UGD-nyBzRAsP5ekNfMNXIPELgwi2SnpA6c8dDeWZ6VFr4S8xIY2Hy9CQMzULJGDqAnE_Cka44mBE8jJjFMaWBl2Q2jsm6Sp31V0bY9SDh3D3aK-d3u_3BoIx_9ZUtaaYEdnA6JRdPucqtCpfHQqC3MkRSFDO9Y7YQ9MevGup38Uk7xTKdSuHOsa1BDhkC9FMfSKoo2cM57kjZbaaIKznxP9-yapINYC-faAO3y5F2nE9YVvP3kr6ZLt2RQNmGWDlke0CjgEbICMp7KQuxVmenpFLsXbinodF-_2ik5vwtl_0Uq0f5JCrI8ytFgRm7D8qyLqq2UZwriHZT9p4f18loTAVPw7UugjhkdBmH39-03f70iL0vYoYSf947Nlc4_9SQUDUZ-_tP8ikhw5Ihbhhj0XEDRJoO58imV2XadO-zF_SQCX-kVS4o_FMagMQYx1V6E1wJ7LHz-X4IO80a-jx-ehcA0Jscz_vaIeSBYLtTl4IAXgMyzXCpc62O9p5-fDPdLdZPM3SeuQpBrsmoiuEa6l5Lum4rYeNniIK7sffJU8m4RAVFUTZnyGtAUl4s0__fKOx5xmZuQAFpiAyHc78ibEU3Fs1b8jhI9-XyRAUyYn-BM4OqRSInd4P02i0JXDbHHOtx_b5WaZXe9PgQzAISl8xeis7UmxznMjMebOHT4_541bKy_SohJjqEq78k89lAjt0nMSTjGKkEll5cB91Awa2iiXpf_20gb9OcMc0mXWHcZ8TgHh-jU4VJG6UjuvSjyDAfoabJl7vO8014X_JDlBH64sBIqjeJnQOzX7w_Xyck_7-hIC1nQicHERZUgEr0HAj_FvM15IlAiCYLn0cKAVtcGf91Uu9byzOzN4RlF_BTMNPaU7i6Wq8Ntab2xS-VFkNZVkm6wWd_6wHIYvvZN2MZsUwvJ19pX4ISwXTtIDta80pr5nevY2vYv5c5x2NXVM830asNbYrPh5W2yPs3PWp5Le_kHkTV6lACkIlsImYoWIWBVnBh7AuWXNb2D_RN8KAcgE59rP_NUhT0l6o2V_t8xwPxpFnAl_yFpYyqon9rEs0TrY3V-neLNarcl8pNr9NL6GWbfrmC8VlRbIwN7ic2qY3xvbMHo75A6prh9CEoDcwzigN1eyCXFfct3m-nY_5G7CnorcJVBe6T-x9wLOZKwEPv0hvWLJC9T9K4M03XS5ZhUBdsZHeoI7kOIw8b3hYtSnJJyT5Qdh_R5uMa4Q91XuKSxvr-FK5ks69SB4giE9gssvG8GwIaIyLwY7kMHjvAuWxE6SPpQHQ0UF5TOvhAvkO02L4SB8XC1_DxaJsiTUNkC1NX0F4aTMuc5PkqQ4JPs8E3p_AYnG2SnTrO3kxCaKtYhODGFzsERHfDKBsXrY_OUvReI4xfD5mV4GqGsAz6Oh273BQTFiPnCDy--s2TAmH6muZ0QdM3cdGG7tkbwoelVE9wvcHobzQmMHB9OP9Y9kBvLtoamFxCTsUDt3Z3TKLRyEKUK7m71HoKpq7WAIREB1FwkFOOEEG1YlpiN_-0CLZbJ91TwsIJYxxSxYcg8z3Bbg3EA48BQOo1MVarcffBZLfkGc9oE9RcFseuZjnpn9hse4QpY0kQGO7oBbEQ4wQE42dSzeoKtHY-vk_4Pe9z2_D6HNKPZzISjyS5NvJAVSEAxhnEGKikm88ws-0pu0FxxK6R831V6RzzvvgtLgM0QyKWHkDYwc3VInMgbjXQQEz0HzXwi4N6EIbpHVCOksidkqVMFkv4NZJ3LAIaucp4y9gDWbG0su5MvRmWM2NvZ5XQq5-yTJdv6IS_WsUrNZj_Jc9aGTbu2bF4Nqg511aaz2u_IZzI8oIQ2kUKx44sTi7QLCGgPkfjJJ2KCdgmK_O_rJZKNqBfx7S89C3XlBlXnAruA10QPGlQoXMI9CbgP40MTxnDehczCKYUtCVCMilyGZ_2wWi0fudphaDmAGKIR8bt8xapDNB3HE-0LyRFBwRFotSbHHLke762BXlI6lf0mTZmChGqJhgjVHuylmP2EanPJFCiMqGcQvJsAQYuN05hA6-_PiFtuuIywytDACbTBf92FI4c1cZ4Zoev-Mxdhpx00CJzIckNS-vKEJf2S5rw7rNHlXz6i8lMLypNpkcQgWc9qjUIjJcnCUjz5-QziFpTOAJ0KFuM42AtY_VkOUhr2QjkTU7ZcYRUS1fPtUgU1gen5Nw8kOeWGW0fZFFrgkkeLXtluGBxOjMFhbg-3AR1FHl-UOvXzsKM9uDU2CoIoOcCRsMwwFGc7drY86VzAxzT12Pf0ghOt7gD7n2yRRCEcvWtVJucPRSCcpYLRSzCkNfDRy2qrcQp1js3Jler11vHy_HEzu_o1BUiMdBgR_dijJ5zyDIHcx_nXqN5eMASBDdicRU84952gW1jO5O1-7IQg3nBa7vsTdM06oYFWT0TgK90d25aft1sg4uHPGL909sHn0QR1yCxruCRVzLCGBoetNoFka233wAY996tzhpHbphTPXhX0gE0YNktwFvOACZXHK0ArbosQcUIVRvVOU-1rClpw8VT2jn-08AKnBEZDqP6Wcu162nmlzWvUwfqEkm2ttGV7NSl6wjyZ8UTC8nG7flfXKuVGnT-j7vPHHv6Mn8vpVzpJMRQRejClFd2X1XdK0LNf-tRBPfAiXFGMYPGmuZPPU_vVLDEbjrVuxC3BdtbCy9IhS8vg6rnvoQeQ1VOpo7Hmdw2ELw8vZP2ulERNnmflqdQDWEWScgdQKE39BkdbDDyfCd2ZuVX1qqXsR7iy-vPdEITyRY_CQgBGnfSDHLvMaDEbKMrcTlvr64c0--kY7f6g-BP2vmRb25T3NxBrzszcgH-F95RXisXOwj_1_qXFdFLFGz1pqMbnAuYHJ5cDeYwAYTJYvixkTrO2Q4B9gTwkjUwZjRwGq1RVD9zzmMXD1OcnbngOxMQ6HisPHmIZk5EM-lINXRGdabRB10vB07SNOsBslp9WfweVrkyGj3Ha-3vt7XPs1rb5Dm4d9Dan8RUR2bEb-C9eureRN8q91AT4CsWO-0-5QM7oEiY1vZ_gpwCZqInW9iT5qaLrqQWWWYoTFMcLdNoPlqKebTB4bR1Q4jEu3duemP9znEc4mMJaKQ2PlZ1oFn2sF2J5UX88PcMoXXLVBHUxFAcpZkn5rK8FWHQ3McfTkFUEVzQxK_SPFvVUpRNfQ0uueMT8jTuTUFyBzCd_8F8a3LsxP1fcwwLEM0zChesrr2y7a_ITA4S2-lb1OBN_KBGcT2E7rJ0kx708GySj7t66cRWDYQzjrgm0Y7X-icCzcm5QI91BnI3l_CGs5k136jqyPwEX2wvtsT3ZkRpt90U7TONNjY59AXPtiqRl33b9dBFZCtHVlBlO12m_Aia_TKZMI8RawEleRbAcPsGslypRxXNtKbAJo6Ycv1VJ6ZJHbuf2qx8pVYTebKNxx7JB55JJr88vqlLQ8Y1SnDdjZR-gT_WVllWkU5YktLNbOK0V5uvXAMdMluP2sOAb-aPs3zVWNGKUmk3gIKFBmK2Bm-fnLtc9iYCN6INLME3m7PMMaRPihGugs_O6AzY6FhE5iK5ffM9WOu2_1D4gEGMfgofalJqRcPtKorAhmKkm5Bneg7VURjMsVhqE8BDylNA4fs2rVazgmsVPhVZPd7cSMR9HStJAiOO5Y7pNu_tehrJ95YngG_5w9of_SF4Bokhdwy394giiR2IvlVLzYUoj9qh13RC5gjp2sOiPygwHO90Cte_qd4pnU1vv0IRBJPzqYoFYSeF0BTwq8qnke3rAGI41kNoQr1Uu6pL0ARsfV1qQ3ske3gytGAF0f0J4EGLo8td4Eh33MqhOYrWCmzlt3LUMAdC3oK0l6Upny_sXJMLmFeZ16Tud0vWcbmr9ofNwiYHoOJKMqS_AIGjyqeKF4RoB-FvqLUCCizttYfPBSq0kg2CfjRSY4ODNJE0YA9PSF7DOtQYMZuFYolUCLZhyZCWCUbOGMNzsMeTJ7SYMthJBCBAxoOSPoqZTIAKL1MLF9XWYkhk45_jdGYbN4WMMFBZCuaM1NbTDNiZTtMWlOiO7vxHwubLARzutBFynz1fU1nifAdcxTQp7BL23ODrzHPA-5E_WK6pvnNwB14FsQR_MPsZQmNyHWs5H3BM2HOE87tNjGwQIHT1mpFdF9p9zeuqHhgGyvhBI8vUD_MFiMnt8TX5fW3pJmwGHP5xnvE4BguNhpKrrrTKDq36m36g8yeSUA_LVV2FUR5oV1TkBP0zjV9PF5aL6U_BYokwYwgiaTwMghgriVe-Q_FToaYeQGsoNwmmsfhqavbDSKkdgUzUt4zKzR4xxqrphLDZ4g7B8hNWPmysDJ-BsFZ0NVxaA2tpGoQRzjIbhF3Nya6n4wGoiV8aRrHwobKOAwyJnUiM-pjvr6U7NZXZw0UZqdbs2MzDGEOSubfuQe-GgFHNf1hLP4vLZKNMeh9uvPs7Zo4Yx3U9iGdtSF6M=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LTIwMjUtMDgtMDd8b3BlbmFpL2RlZmF1bHQifQ",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0b308b46ae94aa5b016abbdeda8bac87d18b9d77a485b4e4e6",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 360,
+          "completion_tokens": 1414,
+          "total_tokens": 1774,
+          "cost": 0.01459,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01459,
+            "upstream_inference_prompt_cost": 0.00045,
+            "upstream_inference_completions_cost": 0.01414
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1344,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

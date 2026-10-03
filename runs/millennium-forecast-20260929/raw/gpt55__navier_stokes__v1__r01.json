@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Navier-Stokes existence and smoothness\nMathematical target, paraphrased from the original Clay formulation: For the three-dimensional incompressible Navier-Stokes equations with positive viscosity, establish one of Fefferman's four alternatives. (A) Every smooth divergence-free initial velocity on R^3, rapidly decaying with all derivatives, admits a global smooth velocity-pressure solution with uniformly bounded kinetic energy when the external force is zero. (B) Every smooth divergence-free spatially periodic initial velocity admits a global smooth solution with spatially periodic velocity when the force is zero. (C) Some such rapidly decaying initial velocity and some smooth force on R^3 admit no global smooth solution with uniformly bounded kinetic energy; the force and all its derivatives must decay faster than every inverse power of 1+|x|+t. (D) Some smooth periodic divergence-free initial velocity and smooth periodic force admit no global smooth solution with periodic velocity; the force and all its derivatives must decay faster than every inverse power of 1+t. The periodic domain is R^3/Z^3. Any one alternative meets the stated mathematical target.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:54:37.424577+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 9.194,
+      "response": {
+        "id": "gen-1790697268-OL4DbFILGoL7OtgzI9ZC",
+        "object": "chat.completion",
+        "created": 1790697268,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.003,\"2030\":0.06,\"2035\":0.22,\"2040\":0.38,\"2050\":0.58}",
+              "refusal": null,
+              "reasoning": "**Calculating AI projections**\n\nI'm thinking about how to express AI projections for the year 2050. I wonder if I should present it in a JSON format, with exact five-year increments and possibly including decimals as well. It seems like an effective way to present such data. I'll make sure to format it correctly if the user asks for it in that style. This approach will help in clearly conveying the data!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Calculating AI projections**\n\nI'm thinking about how to express AI projections for the year 2050. I wonder if I should present it in a JSON format, with exact five-year increments and possibly including decimals as well. It seems like an effective way to present such data. I'll make sure to format it correctly if the user asks for it in that style. This approach will help in clearly conveying the data!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu9896EkxgI4ujQPYKHAUZUzWJVmFldKCz3YGcOa5X9k8RyDc_qaRAZeILcLixsTW1ZeHg2vkX1-DMykgOY8wCHvKx9NHd8G0IABLEmqApzuTBkNCPSvO3x-nPuew7_TiBnSe16ov9fE8c8Nllluv0ZlacToWqwKlGO4TKdJXXrE3j78Sz4gT3PJf0toNj_FzdYwqmcxC8YZDMhw1ct21Ul7YTdya65FbUQuWr1AvE8qIqZ5JY1ZnowInlooLH4iMhRYhFpjBNUZXem8cOh-ptp6RGP2DFxtlEuoiKCJ68_wvfGL2zMcGKVKRWrx9t8fsWyOZ-vYRfvIaL1-_Q8X6HOTqaTHaqLNu7JZmXy929k4BbWUKlRHpfO3VtbAMMo7UPKXuyPhTy76nxCn03iI9JDqurcdmShv8tkJ59Riqn7wN_K8S2PT7pRMYjRIZrjFISMyEdOun74kJ3QQLFEQfokP36YYz8eupV2feFaB4FL4KSgC6YnsUOnXvz38AjG3zjZiOyG5Db7zdYC_CA4RXMGou_HgOQupEtrdZ_5_O_cOwxTpkrQt5lhlhwacY9iWkoTE_yWqxSGieCGEwCBqjkuvnL9_btV69Siwa_Dtr5OOVtBLwRpZgvyO6lKKz7XrojM0aZQOoyxKfnvp96E6UeDl8Ghch6viSAt_ofgsyUPF_GDCnjIYp42nhBRN-nubi7RwK8gDa6c9G3A07Y-ManFO0BqA0LblZ7i8-j4RBPNP4TElgF1rbK6UZbCMK60rx1HEDEbmPobt0G6RyWtTmodP1TvoYKZdntq5ZiNdnIzeU7YIEJdFenEn-HDCc2M8aRGIFJcpN-OuPYzCJ7cYjyXV7g98PTcuUqYk0RStyphr_fYRmJnsPSxdF6I7CcO7G19t9dIEH5lnJ3fj0ufdRy4LBmdSTUJOva-ghwArHXjwzPIVuwmLWY2cxNQ5TJG5z_qZbMGfMF68PwogV5IC0AjddQ33EAHo5QSx0FPVdn4wOp_JntCL5y2dZrSVd1ufdNC_GLs0apxkVI7yikPF1Q69RCzrQhGBSoDbJl5qV2g3Cf5TvS3MRvi6Kjp-49eC8O1Kdysonyr6mn279_dKCitGD8J6mt0s99ywy2b48r7Vq9W7eUvucWN2FUd_KAOwYEDlKQGtqbGFtog--H-wp98N54-57s4SFYIapa49r1EfQy-ZJbyucXrbC53xBVs-FG-bN1j293Ncr7fzAOIb5_CS8Uun41d4AUDzVgnqk44XNcRt8pAy117pZwh3tK90IfgE_MCBc9DuLj9JptwXX5XpGtqjn-hO_Y7qdhb4UHz0FYTIpqxHdflbCNjoYL5y-WD5ahrjdDnOJ8IEqBRn2CiVDz_-hCzbqKoZqtcraKfp7zvIUrRzQVTTZX-7FezJsbALA3R0zBrEgXh7I9oaBniLJIP_uzk8TB-C7hw520hUVDwpBty9Axx2nfipamR-Shuhjuu2w8aWAL1n249qQORhObDGQrpEHevHBTpDqQOFTGWw1xkynxwUc2kqP5eNtHdXvwiqbYAI4Z8oiHC6p3mIth2qOrc9abjL6ZS0oAynx7RcuHPPJOO1H0FkyxI_Kx-P9vdoD340CXUov31z0KFxxi3V__u-X1XVIvmv21tr8V4wH51yIvTyvfagJp_1YxibqKISAsDfh4mbu5awsKovHQfC8fSwpuvQ5y1NMhB2CfEnkZQqXiP9u0NzShCiW5Je5STSjHAEVzoTiI1Dhk0lD_IT6KMReBmnvspMdY8c0xA7GsCaqtovWCjmaPoPNWrq6cJzrR_De2cL3Ag__A3CcF-tg0tseqaxj_ByBioaxOYOxZYdmAwikpZ6lEdJw5wQeOh4-P77j_P-2YKob9AMV_L9OZLFOFjihnKMN_mPA7PIZJE2g9c7WoC1GsPPRHJLgY1QI-2iwn5Hmnsdm75nSBwPqBWJiScF7CUVEp0K210PJdq16oROW12ZVyUT8fL_7C8RJk2jhp9sEkqu1hLeTwUle-lpjGguAgIasaVMXEvoHp6dXM3Z3rZlg8vjqiKJ6MFmJEoV26t9zw50tXPCgOqBe40vYMEyhgBqCffM491YjAULnGOpOGIlRsJS4IPnxnRPLIEFpASOx7P7qLvyWfKmXApIUXXP88IoJW6UUCEhgmGXL3N7ACoOW07AaMZcMJuWhnO97Yvi3kEPr-rNE9V9XanicmolLqYHaHuiUaGueSFFyVFwpd62pJw_ifagul0vdHVtt6aKZEdnpJD5os6S24TGhdGzxpWqmOeXsLbSgYisSiq5BJZVVitWb1QRd185Bi6TVbMy8xLE-HYxuJcYmy2LWwG7sTsaKQFkY5k9lbFoTWuiMCmQ4Tc4dC-33VVrG7vMkdO_25R_KPYJYAVaP2nnQlhvDrMVu9YZt8eXmKaK5x0G-gVWmby7izrvgjJMpLdATgndkoC3Dg0JyQseGo0zFkeQE414nJ82nYnzPyQ8pXxBGESz-XObG-worxF7QfoZFGxi_vNixs1h6YS68XKAvl3hgv20qC0J_a_ySvHQfr7RSdLgFujgC7XkhEAtkMCrtxCdcvz7oGSHuGfhUkEXbHpPleW9hsWEOfVBruAHIc6Dj4muwNqoLJoyNSPnOu-vKHRfUofZJHIfpIpSeczq6IC9QpYJ5x1JyOAgICeMDirSinDHszb1WIWzeZJSj24dCQnQ1bPQpEOJHYvbnPK7fBrdQmMKeQEdP3VKPhhc2yscS-nNp1q86wvmEDIyMeJUo-BUbAMpxZE0usassalptIzt9SluyTkRCMAqq4EnxjBz5bsFbE5cok_qEwybLj86N4GLN8kxA90YpZmS34OEuD3fjUUkBykqeMwFCjdSKHh29hec5V29zbb02UhRsyW95LWE-N2ao01uGgG1qcGvVfsJB3e7T1G216x-ELjC7tVLX3BCFa_78v1YH5jXs-X9WtjUfEMWh8FslszFSH47EAxyvQrC-9cIGtb6x3QEwnAaEl-i2HzSkR59fcLWA2KEPCQJkdg0BFiRHopFTXJ004NjS1hJz8vLYkHQBj3ggaUO9D6WOJyj_w5sp_1eFTUAnCjqwpcxSNUmy1is48nQZSptj_1Cw2KeO8auZ1ZpLRm20PtRwYL6OcmST3pStBvdB7jJA_D5Vq9wEQOCMtRixf6JRJyzVRovdr4ZDNFEiZKfRKTfT2z3KEl52rojx2HpM38gpFG0Cnyxa28qfAVXNTCGiwVB94f75HpkYwdKpqLEAYpGr_jcv4TZFLXpDeMvmtGSwHXJ7AE3dwd9LVZ8LrT41Icxqx-JCJmDCt1yj_fIMz2IouXdp0n7ta-XWe2MpYhmeidIUmfOCM3M-xxeS-FVZvPPQmPjYhqBG-Kl5WLgysOJ0fZTjbEidI__fJ2b3pwVHC1pyki0NmPDAFyrNwWtI6Cta4f6E4oSJ4NGaaIkntt0Rx1sYGwb9DH4AJ2WAbkt9zIPijVnWNpLX_MdQaiz5G2Zs6uCnrxq0PdAkzsy1xmYFVATLb_R5PCQcii7wpuTrRWXlbC4ZBTaKdCedu-7eEMcstCqw_Q_NjjFl3OhNPscP-KsqAWHj4jhko-GA8R_osjca7spUkKyOJZwZiW2dKYQAeB1pOupJfpXgcie63g9SpKsL9Ax8Z50vBbzaHkU5f_QA1SsX1jKB-P6Po6Y-CTQldkK5jTN-gs0XfuhW7kXc52j2ojo-fY_ClWZ-B8DMApGcErvigsFI3tWMJCZBmVgDEZDfKLJXyYKqyqMenfJ6Fi4qPJ7awTFFROI4xf1jBapOTVze2DJb-1wwo34Nb5XtbAylniWCC3M39YtNNR4dr-G5BOXwJw89Qu4wT3dkBnAoC3dz8PnOeNRbUtUlN1b7opKChouoveAE5hFy8vLG4hX9xSj76aiG6e97u-S4e5ZidKpF9vaR9vLVjV-AqtMVnmfUtG4x3qLfCoHOQtbnUGjRJPH5jTzFFhohCWZFBE4F3cN6vECizf2JSQuTeQIeaZ8ZZ7iA1lf_ju5iD3sVHa6BbtnxyuHa_YnywKAA0jbQxlAF9bFVW9-t6VIAJPXhcDQoNRpqb7ULpF5OfySZqACjNk1F9hYvvGvbi2p76ysn9BstdLunrmyFFAWyWeH5Rm60wl3ACiTAKHIhXLkHDDKvYRS_NSEKDH07CdhT9kiMWNZz9-mYanPoM-CWLCh3_6g3WtIP3iW4KLy3Do-_Jg4aLYIb.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_085652b5153a9d39016abbdf3638c887d190943f56ee4d7235",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 454,
+          "completion_tokens": 558,
+          "total_tokens": 1012,
+          "cost": 0.01901,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01901,
+            "upstream_inference_prompt_cost": 0.00227,
+            "upstream_inference_completions_cost": 0.01674
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 516,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

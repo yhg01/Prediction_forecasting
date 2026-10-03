@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Birch and Swinnerton-Dyer conjecture\nMathematical target, paraphrased from the original Clay formulation: For every elliptic curve E over the rational numbers, determine whether the rank of the finitely generated group E(Q) equals the order of vanishing of its L-function L(E,s) at s=1. Thus, if r is the number of independent rational points of infinite order, the first nonzero term in the Taylor expansion at s=1 should have degree r. The target is this equality in full generality over Q. The refined conjecture about the leading coefficient is a related stronger statement, rather than an additional requirement in Wiles's displayed Millennium problem.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:55:39.307952+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 11.655,
+      "response": {
+        "id": "gen-1790697327-Io6MOGfBOy5uwA1lWcQ0",
+        "object": "chat.completion",
+        "created": 1790697327,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.01, \"2030\": 0.03, \"2035\": 0.07, \"2040\": 0.15, \"2050\": 0.28}",
+              "refusal": null,
+              "reasoning": "**Forecasting event probabilities**\n\nI'm considering how to forecast the probability of proving the Birch and Swinnerton-Dyer conjecture over the years. We need to make sure the probabilities aren't strictly decreasing; they should be nondecreasing by later deadlines. I'm thinking about keys for the years 2026, 2030, 2035, 2040, and 2050. With a complete proof still being a major challenge, I'd suggest a probability around 0.01 for 2026, rising to about 0.15 by 2040 and perhaps 0.25 by 2050. Let's finalize it!**Creating probability data**\n\nI'm working on formatting the probabilities into a JSON structure. For the years, I have 2026 at 0.01, 2030 at 0.03, 2035 at 0.07, 2040 at 0.15, and 2050 at 0.28. I need to verify that these values are nondecreasing: 0.01 is less than 0.03, which is less than 0.07, and so on. I might also consider adjusting 2050 to 0.25 instead of 0.28 if needed, but I think I’ll stick with that for now and just produce the JSON.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Forecasting event probabilities**\n\nI'm considering how to forecast the probability of proving the Birch and Swinnerton-Dyer conjecture over the years. We need to make sure the probabilities aren't strictly decreasing; they should be nondecreasing by later deadlines. I'm thinking about keys for the years 2026, 2030, 2035, 2040, and 2050. With a complete proof still being a major challenge, I'd suggest a probability around 0.01 for 2026, rising to about 0.15 by 2040 and perhaps 0.25 by 2050. Let's finalize it!**Creating probability data**\n\nI'm working on formatting the probabilities into a JSON structure. For the years, I have 2026 at 0.01, 2030 at 0.03, 2035 at 0.07, 2040 at 0.15, and 2050 at 0.28. I need to verify that these values are nondecreasing: 0.01 is less than 0.03, which is less than 0.07, and so on. I might also consider adjusting 2050 to 0.25 instead of 0.28 if needed, but I think I’ll stick with that for now and just produce the JSON.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu997lh4QE8XYO0uOTCCdtdAV2y6iz1pxQvbH_0lIOd7FbvGPZa41HxV4qa32Lj9L93EWOQE9dNjS5LEwem7xElRr9k5dDBDGl4KM7H7LIX7vrj7Abn_gNmJjPMg0bnlKml0xyWWqjUKdnyRI2ZpYxO5Hh2qlepwM1Q9rlv5bqyea4xfBlIuJogheDPRIQJnoVOjV9DdBh8ewBuCDh5LTfacydUYZAmuoH-bE62qG-_C_7htZJydA6EHANf-vocuqzlAKHMCNrJUK1zZvrRuUSPOVvg3oliWPyXe2nTNjyGnUL-Gls3Eup9GbjhHEJua8LHkYu8tNMUZIAUhWi_arOHnBzMwJB39XUPe0qGLfVvvfNm_Q7PNCnirvitKzVR6-QkfCf0BEK2d7QUCK8KTfN_Lne7PSGlYqz2-P3hogXEDNB4W6YDznfoWJmbIXGpEB1xdC1l1a2fNo2WVV2NRBX6BD_P2JcZMDYY_8HWxJe2_dJTURJdbMMC8q-9_SwwOWHPj1JzI42QhMnEQ-vpR8hMQSm29ydvPmDuDKJ9S1__gyCLUk4lMWaBSACXawPln9A57FleOwniImbankiRnqib1WXHG_w-BVMNl1zYELDHqpQ-4KAHBLyXPeSo14EFABb8PINd2ST0D_eWcxVe4dOK-4WbMhSd2nN5ILeRhTs4rnrjKiO8k7AcSwECNQkBu5DNFWgawNDcUs-tf6e6qrsW9RzX5PIKywOdAj-3u27UQ_wAWSlfSTkJ5s2mmBvhRCznnm7N0LuR3hEsrBn4XbqSiuQprpL50xe6-vqBxDR5PmDs6n5KLbBFhVd5Zb_j4ViVvSy71SkVbAiX9bMnNc2sYrLN047vqRRl0tvIvm_g0bg9-mXhH6dSYNBbeVn5R9FQVxdSVPvmBPwwmdfoKntfuUx2R0eH2qmP5KlpDNdqh4FtWbbVA0AaJJDlz2Rv8jWpkJdn5LH2Qqd3DqS62VblazCoW03TS6dnIFxroZx-EfLKR3p5gL-vAxA-3ZDL9zTXPtSNmUfnHigJeAX128qMDIOhUsMt_hKray7_EUfcc5ytWOfiez8XKSSyXCIlcB-Z0wS-97RoACIE9bsTBUWGOGFrcVte3mSyfDa0s2Fy2-0cywkaahC3j976wqhnX3YtV15U2FFC0-LfEp9EDKqkZNcwzMH99CdeQJfGRHCY-0Av_lQV5z1FK3SOK-S8r99BvwZKOYtB6jC8ZJrV4FaiKIbuUCPvenSIqAdtX1oPd700WzIgHAWbKWnRG2ehAJvPRxlUfAG8bTxUBhyGQ0La4iX6meRRRQPQ9IYptiisfac3FQcUVpePB8u0CMqh85QLVde8KH7UITMFnEs5GR4DohCbVcisKlviy46Qb-fH7FcgXYIm_r6f3_cJC4bduJ3was828m1LIRViFfz-Y8heDlGyLCvsjYYG1wF0txttsplcaOzsGy6Lp77EQkTaefVCkpfiURvqcXhVo1bAm4UDrEMWpY9szYPlbUlHwr84dnPsKCHURUabv6_DblVDc9taBj_YBnYLVPHADpS2Q5tLNqafbQbengGFXvkIBGyo3-axqHgaTCuWRCm1LZU24HxBp1_HdJxdiNQ-fjum9irWvhZgmbJM1MWQ2I-r6JscOY1OlmB_rzViSxhivL29xE8fXUGr5jfpwvw3GXJTyxNaJ1lpyUTeaJrubxAKXLWyfGQvyog0xvaLQni4SmX_b6sES-wZLBqvD5A3Carc7ObqNduf7pXXK0TKFTJ4VB7FCg3t9X-xxDN9xLowswF3y0Yux5hSG0069aDumrKjV_yto57pCOaITq32arS9M5O2EXciq2oYFOZpLfg3E9oX3g0wRi9quJXKffCSss9jR7-1ILyrkTkxfKT99bMy3rLOcA0eSE6I-_Z2KK6desAUzHSAH9Y3mYlF2feDUqidnav8plca-nu3fikGXWqp5Fnv1SDQGlozu70T33Rk2uGeHN92Tvrq-i4xGsJ4pyDQLpSZ_r2Xbp1zolZITXzXLxLFlgejk3_BZ3t__ohXr94dL1Ze_jwzXfcn6QxFJttXGvNt-fjstU2Q98_XHPWFnjMXr4G947YgRuv7orOUTCZ05DpnEJcchkfPOwg1QqzqgotHHbFTs24IB9tsDeCXXAJNCpxHG9BExMVsIOLF2csh2uCczU8mwE2I0ynm5vXOdtkD3zHioc7H66eYNSaU2jZ9kGxt-lLUhsFsWkRLB-T-U3DHKHSicNBnsxu5_fdt1O7ihMM93DgXpsB3P5P1D5S6vmTWfUPpX9Y8_-ZYa4N0ADBl7NVo04cjT3anvLueN8os082facl-SpOTxJzigN-x-0uqXn1yrLEjLJbQRrcpFWYsc2omCISfcUK6FFPZTdmcQeVEXPQ9dmN89L6jyg4DFHVbKHTeXOGJ1aakVbkSxzCAq7uVRpNxqc3NrMMqHLJCaoS6lU6XMTxiX4X3oO4NwN0yB28hW-ysg0GG8a2Z-tKPKZgGMzIwE3LYgcpBL5E9fpM-C0KnLcH0EKNuwoZMDW3Li6rFOoG7QAPNhDpp0DhwBBUMlqZR9BvtTnXt0Fqmt9vdEG6QR2PgMhSmrUucDQqOkDsPRvSPxOVZmvFZLVTuJjhwn9Uf7Y0Y0-qxBqt3934q5sZbNiUoWuC3Vh1HgcWJ28YGOxlAhD24w0h7y2S3NNZzAsg4BhVq7Z_DNepbOdIeej8oVfN1zsC4bdI933taTpVxHRbHnufwztc1vbbiOMJ3PpdfWwDrZXU5ro_vkZcRZrPih_O7wF8PE_f2FlGIyOPF2IlOylvZcAFuMoN0w-orUBw2RgqXUalzuuIl2yC22WcJFWUIbYvw077q4iEt4=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_03fc38071dce450d016abbdf75112887d193ab995d4b927522",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 363,
+          "completion_tokens": 385,
+          "total_tokens": 748,
+          "cost": 0.003806,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003806,
+            "upstream_inference_prompt_cost": 0.000726,
+            "upstream_inference_completions_cost": 0.00308
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 320,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "request": {
+    "model": "qwen/qwen3.8-27b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-08-14. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Riemann hypothesis\nMathematical target, paraphrased from the original Clay formulation: Determine whether every nontrivial zero of the Riemann zeta function has real part 1/2. The function is initially defined by the series sum of n^(-s) for real part of s greater than 1, and extends meromorphically to the complex plane with a pole at s=1. Its negative even integer zeros are the trivial zeros; the conjecture concerns all the remaining zeros. The target is a proof covering every nontrivial zero or a rigorous counterexample. Verifying any finite range of zeros alone does not settle this universal statement.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "deepinfra/bf16"
+      ]
+    },
+    "temperature": 1.0,
+    "reasoning": {
+      "enabled": true,
+      "max_tokens": 2048
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:08:31.328910+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 39.191,
+      "response": {
+        "id": "gen-1790698072-4mRYT8sYC7klrD0neoIt",
+        "object": "chat.completion",
+        "created": 1790698072,
+        "model": "qwen/qwen3.8-27b",
+        "provider": "DeepInfra",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "stop",
+            "message": {
+              "role": "assistant",
+              "content": "\n\n{\"2026\": 0.01, \"2030\": 0.03, \"2035\": 0.08, \"2040\": 0.15, \"2050\": 0.25}",
+              "refusal": null,
+              "reasoning": "Let me think carefully about the probability of the Riemann Hypothesis being solved by 2026, 2030, 2035, 2040, and 2050, with AI contributing an identifiable new mathematical argument or proof step.\n\nFirst, let me consider the current state of knowledge:\n- The Riemann Hypothesis is one of the most famous unsolved problems in mathematics\n- It has been verified for billions of zeros computationally, but no proof exists\n- No one has a known complete path to a proof\n- It's considered extremely difficult - perhaps one of the hardest open problems\n- Most working number theorists believe it's true, but that doesn't make it easy to prove\n\nNow, let me think about AI's trajectory:\n- By 2026, AI systems will likely be significantly more capable than current ones\n- AI systems have already shown ability to find new mathematical proofs (e.g., AlphaGeometry, various LLM-based systems)\n- However, solving a problem of this magnitude would require not just pattern matching but genuinely novel mathematical insight\n- The leap from \"AI helps with proofs\" to \"AI solves a Clay problem\" is enormous\n\nKey considerations:\n1. The Riemann Hypothesis is extraordinarily hard. Even the best mathematicians in the world haven't cracked it. It's been open for ~170 years.\n2. AI progress could be superhuman by 2030-2035, potentially enabling new approaches\n3. But \"superhuman AI\" doesn't automatically mean it solves the hardest math problems. It might be superhuman at many tasks but still stuck on others.\n4. The problem requires genuine mathematical creativity - finding the right framework, the right reformulation, the right technique\n5. AI could potentially: (a) find a counterexample (unlikely given the evidence), (b) find a new approach that humans can complete, (c) produce a complete proof, (d) help with parts of a proof that humans then assemble\n\nLet me think about base rates:\n- How many major open problems get solved per decade? Probably 1-5 of the very hardest ones?\n- The Riemann Hypothesis is at the extreme end of difficulty\n- Fermat's Last Theorem took ~358 years (from 1637 to 1995)\n- Poincaré Conjecture took ~99 years (1904-2003)\n- But these were eventually solved by brilliant human mathematicians with decades of groundwork\n\nFor the Riemann Hypothesis specifically:\n- There are some promising approaches (e.g., connections to random matrix theory, quantum physics, non-commutative geometry, functional equations)\n- But none has been close to breaking through\n- The problem might require a completely new framework that no one has yet imagined\n\nAI's role:\n- By 2030, AI might be capable of doing research-level mathematics, finding new theorems, even solving open problems\n- By 2035, AI might be capable of solving very hard problems\n- By 2040-2050, AI might be capable of solving the hardest open problems\n\nBut I need to be careful:\n- \"AI capable of solving the Riemann Hypothesis\" is a very high bar\n- Even if AI is \"superhuman,\" the Riemann Hypothesis might require a specific type of insight that's very hard to automate\n- The problem might be \"easy\" once you see the right approach, but finding that approach is the hard part\n\nMy probability estimates:\n\n2026: Very low. AI won't have progressed enough in just ~2.5 years to solve a problem of this magnitude. Maybe 0.5-1%.\n\n2030: Still low but non-trivial. AI systems might be very capable but solving RH specifically seems unlikely. Maybe 1-3%.\n\n2035: More plausible. If AI systems are genuinely doing novel mathematical research at a high level, there's a small chance they find the key insight. Maybe 3-8%.\n\n2040: If AI systems are at or above the level of the best human mathematicians and can work on problems for extended periods, the probability increases. Maybe 5-15%.\n\n2050: Over 25 years from now, with potentially much more capable AI. Maybe 10-25%.\n\nLet me refine these:\n\nThe key uncertainty is the pace of AI progress in mathematics. There are two main scenarios:\n1. AI progress in mathematics is relatively gradual - it takes decades to go from current capability to RH-solving capability. In this case, probabilities are low.\n2. AI progress is explosive - we get a step-change that enables solving very hard problems. In this case, probabilities jump.\n\nI think a reasonable middle estimate accounts for both possibilities.\n\nLet me also consider: the event requires AI to have contributed \"an identifiable new mathematical argument or proof step.\" This is a lower bar than \"AI solved it alone\" - it could be a human-AI collaboration where AI provides a key lemma or approach.\n\nRevised estimates:\n- 2026: ~1% (very unlikely, only 2.5 years away)\n- 2030: ~3% (AI is more capable but RH is extraordinarily hard)\n- 2035: ~8% (AI might be doing serious mathematical research)\n- 2040: ~15% (AI might be at or above top human mathematician level)\n- 2050: ~25% (25 years of progress, AI might be vastly more capable)\n\nActually, let me reconsider. The Riemann Hypothesis is so hard that even with superhuman AI, there's no guarantee it gets solved. The problem might require a completely new mathematical framework that's hard to discover even by AI. On the other hand, AI might be able to explore a much wider space of approaches than any human could.\n\nI'll go with:\n- 2026: 0.01\n- 2030: 0.03\n- 2035: 0.08\n- 2040: 0.15\n- 2050: 0.25\n\nThese feel reasonable to me. They reflect the extreme difficulty of the problem, the expected progress of AI, and the uncertainty about whether AI can crack problems of this specific type.\n",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.text",
+                  "text": "Let me think carefully about the probability of the Riemann Hypothesis being solved by 2026, 2030, 2035, 2040, and 2050, with AI contributing an identifiable new mathematical argument or proof step.\n\nFirst, let me consider the current state of knowledge:\n- The Riemann Hypothesis is one of the most famous unsolved problems in mathematics\n- It has been verified for billions of zeros computationally, but no proof exists\n- No one has a known complete path to a proof\n- It's considered extremely difficult - perhaps one of the hardest open problems\n- Most working number theorists believe it's true, but that doesn't make it easy to prove\n\nNow, let me think about AI's trajectory:\n- By 2026, AI systems will likely be significantly more capable than current ones\n- AI systems have already shown ability to find new mathematical proofs (e.g., AlphaGeometry, various LLM-based systems)\n- However, solving a problem of this magnitude would require not just pattern matching but genuinely novel mathematical insight\n- The leap from \"AI helps with proofs\" to \"AI solves a Clay problem\" is enormous\n\nKey considerations:\n1. The Riemann Hypothesis is extraordinarily hard. Even the best mathematicians in the world haven't cracked it. It's been open for ~170 years.\n2. AI progress could be superhuman by 2030-2035, potentially enabling new approaches\n3. But \"superhuman AI\" doesn't automatically mean it solves the hardest math problems. It might be superhuman at many tasks but still stuck on others.\n4. The problem requires genuine mathematical creativity - finding the right framework, the right reformulation, the right technique\n5. AI could potentially: (a) find a counterexample (unlikely given the evidence), (b) find a new approach that humans can complete, (c) produce a complete proof, (d) help with parts of a proof that humans then assemble\n\nLet me think about base rates:\n- How many major open problems get solved per decade? Probably 1-5 of the very hardest ones?\n- The Riemann Hypothesis is at the extreme end of difficulty\n- Fermat's Last Theorem took ~358 years (from 1637 to 1995)\n- Poincaré Conjecture took ~99 years (1904-2003)\n- But these were eventually solved by brilliant human mathematicians with decades of groundwork\n\nFor the Riemann Hypothesis specifically:\n- There are some promising approaches (e.g., connections to random matrix theory, quantum physics, non-commutative geometry, functional equations)\n- But none has been close to breaking through\n- The problem might require a completely new framework that no one has yet imagined\n\nAI's role:\n- By 2030, AI might be capable of doing research-level mathematics, finding new theorems, even solving open problems\n- By 2035, AI might be capable of solving very hard problems\n- By 2040-2050, AI might be capable of solving the hardest open problems\n\nBut I need to be careful:\n- \"AI capable of solving the Riemann Hypothesis\" is a very high bar\n- Even if AI is \"superhuman,\" the Riemann Hypothesis might require a specific type of insight that's very hard to automate\n- The problem might be \"easy\" once you see the right approach, but finding that approach is the hard part\n\nMy probability estimates:\n\n2026: Very low. AI won't have progressed enough in just ~2.5 years to solve a problem of this magnitude. Maybe 0.5-1%.\n\n2030: Still low but non-trivial. AI systems might be very capable but solving RH specifically seems unlikely. Maybe 1-3%.\n\n2035: More plausible. If AI systems are genuinely doing novel mathematical research at a high level, there's a small chance they find the key insight. Maybe 3-8%.\n\n2040: If AI systems are at or above the level of the best human mathematicians and can work on problems for extended periods, the probability increases. Maybe 5-15%.\n\n2050: Over 25 years from now, with potentially much more capable AI. Maybe 10-25%.\n\nLet me refine these:\n\nThe key uncertainty is the pace of AI progress in mathematics. There are two main scenarios:\n1. AI progress in mathematics is relatively gradual - it takes decades to go from current capability to RH-solving capability. In this case, probabilities are low.\n2. AI progress is explosive - we get a step-change that enables solving very hard problems. In this case, probabilities jump.\n\nI think a reasonable middle estimate accounts for both possibilities.\n\nLet me also consider: the event requires AI to have contributed \"an identifiable new mathematical argument or proof step.\" This is a lower bar than \"AI solved it alone\" - it could be a human-AI collaboration where AI provides a key lemma or approach.\n\nRevised estimates:\n- 2026: ~1% (very unlikely, only 2.5 years away)\n- 2030: ~3% (AI is more capable but RH is extraordinarily hard)\n- 2035: ~8% (AI might be doing serious mathematical research)\n- 2040: ~15% (AI might be at or above top human mathematician level)\n- 2050: ~25% (25 years of progress, AI might be vastly more capable)\n\nActually, let me reconsider. The Riemann Hypothesis is so hard that even with superhuman AI, there's no guarantee it gets solved. The problem might require a completely new mathematical framework that's hard to discover even by AI. On the other hand, AI might be able to explore a much wider space of approaches than any human could.\n\nI'll go with:\n- 2026: 0.01\n- 2030: 0.03\n- 2035: 0.08\n- 2040: 0.15\n- 2050: 0.25\n\nThese feel reasonable to me. They reflect the extreme difficulty of the problem, the expected progress of AI, and the uncertainty about whether AI can crack problems of this specific type.\n",
+                  "format": "unknown",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 412,
+          "completion_tokens": 1471,
+          "total_tokens": 1883,
+          "cost": 0.002819925,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.002819925,
+            "upstream_inference_prompt_cost": 6.18e-05,
+            "upstream_inference_completions_cost": 0.002758125
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1395,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

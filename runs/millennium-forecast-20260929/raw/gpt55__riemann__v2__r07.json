@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Riemann hypothesis\nMathematical target, paraphrased from the original Clay formulation: Determine whether every nontrivial zero of the Riemann zeta function has real part 1/2. The function is initially defined by the series sum of n^(-s) for real part of s greater than 1, and extends meromorphically to the complex plane with a pole at s=1. Its negative even integer zeros are the trivial zeros; the conjecture concerns all the remaining zeros. The target is a proof covering every nontrivial zero or a rigorous counterexample. Verifying any finite range of zeros alone does not settle this universal statement.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:56:33.587661+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 5.946,
+      "response": {
+        "id": "gen-1790697387-cpAzadQChQL5rSJMhVpU",
+        "object": "chat.completion",
+        "created": 1790697387,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.002,\"2030\":0.035,\"2035\":0.13,\"2040\":0.26,\"2050\":0.52}",
+              "refusal": null,
+              "reasoning": "**Evaluating AGI probabilities**\n\nI'm considering the event of \"correct proof\" in universal advanced mathematics. If superintelligence emerges before 2050, it might tackle this challenge. I need to estimate the probability of achieving AGI, perhaps around 0.55 by 2050. I'll format my answers as exact keys in strings like \"2026\" and ensure the probabilities are numeric and non-decreasing. Also, I'll make sure everything is structured in JSON format. This will keep it organized and clear!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Evaluating AGI probabilities**\n\nI'm considering the event of \"correct proof\" in universal advanced mathematics. If superintelligence emerges before 2050, it might tackle this challenge. I need to estimate the probability of achieving AGI, perhaps around 0.55 by 2050. I'll format my answers as exact keys in strings like \"2026\" and ensure the probabilities are numeric and non-decreasing. Also, I'll make sure everything is structured in JSON format. This will keep it organized and clear!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu9-xpZL_rL3Z-5ppl51_-9Y5ugnX5g2ct1ELO8XYPWlM5dmDVzuZyPah1ZzjQVkkuEBGdQrcsZ7cWDuWTVaJ7COMNztsBXAxMuw0NHlWYXTVC7L1iwlEhNKVP7H4-BZXMQpav0Z5KrP4WLHubHpIyp-NONCU6Efuzcv35WDkbx8BiRbpIAdX4V8ChEysbRnTHmtjMKnEE_IgOV3mC1Ns5M8XWYc12M6_WEQzfZRAx4mmcYE2uW0cfzVDYD565LwwZNv5THVYwGySBzY1TlUoulVwPYh9zNsSZDVDRnifVDpVPym4B8VZ7mIxoVXP0uYTy3gnL8cJFp9-jnjFJkf4ilLvhXxfWVFV6Db7kwIpFOvD2ag94D6T0H62up3dMYaleWmaqcN_gv5mZDNoHbunO_ma5u1G-0XINEkp_cnQwCNcpCWjBEfpaSub6HXC89pZVQ9ZsBARgUCUHDpMZ0IF9m3jO5bt1lk5WlEj2JDhu3BwxD9h8Pg0TtBbUhtgYa_GW1wnchlLuEdX1IYokZ3eGOS51FWcX8hkp6DcDdmFESdkXBZaKJHyCVaGXAAtTYWARYBN-UwEA9N3tn6BQHdWTi8rocDGu909KRmAXdDPGc1MPEIixfNlRfHLTH-7qVV6MlPzm9bHfSLg1TM3kHRmNZTGy6lctho6CYnHRtq7lHbpMMf6XbqUl7bwdhgTLRScru4Ii9h_RDFPzSelTZ-3Em3hJMAHsk18Hh0bqFNfEi28x4Qn2rDE03eYbaRlUhXJi-z-sEqUjA6RpykWfy9riWLMZnfC3ikNtMsWJSm9wlFUoqYtyNgovIR3wsNku9SrMjgEX3S7r45KOq9m8r0JksNQVrGnVjpGhD_jZnTXOuX5vWP2ctbOPyEHRAI9-VvxYkMtLEjiEBDOqVhDfsRuGL8fLiJD3niEEn83HV7TJHfJuyyQPnzPsq70ed7DNgchlZhYgtYHgocPxwHLfjxezAeKPo_bSLboWlagf5Yck4LWr26PW_8Ko6Yyvx7Ga9dw7srEDS87vrLitqlQ_JODSQ0h2d2COKTjV_V1Vg6pXajGdJz1ldEwiC5PFFGDZYqIiXemd9WlThtLm2BYozKiXIy5vNp7UZapaLbHlY6B95O8wTwkIuk7PEZkdTHCadB9Ocz_h5BOlKrataAANeAbcT1yLRBt4yZ536jKLCee_6n44oRN-C3rWv8NqVP-yL6hp6IdVhzwzSZzTplLP2FHL4gh8NJ8VujdHwckSJDk1dxRLV5_2_GTVuLSROwubk9_T9wUHgPG4E_CfhC4xpgC9Rg6yH31tAVF3BJT2WwqHRgiW6nbtlWsM06v8WrlyTXfZiZpr22R2Fke-BATGoi_O7KprUeEKPeBvPq0ZaXF2vyXuZVfVrT55Rd6oOEtNwED9UYbqKAQOzjJDHTDHYXVWSwINhSO3GXguiD3diQrJ2UttW_7ChSwA4YerCxRsh5oVghBdmbfGG-IzIDU2O4Hj7tLGi1DjWBYQYZQEVihw5HdW-cvEVvdo7TRy2reyXXzHmg5jjkt8ZyrhJlxslQ5-JnlNCN2f2Bh1QncAQnruiOK6SNFXkup_oTt17P9gRNe2ciqG9aClk7hbWnAzSUsjVNny9aOc73C1D10Wy7zNNewUTZ5gdsz5KYzsUmVgXlHObpihu2Jkatpdsw9x7Q0lfdyJzD3of4NnoRM_qZCqXjzw9BfNcwzyySzyJBxT8TzSUwFoAq9OBL3dhNOpYcXJskfKEKd7jU7UDwwFirNUGsZnkucDj5FGToDhOg5oiaOOFUWHr0bs4eLzvtKkcl1GVBGPp6HXO6ynGJDlgKzMOFfJGOHLJAKG8FDkriEZDOv_5hN6S4znHp9rZcviz60vr8wGJh_U8j8LTy7_5HW63IZ7ZBrd9e0rLkV_nw5Qhof-R2xzzX7_H0PyqnF5YKdtX9lVTkkyhfmFl-MSAuFVCbEGcRgPIkKniWZ23e_QNuSQ-0YdmDOIOvaWs9vtvPles4tNZexKD2bUAJS4T_u8n1riUvkvOgsMIilPuRBVQp7_6GPwv6_qjLLCTO42yHoyUUPX3EqTx4XVsLju8z6JYasIUGCv0ngvWVGI0FlyyrLEVdVoVNlKBejn0YNgzrD2vSTrQEMGPD5YV8qcVSyKZeL8kilg6E8dYh31_kVQ3A391ankG3TFLMGEiXdWuNnxW_5LoMnnWNGBqJ9RmX0LFyO47KOVFMuPBQhNdAj4TxfXXQad7jpjkV532nfI3R60wbyNgwuPaDG3RWVDPL3h3kGQ5jSgc6-sKY7lvoR6rYZjsCCr9b48PbJT3h2eGp2VEZ3at0fHPFpxKpq88Ta6JWRxwGGWOWDgLWkbLfMPH0QtxHEVL1g7AkmuyuiUjK-EVivRaWnLka4p7ZEB_Eo9uHjglpMZ-RWsnta9WSp7lypUDCmu6V3YfnnhYEhKFDY_I4zuNMUS5ijPmcCd3XxfOYxRItFZ4UlmhQW8ZSurOsFR1NBrKuEevcChVnQrBMjNPk_Pw_K5Wu9YCAvhoGf76gsAGqyMwt9Ri6fQhrPbGfc_8E8nNXNdAdI_TC40bWwo_7R11BOU_MrCXe4vv9xq4c-dqEVvDviid_l79F-tvmrJO4Syj7tM-tsZDyXc9g3HCFCyqm0uFcM11wPHqQzXnJ4HFDhEkvKFQCH0mHjy33kWWL_R68j-5WNCKiOiIIxdV7h2Sts-NCr88WyKpS3ZigWTXKrjzF0MhOnQ0QTxgFrQRp0k5vS9r85Rg-6efBmKtTxBaou7zv9UduASLxUKVKFPDeUh8etkKcipvKB2mYgT9gn_96_EZ_Q9CvGmBEfEdZn_y_l362mdj7rYCEkdyPcPIiPtep_MtyxEPyEbNhD24Wu1FKQxnxVOqqM0JaHSq5lacZeBM3EGMQwsBTK6ppfNvWASbc57IIq5HS9bw-wUUp4.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0c38100d14b9e53e016abbdfacc68c87d1a020cfeb7654107f",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 360,
+          "completion_tokens": 318,
+          "total_tokens": 678,
+          "cost": 0.01134,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01134,
+            "upstream_inference_prompt_cost": 0.0018,
+            "upstream_inference_completions_cost": 0.00954
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 276,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

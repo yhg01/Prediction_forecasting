@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: P versus NP\nMathematical target, paraphrased from the original Clay formulation: Determine whether P equals NP in the standard deterministic and nondeterministic Turing-machine model. P contains decision problems solvable in polynomial time; NP contains decision problems whose affirmative answers have certificates of polynomial length that a deterministic algorithm can check in polynomial time. A resolution must establish whether every problem in NP has a deterministic polynomial-time algorithm, or whether at least one does not. The target concerns worst-case asymptotic computational complexity for unrestricted algorithms, rather than success on a finite collection of instances or an improvement to one particular algorithm.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:49:54.688552+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 9.44,
+      "response": {
+        "id": "gen-1790696985-Wm11naM5kBxIcS2dg2kj",
+        "object": "chat.completion",
+        "created": 1790696985,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.001,\"2030\":0.03,\"2035\":0.12,\"2040\":0.24,\"2050\":0.43}",
+              "refusal": null,
+              "reasoning": "**Considering AI contributions**\n\nI'm thinking about how any solutions after 2026 that use AI might contribute to new identifiable steps in proofs. The range for contributions could be very low, perhaps around 0.001 or even considering a very low AI impact of 0.05% for P vs NP proof within eight months. I'm questioning if these numbers are reasonable or if I'm being too optimistic. It makes me wonder about the balance between human and AI contributions in this context.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Considering AI contributions**\n\nI'm thinking about how any solutions after 2026 that use AI might contribute to new identifiable steps in proofs. The range for contributions could be very low, perhaps around 0.001 or even considering a very low AI impact of 0.05% for P vs NP proof within eight months. I'm questioning if these numbers are reasonable or if I'm being too optimistic. It makes me wonder about the balance between human and AI contributions in this context.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu94iiAEw-QhCfcDGTJXDgop7HBnwUxdex2XSPMbmYhGO-DET1or6G6-YhhW_ckhhAs1iS6WiFP-yiXU9y1WJ1kw6GzmWVkkhMeHp4dvWJ1S0ikqGuOz7pTbBPPkCDYv03Ld6vQX72-o3T567qr_qnL_l2KgSq-W5YDNxdmVuPIoGm15os8BXRcavj1fgVu3EjTRbHAB1FA13G63x9oKeQVnSKY0De22FBsnxzSmQ-_z1R5DZ57JeFu0FqjW4hk4jCBjFy4B2kfPFDM127zWtwTQ5xV0ioVJy4mEJqg8HWbdSMarX2gF2KzwqWC4ysucdxi4f38cO-vClJdTLhLMMv3-f5MaCT28Ywm9DGuVipfPgvhau1kZOKBk05jIwx_isf3QfZZssCUquP0QRM919aBVb8jLumqbaYADH0ZLvuOUmjXwxXBx8qVgBSlFznjnQ5sJT-PmUjLfXu5-Q1pVWc1PbmH7Zx9YnWfdy9xQGhnHxaNhG-RPtTDC7SFJiPPjuOY379jCkqx4IXiQSW6s0oA_qmeL3EwM0l6wzxdD1F3OnVhCopR15kf4zLazc6qh1_-vftDklSwqIAcZeUJpcrutLMUE-HdXgr2eMQtAfLbHfg--iOS9Xl_Qdeb3-hQegAZ6PocPy4AKC_Viu5hUTJHBKNTg8F76z7oC_pLjyKsJj9T8cXMYcm4PgIl_RXMVc8VNLmM76B-DXPzeOU1wpIr7FLnGWiZQy9SkXhAqQRlA2wu_w7-Qp84nkibGPtfCr_HLIgNOkTOcCUMrqyzTUfgZ4hgTaxA33j6sgD5WuRK1BtZ0zwLFrrJR5iWqkdSM9z-txpZbtNKWuK_I21BaUxwfbFQcVx61XTZIdF8brs3HQF0-SiRNIoNxIbkPmtjtV-Ta4Dyh18HmjBw8IKNiafA4AE9Xbw6gvad9qJRwNwHWTTd70ySBSI4c5Nndprz6EG8iaAu_VfmchRU5HMZ5v3w4clFgXQ5LBhBdCVPhT6AnSrmYSALgrLiDjXJ-Lz-YyiX3UL-2SDvcLDlJSHAoGOAMqJXhxR6CuVNqU7zuwIa4QmJ-1HcxjdE3HBS7AF3GsSqoPo52HaPBS7X6HOFW327IQy_sP5vEYGlVdfxyGUqx1FejGAFIF5zcJbnHa-dcOxfZkwuU-3ORNzu3QClxZlsihldknlT9HoeTR0QF-tptD92UDMentAI6-mJioPuCSMA2xotffjbMFpUq4h4nVu5hn7-Aaxe6ImRB6iN1qsotuxAExczCp_65e2J0_uFTT2ne6Hiq1dhJYPDvqcZEOtH9-23haxGh1bQffQMqQgZxCiEKNLEcuup-PYFpPiKIVWUM9x2nWdbOnpx5iaaCBPJM2FDK037LiLxEBgYbF9Nndt2zxy95TU37Okowy_O7alB7PwT6WrV9KMCi41sonpZytN8sLii0qeRC4DkodI_n0L3C4FsgQwUjr29rNqKayhXHuRPRCvXvVTSX_kNyoMs59rZgLdVl4bDYL0aKZIZyFadA1Hj5Y53QEGo8hgs_Mak4ng8q-s7Pc9GACbLWFhAWtoNW2z5JWwQIYnpLWm2EdOXExc11EjbyxhMzk54_BcYi72UhWmh3yaTmn7Ku2TxDi3GYUw--38tWbe5zD2gs7fd23uX7BNnf_HG6FsJRtHysE9bT9qxgOi4KbRBVUxclbvrkjS8qV7XLuzzuQh-y16bheT1U9lYNUHYHiswcbYJE3WaTMbBFpGaH8A19BPEGVxDTjKhDLtHnSjEVNVKrKiLza8-QplKgVW6jh0ggDeb5k2nUzD1w7UzQdI1PhtwRW2Fsi8HOiMxLbfvKELB-gIQUcObpz2LfVzYt-Pq4ihdHHPA3vlk2gHkzX214qhRHNSg8PjcoA3tNNINTKFWVcYIKQNJAHrftjIYvsxtKlK-H5ZY_YSfSrQ6B0FzBIMcVjxgugYqppJIgxkTxft-9zrSv2SaIWnIy7VTjOwU6bPK0jS6_mgeibb3lezXQLOS4SahENbdsBVJrINjbsSrFaPfamiN8FWP-NOJiFoDuafRCrwpUFLdtr7fK6k_W9CDk8dgvRSGjM20Nm5H7W65BJkhjioWj16OwEeUz9tJdQTtIWzsLdYArznTz5BCRXXXa7gFqN73ACEshxPIYPXhImg8vrI8O6Gs4eY7aXdo69oBnUHHiERGNHkxsLFPwqJcCVqEQYc052XcFy0npQDN9egPqXkBBh2vStjM7boq9TGOWP4Kvrm8Ym-pg8CX3hw7lbWsMk3whAdix6MJElDw-gs8h-JKve98SjOi1xHRvhJiaklW33EvUvtqx-EZZ4lQn8LOlL_1480jNs76DjFecAa-ILc3XXc3ChzP7WAR1YNIxJJSMZ0yspC-vxwADDDMCHd4AlGkgVxubsM7qWiDW0_lOcOX_IaiY4J9HccPRGBZBTU1TcGOn9Jnr8DpGpyUbGo2ANgo4fwRU_JCOX5KJc3aup6AlHgjJKnc4VqrI0XgXkE0f6Hq5eKWcMPaK4EKGIQMo8OIzmuJATt_6ShefeAhFc60Eh99VfEQJDJQEl3cVAOV-kp6EHfJcmoPFGKI-zJ64UV4o_KxaIEI6CZ-ntkKvAp0-4gLAB8-JunjtwBQ4CEKwxHxp9Q7tNb9--1Mh_JuhJ7AtsYv_RWP6FTsQyvWQmw-DdjS46yznacfMR933jb7ct7hAkLelGc-ZElGQVAJ74OYZdk9IYfNLBfG7AKbl31myFTfcvAH6sxcLqGWA--jTSkKrUGvDWmra5NPyikUlHB-rAotvZRN5wZkwWHQzqpBemSgX3zEex3dwb9x4Q7qO7jJfWmrZxH89vZZpQOPzx8-JjpieZO7haWXdgvUrJp6igqc7rlMfPn6yUa65X-TzOSqmwCa4I7pNzPGSUMH-NUsCKuHVR5qgrSTatk9-QdKXGka0cfw_yzbYV8F-k8jgePH9dyAmIxVylvqRh6ASqoJodB76T0sl4T5wVio6UwTGj8WB28S1RKxnnG7s16Kc_fHkpbFkHspUIYJi_iTzwhr6ymtMIexqylmri0Hcu82gQNZq2MUqDucUwBpywA8ylXjLCHFRYUhcyYglLz0NQMTMxSe65b48BcSiv0-SekhlSzDVlWwe3PIZ7RWaKRLrt9-UdwsKFI3vwd2WgkHuAT0yh9kuiimIFStCktbPUQXFDlffZbNHzviN_xuKTBlx2XD21RfuWJnMkGEbc97_xvAD0VWBJmUHOdVFLNj1e09cmhkXwjxVA3fwKKCkLzbvqeDfD8vZ5oKuDaM1Nd230nxwy0EF1E828kOkmxR63G0g3WRrAsBpuUbF9gEVZs7afTBkrCCYl-lbp9245SSVUGjq7RNKGeWU2X-EG4mxWz0Ch_daThX-UWos7CauykbtCoysS57HCZi8C4BoeI4i9YCXqc5uOJ7L9-AXvpIJCYOh7aXOgaGphIZjcOMn_6O75gR3eWOisumaez6Lskkw4rMRuX0DjJ0JNJz1ksgK03Ga6zIqxtFMGwrBi9gjx_t17sZ2fwAByLCRB_GnEk-Y261HCjygK0SQkAs19tX2UyUTiXzMaInVEntTKbArorppg2Xq8-jb7b5m_H0AQ_1tJugp5RnYYJivuBqw8lzqfy7s3trH_6jBErZbVAH2bOQHy1jPOUCuwDzPdSnA5BGP632QimSUA0E5GyjruAmq2OGre3gxxEk3xbLTaeAfiUAnRjq5YoKxUIbB2Um328BRr9KESvkL5dV1wP0UMxnmNjRZnSYqBk65cAgux4IeCloNt064rVaPel48DiAEg7u9ZytP9TLOU8RumtCAall8FuzpE4KvPPZxC1RPJVLwLurozshWfZZjvNQMqWkVZK1AgnaGfoiCOfYD6eOzTmwnWbpwoMuEVXwNFpTGwxDhKF-bZJ8B9TZ_SgrvwnMdsqiledpODuGL1xJQ6O4mE8R6kkzq0Obty0J_-tGPT2jQHiBVSefblqCcDEz35NX1DaHKru_2yLfVsHHge-a6gO-Nw-TFOh_udQZgMxueeKalzhhZLv48gjfxi_wBtAzDWP-OMuda_o6pE6_rJpcRXagFxSJuXKIcFs778GJ4GWiDHG5j1il949Wfv0B9MI309_PBi5Vj7VEpz7Sh5h1mJoYypQICF1hTjcGowo5vtIU4KfKqbYoKpNZc2oVxaNeug9T7gn_j8HRLI2m-DooJ3efh1A1WI6aa9vpY-4693IgM9YDaZAVA8FLYlbKk7cmLA2g==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_029f6e3d52b2edf7016abbde1a8cc487d19318da44613ada3c",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 347,
+          "completion_tokens": 558,
+          "total_tokens": 905,
+          "cost": 0.018475,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.018475,
+            "upstream_inference_prompt_cost": 0.001735,
+            "upstream_inference_completions_cost": 0.01674
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 516,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

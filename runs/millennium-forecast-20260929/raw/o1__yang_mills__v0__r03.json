@@ -1,0 +1,84 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Yang-Mills existence and mass gap\nMathematical target, paraphrased from the original Clay formulation: For every compact simple gauge group G, rigorously construct a nontrivial quantum Yang-Mills theory on R^4 and establish a positive, finite mass gap. Existence must satisfy axiomatic requirements at least as strong as the Wightman or Osterwalder-Schrader formulations cited in the official statement, with appropriate gauge-invariant local fields and short-distance behavior. With vacuum energy normalized to zero, a mass gap means the Hamiltonian has no spectrum in (0,Delta) for some Delta>0, with the supremum of admissible gaps finite. The target requires the four-dimensional continuum theory, not only a lattice approximation or the classical equations.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:50:18.619385+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 3.95,
+      "response": {
+        "id": "gen-1790697014-9hQYIzd20IiqcI7tFsbO",
+        "object": "chat.completion",
+        "created": 1790697014,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.01, \"2030\": 0.05, \"2035\": 0.15, \"2040\": 0.35, \"2050\": 0.65}",
+              "refusal": null,
+              "reasoning": null,
+              "reasoning_details": [
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu946MIo0avvMQWwGXtHFNT9LB0b1ttRQ9zXeHIkdaDi8ZuHjE8dOLPct01Pv0YeFMyp7P6YJg43W54a_Bi_Ejiw4if-ApGyH_DsYzbk0s41CCvrfJwjps7iHDVFc7qGgxBc9STUWtE4P2EKhKnwK4EjVk5U6mBQUeSikdm6XBRmLymG6uHvopL5xdd2pqYKntNvhCPMBWOW3fUWsEidx70B7wucaWTrQiYnIPl_BAG-kNHbHozqlLRoK7-l4mHU4wCFACcTAB9ug0fJiRDFIivIGgFPwgeZf7kA-BQHkoFF4fALHPg44HxikO8n8mc0vLmqDOEbj9MS89jhrTagnf-b1lGJBwmgDUDhgTaAKbNcimbFVeXMC19O6q7E2SGPCVP_zldWmYiJFvn2n08jPwzy4F92RixH7SGDGv9BLHVPrt1YjZMUHRTLpeMQgNFA8UcFCH_nVsF-QKPXt3Vi4zSgeKufwpdPgaPvLAU-0MQetC5e2wtjSOfUVHr-rI9zld-jdWqkj0u1sbZlJWymWzEAU22KHKYpCNz_3hUNneRG58uP7yBtHC85d98iYkJI3PqF4BrglSuI8CMZKh7rjNcgDdCRJr4wNQWoO4v5jF2hXgYgskTcB6HZ8eAzaF-b6mcDr7gwE2Sc8Tnb7ELap7y_eQF9BfuWK901SaA3e-kRueKRPszeezy80PsaSpVKSWo3VdVkPdaHQTToc39uY5a3gTsaGmLwGBaHE3BhTXSVzGg-IJ0o47wI2kyeqiFGxT3S91RgMFm-2TyX3sGW8aXyrDhSWVdNsyx3G5cbHnEPG5tmmweVDe2BH8mP3Ncd_ZxfR83VqLqKcelT6YPxZpgnPk8JE4HkW7IYYWEmVSxIfczz0DlaDxU5Cf5mvU78t9rPy_VvIO2q9F2xGIHxq6OaGzddDELXihxqvRUkUw_Iwlu4=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0c95bd8bf4d865fb016abbde37628487d18af28e9de953b29c",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 374,
+          "completion_tokens": 503,
+          "total_tokens": 877,
+          "cost": 0.03579,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.03579,
+            "upstream_inference_prompt_cost": 0.00561,
+            "upstream_inference_completions_cost": 0.03018
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 448,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

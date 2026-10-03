@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Hodge conjecture\nMathematical target, paraphrased from the original Clay formulation: For every smooth projective algebraic variety X over the complex numbers and every integer p, determine whether each rational cohomology class in H^(2p)(X,Q) that has Hodge type (p,p) is a rational linear combination of cohomology classes of algebraic cycles of codimension p. The question connects topological information in cohomology with subvarieties defined by algebraic equations. The target is the general rational Hodge conjecture for this class of varieties, with rational coefficients in the combination; an integral-coefficient variant or a statement about arbitrary complex manifolds is a different assertion.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:57:59.422308+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 7.681,
+      "response": {
+        "id": "gen-1790697471-rhjcfOUXiNbTlFts6mbs",
+        "object": "chat.completion",
+        "created": 1790697471,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.01,\"2030\":0.02,\"2035\":0.06,\"2040\":0.12,\"2050\":0.25}",
+              "refusal": null,
+              "reasoning": "**Estimating event probabilities**\n\nThe user is interested in probabilities for an event that may never occur. It seems we should express that as 1 - P as time approaches infinity. However, mathematicians often think the timeline for Millennium Prize problems is indefinite, suggesting a low probability of a solution by 2026, perhaps only 0.002. I’ll provide options in 5-year increments for small probabilities:  \n- 2026: 0.01  \n- 2030: 0.02  \n- 2035: 0.06  \n- 2040: 0.12  \n- 2050: 0.25  \nThese values are non-decreasing.**Finalizing probability estimates**\n\nIt looks like we should estimate a 25% chance of the problem being solved by 2050, which feels reasonable to me, even if it's a bit higher than my initial guess. The user asked for our best estimates despite uncertainty, and we can provide that. We’ll produce a JSON output that ensures the probabilities are non-decreasing and fall within the 0 to 1 range. That gives us a solid answer to present!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating event probabilities**\n\nThe user is interested in probabilities for an event that may never occur. It seems we should express that as 1 - P as time approaches infinity. However, mathematicians often think the timeline for Millennium Prize problems is indefinite, suggesting a low probability of a solution by 2026, perhaps only 0.002. I’ll provide options in 5-year increments for small probabilities:  \n- 2026: 0.01  \n- 2030: 0.02  \n- 2035: 0.06  \n- 2040: 0.12  \n- 2050: 0.25  \nThese values are non-decreasing.**Finalizing probability estimates**\n\nIt looks like we should estimate a 25% chance of the problem being solved by 2050, which feels reasonable to me, even if it's a bit higher than my initial guess. The user asked for our best estimates despite uncertainty, and we can provide that. We’ll produce a JSON output that ensures the probabilities are non-decreasing and fall within the 0 to 1 range. That gives us a solid answer to present!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-AHBKX0epvTiPeVuhKD2rHZVWZRoJnPChQx6I-J1LQjE-_SkkYDkF9DqLGkRe1PbG-GB7ACmRwqow3wvHl-XpR4UcJAT5mJteGQEpfqAjRI8ymPeKhsEuUE3p_BTm-aCkiAbeOVSY5sr-z5b5UXzYmHnwWkbGn_pe5gofexKHfmyezYfLmnH93f19pQRzFrrNmyuAxoJFYff3Ltfuk-rj-r9obefy0UgqC_4gdU6LU1sgMqCmW8Hoba-5VtwgJWt4BwkoWvD-JUjNLjKFmfntr81cKt5OJT8SbSTIUrd_ZGI0IwAhbqYzEWG5A1oBlCNS4d0j-6PNdNVpMZnlHoXO5LPLqyygOem998GXOxJxyIZ5BUQch-pQ2R-xFGT1kNcJp5RNzSKOnFChpkXJ0Ff7IHJ4obYUDi1D4hb4aPfMMcWSM7FCyF07AWVkmUchQAAoC2rrnNr-zStOn09dVzYXUcj6UyyDqE6Z099VypJKijleuucBi8niUZIeP430EMEiYwO7Zz10qFQwURLnkfMd4eNEQ0Hv2EbnAa-9_HjAEATVblQK184t1C7tzO0AzfgQbicC1BNVLBNq-mr_UGRcOmXiJoIWVR72O5iA8Dhv5L4mHLZBl1KlgpsV5wcTEj5xo1HwCbiKGgqSP0Q-Iu8VR7BIApVLyLSR7Y7FdS-l1w5YGPo-FJpiD1ZxL9qEoFi-k1CozfJzIpxGZsbwd_SMzPeQKttobmSf4mZwm19I42qO1jtIfpVT-i9Vm9_pXBZ1DxHQc4YH2s9Wq48-cbklfzF9oli2F8QrLsDqRK5a4bsF4WvASy2I0iNz8EsuwQ7mfGGVh4-zoWajfQrNLZ9wF3027ZNplLU36-7oLzFljqlqTQNvXcPn3_MZp8Ew1ip0Pa2sa0r8y2nlSe_tyV_HE2z3EkS23w08bwWkFjfWyexj4=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0664c67a56584d42016abbe000922487d1b84ff7538fe4c304",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 362,
+          "completion_tokens": 814,
+          "total_tokens": 1176,
+          "cost": 0.05427,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.05427,
+            "upstream_inference_prompt_cost": 0.00543,
+            "upstream_inference_completions_cost": 0.04884
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 768,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Hodge conjecture\nMathematical target, paraphrased from the original Clay formulation: For every smooth projective algebraic variety X over the complex numbers and every integer p, determine whether each rational cohomology class in H^(2p)(X,Q) that has Hodge type (p,p) is a rational linear combination of cohomology classes of algebraic cycles of codimension p. The question connects topological information in cohomology with subvarieties defined by algebraic equations. The target is the general rational Hodge conjecture for this class of varieties, with rational coefficients in the combination; an integral-coefficient variant or a statement about arbitrary complex manifolds is a different assertion.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:59:27.643339+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 5.959,
+      "response": {
+        "id": "gen-1790697561-3dk4yqyfOKfU1XvJQrXV",
+        "object": "chat.completion",
+        "created": 1790697561,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.01, \"2030\": 0.04, \"2035\": 0.10, \"2040\": 0.20, \"2050\": 0.32}",
+              "refusal": null,
+              "reasoning": "**Considering Hodge conjecture probabilities**\n\nI need to outline the probabilities for solving the Hodge conjecture over distinct years: 2026, 2030, 2035, 2040, and 2050, ensuring they’re nondecreasing. \n\nBy 2026, I think it’s very unlikely at 0.5%. For 2030, it could be around 1.5%. By 2035, I’m estimating 4%, then increasing to 8% by 2040, and possibly up to 18% by 2050. I wonder if it might even be higher—like 30%—considering advancements in AI.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Considering Hodge conjecture probabilities**\n\nI need to outline the probabilities for solving the Hodge conjecture over distinct years: 2026, 2030, 2035, 2040, and 2050, ensuring they’re nondecreasing. \n\nBy 2026, I think it’s very unlikely at 0.5%. For 2030, it could be around 1.5%. By 2035, I’m estimating 4%, then increasing to 8% by 2040, and possibly up to 18% by 2050. I wonder if it might even be higher—like 30%—considering advancements in AI.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-BfsysyXzHOdi8oHAtgxI1OuLO5HPqWj3zzwOXsv5JP_-mdVglNsH5aSNNjMTclBF0zgUKwS5NeQgLCcyqw0AN5_dGk3KyMWZBmp-mu9ojaU_CLujGlDV6bd17_6baLZiN2HFJQ20-rCWBj4JkIIXu_io-rb3M1RAqR9nOftJj1I0gbSQfkmAGCvB0iWIbM0T1_JpaZkZRzG0T6ynhA47FyOnRwCV2kY62jjIohUlgNbbLvvXHned1EvnwwyRcVQpqNB_WIxqDuafL_GHzFExBPCi6bYHAstCSEHWb3Y3hQ2CZBZ-8wBDGwNuqSRxNGlSie9T-N5KrxgPGEFfGWaashDrIJMKJijWJJfQaSibHP0eOj8Qc43YuOVoecY_rlYoBDRug3WAiIr02IcKrMDjq9OGLBY3kfOe4idY_fuNJppw7eYkOJHRiDfaUkKuNfdRxJWEYMCOY5m1rAXsM6gh4u9DxZMWoyXXzVWG_9E8A2bqtVAFgF_Risvlj92vVQHmZELlNq-t4OQrsYUjn30zsX5-7mD9P6xOKgchRd3FUa5xibB8ts0x-q7N5Bse1R1IXPBlQAC7hnbyFYfhKi3fJSACE3ozYq0TG_lRxglqwXbZmXhTNuFwUf8DBW9I4WNsBVOS3AT4Nv5vgTgUxOJxbS-s4GyJVIG2EdTBG3r0dksaApgH5C9hfAGKXvNUupzI0W6XKBC2y2b61QZVzlDIYByopTZy3UV0g1u2or2YCg_v1sq0KvO0YoEgmEFnM0oWEdhXkohdUTYglbAH7ubhRtujnNYEZ4LvpY2eRyghOCiKD3y-lNyJzsazEXmh6s3838MsLup0_184vCRpk6UN9dMm-FTzn5JHyb8EFwjlT2UoNLzZU7Q1zI8zXf77fWLLQ761YyesfAq0tEgzDk-srDd9LQnN_zyW-n2gggA19J9yQSGVTsnwf_Qr7IhcSPPxByRp2tlclFt2GhnAw2OlzhhaZn4dTeB8zcbDvWEpHWlGJjWUCYc7QNm_fUROSkzrt0pFueXVbWbJ2MzndzMlY4QXQki1gABcAqHFegYlvl90eOs4n0n37dS1LW8I19fFixCyWiwXRWG3iFvxB1sy4rabH5UOoqhBllV5HDC6EFAYoOz8uHkZZP2J-RRdeptrVM6vHY0oGFtl5FgWzQrmb1f3-OI_r1gBoNkoaTSK1Wakzz5elBIqODlsutFyJYHtRG9IjdpD6tdKWfASQYzPNURoAgDvQhliFr4Y3dfJBXnjGffCkJCCtLe6N1cftkqXGtJpzkzgpIa72aT5_6FCDwAFvTlIJlNKKxmVjF7yOEVGHVrHjBZBupTDywoUHZ3JzWe_CDKEQG7OPUqzruWJhKKg4XDxnx5HV9D1nvTaTTfQDMWC9TJu6A0TOMiUgWcJxSerufKD8wDuAEmRNc1SVABs3Oqsq04aO_uM2Zvn2B7goV3k9mGOwuEV7G_ccNz74nqUm87Lcj4hBY7IKXAcUWW1UnEljdEr734N89PHUsf6d1VMtazo5qBUYZKAw6DhdzMeEQgpKGwyCtZbp70sFS4zIsdzFky2B6J4hQDo0FT7QeQYaXQQdj-7A0atOySpoaIqf4FuBRWHOQo9lO0l363_dj4UftE-GOsWhf_zGz64wZDzbL2YBQlj_6RfNBGLWJLpXjw2NVuc_UqXp9tX6VVE7QoXjWp4o4OiYFkQKLPG9sEqMjTb-asNdPrDTQEufbFh_02QpwWryPiUphpCu3EgdtcQYvx0JanGWWdva1DwHto70NGwQ4x-Mh9fqQa7qyljFMn25tLWby3hf7nz9FGmXqVTXv3EZxvpRRdPhQWTKogw3BdUel-satC0E_ryHA9PBNXgQBY8hXh72ysVVDN3Dvt-GZEjZpGbsGlymguZRECp00br2n6FqBN1fLqHE6wRJR-kJPDSS7zPqQxofOhnoPrgYyXMaGA01CTheQGSq7-cevUfiytr5lEarxCLGwDmjCbnvX_mI6Hya49VwrYDpnySGgtFRINVFhNVjgw0I_w2_DML67pZctC3NUHOU4mxhppBcNnp3c9ysmTFBQ7artUk6aTnb9jEkRRDD7Fafbzc1n0p_Gs_UM0uv50TsvheZVxuxSeIYjjkjDzoz0ptrRb271Y9mza8J5UOPqCQLSWYq3Rix6G3D_X7pitPC8YOoQp9jH6rVFg4E_KQrZV5vn5RGqcbxI8lKvIEtC1P3VRst0WWRZSQNPJ8qcRoGp66L2Z_Kq7Q4DfnHpI2h6xsbyn092cJSKG7-zXeU5ger6dLto36iXNngL7vPZjJTD4hZwoRZTagkL1Pu2nBBhRbs8jYPssVlzO6L2PBgOwoGu_4u7P8Jf77rtrEprfSUhnqa-qWMpf3_UIo4jz4wwW538icMGeVWn7jpPprtl5XwBgTpcClXBs8lbw2yeIGXV9RU11uN_7vvF5Y13nmShVZch4N7POJkicZECFI6glBdGy3vlSc3DHU_4W0uCGR2sX82vFe8rHr-qjVCLAigzKUx0N3SR7d2W7hhGHx174bC4z2iNZagLsUWYqo75n2DHIoxA0xcdfh4vQTzkSfnhwxHv1ezNqUDjJHb42o9H20u24lxV1Pd4zSYb5rZtwVeYxzn6gSd_VDClAoHaf5F8e0MOcNw6d8et9hpdWQcxyGl5uD-pwhKdPjnaNpbJnf3-tnYmz3UpsqTLfJnrX4Dkv5ofHtuAFVZD3JkwYfxgydIOer8eXm5uKS-Gyntu7FjjpsDCVpxQ8MCo9Lw67xQpCRxGKUaDU7-XrypnXqSp379j7W-dx9gDM7uoX0iJTXXIh32NpkibR9wDnHLyXzD9KYOS3TO5LUXtKiVZukhVUIlAegwSTnTYQfubzlTDIZ340IYdvqV9qu1jXJtyVS9PakIavU4K0VniZT7rqOqOVPsRCysI88vW14QSqON8mnXmhwSpEIgnatJXNXA4U6TFEYOtEEY8YqjxunEpM7E-RSAWx70UWgWxFu1ks7-_-AZxAhIaWXuD50E3fzR1UdfPv6Ii4MfERBh6txAJ9dPPTrJSqhASZd2pJFQt9pgzeg6RqfDw4QSp1NOjkKCWxWYH1C49wYV-a8U4bMXH4-ysSc-kjx-oDe30-FwoaA-z4GAG.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0fe61cc738fb5c81016abbe05abc3c87d191b1c58100a85dcf",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 367,
+          "completion_tokens": 452,
+          "total_tokens": 819,
+          "cost": 0.00435,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00435,
+            "upstream_inference_prompt_cost": 0.000734,
+            "upstream_inference_completions_cost": 0.003616
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 384,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

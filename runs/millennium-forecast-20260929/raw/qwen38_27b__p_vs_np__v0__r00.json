@@ -1,0 +1,85 @@
+{
+  "request": {
+    "model": "qwen/qwen3.8-27b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-08-14. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: P versus NP\nMathematical target, paraphrased from the original Clay formulation: Determine whether P equals NP in the standard deterministic and nondeterministic Turing-machine model. P contains decision problems solvable in polynomial time; NP contains decision problems whose affirmative answers have certificates of polynomial length that a deterministic algorithm can check in polynomial time. A resolution must establish whether every problem in NP has a deterministic polynomial-time algorithm, or whether at least one does not. The target concerns worst-case asymptotic computational complexity for unrestricted algorithms, rather than success on a finite collection of instances or an improvement to one particular algorithm.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "deepinfra/bf16"
+      ]
+    },
+    "temperature": 1.0,
+    "reasoning": {
+      "enabled": true,
+      "max_tokens": 2048
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:58:25.059193+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 41.764,
+      "response": {
+        "id": "gen-1790697463-9TY1HTzkdu2tcSSdRiRa",
+        "object": "chat.completion",
+        "created": 1790697463,
+        "model": "qwen/qwen3.8-27b",
+        "provider": "DeepInfra",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "stop",
+            "message": {
+              "role": "assistant",
+              "content": "\n\n{\"2026\": 0.001, \"2030\": 0.005, \"2035\": 0.02, \"2040\": 0.08, \"2050\": 0.20}",
+              "refusal": null,
+              "reasoning": "Let me think carefully about this problem.\n\nThe question asks: What is the probability that by each deadline, a correct complete solution to P vs NP is publicly available AND AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution?\n\nKey considerations:\n\n1. **P vs NP is an extremely hard problem.** It's one of the seven Clay Millennium Problems. Most complexity theorists believe P ≠ NP, but proving it has been beyond the reach of current mathematical techniques. There are known \"naturalness\" barriers - most known proof techniques in complexity theory are \"natural\" and cannot separate P from NP (by Razborov-Rudich). This suggests the proof will require genuinely new techniques.\n\n2. **Current state of AI in mathematics:** As of my knowledge, AI systems (including myself) can assist with mathematical reasoning, find lemmas, verify proofs, and in some cases contribute to novel proofs. Systems like AlphaProof/AlphaGeometry have shown ability to solve olympiad-level problems. But P vs NP is far beyond olympiad level - it's a frontier research problem that has defeated the world's best mathematicians for decades.\n\n3. **How would AI contribute to P vs NP?**\n   - AI might discover a new mathematical technique or insight that breaks through the naturalness barriers\n   - AI might find a hidden structure in complexity theory\n   - AI might verify a proof that humans discover (but this might not count as \"new mathematical argument or proof step\")\n   - AI might work in collaboration with humans, contributing specific lemmas or insights\n\n4. **Timeline considerations:**\n   - 2026: Very unlikely. AI systems are not yet at the level of producing novel breakthroughs in frontier mathematics of this magnitude.\n   - 2030: Still very unlikely. Even with rapid progress, P vs NP is considered one of the hardest problems in mathematics.\n   - 2035: Possible but still unlikely. If AI systems become dramatically more capable, they might contribute to a breakthrough.\n   - 2040: More plausible. AI systems might be at a level where they can contribute to frontier mathematics.\n   - 2050: This is where it becomes more speculative. If AI systems are significantly more capable than current ones, they might be able to work on and contribute to such a proof.\n\n5. **Base rate for solving P vs NP:** Even without AI, the probability that P vs NP is solved by 2050 is probably low but non-zero. Most mathematicians would say it's unlikely but not impossible. Let's say the probability of any solution (human or AI) by 2050 might be around 5-15%.\n\n6. **AI contribution requirement:** The event specifically requires AI to have contributed an identifiable new mathematical argument or proof step. This is a higher bar than just \"AI verified the proof.\" But if AI systems are doing the actual mathematical research by 2040-2050, this condition would be naturally met.\n\n7. **My assessment:**\n   - By 2026: Extremely low. Maybe 0.1% or less. Current AI systems cannot do this kind of frontier mathematics.\n   - By 2030: Very low. Maybe 0.5-1%. Even with progress, P vs NP is too hard.\n   - By 2035: Low but increasing. Maybe 2-5%. If AI capabilities grow significantly.\n   - By 2040: Moderate but still low. Maybe 5-10%. AI might be contributing to frontier mathematics.\n   - By 2050: This is where it gets interesting. Maybe 10-25%. If AI systems are dramatically more capable, they might be the primary drivers of such a breakthrough.\n\nLet me refine these estimates:\n\n- The problem is genuinely hard. The fact that it's been open since 1971 (Cook-Levin) and remains open suggests we need fundamentally new ideas.\n- AI progress has been rapid but there's no guarantee it continues at the same pace, and the jump from current AI to AI that can solve P vs NP is enormous.\n- However, if we consider that AI might develop entirely new approaches to mathematics that humans haven't thought of, the probability increases.\n- The requirement that AI contributes a \"new mathematical argument or proof step\" means it's not enough for AI to just verify or find errors - it needs to contribute substantively.\n\nMy best estimates:\n- 2026: 0.001 (0.1%)\n- 2030: 0.01 (1%)\n- 2035: 0.05 (5%)\n- 2040: 0.15 (15%)\n- 2050: 0.30 (30%)\n\nActually, let me reconsider. P vs NP is considered one of the hardest problems in all of mathematics. Even the probability of it being solved by any means by 2050 is probably quite low - maybe 5-15% total. The AI contribution requirement is a subset of that (though if AI is doing the math, it's likely the main contributor).\n\nLet me be more conservative:\n- 2026: 0.001\n- 2030: 0.005\n- 2035: 0.02\n- 2040: 0.08\n- 2050: 0.20\n\nI think these are reasonable. The probability should be non-decreasing, which they are. Let me go with these.\n",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.text",
+                  "text": "Let me think carefully about this problem.\n\nThe question asks: What is the probability that by each deadline, a correct complete solution to P vs NP is publicly available AND AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution?\n\nKey considerations:\n\n1. **P vs NP is an extremely hard problem.** It's one of the seven Clay Millennium Problems. Most complexity theorists believe P ≠ NP, but proving it has been beyond the reach of current mathematical techniques. There are known \"naturalness\" barriers - most known proof techniques in complexity theory are \"natural\" and cannot separate P from NP (by Razborov-Rudich). This suggests the proof will require genuinely new techniques.\n\n2. **Current state of AI in mathematics:** As of my knowledge, AI systems (including myself) can assist with mathematical reasoning, find lemmas, verify proofs, and in some cases contribute to novel proofs. Systems like AlphaProof/AlphaGeometry have shown ability to solve olympiad-level problems. But P vs NP is far beyond olympiad level - it's a frontier research problem that has defeated the world's best mathematicians for decades.\n\n3. **How would AI contribute to P vs NP?**\n   - AI might discover a new mathematical technique or insight that breaks through the naturalness barriers\n   - AI might find a hidden structure in complexity theory\n   - AI might verify a proof that humans discover (but this might not count as \"new mathematical argument or proof step\")\n   - AI might work in collaboration with humans, contributing specific lemmas or insights\n\n4. **Timeline considerations:**\n   - 2026: Very unlikely. AI systems are not yet at the level of producing novel breakthroughs in frontier mathematics of this magnitude.\n   - 2030: Still very unlikely. Even with rapid progress, P vs NP is considered one of the hardest problems in mathematics.\n   - 2035: Possible but still unlikely. If AI systems become dramatically more capable, they might contribute to a breakthrough.\n   - 2040: More plausible. AI systems might be at a level where they can contribute to frontier mathematics.\n   - 2050: This is where it becomes more speculative. If AI systems are significantly more capable than current ones, they might be able to work on and contribute to such a proof.\n\n5. **Base rate for solving P vs NP:** Even without AI, the probability that P vs NP is solved by 2050 is probably low but non-zero. Most mathematicians would say it's unlikely but not impossible. Let's say the probability of any solution (human or AI) by 2050 might be around 5-15%.\n\n6. **AI contribution requirement:** The event specifically requires AI to have contributed an identifiable new mathematical argument or proof step. This is a higher bar than just \"AI verified the proof.\" But if AI systems are doing the actual mathematical research by 2040-2050, this condition would be naturally met.\n\n7. **My assessment:**\n   - By 2026: Extremely low. Maybe 0.1% or less. Current AI systems cannot do this kind of frontier mathematics.\n   - By 2030: Very low. Maybe 0.5-1%. Even with progress, P vs NP is too hard.\n   - By 2035: Low but increasing. Maybe 2-5%. If AI capabilities grow significantly.\n   - By 2040: Moderate but still low. Maybe 5-10%. AI might be contributing to frontier mathematics.\n   - By 2050: This is where it gets interesting. Maybe 10-25%. If AI systems are dramatically more capable, they might be the primary drivers of such a breakthrough.\n\nLet me refine these estimates:\n\n- The problem is genuinely hard. The fact that it's been open since 1971 (Cook-Levin) and remains open suggests we need fundamentally new ideas.\n- AI progress has been rapid but there's no guarantee it continues at the same pace, and the jump from current AI to AI that can solve P vs NP is enormous.\n- However, if we consider that AI might develop entirely new approaches to mathematics that humans haven't thought of, the probability increases.\n- The requirement that AI contributes a \"new mathematical argument or proof step\" means it's not enough for AI to just verify or find errors - it needs to contribute substantively.\n\nMy best estimates:\n- 2026: 0.001 (0.1%)\n- 2030: 0.01 (1%)\n- 2035: 0.05 (5%)\n- 2040: 0.15 (15%)\n- 2050: 0.30 (30%)\n\nActually, let me reconsider. P vs NP is considered one of the hardest problems in all of mathematics. Even the probability of it being solved by any means by 2050 is probably quite low - maybe 5-15% total. The AI contribution requirement is a subset of that (though if AI is doing the math, it's likely the main contributor).\n\nLet me be more conservative:\n- 2026: 0.001\n- 2030: 0.005\n- 2035: 0.02\n- 2040: 0.08\n- 2050: 0.20\n\nI think these are reasonable. The probability should be non-decreasing, which they are. Let me go with these.\n",
+                  "format": "unknown",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 393,
+          "completion_tokens": 1279,
+          "total_tokens": 1672,
+          "cost": 0.002457075,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.002457075,
+            "upstream_inference_prompt_cost": 5.895e-05,
+            "upstream_inference_completions_cost": 0.002398125
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1213,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

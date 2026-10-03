@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: P versus NP\nMathematical target, paraphrased from the original Clay formulation: Determine whether P equals NP in the standard deterministic and nondeterministic Turing-machine model. P contains decision problems solvable in polynomial time; NP contains decision problems whose affirmative answers have certificates of polynomial length that a deterministic algorithm can check in polynomial time. A resolution must establish whether every problem in NP has a deterministic polynomial-time algorithm, or whether at least one does not. The target concerns worst-case asymptotic computational complexity for unrestricted algorithms, rather than success on a finite collection of instances or an improvement to one particular algorithm.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:00:07.467876+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 8.129,
+      "response": {
+        "id": "gen-1790697599-kXRUJpeXKZRDzBjy47vc",
+        "object": "chat.completion",
+        "created": 1790697599,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.001,\"2030\":0.025,\"2035\":0.09,\"2040\":0.16,\"2050\":0.30}",
+              "refusal": null,
+              "reasoning": "**Analyzing AI solutions and predictions**\n\nI'm considering if a human-only solution is plausible, especially now that AI is integrated into almost every solution. I can set cumulative numbers in JSON format, labeling years like 2026, 2030, etc., and ensuring they are nondecreasing. \n\nFor the values, maybe 0.001 for 2026 appears somewhat high but aligns with my projections. By 2030, if AI transforms the field, I’ll set it to 0.02. Continuing with 0.08 for 2035, 0.15 for 2040, and 0.28 for 2050 seems fitting. Finalizing this in JSON is next.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Analyzing AI solutions and predictions**\n\nI'm considering if a human-only solution is plausible, especially now that AI is integrated into almost every solution. I can set cumulative numbers in JSON format, labeling years like 2026, 2030, etc., and ensuring they are nondecreasing. \n\nFor the values, maybe 0.001 for 2026 appears somewhat high but aligns with my projections. By 2030, if AI transforms the field, I’ll set it to 0.02. Continuing with 0.08 for 2035, 0.15 for 2040, and 0.28 for 2050 seems fitting. Finalizing this in JSON is next.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-CHGDznPgrdk3cfWbaJ0kjPmDZVIQv-G0O2PzhgQvd8sDedDXjhUplDaxTK0VAajTpLxaswnZEHmduUf3H1fOnbR2wcFO978QBIlbb4-s76lWlUnI44A64u5csyX5h9wjOkqyLT_HPfJN-ZE3H_ibmc6LswvUx6U8K_MycNPol9VMjd5HVNMXGiiRS456DPCsPhQ5XzoDs9R_ZzjnramGzYC1IL3S0dk6agfsIYUCvQMLTtL1j5tNeKw8ZPBDyD-S7Qaj4Xm-6rS8ejOoBikQetgGmg0OSfDr-0ujZEqjUbnrq9byeiMndJ_VEZMrKzw2vFMIgBZobcSIPZ6lkk3Z5BDoQ6ed2aaS__KrQJpJYw30ZtJzVGbFuJcyY2073NspWRTOuiOa8jXze1000s1NkWLEQHi5GzoSi94NKA5XBl3mO6DrayzZ2wxmZjDU-C3KlJ-b1Qg0St0WZr9BZUxExBVYR1xOhE_CxHl811JVAoXSk57544U-cf0AEhLdcLLdCGFaNlfoDfCk9bgIauu2CPAMQzI24GCfn67ylUmOD2N9_jghQJsAzx-Ww4Bm5BH_7OxmuRRtaxLIMqotdjGQnOl9gNXUCfYJGpRrEyYeIEBTrns2AL5ZcG91h_2EfWycUZElduAF7LRQUJrb02Z6jvzddFj-X_pUVOXuLUha27dzrLa77S0VoNDAPNh0Zogtx8ysbF71j65sUg1Al295Z62M1-jLxffgMaDL1-xyV4w_nTZjOuImPhy-ZGMtBNswmfZk6b8zDWXot9YMAbSefrqxhBKpxrKdamBeECGhpKpiaTEcO_yt4VdsjC5y_ABlekfUnG6ArmcEwwN4UZIZPCHSbxV05J9f1EdTbLvpyuzZRzQvDH-fb5j-eRX6zOopnj_sgy-SHug8Gu1qqN8ymH_-ai9Mq6Oc4lG6WR-sEtJVsy9iq1EXPdt877FN1-GFoy9ehMbyLWWh8Zt3KJcM6Ak_SFCzJC_KYMoQvI1Q1OR1qXs3UG3MRyrqDbac_YbIWCBDGEj1DNgfz4wUES3uZ4Nx43YCaHYICXtF8HNoDOUZ1cebPZDC2ZwjotoPftsZE-eRaYPshzdUWpzvuOSJK5vMWzuNfd_Qilv-azwjWO93LnnUoCFMEWuWP7GAulkbdIvnHgW4TSioydij435o5jNAubiNDQ3rjJhnX5NFNpkoVGqQNNezalfg_WbKEgnPSnNopEyDqKpl8Il9TnYjzYFNzCDv-73xNvxZopuR25F7AeT_dzWqqhHxy_4sWeihPKKbeTINsmFf4OPKlvkTw83rQwevZ5q71iKW6uLjvhmlWsZ6Xi9MxtHt46bTo8X4mwTS4tOUrZ2UTgk1dk6ElC0Kb7fxSrXsEzHaYwzOpJaVYECghKQ1TM713v1FIEW3hg5qIybjNW27ncNfo3cDDm5esYCCZlygY8PnxHl9otn3kJH58WWDfbYtqbru03BAZKD83Qv2K7U4CXtd4-tgNhbMmzVvLyajhlyah84IoOOv9t10uaZOOFaGWIv1yqsD7xsGcXOfoudc1bQM13jl0FKqeCXqsR_igroVzGe4pL03EGjA-PJGJ6ck01JrPte5SbB1IkUxXTVIlK6zrJ8niHS608eq0lejbf8sGPnfXMyhUnyIPJp_7plYK71TBRoxf_bzRKgmDMhCh3fFel23MhSlycT6FGQbLIdDXYLowV5b2jEuiuQ4Ic9s_N71CmfaWZcDT_s0K9F3pOOlhiTqmjMZ2GbOsnRAF41GucRy5Yxi1xFJnxL-KDGq9vNSoCtTCuAl_4BPdiY30LqMIw6tharP6wS_lvJWXI69RwPQSawpX7R273yFtb9n2Myh6Z_GRMzOPM_RRHuqoaWXD8cX40JBO0rH0nwH8TD6f9ufnboS2XvXDOKbF6nXSpFFA0mtfsnyX_Tmyx7V40LZhtta8MFgq6Iq6NZqfzVunRRyIwGaDsFNqavOmuMmML8dOC5DlG5puEWftfBgFIE93EyMlLs8DwloGUN50f3qd7wwk5jkO3Rth3Ebowp1tviSnHQ57xRtnDKdv49m3H1Nje8A2Su66Ocn7K3opZFCzFyy01hSwMTuGXVq1RIXJl5s3apQMqGL-rmqUFEe8ahBaO2kYNlN-lqrjs50wAMsGzW8AyJ9jGU9lwjnoXWw0sJNk-f3Ne71udZq8OKdTKuoCVi_Nl4jETT6n8NWmNF5B0bX6S2n6tqc7FFyC-SW5W902MG8VRevg5WVkN56UaU7qGUt6VQHSH_a1Oayu9DRCn8ILJWbnccawNW6axTtEKEElVdreaiiyLXwEGru93MCVgZTcFMbW4G0p6ozcr384v3vzi2umy5_mfRBj6RRuItl2x4Mj0l1zII8h2zIygZeMZgNkHeQDOi4XDczXOIQHS440_HRQdnqlAPxmqdKXLUj5GuPMxQNUNQahi2X06ogCGv5x4tm3aCJET1l8qmNGAe1YZOR96cZYpe9tjJjE5LIChzHC3tJBROlK0EGcCHnpw9WfN7K7hWk_YWLoV6V-IL2YquijTTlJX1VxqSq-Ph9zZZqoi8BT-aLUE_XNCI8ekuR-Uzl8zmm5z8ihX40cGnkm2Htt-AIrw1TseUVgPWm1S2ViFWVfhTqZrL4ROsNIc121fWQhUXnVmvJxOU6tUUM-gJ0GwfsZaGRLBD3EcUwFKZqufXGQd7tEPouBzmR9hWElqBj5CmBApp7W1z4J7ZP-3aCqA-0kVkhoc-k323i2sgWLqjDB8IeP66XuZSRNrb3iNjAeEZUzv8UNxHVbNcjLDCMzk6ZSGEkpnSMADkL9_6PtL_cgN4DajpfZbP8SxYQ9yaXtZ6WZAquZuPXT2KgBz-6LZ2H-qkyJr6HFtn5Bz9CaqJHLBUj1f3ZDcqntFrljfScav_IPw387FUn5Takwv8WzgOlkDpR6-_j3fq4d79v4gdV6SGPRqCuPKdo3dbJT4_nlqZYcf-cCYKjoSJL31FdJSG7FbVWiBXv5GInpj48M_GF7F_XX3qEaHPeqPm-CfWYmw9zcqJRyMCA8Fv42JyKj4j86UUTeQwLV-VXQddensC8MocsTwcmpF5EKFzM4ts3zv55SjpuHnmU_3DiSGjw8_wJNvR0u9hWdWV3DM7i98c0lXMlWfZwcl0aUFX7nfJmAAMj2-jXd22rFuhpBxs4G_cepVx88SUi78Yr7e1ZZdRFWu20wijRmfA4TuLruS7yYqBgHGQtiN1gI-EECEUKYxvvRqdK8NKLpIG0F8YIUF4kRhzUAVmd8AL1GspHFt1BiCpNnrfazgoiQX4fHQ-t0n9pLnDJAJsFPhkzY-E_28RrBKUuHDxdE0NKaxWkfIpJkrGpL5DWWdkvT3bwreegHngGYiEb0CV8EGhxLnWSaVsbo4SglED-x2lQvwIJti7ZGUZlJkbLhiJfg7rcd6UL8IfZ4N9kW0c8DJy-zFdAUoT_7UcLJHgdJ4ALPI7ja1Ps_hF7k5-GFsB_1eQUSfd7ZPJEqM8j6PHir-1wPZwN4w0aR5r41INi9de4widcdf0fzHNiZ05EFK8RlbC5ZQI_Iyt8g_JpbLMyiD98Yq-NxZilnQF7OEWD30L0xZHDJooqwY9X7N5OFjU5MgGvqqJL7XuKVegHPUJ2gQT_oOTlvehf59HIkgbRL3LAWp__KurayojkL2SCIcmrYDepatssdly62EZ6bNdSM1-xfdkVsb.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0edb78d84b1a6bd8016abbe08033e087d19bf9aada21983060",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 342,
+          "completion_tokens": 508,
+          "total_tokens": 850,
+          "cost": 0.01695,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01695,
+            "upstream_inference_prompt_cost": 0.00171,
+            "upstream_inference_completions_cost": 0.01524
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 466,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

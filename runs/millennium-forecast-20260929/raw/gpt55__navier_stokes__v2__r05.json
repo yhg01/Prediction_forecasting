@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Navier-Stokes existence and smoothness\nMathematical target, paraphrased from the original Clay formulation: For the three-dimensional incompressible Navier-Stokes equations with positive viscosity, establish one of Fefferman's four alternatives. (A) Every smooth divergence-free initial velocity on R^3, rapidly decaying with all derivatives, admits a global smooth velocity-pressure solution with uniformly bounded kinetic energy when the external force is zero. (B) Every smooth divergence-free spatially periodic initial velocity admits a global smooth solution with spatially periodic velocity when the force is zero. (C) Some such rapidly decaying initial velocity and some smooth force on R^3 admit no global smooth solution with uniformly bounded kinetic energy; the force and all its derivatives must decay faster than every inverse power of 1+|x|+t. (D) Some smooth periodic divergence-free initial velocity and smooth periodic force admit no global smooth solution with periodic velocity; the force and all its derivatives must decay faster than every inverse power of 1+t. The periodic domain is R^3/Z^3. Any one alternative meets the stated mathematical target.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:56:13.766630+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 6.841,
+      "response": {
+        "id": "gen-1790697367-X5EFpAvvdomuCBeSumIA",
+        "object": "chat.completion",
+        "created": 1790697367,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.001,\"2030\":0.07,\"2035\":0.22,\"2040\":0.38,\"2050\":0.58}",
+              "refusal": null,
+              "reasoning": "**Projecting AI's problem-solving capacity**\n\nI'm considering potential advancements in AI by 2035. Solving certain complex problems might be feasible, but some challenges could remain independent. I’m weighing the probabilities over various years, estimating like 0.001 in 2026, possibly increasing to 0.07 by 2030 and around 0.22 by 2035. If AGI is achieved by 2040, more mathematical problems might get solved. I’ll wrap this up into a JSON format to ensure clarity and a consistent progression in values.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Projecting AI's problem-solving capacity**\n\nI'm considering potential advancements in AI by 2035. Solving certain complex problems might be feasible, but some challenges could remain independent. I’m weighing the probabilities over various years, estimating like 0.001 in 2026, possibly increasing to 0.07 by 2030 and around 0.22 by 2035. If AGI is achieved by 2040, more mathematical problems might get solved. I’ll wrap this up into a JSON format to ensure clarity and a consistent progression in values.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu9-da8rkXkhTPLycU1hmiYaCvbtDLLoYiEKir3mDXY1HCNRzZRIMk7N8Xa1vMA1I0d4cCa83rIOO5L748WDhPxpHWmKNhY6_ucajyZBtY4LARg7U6PnKPh0QU6O5JhWh2BIonGgxT2o8uIpJf9nBvRQXsQci8yJ-qzDkh7DL-2twHi1-A8hInui3z9DcYrS56VqmS0ee0EKHgl_vU22NDtcRiew5k61hO0kvCZXDj84lQggvdcYqyFhPRrPWe4ELOB4m2hqJHOhD-auBRmXIkXrCI22VY61e1jwEVW3iE0GIiJj-JuCWw1M8OWsIhwk-7DsaaFHHCMlHX2ipNJCb7zw5B3jt54FsY_Vlq-4BmVM-RpK26lWWKupJgzf1ViFMLuvOavgr_-Uwl0KkiP1DzVX7KeVJWD933o6cSvH49dr925QvO5GnyQw9jHW8xZbKmeiMH24Y1s3P1lyEXl5c1VVBvgbR4pqa6ooocQbpmygg84OXW8Li8UnNcyk_lHYTPz4-MvH0s9bjruGOVTe4mJ9eoaL-DnfJy3WkeT7-ksVCgp0bdC4gTBj_Q8xKaMIi1OGx47JymhMRziMfcCMP8v_SFkTdrnAtOYuXVLHBh04H6N48RgWip-vSWe1h0eAalXivAo3UdannKBS2U3xcsEiJFF0R03zSy3PiOJle1i2YW1oASK2IDfmaNpMo6ER98jcVqwckZ_X8dboaN6PmsrF6V2zo4eTVNIgvhnF4Ap6ScZ4oRD9unSyxcjsYakx2BoJ_VTYFQqWRm9IykK1inR7wREfUax5UQrzW4JWDN57t5x9bifN_n0toCrLdWF4WF3AZRYLZPmRU2D-LIHcdbDdlEzHOZQBhDyZa3wWrWdGQe5qteg_YCyBDQC0rKfeX-wex5TIg4iVaaXVFVKCNjn6ODBHI9zZNnC_myzbK6aMWeFwtXjZBODlvX7a7weB-XtWUNzKPLMbPsavXd4fYSA1ScU8hnlBzmjYFLb5lxCSju_VA9yp-ZSY6JMKJ15IUNcJa8nMNhsxLn-OrH_2Y3ObwFJiFXIF_v7qj1bQOOr9mXOUhBsxQTMcJFcqwTL0w_1tRuFlHOt4zIAZJWwhEhHoK1SCKFEjMxgp7eVSHQl92vw2P0qKfWrwgIIlrhomNJwB11DqqgPOzZrxA7O-W_j38n0a-lBN1imdkCKqJEund1risnzSENhXUPae63Rz1aognIZ_fPGix52EXovmAd_Vcpfn632ddgn06VU0HX2IFm7ZTRFpvIsf60IW5rcQvbbMl99t4MaKUxZpF5-lNKkfViBqQN3zWCf9PZwrGsamXEfBHy9c4zolofGB2nMTqp4wY5-jvsOLr48lJT4S7vFzdUnWBb5TcPeNkljdrXZfpmmHXsGAPme1LFKw-A3YeAeK459zlWXSAa4cpAJq1OawHb3wPkBEUOm7KsJAqNszHRm4tQWdtgnpQyvb2dL-Fv3O9LhgWjpRngjFoF1SodIpdc9mbZlrmntO5R5LBqFFfsVQACmqCfu_hHPTBw3DnjzjarJPvKZP6zCyQLNVudmjWbA7bgxAAIXnGL6NhitHP6GuTBVrZMpwvtkNZ34-N1oM12O0DNUiWq1snNpBHQnPz6T0THfmfNzWDsXFaDGGh6wxN7ieSp9AFVYkTb5i852Zn8d-ZYYD1R7I3Y4tG1Ibr5a01z2rrnNyJshLZLlEk2UlXGicWordg3Adg_4fJ1CioLuJ4QNGTd9wux_L40KOTdC5ttBXtpiCMiJfp1mXUwsCVN7wGGFGQR-O1p7NKqQk1tR3xHXsl2hrDtwaCWNZrGZuRv5FeXhtKJS0gn4PJpm0NqRm7W0wKsg4uoW9weBWgdodYxdg5V5FUsispqE5dtcZfMo7xTCtJcI_G6ouR19m6VURtD6o5un5xqeBtm8moG8z9GwkuM1ILL0DEimJnKMz_aQsZSkuSVNKn1shuns6s8IjzkADuV8ZT72ce9Iil_JjdjCZ9QTk6_QIAVUsT4FX7NP1NJRwItz6xoZhWDvewPf8kpLZwBagL1ur3lV26d9WFaWEfk2FeK58iSkTof7KqZyY-ibWvNV32UCmS9--vzYRS6MN4R2npErEpJwscjuVyBxw3wIFFHX_OG2NittDaC7DFstVAEbZ5_Jdci35Zr0HQFM8gYLXveM4N8GG3hhe4CO0PlevdRFPXX6GukYT5H8yMDttb4X043RIKIOwUcyC4K-DvNzpb-FPVeiFu_XrJ2hta148QNN4KUMmCpHlofj9sYIb-bEbA_wFbVNUFcArxxKiqYcpZWxt2GL4OUeWbhg4NNBOprN-rNJH-wm5g1hmehDNgVebmSMAxZ71yNtfaZmyqOwprthu3ptRYdniB_ktKHt-zXTcChOpOGW0iw3G7TrWYSaXbv38oQTUdMm99rMJW-qZ0Yp7xsJVm66GIUOiwq0hvmGY-19eXLiD4c3oGvOlDI1O81o5eJAPvmhhPmm5HatLAKSsKH9RrCROTTwR4nAfhNqX__AgvhiNMgxzTfFS43cWWtz6zfOPsgi_rzmGZmITY1ooVpSitp2stx5Y-EVHltE76xubrlwdK3wWaoy0cUjVEpKB2jwVIP03YMk0sgUqiqr_d57fIOhC0Jxee8_izqfudCHPQl5tWylxC_hm2rBviOjRlQq_eaZkuU6tsXX_V5NatlGYI5mU5O07HJQ1ZipidJuxYrmcN4-wyYeS2g1_QEDN57vPKiWrFmBVhv9wqPUd0H_JI9eD4fack4oHRHoL7xfq_WcnKW2w511gOkycvsISsbc7xUKh_OaIOTEfQGx7GzR1KN4mK9HoXEq6qBHImS-nzV3boZRJ_myTmwXdvgxp8J0xH1GaAB0fFx0BdNHyOj9AXp2ksxutgKB0Zl2KrdqhyoDvsb8xe7EwX8ZKkyXcWbYoX2je9VvA4nrCT8vWL2e_X3DFzKlIEKsxVG-L_-qC3Mg765r9um44GWg9b9bL_2NVB2IMuXfPWbs9fIzCA2MOs2axpdyBU_-ykFEtQFeftym4u6R29XCdyNwitiNUMtooEa0VaGaaevHNWIHb_0cz7aCZE9ZiT2za1MLDxuZ7fROjQiarnKHri-nYxyann_1AotdQX-oq-GtA0hgUb5Fx2oxR79JquyErBoQicu4USP8QzwPthVtkr3iiqKdPMoYZn7PcS8mcWe8_HhZ0MXhoQKCFxe9QBbfEdAEkfNdhgXimk9klM8Cmrd75OojLGy7FSdI6hx6bvt5PbFu3RIPF0IX0vojbdU9pUGShu-bWyQ24Oio0yIFTguVkpAngYYtYe7tEIjX5Td47y5YVwK3EGK0vtnzs27dttgD7IP7-gWppLV9GSzHed_74BT-R8t1eqOsnV_DTZiDBktgloyHXlTKCeWaImgDpfjCL27iMDhExnm81SDxt5rELOEwDwXWDCUK-dCNTZPPm6UAnNxXtbfxjBPPsE2Rd-6z2XCdwggZufvb2NN3YPmQywuW0Wdz4VMy5EXetRd9Ue76FX14T1Bwqx8KoWUipaKnMVSePocD46FyjmdhMubWRZ20z8ZadnGMs1wT1_FDUUjVlCg2-3w9QDoI-myLr7a9bHZY7Otg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_06e2b933c390fe5b016abbdf97dfa487d192e76263d693077c",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 454,
+          "completion_tokens": 453,
+          "total_tokens": 907,
+          "cost": 0.01586,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01586,
+            "upstream_inference_prompt_cost": 0.00227,
+            "upstream_inference_completions_cost": 0.01359
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 411,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

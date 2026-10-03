@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Hodge conjecture\nMathematical target, paraphrased from the original Clay formulation: For every smooth projective algebraic variety X over the complex numbers and every integer p, determine whether each rational cohomology class in H^(2p)(X,Q) that has Hodge type (p,p) is a rational linear combination of cohomology classes of algebraic cycles of codimension p. The question connects topological information in cohomology with subvarieties defined by algebraic equations. The target is the general rational Hodge conjecture for this class of varieties, with rational coefficients in the combination; an integral-coefficient variant or a statement about arbitrary complex manifolds is a different assertion.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:04:01.811709+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 4.715,
+      "response": {
+        "id": "gen-1790697837-M9GEvJj5cHNvEQH2y4GL",
+        "object": "chat.completion",
+        "created": 1790697837,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.005, \"2030\": 0.02, \"2035\": 0.06, \"2040\": 0.12, \"2050\": 0.25}",
+              "refusal": null,
+              "reasoning": "**Forecasting Hodge Conjecture**\n\nThe user wants a forecast presented in JSON format, focusing on years 2026, 2030, 2035, 2040, and 2050. I should provide probabilities for resolving the Hodge conjecture, considering that while it's a major open problem, AI could help a lot. However, it seems extremely unlikely to reach a complete solution by 2026—I'd estimate around 0.5%. The probabilities I’m calculating are: 0.005 for 2026, 0.02 for 2030, 0.06 for 2035, 0.12 for 2040, and 0.25 for 2050. So, let’s move ahead with crafting that JSON.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Forecasting Hodge Conjecture**\n\nThe user wants a forecast presented in JSON format, focusing on years 2026, 2030, 2035, 2040, and 2050. I should provide probabilities for resolving the Hodge conjecture, considering that while it's a major open problem, AI could help a lot. However, it seems extremely unlikely to reach a complete solution by 2026—I'd estimate around 0.5%. The probabilities I’m calculating are: 0.005 for 2026, 0.02 for 2030, 0.06 for 2035, 0.12 for 2040, and 0.25 for 2050. So, let’s move ahead with crafting that JSON.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-Fxjl25pyxqXbfoGpk4vUIaN_4QrikU-2fNM45XPZVIkF9f-NrTBf-LuP1y_RcDQ86D403xqE7XZXpmDb29VvM-kSU4y-QQrRsPW1UWEHZfD0oGA72ZxhjT9TsyvrGQYq8ofNzlpwGVpQA69UDP5Iy2zIG5xjoBAAjMRq99mpJsR8Ee-R7a7K1bQCuX_Cjx281FnYRCUZjmvpt99ExUaigYPDjpMowvErmDCoLpPntfJEppsZSu1bReO1JfXgvcGL9EYugBi1o_dnzkoX_RPobbBlX_NGbLVMxCv-HoRveukCmJCKBfzcMBDVERJOc830fo4UDzfJUcC-3eMTax0OjLpm3C7IcvpLQKAt1Es3gwUavBjS8ydSlw3i4XrscjxgzbSMZfY_Gb8wY2J2bnRrfdiH5Mj5xQKB9GvBkTIgv88stfgYNeQcrWwc4IiDV1OCk9wYuDKSaa7T7-mWCwz4kIWPLT4hPzO-5tP8XdAYsy_RfRyaX_HSG3v0sCJBSqF4jyPP0esAtK8dPVkZEg9mo3oZlbdtPEKqWWooxc4R-dz_2fEqXmkDQqrWkYF2uy359DTByiOTDCSPzXBxPriTfxsfHX7mjV2uNPloUE11khtwN5MiVlBkCvcyGxZKULgg0X9XarP8-C-VrX_UZc-1AeqJ91c8Eed7Wij02ZHSjKjsXpCb3OQ4f3uw9skkyxrY-j3xGwsOXcYXNTcVtd_Y_cXlesS5SooVWBS11W4AxnatprnRAtuoXJaxtAJvztq9NwIzG8R5yX0AfKnqr9YueDAO7jEyh5yH6mpa3ysRFfkp1nBOMerLpp-0_PAL4_Jdu4O3mvw53KzkCBSed7dxdFDx9EN0Llvf9GVw2VdnXTX408UZ5V87VTO567R7KD8dLuddPlkT3Rn3-G1JOongiH7-nIL86hAyF-JIjDDIAFi2O_bBKMC5g5slgN_G3EQschtRhNudgQHgrN0usVxwKBGjvMeTpJfe-7XXlkkHijszmshGgMYqN6_DEaIddt-YNQIBqB1rGZ-M7ATYNWONdCyO2-ESNZb8JZ3OU3BuceZqDWuOf7nTLCJ5MSIqDw8DCRBPzUEPBBfzkVrNgvBGtdlIXvnU36GfYzFYqNLUpMcFCrMHpnpWdXJ-Q426frSnn4LCgd3AKCJ3k3dYTIoRAoqxyxGozDD1RPnQe3KW47qcZWgmpMt9_TM24GY9_lEFdRQaySQO1DAFJ62IR0qFjQkOZlvysurIUn2QyFBwd4GZK_7cl1wn1h0YeexceIA01f4AYwhyt0OEjI0v0y9p63sb9Wb4y8Ibl3dqepJn6wMtLfhilv9Gdai7i493F57HUMH_0cbRpDVEf2cgX49Krfo9nqkyILcThsl8U7WUlCPB7hO4vbtDt8FSWAAL8b2VkTYOKmIwd5-ZahCO9dP6r18_UTrgzoj4G9GxDB4herWQhT-HvT98ERa72bBlOU9FdifLu-tJex_Vaf7W51Xc6VU-qK5Z9V_5KI4HD7tQdOLcuKHuDhSlC3iv0OSWZ5ps9joi27q-pvZ6nycSXjNi5spuv19KwK66vmcPpLDYjsc7xM5TX1UfUsXDJ_LwXJVsaCp5KzugFKiAlsXmpH0ojJWI0yzUUpVjlMExEgiPnYTpJ9AVIZPMEutWFYxA0ziWvFOwV8QN0Xz5ppglT0986Wr-txjloftqzwDObXL6Z-Jj3U3W3XadZPAHSGUoggyt_7Bw7WPr5UUg3VlGRY5jZsRolGhpJXVMBngjm2VDt9buSRnxSTz-aTpihtNdKNXhQhjd0aaJ0qdA7thgAEyM5XTnOyOMfIXFZhNQ68hIQbMZ4huGcYa4qvwspFBmMjFWbi44UuSDoCT9CxwQ1AKs0cZ2Y1fXTOlcdnTILRhWpGmv9IqEG4ij1j1G-oXCED0xE1x1q_3ObuHX9npoM4rZZYH1136mNyUN61L0ffmjUzXbXtszCBxRSn7Q0xeYmGGbdkTM-FF7CE-kXcHEweWboA2OLqUOmFJdKa1D5fg89K7QlMPNznwthwvsflHkDWxHJds_7wAIvyiQ758GGKmgJvDiQLqgo5cF2RnmSIETEVFqBoJH91TmS6gXlTZ53DDc03W-ctMmUo4RaNr5XNqRwtzJqFx97w8eScXhLnVyEZvId9HraoeVSjbpSsYZfA1EfaMlvbmaKpTnjGWox5fziyZWVdS5FByr85HLpFGV9kL7njsUczMAJLZcTFP1hLl3cADBK-2iXPVWqdAIZqyPF9IWgvMncrJ1X8AraQBA26ld9LV7IQ-8phh7nf_DaUDr6TCDPXBDqql9nqHQm1fR53fci-_YfY_dJDQwMqexFaXBtde7DEoxkbSmdlnsaJc7fWTeFHHTA7uHHGxnctD8yjk2mS6KX_eKPW-dgZUO5sL-HUGtxbv0QrEcbJPtkWVY8Q3vgHb32CHbbliW-k95SBPg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_028d123351df2f6b016abbe16e185c87d1997808b5c4ee1d81",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 367,
+          "completion_tokens": 271,
+          "total_tokens": 638,
+          "cost": 0.002902,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.002902,
+            "upstream_inference_prompt_cost": 0.000734,
+            "upstream_inference_completions_cost": 0.002168
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 192,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

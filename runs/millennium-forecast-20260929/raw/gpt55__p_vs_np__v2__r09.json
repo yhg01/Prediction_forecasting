@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: P versus NP\nMathematical target, paraphrased from the original Clay formulation: Determine whether P equals NP in the standard deterministic and nondeterministic Turing-machine model. P contains decision problems solvable in polynomial time; NP contains decision problems whose affirmative answers have certificates of polynomial length that a deterministic algorithm can check in polynomial time. A resolution must establish whether every problem in NP has a deterministic polynomial-time algorithm, or whether at least one does not. The target concerns worst-case asymptotic computational complexity for unrestricted algorithms, rather than success on a finite collection of instances or an improvement to one particular algorithm.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:59:20.961341+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 6.976,
+      "response": {
+        "id": "gen-1790697554-hXShhD0lgBftXUzLwZt4",
+        "object": "chat.completion",
+        "created": 1790697554,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.001,\"2030\":0.025,\"2035\":0.09,\"2040\":0.18,\"2050\":0.38}",
+              "refusal": null,
+              "reasoning": "**Calculating probabilities for AI impact**\n\nI’m considering the probability event by 2050, which I think might be around 0.35. If AI is transformative, I could estimate it closer to 0.5. The solution might not be dependent on AI. I need the exact JSON keys like \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" with numerical probabilities. So for those years, I'm considering values like 0.001 for 2026, 0.02 for 2030, and so on. Overall, I’m looking to ensure valid JSON output.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Calculating probabilities for AI impact**\n\nI’m considering the probability event by 2050, which I think might be around 0.35. If AI is transformative, I could estimate it closer to 0.5. The solution might not be dependent on AI. I need the exact JSON keys like \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\" with numerical probabilities. So for those years, I'm considering values like 0.001 for 2026, 0.02 for 2030, and so on. Overall, I’m looking to ensure valid JSON output.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-BYQ2fTD4xrLUJBGz8PA31D80TXiWSqa9eyALb9yfWJ7PF7VY8bEHQPw3rtz7NVNe2MCnQhisQrp3sGKOXMFfB1KPyk6pKMzQQSOjSQMvTZyY1c5kkNkxz1TWpSaoCdXk7E5YfPIUEL3ha1O7gLC3PEHhydihcZbGUBa4NSNkck77mZj4Kv3EIJARJdtjj5u3Fo_V-OFgs7O804Zqp1JBj80VWlHGJxXvWOPsMFWDvwb-HqIGMh1E74z0gkzhi7cyil7RZXhj0jR26Hu60bgRoXt0CpNVO5Vz1LYg2U94vrgXHO7EYqZSJfeNUmAgxMQFdecMpVL8jSfmmNMMOMbfRs9zeiw--8tE5SHoC8cb5wRasc-e9hAaqfPwzZPeEauyxpcIVr8fmSud38v0TbBm4XtjHQrOmUzJs_DZnQYJE76PsYSyG0Znfdxtabh-WW4fgXk-csKChgpNEdVm9rVNEjsKIRqP61RpzD4P7rqdDpAKzhsG7sMbfQFDSairS_WzEjpmYcZh1E7tpiPFZMXSuKM86MLRvQHGXbfl9c7PZtAYIcVqnjRQis7uhggnusARKTsIasDElm6zt-sHbS75KKtPLqWA2eTTlECyMWX3Ai5w-Wet_YgdiFxKjtpRs46ITim04ibmyAojUZicUarjy_gLZQe4J2hasKjQpUsmQGw49JnAY8UG1T4taEo7sFWVzrbR1tk8n0hz1PvZF1eU3Gm7Jk93k2Y1GqbB8I6HBJE1iVJ1iH_PQ07M2aJxpAkattYRZEylahF2zQ9w3XbDYFed_3DgesU-ah2FtYxtqLYbL4L0DBjT8zPm5tqwzTTGktjEuDk7-KjMbBpBZCtLhGPe0wOzkm8MOZ9lsxCUZit7QmYH9OWjhWVv_2pGQXfhxpiDhhSJ3KwGjQN4vWg0zwMvvyXbkV6Dk6Y36UQ1QUVjT1QQDrZU_c6H8_spmt3tQ9Is-Vpfa2qf7F7k6DrHPKJUwHwyVpygY56qqwKNQP7AkO-6WwfW_5hV3Jka0imr8w18obeI_rI2zyE1cCrKsB0r7rEVXz2gDbOvYvGRhnV6G6Thbg_VsGMCY35BpNBJ6--zXp6LJ_swrkk3gLfNfZM2C5XhP4lapkQugo6tq-y__DUsiuuuvD7jbJif63ZP1Y7sje-XujjVjCIzk6FOe9Px1nN69IYsH11FCBROywVcn8d5DGRzXaWoEpq4tTapUskuatgfSVMk1dnDvX9t2_QzK9_2FOioTdRrmbo498t6K3r0qTEolZKGTI8bIKd9HuutAt_zrNbUaDZ7xqiNAg6nL7neAuLBlYrPq4JhELAmeysXU2Nkvff4URKQgGbJ_TGZA4cPBc8lUbsYHBTKMv2HrIouk6Ymf8zMqL3h7OUVUdHt59utH9gFfXx07fhxxyjoWuZSRAKN2CyrxLr0_VoJakVLkkBQwjG5KNgex1SjWZWWy5plV4hye8yOwp_dLcnT-phBYsgXyniZtw4Vs4_hV8eTJUjJCwKDUpE8I5ojtYmsKUo0DcrwX-M9mJ-FzHibiODnf2Xa_A3MUCF2YIhNlpMaWqZRMwcTrVi8358mGwbi06MDK-gVKpCsXjYUI-sHqLglSaZukbi9C6u9VzU10r1fz-31I9CcNmkBROaOresr62MH2tUdPYshdeB-QVAvLCxEQ9VtoTlG4C3cLr3KRuK99Ui3Jy_tQsO2SLNZDbUrZ2G9ooputo-VYhQGX2jHPJgh9Fc0IkOU7EqwyJ2S4UmhpkMo42qIsxesoMjstE5mXHVWlIZT9Y_ONrfXOLUyq-31KWc5nOQ3j5CaLaLmcTSd0Fk75D6EjPoS2SIUfDP_ne5ZLxsKadwIJ3ghCudkU8UHOYT5RhyfvprNQF41SI1NkPEEg7yBG1-C6YlBAgjmbVVluWj5sPezVLIEDIuRg33XYhYxCdFJQ28NMgEId-iJ-wc0985XCVt1f67qvlMzhZlyT_TGDu8pPJlenZFfhfySqUjJHOpw22sdFwh8k2npvtFzRgGvMUKYr_ILrlRHizD43GPV640BEGvAhqDft98f8oxADMb3KlZM0pd9TwaqQmFi96MSbMR4tyy88Q5Z-DTGGNTApOgB03biWwqG2L9Yqs_0XqQyXOgoxL54-vpIeGtr4q7mm7ZD-0iGQBpvvVocvs52jwEofrYF4dI9F1qdrf3P9OGMF1bVuIA70KDTF7wu6REgjlgx2l2I_36Q_ducyIoiNlRqsv6FDNdYCZ34GTT5nudGNUgvv-50trvgxBfSiTrkUc0rmqAbayyAWkIWR0GtrXeaX5cka8jFYZa2LNu1eq2WT6MNxtOZa-psPhOjQUcllnCo-fqrhBxfYlkDXBwO0ZCLWVm2hgdyLB5dPw3JNmMUhB6OocBl4qGwOkdNuLMtaS55PGCSMmpYUKNANeGJe6tPPelZxJilVswdC1Mny7tGUdKty7W2cRULkU7xhKsTI6oNkexbz3lk_CFp8WOPIoFFDjlAkkidDqv37ozmn30lwyskvTtun-_xG8btzpFe7JYpeRVRmkEB2EP0WH1MSyYXsEg9pjfok01nqLcmzZApxHLRndt81yUz8uxr8kwfJ07TrLC2TSyBNMXVi2_gZLkEBv6Zooqx-BKDZxq9gUNo-SQ3QfvZMtvAHgJmwtN7rf9y4rdsAGJ7pz8hxFIY-jeaFYHegwvqMo8ZP0IJvOPBW1MQFt6UIwKhux_w6ULXJkT_1NYX3O8XLdY8aoM5eFIZBvrhZhut9BkqXyGDtzJhlgxrov1gkRU7fXOwLmydSt_R7BN986umDkdSQYXQDtWlRBKQf9ctGs6Bvc9w2M1kx0kZ7-Q4nHQ92GO582gq9YzEspsvGSpIEgWdSqXXLTN8KXSZt8uTn-420yI1aA7vvND9IdVXEaguonM7z7U706qWh3P3HQ75cvW5ahHHE1U16GqbhyTX0o_eflcdArPCKHmygm9hLR-_72UQhcd2ixU4W_UgRi5xUNK78iMB36lrgrUZ5tetA3X0iWdv4HTcpAxN3P5muHmJeE2U9y8kUWhKQf0qVuog29d6S1tD5-mM63bwU8lnrkpH3nZ2NP-5nnnHpX9KvnyB302vsK-TS8LItjonlGxYL_83uuaXX3NyGXm2n522wTDw5YdykKko9XnI8TmVpzrkfMF5SbJ68m23csTSwmI2l5C264oQO80j0ym0Evvgfo-jmpeuBJyuQKXrFL-9saLMYdsvHgShrVgQeBD4lYKdNRKsgeqKXT6pe2bvjesJqde9NfXnzn7Thl8Qjuf3AH4WQbawxsRKaPpZ-AFJLxyPI9EmQokrurooM6ZypVYsDDTvwQVVeCNz9IC3nPlUaMXnFL7N7EvTc0N0x_pkjb02Oc2cFQlhDp1yFj7fIG.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_05639bac7c86c77b016abbe052ef0487d1911d1b3091130f51",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 347,
+          "completion_tokens": 441,
+          "total_tokens": 788,
+          "cost": 0.014965,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.014965,
+            "upstream_inference_prompt_cost": 0.001735,
+            "upstream_inference_completions_cost": 0.01323
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 399,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

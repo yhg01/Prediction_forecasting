@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Riemann hypothesis\nMathematical target, paraphrased from the original Clay formulation: Determine whether every nontrivial zero of the Riemann zeta function has real part 1/2. The function is initially defined by the series sum of n^(-s) for real part of s greater than 1, and extends meromorphically to the complex plane with a pole at s=1. Its negative even integer zeros are the trivial zeros; the conjecture concerns all the remaining zeros. The target is a proof covering every nontrivial zero or a rigorous counterexample. Verifying any finite range of zeros alone does not settle this universal statement.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:05:36.351377+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 7.447,
+      "response": {
+        "id": "gen-1790697928-VFzh5ytviAvQTjr9foxg",
+        "object": "chat.completion",
+        "created": 1790697928,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.003, \"2030\": 0.01, \"2035\": 0.04, \"2040\": 0.10, \"2050\": 0.20}",
+              "refusal": null,
+              "reasoning": "**Estimating Riemann Hypothesis Probability**\n\nI need to think carefully about forecasting the probability of the Riemann hypothesis being solved with AI involvement by specific dates. I’ll produce a JSON structure with cumulative probabilities for 2026, 2030, 2035, 2040, and 2050, ensuring they don't decrease. The goal is to predict the likelihood of a publicly available correct solution with AI's contribution, considering AI progress and the inherent difficulty of the problem. Even with future advances, the chances remain low. Let's work on this estimate!**Calculating Probability Sequence**\n\nI'm defining probabilities for the Riemann hypothesis being solved with AI involvement. By 2026, it's extremely low at 0.3%, and gradually increases to 1% by 2030, 4% by 2035, 10% by 2040, and 20% by 2050. I also considered alternate forecasts but believe it’s unlikely to go above 30% by 2050. I’ll create a structured JSON format with these values, ensuring they’re properly numeric and non-decreasing. Let’s finalize this!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating Riemann Hypothesis Probability**\n\nI need to think carefully about forecasting the probability of the Riemann hypothesis being solved with AI involvement by specific dates. I’ll produce a JSON structure with cumulative probabilities for 2026, 2030, 2035, 2040, and 2050, ensuring they don't decrease. The goal is to predict the likelihood of a publicly available correct solution with AI's contribution, considering AI progress and the inherent difficulty of the problem. Even with future advances, the chances remain low. Let's work on this estimate!**Calculating Probability Sequence**\n\nI'm defining probabilities for the Riemann hypothesis being solved with AI involvement. By 2026, it's extremely low at 0.3%, and gradually increases to 1% by 2030, 4% by 2035, 10% by 2040, and 20% by 2050. I also considered alternate forecasts but believe it’s unlikely to go above 30% by 2050. I’ll create a structured JSON format with these values, ensuring they’re properly numeric and non-decreasing. Let’s finalize this!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-HQ0RtVF25U731jnnwjnCbAw3fuUBoK9S48hujFK2xDw21XV6jNVGSgl2udMIlDNynjXCCMxL1st9j1vzRiI00Rpd5KMsjENQ217moq8fruw1_t5mQr25pdJKLxkYsc77LJwQLNOW7-5zXPyIQPEAuRkqJjlpakHGtovcywxH_Dx16id9oB0-7O8w_EMNzRlnd-uB37_DcukmJvSRjCy-CdzTeT2Wi2YL9mHhazYkndabEkV6KGKObdxPrGDYdewdEKPbSG2I2-gPtKCMshHgh-2HMSZQpTYzIZiws2sqcD1O78zxhAIzqDhphhqVD1n2LUBf0aE3QKt-7jKjils6yXzmm_BPKjIsOJQhMRTZZgaQ-Z-xHu_4GkE9G0018LR4LYPwtxVm8lLiETlUKCjNQJobIzNMeg1OGY1vJGrg90qZn80FXWg6kJhpxkoPFq3B3oQMRMDiGO1HxYtTTYQWrgzqNOkzW-YpHheNNQ9Uidsg-cYWnlcEy97FYI2TnTv1qzNBYE1mXCchKFYEO-T2SLMGSi_3QnCXgt2zqvlBINecJXw39eeYIf-8ADX7zTvKFUkolR7DjjfUgxNi_KsjQmZW_r7qNRBiiKIqAa55tBUr61iZGSel3IQfEALC1z91SeykFHBKHuY4UFoOab2HhDMe54hhOFJMnO1e8kozV5IrkG22tgUmZZWKgevB_flOgDEtSmEnYFDz7oiwWmPrqTu4ZuJ5Y_ISCj-2Cxn0REXz3JscHf2FY-4RDcHUc0xp-cQbe6L-1T9ZPgmimsmO2EBVHGom0GsgE2ftyk4uo33valVsrY6GUJ5bD0H_XoI3H0rdq2jBncOAofHDqgUcFSfZ5C7iLnomep248Bdtjlt-1-odxLC0oBZMoHyleoDkU2yy1pJQAew23DsbpSq-ihDyzTbUdREJMomK8VDIMciJCaf2kQj5H-6V7Pls3ye98XCFUCo3su-rh0k29PoMfULNbMr2D6s3DK3jumjSqtbz9BIKJ5MNY9jK7pc6Fa0t5o-5huN9fDwCVbRmXd7q-RWlXnbk3aVuG5iIBlGyC4_yKGAsetQNvBS_-oZ__6QZoi4idoifPzkzZtoe60n3ydJvvCrhUaTP5zSxtWBIFGK-cbYZOVaxCClwyasBzuL2ubMwEViVHQRr9lOTI-HDB4i9CXBt9cKdQa8CTSP-CBMwfe_X7c8iL7C8E-hWfMDYaksjoJ1OZSXJ6kZPo2McXH823ybe2_5fNb3rifCc_hdoD8ptV3XYY4WdRShOuH-3ynfpDnUkZ5pq9X61adYfUta_1Cp8zgbSVP2EZXW4NaqORhxqbJXVi58fdlNJGZhbUu7wLtEQA24UiXrgS3GKH6rxnU9XCA2idsy-eheLI_Iih1srNdHSpCGaEL1oNZ9YXWWkYfcsoUHs0cXvx_8Svmpau5_YN4aiEKI93tAR4awmNfGLHW6ZPB0lIsKbQYAKEDp3g57Iiz7awm0cnt-uy-0aE10kR0IW2-85ERDxl0SPH7NtUWT0V6QdlKWy-mxiFfGaKO4VVgQC9wKNie6Bhx0IXm98AeTgQ8in13i-Q7PrW8BIBUnpioqu9_WCig_Gd0FZXGiDmNmoRykAoPh3iigMA0lQHdXX-lUHDyUbiEIpYZlGY0-wZ6VyAKMC1h4BFjwZfaflWrWo5n2xxgFUjhv6n9VmUpTnQKGrsWCBMzicBWaXGE7_Gn29zqMRacAkQlJjAdUfNfBbPD1pSzqJaM0EteK8UvmsP3JWFC-ucmXDJVpPy7e7mbhgZYNSawPZ6riomigr7tlpQnnVwp6Bvv8tGlZsAjPcaFbu49XHJk9c5kaL6ndb6Jb2xsBIyzjqR_z-U7evo2E8cqrt5OdTcqRTPY1hmP38yBqo7Jdeo5zatuBn18SriCiUFp9kJrbRJxaqYLRrDOMvLvHLIu-P5hPv1F8X3x9vJ4Zkdz3Ra5FxmkZFdaR8ICCzT2slrYgBAsRDK5bwKKi1Uv6MU-YjvQfBNgZfMy20x1gEfIN0YLryeaZTro7F9b6EW8vldJtMeRwoWyKCwFobl-6KFINNbqAkEEtUZ_iG7v9_z1D5FJFnSNkHE4YPJdJvqbLyGHZ2AeGsKJhI_hVNuQ8rH9wUv0g7Jzep7IaeMiGnOqFGjR94De1pUvmsNC4vpzvx-ZDUv0PN5fGFQ75gQOaEusq98YLxOcZKh87eJv5J0FYZEnfEdYfPotxxaoXegFXdBH3YrlgZhC17BYPypcatTs0O3SGHHYrEbRRn1sVwPpZaLBsK24enVE_q5PgQ5n0KmAG4fOox8EYmYxZfd8GzelnfGpgwXwBOpuBz1QGTcyxgntTXNN_xfv3Dv2MUq5ZYnd7xRHcVYJUc0O27lSX56cYehT_zz5m12QO0PBJYtYAkNKDYOQ0KI8SIDhC2ji_PrkxcfGw98lTe0wrXf1dpdo3kivb2ywVWgOiAE6_4ijrt21muVY-atw6rSr9qJ1LD9wVlwf4juMjesADAEllGswm5mcyzFy8xEIhuYljIrDQa8lzBjp6Z_Dx-xevGTwv--BgVtWKzqYuTAQclJZYNwCn5ZIrEChpoSf3eeGa2jnRGjQGRqVxqqscVo7lwQiUQ8Ep7kynfDgdjvdebXaITdr-njt_bDu7jHiKvYVjmUhTHM-Gy-qVqKLqJWybXeTN7KeR9ggkpJq02HKqO-WOfh201gZEi2znhyJs1UMdEZ7yBO_LPBljTTvwBrq6B3Tfa1e9q1FqeftIH53jWyTtzc_Lbi-JmU1zgGmkX2F4VZD-w4oC3MWqSj8fdhSvwtMCbM-lC9VBVDYeJU12cORQt04ImFTMgvuO7qoRxnQdai6VaLF2sfcGJ3LmfyEUeqIZ7S3CbTEc7WKAhumkDlYUVDRbgxkDln334nvWVoAYUeL_V5LvgOrbKTKl4RwjkSHBUE8oNKyceiSO68burPHwud8Eze3rXTm_Z6ZewAtE8QX7IN15Qs_XCO_HqiqJpTBXqTuU3wSDNnsrajJtgzHv-E4ASA7rD5Z6oAaGI9CkcyH5MTVMf0Td6BQ9rLDq6Oy0uteXCUbzEVvav6tkvdZV1kErSUtzPr87tVvFfj71BgbnXFzAvRKcOC8hGLDhlrqoxCtF1DGsEi3gBPoVF-fM2zypGcFFe29D-_KentXQmjnOTSLkGmHqKXEMCmQq44VZYzN2FMc4UvvoMStsot-aXPHfMWh1xz0UwfDQr9nqjv6rXiIYZTnwLzLw4_hzP4yFQpx6CbgheJe5M2r3djI0AQ3dIaC5jzBYHTHuCDosI_P0N_7SEggOwgbhgHiYRGXtlICbLhXUrE_p9cNOs3X6ENa8HEb9OdHH-tI-5hSVBgyE899k-SrIvayJ2kqaDOIlR7BqLOGsnv9wC9WdvySoAlj9CcKLdV0IEPmV5vZxgAOSE-ATGbp70tudC1cpla5Pj-FFoeQLxC4n0DD7IRJrxW5-ToPLRhqwF_1pi3WYVl095u27SeZo-HcqgeDgHsttjApvS-b0uCQgGHQ7Dy-kH7oB9Xs3LQ5vGEp8r1TQF36Fe_u0ubq2v0AbbgdN_GHesHnUGrzqNDBT10YXDQ0eKWTd9tu0RB_I-d7j8RLbrhHIsRqLUCMAzZK2PY4mEHo3xQlaj3lQHHA196kXGci17AHMtfmDmk0F6aGPmClOUVw44jLV7zIX6x6qJ6UKP418zPnDnRpa2UsKZZxiegFRq77hPwEOdhRb3xfXLXalHsc1y7sBZXzV7ERsSVA3QrYqmtrAn-00ntLupiHgWMCR2RSbD-x4xkJY1NvwaTbHc61HGMP-w3TfZj81HU9wgFv9b8BuKBEwL2uh_bKe-sufOU_1hmMVuzUIPkL5ph2SZmOhyKEjr6xM7qwPczDuL3SNjpOohxTmh-1vFfDxihk7xYb7M3BXg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_05a4bdcb35c0031d016abbe1c9e54487d18b72383b4b298be2",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 355,
+          "completion_tokens": 554,
+          "total_tokens": 909,
+          "cost": 0.005142,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.005142,
+            "upstream_inference_prompt_cost": 0.00071,
+            "upstream_inference_completions_cost": 0.004432
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 448,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

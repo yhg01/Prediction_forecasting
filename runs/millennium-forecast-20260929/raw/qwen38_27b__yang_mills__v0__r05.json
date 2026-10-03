@@ -1,0 +1,85 @@
+{
+  "request": {
+    "model": "qwen/qwen3.8-27b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-08-14. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Yang-Mills existence and mass gap\nMathematical target, paraphrased from the original Clay formulation: For every compact simple gauge group G, rigorously construct a nontrivial quantum Yang-Mills theory on R^4 and establish a positive, finite mass gap. Existence must satisfy axiomatic requirements at least as strong as the Wightman or Osterwalder-Schrader formulations cited in the official statement, with appropriate gauge-invariant local fields and short-distance behavior. With vacuum energy normalized to zero, a mass gap means the Hamiltonian has no spectrum in (0,Delta) for some Delta>0, with the supremum of admissible gaps finite. The target requires the four-dimensional continuum theory, not only a lattice approximation or the classical equations.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "deepinfra/bf16"
+      ]
+    },
+    "temperature": 1.0,
+    "reasoning": {
+      "enabled": true,
+      "max_tokens": 2048
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:06:00.264864+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 50.328,
+      "response": {
+        "id": "gen-1790697910-bZBOVdFQGs4dgwNY9yYW",
+        "object": "chat.completion",
+        "created": 1790697910,
+        "model": "qwen/qwen3.8-27b",
+        "provider": "DeepInfra",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "stop",
+            "message": {
+              "role": "assistant",
+              "content": "\n\n{\"2026\": 0.002, \"2030\": 0.02, \"2035\": 0.08, \"2040\": 0.20, \"2050\": 0.45}",
+              "refusal": null,
+              "reasoning": "Let me think carefully about this problem. I need to forecast the probability that a complete, correct solution to the Yang-Mills existence and mass gap problem is first publicly available with AI contributing an identifiable new mathematical argument or proof step, by each deadline.\n\nLet me consider the key factors:\n\n1. **Current state of the problem**: The Yang-Mills existence and mass gap problem is one of the hardest open problems in mathematics/physics. It requires rigorous construction of a 4D quantum field theory satisfying axiomatic requirements. As of my knowledge, no one has even close to a complete solution. The problem is considered extremely difficult - perhaps the hardest of the Clay problems from a pure mathematics perspective.\n\n2. **Historical context**: This problem has been open since the 1970s (Clay formulation in 2000). No significant breakthrough has been announced. The tools available (axiomatic QFT, lattice gauge theory, constructive QFT in lower dimensions) have not been sufficient for 4D.\n\n3. **AI capabilities and trajectory**:\n   - Current AI (2025) can assist with mathematical reasoning but cannot solve open problems of this caliber independently.\n   - By 2026-2030, AI systems will likely be more capable - better at formal verification, pattern recognition in mathematics, and potentially generating novel proof strategies.\n   - By 2035-2040, we might have systems that can do substantial mathematical research, potentially generating novel arguments.\n   - By 2050, the landscape is highly uncertain.\n\n4. **What would it take to solve this?**\n   - This is not just a \"find a clever trick\" problem. It likely requires fundamentally new mathematical frameworks or at least a very deep synthesis of existing ones.\n   - Constructive QFT has made progress in 2D and 3D but 4D is a major leap.\n   - The mass gap requirement is particularly hard - you need to prove spectral properties of the Hamiltonian.\n   - Possible approaches: lattice methods with rigorous continuum limits (extremely hard), algebraic QFT, constructive approaches, new analytical techniques, or entirely new frameworks.\n\n5. **AI's potential contribution**:\n   - AI could help with: formalizing arguments, checking proof steps, finding analogies between different mathematical frameworks, generating candidate approaches, automated reasoning in formal systems.\n   - For this problem, AI would likely need to contribute something genuinely novel - not just verify existing steps but generate new mathematical insight.\n   - The problem requires deep conceptual insight, not just brute-force computation or pattern matching.\n\n6. **Probability estimates**:\n\n**2026 (by Dec 31, 2026)**: \n- Only ~1.5 years from now. AI capabilities won't have changed dramatically. The problem is so hard that even human mathematicians working on it for decades haven't cracked it. The probability of a complete solution with AI contribution in this timeframe is extremely low. Maybe 0.1-0.5%. I'll say 0.002.\n\n**2030 (by Dec 31, 2030)**:\n- About 5 years out. AI will be more capable but still unlikely to crack a problem of this magnitude. The fundamental mathematical insight needed hasn't been found yet, and AI alone is unlikely to generate it. However, AI-assisted research could accelerate progress. Maybe 1-3%. I'll say 0.02.\n\n**2035 (by Dec 31, 2035)**:\n- About 10 years out. AI systems could be significantly more capable. If we have AI that can do genuine mathematical research at a level comparable to or exceeding human mathematicians, it might contribute to breakthroughs. But this problem is still likely to require fundamentally new ideas. Maybe 5-15%. I'll say 0.08.\n\n**2040 (by Dec 31, 2040)**:\n- About 15 years out. This is where things get more speculative. If AI systems have reached a level where they can do frontier mathematics, they might contribute to solving problems like this. The probability increases but this problem is still extremely hard. Maybe 15-30%. I'll say 0.20.\n\n**2050 (by Dec 31, 2050)**:\n- About 25 years out. This is highly speculative. If we have truly superhuman AI mathematicians, the probability increases substantially. But even superhuman AI might struggle with problems that require fundamentally new conceptual frameworks. However, with 25 years of AI-assisted research, the cumulative probability of someone (human or AI) making the breakthrough is higher. Maybe 40-60%. I'll say 0.45.\n\nLet me reconsider these numbers. The Yang-Mills problem is often considered one of the hardest mathematical problems. It's not just about computation or pattern matching - it requires deep structural insight into quantum field theory and analysis. \n\nKey considerations:\n- The problem might require a completely new mathematical framework that hasn't been conceived yet\n- Even with superhuman AI, the \"search space\" of possible mathematical frameworks is enormous\n- However, AI could potentially explore more of this space than humans\n- There's also the possibility that the problem is somehow \"easier\" than it appears and a clever approach exists that hasn't been found\n- The AI contribution requirement is actually somewhat lower than \"AI solves it\" - it just needs to contribute an identifiable new step\n\nI think my estimates are reasonable. Let me finalize:\n\n- 2026: 0.002\n- 2030: 0.02\n- 2035: 0.08\n- 2040: 0.20\n- 2050: 0.45\n\nThese are nondecreasing, which is good. Let me sanity check - is 45% by 2050 too high or too low? \n\nArguments for higher: If we have AGI-level systems by 2035-2040, they could be doing mathematical research at a level far beyond humans, potentially exploring many approaches in parallel. 25 years is a long time.\n\nArguments for lower: The problem might be genuinely intractable - requiring a conceptual leap that even superhuman intelligence might not make easily. The \"hardness\" of mathematical problems isn't just about computation.\n\nI'll stick with my estimates. They reflect significant uncertainty but a reasonable trajectory.\n",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.text",
+                  "text": "Let me think carefully about this problem. I need to forecast the probability that a complete, correct solution to the Yang-Mills existence and mass gap problem is first publicly available with AI contributing an identifiable new mathematical argument or proof step, by each deadline.\n\nLet me consider the key factors:\n\n1. **Current state of the problem**: The Yang-Mills existence and mass gap problem is one of the hardest open problems in mathematics/physics. It requires rigorous construction of a 4D quantum field theory satisfying axiomatic requirements. As of my knowledge, no one has even close to a complete solution. The problem is considered extremely difficult - perhaps the hardest of the Clay problems from a pure mathematics perspective.\n\n2. **Historical context**: This problem has been open since the 1970s (Clay formulation in 2000). No significant breakthrough has been announced. The tools available (axiomatic QFT, lattice gauge theory, constructive QFT in lower dimensions) have not been sufficient for 4D.\n\n3. **AI capabilities and trajectory**:\n   - Current AI (2025) can assist with mathematical reasoning but cannot solve open problems of this caliber independently.\n   - By 2026-2030, AI systems will likely be more capable - better at formal verification, pattern recognition in mathematics, and potentially generating novel proof strategies.\n   - By 2035-2040, we might have systems that can do substantial mathematical research, potentially generating novel arguments.\n   - By 2050, the landscape is highly uncertain.\n\n4. **What would it take to solve this?**\n   - This is not just a \"find a clever trick\" problem. It likely requires fundamentally new mathematical frameworks or at least a very deep synthesis of existing ones.\n   - Constructive QFT has made progress in 2D and 3D but 4D is a major leap.\n   - The mass gap requirement is particularly hard - you need to prove spectral properties of the Hamiltonian.\n   - Possible approaches: lattice methods with rigorous continuum limits (extremely hard), algebraic QFT, constructive approaches, new analytical techniques, or entirely new frameworks.\n\n5. **AI's potential contribution**:\n   - AI could help with: formalizing arguments, checking proof steps, finding analogies between different mathematical frameworks, generating candidate approaches, automated reasoning in formal systems.\n   - For this problem, AI would likely need to contribute something genuinely novel - not just verify existing steps but generate new mathematical insight.\n   - The problem requires deep conceptual insight, not just brute-force computation or pattern matching.\n\n6. **Probability estimates**:\n\n**2026 (by Dec 31, 2026)**: \n- Only ~1.5 years from now. AI capabilities won't have changed dramatically. The problem is so hard that even human mathematicians working on it for decades haven't cracked it. The probability of a complete solution with AI contribution in this timeframe is extremely low. Maybe 0.1-0.5%. I'll say 0.002.\n\n**2030 (by Dec 31, 2030)**:\n- About 5 years out. AI will be more capable but still unlikely to crack a problem of this magnitude. The fundamental mathematical insight needed hasn't been found yet, and AI alone is unlikely to generate it. However, AI-assisted research could accelerate progress. Maybe 1-3%. I'll say 0.02.\n\n**2035 (by Dec 31, 2035)**:\n- About 10 years out. AI systems could be significantly more capable. If we have AI that can do genuine mathematical research at a level comparable to or exceeding human mathematicians, it might contribute to breakthroughs. But this problem is still likely to require fundamentally new ideas. Maybe 5-15%. I'll say 0.08.\n\n**2040 (by Dec 31, 2040)**:\n- About 15 years out. This is where things get more speculative. If AI systems have reached a level where they can do frontier mathematics, they might contribute to solving problems like this. The probability increases but this problem is still extremely hard. Maybe 15-30%. I'll say 0.20.\n\n**2050 (by Dec 31, 2050)**:\n- About 25 years out. This is highly speculative. If we have truly superhuman AI mathematicians, the probability increases substantially. But even superhuman AI might struggle with problems that require fundamentally new conceptual frameworks. However, with 25 years of AI-assisted research, the cumulative probability of someone (human or AI) making the breakthrough is higher. Maybe 40-60%. I'll say 0.45.\n\nLet me reconsider these numbers. The Yang-Mills problem is often considered one of the hardest mathematical problems. It's not just about computation or pattern matching - it requires deep structural insight into quantum field theory and analysis. \n\nKey considerations:\n- The problem might require a completely new mathematical framework that hasn't been conceived yet\n- Even with superhuman AI, the \"search space\" of possible mathematical frameworks is enormous\n- However, AI could potentially explore more of this space than humans\n- There's also the possibility that the problem is somehow \"easier\" than it appears and a clever approach exists that hasn't been found\n- The AI contribution requirement is actually somewhat lower than \"AI solves it\" - it just needs to contribute an identifiable new step\n\nI think my estimates are reasonable. Let me finalize:\n\n- 2026: 0.002\n- 2030: 0.02\n- 2035: 0.08\n- 2040: 0.20\n- 2050: 0.45\n\nThese are nondecreasing, which is good. Let me sanity check - is 45% by 2050 too high or too low? \n\nArguments for higher: If we have AGI-level systems by 2035-2040, they could be doing mathematical research at a level far beyond humans, potentially exploring many approaches in parallel. 25 years is a long time.\n\nArguments for lower: The problem might be genuinely intractable - requiring a conceptual leap that even superhuman intelligence might not make easily. The \"hardness\" of mathematical problems isn't just about computation.\n\nI'll stick with my estimates. They reflect significant uncertainty but a reasonable trajectory.\n",
+                  "format": "unknown",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 428,
+          "completion_tokens": 1476,
+          "total_tokens": 1904,
+          "cost": 0.0028317,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0028317,
+            "upstream_inference_prompt_cost": 6.42e-05,
+            "upstream_inference_completions_cost": 0.0027675
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1514,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

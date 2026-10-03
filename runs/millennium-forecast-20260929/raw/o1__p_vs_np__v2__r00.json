@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: P versus NP\nMathematical target, paraphrased from the original Clay formulation: Determine whether P equals NP in the standard deterministic and nondeterministic Turing-machine model. P contains decision problems solvable in polynomial time; NP contains decision problems whose affirmative answers have certificates of polynomial length that a deterministic algorithm can check in polynomial time. A resolution must establish whether every problem in NP has a deterministic polynomial-time algorithm, or whether at least one does not. The target concerns worst-case asymptotic computational complexity for unrestricted algorithms, rather than success on a finite collection of instances or an improvement to one particular algorithm.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:52:15.938535+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 11.094,
+      "response": {
+        "id": "gen-1790697124-lILoLsjGI2YhPV20lVsO",
+        "object": "chat.completion",
+        "created": 1790697124,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.01, \"2030\": 0.02, \"2035\": 0.05, \"2040\": 0.10, \"2050\": 0.20}",
+              "refusal": null,
+              "reasoning": "**Considering probabilities**\n\nI see there's a chance this issue might remain unresolved for a long time, possibly forever. The user mentioned this, so I want to integrate that into the probabilities. I can assign values like 0.01 for 2026, 0.02 for 2030, 0.05 for 2035, 0.1 for 2040, and 0.2 for 2050. I need to make sure these numbers are nondecreasing. The user requested a single JSON object with these keys, and I think that works perfectly. I'll keep it straightforward and without further explanation.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Considering probabilities**\n\nI see there's a chance this issue might remain unresolved for a long time, possibly forever. The user mentioned this, so I want to integrate that into the probabilities. I can assign values like 0.01 for 2026, 0.02 for 2030, 0.05 for 2035, 0.1 for 2040, and 0.2 for 2050. I need to make sure these numbers are nondecreasing. The user requested a single JSON object with these keys, and I think that works perfectly. I'll keep it straightforward and without further explanation.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu96vqBIfbqH-yaXoKhM5LCtSS6VIJSkn98bK47rSRKwQa-hhifOYMKayNeatH5wjUEAgcvgFS0IfQZWH2Bb6u-d3CcLILwZtVgrgelotqjomqz0cl_ST664TcPVUEpfsA1lJ7vDOLmYEcfEnXnS9Xl9YIdrg7d1yhrfaTySUgLJQKZdh2oVW9XuF-WVrayXPNsGdPtOUqeIYhDqfpRztvKqWBL4kdetrrkNLLoT6U9ImeGstqXs6OzJOL895M4P1HKdNB9yWQI7TzW5KJU84rO-9M9fwH6FDOYNdxkLd1zZd-79IEZtLPNdYadiubBywqoRojy8vDZC6Y5Nk_dCaWHbl3ZDhHNTKZ8YDn-mbqXquTIRgN1h8ypO4GCzFZxTYaFQ8lR5lW4_DnQav1junYl2ZkXkS6nODq9DgmBs1bzgF1G71BLmF12QbmbT6B8EQEkbeCdZ15qZqm_P7E-jTVD7l7JVz9AadEpAaS1ucXDGehJTLRNbhhesbfmHwz6JOHGQGeKa_qjsM1cIf-RZZoHrTEmeJHZe1LVU3t-Wp-mlDEhm8EAq8suXDqrOoHDYWrkCSg7EOAalBoINIP6PhRiEI1c6w0UPtbyV5VgEAn83VbuNiMIrQZuk1wALxifAfcOvg8P7Bkzqjdb01l6xltVwHMA8rcXAv2w-8gQlle5N3T8gLY6TUzQ93l8I3CVkl39ZobaT_vOZFofRWHHODKWckOjhX6lOJ53VbDhEmZPXmXqn8go327r5ku4ubBVc2qrRN_l8IqWex4o1deedJG_XP7dEBU-AlKfHEWvQafRFj1DmIc_z_XsBt8RGeravDprTTtZChVCL-o4AmpMM-ii5fjOlEyJEMJX9WvFYtNdaryxUXu7WiMh08AfW0zVsKrZa_tPR7V1UzRAJjokytOuuioDngizCxKSl4rFAaftl_etI=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0680b9faa9a3645f016abbdea5afe887d1bc0c8ac8d30107d8",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 347,
+          "completion_tokens": 631,
+          "total_tokens": 978,
+          "cost": 0.043065,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.043065,
+            "upstream_inference_prompt_cost": 0.005205,
+            "upstream_inference_completions_cost": 0.03786
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 576,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

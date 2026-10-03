@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Riemann hypothesis\nMathematical target, paraphrased from the original Clay formulation: Determine whether every nontrivial zero of the Riemann zeta function has real part 1/2. The function is initially defined by the series sum of n^(-s) for real part of s greater than 1, and extends meromorphically to the complex plane with a pole at s=1. Its negative even integer zeros are the trivial zeros; the conjecture concerns all the remaining zeros. The target is a proof covering every nontrivial zero or a rigorous counterexample. Verifying any finite range of zeros alone does not settle this universal statement.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:51:53.741790+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 10.35,
+      "response": {
+        "id": "gen-1790697103-Qpf916Si6qyKgzdzDumQ",
+        "object": "chat.completion",
+        "created": 1790697103,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.01,\"2030\":0.05,\"2035\":0.15,\"2040\":0.30,\"2050\":0.45}",
+              "refusal": null,
+              "reasoning": "**Building a probability distribution**\n\nThe user needs a strictly nondecreasing probability distribution. I’ll start with small probabilities: maybe 0.01 for 2026, 0.05 for 2030, 0.15 for 2035, 0.30 for 2040, and 0.50 for 2050. This keeps it nondecreasing and between 0 and 1. The final JSON object will look like this:\n\n{\n  \"2026\": 0.01,\n  \"2030\": 0.05,\n  \"2035\": 0.15,\n  \"2040\": 0.30,\n  \"2050\": 0.50\n}**Creating a probability distribution**\n\nI think it’s best to provide a strictly nondecreasing probability distribution. I’ll use some round numbers like this:\n\n{\n  \"2026\": 0.01,\n  \"2030\": 0.05,\n  \"2035\": 0.15,\n  \"2040\": 0.30,\n  \"2050\": 0.45\n}\n\nThis looks good and keeps it simple! I'll present this JSON object as is, without any extra explanation.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Building a probability distribution**\n\nThe user needs a strictly nondecreasing probability distribution. I’ll start with small probabilities: maybe 0.01 for 2026, 0.05 for 2030, 0.15 for 2035, 0.30 for 2040, and 0.50 for 2050. This keeps it nondecreasing and between 0 and 1. The final JSON object will look like this:\n\n{\n  \"2026\": 0.01,\n  \"2030\": 0.05,\n  \"2035\": 0.15,\n  \"2040\": 0.30,\n  \"2050\": 0.50\n}**Creating a probability distribution**\n\nI think it’s best to provide a strictly nondecreasing probability distribution. I’ll use some round numbers like this:\n\n{\n  \"2026\": 0.01,\n  \"2030\": 0.05,\n  \"2035\": 0.15,\n  \"2040\": 0.30,\n  \"2050\": 0.45\n}\n\nThis looks good and keeps it simple! I'll present this JSON object as is, without any extra explanation.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu96ZzcgcnyAHOiDvklQc4dSs1mYj6LB3cz7CP6LRYP_p15YO09RyhbHB9H8NX0aoUZooGt2F4goJnWNkuM8J6wgvgvN_b7HZzn0_1JOr3fxkS0gV6-wrJGxhnIydmxwEo9jCjLo9SUCIELbQgSaHV5COvySIGJNGp5kluh3bYZMCGKmdNTQS8Pw3Ddw24j8citkbHw7GVAt9xXJHQZkDbcmPy6Pl2w8I69KkZ3p_oU1uFOpU_qYQShf6M-G_INazAHI_WhwesiKggaPEVGWXDQODBJ3N-HsM-uf1OaffKXaInTQiGH5G6ppTdI3PAsli9LgnxrkQfCQs_lKY3I5BasrYV6KAtKl8o20PiHICNYRgSHdjxM7usUDbczGWrgyRbrGxmnOggDM0WMcqw1ajceHn6dGI1VaUGfn2Bg8Astl2Nu27sRwNHcGMkUPU5VG2OPRR8X4-iw9BaS2PptsIkP_p3MqtGJ5g_wYj64LfgSfRATDfNRL9mSJnZ351L3R_GXdxCpsfooaLN84iTHDllmQrZUQ0xC5UDLzB2LJ84MXt65FutZFfYmEvXObiC-zxS3FVhMsl6QXdtQZLnRMF4poFNicVPkuZ6N8PMk6x5tK6nUTEQ3crHHcZVhilJ_2cQ2btcYsi2FDq9a_ZVzBcxQF6QZ2EaMG3XgjyzplrVLSeb8Xt69rmKgQrQk8k78NZQe7OjM2A-W0dfEduSrKTkEeGRyX3Acvcb_wjqnO18NgYFdDRclPpkOWARHzUqAw6RjTx-zZtjO5eT9fiorTRuhoc6M9fi7BHDt9hyinqSxu8jfKJwKC0HSqrWeCHE0Yw01PWATciaPPUTEFALO1STif10OCDogw_CDizG1v3O9dd0-iuiZzM5i97XQceDmc-ox2QvFR01Rhg3RpgJxZdTe_j9XObgI_Q9vAM6RvZjBOAQVI=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_05341529af375053016abbde900fd887d1acc452a280efe0a5",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 360,
+          "completion_tokens": 750,
+          "total_tokens": 1110,
+          "cost": 0.0504,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0504,
+            "upstream_inference_prompt_cost": 0.0054,
+            "upstream_inference_completions_cost": 0.045
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 704,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Yang-Mills existence and mass gap\nMathematical target, paraphrased from the original Clay formulation: For every compact simple gauge group G, rigorously construct a nontrivial quantum Yang-Mills theory on R^4 and establish a positive, finite mass gap. Existence must satisfy axiomatic requirements at least as strong as the Wightman or Osterwalder-Schrader formulations cited in the official statement, with appropriate gauge-invariant local fields and short-distance behavior. With vacuum energy normalized to zero, a mass gap means the Hamiltonian has no spectrum in (0,Delta) for some Delta>0, with the supremum of admissible gaps finite. The target requires the four-dimensional continuum theory, not only a lattice approximation or the classical equations.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:52:29.886798+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 6.983,
+      "response": {
+        "id": "gen-1790697143-EqFssnR2hDVeQxniGxca",
+        "object": "chat.completion",
+        "created": 1790697143,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"2026\": 0.002,\n  \"2030\": 0.005,\n  \"2035\": 0.02,\n  \"2040\": 0.07,\n  \"2050\": 0.15\n}",
+              "refusal": null,
+              "reasoning": "**Estimating probabilities**\n\nI need to establish a distribution where the probabilities increase with the deadline: \n\nProbability(≥2026) ≤ Probability(≥2030) ≤ Probability(≥2035) ≤ Probability(≥2040) ≤ Probability(≥2050). \n\nI think guessing small values for the near term might work, like: \n\n- 2026: 0.01 \n- 2030: 0.02 \n- 2035: 0.05 \n- 2040: 0.15 \n- 2050: 0.20.\n\nThis reflects my belief that early probabilities are quite low, especially for 2026, but they increase over time.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating probabilities**\n\nI need to establish a distribution where the probabilities increase with the deadline: \n\nProbability(≥2026) ≤ Probability(≥2030) ≤ Probability(≥2035) ≤ Probability(≥2040) ≤ Probability(≥2050). \n\nI think guessing small values for the near term might work, like: \n\n- 2026: 0.01 \n- 2030: 0.02 \n- 2035: 0.05 \n- 2040: 0.15 \n- 2050: 0.20.\n\nThis reflects my belief that early probabilities are quite low, especially for 2026, but they increase over time.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu969rmuXiSqE3nu4Ft-E0bur53-J9aKrr3spYCvryae6u-NEUDvRTqlv6Ae0jvuBIHMvUOyfuF7CQMpQqtJRMLk6OobPL-X0zxYyFJKjkBgoshODSLTkicez_GASc4cJOHg1GTsxkY5nLcmGSTyfQODKBXcz12CXoqt69JWt9Z0J61cJygrIvju2XIRnTR5qbWD2e-qjkY6NprtxwMlZLzWTuY4cqGLNUFcZqPnfCwvZZLeqhmvpYdkozXBiwYnaoYOwS3wccrr_Gq_8YL1OWkOn7F4p9CLckwJTMU38dqN0ik42YUq3jNmCxBESX6IlSihiS2RQ4VcN_kgP9sSHOX4CNoN-rQUJ2blP5CZfhDPZYT2I7Tx2zolZUb0f7nqMlWvfFQQGXW74CIYbXkjhOby1GbCxT20uih5MMODhroIdztxoHMoXPoIabaAU8nyR3nzPL1JjOQFJOIUEUemfFe-4KbGlkK7CDalnJVOZGBG6vsKDrRUwgHm2567Vy-QqzGkqxyZjP-jnwCIKWyIdacqg2erv7xiqwuNgpYcFTQflktZx_u4ZyXX0-BB8TGCGPi5VWZdBRfw2EIMp8Od2W_pLx1cdhqk6zofXtnfyCL3xZDPw8bMydg7iJjm125ZPBQDW6uH9Mr4BhIEMctE00HSNERLU4d0CQ9s8LzxwootNX6a_L99WXnhin4NDzzpSXY6FNcJ8gsGDgHeBCK4gBT1Vk_aci5WWMlWA3rb54tQase-lDeKkceowAfjArMDppL5NWzrtLNl6CZFV5X5J65NtagDL5emG5vitFU4VdD6oN5baF4_JGLQL4e-u1S52ar07QdeKgIc7LsKqE6xEgmlh1FJzEPasyspRlgwE-PB8_w8VXnmg4wPfGdAgvBUpEni13ULgKu-G-X-KgQbQ4nkBqooujUrG3K2DT9AeERKBtoo=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0a079f23e1fa0c5f016abbdeb78e1487d1add737102b8fca0d",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 379,
+          "completion_tokens": 960,
+          "total_tokens": 1339,
+          "cost": 0.063285,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.063285,
+            "upstream_inference_prompt_cost": 0.005685,
+            "upstream_inference_completions_cost": 0.0576
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 896,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

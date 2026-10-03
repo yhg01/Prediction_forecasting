@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: P versus NP\nMathematical target, paraphrased from the original Clay formulation: Determine whether P equals NP in the standard deterministic and nondeterministic Turing-machine model. P contains decision problems solvable in polynomial time; NP contains decision problems whose affirmative answers have certificates of polynomial length that a deterministic algorithm can check in polynomial time. A resolution must establish whether every problem in NP has a deterministic polynomial-time algorithm, or whether at least one does not. The target concerns worst-case asymptotic computational complexity for unrestricted algorithms, rather than success on a finite collection of instances or an improvement to one particular algorithm.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:54:34.288230+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 5.782,
+      "response": {
+        "id": "gen-1790697268-OLC4xAD59JUGNqp8FHbf",
+        "object": "chat.completion",
+        "created": 1790697268,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"2026\": 0.02,\n  \"2030\": 0.05,\n  \"2035\": 0.15,\n  \"2040\": 0.25,\n  \"2050\": 0.40\n}",
+              "refusal": null,
+              "reasoning": "**Generating a forecast**\n\nThe user is asking for a forecast dated December 17, 2024, specifically about P vs NP. They want this forecast in a JSON format that identifies years, noting that the event must be a complete solution made publicly available, with AI contributing a new argument or proof step. They clarified that partial progress isn’t sufficient. I'll need to assign ascending probabilities for this event happening by 2026, 2030, 2035, 2040, and 2050 in my output.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Generating a forecast**\n\nThe user is asking for a forecast dated December 17, 2024, specifically about P vs NP. They want this forecast in a JSON format that identifies years, noting that the event must be a complete solution made publicly available, with AI contributing a new argument or proof step. They clarified that partial progress isn’t sufficient. I'll need to assign ascending probabilities for this event happening by 2026, 2030, 2035, 2040, and 2050 in my output.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu986QnNrGb1odzYhA1LoposJF1LMXBewGlIZXxloQAeSGUZV-CdiQTNjqG02vyRr5MzbR81ktEoLSc3xZVUKUN08fGAHjd1XrTI-ibAT19n9JVi1YlN7j8O-FCpdgVwZKbf2k95nvrzWwegieJ57UEi_JzeZJ67RO2di8GU8TKH9OcRllsf6sgrmghYYI7w4MFVj25kRKKO9f_3fLiDLjUl-5PaDQP_66wm39YluYj2gKrOX3YFN22Y-xS4R3qdEUUaoHfnSQejnbACNaTu5Gos7R3Jte6UOWXcOv6ao9vYr6Z0rW-57_SHoqDQRcsMsvh3pcR239-KvjbO5mnGD7ZzLxDqsxJe-i2Ci8ukAeODwg4G0gUmiHchsbKxqP71QZB2cbj0R0w7CXWckordLLme24Pr4MIQ_NuuP95ZBRPLg5jzXV27YAXncSlO6SCjNbkGwq0TDkNeq33BCEi3mLLtCU0HKTLqsG611CXpP3gNFtbr8JB0vmkcuqdh-uwWMeKZ3oFmKQFIDSzXszyW2N1vSUp0cRJz1zVaNl8ESarGTU5pvhKLKv4GTCYM0SbbdhMn4lFNi-qfO9ek66fMbPpvaXnWqwVnQlw7NO5b21N2_ZCpuYUSvQk2w5V-n8PQv5bmATUInq3eYi-xWL45UUbQ8yk9Q5o5AUtAEYoff0R9uyqH853JGzmimhkoyGf1Vprr7Dq91Yiy4eS0LkyxOOA6v51ho6U_BC7qZhJbQVMReAufi5GfxQFUkce0DJMCutbpzkrn39PKTFnZ8W6Ihn_9E4MmC2P797f9f2dTvVuoY5zXMEQqiUzAz4IxiHZ_nGWN9RGP4gQe0NC96Vq2KS7JNtn2YVyb6cHeLd-3v_yk_LtzkVt-thdr6NIuwDIBJRuxOuIUXKsUSgLyTxip7JHTnHBWxfuWxt2fcpTx1zR7slmE=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0e9cb085ac86c7ca016abbdf35175887d1b36e384563901edc",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 347,
+          "completion_tokens": 574,
+          "total_tokens": 921,
+          "cost": 0.039645,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.039645,
+            "upstream_inference_prompt_cost": 0.005205,
+            "upstream_inference_completions_cost": 0.03444
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 512,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

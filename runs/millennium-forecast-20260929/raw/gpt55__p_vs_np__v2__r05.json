@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: P versus NP\nMathematical target, paraphrased from the original Clay formulation: Determine whether P equals NP in the standard deterministic and nondeterministic Turing-machine model. P contains decision problems solvable in polynomial time; NP contains decision problems whose affirmative answers have certificates of polynomial length that a deterministic algorithm can check in polynomial time. A resolution must establish whether every problem in NP has a deterministic polynomial-time algorithm, or whether at least one does not. The target concerns worst-case asymptotic computational complexity for unrestricted algorithms, rather than success on a finite collection of instances or an improvement to one particular algorithm.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:04:28.996030+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 6.484,
+      "response": {
+        "id": "gen-1790697862-dg2BXp1mAzFzLNTxNOri",
+        "object": "chat.completion",
+        "created": 1790697862,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.0005,\"2030\":0.02,\"2035\":0.09,\"2040\":0.20,\"2050\":0.42}",
+              "refusal": null,
+              "reasoning": "**Considering future AI probabilities**\n\nThe user’s question about future AI systems seems to suggest providing a numeric JSON. I’m aiming for a deadline from April 2026 to December 31, 2026, which gives me about eight months. I’m thinking of probabilities like 0.0005 for 2026, increasing to 0.38 by 2050. But is that too low? If I have high confidence for AGI by 2040, P vs NP might be greater than 50 by 2050, although delays are possible. I need to ensure it’s a single JSON object with the right year keys.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Considering future AI probabilities**\n\nThe user’s question about future AI systems seems to suggest providing a numeric JSON. I’m aiming for a deadline from April 2026 to December 31, 2026, which gives me about eight months. I’m thinking of probabilities like 0.0005 for 2026, increasing to 0.38 by 2050. But is that too low? If I have high confidence for AGI by 2040, P vs NP might be greater than 50 by 2050, although delays are possible. I need to ensure it’s a single JSON object with the right year keys.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-GMFEQTD2be9V8YdfIW-ipB9FxjjcEqQmDTCSJTimZwWtJIHdDO3djsRRP_pjAwV-5MFyjPy-pYUCoHlA1VJIjMOhiNt0O-UDvlsqGW_wTZ1xTwgQ3PO7p8PGtli4gNO7-epdqWW-LHYzCmKWdb12l5hhoAu-cOexA-Q-FOk7fYoF-e5oLWs_HuqFiIoxvIJJbs-wUJ0I4wfE-Cn8-0g-4eQnfAh6hFkrWNyvaZ0KOACfxjaYrnyzP1NcXEDF0lYCk7-bZ915N5ke7qpdB77yxLvVXC220P7KTTJuv7DV1SwWhAVCapk9Eb2YPCMvQbPLtBVTNQiI4WblRMP3RvnyD2nvUwqaHzlUshDJpuzYDHdblXI7MOXzujNR_L5P9750gyQO9F0p44212Fp1MalJlsacs9ujMu-9ZcHphTg9SFdy3O1cmMyPKkBJB_2gjZRr5hsKXn2ceyzDxIV7mfIPspi6kcZb4rtITbJgEWb4xiQsr-DOWh5VBJWa2CVUDY_iJOXxR-6F1xdN8UwUl_tw6F5WgxGDE57WOwfldoLfqoC8zqGNVsquC4eAjqGfMx1FCIbB-UzacxVxRrUhSu-mWn6b5re2tNgbgHW52lb_S04Sty6QxGMSvslV4pHWDnQa9k6SUPJPKKMlov1tDbJ6Q_vsIO6_T3RfOLSl92_kvj_7WOOf4hTqtrwPlL67b4S9DTozkTw-Li_tA2Dt7pyaJqI-vhGNJILS12d0Pmjg9AWnKgznWCOgfxxGXSBWo3RaRIk-OWoP97Md0DxPuJ2UrRqy_tu2Zw9U79L0Zae201eo1fQmKqgv5bBfQzwSVbyapJy3Uu3fdTl-cS99Be09I2FfUP-VWRPxq1WyHr3CctIYx9f4LH1PmUWgqMramPjV0JVtnk-oqYRG9nyWAxGSDigOpTU5R5Mu2T8AgQtpnUeQf5P06P9dV5DtW2rwwimBp0tsW6S7ykZTITQlmyWcnO0m8UcAuTikW47LAqOzf3Iql_pyVbFsgZNbvsu3elNhvKKqf0EWDhALT8dcUvLV5sjzSNQU37eXonAWyJEJd80bPn_4sWuP8A0_-5fIQvs9yUsAEv_EI1ysgDtFBR-u6L894P1Icz9NWmLkt575GZvwn-IoqOq7VkfJchvsybzquW6MuvFn3t9CNxVSRAs9JZvFvhEZKkh8H6mQaUN0ILyZ0_K4QvOOFW4EIrfmLklByJ8kxeGuYQUOllTXfwAnjyBEjl0_DK8qPwBXSFdL8KEAKtn3-lrAxMK44iLEwNWoD_HVQ2769yc0FDMm9G0LCKcn1aVFIefth67zp_xOtBS02044ALQQHaYrmwSdms98AC9Xv63gFo0X46eWzPEXiG9O6a_A7_wKO8dqVwVcO6Ps_f7KHuBcYgyNYTJOXZUrjsOO8nEZdzb0jd6Q2M0smwsRR_3BODZ0YRVRySZWL_xLoQFnkn9pZX0Nhhba6xsk7XdXuiF4ph_RZIMkm9iLmkwcr4u42B3AwmRA9fmUdMr0bzWVXPnJbn_B7-_Fzfw9uatqBOpvp3v4xNPi_HBdkRlW4ZiV-ncF8-uhcqjRKAV6IRDzVwG_h6zaT6ogTGYDduuRT5MQfIvNZ7TfzkBs7cpc4njR-2tT_BjpZ7p2ViARFlb-Xv9Tq5pdz97po9BsnSWv-m5lkXe6jQoUanyf7bVlz7bhfg40EIycy-u9ZIzqIS6nwWj-CGWkg0Qur2Sm1BXixWvP2CKrFmWyN2kscWaIqgqPiMc00C1r3MQ07dgtMzeADZDgUS7xyjENGc_KtmV1vkQ8D7XyyY5ggXjjZIQ5Im4VumENjEWDLVRMO6orHZbOIKW9zsx76e6cfqXwz7X-2SVttQKSKN_pYWEo8i6aPcHxcmPv753eZYOiSbHUfHM2xTq0mBSnXIukVrnxBb83s2-ZjgYakXU3ME6-Nl_SAyZqyzkQ4WHvEm-DU8SSRqQQpUdNqZ_gL4gAPIeFXn5Q353qwW4dP6bjblz-OEwlwfizjiedDvzi9aWt2c1z_lj-QNEbqV8OAWR9ZZzAKs9-AOmsPB9F-LuoCVW9IhCyKdi_L_Ad2Y8hHzhPyR68IqRCqqO4T0B_uXSGV7txGZnIDCPMq5wPT5MY_oEFT2WEPpdQw6_aIbNt5xzxo4IAMg5Wd_IOQoua9SBvIKUFreG6jjJT6qVWhe-aU5j7pWKE--qOJV2R72ePEu7hyF02ScpHMYikb2VVa28KAe5FDKfcF9eAU7wE4WAZ0ZoKjeTfKmyNEXt9kNXjZ1asXUSu4ovblrxVtGzzcv0V7uBk0QtDMqBa_H88MSpUoRTzcJ5Oc9INEq2pxSQJ9cu0jJNMr9dh_TYhlB9-T0p1-_6ybZ1AceaVBSuwvdEE6qxGHor0qJTxC_2akl2SygbWBToWCBMSZAG-1cOiRQ4Np1uaVFtByPiq-5-uGZNN5CrlKny4SZA5tsjgkzl2qcN0SMp4Ily3W5_CFpawt7e4WU5gOSWU5PRS1oBh1f_EcypqXTAkRVnGMbTkKzSATRR72yfgMKZAaT8Wti8e3Q5Q1E2JGv3aQcelKSgPxD6JP8BQhhSjyDHDoQhJmG7NBn6BfZVXZ3DMGmDgLaM2B9T3lwOf7_o78WPsK0WXtk_GJrUYN4I6LeMDLuNP3MwyCzHpmYLblxWziPTr-eZXG3XKG_FXVRbMuRDTjKkbpvim8rM6lOn4ZdfZS6gQ0e0o2xFU5QIHtpbjzFJW8dqmfRVBPb-8wmk3a_SgxDvCq2Q3nX2AdLnHtyRgGOXDJWkrUM_T59r2aJcjTkmqhF6MRMYGgeym6O8jgIlEhngBcCrZwYw03DPiLRd2jETC0K36Y-jl4Hu5_FzlUbuHcibg_C5rIKP6S-yuUwZxODOVVzPyEIpCfZos2FBaLvZl3U0-QYcLGLzKn45vhKDCLzMgdjcq5eAXINy4ndN5RhJlGJHJCzaJvjeTGZjwnYJEIiFrLBtku97O8FzquGkzNdMHWINjwLwyklXtd-kiR-lOn0ima5turL3XqcbGO5vvrbuIJyz_xJ_Daih2Uk9VntYuOzP5FgloNTl5GZTxklZR_QJ8TKO_GxdS2VX5eV9EImsNoc5DxcDlsbD-8Y7RF-QCZjRslGvActDA10UiejjlQK-7L1KQibRozHIsFQs-K1_SQixb8RbgCZSW4RbwleE3yPjJIZQpZ-.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0a1d9dc96801b429016abbe187648887d1b39fe5cec2675e85",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 347,
+          "completion_tokens": 405,
+          "total_tokens": 752,
+          "cost": 0.013885,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.013885,
+            "upstream_inference_prompt_cost": 0.001735,
+            "upstream_inference_completions_cost": 0.01215
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 362,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: P versus NP\nMathematical target, paraphrased from the original Clay formulation: Determine whether P equals NP in the standard deterministic and nondeterministic Turing-machine model. P contains decision problems solvable in polynomial time; NP contains decision problems whose affirmative answers have certificates of polynomial length that a deterministic algorithm can check in polynomial time. A resolution must establish whether every problem in NP has a deterministic polynomial-time algorithm, or whether at least one does not. The target concerns worst-case asymptotic computational complexity for unrestricted algorithms, rather than success on a finite collection of instances or an improvement to one particular algorithm.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:58:36.567235+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 7.655,
+      "response": {
+        "id": "gen-1790697509-ryPZxGdcvTtkZSa4XszH",
+        "object": "chat.completion",
+        "created": 1790697509,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.0005,\"2030\":0.02,\"2035\":0.09,\"2040\":0.18,\"2050\":0.32}",
+              "refusal": null,
+              "reasoning": "**Calculating probabilities of AI impact**\n\nI'm considering the transformative potential of AI by 2035, estimating it could be 50% for transformative abilities and 40% for math theorem proving. If P vs NP is solvable, I think there's only about a 30% chance, leading to some low numerical probabilities.\n\nBy 2050, I'm thinking transformative AI might reach about 70%, potentially solving around 50% of problems. So I'll finalize these estimates as follows:\n\n2026: 0.0005\n2030: 0.02\n2035: 0.09\n2040: 0.18\n2050: 0.32",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Calculating probabilities of AI impact**\n\nI'm considering the transformative potential of AI by 2035, estimating it could be 50% for transformative abilities and 40% for math theorem proving. If P vs NP is solvable, I think there's only about a 30% chance, leading to some low numerical probabilities.\n\nBy 2050, I'm thinking transformative AI might reach about 70%, potentially solving around 50% of problems. So I'll finalize these estimates as follows:\n\n2026: 0.0005\n2030: 0.02\n2035: 0.09\n2040: 0.18\n2050: 0.32",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-AsFfCIGrSUV18ks_m0iR1-YKCl7KaQN2F2WzcM3-ZXqDQJqtJeN1FLjdTOkcfBgEptXyd7omWQK3dUCbWxhBnuOlubfOkUT6NWSrzRw7O4PzXUlxzp6t4YocVWLPMNP2ltbs0NnHctyw7Z5_ekfvFqvkzXJmsOXnce3y1y9mrKofbrVlxWsZyHjUcc5LhZhCGsHB6GuzUvHSVeRLtL9mY3o2viGSY3jtKaiv1L6UtuE4MW8LPhR2xSgnmnRviy-YL-bqXSanpZqNcdR155UKRdEkCaxhcrer3e_o7JqkIIFVmspqN8U1PDQJexR0YmNWCA1kjTt5TivSmplCSr8jgw__sHNcsOnLPtSUWgqpvhRhhpVNTo8MsMCHKse5Yad-hBx9ZEgbJND2OcU8vQGB4xpjik8-_nktR1o9xueTreXetAlbiaukbk7hj_LGXNZNRNsxXZc3ohA4Ne-946ExHh8l8TD_rcwvmXDxBzhXAY0WW_mgOfJ4QNcn50A1nAREquf8i5UAOh23B_UdVd5qrxvIr3AnLlQCeKIPQdYzVt7NxvXkhUaYEgxRwGGyIkeMTmY69avSUVL2ly3e3C7i_c9Ir6g6sLgcwxATssyqMceSNU-KEGZIDyqoAGPwrdGDJe2tgK7FvLEHf9j0TM7B78hJR878RHAdSNiA046WgdiLIs9lqm40U_4mwde0Z41CZJhcW1nBxEdzPcpVCd5GKkpUcI-N6Na-_uJHGQoCnMrhVlZxCl41xpnRpUi5Hv35C-xs3Iy21SYJxxiA1FXJ3sMGR-d_sADQ5InjIwcgPQJiTNO9ASit_uYXupzJIpvlgWJ5-6nkCG7SjVINkCr44-QYFR43wAAQGSgK1Y73Of-fV-sN12gUMXV56pAzQXM8tMACOC3DyEvFllLg_39LDeDtRs0RbL5BqU4kx1T37A7oL4qlJ2_jUdmP1EXvMYjK-jgQucptfsiSDb3vsmcgMIkhfk5linNB2F4YLCG4-ujH-i8_KORPOGxmwCSNyEYbOnjR8tCOKDZzMaEYCtwt_RW-XBYiMJKIC0oarw2s6ZBnFUxO-_Zaa0dAE76MCMKrwrIbNj69gxFjmIfZTDiMsywl1EboiSy2N9ePJgAK_O9q2EbM9RdY-5AjwHsPYu2FpRyPCWpYjJnC42tOu-wzCS1gSQxrnbF3rQt4UCmtq37-tNEf_f1KIDJjVMXkx4lTge0_KtZvgYBolJDH3m87P5AkyYv3zAni0DCxUUig8oD2dsII9TULT2H5kuk2D6kErV-AEPbwTqs23tgVb9rvD3T5ZRwP3xo9A2h4rFbpe1nKMYg2NnQrwk5ZDo4m8Oh-0Erpa2-aQHx2sKes0ASqwLOkWqEhYPIFo2mpcPHCcsmtdiTlg87_dMKmlLW6YC3uDxIcaI8cfGBPWpzsr_XH52eKDoQ8BHTQjcXNp_62NQKMiKZwezRzvudnp-sBsSHLz4HjZN7opvh0fmyotYYyf-fyRjKJbAVcK3oNvr-bWl26qBGl7hsDiZjH4-WMlm_JPt34Sv2-K-7FIKf591qUw4cHnOqOXMF2vJ9nmxtN3U2o-Q69gGGyRVsffRZS1XUPltfQx6e_yJQnzGDqHkTQHoZ279kOgVOBCZ1j9PF5dzg6ViTu8H4hnQd79qBzklWoLohCcDz3eW5no4TnylE8IqjzDl_xbD1mz27ELxVqEghYSbj7sNH81gRS2ZBy9QSL9H0XuU8PBsKVEksQqEb9y4Si8Wc_JH-eHTt-Dzu6GTkOvylPhuokXuinYZPGiF6gHpatUGLzHdigFexgR0fNOu_rDvsypMVRGGfmexIreVjQMEMHquJ8-MZN7o2nFMb0p7Pb4AN6FviHoH0mtZ96EtyHaXdMhbHMXpDoXKQ-dwTRSTTGoJdvKKJg07J8ps8K9k3ztLJPTpmRUuCF-M1ndcVC6V-ULqRY-kbf4PXD4SGne2jIIyk-mPJZCY7RMUENfNTp96DeODW0JEsBV8cYGsr3WZqLhiK_xAiBQ2Ee2LTh3paT86EljwGoMVrWjXV3byH5mgSWfrBeR_14IwvMlmxjvgPkE_iGrgdVf_OsSEmmdbhGnaypCddwQIvKTe2y12VMZG6iofsv76spl4BWYGp8yZGlDWQVlezAqGRnkbZEsrJli07_rL-eno5w5dbilvXtURggWdoxY-LKcKCBP-kx6cPshziFuhmUrgcgBq-fcuQBZd_dAPcEJ0vlIX2Tzi2HPnGFVT4mVM6NxhGtFtuzj3qbTdjVYrWVcJ-mzZsNyNlgmq9OpRemRbJlaL9mRPoWNgp2uYcTUL-GoIiqrk5LICZMfQW8x1zV1uZ7h_Xn0GBRlfawMngiACM75148cFBfJ-yXFzQWXI63oHc55F4USoUyGQSUaMGXVYYUKjydHxxheKKdpr-TomcQrpLJGjMCAM3aURNpYSGQtlCJpB3fStzAuRuRP_xab9YQ5nhSRd6QP_saCMStj7oGZkNi2BgySF6Y1mHV9TQB5_ZtPuySOck5SPFoZxpcxL-IRgp4wAWpuOD7W6w0YuzzBBT_CehEvAdHHgMX0DyiOt8xLKnIK2SLWuor1EADLEBRFXx1cuMiWLK_3dPij456Pq2jPflWWXkgnp7zfOJUBR5PpVekyVIqjkmaQzPSPvXKaWcDkMDCAIDbUxPfqXMHy95pzo0Yzs2_RVC7vKj_tEwKVFQjXNSyihGCtRQ-C6PhRZD83CWq1k87yHkOyjOt0vd7QChnsRuQ99sCJ17-YYp7kVZMOFyIPUtLugKOtqyawRScsEtKOv1QapZowv3fJwsDGtlCkmpvbsXAZ1XuczwIhQdDF82CNxI4bA3Nh85IydSwHC949rw-uEiiEdPhtf9VwwChAxez_xAOaQls9gcm7uzujjxEw6Qb69IvupisBWLjERYyfu5lfYSpbBdO2Ib5fm0q28qjRR0bAEAW9MG4QTp4ayCjVNRFebn8sQZB8g_TrfM3UDo5Qah_-LRoAwsB1KCtpi-j19c39ib_6Nm3LRW1KRGTQ04ba7kCGovKLEDTWA4Nw5TeQZFrRXhMLy1oAUTYnmgp7lv4iT1BNe6Fzrl-gLPwl1nJ5a8ZZEEqtnuAuyBjRpSQjF1Sk38voRfYB4xPhNVk9EV-Mzv3by6RVnOlzMVSwAqq4ug83XfE2QU-8r-5lRHi_hP_Gvi8BLR986a2PsNXCGKON22AGLgfTGPJxw0hFQUygp9ssCGMADAG0GqqigXy8I5uCebapy2aRqoXcsk9tB32sjQaKla4MKtE82q95thqwveCBD19k3AVYu0fBFqEIXlzFKjv4VN0Zbv1uSPMfyX8zNStettp4AWH6k_i1esdpU1ki9055KQC9b03CtGRic4PAwWfo9umJnQki4dFN7a_WsvJTQXo2GypHEjP6stsaoaSlGI_vm-jdUfnEJYnUN92QK23Mn0EJEWP-OqYD0YaMrOJ_iliOc45bBqwImjNbTHJv0MkQuYuI=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_01c11ea37c68f150016abbe026045487d1912931ea83b556ee",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 342,
+          "completion_tokens": 449,
+          "total_tokens": 791,
+          "cost": 0.01518,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01518,
+            "upstream_inference_prompt_cost": 0.00171,
+            "upstream_inference_completions_cost": 0.01347
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 406,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

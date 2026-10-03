@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: P versus NP\nMathematical target, paraphrased from the original Clay formulation: Determine whether P equals NP in the standard deterministic and nondeterministic Turing-machine model. P contains decision problems solvable in polynomial time; NP contains decision problems whose affirmative answers have certificates of polynomial length that a deterministic algorithm can check in polynomial time. A resolution must establish whether every problem in NP has a deterministic polynomial-time algorithm, or whether at least one does not. The target concerns worst-case asymptotic computational complexity for unrestricted algorithms, rather than success on a finite collection of instances or an improvement to one particular algorithm.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:48:51.120165+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 7.932,
+      "response": {
+        "id": "gen-1790696923-CIn4g64yAhA0EEdlStLZ",
+        "object": "chat.completion",
+        "created": 1790696923,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.005,\"2030\":0.03,\"2035\":0.10,\"2040\":0.25,\"2050\":0.45}",
+              "refusal": null,
+              "reasoning": "**Predicting AGI timelines**\n\nI’m estimating predictions regarding AGI by 2040 might be around 25%, with a 45% chance for 2050. There are significant challenges ahead, particularly around solving key problems in computer science, like P vs NP, but AI might play a role in that. I think my timeline for AGI could look something like this: 2026 at 0.005, 2030 at 0.03, 2035 at 0.10, 2040 at 0.25, and 2050 at 0.45. I’ll present that now.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Predicting AGI timelines**\n\nI’m estimating predictions regarding AGI by 2040 might be around 25%, with a 45% chance for 2050. There are significant challenges ahead, particularly around solving key problems in computer science, like P vs NP, but AI might play a role in that. I think my timeline for AGI could look something like this: 2026 at 0.005, 2030 at 0.03, 2035 at 0.10, 2040 at 0.25, and 2050 at 0.45. I’ll present that now.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu93i0b0P0vCvzOKTkuR8mfjcbgUbMGXUm7tfTP-rOqvVE49YSirCSkiZ2bqlPM3WqO9cngDQ5kuvnNrVImRP6a1P6IsyFAYHresixZ_vwW4KVvtQSXqxNPsW43rU9d9_FWHwxzOx7kdT3Ze4bpy9_XnQ2S-bK-vTTt0O3RXIwFJwulmFqxbre8SzCc0O9dsEzdU70OIQVH23PFlQ-LJrcDK4A_v_2vChlAZGti5sIRquO3FPJizwMhmSASGCU_SJXKZVztSoRYWuhHNSIWGd_O4lzJedYwYsCbCwr_2l6jNKAnl_n8KoEOpOQBXydQfPEBkmlWau_aiIF8FHZZj0RhWyynF0T5x6iuBA2TNuMxqcLa07R0U7NRKLt7Yxq1iqzN7s71ZynvM-28EM5Vo49Q11cpF5k3t6L1LGwSomVWN30fBEnKclPeTLLBlxczW7A2nNdHGOxzn-CZiWiZXDL6whVv0vHQW9EbfIEU8wqXCah9HAV1Jm4y0kVfqS8xzP5MroNhyYL6AF6EIPnB0uySA8zsJ_ZWQ0M42lz7kNHrOfPMy2XW12FXQtun3THR3TS1-cdlZE5EutaoItkkzfKah-K7QDxfS-tEOhGEFLfbbxBEjXFoFX0vU7yaTgL8QfcZLnUGoqIEKsp_3T711_MzZnwhszGphRhfyuni_7lCMZd83ZiA7j4KF433Xl9HUi6kFm5FiWdfx9yg7zR2UUX8cmbvheOZ2UF8-00592Jf-Lj9cq4ff4nEWAz9TNomYuw8G7yPoDdSDfNDG3MCp1RI79a_LYEuH-5W2CJ46gjF_nvuW-DWqmKF4qT2lRh271yEmcXtpYd36Df3-qroeLdnu2svh4ZArzPKriqw_zppHUAp3SXGezCspETs7OALJo-cfkxKOdAMy6gT3uCLXz4Uc46qSFzVPem00LRgANPPsvZhPImyZe1WUArNbk5NxTHNbU8rRVzdEZdqEvJNC367u5iEr_h4ZGbnAtufJvFqfJ6eW63vTfS5016Bg-BY5BYbSvflQvMz7X4ZhZlppGMkBBTnQ2k4t1lnQqIzPlUZTvXAvCejOu7NrfbiwLBW65AxbQYTjN4EOpNAKqFly6YqDXQs3Q0tPuQwYrrWZNptiE5EKKZ5QzWP4cDtuIw7rGOxa3q3mbMzMhXtI9iqIHrDLJueOUE82-dmmNBy4WPkJmFgrrCd9ONqgUEdWxGm0WpF9VVdhbInbnDkXtRDbe82ad4fZy3XV7gqg0yM2D6pjCcPnXXoJhh9heLqxhZ8DZQOCb9_Vef1osooqgEf_pVaDcQ8prZvomO9gHTP31n2uSa2A9M6pVQMHz2Qfdr1osLZHHrOmjeCdUojw2eDXl3bdxwLjmqi-zNLGGc46e5VjvoWQyvW9sSRMhlepMLu9fI7cHGDqzuI3Vp4G9S4cMfspH1SeHMpQ7sHjww-IFdGkO_S4-pi6E1hA8pgvkzbV64gVcfU5FIN7lZK1lSX2Vx5KJBfdNJTItVcgg_6TLRjz5-fs3FGsEgsUGbUa-dZc3wU5ZWVpsO-Y-X9IFFEetelAnJeZY79EoANrJ9JEpPYsVC0XnGqPGmLgQl1G0VuiC1VU0MEOoBZnMQAt9MZUEwsjDeONHZLrlO9x3gPLkbrFBRZ7j3rHoTfIEu_6OHft4BNAVu-0Qwz7P0UJBq2Y8GklPgrVdu8_6X4gHEPKvTJ3UJGfooCK47kS4M2T4YmXQwbiANeMM-hJ44-_IBcpHmT5iIrHVHdB9PMkn1aF15hQmn5kQWDpjLdTvy3utTredDMd_kjFLDb_pXlR-dRkm2_hAgi2mO-7V2pNKhFparZgNrd_aY3YEphbSb7U0VlY_3IzZJeE-AV8GZdy5sghz6a4HNGSUZMk7W0iYkQW3Y1_7qeO-D-VvN0tidzFiZSlaBQNJMP298Jpj8kZJcLyn6UvE5_6GgHBpxSXmQ3YRK27cF_GXcDkEnXFiU67M_JXF8qmY3MzFmDb2__RzVOfyw_Y0NtdjHJgvg0gLgGmtvJCOGzs3LixO1VSYwB4dV_7UHyc10nq1Hce8AJJl-9yMmaAkMGxOxI0gsbemmPHcZe3vYf1qMdqrll5_WTbB_2mgpfUqIijZa-6nKGVHbjELXELTW9iUgWHtIIb9G_jnNe4BW7pe8d63r8RYjmqw3_06053X4W_FAJi2c9CWuEtPBbKBlIQpv7gYw5x-xn1NZRWTdV5sWwm-Cv8AYXOV0xNBzYeR7Kc7goH0mTdMzSFjx3pWw24U7-sugTShIy3YtpX0ZxhwhiQzP6I-cdtm1LqBq7YjWeBOYG6uBky9aD4s0ME8lWu3G3qIfriI9r6PDcbrAr9wRuP6cJbBoJEl5vbSuBbFiCu6GRvou2o3bY7thUnO5MO2vJl9xPq_1w_1beuEDTIvEuSsHsZh46RM8mCZQkav62vj2TxfQ9SQIO3_vQYGasZaKET3K6UP78GxMDB_muxOgjvN8Wdz2i09akqLYSTpwjFV1BzWPWiGxVQ1fg-HzCgQAuvEQ801e0ywWyl9QuFZZnjEREQaJjkQxsTjbtDnwjF0EeMosJDnuegLdjm2a2Jl_eMDxXpqmep0RDz_JSaVdFvD0hoHHbES1fn6SWIkM0AKpzQ4wR3mISW8bODB-gzcnt91eHQLHSf58DCDZbHPV57UZfi_8Z2ZyjOQEptReAAAkMjGhuCV0a95gmTspjX0M5ZkBFSy1ZCre6YU1kB1UCKZrX7NM8evQQ_aFuf6gnAfqdqJuVVa86TjlKnXTtSOCnnY7DO1JuE5Ad9HbihaHtUJjM1Gqk45OFlSNL-pGHiybSbPy8gO3rhxxyIfGWKoxABkTsRdFA5KmzodXpPZ6mjjT3jCe7qncPXpTuU9T0bf7RYHim-egdOXeg3aJ5uhUsmtfNt9rCtL8woqV_gsZSZ_iOIRY8v9AcqPLMcV3_35XWpXJcLld2CPzWBoVBm8ywtF1CL7deCvBxiOYKQPE8qoZT7k_7q55VImTzqiMwvd2xheSkN9Ec_gpC0nltIZxkxbllTSrjTE2yd9hcdSVHh1333JKUL5q9NBBvfj8p5RrfY4rh72oDzj65oJTkVOr9xr_IaClW5wDveAVCi4TzwQdKYjtcqt9NVvanSu2LbTBIqWC5wzkSgfkEn-dgJYx4Htwbom2h5IUarAzrKADlwiRAaBIpkcjwt2vpVbCosUwzdfxY0Do5n4DR1_HwSmmT2MeLX3FcWH3dy9dxQqM6eBiEEtfKaYcuDWMVJsPqWXF59uY1QR4y85x0BLgkqxDybmZ4DG_13nFaVLEDUIHCrxLg18GSKriYNHeLaiDj2MKGK55aOkTxxh2Gg17A==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0dd9a41ef94c967c016abbdddc012087d19817041a4f980918",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 347,
+          "completion_tokens": 480,
+          "total_tokens": 827,
+          "cost": 0.004534,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.004534,
+            "upstream_inference_prompt_cost": 0.000694,
+            "upstream_inference_completions_cost": 0.00384
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 384,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Riemann hypothesis\nMathematical target, paraphrased from the original Clay formulation: Determine whether every nontrivial zero of the Riemann zeta function has real part 1/2. The function is initially defined by the series sum of n^(-s) for real part of s greater than 1, and extends meromorphically to the complex plane with a pole at s=1. Its negative even integer zeros are the trivial zeros; the conjecture concerns all the remaining zeros. The target is a proof covering every nontrivial zero or a rigorous counterexample. Verifying any finite range of zeros alone does not settle this universal statement.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:06:43.736282+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 5.932,
+      "response": {
+        "id": "gen-1790697997-T2RO91iUeXLwXW2PWn5W",
+        "object": "chat.completion",
+        "created": 1790697997,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.002,\"2030\":0.08,\"2035\":0.22,\"2040\":0.35,\"2050\":0.55}",
+              "refusal": null,
+              "reasoning": "**Evaluating AI Forecasts**\n\nI need to focus on creating a JSON object that outlines the years for a forecast. Specifically, I’m looking at a forecast date of April 23, 2026. I should consider the probabilities of an event related to solving a notoriously difficult problem with AI. I have to think through if improved AI capabilities by 2026 will lead to significant progress. The estimates could look like 0.08 for 2030, 0.22 for 2035, and maybe even 0.55 for 2050. But, is that too optimistic?**Finalizing JSON Structure**\n\nI need to create a clear JSON object with identifiable new arguments regarding AI collaboration or problem-solving. I want to focus on ensuring that the final output is solely in JSON format, without any additional explanations. The keys should represent exactly five-year intervals, perhaps something like \"2026\", \"2030\", and so on. It seems straightforward, but I want to make sure everything aligns perfectly! Let's keep it simple and direct.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Evaluating AI Forecasts**\n\nI need to focus on creating a JSON object that outlines the years for a forecast. Specifically, I’m looking at a forecast date of April 23, 2026. I should consider the probabilities of an event related to solving a notoriously difficult problem with AI. I have to think through if improved AI capabilities by 2026 will lead to significant progress. The estimates could look like 0.08 for 2030, 0.22 for 2035, and maybe even 0.55 for 2050. But, is that too optimistic?**Finalizing JSON Structure**\n\nI need to create a clear JSON object with identifiable new arguments regarding AI collaboration or problem-solving. I want to focus on ensuring that the final output is solely in JSON format, without any additional explanations. The keys should represent exactly five-year intervals, perhaps something like \"2026\", \"2030\", and so on. It seems straightforward, but I want to make sure everything aligns perfectly! Let's keep it simple and direct.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-ITD4wfwmHwZaA2HlgVjZ3aIBMWG0ELU_f094ZJv5N7ZwdoIVoh6miq_3kbD-laNofdISeAcUYZh0Z-nPtCwLt5d_cqxfhRSObXG6MJDMd7ksA-jYoXiCxmM9ngi4r6CftHoP6pv4dEsAegRhPuMseRsODHuAWDFfr_9KeRwGURBU4jU1oXa-zcbVHyaoyI6iEwpu8_MNVh4cIa1NXVYYk7lWaXBizgEQgOvAoC93JjNiBUoUB0gWVk-1ktecjFjMg6iELqvTRqm2B_Ss33JEKeRtbkDQiTebdc6-1g_1ZIrMqqVzxQAPtFc7iFZZMhoJtpOyMwRNtNUtzQFGt9TEgaRR9j3aM-0vFicMoLxESJPuW_IK-FzPHq0Fy2ouAYBvyQdwJSS_QBo_LjnburMo7jTAyemBwP0wG3z3fNCjcLrXhsNvL9SkhBRw0jV7zgnqEm2NPKWc-tVLeJvfcYDDMk5b-q1_mmY4y0Pk4ZJdkzOHDrJ5ks0UhpP3vCUk6iiFOI4Apcm4aYrepQysOXbRDayF1K-lh7SAteAtu4eOwadYRYGZYE2eYP-1NSAY9NYCyjdsOf_ylwcH2QHlRbZ8UDvvK6NUjmC297n7jxULTpOCodBG7PnYHoSimre9UCdbfwrT6YEe9U4MAa8sDLgRW-etho1onJ55-Hl-WXQh-ZG_Ba14_0lq0KhPi1BnRsLVKBOeRmkmJMJdJkyUK4oW9sl2LtWZEK_uFXoC52u4hzn776N4H34YJBOylCiWpHvaTA_BNDxzl4tI3FhgCGuzghMAbZaN9_aaHsfe9MKN9vpGiqdzyx-_iqp93PMzayyTHT5RzGbExw3uQYBZKDR3FoPYtiFHvCqpDSZcJu01LgMpJV4w9UrnEa5n4lnurvDEiw7x2SaBQ-kbaHbjAAmIWrQv_1weNJ33INcTbJL8_a35lg1zIkrqtGh940V_AvvCNhHoOdGLBEy6WGlFQpMDgAB_3aigZncjmMARygLLEIsvjoTIrOsFyyvZmDqRYdRCPikqs7m722TaoM_n5PXbqLiPpToJNl_6hQTX5FH0AOkV_z7DmZMglrM0cVzRncTR3OQrtS-FOFBZKGp4gBzsOdv5YncAkmSVHts0IJ_8JKexPywIlqqvphV_i8ppqcgO2-xmOX5KkPbfYaG7aAWEq274AG5tRmb3KN-_q2NVbl-2oFbEGLSxR1IR13riS39w2cqbpnIxEP239wnMTAh1XuL5qKzlk5gdppW3BjQ9WOHafTL6LlO68ggBbeAEVYeZohpUigVR-f_iMyj9CwG8NmrNfcPhRWM6u9DYc4GWYgmnzRXw7WdxG4WtR29bS-knXbbqlDGeLQTgMK-9KIlyudP3nBcsgI8sUCRfZK1vePYAms0IN-AuyhwO4SO_2HliN94BcRAyJMRLwB751jSKqjHYaFdwWF8lOXo3PT01p2APjaIPO4--wpzCPM4CxSmoRl-UThbnVU1tbrG1IP5U92URFl9TgOcFH6CXiZp2yJafMQOuZCGmMZyekDhh2ZY7uSCsUI6HXtTXuVekK8hZ996stoZXVcHIF6K6_XSUhdVqmjp3uQV2k21zRugV93SHH8J7LVzSM56ix1UcMP_OYIk4CNfKxeVJVpocKyvHirD5Z1uxqxn5nPTbQRFngsPwHtpy2ZcsII8i5QSKVxU7Os_MM008NaHhBKrd4s0NHOR4N_Cn7H-UqvIMLg0kK6LKm_aK3sIKrGYTe1CZCp0zWbTLNO2C9KTp3IiNOJKaJfuBt2jav_7sHM4RbOeE9vQMjkksm8njAa4ygNCV2Z2prFETnXbZYEPcIyQQZKAP1vZ9pO6OUfv0sMn-7POkYI7zUO54TwDScXI1ThLM-fzICadeMSkZfkdbTULOiiUTnt1PiyMARqrl0Heqd1Wk5dGTqM_21Y7J0y2VgqiMdK57ODEreCJiSID_nuPcd1sxy4vn-JOA_ke85fDNgD8TxQruZfJ1u4xoFHqjrW5V1kF9X7VbjCJUOcAyGUKnEiO4J_ufuWQrQmp3A4pdeKhydLH8nkRlqFJIP-2ccsWAGqq_6zL5B413AyHtJM8z-6EU61jyW3zW3zAS66VfQNUPG0xuvRUYylK1O2ugx62iMI0M6Q1Ykuma7kJWcOsV6Qv3NYRczNxY-TGYbUtCUmMif8V-0qTcZUGyzk5Ko1agOmRqzTZLgXI3A25Y0sV540thsMEugnORKW7kmM1EBSi0RS4PnAeK2Zgf1mM87rC6MN4NymDyNf9dRK7xPL1cJ2A6o8cGQAPLvVeLtvv-Xu1jcY9jQJv4Wg3vyLJA8tyfcV2qBhBHdIclSnvP7OxW046wipVd5az30y-1yBSAKAG0q7k1Mip9tPR5bAhsLX3rNSRGQxrvPihJOi6dXfh63IdDRipwZ6CLlK8356Wwhx1PSa62UhzhrqyAdyjqTVo-T5MWOUDYrqA_6p9vv9Rr6OXHeiTJ8UzhMu9_A3FRgcpyR_9MSxU76wLMMSlaOiRHA43_fT8_l_40pB9eXCD-_OLyYshejp_ode8RLdIFo_5e8wK8F2tyMBHtI6Vibk7-cY2FMgaXSphC_nBL_cFRrBX-EvJ_fk7x_yZjmTOgqJ_gmq2YNAPsTsrGTRAo4HmKFVVOwL1nCLjRZ638vmpG-SG1t5vBJlhPtN4aseOu0SBH_SjnHY3fOtdXghunqt0OVsyNW6d_74VKh85XOqT94fRODH9f_4UeCGbCnuBWUh182MJ8rvu_9JBi-RTZ426in7jDArvRHwwSw6WDQTmYlRFGkdQG7o62D_HTfGs-OiEgICI-zzyUCFGFvJXD6jjOUj7oKvsTiVMRqaKZ99U28F4mZ58ylv8h3ff3tDSQKBnzam6ptL.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_04664094d28b2dae016abbe20ec29887d1a34eaba7225eacb8",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 360,
+          "completion_tokens": 317,
+          "total_tokens": 677,
+          "cost": 0.01131,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01131,
+            "upstream_inference_prompt_cost": 0.0018,
+            "upstream_inference_completions_cost": 0.00951
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 275,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Navier-Stokes existence and smoothness\nMathematical target, paraphrased from the original Clay formulation: For the three-dimensional incompressible Navier-Stokes equations with positive viscosity, establish one of Fefferman's four alternatives. (A) Every smooth divergence-free initial velocity on R^3, rapidly decaying with all derivatives, admits a global smooth velocity-pressure solution with uniformly bounded kinetic energy when the external force is zero. (B) Every smooth divergence-free spatially periodic initial velocity admits a global smooth solution with spatially periodic velocity when the force is zero. (C) Some such rapidly decaying initial velocity and some smooth force on R^3 admit no global smooth solution with uniformly bounded kinetic energy; the force and all its derivatives must decay faster than every inverse power of 1+|x|+t. (D) Some smooth periodic divergence-free initial velocity and smooth periodic force admit no global smooth solution with periodic velocity; the force and all its derivatives must decay faster than every inverse power of 1+t. The periodic domain is R^3/Z^3. Any one alternative meets the stated mathematical target.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:51:44.702517+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 9.293,
+      "response": {
+        "id": "gen-1790697095-eBIGDsUKXQ1JsK9WYXKc",
+        "object": "chat.completion",
+        "created": 1790697095,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.002,\"2030\":0.04,\"2035\":0.16,\"2040\":0.32,\"2050\":0.58}",
+              "refusal": null,
+              "reasoning": "**Estimating AI contributions**\n\nI need to forecast the public availability of the NS solution, estimating by 2026-04-23. My focus is on probabilities, aiming for cumulative estimates because the Navier-Stokes problem is complex. The chance of a breakthrough with AI contributions looks low for the end of 2026—maybe around 0.2% to 0.005%. By 2030, I think the probability for a complete solution could rise to 3-8% if AI capabilities significantly improve, especially if we consider future advancements.**Forecasting AI contributions**\n\nBy 2035, I estimate a probability of 15-25% for significant progress; by 2040, that rises to 30-45%; and by 2050, perhaps 50-70%. I need to consider alternatives, like forced decaying singularities or global regularity in the Clay statement. AI might play a significant role—if a solution happens after widespread AI, it's likely influenced. However, if the first solution occurs without AI, it could negate the event. I need to clarify what \"first publicly available\" solution means regarding AI contributions!**Estimating AI's role in solutions**\n\nThis might be the first time a solution involves AI, especially since \"first publicly available\" likely influences how solutions are perceived. By 2050, I think we could see superhuman AI with a high probability of solving all math problems—but there’s still the question of alignment and access. I would estimate a likelihood of around 0.7 for a solution by then. However, there's still a possibility that the target remains unsolved with no public solution, which could be around 0.65.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating AI contributions**\n\nI need to forecast the public availability of the NS solution, estimating by 2026-04-23. My focus is on probabilities, aiming for cumulative estimates because the Navier-Stokes problem is complex. The chance of a breakthrough with AI contributions looks low for the end of 2026—maybe around 0.2% to 0.005%. By 2030, I think the probability for a complete solution could rise to 3-8% if AI capabilities significantly improve, especially if we consider future advancements.**Forecasting AI contributions**\n\nBy 2035, I estimate a probability of 15-25% for significant progress; by 2040, that rises to 30-45%; and by 2050, perhaps 50-70%. I need to consider alternatives, like forced decaying singularities or global regularity in the Clay statement. AI might play a significant role—if a solution happens after widespread AI, it's likely influenced. However, if the first solution occurs without AI, it could negate the event. I need to clarify what \"first publicly available\" solution means regarding AI contributions!**Estimating AI's role in solutions**\n\nThis might be the first time a solution involves AI, especially since \"first publicly available\" likely influences how solutions are perceived. By 2050, I think we could see superhuman AI with a high probability of solving all math problems—but there’s still the question of alignment and access. I would estimate a likelihood of around 0.7 for a solution by then. However, there's still a possibility that the target remains unsolved with no public solution, which could be around 0.65.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu96QZoiFHlj8dLznJ-1gnk0B5w11qofGVj3djJHRuE-Ve9taDiZdQqTrzNOy81wcj8TB9y1ImZ-nJqqC9dHaBfjGHX5Z_G9J24ymkDUiW_Ngw0Djo-UJxFEXBM3myAiPoGKTX3R5Rugvt8OptoSp3-O2xROBcU5QGruH1Kt9xIlJmgu4KiOnJOy9k4ZOsbjhf1YW2y_aewVxDQ_9nSvyVySkWkGzP7ou5Yt_QcZUNVQIc4ZSJolcTjMChr2-YaZX9LVXl-VnHK41AkXbZeF3l2kQOzQgvx7ijqVMAWR4xc1bb_uqjVO1Hl9uS_t5pxYwtjpq8n1d29tKS4BKGMyNOXaXrDlF1SFRhASncX1zheM_2ZtIziuPBinBKVGLzdtd8eUM9E38cgs9mKfocAyFXFwLspH4KOFbiXgSh_hOkB9zVkjsPal3_UPe2PguXFqX5BT5V04Xb5PGIE22YEIdXkAglUeNmSVk6zanIQx15qPzAhSnNIJPf10odC35AELz_F3J6S838XrUwDh4R9sayqr46og1lVoGh-4y4JIOGqxj0XnsfSe4wl_UZlzYnNuVjdcJZNvL9MPSeU3mreabITYAHcuaNOFzoKaR4MwNUPS85wQuD_jq8l36IVMeFoJPvGeynU7F4bn4yI1HHiEpdQOQgqMBVtygnzh59beKU6TVlk0Pvf3cE66K9iLE9sBJlsRmH0dDfzlxjmIUSpYol607XsTd5-Fjeq2saLwam4vXiEVGnagQXedaG4HF73XZoMC91s1bC4x1-u71cYAEGpN3ZcuXM8fNt6GLaBE8qbv5cb4HHBQUN6lkg3oJUWcZBixNFHTtk4-DiXRQ1XRrxAWQnKzpuwnegeFL2xNlUY7nwchemwBLcZrJeb8X4mqZRqeVNHf1GsFmYUNzGkPMXbzXUX0Zt5Q7U_6FNWtO9rquOZKBV4wPvkKB7iDrt5oaQ0cVMYsnl5rZgue5qrsWKEYLxSLFfJQk8XA0htRbGrBchYs8j9oqMVgPTXutLQXCoaBgeJMurjqaEXYszEo2jdRuD7e1JJeuYoWM2SAGYjquumWubJRqNBTQaVEIFhMgCC_z6U7UdUzJwhLeEiWEnYHatOHp_kjOccz5CIP8gOYJoHFEwKnVTJXWMgV2m3GBw4NlcdWo3aANsjta9fmOmAZDwiYnKM5dwMWbTU89kMxtFzOHQ19gpEM2ehwnIL1Vv6h3joD6qeFPV_4t5VKKExHE73AdzPq-6CH6M5EKes03dmAzs-repUKbHICE_zQ87UsUIbFus10CuCEv6kIbV9KQjq1COSiWAtYaChza7uIoEXkN-Bz0ItomZQStx3dkz89oKWv1ebUEwiRTidW1j7S_8Ac3bGPLGz1Ndzu_LXfaEoxIi9xG_yz-QTtWO6Ha8XS-Zs8i4WzcisY_dpoXSumCLGM3dZ4zd4WOZqhmxcDlBISy2iswnjEk-fBD6Rz42eDFlV5mCpOiFfhBYWKy0yFDudyKQnIL69SmAiaAZrAtAV-_pANyQvlhLLRPumUEHmLJBWdsGcZ1b6hYzw9nHgSar1oYB2axWz7f4X9RIF5T2xEcnMDCJIBnp399gsETmSwSxEWM7wV2uGjHd61bbUhsOaU5TKFGLntsMLOYIdyozinK-LQCe0akjB_oBZfesNcrBcYZC-OGHhgr0NbZzDsNH3dH3VqEUOyBYVy7sJPSrAxpYMneZzj_spdksBzz5D4lLgWVW-6pTNsT4V5hu8j553XFU2zOoQYkWiKYls-wovbG8Sg0OAnT0eMJymFuQRqSXmEKDQp0l-r8dK4sbB-ih_FLzRSPcWbgv3m_DpkyTwWeMJMMmZYp_VQaOMISpTj2BZUeWd5_aIFVETALC0Zcd_Lk5k2qEkaChYnnANQBDjrj31H77CGo9GjOkb7BNp46k8VziuwTZwgZeWmfJuPakHgUfLG47-gx1qs1-qFAghJs1HU-4MfCKCRSa7Q3TxLp_nQcKdbAU4nXy2b_JhyQN_ST8mxq7_hGx1hy_CGPIA6_Gnierk3JXeFFy-c06FIjEDLJzjIkktQvluarmFN1oppc-tZovtnRzzrjSfKsnspB2EPfTdTtFbUmkfjvkY3w_JJxmLCvL4dI18Hysdkm-3d3e8kdASxJkyB_1lx7bMgvNUdHQ5XgtAwtLa16VR777ePny2HyiB1jJYtNkAT4-5GybEsViJueQidJNdMOkCat1yzoziqCCx1Lt1oHITthVedGlAOSgbgox8hiWzxzR8k0p4iF1t3V97I7nEaC0wqZq8gpvAz79x13Ant_dqhA_0UUY0B9WOcBKwAe3jJSERFlV4n396VK29CACgRh1hZsOMkROO-yX_J5b4bOYCxO4ZLAygjX-k1xMwbf_y-3ipLlgAgCCPWe2nXRue8GrjEYrqbC4EdyBNI-_KWsUJRsmk956nkCY4ao9OAHnCiydQYkbcJ7zPftVQAzfB3jXDtdSWvpVV0EW5g_XH1O-Ls9vWv_xIxH4KqEvxsLiqiLkBp-KBDjXeOUSYd1-1a-UoX5if3mrWVEE80nwHhcQ4jFPummC4t-xMeDHtKehpf8ekHsEKoVuWC_yc6nm0niS_7CcBAno-88LxnI4q77gbbeJFDKL61fD7rqA2kc6hv4_cJx-yDIGBzg4st-xZTMejefkE5yjnU1awKs8EFBii53a2Rlz8Nmb5CuAACXKtSDXVvaiXIvdox9DZ2EN3JLIQmciztXvyBB6zXv6mimpV7NDnzSvi6CsIC8qk5AIb8p_-tPVM0jZHYFdxmY2vykfloqdPGJVxBIyaTO0FzPMAqOv4ImbWGgSxiVLzOxEHPP22z4HOqDn0EekCW92nCK7RaaNXCxY4Y0VxI9sf2A1tIM3SCe_6-FA1xLY60pVxpRuzTaJJC7nWi6ApTs43Qv4JdvxfGpNR7qR60jeTeJfce2um6U0cLOTjOS_f9Lxzr49k76zp-nl3uxPaHhoQRDCeiRME1xY5r2s7EaKpjP8rxJLL8a4dGFNUXidJPS72evgWp8epZ-pVc4VBdhD6l4mLTbshgvZlPxs6_iep6oOyEDSdizl_8ixryu5A7qpNxL7Pzkqt5bVfxtj3A3bki48CSsRmaQZGuPHD28Kgq5HTEClRFOf8LAvtkxEBorE6WJet_a_4v5ietZL9zzePYzWk6pWxwP4kD0qUBWZaGdaB3HNXJ7zAW317YykCmoTuVjHZf5DMSJTNwIXERoltTzDMsGF-OaijWx7vURGPWbQHkTKU_v9CYViDwZjkxXQBO7ev8KdsFf468gq3Pyu4CwKH8uK4GrneBG0aiPuXXdt2bbUAVPdR_dWmh-yjuuwsBVMpM9bcnlcb3m2h-6bFNiZUj7BlyiKSN1Qm_2noWZrIQsmKMQyuN9qZ2_wFQ3WspEa4vTA8hdTCUtzR4SDQCGehrMUQrpgMlFnSWjryz1jQUZTGh3PS2Vm3KG-DrFaEndQwDbN6gbz2qJd8SLLeL9dbO98SNPHtEvKu9ezvUPGx8CXbyPXvL32Y-zgnfmFalyziRehJSuqdzb-iTGVm4fQKYuf-ClaSukLZUBKBmXnclRtRVwoBdkbfGW11NvDUMfxwR2-iv6PpexCv3WXY6kSfW4o3kqgTR0vlg9pYrYF-ljhRCc-8d5ZZ0hXfd5SI-U6YqSXcwJVu91sz4TcDOAzWKyL21S5HUCL_HfSHAdXOQlDihKsgwh1sf7-MMmlSMy7anTsyCV0ZsDu_WwdqIs8TB-CTrcWJDArN4yZOH2jS9e4sEDyMEDbOQenCTMIQuMPI0tJfqZf8duj_yfgzyuShEp84yy-863Wx6lajaFZAhR3hD_zNd0f8wLFl-vZAoHLSuIacKLhdK-WjyYQY0Nn92VhbArxgEgJGqICic2-o06nbZ65J26ycnyMNfGSWqw8fCGekmZkL887yv-MpNP5vN3N6heZ0_meFMLXS19nMg6ijmw54jsuSZyOjz2xhXp_f4Dz0h6sL1kmnXhX9nmLOHDpiv7hIv2qWduw4zua2_lFFVYky4aEpsXRk6wDtb2dY9vT3QtbWotJl6V4lw_70rSbSWp_MqZ349qXUFC-_Il8Fu868K-eIuDd3gMSfebkSRET2e71yT2M5JW0Gt3fa_oG_FRkR3hV5HOdzDmTLqI6QFCsUd0KoPk8xnaI8yj_4WnfL-cWSNIi9l86ZR2fR1EmUFrmPKBvOnXi-XAVptxmH2M3K1I6TITNfBHYNsnd7zafCFAi8oTCI4eWQU3PcXmqZi0xLfVW41T5BQumIbbT9aVQonNnSoTCwQSZfLsHg6H_6coYho0xMrmlTNsDWjmGnO5DKTuiM5DYKDJYxz0r82_z3wS7J2vF385BXcEDYV-txOfWIg8mDAEQFyfzxP5jQ7d2L5-sXz08MnJLojpWFUUH4mLmfEMB5TEQNUczI9IH7ky5MGfiq8B5YWg-7rITvW35UHnXUrhEPcDoc2UYk1mwPw4SRsF2emf741nTNkV2RHvU_yKy_njKMNqDHUy0S4p10_ky7GOZ0QhuZrV.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_02e468643afe96db016abbde884b6087d1bf34a2e7510b4289",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 449,
+          "completion_tokens": 558,
+          "total_tokens": 1007,
+          "cost": 0.018985,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.018985,
+            "upstream_inference_prompt_cost": 0.002245,
+            "upstream_inference_completions_cost": 0.01674
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 516,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

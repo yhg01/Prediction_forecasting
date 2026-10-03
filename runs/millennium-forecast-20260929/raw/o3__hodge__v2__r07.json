@@ -1,0 +1,84 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Hodge conjecture\nMathematical target, paraphrased from the original Clay formulation: For every smooth projective algebraic variety X over the complex numbers and every integer p, determine whether each rational cohomology class in H^(2p)(X,Q) that has Hodge type (p,p) is a rational linear combination of cohomology classes of algebraic cycles of codimension p. The question connects topological information in cohomology with subvarieties defined by algebraic equations. The target is the general rational Hodge conjecture for this class of varieties, with rational coefficients in the combination; an integral-coefficient variant or a statement about arbitrary complex manifolds is a different assertion.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:48:37.470193+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 5.621,
+      "response": {
+        "id": "gen-1790696911-EDWo0KsH0ZgHezqfs4m4",
+        "object": "chat.completion",
+        "created": 1790696911,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.005,\"2030\":0.02,\"2035\":0.06,\"2040\":0.12,\"2050\":0.25}",
+              "refusal": null,
+              "reasoning": null,
+              "reasoning_details": [
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu93VPBV_GCd1puwQrOU1o_44dMT0AoBl5hOTe879Y_wOxVADFrSwLbn18DOZbnqS_JLQ-vatFpGsNO2egDa47bsfoXJd4u3_p0FKmMAQbXx-2ul3DtHxsJLRJ63PaQQqR4i5BP3hGNqrNnFPq-xecDamzS7rsJxbHP9UD6JhJ3t-fAUdwyllvvN5ZHgavLsSoqKJ2ZhJs48fdbcDGgoOzIW771fnKmBOLgY3j3LLlNCKqHlZzscfBxbdNAxxtIvFhxHFbnCHcWdv2-ElO42y6xZo_KA9dQbr3flRTQDbY-Wufh24mkEbrWSFzOudzK32HDYSVIf_SSJ5jptpxGl9Pz_uXJtoLui0AdVwanDkbR-akxnHH-9oAYCizK4918bJmj6Q_pgrtlii1xBH0RYNQBMQDXioQUwI1vthbYj4yZ5jhAuJsiq7L5aO9NyboG5pcyS14skeYM-Y5bNFeAz8R76Ggt4svLOC1UWv3iz2ibdBV7hbK6wxyNQvz9Zi6av9naHGV5inZkbG6at5744sSckAePGdHfCmS-4P5Z0n5aPp_lszO1BR5UtWI7WRF-scucbQOz5CMtCwtD4nCMkodfv4guTJIofLO2s7EOC8ClgX4UEwFYOpQDLeR8qGQhJvElOKdEL6bdxoexR7pceyMeFNiQlkHfTvscDyq38wT6LxqlS5nYpNDVad23VuXGf7x1h1GN6gYutaRoygsyfr5hbnZVj_5FLgQtiHNop45T2raeKv3rF-ItxtH-fREeXluMjHtZ-VjRlcIZtsd4jn6II1nrtpqJhP5IuEs9ArcRm_MFGfN33JNZ8OmRbLjFOCVHgu0Ip25hXYUnRtktfvSgH9BqS5lZ7w_MO8iytMbS17yShAvuT2WkY_l4Ni-q1fe_35S9uKPpljGxVXUJlbpIJahpG1RUGthL5z4jd1mvkGLZtkq1xYbC-M_NBRwcf7g9D9nOBQfsYnOaIhr1uHSumk5nLJzCUZgnyRrv3K768MaL8jarRsy2eCoP5UdeF4zfpEU5SyORmts3agxkaBFGsZW59_aglxQ3DAhKvh3dGco3opRqAE2dykFWM3RLaiWcxK51mUIYKGYD3oJQ3BPvBWqyfOWLIpWLlbH240UbVE1dBO7lHiu_Lozr36J2kIiks3o-UK3OcwlknFeczkmNCtxb1vZyelCFytlaiDg85rfb93VvspPdfn5UYVHNNKZlCzEovZJTPnjkZVRWLAemJGxrK4c_aZGlJmDmObjEfamqdraDHvoMxJm4Lo6Lbavn6niRc-Ug3RZdMiC8jhev3d-wjgPGnLbf6b4NAhjQ7DjDCCANoQd6RocuI4AUWSoCB6ejkq5ZDGdiAsbQJaIT51Olz94H6pm3SIsgti37Eh7HqpI41cXnOkhkU48pFTIo567Kv_rMMtWIwUOm19NwAGRyGUiyzrtRyiXl8voKk2cTHNp3kgLUnbESn0OvmnGlhLtjI2YZZlxwM9ERYOKnrx6irWkL3vDHyz1n_e53qPR_sgXuyRavNULaocrCF-pU245HDoOVe8L8PlbBlgMJAP7iljlmPit3tGTA5Z8e7lJXtrdOAu424ErAfeRogcviE79xuqGOU65mZMG9oRn9zIYk_cFLO2mcmmMNYL5ThyB3xbYET6skCO6f0HZUy0NPUZrer0OjJMwb3AtSWgjQ6iIyalJS4TFMet4HdjL0IIs_U0C6KyslT38Sh0n0qAZng4dxyNcuezlUYAUiJ0ytwDeRT7EqLBVJmA4uswCcfE2wCeW4E4wUdXrKee5mzwPBmyCJ75g0VjPsBSYYCf44YnUbB2FyohruemvHle9YZCGGIcpffiL4LFzuMK7c90Ifj-SHIWe5FEQRRjN-4pomBlJ6zmdKtQDzvy-qOcTKPYr1gpMEnPeOyvMYFKJxQRQy_lnchCD6ADBc9I4iZtWVgODc-Rgulp7aRWCiaLpSoKQqEEegNPVcBHBBY5up8qb6FyALmNOHf24scEwflUy6IGU6RZLOFF68zoT6QxRw6OwhXz4aZXuLjwroSnVDk1LU-32H6GsQ6WnMWsJ2AhxxQDlASBJ5Cfngr0ya-FTXmrOPc65mpTCMIQwmZ2orr82a63VtrfgVGxmM3lQbJQbuN0Q_kPQwXMrkrho6a3tOw1KK7D6SM1YOTOpJwLPdD_hRFWIBQzZ-xWADMwSxpBwcsHwEIlTslph4_o236fDI8R70mI_HFbbGHX2rPjQvP-qykaRKjpzZKYPIUPk5LMymK6RBJ4nkw5er6kzU8tynatiTM=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0147817a779c7c2d016abbddd0ef4087d1866bb82c2627cb0e",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 367,
+          "completion_tokens": 241,
+          "total_tokens": 608,
+          "cost": 0.002662,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.002662,
+            "upstream_inference_prompt_cost": 0.000734,
+            "upstream_inference_completions_cost": 0.001928
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 192,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

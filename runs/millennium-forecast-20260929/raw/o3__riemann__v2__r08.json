@@ -1,0 +1,84 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Riemann hypothesis\nMathematical target, paraphrased from the original Clay formulation: Determine whether every nontrivial zero of the Riemann zeta function has real part 1/2. The function is initially defined by the series sum of n^(-s) for real part of s greater than 1, and extends meromorphically to the complex plane with a pole at s=1. Its negative even integer zeros are the trivial zeros; the conjecture concerns all the remaining zeros. The target is a proof covering every nontrivial zero or a rigorous counterexample. Verifying any finite range of zeros alone does not settle this universal statement.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:05:13.346303+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 2.988,
+      "response": {
+        "id": "gen-1790697910-CsnJhMmYpjBptYgUVvLN",
+        "object": "chat.completion",
+        "created": 1790697910,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.005, \"2030\": 0.02, \"2035\": 0.05, \"2040\": 0.1, \"2050\": 0.18}",
+              "refusal": null,
+              "reasoning": null,
+              "reasoning_details": [
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-G5OSp78kVfW_rKB6zJf4e1-nCSpsMb3rPuSAOOxKX8YLnD2YUS9tAgVEUNzVBXXKRrVYt19_QdFMV1QkfdOfSUdae8eLFSD6IniatsBaCPKKiph154OeSOEKGwp9CMteSBiVneKdgHWolPBHfM9xSLQ8uZe1OgFxEtZK6t4QsY2LGZIkm__LSpqGMO61xPIGZSwZKPVODvw5N1oqwNZRmy8g55ierMYaaJSGFQ0k7cGaHjUkqGbGYDtZT2uPjyuRRPpI8XfBq9Il1t4r_GTySYcudK_OQP_UA7xSlUSByiPcp6TT2k2jqZwg0R_D-Uh8Mo7Kq4HrUDGhWahL2YH59N5M7ImfUwsYVmIDpn88TfiQ3skokmwSL1RYtIo0YT_aS8O7i5y926gIpOFedC-23COANmHCam_X2mVe1_n5L5O8jQdEmRKkV_6cvZhw4KB6VFavj9lyQEZ6FMjZGZCq847uSX1R_WdewYS_4-aOdc5GwsVlrhu2rioIrdytWI_SSRiUhe5sOTwILkPnnE_7i1iJRSmjU36Jk-pdKsLvJUwqNM2ByQQjsaii4URfA8RsSgqKcO4fq1kuaj5UZ5ji1M_Ib1D_uDtIq7_BIUu27B9go6EBLKIrUQ1Q9h7HKKvYDSVt1-TrdL99KYPBzr5ZhMO46XjTWrIGeNrxlldu1q_rF2vgyj80WISaZdTA_w1YnlccQ6WEEUxSnjQX6xxLJ87mKmsOz1BcHcb0ebe8Xan5Sv_6BaNymvwEKnUZKNHN7VJqIy9JN1XfipQcOkGcOi6N2y3q1Hy8C84b1NJ4jp69-XlHDF8zEkFgiE9nbKAgWHgt30N3dvUcdtmvcWd783jj3JztkDZsBGk4bOmMJHCdkbBu-ygIVdPSLxISHI0rhjQIiqPcjUBMrjxwdWlRfsXZQNrunDJRVcMWXXRU2WXEtrPr3MerIpQS9wC5JSttE60aq7T9v3NkwhxNaus6kAGyPLNAuu63CzQH23rQkABIJvoLQt7MS_P-AzyYrECjPEFunwE6jZnP0epI6Vty07-cRf3vNakUzWijTLtqDdbhWr3inPJ0pj7dqiZSkOLke7HvZAexKxhdM77YT56LJmLS1HS3Xyz95HXRfKOBU-1dOGbIe8gC6140wIWsgnC0dovFMvu_pEoqd0mf9oSJ_pkV-8_Pd2bl_VhjOFQLOiv5RiT-a8MJl19IXjHyDoYgxHTPIflijNR1MqbpCpejdWPXU1iCV7xn2MQEg4vgBfZkp646lIhi9_GdGjWJPZxOm0JIdoiO-cZipvrK9uyxfvFHthJruidwW4czZXyraK3VFCe_WiqvNsecbF51WJJynICoSVpPFwFswZF2jXJUxpMvUEvh2BqCCctRbyRWkrc23iHGV5IfX07bhPmwOJQvjpsOBuMnN0NTwQx5eTu9uI6Bc3Y-kDK8wRRrG66V3EEJgNs1XaFLzRonc5-6JW0emEpjvEaINeaQEjGxtpm-2FatJv97Jq-mGNBXTsoiSh4No0HVsJ5FQw8knKDfLWL4Pab0XM4gsFA8pOf8zzavqksVnN95knxJUo6OmLDcXaGAqK68Z6F7iKxcHAk-230sgJvdG_mStoV_uakM3hOD46tjiAPPq40cn1tjCcyISF6Qw1luNAdSOUY_mzylSwDWNffQo8q05RqKHsaku3u0sWe8w0QKee80fRZEV5n54LtPx2tvPCt_gFMM89Ny4GFik9rdbZFd7YEyL8r7negfBQ69UNH107aNdH4ISWm5EcYYnuivaJsjtFz3PCjRnFQNNJLdc_Veepmqt11ZjsncGH69VEbHr48OeO8Iv70g7cP-WwRTvWvga5HJQX1YglYGctL4TD-67oBD5XM_UUNU3r4p1vC-LAdTcixRYgSsLdIqkg6dlFA97-Fbqh7L6aOLfocck00G6esIHOh_D9w_nWXZoZAR64DOYMSVh59JKgJYWUuHQMesfd43Xy3DkZfqEo-7VxyvGFkBvosHPRGT88Bete2WEWrHav3_3GlHkeQNieeaoReD7pcb5uwE-UFwkQuL7HX6IyV568-qDzJdIKYk05oiLtZ7oNPpZXQVpB0yuKi1ItSS4-0FLHmFPUg0Oz.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0180a91c669cb147016abbe1b7085487d1890555bb5dd315f1",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 360,
+          "completion_tokens": 221,
+          "total_tokens": 581,
+          "cost": 0.002488,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.002488,
+            "upstream_inference_prompt_cost": 0.00072,
+            "upstream_inference_completions_cost": 0.001768
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 128,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

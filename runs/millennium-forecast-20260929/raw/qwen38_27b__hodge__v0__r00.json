@@ -1,0 +1,85 @@
+{
+  "request": {
+    "model": "qwen/qwen3.8-27b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-08-14. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Hodge conjecture\nMathematical target, paraphrased from the original Clay formulation: For every smooth projective algebraic variety X over the complex numbers and every integer p, determine whether each rational cohomology class in H^(2p)(X,Q) that has Hodge type (p,p) is a rational linear combination of cohomology classes of algebraic cycles of codimension p. The question connects topological information in cohomology with subvarieties defined by algebraic equations. The target is the general rational Hodge conjecture for this class of varieties, with rational coefficients in the combination; an integral-coefficient variant or a statement about arbitrary complex manifolds is a different assertion.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "deepinfra/bf16"
+      ]
+    },
+    "temperature": 1.0,
+    "reasoning": {
+      "enabled": true,
+      "max_tokens": 2048
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:55:27.650596+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 50.225,
+      "response": {
+        "id": "gen-1790697277-hXC4dq2lOq8s9Pa0U8sm",
+        "object": "chat.completion",
+        "created": 1790697277,
+        "model": "qwen/qwen3.8-27b",
+        "provider": "DeepInfra",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "stop",
+            "message": {
+              "role": "assistant",
+              "content": "\n\n{\"2026\": 0.002, \"2030\": 0.01, \"2035\": 0.03, \"2040\": 0.08, \"2050\": 0.18}",
+              "refusal": null,
+              "reasoning": "Let me think carefully about this forecast.\n\nThe Hodge Conjecture is one of the Clay Millennium Prize Problems. It's one of the hardest open problems in mathematics. Let me consider what I know about its difficulty and the current state of research.\n\nKey considerations:\n\n1. **Difficulty of the Hodge Conjecture**: This is widely considered to be one of the hardest problems in mathematics. It's been open since 1950. There's been very little progress on the general case. The integral Hodge conjecture was actually disproved (by Matsui in 2014 and others), which is interesting but doesn't help with the rational version. The rational Hodge conjecture remains open. Some special cases are known, but the general case is extremely difficult.\n\n2. **AI capabilities and trajectory**: \n   - By 2026: AI like me (and systems beyond) can assist with mathematical reasoning, but for problems at the level of the Hodge conjecture, AI is likely still in an assistive role rather than independently solving them. AI might help with specific computational aspects or suggest approaches.\n   - By 2030: AI systems may be significantly more capable. They might be able to handle more complex proof searches, verify proofs, and potentially discover new lemmas. However, the Hodge conjecture likely requires deep new mathematical ideas that go beyond pattern matching or brute-force search.\n   - By 2035: AI could potentially be at a level where it's a genuine research partner. It might be able to make novel mathematical discoveries. But the Hodge conjecture is so hard that even the best human mathematicians haven't cracked it in 70+ years.\n   - By 2040: AI systems could be far beyond human capability in mathematical reasoning. If AI can do genuinely creative mathematics, it might tackle problems like this. But there's no guarantee that AI approaches will succeed on problems that require specific types of insight.\n   - By 2050: If AI has achieved superhuman mathematical capability, the probability increases substantially. But the Hodge conjecture might be inherently resistant to certain approaches, or it might be that the problem requires a specific type of insight that takes a specific path.\n\n3. **Historical context for Millennium problems**:\n   - Poincaré conjecture: solved in 2003 (Perelman)\n   - Birch and Swinnerton-Dyer: still open\n   - Navier-Stokes: still open\n   - Hodge conjecture: still open\n   - Riemann hypothesis: still open\n   - Yang-Mills existence and mass gap: still open\n\n   The Poincaré conjecture took about 100 years. Some of these problems might be harder than others.\n\n4. **AI contribution requirement**: The event requires AI to have contributed an identifiable new mathematical argument or proof step. This is a lower bar than AI independently solving it - human-AI collaboration counts. So even if a human makes the key breakthrough but AI verified or found a critical lemma, that would count.\n\n5. **My probability estimates**:\n\nFor 2026 (end of year): This is only about 4-5 months from the forecast date. The probability is essentially zero. The Hodge conjecture has been open for 70+ years and no one is close. Even with AI assistance, a complete solution in 4 months is virtually impossible.\n- Estimate: 0.001 or essentially 0. Let me say 0.002.\n\nFor 2030 (about 4 years): AI will be more capable but likely not at a level where it can tackle problems of this magnitude. The Hodge conjecture requires deep new ideas. Even with AI assistance, I'd estimate this is very unlikely but not impossible.\n- Estimate: 0.01 (1%)\n\nFor 2035 (about 9 years): AI systems could be significantly more capable. If AI can do genuine mathematical research at a high level, there's a small chance it could make progress on this. But the Hodge conjecture is particularly resistant - it requires connecting topology with algebraic geometry in a deep way. I'd estimate maybe 2-5%.\n- Estimate: 0.03\n\nFor 2040 (about 14 years): AI could be at a superhuman level for mathematical reasoning. If AI can do mathematics that's genuinely beyond human capability, the probability increases. But the Hodge conjecture might be one of those problems that requires a specific type of insight or a new branch of mathematics. I'd estimate maybe 5-10%.\n- Estimate: 0.08\n\nFor 2050 (about 24 years): If AI has achieved AGI or beyond and can do mathematics far beyond human capability, the probability is higher. But there's still a chance that the Hodge conjecture is \"hard\" in a way that's resistant to computational approaches, or that it requires a specific conceptual breakthrough that takes a specific path. Over 24 years, with AI at superhuman levels, I'd estimate maybe 15-25%.\n- Estimate: 0.18\n\nLet me reconsider. The Hodge conjecture is widely regarded as one of the hardest problems. It's not just a matter of computational power - it requires deep new mathematical ideas. The fact that the integral version was disproved suggests the problem is subtler than expected.\n\nHowever, AI in 2040-2050 could be doing mathematics in ways we can't yet predict. If AI can explore vast mathematical landscapes and find connections that humans miss, it could potentially make breakthroughs on these problems.\n\nLet me also consider: the event requires AI to have contributed an identifiable new mathematical argument. This is a lower bar than full AI independence. If AI is a research tool that helps humans, and a human-AI team solves it, that counts.\n\nI think my estimates are reasonable. Let me finalize:\n\n- 2026: 0.002\n- 2030: 0.01\n- 2035: 0.03\n- 2040: 0.08\n- 2050: 0.18\n\nThese seem reasonable given the extreme difficulty of the problem and the uncertain but potentially transformative trajectory of AI capabilities.\n",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.text",
+                  "text": "Let me think carefully about this forecast.\n\nThe Hodge Conjecture is one of the Clay Millennium Prize Problems. It's one of the hardest open problems in mathematics. Let me consider what I know about its difficulty and the current state of research.\n\nKey considerations:\n\n1. **Difficulty of the Hodge Conjecture**: This is widely considered to be one of the hardest problems in mathematics. It's been open since 1950. There's been very little progress on the general case. The integral Hodge conjecture was actually disproved (by Matsui in 2014 and others), which is interesting but doesn't help with the rational version. The rational Hodge conjecture remains open. Some special cases are known, but the general case is extremely difficult.\n\n2. **AI capabilities and trajectory**: \n   - By 2026: AI like me (and systems beyond) can assist with mathematical reasoning, but for problems at the level of the Hodge conjecture, AI is likely still in an assistive role rather than independently solving them. AI might help with specific computational aspects or suggest approaches.\n   - By 2030: AI systems may be significantly more capable. They might be able to handle more complex proof searches, verify proofs, and potentially discover new lemmas. However, the Hodge conjecture likely requires deep new mathematical ideas that go beyond pattern matching or brute-force search.\n   - By 2035: AI could potentially be at a level where it's a genuine research partner. It might be able to make novel mathematical discoveries. But the Hodge conjecture is so hard that even the best human mathematicians haven't cracked it in 70+ years.\n   - By 2040: AI systems could be far beyond human capability in mathematical reasoning. If AI can do genuinely creative mathematics, it might tackle problems like this. But there's no guarantee that AI approaches will succeed on problems that require specific types of insight.\n   - By 2050: If AI has achieved superhuman mathematical capability, the probability increases substantially. But the Hodge conjecture might be inherently resistant to certain approaches, or it might be that the problem requires a specific type of insight that takes a specific path.\n\n3. **Historical context for Millennium problems**:\n   - Poincaré conjecture: solved in 2003 (Perelman)\n   - Birch and Swinnerton-Dyer: still open\n   - Navier-Stokes: still open\n   - Hodge conjecture: still open\n   - Riemann hypothesis: still open\n   - Yang-Mills existence and mass gap: still open\n\n   The Poincaré conjecture took about 100 years. Some of these problems might be harder than others.\n\n4. **AI contribution requirement**: The event requires AI to have contributed an identifiable new mathematical argument or proof step. This is a lower bar than AI independently solving it - human-AI collaboration counts. So even if a human makes the key breakthrough but AI verified or found a critical lemma, that would count.\n\n5. **My probability estimates**:\n\nFor 2026 (end of year): This is only about 4-5 months from the forecast date. The probability is essentially zero. The Hodge conjecture has been open for 70+ years and no one is close. Even with AI assistance, a complete solution in 4 months is virtually impossible.\n- Estimate: 0.001 or essentially 0. Let me say 0.002.\n\nFor 2030 (about 4 years): AI will be more capable but likely not at a level where it can tackle problems of this magnitude. The Hodge conjecture requires deep new ideas. Even with AI assistance, I'd estimate this is very unlikely but not impossible.\n- Estimate: 0.01 (1%)\n\nFor 2035 (about 9 years): AI systems could be significantly more capable. If AI can do genuine mathematical research at a high level, there's a small chance it could make progress on this. But the Hodge conjecture is particularly resistant - it requires connecting topology with algebraic geometry in a deep way. I'd estimate maybe 2-5%.\n- Estimate: 0.03\n\nFor 2040 (about 14 years): AI could be at a superhuman level for mathematical reasoning. If AI can do mathematics that's genuinely beyond human capability, the probability increases. But the Hodge conjecture might be one of those problems that requires a specific type of insight or a new branch of mathematics. I'd estimate maybe 5-10%.\n- Estimate: 0.08\n\nFor 2050 (about 24 years): If AI has achieved AGI or beyond and can do mathematics far beyond human capability, the probability is higher. But there's still a chance that the Hodge conjecture is \"hard\" in a way that's resistant to computational approaches, or that it requires a specific conceptual breakthrough that takes a specific path. Over 24 years, with AI at superhuman levels, I'd estimate maybe 15-25%.\n- Estimate: 0.18\n\nLet me reconsider. The Hodge conjecture is widely regarded as one of the hardest problems. It's not just a matter of computational power - it requires deep new mathematical ideas. The fact that the integral version was disproved suggests the problem is subtler than expected.\n\nHowever, AI in 2040-2050 could be doing mathematics in ways we can't yet predict. If AI can explore vast mathematical landscapes and find connections that humans miss, it could potentially make breakthroughs on these problems.\n\nLet me also consider: the event requires AI to have contributed an identifiable new mathematical argument. This is a lower bar than full AI independence. If AI is a research tool that helps humans, and a human-AI team solves it, that counts.\n\nI think my estimates are reasonable. Let me finalize:\n\n- 2026: 0.002\n- 2030: 0.01\n- 2035: 0.03\n- 2040: 0.08\n- 2050: 0.18\n\nThese seem reasonable given the extreme difficulty of the problem and the uncertain but potentially transformative trajectory of AI capabilities.\n",
+                  "format": "unknown",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 415,
+          "completion_tokens": 1425,
+          "total_tokens": 1840,
+          "cost": 0.002734125,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.002734125,
+            "upstream_inference_prompt_cost": 6.225e-05,
+            "upstream_inference_completions_cost": 0.002671875
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1444,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

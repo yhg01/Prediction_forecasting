@@ -1,0 +1,84 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Navier-Stokes existence and smoothness\nMathematical target, paraphrased from the original Clay formulation: For the three-dimensional incompressible Navier-Stokes equations with positive viscosity, establish one of Fefferman's four alternatives. (A) Every smooth divergence-free initial velocity on R^3, rapidly decaying with all derivatives, admits a global smooth velocity-pressure solution with uniformly bounded kinetic energy when the external force is zero. (B) Every smooth divergence-free spatially periodic initial velocity admits a global smooth solution with spatially periodic velocity when the force is zero. (C) Some such rapidly decaying initial velocity and some smooth force on R^3 admit no global smooth solution with uniformly bounded kinetic energy; the force and all its derivatives must decay faster than every inverse power of 1+|x|+t. (D) Some smooth periodic divergence-free initial velocity and smooth periodic force admit no global smooth solution with periodic velocity; the force and all its derivatives must decay faster than every inverse power of 1+t. The periodic domain is R^3/Z^3. Any one alternative meets the stated mathematical target.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:07:25.127354+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 5.514,
+      "response": {
+        "id": "gen-1790698039-JJAE5Cm6pF4O4vobnt1w",
+        "object": "chat.completion",
+        "created": 1790698039,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.02,\"2030\":0.12,\"2035\":0.25,\"2040\":0.4,\"2050\":0.55}",
+              "refusal": null,
+              "reasoning": null,
+              "reasoning_details": [
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-I8o4d5TRYcv-Z7xPtzEhTRcdXDp3GVtFV0c1RseKTji13wMMta90QHoCM2YJdcgXJNyMFhxwOg1HIIuS3IkJs7wsZwUXdhpKTGoIrOq8M9ypOPPaZpo6WWvj7s-rfiGjUU_w7wWF369iOTCYZzUsHBxsouCA82JGF4FoyMDCRHuIUF113QxeoXDAKVzkAFAFgibRRVoqLIY-KZB_zMYuiL8DHYxqbUKQXlRJeVjR_QdEwSFVEiY3aJcUuhk_RJ4vFlYfJewd7v66efJZ6KB66ydcIkuCXP_gCq34A_P33XiQXrnmJ2f853mUx60EqjPl1jw_U_aCFV84XF0fFhJvNd9l4IHgEZk24swFVfzvntzGJPNtIQRxI-5SiutKMOS1BH7dGI8Eo4DS7Ns6W1Jv9530SBVysDJ72K8dHebfpHnBuN5vGgLoBIjhSjlS0AbTqqUURBHjMy6jSi5evcyx29GnmS_5yhS6KBp8QwGKtU92ut3MVJTsA-nTToTwnEATILeLnwnzYKI0pyguuQcZUP0tJ1zFTMD5MREkTRFaMo_f4LmkdCE9QBOv-CzDgcjcsvO-lSxPRvssfM5VJSf5wUjkJ7iUh_cNlDa4KvW9tuBkeBVKYZZWdcecJRTgeMf6nITJxx-QCxkp8EHfuKCknoRWSGAs8aC0L2B8V7a1-5DSyZaJGRivR9fiF-gsvRSkRNz3rjDIQtmiBFSM_s5TDbCQ7j2QHjvmaDQOE6Ks27fA2_bbqJ8YJ39pXbW7HGqUsmudqG6mheOj9ERqnwjHlhZXHYBF66n0HHbtNdx1sR9lMA8cJ5cU_6eFsC0wbxTrw87FD9BUjZn84ZWImyVuQpwbKK8O7FJmeNo8cO-cYcuuptSnUL4N4q1DBHr1n-uyLmewDgS3SZkLnyPEBvDx7DZdgtIyvn2uxzMSTpkB7i_kjICDuudk3vH_7pmIy2Eyh0vzjxin51_ayR5pNDJJUAQbunv_IRA7vpEpO2TW111ZNn_bh9YBTHKZ1oWvr0O5sndYmy7R2n_gWzgojGJ0x-_snhgiRyjikwIzDmlZOQ3qz5th2-BkcLyA7tXugmV74FHDIHleoUrISRdkWbwS1BNTiIP6ODpM40zGZozq9Gu3fx-J_eUfhbe3EEoLhAmHXyJslwv83cIo2lksyop2XZszuVyCS2aRvlX13p6Xi_pfw69Rf1bOjiB3iDUMbwU-JVvuRVo-pwaQb9ntcG1KOy2lZJjbYAGpt9UfJmzcnKkQRrHHQVdgVDV_0UI6PEuMtb7Ysdo9L0XZIQLbsasDEBaWBgfcsBCKvUKoZKUsswV6_Jrv2bL3q1bSoh-MfVij8x5H1brRZgumAloSQhvLMqsxt39huhFkZFqiyv71CtHMbrVjT6K8dUbkZXcNs1VX9-8iYTTpm2U_ML7SB3P2ibsxOvpNlkbY8w05ClcSyiip7Bo-VH9aVCx8F0Ef8c4oTw_u-YY_R5mAQ-1p8cG1Y-Pw-fvaZwMfvRLzh-j9VBWEMfbuo8EfUGsIosC1v82RGQs3kNaa4P_7pTfFGAfu6kX_rh09jwXuLtdMyrcvPy8s6w-bduNYim5MeZwVboOK1bhdaBAVKw9FibTQdmL-dF7FpFWo6hMn987Wt_GXj_x4KrDWzaF1oOJjELKJX-WmVlW4R5zTQKUhMxsnLBFmHAFKFa6Acc-actnZP0x5i6QRysOQDA5ZJQ2FjNzXFYkfg_mkMvQWotjGGqU6jNv1ML8um2zd5UdbC0vxjt5ZdQglBfIFbut-4y5_-EXBSd4YqlFoSRf7QjeLUVc0jQdqcln2k7aDwcP4WTxMkxOjW0wXtyk3WeGSJRgp-fcv1_cthEtvaHvtd3-_dqmk6Wkz4rTOWM0tBPwL9rpbB7QEYGN-Q21KIYLNJeWbEAODQ02DrqU-8zznQuJS7KugQz0HZ5yCcDDyhBxJKFEH42BJcV4ROK1WnIJQS6x8axyYYgwTmD-H0jAc7Ru230bFY3euHkZCM5gcogAouhit3hoVUnjESfHr9xII4nwNFG36GfynEHntmFsPKfs3yR3pPjNTCi1qVmCgtWJKKpZ9ipWWVDmhlM_82hXi7PXuI1OaN5DMX4wLB6Iy9LG4BpepEi50Y9KYQPM7TFOtocvYkcjV6QRa8NZzEyWhcAcSjN3a8xpXOY4i7RR7sfSuxks1GvD33aspszQgJYQ8fSQkWfK6ZSl_aBQDwrj-PdDMhWuceIuOl9shoOypVBVfhUG344dRtWs_YELOrOtndqVv3jpMelo4bMqxmSeOtP7Y0vMa80QZXb92BH_Hdn5xQ7pjGUStlqFJNz3Na8BD11umatKJ_BB0_-Ll0TtjW-Qkd5d8_HcvvydMFPbf38thWvN4TfcEyRhsNqQI0RYHgdNy_xoo4n4q7INq73Jop3IZKgTgnaQ7MZ6ASf6GasRTHa6bM7K5b_Tu9HEl5wsyiKXMB_byGXo9c-2My-vljq9CXYbqSX6WvLBI9qNd0_-yptTUrCxt5dNdKntlzUUAWDHYREN8-uBVZ4oCQEoK3806nIir4aMzHYZXq-3hx8RdRiR8Z51mXRJvxqTD2R1Z2AaH3TsyEkJPWOCa8I5VOA_FB2ydOIfbfaHBSU4kf_hJM04bdz1LhbeI02tSvqhBsUJ22xaJiPbGSaU5wLGgE4auhkEsiAOAf2l0CuW623tcqLI18WFmyLwxXowDb8j7HUyLmdpP76JeqJm7icEqxeNIYVrGkL7ZJkfdBGw8xQaGzWIG9SsKH5U5PGQGr7xSYydKOzCEAz2Ww5hwakcn7g4GcuBqUxZXLGht2Ql8Qpd74VktdBZQGcbJFOXZWCwy-WI0oA7pWRCIvyBlE2AATlYDbutB3In0t2woFU71iEoqOVd-6G_EhoB399QxBY2LPfXR0ci7WlYLm-DhtoShKgKl7_ieBEhnoYZejHL0U3K_wbmxT5kiz4wEmflzDlfYg9W63t4JnqSh4MfSY5jNb-8xgvEPoOvFIXpdMQ4euxO1Z4N_HZ0HwcB6G-qK9kEPNTTB822ToiZ6YYy9K0yT-2KDbKpJdyQGMaGb7EGAaAXjhkuusoLAcWfFt-Mk6k1nYriCX5_1qy5UyzyQzTSE77m5P_bFT5nZmwu33qdGMs4Eyp2sDnX11ohk9X8ZdbtVhN8bJUH7RdlXyMGuYccXbzgmmrb1uhpeMyaN96zazlLyJz7uGYGuqJCsa5v4BdycTfIXmUa2o_WJtOXCrx16cT9kNaJ3abadJD5EZSav_T7kUIoYvzZ3XFcx4IJo-FWgAvQXVcBHuQ3ZIreYF8luM16nyXtFbY6wv-cKaYkH3GNhNRNleu-ldrzO0Tjik2mtVdv4yo8WKLssicjKxzEz405hiU4uVd6NQdvf8UMm0vqmzL12kicKcI5l3B18kN1vziQckNC5auQ7O8VFTJXDuTZax1Qb1qf0YDU4ZNCUyVzwS0yLq0hjX2zNX7aFgKHAw73eFGmb9SCQvd7quZkqAB7IWqKR09qF2E_BrxFd_YDLQqI55lTWz6pla90gPYCPbgOKBuCc87JIxpObYGBvGposzGgCrRbLqH-MFW6gTfxiWsTMcmQIO6qQy7PyPeDAbkHAofgL9g1SUxdNgIkp7-qPTm1toE6nYXgypR_qAAUr3ae4Mf8wzLS-s1WUjVfiyM8Q-k1W8fI8uMEoIRGn512pNOFtLGk1iUCAiurjgdjdSgfoIED9bK9u_oytDf-AEICRdt_40W5Yvuh3UGkjcv5QDrW7tghbRloZSfh6LSJmD_7oCuiethlm-C9SzkQ5mZ-RelObrhGBPuRVljnJlKM2R1_qUi5IvzYOhPZextrklVozAfaj-ZxOjYubMuQ7duSIBvrEyJIYA8yhET7luH9xF3Jh6jYcIqs9q5H1NQaawTsqAJYS9V-8MeBlWwpBR1MKIX6kybHlMEHu9noGOKSozFa8foJ4KAUPzsoERs_k5cdT1ZNwb9Gj05m-WssZvzej6FiRDNQ87yN8Oh0E_jEyFaQCbnTIMhY2-b49XErcSXF-WAUKBx16fH0FBAZYuo-itxytAscixdzmff6nSA0kjnvTH35HJe.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0cd5e788afbf15f8016abbe2385e8487d1803a8e3077aa44b3",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 454,
+          "completion_tokens": 598,
+          "total_tokens": 1052,
+          "cost": 0.005692,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.005692,
+            "upstream_inference_prompt_cost": 0.000908,
+            "upstream_inference_completions_cost": 0.004784
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 512,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

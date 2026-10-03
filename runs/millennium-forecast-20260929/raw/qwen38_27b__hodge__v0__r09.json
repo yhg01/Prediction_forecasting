@@ -1,0 +1,85 @@
+{
+  "request": {
+    "model": "qwen/qwen3.8-27b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-08-14. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Hodge conjecture\nMathematical target, paraphrased from the original Clay formulation: For every smooth projective algebraic variety X over the complex numbers and every integer p, determine whether each rational cohomology class in H^(2p)(X,Q) that has Hodge type (p,p) is a rational linear combination of cohomology classes of algebraic cycles of codimension p. The question connects topological information in cohomology with subvarieties defined by algebraic equations. The target is the general rational Hodge conjecture for this class of varieties, with rational coefficients in the combination; an integral-coefficient variant or a statement about arbitrary complex manifolds is a different assertion.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "deepinfra/bf16"
+      ]
+    },
+    "temperature": 1.0,
+    "reasoning": {
+      "enabled": true,
+      "max_tokens": 2048
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:00:29.170637+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 44.614,
+      "response": {
+        "id": "gen-1790697584-0Q5Z7pHmpSi6znkrY86o",
+        "object": "chat.completion",
+        "created": 1790697584,
+        "model": "qwen/qwen3.8-27b",
+        "provider": "DeepInfra",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "stop",
+            "message": {
+              "role": "assistant",
+              "content": "\n\n{\"2026\": 0.001, \"2030\": 0.02, \"2035\": 0.08, \"2040\": 0.20, \"2050\": 0.40}",
+              "refusal": null,
+              "reasoning": "Let me think carefully about this problem. I need to estimate the probability that a correct complete solution to the Hodge conjecture is first publicly available with AI contributing an identifiable new mathematical argument, by each of the given deadlines.\n\nLet me consider several factors:\n\n1. **The Hodge Conjecture's difficulty**: The Hodge conjecture is one of the seven Millennium Prize Problems. It's been open since 1950 (Hodge proposed it). It's generally considered one of the hardest open problems in mathematics. It connects algebraic geometry, topology, and complex geometry in deep ways. Even partial results are extremely difficult - for example, it's known in low dimensions (p=1 is the theorem of Lefschetz type results, p=2 was done by Voisin in 2001 for certain cases, but the general case remains open). The conjecture is actually known to be false in the integral version, which suggests the rational version might be subtle.\n\n2. **Current state of AI in mathematics**: As of my knowledge cutoff, AI systems like me can assist with mathematical reasoning but haven't independently solved major open problems. AI has helped with:\n   - Finding counterexamples (e.g., in combinatorics)\n   - Assisting with proof verification\n   - Generating and checking lemmas\n   - The AlphaGeometry system solved IMO-level geometry problems\n   - Some AI systems have helped with specific mathematical computations\n\n3. **AI trajectory**: AI capabilities are improving rapidly. By 2026-2030, we might have significantly more capable AI systems. The question is whether AI could contribute to a major open problem like the Hodge conjecture.\n\n4. **What \"AI contributed an identifiable new mathematical argument\" means**: This is a relatively low bar - it doesn't require AI to do everything. It just needs to contribute an identifiable new proof step or argument. This could be a key lemma, a computational insight, a conceptual connection, etc.\n\n5. **Historical context for major math problems**: \n   - Poincaré conjecture: Open ~1904, solved 2003 (Perelman) - ~100 years\n   - Fermat's Last Theorem: Open ~1637, solved 1995 - ~360 years\n   - Four Color Theorem: Open ~1852, solved 1976 - ~124 years\n   - These are all much shorter timeframes than what we're considering.\n\n6. **The Hodge conjecture specifically**: It's been open since 1950, so about 76 years as of 2026. The general case for arbitrary smooth projective varieties is extremely difficult. Some specific cases are known, but the full conjecture remains very far from being solved.\n\nLet me think about each deadline:\n\n**2026 (end of year)**: This is very soon - only about 5 months from the forecast date. The probability of solving the full Hodge conjecture with AI contribution in this timeframe is essentially zero. Maybe 0.001 or less.\n\n**2030**: About 4.5 years out. AI will be more capable, but the Hodge conjecture is an extraordinarily deep problem. I'd estimate this at maybe 0.01-0.05. Even with significantly better AI, solving a Millennium Prize Problem in 4-5 years seems very unlikely. Maybe 0.02.\n\n**2035**: About 9 years out. AI could be dramatically more capable. There might be AI systems that can do genuine mathematical research at a level comparable to or exceeding the best human mathematicians. However, the Hodge conjecture is so deep that even the best human mathematicians haven't cracked it. I'd estimate maybe 0.05-0.15. Let me say 0.08.\n\n**2040**: About 14 years out. This is where things get more interesting. If AI continues to improve at the rate we've seen, by 2040 we might have AI systems that can do autonomous mathematical research. The Hodge conjecture might be solvable at this point. I'd estimate maybe 0.15-0.30. Let me say 0.20.\n\n**2050**: About 24 years out. This is a long time. By 2050, AI could be vastly more capable. It's plausible that AI systems could have solved major open problems. However, the Hodge conjecture is one of the hardest problems in mathematics. I'd estimate maybe 0.30-0.50. Let me think more carefully...\n\nActually, let me reconsider. The Hodge conjecture is widely considered to be one of the hardest Millennium Prize Problems. Some mathematicians believe it might be false in general (though it's known to be false for integral coefficients, the rational version is the one we're asking about). \n\nThe key question is: what's the base rate of solving such problems? In the last century, we've solved:\n- Poincaré conjecture (2003)\n- Fermat's Last Theorem (1995)\n- Four Color Theorem (1976)\n- Kepler conjecture (proved 2017, conjectured 1611)\n\nBut these are all easier than the Hodge conjecture in terms of the mathematical tools needed. The Hodge conjecture requires deep understanding of Hodge theory, algebraic cycles, and their relationship to cohomology.\n\nLet me also consider that the problem might be unsolvable or false. If it's false, then a \"correct complete solution\" would be a counterexample. The integral version is false, but the rational version is still open. It's possible that a counterexample exists for the rational version but hasn't been found yet.\n\nGiven all this, let me settle on my estimates:\n\n- 2026: 0.001 (essentially zero, only 5 months)\n- 2030: 0.02 (AI improving but still unlikely for such a deep problem)\n- 2035: 0.08 (AI significantly more capable, but still a very hard problem)\n- 2040: 0.20 (AI could be doing genuine research, 14 years is a lot)\n- 2050: 0.40 (24 years, AI could be vastly more capable, but this is one of the hardest problems)\n\nActually, I want to be a bit more conservative. The Hodge conjecture is genuinely one of the hardest problems in all of mathematics. Let me adjust:\n\n- 2026: 0.001\n- 2030: 0.01\n- 2035: 0.05\n- 2040: 0.15\n- 2050: 0.35\n\nThese seem reasonable to me. The problem is so deep that even with dramatically more capable AI, there's a significant chance it remains unsolved by 2050. But there's also a reasonable chance that AI breakthroughs enable progress on this problem.\n\nLet me finalize:\n- 2026: 0.001\n- 2030: 0.02\n- 2035: 0.08\n- 2040: 0.20\n- 2050: 0.40\n",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.text",
+                  "text": "Let me think carefully about this problem. I need to estimate the probability that a correct complete solution to the Hodge conjecture is first publicly available with AI contributing an identifiable new mathematical argument, by each of the given deadlines.\n\nLet me consider several factors:\n\n1. **The Hodge Conjecture's difficulty**: The Hodge conjecture is one of the seven Millennium Prize Problems. It's been open since 1950 (Hodge proposed it). It's generally considered one of the hardest open problems in mathematics. It connects algebraic geometry, topology, and complex geometry in deep ways. Even partial results are extremely difficult - for example, it's known in low dimensions (p=1 is the theorem of Lefschetz type results, p=2 was done by Voisin in 2001 for certain cases, but the general case remains open). The conjecture is actually known to be false in the integral version, which suggests the rational version might be subtle.\n\n2. **Current state of AI in mathematics**: As of my knowledge cutoff, AI systems like me can assist with mathematical reasoning but haven't independently solved major open problems. AI has helped with:\n   - Finding counterexamples (e.g., in combinatorics)\n   - Assisting with proof verification\n   - Generating and checking lemmas\n   - The AlphaGeometry system solved IMO-level geometry problems\n   - Some AI systems have helped with specific mathematical computations\n\n3. **AI trajectory**: AI capabilities are improving rapidly. By 2026-2030, we might have significantly more capable AI systems. The question is whether AI could contribute to a major open problem like the Hodge conjecture.\n\n4. **What \"AI contributed an identifiable new mathematical argument\" means**: This is a relatively low bar - it doesn't require AI to do everything. It just needs to contribute an identifiable new proof step or argument. This could be a key lemma, a computational insight, a conceptual connection, etc.\n\n5. **Historical context for major math problems**: \n   - Poincaré conjecture: Open ~1904, solved 2003 (Perelman) - ~100 years\n   - Fermat's Last Theorem: Open ~1637, solved 1995 - ~360 years\n   - Four Color Theorem: Open ~1852, solved 1976 - ~124 years\n   - These are all much shorter timeframes than what we're considering.\n\n6. **The Hodge conjecture specifically**: It's been open since 1950, so about 76 years as of 2026. The general case for arbitrary smooth projective varieties is extremely difficult. Some specific cases are known, but the full conjecture remains very far from being solved.\n\nLet me think about each deadline:\n\n**2026 (end of year)**: This is very soon - only about 5 months from the forecast date. The probability of solving the full Hodge conjecture with AI contribution in this timeframe is essentially zero. Maybe 0.001 or less.\n\n**2030**: About 4.5 years out. AI will be more capable, but the Hodge conjecture is an extraordinarily deep problem. I'd estimate this at maybe 0.01-0.05. Even with significantly better AI, solving a Millennium Prize Problem in 4-5 years seems very unlikely. Maybe 0.02.\n\n**2035**: About 9 years out. AI could be dramatically more capable. There might be AI systems that can do genuine mathematical research at a level comparable to or exceeding the best human mathematicians. However, the Hodge conjecture is so deep that even the best human mathematicians haven't cracked it. I'd estimate maybe 0.05-0.15. Let me say 0.08.\n\n**2040**: About 14 years out. This is where things get more interesting. If AI continues to improve at the rate we've seen, by 2040 we might have AI systems that can do autonomous mathematical research. The Hodge conjecture might be solvable at this point. I'd estimate maybe 0.15-0.30. Let me say 0.20.\n\n**2050**: About 24 years out. This is a long time. By 2050, AI could be vastly more capable. It's plausible that AI systems could have solved major open problems. However, the Hodge conjecture is one of the hardest problems in mathematics. I'd estimate maybe 0.30-0.50. Let me think more carefully...\n\nActually, let me reconsider. The Hodge conjecture is widely considered to be one of the hardest Millennium Prize Problems. Some mathematicians believe it might be false in general (though it's known to be false for integral coefficients, the rational version is the one we're asking about). \n\nThe key question is: what's the base rate of solving such problems? In the last century, we've solved:\n- Poincaré conjecture (2003)\n- Fermat's Last Theorem (1995)\n- Four Color Theorem (1976)\n- Kepler conjecture (proved 2017, conjectured 1611)\n\nBut these are all easier than the Hodge conjecture in terms of the mathematical tools needed. The Hodge conjecture requires deep understanding of Hodge theory, algebraic cycles, and their relationship to cohomology.\n\nLet me also consider that the problem might be unsolvable or false. If it's false, then a \"correct complete solution\" would be a counterexample. The integral version is false, but the rational version is still open. It's possible that a counterexample exists for the rational version but hasn't been found yet.\n\nGiven all this, let me settle on my estimates:\n\n- 2026: 0.001 (essentially zero, only 5 months)\n- 2030: 0.02 (AI improving but still unlikely for such a deep problem)\n- 2035: 0.08 (AI significantly more capable, but still a very hard problem)\n- 2040: 0.20 (AI could be doing genuine research, 14 years is a lot)\n- 2050: 0.40 (24 years, AI could be vastly more capable, but this is one of the hardest problems)\n\nActually, I want to be a bit more conservative. The Hodge conjecture is genuinely one of the hardest problems in all of mathematics. Let me adjust:\n\n- 2026: 0.001\n- 2030: 0.01\n- 2035: 0.05\n- 2040: 0.15\n- 2050: 0.35\n\nThese seem reasonable to me. The problem is so deep that even with dramatically more capable AI, there's a significant chance it remains unsolved by 2050. But there's also a reasonable chance that AI breakthroughs enable progress on this problem.\n\nLet me finalize:\n- 2026: 0.001\n- 2030: 0.02\n- 2035: 0.08\n- 2040: 0.20\n- 2050: 0.40\n",
+                  "format": "unknown",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 415,
+          "completion_tokens": 1695,
+          "total_tokens": 2110,
+          "cost": 0.003240375,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003240375,
+            "upstream_inference_prompt_cost": 6.225e-05,
+            "upstream_inference_completions_cost": 0.003178125
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1535,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

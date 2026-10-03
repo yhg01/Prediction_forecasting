@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: P versus NP\nMathematical target, paraphrased from the original Clay formulation: Determine whether P equals NP in the standard deterministic and nondeterministic Turing-machine model. P contains decision problems solvable in polynomial time; NP contains decision problems whose affirmative answers have certificates of polynomial length that a deterministic algorithm can check in polynomial time. A resolution must establish whether every problem in NP has a deterministic polynomial-time algorithm, or whether at least one does not. The target concerns worst-case asymptotic computational complexity for unrestricted algorithms, rather than success on a finite collection of instances or an improvement to one particular algorithm.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:58:25.604474+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 8.36,
+      "response": {
+        "id": "gen-1790697497-A6iLh9q69C4Ol4U1P7q0",
+        "object": "chat.completion",
+        "created": 1790697497,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.01, \"2030\": 0.05, \"2035\": 0.15, \"2040\": 0.25, \"2050\": 0.4}",
+              "refusal": null,
+              "reasoning": "**Determining probabilities for deadlines**\n\nThe user wants me to calculate the probability for each deadline regarding when the event occurs, ensuring the earliest date is the smallest and the last is the largest. I’ll work out probabilities that don’t exceed 1, keeping them nondecreasing. After some consideration, I’m thinking to adjust values slightly higher: like 0.001 for 2026, 0.005 for 2030, 0.01 for 2035, 0.02 for 2040, and perhaps 0.05 for 2050 to better reflect the scenario.**Finalizing probability estimates**\n\nI’m considering a new probability distribution: 0.02 for 2026, 0.05 for 2030, and so forth, but I want to be cautious about the uncertainty surrounding P versus NP. The user asked for my best estimates, knowing there’s no exact answer. After some thought, I might lean towards 1% for 2026, 5% for 2030, and higher estimates for later years. This setup seems reasonable: 0.01 for 2026, 0.05 for 2030, 0.15 for 2035, 0.25 for 2040, and 0.40 for 2050. It all fits nicely together!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Determining probabilities for deadlines**\n\nThe user wants me to calculate the probability for each deadline regarding when the event occurs, ensuring the earliest date is the smallest and the last is the largest. I’ll work out probabilities that don’t exceed 1, keeping them nondecreasing. After some consideration, I’m thinking to adjust values slightly higher: like 0.001 for 2026, 0.005 for 2030, 0.01 for 2035, 0.02 for 2040, and perhaps 0.05 for 2050 to better reflect the scenario.**Finalizing probability estimates**\n\nI’m considering a new probability distribution: 0.02 for 2026, 0.05 for 2030, and so forth, but I want to be cautious about the uncertainty surrounding P versus NP. The user asked for my best estimates, knowing there’s no exact answer. After some thought, I might lean towards 1% for 2026, 5% for 2030, and higher estimates for later years. This setup seems reasonable: 0.01 for 2026, 0.05 for 2030, 0.15 for 2035, 0.25 for 2040, and 0.40 for 2050. It all fits nicely together!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-AheMGdmJUOV9BKl5bRouhfngwGHa6-axQJd17Ie-5f1PDOYaE6jkcmmNp-ZKwecEwX-P9Jk13XCguGTxuG4NbSyeBLGjumkM1kgn-4pfNAIvzwRxwWQNCESALYDq1twAqC2B7g6ySvryxNxBW3QgGtU95C8aF-PVueVRWqmu2LNjgefyb66ip90x56PXVVzN3chFY-KO3A6BFwFIDzjFpu38GAkOkoVLdsuLxt-1lKSKACXCP9X28IF-oAy2v1mCMua01bdSfvtPBO-4LFAO4TNGR-Su-k7pcdNkoOPdCPgf6th2-zc4LCKqH8-uNP7jq9xGH34XPwEUK1zpD5OqFvD7jYDEDLdz3tCWtT4dXl3ElM6v3JWDo2N-jlpj2SdRxfUVnD-WGjEUo60H44_4SVYx6YrBXYP0qDTkWC4etrECi-KWF4aUKiEm1xwPpYE1_ScYz6VcFIWIf18CAnWX34eX0l-4Ojm71DZCBWoooqSm-Updc1ehhsAUUaPZYJadGSGZSo28GhjyZdKG-RqflHj7tVlhxYZtQZ_BDc2OXFmkXH9v01H3JmZohSa3_kvMRffn7QEHEmRBkWd8t2IPR1-bxYBaTlRCBoFMRC_k2rMx5p7oCjJh65DDCu6mQE4LFFz5clQ5GDbZ_EgAugy-IxbPLsXrdDMxGMzHfnAunuMruCtUVqMT_ZBUYJFsSFeUmvSaPJFLFSasjIx3bK8HGSsT8uwqo0cdrIsXAAzkZZ9eeMCxL5rJPDzx--x7bf4TRRatmOrjhWEwaTGu8N_0TLCDWxJ-j_fGNIOdQxhtkp8CxV4yO9R3KBaD7MYvEU5IfHuBExuH8GE2TmyjMjMdTTWxmYq3wjHSodQv7LpOY4LdDxS0OU6dvU_FAMbT9IqAkv0ZED4bA3tauCTGFCHROwRwmPNi1p0WHpReyadQRcomc=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0fdc234db478f76e016abbe019f62087d1bf59693c2b964a29",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 347,
+          "completion_tokens": 1080,
+          "total_tokens": 1427,
+          "cost": 0.070005,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.070005,
+            "upstream_inference_prompt_cost": 0.005205,
+            "upstream_inference_completions_cost": 0.0648
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1024,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

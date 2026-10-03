@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Navier-Stokes existence and smoothness\nMathematical target, paraphrased from the original Clay formulation: For the three-dimensional incompressible Navier-Stokes equations with positive viscosity, establish one of Fefferman's four alternatives. (A) Every smooth divergence-free initial velocity on R^3, rapidly decaying with all derivatives, admits a global smooth velocity-pressure solution with uniformly bounded kinetic energy when the external force is zero. (B) Every smooth divergence-free spatially periodic initial velocity admits a global smooth solution with spatially periodic velocity when the force is zero. (C) Some such rapidly decaying initial velocity and some smooth force on R^3 admit no global smooth solution with uniformly bounded kinetic energy; the force and all its derivatives must decay faster than every inverse power of 1+|x|+t. (D) Some smooth periodic divergence-free initial velocity and smooth periodic force admit no global smooth solution with periodic velocity; the force and all its derivatives must decay faster than every inverse power of 1+t. The periodic domain is R^3/Z^3. Any one alternative meets the stated mathematical target.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:02:34.923742+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 4.027,
+      "response": {
+        "id": "gen-1790697750-KGFo4Iw05rzMfZ4BMzr6",
+        "object": "chat.completion",
+        "created": 1790697750,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.01, \"2030\": 0.03, \"2035\": 0.1, \"2040\": 0.2, \"2050\": 0.4}",
+              "refusal": null,
+              "reasoning": "**Forecasting probabilities**\n\nThe user is looking for a forecast regarding the cumulative probability of a solution to the Navier-Stokes problem, focusing on AI's contribution by various deadlines: 2026, 2030, 2035, 2040, and 2050. I need to provide a JSON object with five keys, representing each year, along with numerical probabilities that range from 0 to 1. These probabilities need to be nondecreasing, which makes this quite challenging! I'll work on estimating these probabilities carefully.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Forecasting probabilities**\n\nThe user is looking for a forecast regarding the cumulative probability of a solution to the Navier-Stokes problem, focusing on AI's contribution by various deadlines: 2026, 2030, 2035, 2040, and 2050. I need to provide a JSON object with five keys, representing each year, along with numerical probabilities that range from 0 to 1. These probabilities need to be nondecreasing, which makes this quite challenging! I'll work on estimating these probabilities carefully.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-EaHOrEtobns9kp-o9AeGHws25tZVSKLifLvpP33JOotjCO3I4MaIITK24puXUqSYWaONjpD3FKa2FRZQMNjQyVdBd2xLlfM-a744X8-MdjbUKvHffE3UbhKxGaS7CFIL6HFJ6lxEOQUqbU7q8uRGuE-LFsdZv58kfQgYXPbcXUHp9b6xl8D9FkWC4Vkyerm9R8Bl0FclNfHgdqMdrKaiTpyLyLX33EHHL8znV-VZJCPfT9tYJ70IAMvUWZsRXVTC7GJ9YynFLwjK0ArQMKKc-sOe_cmVqCPcIRZQdrlA2vmaPQ-CAzdR9kRy3FSlYFtiWYpAfsBZK-ZWSTrDG2zJJTvBXU8a6FIE9ORSuRzKYQfNzFMvHKMSnT3WYxcCE9L5KUHOj8cK5ufV33yuCYP8YB4MUeyfO_A5gL6zbP-66xNbJVXRnCR4qJXjijy96qEFg3HL1HrMHWRRT9DMauQLqko2dtj9ryzoAS5ftvP1mBOsyQfdPtWhNYB-bIPK2J6PHcdMi_Q4Z3cz-KoYesplFml1C5wre0k4xZnXS24QA3k-UHSQ7w9szW5aACXSv13mGME2hyZTgAd88_WvW_CPQhCdUMHMsqZe498ptgK7QFgrqAJOWyu9ZBPq45gA_2EOCFIGg0brtv2CFKJ15w7ub-vJs3SdK2j6XfP4GlLut4rcKGdIAW-mlTdFx8ew2sPlh8UDQO4ZmAgpje9LatYoqUl8gcddVXnzMnYByHmqOdUd6NiGn1OKKVU0r6S35KIT1VbLt7oRvM-XliYj39jlNJIB89O8du8iLghGxovO72yNn4Mu3dYS2JDtdfGdTa1YhKEshEVnGQbkBxpqicL9K5wKC7SR252Gp5YjUS-jC7kZB6i3yjKCVY4Y5xOkYle-iWZ4PWX1CLRgIe41DQHeK-sCwFMX9U_8Rstb5bksQ8S3A=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_007b22c5d6918a30016abbe1176f3087d1a924563068897465",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 449,
+          "completion_tokens": 504,
+          "total_tokens": 953,
+          "cost": 0.036975,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.036975,
+            "upstream_inference_prompt_cost": 0.006735,
+            "upstream_inference_completions_cost": 0.03024
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 448,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

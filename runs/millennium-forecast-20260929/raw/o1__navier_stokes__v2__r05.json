@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Navier-Stokes existence and smoothness\nMathematical target, paraphrased from the original Clay formulation: For the three-dimensional incompressible Navier-Stokes equations with positive viscosity, establish one of Fefferman's four alternatives. (A) Every smooth divergence-free initial velocity on R^3, rapidly decaying with all derivatives, admits a global smooth velocity-pressure solution with uniformly bounded kinetic energy when the external force is zero. (B) Every smooth divergence-free spatially periodic initial velocity admits a global smooth solution with spatially periodic velocity when the force is zero. (C) Some such rapidly decaying initial velocity and some smooth force on R^3 admit no global smooth solution with uniformly bounded kinetic energy; the force and all its derivatives must decay faster than every inverse power of 1+|x|+t. (D) Some smooth periodic divergence-free initial velocity and smooth periodic force admit no global smooth solution with periodic velocity; the force and all its derivatives must decay faster than every inverse power of 1+t. The periodic domain is R^3/Z^3. Any one alternative meets the stated mathematical target.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:06:47.811400+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 6.779,
+      "response": {
+        "id": "gen-1790698001-U6rXuOJZSkzDRL5AoTsS",
+        "object": "chat.completion",
+        "created": 1790698001,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.01,\"2030\":0.03,\"2035\":0.08,\"2040\":0.15,\"2050\":0.3}",
+              "refusal": null,
+              "reasoning": "**Estimating future probabilities**\n\nI'm imagining probability estimates for certain years. For 2026, perhaps around 0.02, then 0.05 for 2030, moving to 0.1 for 2035, 0.15 for 2040, and maybe up to 0.2 for 2050. But who knows? There might be some significant advancements in AI that I can't predict accurately. Also, I’m considering various approaches, with conservative estimates suggesting higher probabilities like 0.05, 0.15, 0.3, increasing over time.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating future probabilities**\n\nI'm imagining probability estimates for certain years. For 2026, perhaps around 0.02, then 0.05 for 2030, moving to 0.1 for 2035, 0.15 for 2040, and maybe up to 0.2 for 2050. But who knows? There might be some significant advancements in AI that I can't predict accurately. Also, I’m considering various approaches, with conservative estimates suggesting higher probabilities like 0.05, 0.15, 0.3, increasing over time.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-IXtM90jBmHOwy1PVZPmknpTbBIXrERJT73CgHg4ffT_oou8U0CQLRm6GC2Ka1JMahDolrT_Nkgc0T6fEi_dHwswkmwTdzIRyE8eoj2bqJgivo335p08JhTt4nIqVnsLWgVduqMzdbypOw9NDYwkAShfGyz-FJyCnhVxig7jiAm7-HLHfY_ABWN8kIWf6bEbM_yXNFNT2s9ft100XMOoq8g6AKKRMRBfO7TGu-JSy_8BZ75FOIcg12YOrui2uSE1DukNv4Kbcs_HbkOHqRTTHPgGXSzta1hoD8E8wnrCSvkks_k0RwK87NiiLYH9iGIS1VZt0PsB6hH2AYlu63tVpPoAnPtlxOPL4CA13ubCdjYIzcWiSZ9VHVsnstmjhIsGAfPKdzet8jZTQlQgxYJXkAqe4BC859M-DXzfy3O6A81kAFaAJy9eO3T0n5DYr7QesWp4QCnLawKAz_Z0O2alhOnMxSEyIFOGHYndUJMpSGKuYh_hFMMsLdbUURCKeaDVJAQm1F0Rb9Z1c2kaziYBudwChra18Gx19BF5dihSbc0tYzQZEJIJ9FUYAoaf8aFHNkp-ZvrR5k5Hs7CN6XtccZRe_da_bOPKz83fhZLIKY5YC63fvYyG06kP2Wy5imonGrWH0UPgauoyfBgoPjh6M2rAZO53dFf99NKY_Ld20LjGG-o61509DHL_M2MePQVSeG8wjpW7Qzmii-HnRfTvtMWF3SRfFikgXrSXPQyujt7y4MMxZnfb9cITsQpNd58CZ7ti9t--Skf2VVxvx9ph5OsUteZpL_ZJiaCOSzfE4nchqLsmt0G0hnRp1J7yQCafxIj91d5ENrutu2MsBC4UdWwKBY6Jz-f6YyEm93KQwrDyOLpUe3ZghgIE4i5UI7TxjdnmyriB55BnszRDZwz24XSOPJL433rc3H4vY13knKKOhA=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0e589c1bd322e7d3016abbe2119db087d1ae3ff48b18f5715d",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 454,
+          "completion_tokens": 558,
+          "total_tokens": 1012,
+          "cost": 0.04029,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.04029,
+            "upstream_inference_prompt_cost": 0.00681,
+            "upstream_inference_completions_cost": 0.03348
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 512,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

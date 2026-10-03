@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Hodge conjecture\nMathematical target, paraphrased from the original Clay formulation: For every smooth projective algebraic variety X over the complex numbers and every integer p, determine whether each rational cohomology class in H^(2p)(X,Q) that has Hodge type (p,p) is a rational linear combination of cohomology classes of algebraic cycles of codimension p. The question connects topological information in cohomology with subvarieties defined by algebraic equations. The target is the general rational Hodge conjecture for this class of varieties, with rational coefficients in the combination; an integral-coefficient variant or a statement about arbitrary complex manifolds is a different assertion.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:49:20.177922+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 9.689,
+      "response": {
+        "id": "gen-1790696950-r6ZUtsLmZasaGVuNQ8NZ",
+        "object": "chat.completion",
+        "created": 1790696950,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.001,\"2030\":0.04,\"2035\":0.16,\"2040\":0.30,\"2050\":0.52}",
+              "refusal": null,
+              "reasoning": "**Estimating AI contributions to mathematics**\n\nI'm considering the probability of AI's contribution to solving mathematical problems, specifically the Hodge conjecture. By 2030, AI's mathematical capabilities could be significantly higher, but formalizing complex problems will still be challenging. I think the likelihood of AI contributing to a solution after 2026 seems plausible. By 2050, I estimate a 35-60% chance for transformative AI to tackle mathematics, especially considering historical examples of rare solutions. If Hodge remains undecidable, there could be additional meta-issues to consider.**Exploring the Hodge conjecture**\n\nI'm considering whether the Hodge conjecture over complex numbers can be encoded in arithmetic. If it turns out to be independent of ZFC, then the definition of a \"correct complete solution\" might need to include proof of independence. However, the goal seems to be finding truth rather than just establishing independence. If Hodge is indeed independent, it might mean there won't be proof at all. The challenge remains that the conjecture could stay unresolved, possibly without AI's contribution.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating AI contributions to mathematics**\n\nI'm considering the probability of AI's contribution to solving mathematical problems, specifically the Hodge conjecture. By 2030, AI's mathematical capabilities could be significantly higher, but formalizing complex problems will still be challenging. I think the likelihood of AI contributing to a solution after 2026 seems plausible. By 2050, I estimate a 35-60% chance for transformative AI to tackle mathematics, especially considering historical examples of rare solutions. If Hodge remains undecidable, there could be additional meta-issues to consider.**Exploring the Hodge conjecture**\n\nI'm considering whether the Hodge conjecture over complex numbers can be encoded in arithmetic. If it turns out to be independent of ZFC, then the definition of a \"correct complete solution\" might need to include proof of independence. However, the goal seems to be finding truth rather than just establishing independence. If Hodge is indeed independent, it might mean there won't be proof at all. The challenge remains that the conjecture could stay unresolved, possibly without AI's contribution.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu93_7yU6KtDcl8e-wp_S5dBt1NWKSc475d2uT-x8ds_dSreDz-ECi7BvKoywX6M00VkDRGm8mql_Nr-8nKdH71_FTgbRYV10xjI9VXXHR1TrYuOuVNi_5xz_x4MN-INCwTkrkYNBoBDvUKYY6s6pWGrm0pmlepT4gpVQy7uiss9VrOidTvzd9BHVB5m8pPs-oeHcNVSYFdSBwy3uzBmfFOnhg6jsutr44XbeLl6SlN5TQ1JWp6qaUwOoNrPlIq8tqwMXK9kDcbwkfvjZqoK2-k46EPFOcT0nEG7KKyOhvg3L9xmv4Bf0fbQnMBC825bXZ6fxinjJGzTT9Okvh-pC9mdnt8tze-0QWrTRuIAxQkRnKJLtzKpqEV_5HM0bx9B_8XDSLSgP6Ya7D7cqOQwJJiN-iRsMg07ulEyRlywdbVNhRH3LMLl1v4lJycK_g3YrLPvyofhGM8Hbkj7hZhKJ7iPgw7vWO077dapG2fjYJ_30mSCXwuS3E9bQYGxwTip7YfKh3wYVsonJpHQHXGSxmXRDxUiaTGnrkHG_03Gzg1ByREpioNdlgsMOzh6rElbMKUbQUqbHau3npWUpLA_DIePzm-dHLQMb0wJnf_V7__KBXVMV0edF9yGgJFUbFBK5i_BiFip7DDw7DatOkvrT2HlWeNJemtpQe5IcDuTmuA180B6hAE8kDGPRJTuPKGG6qPzD28Z6vGXEz9-50hkurTZ8neI45S_q8AdV58QPJWGT8xpUflvPaBVYjOp8ONhgkL5nX7g586iQnvRXfQ0waZKoSNf9Abzzua7aEKPEHaBal1feZFKO8MXrP13tEjwjvRNXcBYOtW7gLBH_6VJSv0HxYaAG0_ZvB_XWOBwJPpEfMbOzFXtzo-u9DjVChZ6LNRgR7pkM7tKAdwlEb6R6b2bdEZSWY06s3ZfZo43V5sgiAltJJYv1fPb8eEO8Ehiq7_Aw28X6t5Np5El1NKPW6vlvG1TI0ODq9visQowm-UIhyHOz1JSjRvnBay3ZLFnCNaTGbbB-4jfzcj7StFWUmsN371tbsAeQA9SGS7K27KrGjAJNroINqNoDIrys05uXszkYEpsJMJpLW-3MGG1_7GO3E7qr5NlHMO7RvWgr59bDNNtq-GQDkIW7C1EXytk-DzF0YgNQn6hcd0tyv5NgcxxmX6dc7ylo9Wr2aQxVfYxfrHW0ehcVKX7-3RU80fgilnb67xdhL9dExlx294vCaNNUmIgqK7ebr8uFy_1ckNUIP83hmr582xi7rUbm-G5BDaPP-wQSZCqMQPGrw-229a-csYJB2tw7DUfawoZ5iHbAsL3n9dq-WfwHffhCwfXPeCrRiy27EL7_UukaN5kFdRuGn3waXyrtClfDvy5T9bjxNp6uPYjbxqCSbiCkqYsmgLxDlzMsJZWGDrtYhQ6XC6YWEhSCsETFkkANWvuKfb9PZI9TAzhjRNsA-5zB9kctzKE0Cz0T9S_wOw5XpK0DtKeGp5ElmJTZvn18PlrYzCOBmdpfSgsEpHzY_OM_MbBVYIIwD80A7D3mbXOSD6uV8qs5IqXtVFmrE9BuxVOUXsXpsJx7awdVrAbEL7KBu0TWhXnOe__V_s-BiaX5KGHIj6ftzBZZt3pzd57cZq2vuTG9ATbncz1Bx0VHbQRngjcyhf2duQO98CSQlrZZ4xngRGiDOYyPhbqSAIFU7fipotRL75_Z0j8gxmXYYIRHC7IhD5_UzeQQJGUjmI_L7Fu0M_hip6El0H1e--cPsZvCPdmfAfGcRDl2Rh3R9YyAapxN5zcAGy1afspEaxfgfNhq8UCOan6eBL2DRENWRNVRVkGDzID5YJvMD6KnCGEgMKFP4DVUHo3Pa-MIXbUfX9AfmTiKdYWm9gG9MQOhqQbWE_R-n2iBam-u_RTPYvEbEJDi4rnV1CfC0U5D3SileygwyHa1BJMEzesU_IbmiMCpzzehZfkWI64F9vd4p8m7HqcPcYPf6fd_1hZrXP4lI42zdRPHpJNsb3m4fYTzDDU4lJqM9WEcSwRHqV4CfLzAanzfqHLYMP9Vu3K3dKGUZdHkCkyyEtZhWucbzRmw8_TpONC_TaZxA3YS_qERHSsLpTsf5Hjhz4E3NH6CsZHcZEKuRUvtiXKYvbPwyJFoM6QEk4Z7quJ5vq_GSAejR_9DRU8E7Khpixt1BSo9xNZP0VsoVDwLnSSP_9aBIGHCKvvVOBRq8hz1LS7zBEI7eyQRzNcfO6JhxaPZDAuKnXcAj_EaLiYlZG5ULCGgIFKWQ_dzd3zciDjtU1LKUo3II9ty811oPVq4ASQMQFkG534e4XmCkbJobBKH8S4CMmAoNlMhjHpOM-G6yrF1ycYRl1SVfHX72Bz04r51YYv9xy24n0MJiO9K32T7y9JCZmCVSzscX-Nx0HeDPzx3cyesKM5yMhY64KpTPixoUKLGJbXvUE14pKTaLMePg75kwV5SebUG9NSGsq35Lf4L0SUuyo5v55Ci-q5XgaAj7LrOlwo63qeG_2CNAnl9xvq62eEMjHVPIvzCWNjhWpzhZC1sKNGuWDujNxDWxzqRJYQLG1W_vQV-J3mzINulG7mc2wBFQ4VLkJO7SM-ik0z5Oyd0geTF7NtId9f1tdIIzYwZMmaRgWKPOGcV76msWomo43z9qnlpUpQ-RSIFnCkM4HCtr2z_y6M87ofJeUov2TnbsYg6R-D7j7NMXgJx8I9Pmaty3r4CxzR7ma1861AmwLy32KFQqbHarSCm0nHgbxUA92GvegPbkX4HCK_cdWnjUoYugBBkh_GKXZ_auFhO4c6uvr859BHpvfhxzR6SgJx9edhudD73Y-Q_hHCIMKmKidK5tOyKYo9DXECtS65pMb1qKKRmd0XVlr2vMvOtA8iUDE-ZG0arrH1SynKiHEkSec010jFGqs-jPtPhJE6ThbVL160NqHflT0IH9_Ocazmx6ARnkM2KeGet3xD1uEeEKj-mcNgo0mcLmZ64c93Ey73fQOpaPHFhHfsWypBG8kcTFSCpI5M57bnxwTOYM1ljVOBnpy-793dF6hROc62Q9k6r7aq7hpyA3DgjYTISkm7vEQpL9lAa7p7c_2hQfz8PybWXBR6_r7VKFpIAFDRD8p3YvncAeNGnbpc3wrEwwgSOSXddLydDmCNaJLy-8Wt2maN3QANwyveV01kIoSymUEVTY5USzpCcGjiV70gp9wS8Y4BrLsGH9ukhrau1aZBZEGUKt-n0mHJbK4YNU87P5X4FgKHStVH8WhCjLxwGSShmolUjgXdEp3t1BywbSbFt0bjz6hzBvOWETI4rcngU-m_UJLLqUKIEPX-qbHM5PF2USsH96liddQ3HL8YM0tCJJwREJNToPC97c5m9pMP8VG-opzZLudOKBQp9ovn2OcyNVLzBnbY8SG4VuY8UyNttK21gulx4UYHYr1Rm3Ykd65-GZNvLRIkr_wak_rZoCPY7u1rzbOmULROvx9NbD6IZAMb7eAypJDdN4iGjxzmQIQ0FNaz2D2QOJ15Fx5HJ6niMfloqmwqF9hQ-48iowSqYqVC7KHhY9LkzcbODRr6dtwS1mzv-q2CHaQaB_GteBkg6JsmmUPXhU7D2EbM7FdiH3HHBVRYtYrYSvcWZisF5UeblxK_szobXWNUa0k00pUJggZcofpZCCi_TXooVThu3Qs96NHVTOMhhYQxoGT5HZb3IJTtTPDQ1SWaRf6oBpTATddJysTb3VtcVHoHRSklDzoGJ9GUVcCnNxqsdBIHlL4_KUR0_IZsXWtQQ4itXeCBCYW3LM12jtgbrkTF8RcbEMncC8v1bcTSTbYPQrfA40QVBHNz2hFmRtJbw3d-Bq6HVDtWOw3a-GqO3rDwjsTo7XFUu3cSo64zjkxAFh_keG8i4SRWSYPAnc_CSs-KQMAyTMhy7NYmCQsvl74yrMnc1WD_OsO_mZJp1A0Ki5YdfddO5ds9g6wkT9XGXwo6uF7SCMYKCwE5ATBRjXUxz1zCkiHiISxnXOTK5ZvadOBceA2wt2lklndRz6ONT7r8ygeMwJ_5d5PT-mhceqUXtcxw9J5cdYwzo23XlZ1LUyvmdRtxpE139ApYugiYnfM2jhyjNeLJ_QDpyoJkXjzjsxq52JOiFr4pnsXVE7kmt-CuK_wG_oihVZTe8XHkSuYzBx2KhyFw5tsbCuLiDOkgoxdAfVvxoYxp2hLWeGMYsuKufhe4YkoNRsUzHwQygUDg9wF1EwIrrW9H1U5etouk8-PXzVb7x2MxzT53u4oD1ih2g11RM2tzLqK1XUJUiRQwYErT4OANsIPoQOwl6CJ5Cf8oLwAP9efaU5C1bbJlnmTrHAJOxwIMAiOXM5nphSduWDfbs-2JbX6lWSx9uR3P0OnVXAFvuw2Ncd03bp1AFBRm6YlVDjZBVM51II5CXGxnp9cSu5bmCOmY0wKpBwzNnWADogeAqXNc6SokQGgKZVnSZax-C5ZFJmdSSAML0CrPAjUJdBvlB-caOIYMMjJHZJWGrNmxSA9AztHPs43xzMqsQYtdoKWl6-7wv1snIa1jcpZEwo7tpPSPfr2rcWQ==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0c1a825a005a9d50016abbddf78c1087d1990396e9b31ea7b7",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 367,
+          "completion_tokens": 558,
+          "total_tokens": 925,
+          "cost": 0.018575,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.018575,
+            "upstream_inference_prompt_cost": 0.001835,
+            "upstream_inference_completions_cost": 0.01674
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 516,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

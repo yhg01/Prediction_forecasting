@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: P versus NP\nMathematical target, paraphrased from the original Clay formulation: Determine whether P equals NP in the standard deterministic and nondeterministic Turing-machine model. P contains decision problems solvable in polynomial time; NP contains decision problems whose affirmative answers have certificates of polynomial length that a deterministic algorithm can check in polynomial time. A resolution must establish whether every problem in NP has a deterministic polynomial-time algorithm, or whether at least one does not. The target concerns worst-case asymptotic computational complexity for unrestricted algorithms, rather than success on a finite collection of instances or an improvement to one particular algorithm.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:53:32.614954+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 8.39,
+      "response": {
+        "id": "gen-1790697204-9Cya4GwC762A7nou9SWR",
+        "object": "chat.completion",
+        "created": 1790697204,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.001,\"2030\":0.03,\"2035\":0.14,\"2040\":0.28,\"2050\":0.52}",
+              "refusal": null,
+              "reasoning": "**Considering AI contributions**\n\nI’m pondering whether a solution could be resolved solely by humans. If it happens that way, any future AI contributions might not be part of that solution. It seems unlikely that AI won’t be involved, especially by 2050, where I estimate a 40% chance it could participate in resolving P vs NP.\n\nI’m also forecasting some probabilities for relevant years, adjusting them to ensure they’re reasonable, considering rapid advancement in AI capabilities. Hm, this seems complex!**Contemplating formal proof**\n\nI'm considering whether a formal proof could emerge if advanced AI ends up solving many mathematical problems. It's intriguing to think that by 2050, the likelihood of this happening could actually rise to around 0.65. But, I need to be cautious with such estimates since they might change based on new advancements and research in AI. It feels challenging to gauge the future accurately while accounting for all these variables!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Considering AI contributions**\n\nI’m pondering whether a solution could be resolved solely by humans. If it happens that way, any future AI contributions might not be part of that solution. It seems unlikely that AI won’t be involved, especially by 2050, where I estimate a 40% chance it could participate in resolving P vs NP.\n\nI’m also forecasting some probabilities for relevant years, adjusting them to ensure they’re reasonable, considering rapid advancement in AI capabilities. Hm, this seems complex!**Contemplating formal proof**\n\nI'm considering whether a formal proof could emerge if advanced AI ends up solving many mathematical problems. It's intriguing to think that by 2050, the likelihood of this happening could actually rise to around 0.65. But, I need to be cautious with such estimates since they might change based on new advancements and research in AI. It feels challenging to gauge the future accurately while accounting for all these variables!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu978slS9ZJKOGNzgcbX1xPXrI7Y1rKP4_sj1OurzekDmyqTJ6VJGfgxVrMwpoyeuzcLeDuzd_DG32xWRHvBa4bzCuvja0DenlB0gY9NZYs-uuuUiE3ZZT4cO7ivkLmmqPVJyI5H7joslH8oj5oZRxiBmr0BJ0g53T7ZwJFgd6tABC7hMUiXAKqws6LZT9vki1YIq-ircW-pJU1HHns_JhTyDyLOKNiptdCIOUXtXcLexZvOfGMVn-2UQq5gcduERa0WzEDDBgYLWB4ENTVx7Alq6n5jZvFwgwCEduRS3ooyVdEw-0aUkMs5CfSEnpwWqUW-amJKivV53Z1NlYXX8FyDB0EQ2MPpOCXEpxALDAFvmAdpa55WEQDje93FzMfntuAoVxk_rJpawTAXUxSgkbX4bmmyXzavuPsg5Yo9bKsBe8AegTZW77diGeWcLVfBgiOQV3LBnlb7XY0UA-pjsxpEhzJxy3cpGjqR9RItMquO_mU6dTdsYcLJndJsv_7QjpqVKkF8y4yjMuQQfTZ4n57qaiuvcQmOhwcmnwKV9g2czhXHeiUsXgNVV09HO60ZQwzTjih3vVRUwS650aHoeKsGCY2TlLApApSNsO8HgYqXAGjqFSU5rrh_FKte4dDWBuQIfo2eLqrV8E_0peDzP4mUSZuH6bl97gMDmTci3zBLnoEwjMx2J2qDViKVJ5d8azfKVVwwzcVMIalqynv87o3jXxeehIAn17iED5T3QjWqsdvvEL4Xd60q0c1YOKt7Kv6Yy0h9t2RIcSO57Sw16zwoemIHeGXZquTkp0ygSUdWmO9wdAe9I_wGCHdKeS8gC1yY_9K6RqAbriRZn0baZ900KcZITsme3qC_tTd1HYU2vGTIfrVqpiSnYSu4ZFCkq74lFZVgAHcYGpAOThJtLljL8G93WvGTY5vHHxLxGzqJnDiRRuTPHvcUjB2UcsyAmD-3MZR82VwsBcOluYqjV6N7ZDsUsnS3F9mdxmB2BsK-d1-l2VOgtbXGpj9c9zZW-sPhOGuzBZpYgV1DY4bAn3JKchyhMPlgCSqHVmrpvQvn3FVR_t1iU5oeXPcV_L2V6RvQUrP4YOigYmsmqPPLTigPaUi52k8OIwzL8H7T9iEu8jh86Ai-xuA_sMiYCfuNh0UXNBT6VQJZp4kS1LY-vVTP-wdhZbL2KcBo8rGeuiDn2VqVAPrIdImSNiEkL2qSSCMAdjjOF8CR4EmiNno5l0gx2wsazmPHC1O-od-dIQUx-9vdYdYF7_pH-eW6AfR4hsYZ-pEj4Qv-0Z-7yexJfeSYodPTX6SR-ZJsWbXEs3FpURN50CO3RT3W49FYvQwgpOU0xl0rB97SvkhQJJYXRcunablkaNOscwgsQ05iGtdricF1oAmebzgBQSUTA3QD94fO8U1iiJfx-T6-_gm84KslGTm8qR8jF1_ojh_IUo2XeJHZHQm6wTRffRPbOjnqeLIk43XaslvG_RyyKBQoMTwQUk3G2HyYkvu2bgF6VeM7I1gJ8eH-0pu_xLQZtzO6QS-vwy9h0gM5FN9GzBCOtyfotfg-RLAE5ue-xZuIbHpNZh5uLKP7Qasho_ESGBwUDFLJB11B4c8BoQOgr1Nwt5ROxaZHknOgyJahWrmGapMzqLAAeCaHajE-DHd0HPeHO2M2RDOznuY42WwiDd-mkeKBHGTFcrRI32Yj82ic-ib8UjmH2KjrAvqPkCBJpN8W6fWJL3GYor34zt0oyht70GeVfKFaviMrea4A51K1c4rcWO4rUTLrWZRW5qUlVW62WkIVA2IRbUJ3GXSAt1nN7h5rKgYJW1nrESyJ7ScT-hijTjRtHItTY6Bv1qQyITYp5rk0r5mq5lHLrmleCkKSxC8KejFvgFLVQGbfjtoG9_H54XM29Dh8_fwdI76aq3qB88iK8l7s3nt-o623eQgU4nxCC_LfM9IypkKhFD3J8e83j5XNGzKPYqPpvbIZMvsjCjKnRKWTzImxm0CQa0Zy7snVS7geEXcI2XswPNrQ489EmpwpGciHwATu9s953OotSgx2-zE4eR1TcMGLE6bDWmZLqL7WGJ_k3pnAZSuCNfP1F4rGWEGEJpUkQKNxblH0PIMZxQGGfJZxVjimxxRpN7llOuff0SeZrDV6ZSYLKw-T1Dr-0hAjOoV7f3bZuJrMPVy10BfeYmIIQ5WNyxFy8CV5nar2Ow6dxeuEuPVVYLoYvAI7q7KVCJ5vKuOPxaXwnxI17UTDeujlRUDVk0YrJW5-VPstssiHAYiajBKVSplNGv15QDbHApW_QpID-w8sOyQiACPFtT-_unBmBRgYUte-AsuGdiTgb1X-HHAqQq2Mmwmey0H9a6T4brlJy8bpPZRsij2KG6J1KRO-Yfz2wxjUsX2u6MnNlDvarvhZlPZqB3pJpcTD7msbHwVX_nCljN2AaWq_sibyh1u-3X9bAjl6BamK2INwGaEQF46-yTgnfxSyRm5xt96rKeqwFgk7IUbqFtgUCAFkRceuhg_iJcFOoT0JeoCr3DGfDk3Ajg5bnDFx6f7FS9z0HE1bVheOI9PDLSDVFWY0951KDSWkjfScBAbSQtmCfOApnfsobiTKNiga-xfK42JErbjgJUz2wGPO4_HdR-ruywhAZQumeJtlCztksCzE_a_IOnqGo3B6J2KKeUd-ydh9oyhbVwO9uLAJsDPuXtuX4MGqHSt_VfJoz3B9e2S4spfj1eu7N200iL0n7ui45134tbfnf4RfWWF_YZbSGNTIbd_ndGFhvc1j78m_z1DZq1_Mq6UXA6PKPCwE3hYLjyhKOQ31Xe0VdiNB2nOqYIxpLzzTXmJr3QUaNby58gje41hyhpHeLCcAkMgYLHmA3SGoH_tkWdHCF8fTCIPjnwLX4rmHLxA0KzOn3PkQP0u-xneXL0qb75j2nPyGzf9uvz9bW6g1p9HUVNtkuThDcilGtOz2ntOhbEPZk3rsEtuhHMPdnqmdXCVKA_TwPdBnFtwjFBklEhm0oUjuS_BTdxdA2QV0WMS_4BxHNNU2_2cEPuT_yX-iU9f5s4mVF4-dVH1Jsk-KiZI8KMzb2iFnlERGh3NKxaeoZbdvzOrumLv5PAkCVwYHMfcmBw9azVJzUoY0dfVE-rxgtMNOkk9bAWKrDdcpptVCHJSnlnwW4nNj7YOg50t_OjtceB7WaNtIsmrNhtliajE1JhaBikXHHsa9bT2Jtk5qTyjlTykjvEdpCleBviWEBrd-dF52xh8OkqJBIk0R0-mjSHp15QDF8ekVv3D3tzDZ_lms1N7kPFqvZ4i-vItrP9gQ2N9cCPqfY8k7NopnmYashLqCZI3UHceCmTz8B_Fh9V4gWJ6Voj75lspR12iGCxPgLbHUUXxefZf1XUD-8kUW-b6PxwRwLYrMDvt4nec-IEJ_zxmGX2DTH4BCVPnPFR9oQw1mGET68E-_qpLv62eqMx8x6Z8Vu69vIMwwaxGxL5Qr00-4s4T7POF7p_Sk_q33mJc6EYDQWf5P3REaPWgb6AO0L7htYlw2EgvJxUByKDNeLxXLt0PtXNMlNBFoa1JHMBbbIAl2Uh9BU5E_Lv3M8sBm_4wjhyUOfl5aNoJAVfEpML0u4fyFXm3a4l3tOyDm7QltbchI-Ms6DomgrYtGOceSvx-dQLhBeuWp2nz3rwQDlg6XDbvpOq6Fp3Qc11Hz4u5vrxA8VY5TcFNRc70KzcURNhbWzMxRFpWDLumnNqIh4V06jff1-313wJD3QMu9OFoaitN70XPIUsxAeqDfZKCIpQMMFXPet0cLkeeGW8-8ENILCMZMRDkHUEJq9h1wL5GzRFoYx-djS-CWeDiA7_trf0IrbVncI9gIGzcuJeLBJmUEAALHf1kjbxD2NQVA5YeeHMj9hpZV7la3lvp-m_piiQIl5Pw6qGQpONM4UPeY5GKRy3a5-389jucWm-Ma_F_qXMrYLnl80GNP__ONy0oFkvCE22oxWwi9Kr7kyRA5JSljTDedTmjECdwu91PjaZjo=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_063fad78d12d3c31016abbdef52a6887d1a602560b4e4e7c95",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 342,
+          "completion_tokens": 558,
+          "total_tokens": 900,
+          "cost": 0.01845,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01845,
+            "upstream_inference_prompt_cost": 0.00171,
+            "upstream_inference_completions_cost": 0.01674
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 516,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Yang-Mills existence and mass gap\nMathematical target, paraphrased from the original Clay formulation: For every compact simple gauge group G, rigorously construct a nontrivial quantum Yang-Mills theory on R^4 and establish a positive, finite mass gap. Existence must satisfy axiomatic requirements at least as strong as the Wightman or Osterwalder-Schrader formulations cited in the official statement, with appropriate gauge-invariant local fields and short-distance behavior. With vacuum energy normalized to zero, a mass gap means the Hamiltonian has no spectrum in (0,Delta) for some Delta>0, with the supremum of admissible gaps finite. The target requires the four-dimensional continuum theory, not only a lattice approximation or the classical equations.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:52:29.108872+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 8.362,
+      "response": {
+        "id": "gen-1790697140-Nz8A8YP3ty98AtuA9SR8",
+        "object": "chat.completion",
+        "created": 1790697140,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.001,\"2030\":0.04,\"2035\":0.16,\"2040\":0.32,\"2050\":0.55}",
+              "refusal": null,
+              "reasoning": "**Evaluating AI forecasts**\n\nI’m considering forecasts for AI development, thinking it might be strong by 2026 but possibly only achieving theorem proving around 3%. Maybe by 2035, it could rise to 15%, and by 2040, 30% or even 55% by 2050? But is 55 too ambitious? The target's quite challenging, and we want to get it right for the user’s goals. I'm aiming for a monotonic progression with clear keys like \"2026,\" \"2030,\" \"2035,\" \"2040,\" and \"2050,\" building numerical probabilities in a JSON format.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Evaluating AI forecasts**\n\nI’m considering forecasts for AI development, thinking it might be strong by 2026 but possibly only achieving theorem proving around 3%. Maybe by 2035, it could rise to 15%, and by 2040, 30% or even 55% by 2050? But is 55 too ambitious? The target's quite challenging, and we want to get it right for the user’s goals. I'm aiming for a monotonic progression with clear keys like \"2026,\" \"2030,\" \"2035,\" \"2040,\" and \"2050,\" building numerical probabilities in a JSON format.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu968QMr6TQqnsLglOmwwbIEIpA_0HY7CZh9G-IVcbR2rhHWfWwP5WqSoZtRKVSbHmAaIFC6yrjtpHkHf3agnLNw4tKlKar0K40QqLf0qZ6e8xg5aROFschQAAP50H8rY7xdOVMbGIbuECEKWormMOt6B3yrUtTvRx6Nszx5PRuRTXLsJiSp2FkqIapEOnEc2CTj61Tlee2YUUlcBUTmNiLp54Qq6TKL0s_Vw_GIhqXd6pHfwBdkdt7_xE0LbdcknNnBOJSqGeLeBqoHoxd22oQPdngFpZweT_zwVBye0IQF6TJvNrxfjs5BPPI4zs9d5sZoaq4EXbZ1CgWcGDLVCqGaL4K0CKg30ZErsfr8rTGYSjmNuEoEA6Xn_nswdT43qKhgVvy6yQ-Ps4bSEzm8_vFGFPjETNd1uymZBj0CunRbatg8xuxJGmAR3zqoMMTY5AqJ4Qs6mTssDJGFWUX_4XCNrAQVnCdcUb0ilnt65dQPP4Xzv7ZF0c8gN2EqKHYaCwjluZsnD-txtHP5TqOlBz-kkH7vKynocp9JgLuZX7r9XegbIufpus2Cg6_vM4aJGsf3zJ16xd1ePSR2ZFZyEyIHrb9KRjV4q4kedFnT6uM4-I070X63CLrnsy8Yrstea8cL_s9DBtHykbyLiKMRslHzx9RRgub4rhfTLseA3RQOnPi20G4P-pTLAAz2COG0vJbmAwKE5iJv_P6vHmZdxWFwSsPvzKfZVekhILuxMWfdQ-tFM8QskC-RFAVU6xELNLv91MU0Cg1F8p1t0e-_SBkQltKVfzaJcdss_zZGbLj5OfcBQeI4og4NeulSs9KvFExtd60uvT7qn4OMI29RUZyqGOJGz1P1fbiHWpLP609rbS24-emT-6LWFsS0v-2Bth0LAFrWFZTnEJIPpCtIat7x-onniPT49D2qSO6LuDQwEG236gJ3W4KmQLvibysWiXsCgcNkVMEpPWx4MGaonhSF43AP1J7QEX8omL4Gr2L_RHIQ9yQpSMo-O9uLo53H-_0RnpHYOojCZqLssUciopUptOtMHrfPDlJqp99GpwxeyZ4tcCq11wEyjtwVx_zlKWmannGutVnMPTx_ZjpPgSmQFFGAQCz6ADXT1nInGT6Uer-QScFfnuBaP-2C9BFo4BChxPcPSYYNuchiWgfgPI4e3wVx8h8gB9jY_6_b8tx9GK1koyWN9J8O89P3c-De90ZNFoF9TbVNk8bEzD4ZQjX4sKxBeTOMuFQ3p-10pvo-UviMaMQA7AB78E-dhZWGMIvqtu7O6Tiesw2lFF8OpIriZpx7UCfeiLY2PEvrwd_3RwpFjyS_PnmzfizOjWmiD8UJF3PGYfzFNgNLyL4g49btHlA2kHQkZpI2oDT_x_KYzDCJS5aoxSrVdOOR2imx4dfTjKNd0D3ZSrz_wlfweUQEmlfrQltEL_Y4N9vMGSljcZTW7QSb0sZpDk4ELQxt8AZZ0YBcgVD4IzACOLHIP-NqgXc9ASBEY3SbLTbN7SWbDi1i7EQBTvA1x82zk2y9ljl9MZ4maBR3pqbs_19d62j40ZKvwUfnJCkxNmF5AjCiK-8q2yT9qLXkxamFtmeWd9v5qD7fCA_4TO4L5cHen1QYNmS2E6cnwhXYwt0HH7-jz-AOoD4WN1-veRA7cgWQ-RubzTqMawJmGni-Bwj1_T4amBzRZpRWtzcc68kljKQ_WC3lSZNoAJGghC4ZRX65dcl5_jcoOVPoI1iV1JkHaFIGgbb_MZLAi5xg4ge4Yce6T8B1HX1JU638TQr4JMSfpHCztCbaz3Qn6C9yK5J_dNkj_oIJAZA_A_wkjGVHXH5yoq0E5xHKEM4MIZTf5k4acyF1qN29Kueb9C6QEoFBgzLsBga-28XETFjRlYHSxU9Eovje_smQNbsefYBD_X8vFyDDIGUiFLTWD-PbyKV4dB-CIeqzcPu83a4E5pb-CVwZdhoIMVDoB1KzVz4UIKO3IVwoOdEHzqISEGleeP18rZ8PApfqznqqQRGgWKp3sD6f2pVwai21Vp-sXXTW73nwM5R4Gg6vgI9QTttEuuAAP3fXJptXwdOAAOJvZtpphw9n7wnqom0OVbVW-7qL0U3gptbBsy9_HYcrVEXU_cCXchVIkHEqj-oAg_hMTBeadIyOJT_SeH4eQR6HiSZYDugG3IXML-oOKgTlub1kTVhNhx5hstmHj_KMiVmS834j4_-lOI6-Si4u1SfXT_y7XiqwiZjvmNn71EdIwVYtgQc4NMIQE7IWd0GNo5Pvfxy0fN6r87XsdkzbLePP1OmXsSRCS9TBFFTS-Gt8Aqq9CY521DQcTT-aip_Z0LJiG9iN8r2LimF2ynocq5RF-CcSmZXUbBE0XD1BFt7isMToVqCM9KPwiP7-edVk0Qtx2A0CnR7m7s0MXRiloFdp1t3LZaeJ7OdDk5DqEPHYmWjYXNTjODm2Zl1_JKBNFN0NMk-AYnYlblAsTSA1fZ3Wg8ErGYWxr2dBCquQW1jTYRJeHNHfINFn5EXxiodIBR0Ys7GVf8CEKfXXdUhSfTu8cAzHasZASKDzV9wKdRv9WyS8G4ygpA1vHNSmlDTxq3ByH7Hmimtn0S5LwAWcRV3EUP3WhixbW2esZvKn46k2MEnnT_BcpXq2W4awLPNburnUeHRfuLead11tTv1vjCpigZT_8tG4_J2bIM5dzUPfXJg9dKwX9NHR1PR9hOSFi6BrZGnF7Fy9haZf0c83OMnPXswJXng6NA2u4-NKH-NxQzNXAOK5Xr4kpBhQ3YmmuCbdXEFr7hWf0FAHTaN8xGOFVhbg0K2eKELMZIK_HGd3J2eugnPSGIFTMPix0JEDcpjnfBNCE8ESq0yCnT1H70_cbCKkz_07Il9cr3acLpXeapTXIrb25vw6qmq8UVTx8os_5cnBF7cUa11ecEfvJUKkXp0_76lUdAF66jaa03L04m7ce7oQhqxFVD-HzK66V6oASTpjzd6AKAH1ZR7lW4EhSngLt8aDBZtzktUCcTDOKTBreDPmQAkyZ8k20AbImZHW7oXHeUOYXhq68INKO5oPnWWn7V5-H5tSUVDPi3TuxIZHhJ9gn-vSzQzsm5v6wuNM_YbBcvvd0EDF1-O_Sh5BJknD3hKdkvodt2cDHVHa0I4Zy6scaHNcgcLmoN6NBZJrnTgkPeLoC88LfWGMPVMjy5St1ecDL7OqAT_Md3uD52li0DjyPc0hdqn1Wo78Q_kC85cuqtnzyhHjHYwCsrYFfvWBiXCVTXv9R-isc1beWs69YlRMsfBeykBrweGmefg3lTAGBNrfds5o3la_Kk34OSzGQkJbrwYxiNayv1D_OZm_GE3ygU8oW_hchj_K7YqO_eXbS_ScgfOYyJn_Mh1OhIyduti8zK2KRJRze87Nu_GlPYskVnaiRqxQJGU1v2NZr527uCB7NkGm_u8fYnf4u8BbpAgQg3m_pH1x-BiLJ5-c8NOVLK_3__JJDACxyIcuC7Eq6-H8q3rsYCsbaFW4AP5sePfRenmi8351ObmcbCER4LzHschMZYA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0d108c1191707120016abbdeb55f7887d1bc9eb5e8edd06f76",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 379,
+          "completion_tokens": 433,
+          "total_tokens": 812,
+          "cost": 0.014885,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.014885,
+            "upstream_inference_prompt_cost": 0.001895,
+            "upstream_inference_completions_cost": 0.01299
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 391,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

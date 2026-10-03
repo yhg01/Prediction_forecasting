@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Riemann hypothesis\nMathematical target, paraphrased from the original Clay formulation: Determine whether every nontrivial zero of the Riemann zeta function has real part 1/2. The function is initially defined by the series sum of n^(-s) for real part of s greater than 1, and extends meromorphically to the complex plane with a pole at s=1. Its negative even integer zeros are the trivial zeros; the conjecture concerns all the remaining zeros. The target is a proof covering every nontrivial zero or a rigorous counterexample. Verifying any finite range of zeros alone does not settle this universal statement.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:41:43.008628+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 8.038,
+      "response": {
+        "id": "gen-1790696495-ycuA8yYfgwjG1TNNSGLn",
+        "object": "chat.completion",
+        "created": 1790696495,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.002,\"2030\":0.06,\"2035\":0.18,\"2040\":0.30,\"2050\":0.50}",
+              "refusal": null,
+              "reasoning": "**Forecasting transformative AI**\n\nI'm wondering about the chances of achieving transformative AI by 2035, which could be significant. If there’s no AGI, the likelihood seems low, but maybe they need a probability of 0.45 by 2050. I’m considering how superintelligence might tackle complex math problems, though uncertainties around alignment and public access exist. My forecast reads as follows: for 2026, I think it may be around 0.002; 2030 could be 0.06; 2035 might reach 0.18; while by 2050, it could be 0.50.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Forecasting transformative AI**\n\nI'm wondering about the chances of achieving transformative AI by 2035, which could be significant. If there’s no AGI, the likelihood seems low, but maybe they need a probability of 0.45 by 2050. I’m considering how superintelligence might tackle complex math problems, though uncertainties around alignment and public access exist. My forecast reads as follows: for 2026, I think it may be around 0.002; 2030 could be 0.06; 2035 might reach 0.18; while by 2050, it could be 0.50.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu9w2bGWsauFUvxNxVf7JJf39f1kZNiQ72ObyjtRDIDWXdwsL0C0QATArq2_0yrCW7oM1ZnsX85U8EFYGKa3ioZlNjzJapmimMCQGa3XS4nzHNerlMib2YCRohT3HdvZQpsFpWBRxyVsjb-AuVp_r_8VFPBBk-5KJYM3aVSt2Vdj8AlTIZbPfKHQY4eN5smNuk-i1iYYNKsdmI7aEPNbKdklFrgRSKKW7JcV4aG5lzgH0aug36TuHJv1obNfIWtFN0uwUVns3lab8iRE5FehZxLwU_heq5aAyhVLbdAfKsdZ6P2-yXryKnfOkfn8slXbkXH9ICFQ39s52YxIGCgRl8b6R4vCAe4RbxY2FxfsbW1UUCpvrtLTKSOfT0Uz2gRVedl8ygPDIvyyadsQzpnhe1mclLbAzyASfTo59Ezd8Nz6fCB_rT1xkNAgHatx4kkcM8p7_87IKANXWUgSgxaGNufG8hSN_pNQ6pgKxs2ITAilNGzD4UnKAinGQVI52SK_kbc5pWuXohB7fv02P8HMij8rL1nVjpLcxszAYLFJSX5henPI2xdbxz4HEXjF3YiiEAjpUNGIZ_Q0oURleVJ_kLLtPiWKLjyEQbFOet3qMT8bA9pGj5B2LjYJZaHrj_4TLNqyWrbGvnmVECNYCzNVGRD5Jk7dUyC1DGEbC7D8RGUzqIaqAypdka3yXwLfRb3U77VzGfNUzjp_0O0q5h60uV7UMEPecIU6Y-wCYt_VcwtzcEQ_3rnRcmu0TgUobad6IlIDHMu9NZXLkrzZAMRntQog2r-NEaeblgUoqtF_wuirUTUopkYWfW6u-tRT68Uq5-Sw-8YRJtdvh2u0m6NrVeIIvZ80LjksBBAX8F0SwsQFquQpINHsWmoYU5hgkP6i55Edzzc10ul-tALLscpDQvn1NhPU8s_6E6ZL9KMBYcWiNESAt-2RkJ-TBAsq0-aoMSMpwjjJFgvwpQXLETgd64O6H1GWoz5BfIolY6MaNu7Ai2Zd-FsPmrqDUWJnFJZM7SjqHaB2KJTuS-8CegnXrmTTKOaUC4cCyuYKR1zVDyPWkAL_zXOwomPYOedpXUeND-d6XPKZJ62rPEB32njrT8USv7zMikTX-7h0hBYrBhgjHH6ApfjzZRn5O25uWRCsN8l5MoC9P_u2F3Vh6huqup2GUJOn4Bs2BxjwhjbQ7EyC5ekWE_6XoMavAvpAze4xSeTQ394eNwzpk9TA9vHBxibQc3tsaJGvMo9yRnx1KecBFawlMFp5Tn5nmLDMhiWZaLtHnecoIQo4zcJIsHJHIIQ_ncFLliY2hKCF70tAXP5N2cCBirs7PNZuc8VMZE7NPwWF1EdJmTR7039KrSgyYj4ajGgR05iZJcsqUjJbMVTzEzWx8dyo76emiN8msYhFpHKKlfYUh0IjTgvYQNNxTyKVCnUcfZ1rr7y1MgCa4ltMufpWxBYZNR-o-9Ci6sdKzck-XvbYPk86TjgnTljlX6bVF444xGKuWCVKVEcCJsEtjG29xd0Vi1N_0QA1_WuFgFTivfEVPkpoGw4PAB8FmEvXPTtiXc4SLaLdOum0rM88mwbVjKd4eHKc-xxD3pUnwrux1uc4WWhHgHSuI_ntXc4u-DQ994_1TR6SDDEL6NylBIO0n5wBsn9uotUK-bPynTgLphqHvJDppM7g-DsoWYXeNqnK_2AZZv_9339ul7vpc1Dm7t0hpurhfnwI5ywDbnOge1FsPxBXPOsnUzBBOBNuprdaYFqtqJMwbuz8DXg50G9KypUfCieiJ3W1rdVq5ru4uEJHj5aUe-gXJpGdLn2BcA6IpD1GDMhu72cnOJ6ucpvBKVUw3tYaYJAluKaGTUg6ThIajLHbdyCuiUwysSr_pqpf7Dur4HIhIMfyJH8M-KnJ4ykyD7c5e9KoIOPEAlY3mpjNma7Qc-8FIerxRKKA-esTygY1R2Yk2AFcRpie3GrL6U1YCRNW7CS3DnrDHm8OkuTCSslFe0y8K09vdy7Z4QaOaqx0aOVLk5gwGquo459PvEtYRaRTKrYCUoXbwpXnQ-ips_Dg4E-ZyW6hcrmQIWDFY6iIOA2tv_dotupNJM2WJHgKTVVsTtKHXDhbopIqTd9HfWA5-OlWO7RGlOaDzB86LorqPCLVW9cXzV1dXA_Mzq1Hln3bdgP80DPcO1TT288W3oVDJHTfThQLqv8kcBnHNHBperGRF_-YkjJ1C2ntPvlOzRjzvNYfK69bcjnRXawrN40WzFhYiUeFfte4XPH2ZGf2airck3WTTJoGQs6XgpAsFT416NPATKWIKl8BvVmqSdMVBWHqFQUg75aBIImX3nsGJuQBa8PUt-W4A3DexocF-wXfHuKXaubkUD_IyqRG54kbaY_Q7SyRLlgXvjGNH7H1XtuNXp2bAZJiI3FT6v_evHyqwtcUX-gKY8jYsDzwUwtSTJoYtqWefoyrd40HQ_wZ7iQvHzHaPWDe_Y4u7IxYnnD6FToFwVNIYrrlOBrNcF4w8sxTfnLT3Q7wQ5yx3SLPtTUZ4TqftXn4sE-dFNq7GQdZzJqX-a8ZDEpJJUEwOvD7tFcoYE0skjLxJs-lQuF2apGIcFOoNponQCrCKCGSFcyildp85Y5JUUDyU1eZFQhamI5jtoXmGOqcf-2Z1vgyLxMP77odldCIU8gW3GIryex8GIqEHafbiePMOwqsmwV3Phb2rxPOia325UNhE67x2fxuVT599beccT5Bd2VsEpbh6WkIZu2HKyG6WUJdh0GENLaFEHXCWhkqaqKHAlKMZ4eBQBF9OUjJgoqhb3VI4LAJNxRu-A-HWviyHxPmPT6jwALq_BqrnfXAKQKTYy_J5G10q7XXbnFk1K6rKgFhZNrNfT3TBGwq9ZvOk2BNv-jSbsPHmVZ1W18asyX-QSn6hA3Er0PFPYIac9So198ZO91csDn1uKC3V_quPbvPs25p0unTzQ_zh8gWIONdoIg98fl-m7R3fhcdSyIw16XL9jZJfLT-caPm9vufbVqXbz_pQdkFuFEtWQSLTGjEBlaL8u8FCXopwvrWyckG6FdLSw9ZFcJI0X9XNK9O8nim6va358cO5M0JpHjw6rogpxU1SnXsIIhOIOlcRE2SWozegaGZoJRLAA-1dw32Mt0lVJEKxapqLxtKy2i7ybZDUlxLXLYR4yiQ_85grQQRo1vYPTPVsq3VhuF1IufhNSP1HAVljcn223J5MYA7AkUulFb7d5KWlmlQhi8khIv6dezekyk00m7-5Ovs8kIu2Ql0Wxuz46GK9x97_TGUc96c4dqxHH5zj-z5h5YDzhi1dL-g2PUOVtYcNzgj9uN40ySmewO6yZs48JnrhLxUcMv2nrFT3tNisPuGa5xlO8RoyZPUN-T1jLEVf9wsndiCP10GyNCF6FRWxia6zCl4fFVRLk4TnRrtmeo74c5x4kj3RARt3aJtEAf_jnmD3L2DLSGX7EB43bm-7Lnee-nc6AsXBr7Xd4GDYqZQc5BwYCZqBkbSQ00mgPCKC_2fqjOovrLSuGmKoB4zvFwoPFvB-f6Vw5mqsbKEuojgshFRUQHK4mHzUG3BZurCPUGZRF3_M95ox7TtJvMaokKqvUuusEiQBYHg47wPFONIPO7GDOdnVK2nsQ7WQTVZ3GGs6XGSAp1maCKTJhcFQ_w324yenehjvoXl2iqrEzZPK4e14sfAlnjwYicM6VDWkZa0DWZQa9c5md2Bihg3SsUaCqETZmMLSYm4nTuNYewTB-ch9MvzvX9w4X5x7Z6g7hqsqXSnd33IPRuSpqRPfKn4mYaBx3aivXmuG5aOGYLSrC7x5KpmCFHATAMVyO3-TIO0GvYrSxUz4Ks4Tq-uIFt4ZZ-RW3V3NTtbrQkKc4eHAQ-VuXVyESHNCEF07JbfJUe6j01qcnIwl5_EDHO8y6aymH_FK3W7TkkfBzRT44nXYQuUKXSxsv1hdX78bTHeJ6ZId6zyDRajH5lutewjQb-xxd1zu1E2BeWeF6u28OThkYuwyGNUEgdL9mTN8fUJfMzuEOkuEXWZI7Xlq5BNqVrtl4Qy0fA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0bf05045546906cb016abbdc2fdefc87d1876db61cae3497e0",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 360,
+          "completion_tokens": 506,
+          "total_tokens": 866,
+          "cost": 0.01698,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01698,
+            "upstream_inference_prompt_cost": 0.0018,
+            "upstream_inference_completions_cost": 0.01518
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 464,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

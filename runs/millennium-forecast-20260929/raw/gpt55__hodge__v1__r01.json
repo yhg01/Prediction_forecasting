@@ -1,0 +1,84 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Hodge conjecture\nMathematical target, paraphrased from the original Clay formulation: For every smooth projective algebraic variety X over the complex numbers and every integer p, determine whether each rational cohomology class in H^(2p)(X,Q) that has Hodge type (p,p) is a rational linear combination of cohomology classes of algebraic cycles of codimension p. The question connects topological information in cohomology with subvarieties defined by algebraic equations. The target is the general rational Hodge conjecture for this class of varieties, with rational coefficients in the combination; an integral-coefficient variant or a statement about arbitrary complex manifolds is a different assertion.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:54:09.919146+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 7.44,
+      "response": {
+        "id": "gen-1790697242-KzrWSk4KvxG2KTv1dBln",
+        "object": "chat.completion",
+        "created": 1790697242,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.001,\"2030\":0.03,\"2035\":0.16,\"2040\":0.32,\"2050\":0.55}",
+              "refusal": null,
+              "reasoning": null,
+              "reasoning_details": [
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu98holR6aX5KCFxH-pInAMzN8GCfUzvWjgqgr6t2tYbfCleTbplOhfcN7dIThRKOf-_jOJ9k6v8UmmRkbOOiGfBIgHeLMtuE89G9bvW0nOxg_7vNK7a5eMo5QrYIxfca8piarvx8n-OBShQRfnQOd7So_ZJMocGEKNyiZA4NRql0Dzih1PNnVCBeoc_O3Qr-BJchkH-m7GII2nN4aCwzhgWSqGhd_piuhhWqd1-1ks7aemlQDbtjab_QIrwY0yaDsdNicmnEsQm8GoxUsSsbmt9-RiSyQ3Vmicp5dWTXU-vuqxBzmfRWaP1n5ER4jqWV6Eza_9f2jsP-OZfEC53sQm-_4cd_3DGAoaW0zBATXFCg2_e2WyMlOWCHHB6GOJIdCECq8ZMHS0FlqrIsOl7cZKPmpaZWpsz9obYgI279zqxwaPjESFLM6nKBkPEwOzuG9mqDPF8xLn5k60bYz0GeDQgzQLPDAY3uCjR4dJp0FXGxG6JKNCw1hMFLTnlVjue9ZMbeQ9Yz5JHXlcHXVqyTbztQXHa8d0L97rNfRK_FgopoqrnWNKjZdThB-B7joa4gNbn28KXi1rw4V3TnNWx3wPdgeEmFXvKhBsACTPyzOr_xIXU0qd1STxOB3GPE4NKtAy011I5E5elNNxDjMB8Zo6V9M2hFjHRm1CWb-uJRXthJF4IN-35ROj7LzEDwSX_1VWlKSWn-KDPWLOcg_OVl4K6-GEyMwzLXG_vVyEZ-Qq9o_CKSKQz1KqgSWyxELXvZS-ynnBJ7t5vOxONOp0wjnMAJ-um2BUr1c9JkeP_rN2RqcOZuxzUiggmBCkXhZwv8l6ErB6opM8hD8SHqSj56N9iOBumhBRD7OSHiMINgOlTaAtcrmiVRxpKGa7aEUU4dZMKSfBpZsTUSqrixu-sX8_bNJPCx1blM9CTuNNmpc5JZ6LLsO5SIqS2xD6tAVjIbWIJmVqtLx15YIGKWkhzPIqMZnYQ5ZsoiU3mnIGjBoGazVGXNmv9Yn8HLoMSQNArvBglt3T12iL05ny9WLt_nL8XxiDEmToQxMALT9-6mPkBz1Dcb-1L7PY7_SptClnt4P_M-deUKjjBzqCBq2zHkMQE-y76wkQu_1KzwexS55D75RAJQaF7GpY6oUlbe_vwXmqOEe2H1xPvQsquSqWxxs4JMZoDoe1W5YJLgVEgcn_0ZFAFXSPPabwndOmnTIYq28dXbl8boXlRnpijY0nxsZGV0jCuXd3QaWUELiTKiIRQpLuW6xekraAjyQI7dZ-Jc-zgqf_GafUvnoglF8ZsghE2it8M79Z8JJTQ8EerQrQF5jUIVw1ZjxqG8Chyg7V9rpEiESsORB0RGOFa2nToSz09B4AIH9oW66FunDCtd7k9N4OukChZi-7epGgY1NBuRg3e2XxkLXyHBpiZsXZMbbFJGj79JOdLGc8bTzViFzxOizMA_YkAFVomWG938OvDzsNyB4PMD8uPjkiDxoiRZNK9C0TMbQhV1MKHNBGB1lfP5jvZADyuW3pdE3x64i13PL7V7ElNyMrefVKSKF6057D426YXJf5Qbf7w641UlRf3IWtiN_wZdCPRlmQEFgJZc0b_rYHY7XdVrB8xBOb33VGJzAxaIHlxRm6ZgrOFJyWkChYdL_6tcIYJZq9fN2yq-ayv2hV3QgHZO8K6sUxKNBXrmHtRfgLaxr7CVQSo1cj8eJDWrRM1Xmwo98LlBsB-kbUjZXLKUvvfPSaJ6gPEDTXHAa4ImMv9gL8rCjEJpLVRd3_bjzV5Ywj6X9IVwYLAlQJ0vZB1MiJ0wLhIJvvmtDIitIdMmOTC8BzM5ct3UHl4oRGvzH5w2HxziGXhTd6EjwJlLaz_1bp0C3_JokQ7QuQGzuiFR9ScfjhxUoD7o7AYO8Jc1-yYP6S2fJ-8Yp6BaVDCuRcDXyoLdM86RMn6PbJhtIHVnaV1SKflaqFO30aEk18ceMo_dR1VKZM9YZGIWoUff8UGR7gdKPDV_3DexlUYmlLUnlqECkzBBNkGwr2GvxgvU-Sh-6rxpHY-QqDUo9UpgA_Qf3AhTDT6Xw1hvruEq1YzgEwCsyemR2T8ve7YtU57oAjMjc8TB3CLT5-o6esXg2qkh3pRPVh5zRg9sIVHc2CLPOzw4gueM1JX2WVNyrV8sCcolzWd8CkiKNAySPmEO_C0pJAs4XOFXUssgUFiiAU0m6WTgMAJQl3lQmbmkeHSsd4o4uEN6e-H_DcYRUOPDS_IIiV2vYG9ZhBimkvk7751VMjUQDM7ipJUoe-CG-D-0nZjXAGKdulXFP2tzH1Bsxnq1RnzdcOCckMQJiQ3-qQNCUy6unFv3a_-W84xX1Xbf21bPhQ0-_QHJLX7p1dflOqCY2GjW4mEnoPt4n9uq5IbyAEB_1Zj8_-SIHOAdTSoH6PxBENvT35tyjESDhYTgkUcEyQT7kU-KB5z3xfSYHkkCzL35GueDEy6nfXSok0WhPUKIwTpPQDh1jb62x084KWdoWJnfvpO6iEdIn9b2-4XP-ujYe6NaAQ-3JI2EXwJ4CDa7wnx3KsvlKSi0Zbr5-I0yH4l-WyvN_CcIhZfNfTuiSR2T1Sz3lj6tAselCC7zO1gTd_lgf9Nj2z-XgqK0z4rnAqCFp_aYlEg6G0igC6tOA1n-r1-RYysCv51mnoRu6epPr70L0OahBevYMtk94JQ5VIoEAWJ2tpU-nQQilaQigMuFecJQ6gtlCULYHFm2iNeJL13_Ofsxbk8zvTb1uAdZLszaLUZuAmn8KjpOZx1ThnmK5bV4UPB-W6Rez_uV_EmUURY351GRyAiIqeveWk8rVPl8NyKEb5vO5U_lnPeH4bgcRcyfpyajvHnB7eODHjFWcojBjjDqXLN__xCNjlhRaGbZ95ftjctIuJweibPSm6cwa0lJoxVPVsTYBWcPLxjRDtoRniosCzTwY7F5R5XbEh5Ey0EaSliJkm54-s44sdrdLZWPa3lahWftCYmkCKX169Sykk5OAt6XMXQrJtJ5OvFbbDHvFJx9-TD2io7qaWySXfze_mcZwBlp_ChEHq66QVXzraCQI3hwRdNPFA_iZIKLun50x4VBK9BpSBz0T2XyNU8KDdSImxkdtzM_RPxvqV_0DQm4P9SFTMEXM_4VtJTd7HhXZSv_HTRvizrbdoE3KucphQ6bku7rn6hxpqyhMO2v5ZlcfBwL3AToPD_oJGa2-AYdkYahpXnBJ4XAVQeN01UZ3Dly7Acd3ea73tWNIHQNBDKVWF5u_Cm5CI86wfqhy5XTrrecAC0m0DrTMWHYp-u2tha_GHyjRd02ixVz8aD8MTQMtkJert4ZeznAB-N5UMhbRGLS41vKFTjNbnk2zVZEMmxA037447tKhQi47oVfZUvh-2fQFUBTRn0vogZnIrS_WyncdLsTHEE2mHB4cBe9Z5qFIWu7iw1ODbV5_0wb8X-x26uSrgm42prJYWhlodoBTMbMffuPhgyWB2BQtaXN9VmNgWCdD6pqJTabU3S-0MXvPIAMRDOj48T5rpcqsH75B3rIeNB3N_IhM0W94ch-Rn_M2YqQp6JKo3oUHE-vAlqyiA-23X_VFdUQigcweLJAFU3wvMpWJ7XaGpYIx4u9-6mcx4aoBQvkHOp15Mm538FkPB-B1nprjdIL1M7GbusiMQTQywZQ3N4tjNWqGSimrA1wiv5tPFam1x2VSx_JrPP9GbUqyAkm68VKvq6qppoc5WhW_WbMXjN4BQlmYhaMzqRlT17B0VfFVGbymhW-JwAqOUntJClaitDiiIXtGpJDsX7tWarBMJx81Dy9kjIxSwiYRxErXdB_LewMbehUzUvnyK3PF9XIru-FuQq4l26n1kbMdx_0OUKhllFEmA8r5J6iFPW8u6U4K83e4b1c0GBloMJHEr5-Er4WFjfJDDoKRGL2ML6kkt73t8JsNo6udWqCh6HjyIQ0GaRd170cioawBqGLyuQeTqRMuPC1ATg45fhZ_QgjMx8NWB8H5pX9NS6_HPjS1AfPLG_ZKb37LbKD9CXhGBQL.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_047f32dd3fa388b3016abbdf1b6dec87d1adbefa2935852f1a",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 367,
+          "completion_tokens": 558,
+          "total_tokens": 925,
+          "cost": 0.018575,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.018575,
+            "upstream_inference_prompt_cost": 0.001835,
+            "upstream_inference_completions_cost": 0.01674
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 516,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

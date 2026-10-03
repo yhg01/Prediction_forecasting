@@ -1,0 +1,84 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: P versus NP\nMathematical target, paraphrased from the original Clay formulation: Determine whether P equals NP in the standard deterministic and nondeterministic Turing-machine model. P contains decision problems solvable in polynomial time; NP contains decision problems whose affirmative answers have certificates of polynomial length that a deterministic algorithm can check in polynomial time. A resolution must establish whether every problem in NP has a deterministic polynomial-time algorithm, or whether at least one does not. The target concerns worst-case asymptotic computational complexity for unrestricted algorithms, rather than success on a finite collection of instances or an improvement to one particular algorithm.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:58:39.574071+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 7.158,
+      "response": {
+        "id": "gen-1790697512-lPWXvjrfvKBFCodTjPqb",
+        "object": "chat.completion",
+        "created": 1790697512,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"2026\": 0.02,\n  \"2030\": 0.05,\n  \"2035\": 0.12,\n  \"2040\": 0.20,\n  \"2050\": 0.35\n}",
+              "refusal": null,
+              "reasoning": null,
+              "reasoning_details": [
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-Av0pddmK6X6khA21J7IeWVtcWMg5sHtOFAT9iDTmJyzyBuyMhY_2mFM1_NN--_fNNvwE9WIaLhD6LGc7Ot7UVUTVuibPx01KO7FrxOPxMxsZ2DnJj4xNSpHInIe53KFBV8oH1hb6sfAuB0wQT9HePKxCGuTRV90kNiBsaUmjJlnh3XwyC-gutAhxjlMkAwGq1nMkJY-uz0NcbwpvtMIrxY8YLH3Jj0zVXEPAQa-LUbelCmSQAzO1Q330P2CPrdeReq4Ma8iRRsTNTM957fYhK7u0QtlD4F2LN_UTSXBMR_P_e45vAxR-9XimAByfxHkM-JSmA0gfw6Y9bg6vyPCcS8KfrVVPrXFAAu25dkcKIquL9oKIWKTZS24DlgOxHMyOdAuLQ51ImW_RaGVH98icyyKNjvXZuk8B2_P4omF5SpfJjSPQ0wGQOol5hOGtitjJKZSE3CrgsrYG2dVH0_-RlfsRXkqnih0oRkXIQaawzaDOtNaMADJLzvY1gdnmyNN_GhwEnx4Zxuf9ZagQsqQHLforzUrLzql9q0hZlPB3ssTLI9IwDIeGog2AJKne30N-DEUOFukzOHcBFf13NTQhJdRpNvBXIb2ufGX5DA_m0u4ihL07O216WIisJAFEPBZwms6l6-pLx4-E0oRuRJK34tKXB1ML-Z8C69mC4oEMUYWYyDAkOQkxPJrHC_phC_58x-JxlCmCZBhL6a4hp8DZsc9CeFKuiXFkH0J9MuEDWsfn2Y3Uhj0g-nOf0YBzzj6flbV4fcX6vTHshbo8DWuAIS-b6Wz9kh5IKBHDkbgD8XmjxARvV8S1o7uaWh6PRpzIAX8gD75Pk0U4lcim033cXt5sziW32qWZy3dnuqq9FZEGb_IC36ho1DPWM0HmbVroQarV6NIROJ2MUuKw0pGIqk_qzZ4B26DWzYDBtNzKXXXho=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_078b188ad22894bb016abbe0293a1c87d1bec14e65416e60ac",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 347,
+          "completion_tokens": 768,
+          "total_tokens": 1115,
+          "cost": 0.051285,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.051285,
+            "upstream_inference_prompt_cost": 0.005205,
+            "upstream_inference_completions_cost": 0.04608
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 704,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

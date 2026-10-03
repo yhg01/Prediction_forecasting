@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Riemann hypothesis\nMathematical target, paraphrased from the original Clay formulation: Determine whether every nontrivial zero of the Riemann zeta function has real part 1/2. The function is initially defined by the series sum of n^(-s) for real part of s greater than 1, and extends meromorphically to the complex plane with a pole at s=1. Its negative even integer zeros are the trivial zeros; the conjecture concerns all the remaining zeros. The target is a proof covering every nontrivial zero or a rigorous counterexample. Verifying any finite range of zeros alone does not settle this universal statement.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:04:25.679748+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 8.75,
+      "response": {
+        "id": "gen-1790697857-KBxZo3nFz2hOgVu0xN1t",
+        "object": "chat.completion",
+        "created": 1790697857,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.001,\"2030\":0.035,\"2035\":0.13,\"2040\":0.27,\"2050\":0.52}",
+              "refusal": null,
+              "reasoning": "**Evaluating AI and the Riemann Hypothesis**\n\nI’m considering the Riemann Hypothesis, and it seems likely that it won’t be solved in the next five years. The odds I’m estimating are around 5% for a solution by then, possibly increasing over time to about 55% by 2050. However, if AI managing mathematical research emerges by 2040, it could significantly impact the chances for a solution. It’s essential to clarify whether the first public solution involves AI; otherwise, it may change the event definition.**Analyzing the Definition of an Event**\n\nI'm thinking about the definition of an event related to the Riemann Hypothesis solution. It seems likely that the first public solution will involve AI contribution; otherwise, the event may not occur. If a human-only solution comes first, I wonder if that delays the event. The wording \"first publicly available\" could imply that we're focusing on AI-involved solutions. So, perhaps I can disregard less probable human-only scenarios for this context.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Evaluating AI and the Riemann Hypothesis**\n\nI’m considering the Riemann Hypothesis, and it seems likely that it won’t be solved in the next five years. The odds I’m estimating are around 5% for a solution by then, possibly increasing over time to about 55% by 2050. However, if AI managing mathematical research emerges by 2040, it could significantly impact the chances for a solution. It’s essential to clarify whether the first public solution involves AI; otherwise, it may change the event definition.**Analyzing the Definition of an Event**\n\nI'm thinking about the definition of an event related to the Riemann Hypothesis solution. It seems likely that the first public solution will involve AI contribution; otherwise, the event may not occur. If a human-only solution comes first, I wonder if that delays the event. The wording \"first publicly available\" could imply that we're focusing on AI-involved solutions. So, perhaps I can disregard less probable human-only scenarios for this context.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-GJB50K45-4fnkaSPASekK7TF2KaIBanpjQzPtQQbdToI1ohydcSHvD8PRUn7RwQDr2nVgRIFH73nt3x_o-zShLHzYCcufOIPZQqt-Swdzeb_8e9hwPX-CZ77F57HGb_EYB6M7FHeeZ6wDlhtOiW_Nz8cbVKlyVAYfM7UquPCM7ECHvUAIuTLRRp5Y_Gm3Vb16t7nP841bhFsaz0YS-x39eFoAMlE_NdH9O7KrfD5PZYjFGugCmsWgkuUmkqYRMUp33K0JXmLdWBVchgPCwD3is4eQPdCY5cL_eedJEPjYx5WP98vK3chOERSIbIa8Ur9oJbC2g3Z47K-oR3NhQt0CqaxOrgvtckjpjamoEdD_k2sAaHzGQMfvOL4wdw-4hNrvMahfFzVrHdcIkCd_C0tn0wtaZ8zhvlgfYBe6peqix9Wgtxxgj2kNUBDmbaW4-BySsHFmjwd0AYLpkHo2xb82W6kTUGgwr69XleN4_pb6SSaBP5iz_QEC7Cu0NXIHyWv03GBHuLXVBRM-_YiJ7ulEwaDJcGQU8pQs-nQJeyNKuIZfIHwKqc6bC5t6zmse2UzVbTVkUyIxERtdxqJh0GE9CDSsKN2Bmgdco-fsUdc_X6Zk9K-SfeyiRUr8rMvTGpStyAu3mVWPbiPrnXcP8sLXTwkbvUb_wpUFz2Eoa6vpN5b8iB9GbneC7P5D4QTa9aWsTw_M8mdj_MGSAb3eDnVTjb0iAc0QQQL3N4VdPn3aIgW38UwgPCo3T8cGJb8JBHS0hSLAUvTysDxGvqo3cUgB5lGDB9uQvzTrThOhRPVqrFbnCjJZlw741FwnhUqyvoT0RZGg0rECb8ZzTJw01hXc4pCvCV8hLIxpHroptgP0I8T-19GJxQfhA5i-cTSqwGkxK-Z6MkVymJ4hAkyySBUNR5zGtIMGjCjLwtkzYbb_93EUT8ZuV88SZfatg-ZX9frOSMrXHEtqLJtKghBMj4mHszeHRXzmfN4BvFtFhXDHcH5MOWGq1xtoHI79PpoFa5Ted56nqfrXGh-LW4CGQWKyWv6H_d-azCieFv3OaqHUiIZz6fawvBcvr7QaThN3_7JMPKFO4qkVfVJjdjqXDUGM3hRBYKBEwVeKO8ecR2D5Se_wHyFS6BKcjNgpfPdjlwjXBW6t02vNmRaHPgexCwQ9bDkQU3S33eCF3w0tBkg2FNk8Mwiw6eGkhZQ0VU2wM4d7bpur6MkjPCbn5d9DEj_C5Jb9QJhdPkLNngRiJKuWDF8HRH1y9Qob6LE6k0O9z0T022TmfMg7N4Mrr-9SDMO9pz8gbZktCyRr9bsgdg4Ww303_sHOhEz6TBLPnBftw7WfLvUU_f_jMNReU2CwaLdkFsB5_Bt92j8ahSpJjCdX3RZWxDSf-p8-kvAHg2IhKSj9hgSp3KW_xqjOpVX9nmE1BOnaIcIAPDs-YS9Z9HiOVEz7YzOsQssWuRg2TF5_4Th-mss6UjaBw_HVD0DAprnLAJzFr0qimQrlJCei6mktLJBywRWJdmF8Gqva3n-PoseU1XRMoaTJFTTBwzRydy2MchhGHwZL4rsS7YNzc-6tH5viE8jwGTXWJnVKekev_Bzb45k11muIOSUnoqYNAh-8xlKWjqZEQPGe_BIxyT7AmQxo2YlgvHJB_9BPVgwC6gbKCND_oAtCGLZQq35RuBjV-oX5GK8FHk487oMmB3fgnFk9XHQpjfs4M7BTn9bDnFVnXcZsc5XLpnDNOVZRk7LErbt6SekPraRuuQ4vJAinWHbnP4eDUO22xkggJWah1FCi9FUqsPWy0YzP6s95m-e429weHjwZRHNLQ3oBFjiVXJfI7RDzePpV5BdFiiVKNdIMTtoy1Bgu2IPY4OAGHqYC4XhxDpQ5X0f59pny2R2boTFFxSi8nvcrlGKr4SYIFH3hM97LaHl7VDP21zhaTlGwpQRQUKrwDk_MuAwOTJskF8yd00IJfw213Y5ntmw7PfvIS-7ewaexwMkdtJw5kVDddpXA1rBjlCxp5VMTuVrBhyT2ksuVsWxv46UXCdN3MOu5SPu75Ok0OvaHj7Vg1U5t9UxvhxsU5f9DbpirorbFb4kqWaLu08eTt5m6PKi5nedyhRhq_CgYX46Q1gsCj35AzJLDYgkpU5z-bDK-KGfGOxNs-ivLMUsMoCfNIBMVxS1QAclBqtwzcS8MDCpg37lgM6hrjCYK7mm4WgkMLvUgt8zeDQup_4jBcz9JG2Wi_f_OSgEZw2P6JxoRDiQwSv2MrAukKvxq0xeq76jUrgpQamP7BmhCkH73X93YwQ14pjOORz0BoAoMKJ-qilFOJPq8w4HmGKB6haOUf6gH8oonTo5pfJFnv1MYJ054Ysb4pIW0tFecy2dwrY2iJxy35eXtP-ivG4DX2UKv_AsQLP_27n-RpKu35koMTldUvCFz1vqCqcDD2A3JGiws_Ma5d3fXCmwd9UX4o8YxgnzH7l7zC-7u_mFQNJqN7Gk0zAXEOQ7aaxliVYos2O7wL2Iux9La9OEFp75sQobN5WU0xZlw375qJMhSWAKDRgqWgz6DQTBrANqcHFnu-n2XUMHTVSQaehXL9F7o5PlpwL42ecF7K8PMYSWHhC3bsHj9wfmiiWbu6opNmNcPhk3J0Q-LahCzzStnSjfR0oSgaGbrj_9FIHB36f-5knHfmh5Pc2cdSFH4Iz5rAhxjVgQfHkBzMVSCIoeKp5-GfFwnSKsO3Aeuex6Gv8mQf7OyqvWD8nSX4QnFJNDyyCrXFBFiREA9ouZsvnrxm0d22DwSg8zm36TlTNxH5NFGJ9qR486lzq-5lJuKorK-W4tEajYQnyBw6l1c_4AtJagGwqpbQy8ar8B5bURMEIFHP6eFXlkPjS8cB3WmuL-YTS1EHGfrbtYo6D5M_YvxLw5YjIxwCHKCrrGqmZ_FATNTEFMH_kkVclCGSXJKBtgFJhchJMM64YFZ_uBErqvBsKD9yALTB5qZzcvnoTKcouC_0tamnblxXNh1qqI4RoDfwp8DQLmitwm5Bz6I80Tcvk5AtFCkGw8mAZCKJZOUIT0KMu4l-9Sp27lwTvb5C9zMt7Td4ZiVtnGs4dGzYomJvuwkNWNS9Oa2dTO_SYP-_en50kTCEMsJ-PCwpM_EmTW88rZXDJ8jPKV4w8dzxFIlmPG32cIP5OS0HwCOCnrNxKPoEG1kS7vXy9357kYGtGpLJmD4KP-3Z5gLdJltAQC6wnw1NfiKxYGZK9TYc9kS8uIIDtM5jc7bG5GjyRdh52xUYZnS2lkwS52QOgbbYFUClnW-IPxmxExPWIt2P2bOORw8h4vsRZDByxhmlxDs3og10w03tOtyii90ZarPmh-jhOTrBZx_iN-MJA1cbkhiCMXnhhn6HWC58xMbvqAur7xFowSkWKW7D2jLDbWFtWPDGZtHVui4k-eWsxSv_gE8kdqX3nebVOgwwZg-V4rd0in4AOAE7WSrB61Ucxvmy1Rpo9ZW6Lsm9GvoZMwsyTySSSL68CajS7rPOpMELySUKJ51qHySEvn8j1KrHMBcGwwJvJt0af-daCObV4v4Xj29CP-VVJ5e0BJ9hdt-zE8rJ-SLBWKRlmDytxD0U0h8QyS5t3lYH6ayznf0Z4IuUSU3OMRUUSqiJ1PZOkNhfYf1kCCd6FbtLb96bQyuVU5FjR6i1bhu6ibuio4v5syq2SWISZmVxmaJ8cQq2uyqKlEQfyxKA1PnfiKBr6HuXBAnR1polPs6Tll-7IpGrwoqiPRlGa3ADV4MihdDyQ3yjSNMZfwr8CfWxGc2-ZnBrb-lvt1Q8HXHsT1v2TycpTe8Uxm8nwFub1hGd0464a-qnOcytuV3AFHYW482uem42HhDLD1pcwOlaV9F44DZAX2JZqRFeEQHIJMc1fd4CkTnYd3sRVFg-blrgkVR_FpAeN_15RxiQwONn-eRVOJ42NTxOLYIj48CCRSJgEqCkflwWsCPeEDeqYbNhwgl6G-0Egn_MZbbIbWxTMQgOMN3z4L-en-Jh6pAeNkFk7n_pJgEgrqvHOiykk3qOa98RFClveVCdtizisbiIgpeHRDsXGsRNROU7WsFJndAYbuawEhnDc6pRcNBuXA0YXstHfXaeg7p727noa-VU9eZzYsaB2nlBaMV1--uRUJXH71A5B2cZfypqa5XlGILVBqNRMEupXGLh_k2_JszpdZdn4HWTvbzBOPHRSCZYKZIM1nHPKRpAu3Y-AOIw94C9HByH-R7yyk_bRJk7iRz2SWzA0WtzWTsLNJintosmuSGspBcaZNuUetPAAunwA2I5w2otFWa3a9kLMVi1Ps_mmsKgD8dOgufP_K34gmuhv9XngHVq-4kCaivYbS6enyApvJf-KutqmMaZDg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0ec0f0cfb1c85b70016abbe181db6c87d1a92181daa9d89143",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 360,
+          "completion_tokens": 558,
+          "total_tokens": 918,
+          "cost": 0.01854,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01854,
+            "upstream_inference_prompt_cost": 0.0018,
+            "upstream_inference_completions_cost": 0.01674
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 516,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

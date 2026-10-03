@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: P versus NP\nMathematical target, paraphrased from the original Clay formulation: Determine whether P equals NP in the standard deterministic and nondeterministic Turing-machine model. P contains decision problems solvable in polynomial time; NP contains decision problems whose affirmative answers have certificates of polynomial length that a deterministic algorithm can check in polynomial time. A resolution must establish whether every problem in NP has a deterministic polynomial-time algorithm, or whether at least one does not. The target concerns worst-case asymptotic computational complexity for unrestricted algorithms, rather than success on a finite collection of instances or an improvement to one particular algorithm.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:54:28.882541+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 9.131,
+      "response": {
+        "id": "gen-1790697259-4KE96AdgrXu2sqg7rKP5",
+        "object": "chat.completion",
+        "created": 1790697259,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\n\"2026\": 0.01,\n\"2030\": 0.03,\n\"2035\": 0.07,\n\"2040\": 0.14,\n\"2050\": 0.30\n}",
+              "refusal": null,
+              "reasoning": "**Forecasting probabilities**\n\nThe user is asking me to create a JSON object with probability estimates for solving the P vs NP problem by specific future dates: 2026, 2030, 2035, 2040, and 2050. The probabilities need to increase over time. So, I'll think through these dates logically and assign values accordingly, considering advancements in AI systems and my knowledge. The lowest probability will go to 2026, building up to 2050 with the highest probability.**Finalizing the JSON output**\n\nI need to finalize a JSON object that contains probabilities for solving the P vs NP problem. The user wants this structured with year keys (2026, 2030, 2035, 2040, 2050) and corresponding probabilities. I must ensure that these probabilities are non-decreasing, meaning each value must be less than or equal to the next. For example, I see that 0.01 <= 0.03 <= 0.07 <= 0.14 <= 0.30 fits this requirement well. It looks like I'm ready to present the final answer!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Forecasting probabilities**\n\nThe user is asking me to create a JSON object with probability estimates for solving the P vs NP problem by specific future dates: 2026, 2030, 2035, 2040, and 2050. The probabilities need to increase over time. So, I'll think through these dates logically and assign values accordingly, considering advancements in AI systems and my knowledge. The lowest probability will go to 2026, building up to 2050 with the highest probability.**Finalizing the JSON output**\n\nI need to finalize a JSON object that contains probabilities for solving the P vs NP problem. The user wants this structured with year keys (2026, 2030, 2035, 2040, 2050) and corresponding probabilities. I must ensure that these probabilities are non-decreasing, meaning each value must be less than or equal to the next. For example, I see that 0.01 <= 0.03 <= 0.07 <= 0.14 <= 0.30 fits this requirement well. It looks like I'm ready to present the final answer!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu980L_oL9JKcjOVMlHghDKSPOEO2KMtYqpvBKFvdKhRUPYzRQpiFbObC6W51d9o3b2Urxjd-Tpe8ecD1N5XGV7s7orhy4YHTJxGzkwT6tMzYbb6d52Mg_5F_nwDNXQf6NxtxWdt0vU9HKe_l6_bI44YZZesh_ymhVkt3ujXtxEgMeB0_i0_hMGQdNE7aYAVKeDPCTnYWvO2ReHip31RzehlW1MaZUYySLZNRTdEoE3pW4h_Mr7BPcdxoSggr5QJHYH_FX-fC4veb-y73tsYqrx1wRrXww-4vl2KTeQbJIsVWNfWXKjS5pr9Q9veU-SW49QhyTtfiFDvoZW9CqEJvFdC_eynZKaUXBHz1igyoi8upXzG9cZqqc-FQ0emVt3uwGXpjaBSqNoVYmbVPBxkOa_XLxvnvssbnA0nKp6b8nR_bVDc6cRg_SVvUg-TrLlff7AApXUsBzvFDTN7hkSDPTa5zkVgK9yhhNJq1FJsWONQmGP8pI4a4pfZN2caPhhqYJd6tk9s0sjcNMoNezPHE4tRJIIpufT0xRN5nQoPLlTRF5nvi6AysZNErhCgYn22PL45uL2fDPcGbQE_YlShp6LV8qpht1GmpuFNJ5n9P-aHaUMQHW_VxZ4ReEDGFtCjrrK3EZ8fknPWPrjZGWjkjEKKsj4IVL8v3_6BJ3FiYepdjj6ARNbABglct-m1a1gU8jNH3zgby3wSE1mfyHJm4EqJZsdNxAeqc6FGwj98aRcwyJxZicHou-Pr2z3jeikCll3mXrwMGeGUMztnLz1-X2TWobSD1NErNIpi6m1EnZljcE0k0JyYKA_hCQn5HSfzJZHMPMoWmxdfXamx6SVfg_g6NiyLjvp35lj_zNHrSCaydSicaHd1K-60viwJWiz4UCDuJn60ev6pPx6u67mnR4D8tyRNrogSidVhweS7y-L9N_yM=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_043be46e6d8437ac016abbdf2c6fb887d1a7ee7e7f9e064fc9",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 342,
+          "completion_tokens": 891,
+          "total_tokens": 1233,
+          "cost": 0.05859,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.05859,
+            "upstream_inference_prompt_cost": 0.00513,
+            "upstream_inference_completions_cost": 0.05346
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 832,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

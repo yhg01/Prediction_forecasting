@@ -1,0 +1,85 @@
+{
+  "request": {
+    "model": "qwen/qwen3-32b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-29. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: P versus NP\nMathematical target, paraphrased from the original Clay formulation: Determine whether P equals NP in the standard deterministic and nondeterministic Turing-machine model. P contains decision problems solvable in polynomial time; NP contains decision problems whose affirmative answers have certificates of polynomial length that a deterministic algorithm can check in polynomial time. A resolution must establish whether every problem in NP has a deterministic polynomial-time algorithm, or whether at least one does not. The target concerns worst-case asymptotic computational complexity for unrestricted algorithms, rather than success on a finite collection of instances or an improvement to one particular algorithm.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "deepinfra/fp8"
+      ]
+    },
+    "temperature": 1.0,
+    "reasoning": {
+      "enabled": true,
+      "max_tokens": 2048
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:05:58.021449+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 28.589,
+      "response": {
+        "id": "gen-1790697929-wcJrJqmt9goU7DOiWgCM",
+        "object": "chat.completion",
+        "created": 1790697929,
+        "model": "qwen/qwen3-32b",
+        "provider": "DeepInfra",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "stop",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.01, \"2030\": 0.10, \"2035\": 0.25, \"2040\": 0.40, \"2050\": 0.60}",
+              "refusal": null,
+              "reasoning": "\nOkay, let's try to figure out how to approach this forecast. The problem is about the P versus NP question and the likelihood that by certain dates, a solution will have been found with the help of AI. The user wants a probability assigned to each of the five deadlines: 2026, 2030, 2035, 2040, and 2050.\n\nFirst, I need to understand the problem again. P vs NP is a major unsolved problem in computer science. If P=NP, it would mean that problems for which solutions can be verified quickly can also be solved quickly. If not, then there's a fundamental difference between solving and verifying. The question is whether a correct solution to this problem will be found by each of those deadlines, with AI contributing a new mathematical argument or proof step.\n\nI know that AI's role in mathematical proofs is growing. For example, AI has been used to assist in proving certain theorems or finding patterns in complex data. However, P vs NP is a notoriously difficult problem. It's been around for decades, and many smart people have tried and failed to solve it. The fact that it's a Millennium Prize Problem also means that a solution is highly sought after but elusive.\n\nSo, when considering the probabilities, I need to balance the potential of AI's increasing capabilities against the difficulty of the problem. AI systems today can process and analyze vast amounts of information, learn patterns, and even generate novel approaches. But proving P vs NP might require insights that are currently beyond our understanding, whether or not AI is involved.\n\nStarting with the earliest deadline, 2026. That's just a few years from the forecast date of 2025-04-29. Given that the problem has been open for over 50 years, I think it's very unlikely that it'll be solved so soon. Even with AI's help, solving such a complex problem in two years is probably not feasible. So, maybe around 1% chance?\n\nNext, 2030. That's about five years from now. The probability should be higher than 2026 but still low. Let's say maybe 10%? I'm not sure if AI will have had enough time to develop to the point where it can meaningfully contribute to such a proof. Maybe if some breakthrough in AI for mathematical research happens, but it's still speculative.\n\nFor 2035, that's a decade after the forecast date. By then, AI might have advanced significantly. Perhaps there have been more collaborative efforts between humans and AI, leading to progress on hard problems. But again, P vs NP is a grand challenge. Maybe 25% probability here?\n\n2040: 15 years from now. If AI continues to improve at a significant pace, maybe by the 2040s we'll have systems that can assist in novel proof steps. However, it's still possible that P vs NP is intractable. Let's go with 40%?\n\n2050: 25 years from now. This is a longer time horizon, so the probability should be higher. By then, maybe AI has become a standard tool in mathematical research, leading to more rigorous and complex proofs. But there's still a chance the problem remains unsolved. Perhaps 60%?\n\nI need to check if the probabilities are non-decreasing. The sequence is 0.01, 0.10, 0.25, 0.40, 0.60. That's increasing, so that's good. Also, I need to account for the possibility that the event never occurs. Since the latest probability is 0.6, there's still a 40% chance that even by 2050, the problem hasn't been solved with AI's contribution. That seems plausible because even with advanced AI, some problems might remain unsolved. \n\nI should make sure that each probability is not just based on AI advancement, but also on the inherent difficulty of P vs NP. The problem might require a completely new approach that hasn't been discovered yet, which neither current AI nor humans have insight into. However, as AI improves, the chance of such a novel approach being discovered increases.\n\nSo, my final probabilities would be 0.01 for 2026, 0.10 for 2030, 0.25 for 2035, 0.40 for 2040, and 0.60 for 2050. These numbers are my best estimates, considering the current state of AI in mathematical research and the potential for future advancements, while also acknowledging the difficulty of the problem.\n",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.text",
+                  "text": "\nOkay, let's try to figure out how to approach this forecast. The problem is about the P versus NP question and the likelihood that by certain dates, a solution will have been found with the help of AI. The user wants a probability assigned to each of the five deadlines: 2026, 2030, 2035, 2040, and 2050.\n\nFirst, I need to understand the problem again. P vs NP is a major unsolved problem in computer science. If P=NP, it would mean that problems for which solutions can be verified quickly can also be solved quickly. If not, then there's a fundamental difference between solving and verifying. The question is whether a correct solution to this problem will be found by each of those deadlines, with AI contributing a new mathematical argument or proof step.\n\nI know that AI's role in mathematical proofs is growing. For example, AI has been used to assist in proving certain theorems or finding patterns in complex data. However, P vs NP is a notoriously difficult problem. It's been around for decades, and many smart people have tried and failed to solve it. The fact that it's a Millennium Prize Problem also means that a solution is highly sought after but elusive.\n\nSo, when considering the probabilities, I need to balance the potential of AI's increasing capabilities against the difficulty of the problem. AI systems today can process and analyze vast amounts of information, learn patterns, and even generate novel approaches. But proving P vs NP might require insights that are currently beyond our understanding, whether or not AI is involved.\n\nStarting with the earliest deadline, 2026. That's just a few years from the forecast date of 2025-04-29. Given that the problem has been open for over 50 years, I think it's very unlikely that it'll be solved so soon. Even with AI's help, solving such a complex problem in two years is probably not feasible. So, maybe around 1% chance?\n\nNext, 2030. That's about five years from now. The probability should be higher than 2026 but still low. Let's say maybe 10%? I'm not sure if AI will have had enough time to develop to the point where it can meaningfully contribute to such a proof. Maybe if some breakthrough in AI for mathematical research happens, but it's still speculative.\n\nFor 2035, that's a decade after the forecast date. By then, AI might have advanced significantly. Perhaps there have been more collaborative efforts between humans and AI, leading to progress on hard problems. But again, P vs NP is a grand challenge. Maybe 25% probability here?\n\n2040: 15 years from now. If AI continues to improve at a significant pace, maybe by the 2040s we'll have systems that can assist in novel proof steps. However, it's still possible that P vs NP is intractable. Let's go with 40%?\n\n2050: 25 years from now. This is a longer time horizon, so the probability should be higher. By then, maybe AI has become a standard tool in mathematical research, leading to more rigorous and complex proofs. But there's still a chance the problem remains unsolved. Perhaps 60%?\n\nI need to check if the probabilities are non-decreasing. The sequence is 0.01, 0.10, 0.25, 0.40, 0.60. That's increasing, so that's good. Also, I need to account for the possibility that the event never occurs. Since the latest probability is 0.6, there's still a 40% chance that even by 2050, the problem hasn't been solved with AI's contribution. That seems plausible because even with advanced AI, some problems might remain unsolved. \n\nI should make sure that each probability is not just based on AI advancement, but also on the inherent difficulty of P vs NP. The problem might require a completely new approach that hasn't been discovered yet, which neither current AI nor humans have insight into. However, as AI improves, the chance of such a novel approach being discovered increases.\n\nSo, my final probabilities would be 0.01 for 2026, 0.10 for 2030, 0.25 for 2035, 0.40 for 2040, and 0.60 for 2050. These numbers are my best estimates, considering the current state of AI in mathematical research and the potential for future advancements, while also acknowledging the difficulty of the problem.\n",
+                  "format": "unknown",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 363,
+          "completion_tokens": 1058,
+          "total_tokens": 1421,
+          "cost": 0.00032528,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00032528,
+            "upstream_inference_prompt_cost": 2.904e-05,
+            "upstream_inference_completions_cost": 0.00029624
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1041,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

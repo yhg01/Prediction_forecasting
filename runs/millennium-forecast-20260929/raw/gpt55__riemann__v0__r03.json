@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Riemann hypothesis\nMathematical target, paraphrased from the original Clay formulation: Determine whether every nontrivial zero of the Riemann zeta function has real part 1/2. The function is initially defined by the series sum of n^(-s) for real part of s greater than 1, and extends meromorphically to the complex plane with a pole at s=1. Its negative even integer zeros are the trivial zeros; the conjecture concerns all the remaining zeros. The target is a proof covering every nontrivial zero or a rigorous counterexample. Verifying any finite range of zeros alone does not settle this universal statement.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:56:32.193224+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 9.86,
+      "response": {
+        "id": "gen-1790697382-nubbiwodcbs1Yzl0Dvxz",
+        "object": "chat.completion",
+        "created": 1790697382,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.001,\"2030\":0.04,\"2035\":0.16,\"2040\":0.30,\"2050\":0.55}",
+              "refusal": null,
+              "reasoning": "**Considering AI and math proofs**\n\nI’m contemplating the timeline for mathematical proofs, especially relating to the Riemann Hypothesis (RH) and AI. By 2026, I think AI will play a crucial role in identifying proofs, although some challenges remain. Looking ahead to 2030, AI might significantly automate mathematics, but RH could still face resistance. Historically, major problems have taken decades or centuries to solve, and with more advanced AI by 2050, it might help tackle these issues, though independence remains a possibility.**Estimating AI’s role in proofs**\n\nI’m considering the likelihood of mathematical proofs being achieved by AI, especially regarding the Riemann Hypothesis. By 2050, AI's contribution could be significant, but still uncertain. For 2026, I estimate the probability of a proof might be around 0.1-0.5%. While there are claims of proofs, validation is lacking, and the AI's role could lower that probability even further to around 0.002%. Looking towards 2030, if AI accelerates theorem proving, the chance could increase to 3-8%, and by 2035, possibly to 15-30%.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Considering AI and math proofs**\n\nI’m contemplating the timeline for mathematical proofs, especially relating to the Riemann Hypothesis (RH) and AI. By 2026, I think AI will play a crucial role in identifying proofs, although some challenges remain. Looking ahead to 2030, AI might significantly automate mathematics, but RH could still face resistance. Historically, major problems have taken decades or centuries to solve, and with more advanced AI by 2050, it might help tackle these issues, though independence remains a possibility.**Estimating AI’s role in proofs**\n\nI’m considering the likelihood of mathematical proofs being achieved by AI, especially regarding the Riemann Hypothesis. By 2050, AI's contribution could be significant, but still uncertain. For 2026, I estimate the probability of a proof might be around 0.1-0.5%. While there are claims of proofs, validation is lacking, and the AI's role could lower that probability even further to around 0.002%. Looking towards 2030, if AI accelerates theorem proving, the chance could increase to 3-8%, and by 2035, possibly to 15-30%.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu9-v3ox7A5Hw_5gTB6YcFyh6nYKxW3LgoZPY5FDcefUqLyN03_XC8qUE-P00ps_aHC8gpY9D_WwVLgFpm-zraYi3HJyD4OhNgTJTDJaP6pvF_HnftDx1XMQSVSm3ctEWn2ItuCtr8Ifd2lghUhNmxQKJ7HyxOzkCkgZn2Oar8D_6pIdRGYr0cImy6HdJiPUiyZl0_-oQQMYwbwW1Vu2LPNHgtrgusf3DjAmWoek4stXQcP1sqAOJj1OWWsYI6fNZ7By93qbT7bM1ytVov0TH57LGbNfBtepVfXjQm87yalwA4wKOktXboLQuy3RtWAXLadL8Qfg_XiPEFbpapYhMQPESfbIlRnPQ19EChxX2BMYabrZXAkgRT-_SmTr7jnA99qHnh1APh0VKEPILxfuEgkgdyuM8FHzmavNj6WFUU7eCt67zlVx8O4hlu5TxwyYFc6P2-ObPdsdw3FwtummGmhFbDqwbu0wViYzNuRkzHbT256fNm7zP0R7DF_onjDwkhw2lTNUM8fOsP0zlhlHv3AH7c0hIQ3-VFWZFzr0obbxknkWcflHk_jTbVZFLbxu1Wz68vZEJHfe2J2_JWrlXanyGBVeHi27h1BzqI5gFVjgvFTlMZkunYKwhzoXDv7lQUi50_1nvb4vIuubC3uUHzLuMW2N44nbD1Xu8leuxfCJqHnQZWrHiPiElOtQT5i5AJke7U9lPhax-TfIUVYf_TPdpEJgY0QMwpXv2INdJYYz3aej7HxZwRsRDaoCSF1-bhOLbw4VeN0LYd59xQv6ym5GcCNeoVSKj1LCRcUXF5GoO3yW03Km3Cgctp_H9uuPVZJiZqvH2rohoHrkPmvG5WpIHElB3VDEiMxbopVvuNkAhHXVDuGn-2Bt6hqsRxfUB3v9ZTMS2I_JDmOOuVrSte8dsMeASRCyLPuhZZd94QFn3REddvGdqfPnO4Qjd5EoBMyQUWmOPi1erRZ0PG4DPFbMpxiSHzW49iBfLfiDxM70_3VUabBWP5qubO4uPjalrzeOH9ZqTjKeOmptX8mfJUGuatQoVS0Mt_h-l5tA1RFtbKAH9V7jmbsVWEVjtUSqVi4jKxBf-GjmbRSrZGFe10gJ3XgpPNVt7CqpBWpdS9DsTnO1VRHrN9MP0QlusOlIDYgFjfod-UHnwWx4oO9Lt0pLGXaXHTS9EAA23sBKE8yfJgD2gHtVF7XyHGoXc2sMryE-_XShxdWhS7Yl5_Q4A-VdFnKW1KXqMp0TBLwvAcpEPlbVsJW950yFNFPH_sv2109tUE5PO5FaQgaLl8SjW2Nmh050HLdXa65bjAzW3-tKEGSdCToqBGCM9ZiEkzfsAbaCtWPlH6l42QE_cB8SsJmbvlBUTaOF1jjCG6R78zouOuJkpUZCtytHPG3NC_loxz9d0PKIL7-mv-ecG3lWG8KoZBrBZ3F1NXN1wWpjssMuLf6W-2CfJ6q7dVMdAxLNTUXfTzug_H30Jlps-DHycZYwtuAvzhsK_VdTf_n4keCLYrTZq0GTWrC7ThmYU-XOU6w73UaLPPNQfY5nLoIePj-94ACq9EiaihQaFm4MKrODs-h6fpYjxuZ8UHRKtsJJobyTfOjBBXqh8qOYNS-9jImQRnwaPQNJedsMuECrJwlpTNpgvYQ6m0HTaXow6Q8r_h7vJizY88hGERxHwyyUFdAIIrKti9lSKgc8kXDK3s_MkAIA-IADnQQhtvQ5ivCxj_FP0HmZJYlL4GXsvnFENz3_SX6lTajBTkfPRrgn0kg8AhkXa_CdGY323JCt0Uh9Ti5mFaBB533_bOHrbEOS_yVHciE4nYIX9nmhxcZHc9BqCQgBXzKpauWUbaK64R1lOqvjRsTltDlIYax08Gh_OyW24UXWEWuuYa_cXXRgjnMFvODU4R3SD4aMF0sq9_QKr2IQtPN4sBPGkNNGwly0iCZQe-eudle-q-e4GL2v-ta1lQXzR9FhphQP3AN-MNi0GxZlyHhSY7VRcUYx-pQ6jpWq89B70bDSSvuRV1czij_j2NjAyWrC7dUuGtspNjIaWTF4AcfhW0CvPmNQyBPNwIIvKzo1golmj1dgDhYrZF8uMUkqw4PgnsDQgmSM435xrh40W5AAB27IB1nRzSUk2p4na5ZgFLBlHyVOZbNtXpAz2g2nNJTOP5YLxrmDGZ6QSVI_Qpsctjrvsz7ac4FcANiBHSPnkhCgAE0xxxNsw17sIy_B8HnV-jNAJQeC-xmgVlXKQgNfxYj_OkPvqfu_YqgN5Zux-M5G-LqH6PhLAhf9Q8RZu_g9CZzRy4fXm2rGm9fSm91IO7U1cRhhhasGWkJGK8yXcGKaqeRNOJlbZIboQ3l19SiO_pjXxL24KZVcLX-9obylkeGQ4t9sRz-gLlOJ6kpKPNJ6lMWpnoomj9OnvxKZSmTdppcujsEHqnOfadPuErZtNYfBPOweyoE_nGKQ33tJWceAzGW-P6Ni7KUvmUekNbSknNHMkKx1sLJ8aEYKZyng9mojRClbqNcJgjPlMz-ELokXndb73Ok37LwEO89BjhwaPNLXxkyzNqya18xSUxTVbkqDvMS-kvQpHmLS1HmEFiqr0-g474-vkE5L-SzhRSVTe0DyUJPg4VF4x5Uj8njU7loGWEpZRdzYEFLvLBamuKZg3lcGCKZqYXkD3tX1_OvXV1JvABreO0zCElm12W-BqM9zAD6_hZZX-0-eyqUA7mMrKhqo2rDTyOJrq4xaiHzBKTvNRAw3zt0XK_BYVt3YMXanFgbBl86bpvzmYTTaUEC--8O8PYQYuEoLb9hBvOrHIe7c_vb-nVob1y2Egvy_DKj41ci5WqK3y5ulHGhOB8Tsf4CnqTUGA2OuRjIKcIrX1xmL99H-kEVg5d7Ig2t9FbqE5gK5klGRPOA8HNY4I4-eIIx3KKKaiN-bJAPZ9AL9J4nFsxeJx04zwP7DcMk1OCjme6tnjDKWKCl1fLLIuqLDbCTQPhuKP5gleSyXRXecSi1Eayu9k9I5ufdxbleR4npkpz2uXBaj0YtgRRQPATVE-9bbQorfB-77-SGUQAYJMTRPB_60xLsUl6aWvnbrnoJteQ1z6ALUTiLFhmZlYBnaVQfJD4oOFbxA466binuTWuu2emIa6wLnCUSXFLLbNBhDRzEk0HcbG0iMCgFrt7ZRTdgvYrk0vHqpaxNB37XcS5YH3YKyhVOQ_YSvzIOxRgGfVKClT-1UbRbm4HxZzjzi_axAwfDsbkN9mRBKvm-ncEXXXvXS2aRJ9hCSamCnNSUYYK748zHpTOEf0j5eJI9xL6gxnaCD1HCC4aLsr8Z_MWeFkZS9ZXsHXqxHD5vgpU_jsycrBCWanyLM0jlBsch1j_TojeRpnSPO8prmlB3c_zftMbHvJMntk2Cf77xqlPThqulMesWsxJD8xkWWdNA1TmsjM10XIjFIpDOMtN4jt4FieDVJ6FpvpWZ1PnKlCENv5RDPUhRFOldQ70s88Y8ULQg1xLZqj-i7TAlSADFkqXChZC4OI75PxvHGJL9dSmwsP6sviKIslejka3KjKGcwx__mXjPucQwuhrGe_o_hjIcQN0z1TAxGP-I7GgCjZ7syLHC0MYdu7RSfOC26YUZ6S36JKDsjwuPNcSdKYYs6LUSEXLBxtyNxZwIE5MT3KTKZGR7c6-tAgUBVVnW_Hqpe71nuNJkd3Hc3-WVdMQPB2ne32S8cd8hcJEw-8PTB08qqiFbSdQlKkI3eighCCX7LD_uhgJrzyAQw8VhRnedpSIFqi-h0hoyD2N1V5TOPFboVcWZ7-x0ap8jervpUO1rDF8VfBNabsmNaHbnPczGy0zuRmVaC7xP1UjZVoadZJtOfedNKM9d_4oc9zyMUhEEprcj7JLYP0qUTkZ4ISCfHRf3yWc6uQ1-7r3BUAHgpEbvZ7yfOap510eOaWTlzL7Z1sc88vILeK2XtQV5MxcN5dkiADQiFUuYVobGfurClnF1XzC_agpUlXg-L5wsuL_dRZKhm-ongquT38erN59s7CcbXkYyK3IffcHtn0riVMtAfZbBEjtLZR2ZsG-gbociAx0J1DXHkdiBON30RDKU6e-nnz4SG3-FrL1mKCxsLwrHMZneqRL2NOFKVl8GPWFA8btODP31cOqcvhtx1jE3-OosDdUYfS1G_LnnGZtsSRVYWOz5aU_zqwDjbBJN6U126KkY42ko6pSJb3_oENbPSvoUlyfVrjebznjf754GnOh0VwPELH8FSzlYcGsjrXCbBSnpXH2eAEdLuXlWUIF8jRH1uUvCQtYJerGWhrNF2AlfX7MJ_hDB2oyNoMnoRQM3HsxAcuLOB4_zXjhm5iQa-OFnhYoyIOGgzeI3sfDDvLVDPjYADlqq1OxoIa9Tm4reMb_HfbLANc-J-GP6nOvn8MwfgA11K2fPpC4xW4cttrn4YZbJwYl9zGEK_SChL4PoP2YzityRmwrM5yk3uKYG58d2fSDoqt9HWkujNv-QFuN4phFpe8zG0g1eRufHZXVJJ1xaC2hDTHx8q5AsS8Rik_U0_6GNpyFttBFivG8AYsfne14F3YzWY5EOuCOrVEOvDH_i70vuWP42npUZQYFPIdQhpd4J1Fu_TN6TqEfqL_gRg7TuVUujKgvoC03j6ndVrwm6edhhSWC238oM9CvZ98XpcPyRxpmNWOTzUN0W8jc7MvOe2jAKFqaOQ_ouyq7IYGXzdbqyINRfbDd1PB0ACBjBpA0viiScHB3kM_-Lo1YTOOYZ-DPaRwSDi2MCw1CUTqHzjVQydQOtB9-j_AuTHLnwblk1IN2xwRnC-Z7dhXuyDTb4ERwBL0GCteJxXsc__MJqND_UqEzjTIjhilMw3aou85vfBkitdt1KOdqRiUiz2ePpi4rV_p6G3JbSq-t-vNcSxpvBie8KaIIxpXRXMPvk_Aj5VjIbp8FDx3JyQf3uA8RACZKDzCSSVBaiEEl0D5Zt-Np_KQqahd3R3tc_nEglLZBsz8ap_70yJN3He0845LT-_tK_7bChbuisNP-Cu6EWV5EXQZhQiSwejdv3lUZu5DgkHY2fbtrCTqxsoHqy2vKSdHgQ1VAsn634h8-6TfaalMtRFe0kkgDr8WrdKVAZJfShKqjSTIRbWLt19ErMFsQ9TQSKNhkrM033TyGe9M8waeDfGB3pY2ZcxZq7FFlkIRIeuUqpGn1mUKQ1R6VCI7iaYaqVqSA4W2AJ7BNZgWtMukq6jDjg5ejNsx1r8XoLezJhz8Jyb5up3_OFbNk3z03_twmQzr3uFNVVqxyjIJ8r7PHrrOntk61rKQ1DQvhVbirzhCLEO6fuGODwqhPjMtnz2p2S5zutfD8cCEK1vrKwFI8koNRgeHTBvWoJ8TrUTim5l2AqORHq7W8Q6mp5fgVD5jsoL59C-33gTeWoJV8l7e8au6_L9j6JNUGpIF-UOLLIJg3GrMlQ7uFsVKPlSXIv_BBD7fVwLMnneXA6jkxSAA8A3719jsLf7mmWrrcGBXN1Px1fybHjiMX1bZiLkndE7iy8rGFp9yZVMbssJt6Ub0fRhcLioy3dm5-KiGYI25d6pQJ1lFpRDLFs0zvhPEAtlo_DdJPQH3vUmu2bgF16Iburb_upcJ8O92r8Jxmu4IFEoj8aLJAN_-Jlvg9TyHUOSE0rhu-lacvdXPMLjjU7IuMylrXq63x7I=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0829c315c7021743016abbdfa7380c87d197d9aa979c817ec9",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 355,
+          "completion_tokens": 740,
+          "total_tokens": 1095,
+          "cost": 0.023975,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.023975,
+            "upstream_inference_prompt_cost": 0.001775,
+            "upstream_inference_completions_cost": 0.0222
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 698,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

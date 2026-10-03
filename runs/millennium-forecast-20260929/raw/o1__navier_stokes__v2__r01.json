@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Navier-Stokes existence and smoothness\nMathematical target, paraphrased from the original Clay formulation: For the three-dimensional incompressible Navier-Stokes equations with positive viscosity, establish one of Fefferman's four alternatives. (A) Every smooth divergence-free initial velocity on R^3, rapidly decaying with all derivatives, admits a global smooth velocity-pressure solution with uniformly bounded kinetic energy when the external force is zero. (B) Every smooth divergence-free spatially periodic initial velocity admits a global smooth solution with spatially periodic velocity when the force is zero. (C) Some such rapidly decaying initial velocity and some smooth force on R^3 admit no global smooth solution with uniformly bounded kinetic energy; the force and all its derivatives must decay faster than every inverse power of 1+|x|+t. (D) Some smooth periodic divergence-free initial velocity and smooth periodic force admit no global smooth solution with periodic velocity; the force and all its derivatives must decay faster than every inverse power of 1+t. The periodic domain is R^3/Z^3. Any one alternative meets the stated mathematical target.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:57:21.814673+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 7.389,
+      "response": {
+        "id": "gen-1790697434-43N5D1HtDTILcJXrSD1l",
+        "object": "chat.completion",
+        "created": 1790697434,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.01,\"2030\":0.03,\"2035\":0.07,\"2040\":0.15,\"2050\":0.3}",
+              "refusal": null,
+              "reasoning": "**Estimating probabilities over time**\n\nI'm pondering the likelihood of finding a correct solution by various years: 2026, 2030, 2035, 2040, and 2050. For 2026, I think the chance is about 3%, perhaps 6% for 2030. For 2035, I’d estimate around 15%, then maybe 22% for 2040, and 35% by 2050. I’ll aim for a strictly nondecreasing sequence of estimates. It seems wise to follow user instructions while balancing optimism and the need for realistic probabilities between 0 and 1.**Estimating probabilities clearly**\n\nI'm estimating the probability of a solution being found by various years. I think the chance for 2026 is less than 1%, maybe 2% for 2030, around 6% for 2035, 12% for 2040, and maybe 30% for 2050. To maintain a nondecreasing sequence, I can use values like 0.01, 0.03, 0.07, 0.15, and 0.3. I need to present this as valid JSON without any extra text:\n\n{\n  \"2026\": 0.01,\n  \"2030\": 0.03,\n  \"2035\": 0.07,\n  \"2040\": 0.15,\n  \"2050\": 0.3\n}",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating probabilities over time**\n\nI'm pondering the likelihood of finding a correct solution by various years: 2026, 2030, 2035, 2040, and 2050. For 2026, I think the chance is about 3%, perhaps 6% for 2030. For 2035, I’d estimate around 15%, then maybe 22% for 2040, and 35% by 2050. I’ll aim for a strictly nondecreasing sequence of estimates. It seems wise to follow user instructions while balancing optimism and the need for realistic probabilities between 0 and 1.**Estimating probabilities clearly**\n\nI'm estimating the probability of a solution being found by various years. I think the chance for 2026 is less than 1%, maybe 2% for 2030, around 6% for 2035, 12% for 2040, and maybe 30% for 2050. To maintain a nondecreasing sequence, I can use values like 0.01, 0.03, 0.07, 0.15, and 0.3. I need to present this as valid JSON without any extra text:\n\n{\n  \"2026\": 0.01,\n  \"2030\": 0.03,\n  \"2035\": 0.07,\n  \"2040\": 0.15,\n  \"2050\": 0.3\n}",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu9_hBgFzvcZ2Vv5cJDNrYyqCJtsoWlDChwrtDtnQ4phLHy7amnR7WeQnAQ0FegI3hXsvwFZLNEwv2zVsDR8fHxS9TfSbezIToKL9vLYm4mNzfaFjABYBlOpdJ3SJQKYPi4nSFhAFd-dDg2145lHzVudR_30oEPJFWwXKgk97-jjdhPM4-Pk7Bo7D97jeSvxTuGsCKxRJ95BqVpFxyW4V-dPdr35bey-GbWnkdI91DyYGLcsRs8dtU2xuTybxZma72Y71l0v1zGeR33I0DqTchBHIguJTmKlGmTJ4AhtObee5hfcj0CTesWhRXc1rXRVK4ysFH_AmPl9L9egZfQZYg0bLmN-dWLQAjywf42p75Co0_RcS_MONYwWrdQxyDb0sN12GLniq5bbZzi1vkn8DYh4r7CboRcWpSX-ilsoSvFMlJBah0SvTZP-mQfZ_ZYg9Ow1fL9q8AbFC6cjFQCpMUXJctRgnK7mnhSqO0RXvgaCPETR6Aw_DoSldjTkPEtsDeBc_z1mzfi8EaRLGIgjWDpvdZ4SbDU0zd4qSCNY1W6oB-CzKHlh3M1dja6yyi35_56I39_VHWzCajcxGi-MJsP-uRmu7keYQy7ZXxvt5iUAFr75x8FxwRi-R03c_SpIwSYRgnxkHBSlI7dJSK2yw2PHodXDITRUvbJkHE9NsAV1DH6CJ4oS6FUK_WeeEQWtQHzwImuPRzb16_UHuSUsxPCLxUfnCEwK6jrmfmwxMcNg0V_qkg1Vk3uxqpjGTGOp0zGpORZG_h6fhEWdl64e7X7HID9w6GmLX5w3LSl5axigYvcJfcTILElnV0jiSoLru6Ca6g27OrtNuO21KHSurlRKMuWd0E3XDlUrHWWRX-S0DXRMcbWkA_pRx2dpilNOUmZKLt5_T3oSB8xQCSDHUWHt3SVAx4MijsapZlG8lke8L2ww=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_09be22a81c4bae7f016abbdfdb0a1887d19eafcb5358335325",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 454,
+          "completion_tokens": 942,
+          "total_tokens": 1396,
+          "cost": 0.06333,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.06333,
+            "upstream_inference_prompt_cost": 0.00681,
+            "upstream_inference_completions_cost": 0.05652
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 896,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Birch and Swinnerton-Dyer conjecture\nMathematical target, paraphrased from the original Clay formulation: For every elliptic curve E over the rational numbers, determine whether the rank of the finitely generated group E(Q) equals the order of vanishing of its L-function L(E,s) at s=1. Thus, if r is the number of independent rational points of infinite order, the first nonzero term in the Taylor expansion at s=1 should have degree r. The target is this equality in full generality over Q. The refined conjecture about the leading coefficient is a related stronger statement, rather than an additional requirement in Wiles's displayed Millennium problem.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:55:48.618516+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 10.074,
+      "response": {
+        "id": "gen-1790697338-rGxQEMIJ9esAkJqiQ302",
+        "object": "chat.completion",
+        "created": 1790697338,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.001,\"2030\":0.035,\"2035\":0.12,\"2040\":0.25,\"2050\":0.45}",
+              "refusal": null,
+              "reasoning": "**Estimating future contributions**\n\nI'm focusing on answering in JSON format about the BSD conjecture and its future implications, specifically for April 23, 2026. The conjecture involves a hard math problem that likely needs AI contributions to achieve a solution publicly. I'm estimating a completion probability of 15-30% by 2050, but it might be low by 2026. I need to incorporate recent progress and consider various theoretical routes. If a solution arises by 2030, it may be with significant human and AI collaboration.**Estimating BSD completion probabilities**\n\nI’m estimating the probability of completing the BSD conjecture by certain years. For 2030, I see it at maybe 3-5%, with AI contributions at about 2-4%. By 2050, if AI becomes strong, I could estimate a 35% chance, but that feels a bit high. I think we’re looking at the need for new theories. If superhuman AI is achieved by then, maybe the chance rises, but without strong AI, it might only be 10-20%. Overall, I see a combined probability around 0.45 by 2050, adjusting down as years progress.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating future contributions**\n\nI'm focusing on answering in JSON format about the BSD conjecture and its future implications, specifically for April 23, 2026. The conjecture involves a hard math problem that likely needs AI contributions to achieve a solution publicly. I'm estimating a completion probability of 15-30% by 2050, but it might be low by 2026. I need to incorporate recent progress and consider various theoretical routes. If a solution arises by 2030, it may be with significant human and AI collaboration.**Estimating BSD completion probabilities**\n\nI’m estimating the probability of completing the BSD conjecture by certain years. For 2030, I see it at maybe 3-5%, with AI contributions at about 2-4%. By 2050, if AI becomes strong, I could estimate a 35% chance, but that feels a bit high. I think we’re looking at the need for new theories. If superhuman AI is achieved by then, maybe the chance rises, but without strong AI, it might only be 10-20%. Overall, I see a combined probability around 0.45 by 2050, adjusting down as years progress.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu9-EMD694_f49Zt_fRAvFn-W5EKxUSl443-Av2t6oOl-IXEh3ermoU5XS3XYUBFeqe8jhCCvj_s4J_rWt60aKG6gYESIdrCnvmroLqRd4BBsSy_9gx9tN7X_Uogbn1lHhjSMt7n3R1qRBB4HHUlD1oFasFwye33t8SnUxO_LOA-ENKAHgz7ia73U8FtXVRqCNYDUT42PW0L6dMZQPplUS3uIGfiE5enPlGbGRrjjLViBSu6nGt6P8bKu94mQt_RtoIMbmCbPs_cXSMk0AU5BPRQ8906L8i_vAyjVbSJ5Ixa1TYw-dWDqDGVMQIki0yob4bV5rXCp3Reg-g5Qkvz7T6QBc9tHPfPUl4BYGUTf8tyGv9k4qmXYRkv8WY5f7vCAKWpU-GZCRTZkArUHb6MuG4i-gBKOcpaTau7hcKVcAuX4imDn7iPxFjkMndHy3RooyAgRGLaGpb7uM3sVrn7C9moEFv1LZrpoUzFbZRVyKY58W_ghV39mNfMT1lKXBajVPsnijg91CZub1D0p1uF8tEs28Apzfcv0wzWpoAmvkJpa4jJqH8vqVayB0DWra9icDc8-dssjRUAJBQK63i3V8eB_qyQOtcC002D3f3i8FoyhQShYotre0x6N3PAkaJ_eJnEdkM0lTtrf1jJQn1_aSLxn0C09hiYfFhlbNBKKe4tsFh6dfcKd_OSy1duykxfjnRFXj-Ts3bOhMMLfsmhLjgY6r2hAVW6ASKWwxRBzBEQ1cewCi58ro9vZy8CqVwpSxU0bbCkUaJkkf7OnHgf8KUEJNi1lEQA46F-QhcmDyW8Ik1D7hEZiO7hsoj1MmsacHBrXLt3m2yTs1gSXiO57cieeKCF8bYRHA-ZsMVd5WRrQY_6xXBTDOshC_NYBZPLteSxIlultLlzee7bsnh6o76gGCOqpWR73z7KezrO1WyvM0wGRZBPGJuIfZJjuTpkVPk6Cn_SsN1ZTZddtxXtNPwF7pqOqM0zq3RWkTdOzVdqG51nu7Y9Rk_N84eouJDIaXISjVVuClQ8IUOKm1zqOaI67m6qusiziYNn3-krc590K5BmV2Xf__a6aDm-Hhjk5IWd65FyTEXXltJv7DV6B6-2QBearxgSw3YsX1Dfhu1lSB24Qt-hZzRTKzX7R2WZye69eQoH6u57T3hYYh5nzDQYfWdgWtq9XyyAc2Sx4P1E355saFceD-UsF4uhUNx-yZ5Hv6VaRO8ZisbxydTXjb65YbKX-_uSzEOtxD_hH_6lkGiYz-CRnMB6iZjAoCm3DaCSPq2XNfUY1K_0gTzNYOf8CkMVv0qzHCsgCBnrlMBMJ3zcgAQvLiAJv8kpSS2jed15GQ1azwaoxPRmAnnbSumTqux2VfMdXZ3Qv8Nb3xtFLpCkvTgTFCwwZDCyaYBEwtWxP7g9-cjxGmraRg6RFXaI0l20AGp0BwIJ6B9pjgIFbQ__TW-EnrLmen0rtydWsm0F9sxcGqHP_siGG6Tek0AV-BqNGA-lf92_kiAPjeb6RZXP3Q6E3fv0H4acIeZwiUSt32d6fR26m8SIh_UvXpfcQUDzQs1d7n9NKhWDMJhSy1A3n0-Wr2CzsnHiNVZASoF0UtFlWXYfwzU0JBmHEzgrT3AZ4m5TGZVcoSFNhaXNEfwAE5eFBodkNWik22jpcIWKralfRqONV_HtECZ07Gnj-eWBEyWq8CAEqJk5zEnTb1hDBr38ZYxlt0Q5_0x80GI0Sa_yvvXT-7GQyhhiXI8Cbe7QQOFcjqxVQe0b0qfNqI1nLnVYzF31jZbrbGWRZvyX7PJ87OEeR5BHTYGMhAGSDG6Oz27PVPjBHpkHtqCG0rfH8cBl3tPnAmuvNYU8WUtdnIuKlCLBInr00y3XwCSfcDkBV_tgNNW7UUYlZYeKds3rlC2d25UvdRKJaQy-rMMTFTtvGWq3WyT2Ze3UwWHPvJewof7fvGzHhA7mhJ6uupu-nZ5Es2E-W5Fti-6E8EMP4GmNKA-6DUWzR8s546LzEzaoc1T-M1UN_3CfY3pzrcGMfgvxvop9ZO_kyW8PTLhGCNeAVECmWgrU00zGaqnjhanR_Y2_ASyLlPEbAfaOkyHFiWi9Vmk_mS5rkgoWu5dIiiXakN647uQ_YFZeowiWzx7yOKz8-7gV88LxrTbOHq9boL_nPTfY9ewgBTsLVJpFw9y9YipibQTMkzFxaQqbrLDQeE8yVBKf3-yjBA_HqiKzNP-8X9SXe4PTaksQqY5wXjGWhbXmNaB99PEAEikBqrD1fU4F6e__rvvHklsiidF0bY62jXlueTwHtZQhHztakuN07vzf4-DvhnU9HtJRTwH4SvG7DRhyMVXacM3e7107s3EDY-IQlbld-EDlomLGVPif5yeePAq5rr3m_0XTLV2jMh5HMObcRQzU4Om15zhD-hGzJEDpaDybfBbK9H4jf3MD51NR4rF8_61x_x2r4kTswJzEU2NeIIwyijePsruIQmxgZvs6zdahPjnOTB_uia8O1r8tIssvUWcZxaCvUsfTg9SfwSB2DQBp7saZ5nEAYvD8buaX_IdKX7h-gwfvSF6LX8kgZXfGPjKOPHDIAbni3bApup56gcwP0F9ktfWElG_f59Vw6KiC-jQVV3_q2cWuH4dUUwMvm_JDO53ZJfJcMlA5Fh0msCR-QaHa7gulkw3vf4VY32Kbalw7Aerd4_aa9Q86cBuxX5LJaD3Ad3dgeC2o2wJKeA1bai9OFNed3jJhkM5NGsvuPfz0Gn7uvXS5KC_01EakeMztLQ-tJkrE5gRd_9qo5sa0aK2SETeowf8O2Xm4xLRfUdVELjiyYADM7MoqbharLyZZX8Pi3ZlpmvcZ-G0KFVSYFf1wEe9WjdBJtcFGWxNBQh5wJ9MT41sV2IB9TvTRJaglQ6P5hU0ue1ak0T9pWzNKqwLZDO90_-dRTFOB97FifDaCbwtNZHs_p3cxLbgBhx_Bbk5VjqoCoaEFwfJokxOxSwVR-1TujXFHJzTX9oB8W_4tJzwY-qxxmYhtl7nXVyHCL0gZwtRB77aCyG6oEZ3dAB9hDITyPfUwwcamcI1OUBdEWcuKG0VqilBpzRYHmtyMklnVgW5Mdp3xnivMJfVXZpvBLZbc7ADx4Ckk7Fld6yR8Bh-AM0Huxa7APggehRhLFa0Kd3a9zi5CZZP7mg55zNusBx7OH-NkhPneBKBYZi4REz9vO61oQcHxpl-uwUixteDIVPQIBETg3Z9pp7sydu9FQFayJTTF4PKAf1qj1HdvobO6t5zk3Kbon6B4-VuaElkuiAj0JrYtrj_qEKSW4FZQ93q5qIq_2wnA24Is-Rs7hNzqeTTcrCAFOG4b4WlG4WF5nCdgasxYY0xL5mSmVxyHKSCXat0gDw0de07Kw3v7PDNcVK4hl3fMHmod2u2MnKowJHTXH7v1gNi1Hxvu8Oa-tqFUf0DF3rQztT0CNaN3YrXqMYJIyLUxSXjg2bHOUUQU1wcpXuTA3OJL33pVE02UrBPNnaWQ9gTfHvAUCX9lTNET3bvjy4gMdKQmJ9F_KKzLNDTZi8OdgBgEWwmfrn99g9M7UBkuJEpNZAMwvwtEor9QS796kDQVX8u-janTRMIfL3RanNk_-UIKZ7t8Tjmv4t6ZGx1OC--b_njyM3uiyQ70nwSlL5wsQqXYI81OL--4vSyHoVyW4-PuGIFo2I8cYMn5pm_mrmwiVKWhbgBt-7KPZBQK5x6qHTD_jXft_ZVDSBhiMVo7e_Bfh-dZQ3dWnS0gYptPH56lNQYhigx8vGtgbS0pNjkZ5iUd6Jy8xds0Th3Wslf2j3vHryA-VKBlewnAgu8qKSf2LRnoKembWbFuie8lMUOgve5DfgkBHHcTH14BNQY70c935BTuonfL2hQdC6L7iHQAQZwCmrvvOeI2ep-efYxOShEcBdSSJNbMHRKBYm0RJVLbFncU_MpR2pDHPBZ9MTbGf4hnQFe_IUyZF0s5SfZ3RhtiyuVKalB9Hdw==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0ea9ea55b4fd0a10016abbdf7bbe0087d1b7ed68d39845e6b1",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 363,
+          "completion_tokens": 558,
+          "total_tokens": 921,
+          "cost": 0.018555,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.018555,
+            "upstream_inference_prompt_cost": 0.001815,
+            "upstream_inference_completions_cost": 0.01674
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 516,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+Tue Sep 29 16:06:48 UTC 2026
+             JOBID                                     NAME        STATE       TIME NODELIST(REASON)
+           6952957              millennium-prefetch-qwen72b      RUNNING       0:32 nid010213
+           6952940       millennium-prefetch-r1_distill_32b      RUNNING       0:57 nid010190
+{
+  "pid": 123413,
+  "hostname": "nid010213",
+  "started_at": "2026-09-29T16:06:20.333601+00:00",
+  "workers": 8,
+  "only": "qwen72b",
+  "command": [
+    "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python",
+    "/projects/u6oz/yuhe/millennium-forecast-20260929/stage_models.py",
+    "--only",
+    "qwen72b",
+    "--workers",
+    "8"
+  ],
+  "slurm_job_id": "6952957",
+  "log_path": "/projects/u6oz/yuhe/millennium-forecast-20260929/slurm/6952957.out"
+}
+{
+  "pid": 40414,
+  "hostname": "nid010190",
+  "started_at": "2026-09-29T16:06:00.769542+00:00",
+  "workers": 8,
+  "only": "r1_distill_32b",
+  "command": [
+    "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python",
+    "/projects/u6oz/yuhe/millennium-forecast-20260929/stage_models.py",
+    "--only",
+    "r1_distill_32b",
+    "--workers",
+    "8"
+  ],
+  "slurm_job_id": "6952940",
+  "log_path": "/projects/u6oz/yuhe/millennium-forecast-20260929/slurm/6952940.out"
+}
+{"event": "stage_start", "model_key": "r1_distill_32b", "revision": "2a29ab14a7dcfb5132537e18050d0ebe5008f7fb", "expected_bytes": 65534956553}
+{"event": "stage_start", "model_key": "qwen72b", "revision": "2cd9f76279337941ec1a4abeec6f8eb3c38d0f55", "expected_bytes": 144578723114}
+166570	/projects/u6oz/yuhe/millennium-forecast-20260929/models/qwen72b
+44219792	/projects/u6oz/yuhe/millennium-forecast-20260929/models/r1_distill_32b

@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Riemann hypothesis\nMathematical target, paraphrased from the original Clay formulation: Determine whether every nontrivial zero of the Riemann zeta function has real part 1/2. The function is initially defined by the series sum of n^(-s) for real part of s greater than 1, and extends meromorphically to the complex plane with a pole at s=1. Its negative even integer zeros are the trivial zeros; the conjecture concerns all the remaining zeros. The target is a proof covering every nontrivial zero or a rigorous counterexample. Verifying any finite range of zeros alone does not settle this universal statement.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:55:48.275295+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 6.97,
+      "response": {
+        "id": "gen-1790697341-ifGEYfxRneSJe7iwBTbA",
+        "object": "chat.completion",
+        "created": 1790697341,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.003, \"2030\": 0.02, \"2035\": 0.06, \"2040\": 0.12, \"2050\": 0.25}",
+              "refusal": null,
+              "reasoning": "**Considering Riemann Hypothesis probabilities**\n\nI need to create a probability forecast for the Riemann hypothesis being solved with AI contributions by 2026, 2030, 2035, 2040, and 2050, ensuring the probabilities are nondecreasing.\n\nStarting with 2026, which feels improbably soon given the rapid yet still limited progress of AI, I would assign a very low probability of 0.003 (0.3%). For 2030, I’m thinking about 0.02 (2%), and for 2035, a modest increase to 0.06 (6%). I still need to determine the probabilities for 2040 and 2050.**Finalizing probability forecast**\n\nFor 2040, I’d consider assigning a probability of about 0.12 (12%), as that's a reasonable estimate. By 2050, with 25 years to progress, it feels appropriate to increase that to around 0.25 (25%). This approach ensures the probabilities are nondecreasing over time. Now, I’ll compile these numbers into a JSON format with the keys for each year, maintaining a smooth progression in the assigned probabilities. That should wrap up this task nicely!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Considering Riemann Hypothesis probabilities**\n\nI need to create a probability forecast for the Riemann hypothesis being solved with AI contributions by 2026, 2030, 2035, 2040, and 2050, ensuring the probabilities are nondecreasing.\n\nStarting with 2026, which feels improbably soon given the rapid yet still limited progress of AI, I would assign a very low probability of 0.003 (0.3%). For 2030, I’m thinking about 0.02 (2%), and for 2035, a modest increase to 0.06 (6%). I still need to determine the probabilities for 2040 and 2050.**Finalizing probability forecast**\n\nFor 2040, I’d consider assigning a probability of about 0.12 (12%), as that's a reasonable estimate. By 2050, with 25 years to progress, it feels appropriate to increase that to around 0.25 (25%). This approach ensures the probabilities are nondecreasing over time. Now, I’ll compile these numbers into a JSON format with the keys for each year, maintaining a smooth progression in the assigned probabilities. That should wrap up this task nicely!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu9-D0TcUcJau4_advDTrcyxRciBccCAghHaN90p9POxn-y-obmpn_e6dfzEJiOUtjwWeYwKRsiYQRH4PCTN0r7madrxFAi8USe2An7RjYqOxywpGFadgrKDoQpeXsTUFZiQAPq5eet4C3R1nXyCVR9tX9nNpD_IO_2SG0UScwwZYKl7ry9ifKw8_JTPideHcTj_zZHn6RIgSM2eA86wloAn5VvsP7MI3oYKTFOvQKZzD6rJVCLnsgFZIAwHBwyUtP_Dw8I7F3JytkU_IMWwXt26yhYSUdetSwLQk_urRLf34JOxlaINLMIMIPEyZ9xecuZZivJRlwT-O3K2ZSvDjc7JvSTMcH2zE1uKQ_Ml5qGV01pzJcQ8dPkfaKXNnexr6doYYLbJnJvZO9wvvso2Wz9KXqpRcc2lXgVBPD0QR2PaeWfiSxl7VWSSEri_idTIcxpLmYTC-Mwum2RCLIBasovQzEykQQ_Yy5-LNmPUPT-HMeFxo2OF7rzLK6X9pYnxLDmWFNv6qMNAYpuD0dZMz5fWeDRxAwgdBGkiQTXuuQMenkqgOs16hsdnSujqFOuiQ0vi4sHZQ-zrETSEPalFnLlUmiSF2pu3pO0AWYgn3QhRmGsUSYEg5NfUT5IyhHkSt578jiueE-rZKBW6Z0qm0ezpZnS54HbUNj7MEy7Q39z0pdnbXbf7d10oirnxOIKXBD5kZWzFU0ObkG_hs4zQRjSUq9wfKzIWMcdpqwNh-xPt1fGO4eoVyHtmDK1y2rFnLZAqRABBxcVohBELGh2w8S4lN-6jsXGqOhs-i2skWqCQFdHvk7-kYQ24ieVfZHSpZkigRW75xgnX5svCEcu7KZewqJZAHhFg6K83YL16MXsjUosMkh0buIt6X98jLa2DTmWM4IImz5C-YJo-q2dZ_Vltt_SxY6sreuzSpVcMWn1QQl9PwGH-Q9_y6DsJhQFKC3EEHkGCvdwf4J6JX9W2ak_PlUNP9zFQ_xoTFxu9M-F5lrl2_Q6E-hJmBKJEmfUPyTriX4kLpxCy9XQSXkek01kzArUr1POhwmL0b10W3CAbkeqZALeIzwe94B2GTrK5wNT1NymLaJveqhB_yc2rNq8eAEjRy2st8iB_GgulY00MnLyZt2NH59i_ytkz6HOU1n-CYnnURIkeYJJ8HddSkXBW8n-m1N5z4OlLi01uPoq5vcWWrjdsJQLItiF8JvAQgp-v4X2oD1QOYUS6Uaw8QlQf77WRscR43beWqjrkGFEYJz6kW_3_nk-X9YcHdESPRdu5KJlLU2F1Fnca9ouVeAZRHN5opEnW7Rz0gDx1PZGz3mQxP5FiEGVx6D8entlqrosiboQU-mKsZt605Kd8IiBmb-8VV3dOy6wr6hbrsIdDij71mQOLTvuRA7jnO3xsyLQOdmfMJ97BckIgYCINDekR85Qor8Al6ARu2Jad2LCEHe8iCOKOn_wh6FrEp5rTRccZLBDTNR65EL-685D48yLv28gVsorOyA73JYcw1B4Mr238oLU-9XdPE2yT5z83KX5v-u7kkd-wuFNJYA-o-XmNIc_kK8OjhiloaO1X2cLH3yznhO6VaZ0_KZhr2mgkUV8GDNvlKb72WxGXmMMbjVhM-uC9zwoXQDo4LA7ftpXBpZeoURv0B_iZyh4VGIe5-XlCqzAsOPSa9GCFbQuLz8pHRsF_dV1gomu33fCJ8RdKPtUvt_QI5z8flaJw7aGMHEakDAY7eXIwgWPcx9oU0G4p-SVkUqv0KJT5sJX08LVtPrZx06iOudA096lrN-W6mgKoPMU1UibaJZf8ZMcSMIp4SL5rOMV7ecXKwToONc0MbByZCHWCh5zz9CbMOEHUIOjVN9zADxaW_6bX7vYWtfYFcGVuLh__sC-U8ZsTT_GtVPsceUdzocGbGHdTF30zV6YokBo5Pakokj3yD1ASVf6Hk45mLVu8xSLJKRc7V6zFOxexaKucuNkZ6Zbnaje61LSc1G8nsSuwWp1C1b4EpjsXtpz9f7JPm6LKTV4XErTp3klsdzEpvEvN-H-ECL02bRUnqLiBkAoRFfyF8wla8Q3zmPbTnsGqUQ9R5Kaat6vgo7SM0KaVJNfOO_vPKAt12WBho_COJPiHEg-htJ62lpS-RRm9Lr_fJQYbZQoge4vRByxhvsNq4TCdj1dK9W5QGnWmwo2lxZYxvmcTtZqsyiC4v23YtTieVOsZajXTtFW4uUytcin9qboEc94-NnkSE85Ukhq6o-C0SGWmSahnMELIIeVftXlrGuQEDCkG1E2JbBtwSQqhPYPxTCC42EAeto2CY3_B19Ge-NoI2FmaZ69Xzf8plgAxs_PrjfqN1kDGDAoe5hQ71UXCl_tN01MAbUnKW7yFQx7X79zLCrxslwVwm78DRWuIGbxCHKws5BbU2LxSRkMUsl5X8chD5uxqKWkDJHtHJ-9lbra0exHeNkRtpF8tC9MGYRCqSrmbQvwldEf-LKLltA0yvyB79408stVTY53g8qm_LCJ63voBR0JlTesRKn1md0hz4PXBFs55r3_v97ga2KMCOwrFrv8nCC4GYi2llQFcc3pHijqcbZrbKGxBPeY_271dzsUWHWEX0VHhqyXN7EhaTZAfVliual3OFsQJL_jE-m_A_NEAasltW7W5a5ajZ5MqJ0BXOGaM-kK8ryDlQ6p9uSVWv8wf0s864I3m0XKrXgjYXPre7r39GOdbkYgEcomYACW7v0mh1BvpDchg4hf34KZ--nLA6eZQ6HTx6rcR0l5sHKHBswZFDz7doxmrXAl074A-4hM_Fvsx29EM59dDM3iZMlQue8hmocwscCevSgbeZpx-pNBFDgfeMR2oeN2FaitEt4X6Hno4=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0a226def0c423058016abbdf7e24fc87d19c27d53cc36e40c4",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 360,
+          "completion_tokens": 345,
+          "total_tokens": 705,
+          "cost": 0.00348,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00348,
+            "upstream_inference_prompt_cost": 0.00072,
+            "upstream_inference_completions_cost": 0.00276
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 256,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

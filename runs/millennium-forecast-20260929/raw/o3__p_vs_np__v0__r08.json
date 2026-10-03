@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: P versus NP\nMathematical target, paraphrased from the original Clay formulation: Determine whether P equals NP in the standard deterministic and nondeterministic Turing-machine model. P contains decision problems solvable in polynomial time; NP contains decision problems whose affirmative answers have certificates of polynomial length that a deterministic algorithm can check in polynomial time. A resolution must establish whether every problem in NP has a deterministic polynomial-time algorithm, or whether at least one does not. The target concerns worst-case asymptotic computational complexity for unrestricted algorithms, rather than success on a finite collection of instances or an improvement to one particular algorithm.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:53:06.188129+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 7.041,
+      "response": {
+        "id": "gen-1790697179-CWJIPziMrzmieLJMFBuw",
+        "object": "chat.completion",
+        "created": 1790697179,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.01, \"2030\": 0.04, \"2035\": 0.12, \"2040\": 0.25, \"2050\": 0.45}",
+              "refusal": null,
+              "reasoning": "**Forecasting P vs NP Solutions**\n\nI'm thinking about producing a JSON structure to forecast the probability of a publicly available solution to the P vs NP problem by specific years: 2026, 2030, 2035, 2040, and 2050. The probabilities will need to be nondecreasing and likely small until 2040. For 2026, I estimate it at about 1.5%, maybe 5% by 2030, 15% for 2035, 30% in 2040, and reaching 55% by 2050, reflecting gradual AI contributions.**Adjusting Probability Forecasts**\n\nI’m revising my probabilities for a solution to the P vs NP problem by 2050. Considering strong AI, I think it can be plausible to go above 50%, but maybe 40% is more reasonable. I’ll set the probabilities as follows: for 2026, 1% (0.01), 4% (0.04) in 2030, 12% (0.12) by 2035, 25% (0.25) in 2040, and 45% (0.45) by 2050. Now, I just need to create the JSON object with these values!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Forecasting P vs NP Solutions**\n\nI'm thinking about producing a JSON structure to forecast the probability of a publicly available solution to the P vs NP problem by specific years: 2026, 2030, 2035, 2040, and 2050. The probabilities will need to be nondecreasing and likely small until 2040. For 2026, I estimate it at about 1.5%, maybe 5% by 2030, 15% for 2035, 30% in 2040, and reaching 55% by 2050, reflecting gradual AI contributions.**Adjusting Probability Forecasts**\n\nI’m revising my probabilities for a solution to the P vs NP problem by 2050. Considering strong AI, I think it can be plausible to go above 50%, but maybe 40% is more reasonable. I’ll set the probabilities as follows: for 2026, 1% (0.01), 4% (0.04) in 2030, 12% (0.12) by 2035, 25% (0.25) in 2040, and 45% (0.45) by 2050. Now, I just need to create the JSON object with these values!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu97hoDJP4lF_FHIBR2AFWq7C98VvO47LVlBic8FkpkHizjuQueOKW1FIwrxay0G0qSGF1LD2KGu99o3NaVMR92JXEJQJdpPMIRJofNkdujF5y5_F0svOEc1hEOAuqLgoCiYa3VxdT4jlH3AenyMGtIxUJXp2F6sNL8cb_utKoDqVD2KlzG3SYYAH4KiTBLCHlz8IrP3ahH92S3-ct06sDznq-qhA4SIEKPaEdzkWnLopaZQ8hUiboeAOHhT0Aazn7m2u6PuhbddTVR1dvqEdrml10AfKmlJ2F7SFl-2Yos-XD6cD9khGphWSIyeWbII-2ciQmoyFazNjSDlsjicz8TP2MX9JQzGLUOmiFYpQEPowFzCdcrK_EGdp882eARP-eSwzbK1EDjWH5t65Fcjc66P7zjhcf8IrDELWH4LA23uk-tpSVhrSiwcBEpFt7gYSrQD_UR1CF5X3mh_56cHEMjqLtb3LRQhzsxZQX7KwGHXCE184Fa9IzWSgQLopG9mCLHFA_rQH2TfRVg5KvjcNgiiFcfv31-KiEXB7QF7StceAeEtNe_al29nwlFe3PfFBdgwOkDMWgaHxU2Di2ABdtocCfkmVbLVMUL6jqxrRg5kth63h2zz_JBV6-CMDmW7g3kPxtMnrPKcPmvMawaYOkffOJPAaE8lBqsVnZ2cueM9RYtm4YE3S-Il5R6MsrG6y7DL9AQ7cMb2Q82Iv2Hy6myL7elHzFJ6Kirluq2nUg8xhYJjfckJZnsP-nQ1VStsVduIYyLx-snznLcJyMIl86QGdDKR3pfoTlycp7ePw5MQmiziSVEILNmQhtZ5TcVxtC1Ne2Pv2LGrAzu1-0rZnHnS2gEed4qmFfAj8XjN1J-cQK2INDl2EEIZe5W0aISIdhqAnRrxcsTf-nTpekYexzyiQ9hKq-56QNiqEj8TAr3vjHwu7gt0Hy1_jZ_zHr-C8LKOdWMXdnxh32Fhyss4mhsTSz9MxfKicLET6jXtHehe0bCIXMLZVVvr3VoJr78NR0VSljsgVZ60EMZvZIvX37Tl4Y2DmZsjuNLhtGq_S7ImZfmXMQoea3bGwbOnVgeHALOgxkuVJIQyu6qh2YjkKOJLA-eSVcCQFfj44rrIXIIqBKh1fBcNRRDSx5gjQIR2-_pj0qBV0Xz4IGgr71nzGGDRBQP4XVqolfMCnHcbNQDbPnF3WsyUgZ2UQkFirvz1ayb_3rEABd3ezCxra1KaaMoVMqqp92zET80asIK66RIhsw2OAEwNhifOdvfkZ-hPjAmsrSnN_B9xTmvdRqdwyGbapr6NV3CnAYuR43l9dzBUBi7q-Rf2fOF3DS_vhvi7HW4RVyCFw1p5DsbM7-e_e2SI9AJnp8KaC5Wf8F_OsZZCHGtTq8n8_GULULZwcP3Q0OsBo4BUsEF3Ao9iF_f45eIoLTyQTVAOZ-DDTI4unqOtNILFwNtmYThitlkAQITKbAiRSaXKQE5ZuBdIjIhNdBLBa0T49s8tLwx87RG-XP0JbVCSFWJGXa0lLlPo7fmHIoxtvhqObGLnobjEALiZ6bMqGR2MJPYrHms4-hFpxbMN3EvDzyrHpN48MSixWhxEjPr0KBTtAiGHRJQ-qtx9Jh3IVdEKmFcMyl5Wl_vEEBXmzgIwBzjLxtXxL52yU9QB8wGtH0BH69UxQv-EIXEOeTGoF0YXgZD3uJJORurlGyIGPUfTkznGT3liadeDZuVsNguRvLhT_95rBwVzlXkQi71fRYYA9kLj0kfCALUnAfuG9gTISrJU8kxQQUfjh9ZWnlXcLUSvY9HBTXm2ut0O7_-UmjBjFZl5SfdO208PfjUGR8-DK1F0V8VwVMw59CYon_Psg4H8WjEa1c69G8E24W0IaJZzwgIW40_rmFwWVzLzXKouf0_rXnoGKqKvC7y5JtbpOrU2xakc37_JA-QL2DVQpEbsetfd-0Igy4G1FC4IWgeoPOk2hHMkBidTOcEw6Ys7d9McTohpsY9OR6iLPRgq05G-NSTnGTXD972X5opfqb3qqy4zYBRL-i0waNKaZBww7mieeKjYhJGRWXAF2LllU2TKoZHbydflVen7ZmW6MD2cO9acNyOMzYfzoq6xe0bFofbIBrbtbyEb0MOBAqCUmihaNbRHOvq0kB5KMo7s4PwPQAQwAktCoY_mCG8tKQKUTw-vY7lH4bMJeymItW10wAjCKIq1nlhnIQaDhML_fVqaZENVN9HAd7D1d9MrtoGVEBsRUHevhPghew2oyn4jj9jLT4MAzHCitn7DEgl9EIZ3LsN9A9wTsgH-noct3232zTwiHJjWmDgFieDo3r3dOTVqU9Twtk3KGSzDO3dyeFa4c4N7OD9YwzNayOCRRtARaAMOo9rLyiR9XlJ7gehD1oGBk07GGKWxPaKbae2k3c_W69vFKBLOIzoeU75APq7UD5Ekyavc7A2Nv5KX_5MvHOtAVAtdfcTkft8J42wuMwgCRCQHNnxiz3su3hAF6lii4smcrXDLAqoA_b5GGHNEHbiR2yX0BwcyoJDy3w3ilXhuRf4He4R_U3JT-zfsfdWjaJGsHapBpGyHQX4l24jWjBDn1ryjlQ3LhXYo83hvwdS4H4S0vjweL1DZfp-qo50w4VMBpHoeGBpHltYKm0HMgbI8bD9yOE6QHJSqNw42jq9ltHTZGCBqNHmHZ-Ex3sKajoEUm9RaRvGih139WKSMLkOGx05jTEuwY6j-0USozcciqzCNfXXhB0XLCWZPvUwWA45fL-8K-Xgi3bQEUqZrKVVrIIs9_Trw9xe16tdItADbEx4gIPm_GYVZPVi53zG4wGfnzwyNFHC5IfoQQIhdBM7Hc-08CZ2ec6oYypPcielQefFeG4JuMxhiGhpYJwKwLnUJdFSN6cHtnzg-bpAoFPBZi38-3_EghxMmQYh3ao5nHk2toDUNYv2Owq267IW80ubiMK9l78jhYJUwX8k68Tg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_04b8ac753bfb5ba1016abbdedc3c6087d190eb9c5e63e9d758",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 342,
+          "completion_tokens": 376,
+          "total_tokens": 718,
+          "cost": 0.003692,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003692,
+            "upstream_inference_prompt_cost": 0.000684,
+            "upstream_inference_completions_cost": 0.003008
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 320,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

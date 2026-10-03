@@ -1,0 +1,84 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Riemann hypothesis\nMathematical target, paraphrased from the original Clay formulation: Determine whether every nontrivial zero of the Riemann zeta function has real part 1/2. The function is initially defined by the series sum of n^(-s) for real part of s greater than 1, and extends meromorphically to the complex plane with a pole at s=1. Its negative even integer zeros are the trivial zeros; the conjecture concerns all the remaining zeros. The target is a proof covering every nontrivial zero or a rigorous counterexample. Verifying any finite range of zeros alone does not settle this universal statement.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:07:44.329926+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 7.806,
+      "response": {
+        "id": "gen-1790698056-4Gjjfeqbov1Lm5R8b7U8",
+        "object": "chat.completion",
+        "created": 1790698056,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.002,\"2030\":0.04,\"2035\":0.14,\"2040\":0.28,\"2050\":0.5}",
+              "refusal": null,
+              "reasoning": null,
+              "reasoning_details": [
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-JPf-nbLigooSbafNHD4LtjSQP9kEjfjJrNG6p64ZFy8NUMrlxDm-3A1E9l2tqPcvzzQIlBKYdUv-2iHL3wpLOfInzBEVkIMDnmJgWFMaJssuxYzqqQ-VeV0ax-kOB9UhSRnVTX9uMx_v5SAZjneHqdSynBvUUvnN5TemDUy3tuhLScz8wBvUl3Z1Cx3dGQs4gVB6DXNnKXj3s8xpYCEO4kG_Haq5hmN6qd8BMisVdp2QtM_jDlNDgM-js_TgehVX5iJZSuIFNmZbv_VO34kviy_5BQKrm5wSx9sD3ZYDQf91-YvMU0SqMTicT2DQ_EU3ohfwpsQ6Ma4wEgNlM5I2Z_6--eJ03mnsL11gLjitb86WAtQASQNtdU_GmMX7gF5x1qZNgiwgDa1UqvOJ35XmzO9XgqQaHj4Y4jm5j_N3KwPizHfZ9U_pedfY6hpv53jwMosfzSBYYaKgi3f6CFftWSam9c6Mc3q-aqga8Xn7kHAPzhn1GxzDTW6Tt0BFWLJciu6-1Sj_P_lfKcO4MwIZnREiDgzKQdevIBR8_YSRQ-iw4a-SHTOeZ7fceQpEGJoDtgf1j6O0ZrMVFczwPYJD3hAuOnB59H3mMuowmzv90hgqLHbiiXKohjNFPHLZajHUAKcCYtTzy6kuI6avCPjvinx1RJnGbijaUrJU-hw5mwyaFqc-kuUyHlaI0_7hUenk5ejPK7NESQFLKux6hy7RQxjsJcpwl3sNbS-o1Z0dbmiU9z6-Oc4IE1fHiSkx9gmYu3afyZ3IsmxXrma6hx_LyC5zry-xdTMAvztSSsRDCP1oRtny6mxs4wClawNT6ACqb9y7YY7X4ZwvnY1jgXG7OzAGWvAffz5VHSnkd2v_VZsYPhZ05vI2Mf9J4hco31ChBzvF72vhNFSGehupnr5htT6W7adrTIC5OxdhY--OYcJxOh_Eo2ljjz3P7DZR1NZgWs55rLPWJlwwvGvqL2KObZw8oR-910lxZpVx-xbQ91VXtBmoBIkjqDBmkdrr_MiWO73Gff7LbayeXwypRgKagSGYUkd0fIjjEHzFakC4HG6mDqu5qrUgH9DmEVaEFuvCNyg0PzB37n83ReEdAXuNxkLZxGvCXUGPZT6h0A3cpQnhH1tHqhM_PzhGV63Q4ETZFFuWu-s0UZ_pCdukeq_DDWFzFzODUigxYu4PAR6kWJE0TQb9PUJDtDu-qcjeU5eMQ0-OKomudFdVlAPMN7KZdPiQxtwwrxBeoUKW-AC6xmeDLAUwe4480-xJLP5846IRMj2qXJgBqfzDvKBHiwT65k_1CvSArh1KDjnXwuWuwZxDCdV0fMmlcediMS780VUOa4wxmRDx3RkJFmoT_UI8IP1bLGihyiEZn95sMWfP_PvdDzFdNbYBHYH4wZ1ucK3RghGbrrzZuOu9I6xq1H0W61NtXXZkwqV6AiCjuYHC_a3iHXUt-fEc5MxdmU3Q98bdxu1eNuBDurBON2YVUsdo25vCCcnI18K-hZC1IRdHQEA3vw5jShGJDJNfpbNkPARG2H2gDY663WdpSXbUxgXoIIKnceHwwhDP9IYityDp_ytFNM0uHHmngO5dX0epXMUmDILOGBHtRaFcKOCgSBoXalz2amm52uPc9KYrTmAq5yNw-0ELWRTKcAWHbyx_jJVAVbM-qNROZ-BBior3vRpWLgipVyVb9XO4tJnMv8fRcuMGZfJIhSVm0_gAPZSPFkq4gnVO27E5ip-THhIRwbuCUotiqXWgzMXu9DW_l15vD-VIbKYAQ7yEKPs2lGrlH-aipsj8iPD7i-DSbLiO4eiZ1zJAlOwD1RLLwJ1kP0V-WVCXKs5HskjraFhqrTx6_v2ugUqLW8zfxgYWGRkzmoTuWilGlNHNIyYh7pPDcykCF9YiOjmX4dE01qfF9fflwYzMQ_T6HqxzFhrDDqkqOtNbf9A686x9qOl0OyoPt9e5tlHY7ChClgckRVGAYH1I4v2D40SxanWGitEUxURcb4K0lGL5glDtru2OGG-eSlN8LaY8jfntdiz6svu8bLIPFV2pZNvBOYCctSKS2WKOPCJjW4_sUOkBdVeWGz2pixeCBWzBrWl_IcvVB_D3nY97W0JJeSfZX4jt4pXru9Xo2XW4ECM9RCVZsOjBrtWkFFaxcjbfZ-CCTGCPYZAfrlqK0w6UERLjIgppOIN8hfah1RI8a4ZfB32QpvbVnCfHa4x-Y4IoFYfqbwI-x40YbABi92ZtYBYbpbeOU2kxUoOtUMJmg5uYKnP1bXpuPa9MhrZlwXQPjW4oOlBMSa2NpSgE2Wzz6upJ7Z6gZnuwz6x54yxiy35LgjKyoY51il3YGldJTXoi_Lj0knDjsnPSRc-5szDuuzgDiLCu0_bqdI8der9KSmKD74hf88I84eZxhhzyYw5iB6ArKKKXqg3zrZOUfCMSJIWYi8OEnNokYwFzidf3Pkzrm-d0n_urWHWTYSuRgy5y5nhWxBlD2aQ8RBrFz1rQvRjtvc4RUDN_Hk5gERo3M6rYuh_EcBM-wufAR7HX-u5d6U_NCEPpocceajw7b95vLPKrXLqPEkASwRJklWb279X3celOArZwE-2ZZ_QZcQTmBEYx--ki5zk1Jz6vC7QpbJ397tWlXvEPsvqiycK5mGLBxBlITf3kGKvWfdoao9zYuRHK1his3Ozn-YcHl1GIMLaWIW0btSplwEqDhk5799SGh7MArVzr3Xtnr6AzyOegW4wsF_7ykpx-lUymCrm-gvCJ9zhfMWU70LxxZ-Qq9VeJtPkNHw3CanzqYCgX4vxyqNJ1hSN9Oyg60j01o_ccgqHhME8cRyVK3HA4Y4Pen1MKD_LvrOAwnWMmkN3NEnc11iBOQ6VqlPct1RGZxGsKpMy6ooNkCTf8X2vJwdEAquT3gcsYPoQs-to-ccnI-A_VKo0RBKUdPiLyUqfvrNIDtso97WkzGhp9quOx2zy4WLWbpjrsASqnxBXv8gPuJm74w9AZ-eThfqtczj8hobhFTAGexD9ogZB4lT2O5wF-YgXCTiaQ_BvdtcatUPIKL49tepa9aKV6nPjoiMfQ3sJF-Lg9JQE4wE1Mv7RWQG_oa5ZM7z0w0K5yG_2a3iOBhU4c0MUsIopDDbAPxVTptqgOIBbPflyQJNFlVKys1QmOYXkj4NpuskD89XAF_fktFT7ondLHLat8EqYtqM7m5vSG37DfpBf59DAS1jw-iJqhTi0xgg7uQPbIVp9QZr-FtGyIph5fbmmuAteGUoGYHeej3siYzK6Iba8aQqQ9c0FCiqKCL1ykTPnmhixVnt18gmPP3OZDrnD5eOvIIclE9-XkOYhiHkk1J0bbSwSN2wPrteStZdAaeucdwUukDJ9lTew1r5CqKWF8WTbLCBFxK1lXLB27GXtSizz_xbEvfyw_QbjZSMNICgUryHZa-7ajvqyixzfPKeRaZDwBWbIlTc2IRVLSFyfEifNJkvHno8PKX2WMLkfW7vgSFhaq5FK-pP-uvTX3qM6PehoIvuiD-LV-_PvUEadMa06dMcGv32HLG93DMRzqRbS6s2sG4Sz_9gvyhpSGbEyIy9BwACw2Q3BHRej-qoatz2fgMQofuIcqMWmobe6bkLMKb9dHeaI4C0-62KVl2dWu4mag5MJoTO-IPvhgXsXPU3LVb_towFRn0Cf5eDc8gXuGzPzGeUQcMU-knc20h-pnUb8LMlbWkMYL7s0nDDQ7IaEmZ5Lbkoz2otFtQHZ36lDRD7urkhd294Jy02zuNNja4H9KYdIhUYrRhfCQlw24mzrrsYeg7WW_9FBJHjD5cTtRlI7cvNHBVnmQqYqqAHpASWqTi_E4EJn1v-Ncy1T6hxZrtswk4Xi8ZLAa2qgrzsmQMyPUCDQCBG88JTKrh0jw6yfVV_so3zkvzi3OS1Z8M7UASURomkDofv_3n28HA3hG768ISebTow_Hqr50vd1z1Jf3uyAB1rPEaxAzEsPZZarr3YkA9e6rTGxSh1kC0JY7s6PEm6RPzV0i96pSwfzYR2kVhVk-yRwEty.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0197e3dee9a8e920016abbe249751c87d1ba02ba92b0fca4d5",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 360,
+          "completion_tokens": 541,
+          "total_tokens": 901,
+          "cost": 0.01803,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01803,
+            "upstream_inference_prompt_cost": 0.0018,
+            "upstream_inference_completions_cost": 0.01623
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 499,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

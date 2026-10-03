@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: P versus NP\nMathematical target, paraphrased from the original Clay formulation: Determine whether P equals NP in the standard deterministic and nondeterministic Turing-machine model. P contains decision problems solvable in polynomial time; NP contains decision problems whose affirmative answers have certificates of polynomial length that a deterministic algorithm can check in polynomial time. A resolution must establish whether every problem in NP has a deterministic polynomial-time algorithm, or whether at least one does not. The target concerns worst-case asymptotic computational complexity for unrestricted algorithms, rather than success on a finite collection of instances or an improvement to one particular algorithm.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:06:03.669234+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 9.362,
+      "response": {
+        "id": "gen-1790697954-Iz3QU51o2uHwRw8O8TrK",
+        "object": "chat.completion",
+        "created": 1790697954,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.0005,\"2030\":0.015,\"2035\":0.08,\"2040\":0.18,\"2050\":0.35}",
+              "refusal": null,
+              "reasoning": "**Exploring AGI and P vs NP**\n\nBy 2050, I think AGI or ASI could potentially resolve many mathematical problems, but the P vs NP question might need new methods. If we achieve superintelligence by 2040, the chances could improve, but what if the proof turns out to be undecidable? I’m considering probabilities like 0.0005 for 2026, 0.015 for 2030, and so on, up to 0.35 for 2050. It feels like that might be too optimistic. Resolving this requires significant advancements!**Evaluating probabilities for proof timelines**\n\nI’m considering that if a proof emerges from humans before 2030, it likely won’t involve AI. But what if by then, AI has contributed significantly to most mathematics? I think settling on probabilities like 0.001 for 2026, 0.02 for 2030, 0.09 for 2035, 0.20 for 2040, and 0.38 for 2050 makes sense. I should keep it in JSON format with exact keys for these five-year intervals to stay organized.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Exploring AGI and P vs NP**\n\nBy 2050, I think AGI or ASI could potentially resolve many mathematical problems, but the P vs NP question might need new methods. If we achieve superintelligence by 2040, the chances could improve, but what if the proof turns out to be undecidable? I’m considering probabilities like 0.0005 for 2026, 0.015 for 2030, and so on, up to 0.35 for 2050. It feels like that might be too optimistic. Resolving this requires significant advancements!**Evaluating probabilities for proof timelines**\n\nI’m considering that if a proof emerges from humans before 2030, it likely won’t involve AI. But what if by then, AI has contributed significantly to most mathematics? I think settling on probabilities like 0.001 for 2026, 0.02 for 2030, 0.09 for 2035, 0.20 for 2040, and 0.38 for 2050 makes sense. I should keep it in JSON format with exact keys for these five-year intervals to stay organized.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-HrRyegu-2qN_y-qbU12NWMXrrFZkWJpNMWbBnxupfXeiSXax2m0s3AFI3-9OQs_D4bLWPDrsbyPTVyz5ryOD0CAjyRM7zbCyq49chfCs2ja9Cza2r5e9K_PmQc8bn-xzA0pLnGB_eMMygw0fWVOLunJDn--zVs2nIwrsAuxHzoHSq4trG0aRRMVD6EPFj265eFY2w_Yll6-ZJxEeTCvxu3xYSm4Le2h-SRoZAdyxvDy_Jjlp6EUH2ftFSGO_oqjPaexJXp6UZXqs7GcE5W96e78rjCcYmgcQsMafbPNPYrqDen-a-OpsyMDkWF8A01BkhsWJuVRKTY3MLRq4_rDpK8xJeBHGt4KXliJKGzRSrdgWrC0ylr9N4OIKelscwFXrhRFqHhexBw3WdX19Suw6R-PPK-zSZuv63sWwzlE5yDe7vuWcSCB2o51unn-STS1M8NyFumrZurF4vkffs_culcfK2OONNDh1ZmgOwehTYcfatSGRtO7aWEUlbWSDnXlr3Kxx7rMGKP-MOh6LUqrvZsQBbe917SDg2NcFBAMAeDynAPEsO6Vmb8RIhnXZ6I79frC3aonFbLWu9tzMCevhjNP9TsaIhHR7Ja0yvMCqb71sdGaEN6f3qREr7maYrz895o60lhF_U8zigWcJtRZdpjrcVTugLXhz0w07Gj3f9HQY9EP6k51e3Arrlwn_-Ku41Jxle8zcw5BNkS-cd_tlthOaH2h03zpJybnN9wWN8E9GtZ2fZcQJVyduabjBCkLXfYN7xRChjPU7-w7MIqaFOgkmX1mKQ1oqQS7LZsS7gFgwJBQf0fwITo7KS0YLyrxcqPKaYzxR3fuyt0VeQuLSqnRGYgd814WzAq2_a6FhLbmhtT9TsS9Xa7xiPPlGE_dH1OpVlGSQIhqr8bDlQ_2ht7GcT2Qab7njTCLbDwCsRnDa5JI5RFI-d1kkJKa7cWPfRL1V3jyTz4XgE-RXr19ppMwjjj0vmEbYIu_3bP_7wCqWsM7oFS81UOs4AerztnLK3T68w0vsbtTqqRcMdMJm7BaDf8Mf6YCzpIA0tp1IO15JoUFUTchwJuR9yB3HRoqDgThr2u5V1YInBTr1o1w4Ydk8yvGYnYM5ydnNCIWgIGw5cGAQx9tXXZ4T3AQmh58zgjKn28boZaC-OMt0tdp8lYLaePvr_TpWcLrJsG77PD-Xpv8H98ugkkwMyegc16ARjMTB30c3uwzE2xKt--PivR2V0gkCFY2aSPYz2FCO5g-eqZb6jXnhHxz4xU3svb_ibI4EX07_hK7lYC1b4G9m7cJWzM49qEJWn-N1iwFItnJZsldMJta9In0IXrhedN2dpbQFhu1f7wLGIWpBO3skr-WgAIPYVXUGBSPDcnsdArPxffMPJ-e5Jm6jubNDc-edv_I8g3ECoR3L3x2ByWsZSJfzHSBn99kVpZvKlrStvDgZMzN4-yz-Qm3xxYXMcbU9bY76yjGffswUqpy_CBL_o-1qBTG19D2e1VcfXMC37UbDgyJzImZJXn70P9iDLqbx3SU_k2S7eiqc_mQ8AmSWmUYTimjXkREPh56GQ_r9AbM-fR2N_hIaahtcnF3OCLtdpDlBuX4dhqq_JDJDwMKfLKemH8ZWHRV0-WU_j-aU3n6tWn3DbEsziJR4ZeYd-K4ANN1lM406mtOhphJ8sz3sNDnlX6fu1WSzURm3eYlTXNRT8emRYTAhcszhy8r3R6LmQMPnViPGgobi2LQqMmCdEq0cLNiBq6KKDe1zmWL-pjPoyw6JRsJtGNwuw_aoZjV23KTdKjOxdgwG4lVuibhhvcwU0-538DNkQEZS9CW8gJgCU03OM7m2ZNHuZx19XocfWW731FaUzkqhQnDhh3O5wyZ8IAsnDLCGmJa2oB1hI6bpdGZi0b4S61oB9epGS1W4LFOerNNd3Wnr62BvnJvpJfERBk6Feq8VvHQF4m5JPE2VKvYeSLBqzdYytolgI_P1yqHFS4eLc2d-pVjX6PJOwh_hF2wg-ft60Z5Mlk3FJdVLQP5Q_EOGXyUWj0Hl1AOf4YiHdAHqu2DJIcqsRp4iISb-AP2eEKcAiBv8vsFHEaoBIsvy-VC9Jm-mHzn8CmAVNiC_Ehg9yFRxJ5ZXMg7uCcqI3l6ph5FfNyBY_jiGZi8Dmr4CHWAX2Ya8KNztCxfL7QtOj4Zv36ktXF98TgXKmRJYjdlzPbQU9Uo5QX4iAP6gVHmIfWIue2E1ox2Q1M3Fon3jr9kGb7CGBXiM7ohWKxngcXEIsJsRNbAisiioq4mzF5kDoEYSY9PBZ7hlg9tQECGZ2BCGcK9cJrUdMGOqxsjwFdmBIOE-T27hxcbKma1lbZPgg6aCG0qFUBkv4YG7Wye9C-RQ6zzsiuHMMT3wtugMr6GjVPknCPJNkdB8_iOX-o6NbCCadYxnRhuMaNgYRiYIyA7zb4k23JW9KMp41ZH10dAd6zj1wNVHWcmFRiHrQWpXGGpSbAzUPEeLxVyntr1GdzRMVkfSTIFV9H1oSSbwGM_fS_2viDgW1SSbc_LF83u1pwCipSmhBMTVsUOM94Sp9jfLWd3qkh9unR72R7u2tYCKNriUxVtp_GZdZ-U1V3Jaa85C_5xxjHLA_6wyZ4Xa9rQF6p0MGzRziTY4DKCQ_ON7aIv8rdRYhMd24dyE1KJCrUW_WZwi4Efw0h_-gsNsq8CvP9ki2LhoAxI2j6ayibRIb5nlz7hGvoXoEtbtKI24b-bDbcz2g6JLGsXX0RyvE78DbsEzOSriVcgHN7xhmeYqrAKQogNOj8k1TWAqEK5GkDdLtXNfJ2G67UPnlCwyy7HaMh2jTdnsbX1pe-0RiXNSBaX6cODZh0-GtAhSVVkHGPE88cynPNbgIKvE0iPf-Fy5_akhIUCcXSjFDGbBQRlsRZeUiqs5jI6p4Kg7_XmVHKTB_tdMBubA-JRlj6rgzflLUiS1qabPAXhG0xtddjnHdUMts50lXCNOvzDW8Xn0WyrQR_Oo9a-85lG2-mr4QtokyZYIbG1v07pYFULyO1G3bWQIboF1q_lVGYeeDGB4tjBu2AdUuY3ZF2jCPP94A5UdcAUdAMOU7KcyyqhWJ5O9HZOEB5OgQkrT9L3dNTOKPWTQDSVwBdVX4dUeGAopKD1uw5qx_ODccRDcyJ-hIUISU5krBTsNrRBdegfkCJxOYRiYhhw6a5MaCRujRk28Y7mnPhxs5NNRR4M-Bg8iFp-hlHyHILptMi0n2XUWSC1E9cHT8sb3SJm07_SRBzMdG1oslmGbbPmsejJCOzn4xTxNPYxjJjwMGM9mIOl1t76svb8EIU_Al8a0lnP2hkBmxvFCfP6ddSiVv4MRRr6SoywN-RHiP9lJwNoZe-92A-EOY4g9q0IGOduSwLrgH3ydQcaZ9mB3NuHCTotbBxB-yaV2M7Jkfa3q7D8nFGPCN5BdGpQmvXOXT6Y-VWNfq-n1-5xqjzudM9aAaT4xDo25mosi40Kb0gE5WULZG8Uzhp95sk_9ChlPDWqHwJZzBj7001d8auoTRwrFa1LcdETaHrFZ_NKmPDIbGED09CTK9AeKABSjNKHcYflMTMe9q_0sWFq6z0ME74ZF_AyyWyjIi-4xTBhokxff0viI_rssy-teILKzWAjtWqfTySWhYYK-V8gOdrAuHD0uEjj49IY_jypjWvPW9zAuTrOcJtfwlsilIOFHXkw_5XKzy_NeS7T6s5RUF-_35mF8CToENC1vVaepxB3Q68jbNpSi4R_6yvFyVSX_UuBfRCxO7GbgtLmlBp_FOLGYwo5S5qfhKa2jOVHYRRmT1t-RGVb5W7hbzchutXhGRIlKwvNUYJ4r953YkUTCElwS6yrGfZcNopQBseue1NSU2eMFW6w5fTFvTWevUaFhkyJPqZXbP6WMolm1rBtLoy18oQuybk2GMbnhJcm5UJ2P1f59xDIJYMuLzyuFDt0Qthqfr0gOeBfTWh1RX3lmj6ck1UM1kbgBbb7pugAYxAXEPZSN6d8ozhKsMUavNCHt0p4ooWZnW2iqq9YY0ZwOvqdvKI4oN5hAYZGLo-oJpeXvocWfkADFWdWWBQ5AnnsDKgkevLBaIgpGLlWP5j4SN3bZAJKAL4IuwpjA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_096eb9a22ce088c4016abbe1e3676c87d1846cac17d72f2c27",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 347,
+          "completion_tokens": 536,
+          "total_tokens": 883,
+          "cost": 0.017815,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.017815,
+            "upstream_inference_prompt_cost": 0.001735,
+            "upstream_inference_completions_cost": 0.01608
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 493,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

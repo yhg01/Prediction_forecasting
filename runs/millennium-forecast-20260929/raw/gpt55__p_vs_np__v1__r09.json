@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: P versus NP\nMathematical target, paraphrased from the original Clay formulation: Determine whether P equals NP in the standard deterministic and nondeterministic Turing-machine model. P contains decision problems solvable in polynomial time; NP contains decision problems whose affirmative answers have certificates of polynomial length that a deterministic algorithm can check in polynomial time. A resolution must establish whether every problem in NP has a deterministic polynomial-time algorithm, or whether at least one does not. The target concerns worst-case asymptotic computational complexity for unrestricted algorithms, rather than success on a finite collection of instances or an improvement to one particular algorithm.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:08:00.942205+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 7.371,
+      "response": {
+        "id": "gen-1790698073-YtvrC2aWFscxKI1QYunI",
+        "object": "chat.completion",
+        "created": 1790698073,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.001,\"2030\":0.015,\"2035\":0.06,\"2040\":0.13,\"2050\":0.28}",
+              "refusal": null,
+              "reasoning": "**Considering P vs NP probabilities**\n\nI’m focusing on the need for a JSON-only answer that includes the forecast on P vs NP solutions by deadlines. I think about the contributions AI could make, discussing the probability of having a correct publicly available solution by April 2026. It’s notoriously challenging, and I’ll need to estimate those probabilities carefully. By the end of 2026, it might be very low, with possible breakthroughs by 2030, but I wonder if P vs NP could remain independent of standard axioms.**Estimating AI contributions to P vs NP**\n\nI’m considering the possibility that AI might significantly advance research by 2030, but the P vs NP problem needs a major breakthrough in complexity theory. If transformative AI emerges before 2040, I think the chances might increase. I believe by 2050, there could be a 20-40% chance of a solution. I’m calibrating probabilities, cautiously picking estimates like 0.001 for 2026, 0.015 for 2030, and so on, and ensuring the numbers are in JSON format.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Considering P vs NP probabilities**\n\nI’m focusing on the need for a JSON-only answer that includes the forecast on P vs NP solutions by deadlines. I think about the contributions AI could make, discussing the probability of having a correct publicly available solution by April 2026. It’s notoriously challenging, and I’ll need to estimate those probabilities carefully. By the end of 2026, it might be very low, with possible breakthroughs by 2030, but I wonder if P vs NP could remain independent of standard axioms.**Estimating AI contributions to P vs NP**\n\nI’m considering the possibility that AI might significantly advance research by 2030, but the P vs NP problem needs a major breakthrough in complexity theory. If transformative AI emerges before 2040, I think the chances might increase. I believe by 2050, there could be a 20-40% chance of a solution. I’m calibrating probabilities, cautiously picking estimates like 0.001 for 2026, 0.015 for 2030, and so on, and ensuring the numbers are in JSON format.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-JgiFPZ3PCvx_7LfwnqJgFOua_uLYCifwI6M5fj_Hhi9-8xR-pHbrxhRgLGKrVDVSY0W10wOwQzVqVMH2IMsm7fCvc3IYxbqdavI0rnV8XEYOQnVhELzgxev-Pg3lt1mw6bmSkh2rGMr543a_OHiIJzwFNvuk8Co5dQWcNMEHUVu69yEiNi_qai8E-Qq2wdj2B7h8eNa4_NFFRYK3EkFmY4p0wRYtJe9uoUdlk2ynB96_d9REhxZMGu3ZYs3LNSLkd-_Ye1W3aVDVavHAMBHHbjjUz-2_lEGDFnrTJmyL1ZEt33WU6ca3TmgCPcsYQ2YwnTIZqZmZWiQ-Bq_WKe1UOr-UedVNpw36z-ObFIzJtUsSeQCaf7YAdPBz2uXKTxrH5-d4Bd5xeHn4lLerwFLFpsZw-P1MGPclrpv2iGnCS6BAz52NZqwcQ1Vce6ooV7WtcbuKj1VZQMaiPvqM9wPc8fGobzf4S3knjmPfh_ZbznuaP8TiDE48rmUPAVrECyLTlVJ7ez27cdsdKwAXJwi6rdVKfqW8uJVDkwhe4aflYu3rL3kcEnLmTUcLKXA2PwCumoVeb3d00h4q9f95uTH4q3g8SNhvWYSSifidTUwF96Sb3M5xxJGirxMA-RcPRy4d2ph9VYroJ4NiPWD7rTh4szsh8bOuBWbbOiaBoeOzEHcAXx9hmlJ-zc3F8ah0i_Q2AAbMgo3AeZcLUJ9ubPBcx6CsiLDCNuSi26yYoHmWYZeFJpSnSIeOc3BFzJh4Rb8iFNKlRtrL7L0foZgN2BJRxgKqQOXZ_FD-V_MiMd1e-8Kkrge8OZqD-m50KTgBy7Lj88cDo-LwZ_TXDy5EG1V-UNjaSC-HtHoVAA6V95jo_BTQuZYZxNOwfMX7fkzmHEWCzgeGxNSJsnporiL08MQT42qgtlYTCt5mH7MfJ35cWP1s9nI_9gkl2MmxQ4Pr4m437HCLy5bWWGmw7LvV8KPetnLLqlXgNnFT9P55vVDAzJtqAqaWk9TTRUnXwTCyFvJJYl3-wgpJFuU0foixXMseLnJq68KfInfue3Fp-aRL3YkxRo9Yeh5NvQEemQ8RMhBAlt-Q4KmokXBLJzu8hj6zb9RixZpN_agpaqfFEvqOV254ldjdGpPn6AoOAcmyXdcvWf--OP036L6nRxEqzLydoIKqqJjDbDMa62_mBxPNZb4hru131ewWxYh79px_NRkr0WgwpwuYzV__GGpPhB5Fl1pfcy2sh5OgbQSwWXc_3IlwH4n5awl1cZkbfwkvFpCVfaRwQGm53iBFmfjOb9IFF6hXo57eAFjJ7IUPuyZlDKDnMyd_ims31SV84nYCsvhyIL8Oehfq-b0WeCqkQJSwJwe1lLKaKBFiSha7RtSns2mic1vvIbnx0GqvjLU4-LHXQipQKnMXyPaJzZxG1kSnzzpAj8wMWAJRvKeNzgxa2ZDJYlCqZrO057G9jwdm9Btsopm44_8wnfKHX6h8XlWkkuYLpRLtYmv0sQU-bq3THnrxvWof0ZyCVp_kvd4cLTv31Ot2m47K4dfahzXetvod8mYZ3Xhp365m4yDumt_mWM80jRdy2XfyrVf6CAFmwgtAiOOOVXSGoiF9OXlt3PGWWGUmmC7Q_OMdpt50btJTi-2RL4nvvojdv0yf2_31QGLTfrVnFoGnufNHdsC5B1mIJiSL83ei3dzvE-uen4YnME6SyDITaheCo1YS9umhy63kFGhZncAbeUdAs7BFYGZ3tl_tS7u8VAPEcdvrDWHegehVXWELCeX6VOCbYx0e2TuYu1umZFYL479RGkP0CCynxaDgUJedgsJPeEK8nygPH2p_qaloso8FxAhO0zva_OhlfNmPH7Iuj-lAxl2-KTNYYTUWPA2Ju7t4qixe1xU-Yop-tIJGKvm4pmcxdOYCG2UsszSPd_sDSXIT4y-wTEy8YC2LfRIVVTONnPiD_Kk_t1U2kK01Oa4XGeD-LFpTOR0rVjkiTla0I7ni0Pl4T-uYPoAaAk1sPpMrD6Rg4-SHAvrpg4B1P-MQ1svlD2VaCahu5Bz8NgfrNEJ9t98KUD6YwF2H4aPOEzPHFYA0F3yasotdNWazvBkdqy2EMktFpYIh74f1LI-ygmeJVG_KMiSpYtbVmZZ3RWbAa3gRQ-tzIslo1QRAoRnIeY8vlrVt5vxoZwD1cVJUkh5CyvYi6wIkyBKsZKNg9sj733yY9OltBfAgupBgbOTOcyTGBxv7AYdnunLlTC1edAoihg8lrNPbEd_5138MZLjy08aZV_BcpnDeuXv3yySjS-JfdT7u6sF1sYhzRUTve9DRPeEzP9IIHtoW0d0vBznnXK1vm3iODx21ea6re-sBllSA7nqDGq-5OFYRRPoakPi8ma1LftDq_93m7e3HYzo5J-beehJzzoKbrRdjAn4YB6r0uO-waTwBrikTGs-YIzR3OOA5GQE_ugms0IhjRomzr9KoK2vYYxLyUumzXy9q4waEkJJTFpmWTnvMyRfuRxk3n9I-07SOoWGSJqyWl4E1Upf8LhoCyeDXhma_44VclBGre6iTH-R6bkJmpubiwjqD8UmZ-tp3UbwUSEATXJp-rjRChSkBO5fxLRYHrFlndpnF7tOZzM7OCTNts4N6n22cg5KZvZz4IZyDc45hUOlYdhGbdVcMgux63cEZ1YlMuITfv_o1_tbcyerKjT4Nb5Evq1DTeIDKC1HdhXvs036O6rAqFD2d954Y2JHhvgvr4-K4LpGhGeGW9BW7_na63UfEjtaxhF1m-2SlKm-yLd5LOzfZxJAC7vepDTsNtr3vtIZMXbRho-cCvH5gfeGOISDboIkdCsV3X8t6WoiWLZkyElhCTQTsU7YtcS7dIB3SPcWC2SKeg4cdOQDhLnYJUrUFeGqCj5S7nqEKyUT2NzUZNlNQW-2x37sW2sRUrtqB9tJyZWRCujKFx-tDY4RGxL4ux1vQUnOSHJEmENnkxLsqoA_O3mvB-hnKGbIS9SAXxhVRW-PXVleDuhNLP8bL5nhttNo531SEDdJI6-C4UpFZ4t04-zZtbinGAjIUJ5qwLrJ62J9jx5kWzdh1RIG0ZKKEw3tpB540oUCxDL_VZEd6l7lMk_St4RoCcCp1etELABSAn7u7D3zd_eOsKiwIGzj7w1GiRsgVJ0XcDnFMjTp6G1daqJbCtcYWpW_iTehXh33I58d9YcKkfP7GLTH_iEUAQ4_b6bsm8n8NBTtetIkJLeAc2zFANOuq5MraSDFE22DOpiJVO2uME1L-bM3-PQOD609l9Z_TKZJMhEXiK3BP6BJK_j_k-kdXTZKyVOQBM-J_6ejP5cfT53KkjPF6vMLVSwIhN6l5-zjZdUdTxE1eU-AJGt8XNmJ8PQrPVHmQuZJwypuTeX7CjOE9zPesuKM1oxRfcUqDEoc8PYn777s9OSG2O13gi2kQq6QkrAv7vcKi0CBSqGHSVQzdARS9sXJWkxq6-Q_4l2CbztpF8rzPRwXvd5ZIj7-dvEzV6hQF6iww7HkpB5dq3gjVUxTmwlC4KXxjvsmqGNEuB0JkwETotqy7CeerWmUnU=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_063a5cf96377eeb7016abbe25a9d4c87d186d252cb17ac6991",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 347,
+          "completion_tokens": 428,
+          "total_tokens": 775,
+          "cost": 0.014575,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.014575,
+            "upstream_inference_prompt_cost": 0.001735,
+            "upstream_inference_completions_cost": 0.01284
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 386,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

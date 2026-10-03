@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: P versus NP\nMathematical target, paraphrased from the original Clay formulation: Determine whether P equals NP in the standard deterministic and nondeterministic Turing-machine model. P contains decision problems solvable in polynomial time; NP contains decision problems whose affirmative answers have certificates of polynomial length that a deterministic algorithm can check in polynomial time. A resolution must establish whether every problem in NP has a deterministic polynomial-time algorithm, or whether at least one does not. The target concerns worst-case asymptotic computational complexity for unrestricted algorithms, rather than success on a finite collection of instances or an improvement to one particular algorithm.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:49:34.233367+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 6.771,
+      "response": {
+        "id": "gen-1790696967-SfckXjAZ2SWiW3PT2582",
+        "object": "chat.completion",
+        "created": 1790696967,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.002,\"2030\":0.03,\"2035\":0.1,\"2040\":0.18,\"2050\":0.3}",
+              "refusal": null,
+              "reasoning": "**Assessing P vs NP probabilities**\n\nI need to estimate the probabilities for solving the P vs NP problem, considering AI's potential contributions by certain deadlines and the state of complexity theory. By the end of 2026, I'll say the chance is extremely low, around 0.1%. For 2030, it could be up to 1%. I might gradually increase these probabilities through to 2050, factoring in advancements in AI, but it’s tough. The idea of AI surpassing human mathematicians is intriguing and could change things.**Estimating P vs NP proof probability**\n\nThere's a chance the proof for P ≠ NP could be very difficult within our current frameworks, possibly needing new mathematical approaches that aren't based on traditional methods. With the advent of AI superintelligence, it might arrive sooner than expected, so I'm estimating a 30% probability by 2050. For the probabilities, I’ve settled on values: 0.002 for 2026, 0.03 for 2030, all the way to 0.30 by 2050, ensuring they remain non-decreasing for clarity. Here's the JSON output I’ll use: {\"2026\":0.002,\"2030\":0.03,\"2035\":0.1,\"2040\":0.18,\"2050\":0.3}.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Assessing P vs NP probabilities**\n\nI need to estimate the probabilities for solving the P vs NP problem, considering AI's potential contributions by certain deadlines and the state of complexity theory. By the end of 2026, I'll say the chance is extremely low, around 0.1%. For 2030, it could be up to 1%. I might gradually increase these probabilities through to 2050, factoring in advancements in AI, but it’s tough. The idea of AI surpassing human mathematicians is intriguing and could change things.**Estimating P vs NP proof probability**\n\nThere's a chance the proof for P ≠ NP could be very difficult within our current frameworks, possibly needing new mathematical approaches that aren't based on traditional methods. With the advent of AI superintelligence, it might arrive sooner than expected, so I'm estimating a 30% probability by 2050. For the probabilities, I’ve settled on values: 0.002 for 2026, 0.03 for 2030, all the way to 0.30 by 2050, ensuring they remain non-decreasing for clarity. Here's the JSON output I’ll use: {\"2026\":0.002,\"2030\":0.03,\"2035\":0.1,\"2040\":0.18,\"2050\":0.3}.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu94N6CvEOpiZ2m6gdhOzf8grXZpCoagl3cFPTxtknnboqOsPkmBB9IuQMxC713GKDoQwWw5SwZppcNa56VVFRhW65YlaWuYEB5YUfJjttdDAk8gp539JQKTLjCO_8cu6RfCvB4wQRySrL5YFfaszSVXKShioqHeBozI6PQsFGt4NM9CuYxllDNKP5HUo1EO86Zlt-P-Bn-B25y2BbBjS71nWfxYoMHuVdIkZgTySFM7PGBVy_KcQqBCSobDXoZt1V_Ey7mGLguuSNaDNM5DK0t-QiV8IY9rsaa2Wzol75jDgJmfTzm2NOwb2PaUjrI2Rb3v8TwxzSJgE1664qCk_4FrellcwrR2mIUpvHpL6w8AdNubPEKvthAd6ECmsXNRfHhAsGbcNFYAO0U1OIHdh9kGps9wvIFC2Goq0CYPD4ZXUZcAUVZVmk_hpNGAgHpMxDAgT2NCPHIspHpZ6hgkRnKNw-pz3fG2I6xUxPAl0W6jW0IMBNzS5Ipb6nMdkcJ6ZgV07KsyfZXhgRbpBiusGSaCGoBruCrKq0fWWXSEwjcHDiwGYyg1K8xJzgRza1xHSqdhP2VrBzY_hm1HVAducNc3YARGjxRa7ctpGsVj8h7BvYIoLgvGuNR0Zh9YgI_OioFWPl88e42ZDWYqoxvxyLqkZq1OK7ATr9VVVMDcSQjLnTatK9lbN9RfN8Bay94s_IzxcqQkXcvbrUzruHIH0tvHgxrDCgkNuuZkkQqbIbGwAs0-go_I3Aq-2kA6VvGiTvXjQzeQ9Uuoc_RL2irNb2sA9b2DWFTKTf09QHgTPt391lMIeZpPjGj6RRPhVQJyYnk3p1aA2041A1brbgopm1plETiMB-tmNVuOoB-DOFl-COMSCbcaz0LDRWcjIU0ZC7UPXi5nD1VLcC9kqSU55wJown0k63briy7icH3yjYcf85e-wzMvmseyeslh6nGaMTvN-90aJicLytnYstm1Bbp-7xWTNtNwSuH50V6GCnGs_1UPKilYx0d8G_Em9LqFvG7kmklgzEGI_Bi_paFZVYeIPf1xyLS9MFjyfwtKjEQKf88TSvIB_3LruTGsCIuO2xZuMCHfpnoUzQr_mYEepV_wjtw4VFlwedYQeWFfXxn2itpmPHTITiZBSGETl3AhWcsmFs0rwVJdNa6zv03JxViEtMNmZDT0ZAz80QMLilNGE6_lvqHmwZbUDmY2eA5DQ9BhuA00U_s6sK1xL77LHulbvF5aX-UGAKbN0TopYYOELuqIcfbZZs17YNOijWH7PVNsihGipIE-tpHCAw5NFmnr0PVE745TPbAps0ggsAtDVtqGCB7jU8-Gv0A6TwfDby2tY7a3DogszxT9Kw43DtuSgDR_qSZo8dpOxsUHpJa2uknk1EXkEzpxLPvs1rCvD3jP3YQ81ddJeVkZJ6dPBgkR0GRxHn5MgdBohWlSZ3F1UFnVJO4LJ4owAj64Qsaww8IKCv2z7b75jyzepV7rxhBYw5-JtRb732VM8JuqFP9_ghBsAgkEOg5Yk3aZR4z0yK0ammRlfPSDeGqxr4DYOZIOzrG8asFeEEkaqcC44iEmjkuNCOJCxLh3HwZg2SNNrvZIyQY7Wz6NnPjbo_slmkRns-Om2Q0d3-Zy968q4JRXLsw26nTiAPjA2ypz1CpTd1vIy27esBl7-IZXHXf8X1ruUAiSvgdFQvKY5X80ZJtCc1SiBd9W39XD4_VfvlOmMRvXuNE_ZBoBesEQBQtQdjt1DtEAPVGFz-GBjsp9VjISoSNbSTAYDIRDIQ5IId9g_FMJrpfdjsmjwmBcEfa-tYkX5PObEQj3y7QCjCwPmz75NVUphkjPnzmH822qDJbJJrwSaZoeErxAdvmsMQhY66bM3ZnEy8ej5cS1I2qgRYj5IAVwYtu49-MgTfe1ZwcdSOT5FpJmkbaifeyPZaN7KNPTq_WVnxv_XDJ2lba6fpfU62xItoy7ZWD6_pzXTrrL42H6YcOdgpKR7jnzJYaPbY4ZYX9z4ptRiyU2bAcaJHnwJv0zl2gU3MAKqEdFJxbrGcWgYhWRgb6IsXG9M4YQMRommT-tT3BdqilLya6wwSaCd4Z8_wSCbEUEETCF4GqxYGKAiqkig6czWWod0QoUIXChCdYJTM8UXzMBUG6GCQI2TCC9tC6qU4EbPARBa5cNa0A2YEol7OlBvCjuwexWGrnuI3K-bRr9VMSuaqz0Rg4Cup29fp2eDRymUbj5d_LQhd1Y2twfy054-fjdsriJdpRO5o3H9ilRmQfvC9ZEHpFzfV1V5A-U97U_vL9fqB45-Eq6ea3ZzyF9fhKggaqOM9bJrZ9kb4KurBwTdWmy0MdM9Ps4UUAgnTt8m2CS1BtqIbSEE6IxdOrgZnm19ZieGoZW1SC94K8jRIijchWCA4XA81EiwYwZACf1yn4gR0sPbZA7BjwznpC__FM4boykl4LCx2kSfoba5snvkefnZ6GExDXeed2cllGh5zQwl5ne_mxWlvBmr_AoWfidiOrVq0Urinb8VP7rRWZGcIBQArPXcsHDLp5ZLa7bxWF6VM1OSqVJtV4QJQfFfJzITTSebhlucVHjJyDTCBl397fTLSr0tGYx0BESN1PLmOiRZMzL7FyfwEzi-D1mqujR2bRvEhbGfbwASHiym4dDeFR8ZRoMSGB7rml55FbPjBpXCNm1GrTSdXXX4r9NuEAbg9NbBViTIhPXR8wl1JYKvsig3MXgB7WqCgUf56KN2av28I9dQzkMxei_2RrD9D-Op8Sz1hjAQsSK9z0WliFD7BOr51tg_O8pRMymwswXKHsyg1w8beIpdOHEmElLspeu3regkHgT3YGG_uj2mJi7eqBhU5lJB6gPh-PChvAjWdJSuDcV1CesZ4NbDa343VRmr3gJjcE2qpdmI1xAPbtUOM6eY_lQnz2hVztPeWt_BRjWi4_KS9zXu9VJ049f72SgTWT7BtjPUXRLQU_VaNOQhOthvEtb3EPUfC-RY6CmiP_Kyg1oWmcWFs1rJXZ2SWyeG1szMilscnwPEPrIM57cfIsOi1nr8nRB51sg50F-z9F-fswDYDQRWXrgsJp1A3vvhAPWn1BkgblTiahkSrOsHtIs-6mIqyVPkSCNPchvVDAdZbD7R8ixdiP_AScD5Zg7Kj2yOxE18sKPe3xlXEhs8bSCN_2jpUk0SDEhGK1f579ukQCfMHsvJ.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0733ca812e0982e4016abbde08406c87d1832a689fa874a71f",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 342,
+          "completion_tokens": 432,
+          "total_tokens": 774,
+          "cost": 0.00414,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00414,
+            "upstream_inference_prompt_cost": 0.000684,
+            "upstream_inference_completions_cost": 0.003456
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 384,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

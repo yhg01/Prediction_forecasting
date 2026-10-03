@@ -1,0 +1,84 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Hodge conjecture\nMathematical target, paraphrased from the original Clay formulation: For every smooth projective algebraic variety X over the complex numbers and every integer p, determine whether each rational cohomology class in H^(2p)(X,Q) that has Hodge type (p,p) is a rational linear combination of cohomology classes of algebraic cycles of codimension p. The question connects topological information in cohomology with subvarieties defined by algebraic equations. The target is the general rational Hodge conjecture for this class of varieties, with rational coefficients in the combination; an integral-coefficient variant or a statement about arbitrary complex manifolds is a different assertion.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:54:46.432695+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 4.707,
+      "response": {
+        "id": "gen-1790697281-39Aa3wHN9aFFbZQCSkvs",
+        "object": "chat.completion",
+        "created": 1790697281,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.02,\"2030\":0.1,\"2035\":0.25,\"2040\":0.45,\"2050\":0.65}",
+              "refusal": null,
+              "reasoning": null,
+              "reasoning_details": [
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu99GmABI5-UcOvi8uLv2955DsHM7m0PqTa6YWCT4m7sPsEzIF_g7yb7X9avOrgpM_0xIwI_wiHGdEWMLsq2YYQmXPg2ssIgYIUWPDEHxUxyuYPF9MrjL-YzPZWmCNiQXF4frzpRRvYsehPxghEiHB2c-OGzrP2kHCVVwTv3pe16FvIcQuIC8W2B-K56k6Rg2U2yJzHmnDhskQZzsb1z1lAkuZ-P5ETimMypFqFtZF9YFqOB3PuyyaL_ntIRTzefTOP7K9P-RA2tBNR3ewnBWAF4zRBM9986mGVhdgXe0kx_q9UrMnn30dameqHnnBlbjPcEgRPVyiuQHELBF5LzgL8AjNhjImWQVJR8M6Bu2S-JC21a1AKwEQEcoOSOLsc4fIWSpiEyxe2XYWI0bHFeJFa-x-51M8ocM9rv5zWTIAdFdybAjotnrIDbMiiAVgsPw_851hwmuHmB8K9aGGYIHEBlMuc9oLVzK_wKPbH5AZ2h5bw1WYpmfJ0VgnCjftG7hAPIc_8xJm_R18u_S2fl8Te5v8S4bO81uxW3e9Kjy0-QCAmvOuHbwvCxozv2To9EaFo98BEUnRHXlYhhAMZgKhnKO1o97EaQeeFjJKU91SaZFzXpUHfCYremfsUzsfSvlAUzdcWZyokTZjYKT9BPvCI486G0550G2_11jxTqrVZEPhJT-XgRJ0Lp03KjJG1pZK0XW9f-Tbhn0_G5hODSpYZkkPOihpDWQ7quebBZEgFS8AXbaKh1KxhToSf47KHq11yCUbFDPql_0pmwsvRyYpi0gBvbTFVWZ8fsiSHIkiCBqQeh_7EBz222r_EqYxzivopw8CUmw6WuDMAsDY3Iuzd6d_BLtP9pdfMusD8t3IVcdggFKQU3le7QTlbVLV06d53NevRskvWOwxTG7jFtZIH6BX1jYOaAjao9oW4GvzlBWMiE=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0e9f8faab0be7817016abbdf4254b487d1bbaa9c70d8c65d83",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 367,
+          "completion_tokens": 494,
+          "total_tokens": 861,
+          "cost": 0.035145,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.035145,
+            "upstream_inference_prompt_cost": 0.005505,
+            "upstream_inference_completions_cost": 0.02964
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 448,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

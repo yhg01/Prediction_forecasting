@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Yang-Mills existence and mass gap\nMathematical target, paraphrased from the original Clay formulation: For every compact simple gauge group G, rigorously construct a nontrivial quantum Yang-Mills theory on R^4 and establish a positive, finite mass gap. Existence must satisfy axiomatic requirements at least as strong as the Wightman or Osterwalder-Schrader formulations cited in the official statement, with appropriate gauge-invariant local fields and short-distance behavior. With vacuum energy normalized to zero, a mass gap means the Hamiltonian has no spectrum in (0,Delta) for some Delta>0, with the supremum of admissible gaps finite. The target requires the four-dimensional continuum theory, not only a lattice approximation or the classical equations.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:03:27.411741+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 9.019,
+      "response": {
+        "id": "gen-1790697798-sRgGrvirfNgo6z6TgNhB",
+        "object": "chat.completion",
+        "created": 1790697798,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.01,\"2030\":0.05,\"2035\":0.15,\"2040\":0.25,\"2050\":0.40}",
+              "refusal": null,
+              "reasoning": "**Estimating probabilities**\n\nI need to create a JSON object with cumulative probabilities for the years 2026, 2030, 2035, 2040, and 2050, predicting how likely it is that a complete solution will be public by each date, influenced by AI. Since it’s a tricky problem with no guarantees, I think a reasonable guess could be: 0.02 for 2026, 0.05 by 2030, 0.15 for 2035, 0.25 by 2040, and 0.45 for 2050. That feels like a rational approach!**Refining probability estimates**\n\nI think these probabilities might have been set a bit high initially. A more moderate approach feels appropriate. Maybe I could say by 2026, the probability is 0.01, and for 2030, let's go with 0.03. For 2035, I can suggest 0.10, 0.20 for 2040, and 0.40 for 2050. The goal is to create a JSON object with these values, structured clearly without extra text. So here’s how it will look:\n\n{\n\"2026\": 0.01,\n\"2030\": 0.03,\n\"2035\": 0.10,\n\"2040\": 0.20,\n\"2050\": 0.40\n}",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating probabilities**\n\nI need to create a JSON object with cumulative probabilities for the years 2026, 2030, 2035, 2040, and 2050, predicting how likely it is that a complete solution will be public by each date, influenced by AI. Since it’s a tricky problem with no guarantees, I think a reasonable guess could be: 0.02 for 2026, 0.05 by 2030, 0.15 for 2035, 0.25 by 2040, and 0.45 for 2050. That feels like a rational approach!**Refining probability estimates**\n\nI think these probabilities might have been set a bit high initially. A more moderate approach feels appropriate. Maybe I could say by 2026, the probability is 0.01, and for 2030, let's go with 0.03. For 2035, I can suggest 0.10, 0.20 for 2040, and 0.40 for 2050. The goal is to create a JSON object with these values, structured clearly without extra text. So here’s how it will look:\n\n{\n\"2026\": 0.01,\n\"2030\": 0.03,\n\"2035\": 0.10,\n\"2040\": 0.20,\n\"2050\": 0.40\n}",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-FPzesonNTgmTj94Xn4Hy5UQX3j8NZ8vbfg-wdwNuzBivmHmhyrBc9MPum9Vk2YCathbyUs_l-nKoBAsSynZnjAqMztWLQ1JKnRX3mbCxi6THS1Q-nv9uVMu1f8l8M2-c8M3g9i_z9fwqt26aV7AZ1kQ0zHBS4kXwg2zjqCpOKe39wOG70VMrAVGcmtgSQo-8fsfkFiG7DwazrRRIsZgtHMhDpzkBJzi7ZRK6Z-6nXYXv3-TlorlvLN9I7EVi7o-g2Txb1yWHhIDPzHszHUDDedtS8nbV9O_wtDElOkkB0SdzvCega1OgNqrlTJAmPOnNbfEqxXXILG98YfQXu560eLa16UdFskG8O5rtHxdVogVvrbruwFFi7VVh31vCxaLVH0nX1BiMlsc7EptKvQrdVsOGq2B15hBD7VnVTk_mxB0Ch2vttXzVCONXIrfYu7Fq20HG-b17c79b6GSCUGQYEfLDY9yZnNesmdN0JwrjfKXISC5D-I5O9BwfO1rfAH-D47gVRukMsG29o0iceGQ0VJXnbmhPU1YZMhJ4a6Pcutfmwaodm1KBKWkaQG9L5YztYkFBM4B9-EyWY5So71OVJYSCrvTMTw1SAvevZzgST1GYjPVxwtRiFSJkrsYE34wTxfTU8MQ7TZiKWcfz-TGritHiRUrNono8A2qvuGgvJLJpu4eoozuJhGD_E147PLA787BTlKnHVTsJ2CO_CYd-zdf9xnxWZTlU514WmwLl6iQRBqZ2MGcBLujXQvHBRF8-BfVUN493bJhqTrUbkFUTl8JXMv-mSmaXy8p6voDBsHcnQtz8n_S2z21mEAzrLaZXmFnjhxtkOb1b042OlJkQI-T9ki4CAf712C9GLPdBJvZa7SfeUPgyoBTvtZXYeAwzrznIQzRw3u4nu7nCKlFnhc4SxsCUrLe02JLnzL92SMtbo=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_02dc46e34e502f49016abbe147510487d19368cd21fc8146c5",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 374,
+          "completion_tokens": 878,
+          "total_tokens": 1252,
+          "cost": 0.05829,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.05829,
+            "upstream_inference_prompt_cost": 0.00561,
+            "upstream_inference_completions_cost": 0.05268
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 832,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

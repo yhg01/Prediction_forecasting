@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Navier-Stokes existence and smoothness\nMathematical target, paraphrased from the original Clay formulation: For the three-dimensional incompressible Navier-Stokes equations with positive viscosity, establish one of Fefferman's four alternatives. (A) Every smooth divergence-free initial velocity on R^3, rapidly decaying with all derivatives, admits a global smooth velocity-pressure solution with uniformly bounded kinetic energy when the external force is zero. (B) Every smooth divergence-free spatially periodic initial velocity admits a global smooth solution with spatially periodic velocity when the force is zero. (C) Some such rapidly decaying initial velocity and some smooth force on R^3 admit no global smooth solution with uniformly bounded kinetic energy; the force and all its derivatives must decay faster than every inverse power of 1+|x|+t. (D) Some smooth periodic divergence-free initial velocity and smooth periodic force admit no global smooth solution with periodic velocity; the force and all its derivatives must decay faster than every inverse power of 1+t. The periodic domain is R^3/Z^3. Any one alternative meets the stated mathematical target.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:58:52.067464+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 6.647,
+      "response": {
+        "id": "gen-1790697525-BfMUAItbZeVA49A2vp9w",
+        "object": "chat.completion",
+        "created": 1790697525,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.02,\"2030\":0.08,\"2035\":0.22,\"2040\":0.37,\"2050\":0.6}",
+              "refusal": null,
+              "reasoning": "**Forecasting solution probabilities**\n\nI need to forecast the likelihood of a correct complete solution for the Navier-Stokes existence and smoothness problem by various deadlines, with contributions from AI. I'll think about probabilities for 2026, 2030, 2035, 2040, and 2050, aiming for monotonic increases between 0 and 1. By 2026, the probability is extremely low, around 0.01. By 2030, maybe a bit higher at 0.05, influenced by advancements in AI that could yield new mathematical arguments. It's a tough problem!**Setting probabilities for solutions**\n\nI’m estimating the probabilities for a correct solution to the Navier-Stokes problem by December 31, 2026, and beyond. For 2026, I feel it’s around 0.02. By 2030, maybe around 0.08. For 2035, I’ll increase that to 0.22, then for 2040 I think it could be 0.37, and by 2050 maybe 0.60. I’ll ensure these values are nondecreasing, and then present them in a JSON object. Let's go with: {\"2026\":0.02,\"2030\":0.08,\"2035\":0.22,\"2040\":0.37,\"2050\":0.6}.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Forecasting solution probabilities**\n\nI need to forecast the likelihood of a correct complete solution for the Navier-Stokes existence and smoothness problem by various deadlines, with contributions from AI. I'll think about probabilities for 2026, 2030, 2035, 2040, and 2050, aiming for monotonic increases between 0 and 1. By 2026, the probability is extremely low, around 0.01. By 2030, maybe a bit higher at 0.05, influenced by advancements in AI that could yield new mathematical arguments. It's a tough problem!**Setting probabilities for solutions**\n\nI’m estimating the probabilities for a correct solution to the Navier-Stokes problem by December 31, 2026, and beyond. For 2026, I feel it’s around 0.02. By 2030, maybe around 0.08. For 2035, I’ll increase that to 0.22, then for 2040 I think it could be 0.37, and by 2050 maybe 0.60. I’ll ensure these values are nondecreasing, and then present them in a JSON object. Let's go with: {\"2026\":0.02,\"2030\":0.08,\"2035\":0.22,\"2040\":0.37,\"2050\":0.6}.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-A7kE9H9t6wPZJkont-My8GQLp2seRiTMi3IbhYOZ5jCRb4XuWSR6RmitYj2Q6KmkUTM5486PXHV5MpeBA3kFYVsEF3Oc-6hIhOjWbDIvzWMjqot4j_y9Omi3z2d8Ps4S_dwOJWUTVy-V8GRJl6xIhogxbGmnkEwygbU3TmEj8hiH_R3J0o2FrxhrwWkC7VhGBNfYjsVdrL9aC-4b5q4RExBwHIAYqgyHFoPABXwwboxjiuoGgERayCop_U5mCVgUXBZ8dNwlQHhA4v1IdojxJ357iNNOR6q6rZACRNK8a_lRYWv4gtmsOFYfBUFYvsKnQkN7Cfaw8x7agjnCpfboFFUrDBI8KEWBdAgdW7Z4rg69hQ4ELaXiZOI1csO8-KdS84BWAFWxGeoXVM8_f3L1oGlyGzs7xUH0CT1i6wTXwVlAaiyvnNyIpwXUNB7FRngjN8jOanJniL9HcIWAx16tKg9zfTMv8Ce9_KRD0X3CjQrBDQxZ2XGPtWftlzzGQpYv2eoAgG50vSlRmyirSWvJPjLHV5JLS-QPK8Idhu_zVOVRvHnnBRuz3n-f2UEgL2Z_SNgGMX3mydmYuAOeD25xfbaoMcWVicnA5rh1Bdk0Ld4EKYx0Ax1dBLf9LVq1Hofim0G8qti2Dyp6Gony7TLWXS1CSHuZLz4VJZS6f3LKWon6ATwIoq821ykASRtb8vQCjBHdIaMaB2c29wz_ia0J0RT3Y61WuRXTTKa-uJ9ZkbDM8ITtADqTXbnDGtdpY_XgKd-k8zVSyp-gLM4SvMf4JU_7bRuzh6Lsykz817ONqj0o4-E7OEvYyIxABUy01iOZgzT3V5FLei-zY9hasnFxTMGmgc5YXbViWRXlZrxeOZ9w3NKa_hKdMh9clH0R8QpN4gS07lPkvbYrc7_vGANscO7wY6oR6_5PxOAS6D_u473pdtnctm0RZaXYRyrN7t6YeuubZ3ogphysgrrV0KQM8CMLMvQp7nz2-pbWYup648rYO2uU2EkBHm54d-Pci9XnZT_mZs2EzGyy4ZPMVkcNd7p4Vz1LndKSwaLpmRfMrG_ZTpeY47PZPZ8CnfnN2xMxbtLg9Nb630pkwp1YMqEYzAMs6yFl9Ojm2M2tu-JWeyWpZWCzw78OBkF0fi2sMOcx-bjT_U8ly9IIox9zTciiIa776vRB7HYpOjxAlnfm7shIkLQmwrkh4aK0WlA5wUOhH9OYLsGfGUFtunef0WMeBghWPyeVCsxaSv87OQ-DznlHCyKhI5C-SjzBxt1nYyyFdbpw9VA2IXAUt2xajRrVGP3v1tVjFyOAD54EORBKs1bvw0-rk4b7ml6LXTSepzkxTOt8G6BCoKotqJmzUhibCat_anVTpygJNBxOH-bEzucL70SajykV7kGklrZjXgH_KEHhPspciAIfNCUYOeM7uSgiUyo69LNeLDOd8_eJP6Zx182Dttl0IkM6XjIxZNckCiPMu3yaErZi6xSGnt5N32HtHz3ub23ZrUCOlUowbATJ7qIa8D_yyn6cUAhkjdqLnIYW5O8ZTzmbwY1qGvv1ml0r3elILa4Ui7SclohBRwjGz0NKpz1lfREewSh_gxOTZzdrBMqmhx2qlu88z7sT9mzkBJjWu-hTsdY2v5LgJUJ2qEUywOUQnlYiCo1lh-2PoS3pnXBye4DjQLDLhOpG9z2uFs4Xoh2ohG43WXS1hAe7INfyGgVcaElC7TteyTtUIL6poJI1frT9Uw-dkCYyRMguLULTNfF6mdTO3lwAJz5oSzNHxlqxjND537ft4dFu4-uIYZpGthz3BLTnJ4vuphE7NzzNWnYk0hTKwvnNoXcTEeQ_hw54h9gIJnsYtU1S7FaAea8pKGcrFn_htq9SlXOAgS_nxYx1a3rYom7pIl1SJg0oGr61ZThIsSK9--eDHqSDaMLl3VaMFBlSEfAIXsegDj3AYII2-XzlftSqRXgyBe8uipWpaVDtYGGl6fgl4FcXGDMYOfWa_XF-kynS-UxSU05rvxh3rzYGcjnXfRgJp08dWIfSUGBTc26evv4-jEa6sPlQjnHCyZNwje9nwWTv0LyaPUpqN9kJHzxPOndaZbzM97twlJ2kWc3bS9sm4-3n3Ufqr_w_jgCUH1Nqd29szWp9kLFKwIacjtXbOTrvCmfd1SQWHaeeYcYrvVxnGQnNMYc5UWQgxBeDYJbSKkMoF-AjesibGORUfMmaEZfqhsmrClInzLrlN2W4Qd6T4R8MRb84HRBTqAGtDUriMLuAawM-tVPo5Qf9g1ryNpjmOUVZezG-8FaUO3q8gQJSTCDAz7ii-LcSSAsMYqockActBYZZjoiWVNIs-nZwJtZc-KlMKS8px6MU43678Twu2XDg0qqL4a8Cxt6_LY3u06d8JI9iAhF280AFfyDSRavWrhSg7XqQzzvWb2H_zsEtWrdMD1w12R-fLzYFXpRTeA2D6lHLHz7ACViU9AQ83Os4q3kRUPgachHtXCbCyxTS78yo-OPfQeWNwYwu5EffigwZtrbuQBSN4SgjmLX5YBB1GMgKx7Wrsj4eMBrKo9HXPdQJBRJNnNl69hNYetVZBHxD_xgsBZ9xUfRSUabSQdVAHuXHcYvdhC7-HVKgpLW-eb_I5147xVLjIeI5PeKzezSFW54CrIOTHa1Dvr-mA1R3lZYJUepuVand5lZFe3jawqJdFFLnQUvpDuhtmvRNX-kz7SChx-ittKBZD6EPmluSpmT6bcxtroZry--t4ug2mYLGPEvXfFq9JvEneo_Yli6r3vxg1Y0KFaROuBdR-pSBTFo0fFMNNIwA5YucQAMpptSkrJ1BQlMBACj2Nosd3HHiM3h3HaqyyHhfuynwnLu9KHeomkPlxQgnVHeC-jLD-UPl6lrkisQNtm32xCKhn7Nvzxtsa_QgHwf12Q48XgJD2WioUwneThkoUfbaN8jMvIq8dM-AYQ-oNKLQ2MxVwXuNSm01LY4WhdKrhrDdVyPSwBjZDOvs3jxv75s97_Ol3o9bwx98p5uGdXpT172u0bXYbPkzoAwQV6kDqeBs1jX8lMLJIxLcITCi7R-6P89lwz7xVLAwq6SSKvowHwOS85l_IPQzvx_fgLO23k5225trjXCQhCTilsXOiee-_x4M3OeSg7VFuwU965BDukrOf57hs7nR05vtalume2h1aVSjLm9mMp1uxmT-uoEV3qQPDwpkaS7ZLb4-W6orEyTT2liPSutRWkkFNrJbWViboHNENj1GZ7dhGieiNv_jzYDsJkgOPJTycMJXUnlwTvllIo0P9mCWGAOPpAohwks9C_XHU=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_06d93b5b8df29419016abbe0362c0887d19c303e363a1607eb",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 454,
+          "completion_tokens": 427,
+          "total_tokens": 881,
+          "cost": 0.004324,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.004324,
+            "upstream_inference_prompt_cost": 0.000908,
+            "upstream_inference_completions_cost": 0.003416
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 384,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

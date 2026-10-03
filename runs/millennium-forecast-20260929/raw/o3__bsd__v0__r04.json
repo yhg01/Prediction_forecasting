@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Birch and Swinnerton-Dyer conjecture\nMathematical target, paraphrased from the original Clay formulation: For every elliptic curve E over the rational numbers, determine whether the rank of the finitely generated group E(Q) equals the order of vanishing of its L-function L(E,s) at s=1. Thus, if r is the number of independent rational points of infinite order, the first nonzero term in the Taylor expansion at s=1 should have degree r. The target is this equality in full generality over Q. The refined conjecture about the leading coefficient is a related stronger statement, rather than an additional requirement in Wiles's displayed Millennium problem.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:53:54.418979+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 4.603,
+      "response": {
+        "id": "gen-1790697229-xuOTHJOlwPUEYyFFMGva",
+        "object": "chat.completion",
+        "created": 1790697229,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.003, \"2030\": 0.015, \"2035\": 0.05, \"2040\": 0.1, \"2050\": 0.22}",
+              "refusal": null,
+              "reasoning": "**Calculating probabilities for AI-human collaboration**\n\nI’m looking to produce a JSON with keys for the years 2026, 2030, 2035, 2040, and 2050 while assigning increasing probabilities to each. I think the chance of fully solving BSD by 2050 might be around 15-25%. Based on that, I’m reasoning that by 2026 it’s low at 0.3%, then maybe 1.5% by 2030, 5% by 2035, 10% by 2040, and then about 22% by 2050. So, the final structure would look like this:\n\n{\n \"2026\": 0.003,\n \"2030\": 0.015,\n \"2035\": 0.05,\n \"2040\": 0.1,\n \"2050\": 0.22\n}",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Calculating probabilities for AI-human collaboration**\n\nI’m looking to produce a JSON with keys for the years 2026, 2030, 2035, 2040, and 2050 while assigning increasing probabilities to each. I think the chance of fully solving BSD by 2050 might be around 15-25%. Based on that, I’m reasoning that by 2026 it’s low at 0.3%, then maybe 1.5% by 2030, 5% by 2035, 10% by 2040, and then about 22% by 2050. So, the final structure would look like this:\n\n{\n \"2026\": 0.003,\n \"2030\": 0.015,\n \"2035\": 0.05,\n \"2040\": 0.1,\n \"2050\": 0.22\n}",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu98SHmQmTd1eBHmv8BQT7aysDjd3YA19oFus1LwonBVovAUPH3VcN8I-ZsiNpX-ekgzfwUNULyb6SGDDkrHV6Lscn8YwC_NbyM8GgRmnzWX0SQpvtzVT6xO-KwP7dME6Wr3vd6lJ9gY507sAUmmbtLWEwC9BgBDrzk_MiTnjK0Xx00wjkjoSddjW58b4sbAKX5aJ63K1zIXswIVumPgJkyzf-wiknw9QsskS2Y4v2OR_09Gy84QyabL9Z_0Ky5ZXuM5N9cHGbcM4YNgk90kadVgeJU8LTLacLlvmxcawwkjOdMySvl49CtU36R1VvsE_sFe-g2Ew6KE7QnglTm2Rtzu8WRDfZt90GUU0Ds3U0Kr3tWZ6STwnOxw4ko_a1EX3G9boky_gOf0OrAyloqN4mcoiIkjxgyGN6vWJakwWwsEJ0JZLG1NwN2hKLgFqktVxa9B_r9rKB2O1EuSDYtvSWFWA6rOFxKsk4Tk8ct8xXM4oVp-Ta3WrFDD-jindxKwnzZHBP8DYh3zsdguQFZ24v1TEs7h_cit7biIjGy8b11tLrk0YDkdoQ3OKiQrzz2eb_Sz-PJ_TKD3U8Vv2J6TFmP1YFQCBCsRPyga6pYE8c1XCycrhfrB4LhDR5oUyVZJdtuwN5U4YbEeyQ4fNfcx1E396oExck6T6zhc2YRp4JjyPlCMlyOHF4HBFmvM_N2jRG2MdNIPWMCSXYl54vjQmbRPh675mKNhFPT-jEy6ZNlq4T3O5CJGgE8kc87NE9wjw2oy6QjPsebbpeYr_DX788oS3_xRIr_5c639AznlS0wT1-OHN7KZ6e1dlB5H2s-by-QqXAUkGmIkNRzBQgt0DddzNt0qLGWtevqKec4Rvxeb9zTJSBOSGTt1nZXpsgjiqskHRNiiOPKNmWkHwdq9Rgcaab4Vvr75rW_adkmMYLtMFQmJl2jhD1PxatWqudO52sWwNTjzYawdY6SqgkZBO2LjEpb8J0dhp4_CvryhDIfMo1wPWLYpJrGaM4V6l-rtON_WW3x9_fAZrjMQemCSISYklVsbkwz8Gw6oYjEUIbIsuQmNS4sTJ36lvzmwe4XeNvEmDEfUwfb6UuQE_uY_2Lf-LghKmXZk1OaoO4CqngupRWMW5YALr-HUYLbi2FYY7tL9K7L4odZCr--Z4DIqJPjwR1Iqg9O_M1lQ9HmXnY1B9SazT9kaXQ6ety8G1CKCuGltcXOWUTlaySbdVo6qWCfFtAKJoGckgolGhz_A9AEcB45E0ZbIngBAukYsZ5wBg20eye__eBzNFmZ0yZn1n_sn7cxfFiPHDxoO79C5U2DlJ4sdiwKw7z1AmR6I_rCfmyUf_wLdo3RbxJu5N7EAaFk8QMlIF_hSGkg315UZEfEM0xzbSYaJW6lbe4Z75JXTENhUVkTKPmds4D3W0AT47ohEGU_wYFH72HxqjZ9Y65Wzbbeu-Pu0C9yhwMKy1K7WUkrbKg8Lo5_kK2cETQXGsKGf4HZlaU6peXTVKzCnTGbI_Qe8oQaHHAsHRUK1E5RBN-2cpNJj9NhlsHg5Abw80esBGDK3cvpnF6PnJwRYwisf0QFKzyRaJlGj-v8lE_6LSeAnwmcJbkOoMG8M5RN3ru8bGvNkXUK9L7eQ4Ys8c3eZoulGfWUK9xgMQnkkh28r24OkY4J6IGZCYm7v-_x1Wy4hgxIM-uOJlQ2x5zOEUsqGxuptZR4C0ukXj3ElBNAl-31NME2i653cpGOaeLoFXXiBnrZd43zihmk1cb9p491PGF6uEMWXCDHIqhOPa_M3HbmiHmIPMESjgyJRFI6GnFP2J8MIb3g35EQZC_8hNaM_TzmFEgmexDs4YTqmaBFbT7MZTUEapJNoH0Os7_1h6DBXmjwzNC8iL28oHI4wEEDnbefD9oqZJQGlOjckertCSkCSMSiTDQdyoAIou0WaJhR420TuvO7DWQXBF4SUoufDG2bOTuqU3u-DlpKDKJI0ADTZt8GUP14GeqaRJBalryiKl7DH7giWfTQCDwcxc4XN7NijGv1MQPkDlDvrqAEHTtz3tHOT4kS42ZODUxbpzjDx5tV-3btSDbaJy48fhk0xYpKhQfgGrPtFEV-gyu4K2oaMkSNE1cM402Au1CGMTRQU6uoV3g3xrlvNeps7kLxdQl7HAHaaRtJsyX0-0aIwIURBDLILXeWfZv2ZCeRNNdCmuAE3mV1ran-xK43wYj89jOWd-BEMQ5IoPBcD3agCgAK8KQISVrblGyIVSUQmPBqsdJUMTkJFWFTUG58IC_KQ3I3ES0SO-F2sBWblLigBN0o5l.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_055e866f10257a07016abbdf0e897887d1ae43480b3c229886",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 358,
+          "completion_tokens": 265,
+          "total_tokens": 623,
+          "cost": 0.002836,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.002836,
+            "upstream_inference_prompt_cost": 0.000716,
+            "upstream_inference_completions_cost": 0.00212
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 192,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

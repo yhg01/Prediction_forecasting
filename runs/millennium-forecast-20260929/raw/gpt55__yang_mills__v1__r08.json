@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Yang-Mills existence and mass gap\nMathematical target, paraphrased from the original Clay formulation: For every compact simple gauge group G, rigorously construct a nontrivial quantum Yang-Mills theory on R^4 and establish a positive, finite mass gap. Existence must satisfy axiomatic requirements at least as strong as the Wightman or Osterwalder-Schrader formulations cited in the official statement, with appropriate gauge-invariant local fields and short-distance behavior. With vacuum energy normalized to zero, a mass gap means the Hamiltonian has no spectrum in (0,Delta) for some Delta>0, with the supremum of admissible gaps finite. The target requires the four-dimensional continuum theory, not only a lattice approximation or the classical equations.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:05:41.627702+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 7.339,
+      "response": {
+        "id": "gen-1790697934-IdYW0atUzRDkxlwTTogI",
+        "object": "chat.completion",
+        "created": 1790697934,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.0005,\"2030\":0.015,\"2035\":0.07,\"2040\":0.16,\"2050\":0.32}",
+              "refusal": null,
+              "reasoning": "**Estimating AI Capabilities**\n\nI'm considering the future capabilities of strong AI, focusing on timeframes like 2035, 2040, and 2050, which yield probabilities of 0.08, 0.16, and 0.30, respectively. That seems a bit high, especially since challenges like \"Yang-Mills existence\" might remain difficult for AI. I think that by 2050, the probability could realistically drop to around 0.25 due to the complexity of theoretical physics. I want to ensure I'm presenting this in a JSON format with precise years like \"2026\" and \"2030.\"",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating AI Capabilities**\n\nI'm considering the future capabilities of strong AI, focusing on timeframes like 2035, 2040, and 2050, which yield probabilities of 0.08, 0.16, and 0.30, respectively. That seems a bit high, especially since challenges like \"Yang-Mills existence\" might remain difficult for AI. I think that by 2050, the probability could realistically drop to around 0.25 due to the complexity of theoretical physics. I want to ensure I'm presenting this in a JSON format with precise years like \"2026\" and \"2030.\"",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-HV1DimoAkFygbJRQAxOBiF6qeaERGIMbfAUpf_-FhDQXlVcgCnzOOg7_9VeLKZYgCPNrVVln8wk6g2L4QxcM20nXzk0eBxZzWHXJFu0K9QMFZyhff4MxipHgjaRCKPUrwUlIIV423yWhcVUvq9_jF4uUw-Yq4M5dxBeFxIs5j5tzwU_MrxUOYE9K5HvZIlXM_NfkZJDx5VQu0alOd0wdLd5JS6ZXu3FvZUg6F4h7B6YCcE0KL7CGHAi8sGwUPZCFmKRVAPHepn_LLQHV0BvXqGrYVmUnkrL4Ncqtz7WsDu_UbcOFGawCqYlLv_uzOXj1t1fZNh88o-22lOQytR1oF8K3YuXe8Si6_vrZC0FoF9CAS3K793mtsdgNPhAWKaIAERtvTwTIMf5nKsnTwwmcS811xx4j7Rzxr7WxGdbhKtLRmPvBiM3PxGUJL9pFWHlzCOdIt0L5gP1tmuUXXidYKJhFD_24SmXhL0bD41x0mnfTu72c9cprlZrMclQoYmLxJVqgfz2eEhc2FhmwI7aw6-Up0MpfFcaOWpD2u2isyrymnwNSZwAIS9It3V9uNw5aMLPkenqJCio_F3ZKpNPt1GOidf7Tr_anN2df88A1NnWO6aoEdgjnD8QpthSp7YlQdQ9xG4cTEqV5HP5UCLQsTaV21ku3fK3As83AD44eM3qU5yB8xcjy0Si0eXDCJFpDY6pRDBAOH6Z8-kJAkjoN7BE1aRbcJ_fmaQMnIlyolRzbgWRiDuDMNw-M4YMp_qD6Bib1LbRB9WwtDuQOjLpxz0xSYPFmjPIPGSZruhKdPQStV8hF0wDePk1Z_cCiBospNj6BWt5tZSLyjwIYTSjmAXK-FKHRzwT3Kwo9G3Z-qOpWQ6pUY8s5Hxwzl3_0QdtSK3-jFqIcCVp-kUpaUXW6ndnTbwokE_QpKRQU14xFzkDtoKqPLJDfOzt-U8FRnZJpIgevgY6-mIpk5Ubsu0UaFK7U5L3Xzvxt-ZvD_jHKayMm9kxOZ4XfRS9YHRiE3raikXyJ1JSMV-2H-yZcPtyulbUbPYEjPmJ0fWUPlgxPaxt79mBU3f7JZxLIlwnokScFdAqxS1iKKohjPodkJq22EU7Cs2DQbuJn6ywh57D5AjawUqQbdwSAZPC6m0IfgVJUEUqe3gBNdWP49BXlmcSGKWjxFG83TClZCdOpVBA3dekTAQON5NmSldcAveDseCmavRM9AdQsChQC4SkeLETK4r01HyikURtv1BnGaqWMvpQEU4YQ0fc_DLygu6DIx6Eey8qgC_AnGpLZNT7nNhA9jVsh6UD8ei_1nEUH7ntkp75XXKcP5NwzchL5XYG3X6RBMf2JD4_mIyfRJq9_DvZt5W4o-WlRnr5Q4IXBNodJQTpNZz-H4Oa9cuAFHWeQruAfLz9huLg5abr5ObYDduYHD1_czQgyVZtxHnGPifOmuBw4xpQaASR2vEDlDU4_ShI6n7Oy2K3RAAMlqGnS3K7h7aT3D4iJC-B6r2dusCBFZJ1sOMQf27PFNsmdBOzVPZgN01C29uU5tcdPcqQkpBshbqZleHrTZmMExZ0i0JNMSrC3WaThFvFjvF9YTYoDVxQBc9fnQhJFz7pGYJLw4_3fF0eGPJ2qgVXRjqSxAaWkCAa2ABkw3ANNIk44PFSJBDSUaFxrKS_VudC2i5qBbr2XWW0QR6szX2-PQFMuS28xBIE3mg7y6JFulz5JWXogfazyKNHrQBP6qf0LePnDCBkQ61luekpjoFJcBn-dnZJsgtRTrhk3Kd_angHWNgbpHrMfd55vaI6LCrJGpudsi95rUr_9IaYDAviuIRzsII_u2l-Yen2xCkJrirqsFqnDAktnpBWbb0fB3Pq3U5bQIjzzOuzQjXcD65E-ho7ifNRghhUCwgybS-vwhWGTI88FDV6W5YjO3hK8TC2BCy0O1Ei2d28m9LFibHgy4RfA1x90m3lVSiEKhLq_940LecwsZ2KvQbdTkcwkJJUMheHCTHMDW0rDQO1Am4AevU6hlnapmu7agr_nQdTU_1FeUKcOoFYNdsZoEYJ3iqsKgFd-ll-2jWp_I-Ib3APW4JXOqoQLlomTLot5S9dHEbHdt9ma77SsIMbmWJVEc8pVxVF7kBZwFVdNlCvPhSEks_vuaihQ8JUu6O6ADjlTqgofLLVtfPfk6fdF3ivwdQ_g5io17Z0nY8YWmJ8sO2u1m1n8QM3O4dmU4qLaDnvd5mIF9X1qVc41F-Su8ioElvK5lYawWKnkPEvt7Vmda7rLGAXlViPPUCVgefxvOdShLGoPe07c-igOsC-nXMUO_xBVwvxtJaPihn_QYPCt26vyHTqVModBuunJ_AEBuuu-LY6tC9feAGHq42D6jHFCkuffCfp5ak4RRWQH91c2VwDJQ1uJ6wjETzGEBskc9V5QDZyKBCmCmQ0n9XPbFjq5iLkSXyswCIZE15kKgXHjqQ1x82zXP5B5y9bsQkufaLpt4WD5N4fVKVetXh-LpyCKVuLBna0lK-dSNsjY0Oo4XdUXnwXwcI0uHD2bx3cyD5J4uiaNfR3ND-QmjkAdIZbvErWHgtFLMygp_e_ZP6k5A088f5QwKpWH6h380HIq_DhTZgzgQgL3KvXgE96aTUrAYPWoxQOl2W1cTnztsLMyRFE0V96SCuR7TxBFhTu2qMNbmWoZ7kWmnExRCcwsGnK5T2FWJ8a79x7VVACob1MIEGdyY0GLir7duakxia8paS2_7Xd79LKg3EYDmMfyTNfwxjugYV3rGaOlGKL8tGRHOp0g6jnITSB-g5X1d_ogdjQh5tu6j7L3wz2bijzIvji-g51T7-WnmPtSnBjnIxk44cthWGiGw80NP9jViF0pH7GPcX3bqSDS4NZlWqdHhc-5xV0IppKrB0NyQc2L-IggmaUQLChkWGtSlOlT7oJQ8_j1fNRriA73X9NG-udaROdYCY_FSqdeuZJH_D8Rhx6CTbxwggHJn_MeIrTVsubzpMnZnnyoA8T-N7R0pXrkryEoL06y2LgiA6wmK_kO9psxLSDLWoGCEzl8eqG5WvWvK5pDGxTz9tzsb-Pfl5zZqMfYUUaLJkaywgglrONHRLjtbua2nT-ybWLbI-qBAfw4e-bT_SVlbPfOz5c5iVfMOcMFnl4KghtDBtgTnqN1IaljOrdo3jCcayqtYrxnMHguV-4JJmGCVOhGE5YsYswB70l2-RYsKGl-XxWcIgtnNUIwU38OpPYdn_BIjm7tYcW7CHQMTTItlg-qwpt_XkyvDiBPM7CVz0ajPriByw0Q4bVKJ5LrCWRO-Jm7cGtbHqNIQMqSldTTha0d2nt5Rj86AClzioYdF-8yPuBhnehJpm8wQxJlnbu4ZOfxAx9rHRotP9EX_Ew9T-SUG0rQmXPo31xLs0glJu_h86dzTl6c8pAXm25Tar-1BPcZV1ksCeNrX-jxHhJSwchdsOzrnt7VbdRjDet2loC2VB_8NyuFxwuji8_8aguiVENhIYs-k=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0881ae24e7c16cfa016abbe1cf0b3c87d1980db6427d3ee36c",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 379,
+          "completion_tokens": 430,
+          "total_tokens": 809,
+          "cost": 0.014795,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.014795,
+            "upstream_inference_prompt_cost": 0.001895,
+            "upstream_inference_completions_cost": 0.0129
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 387,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

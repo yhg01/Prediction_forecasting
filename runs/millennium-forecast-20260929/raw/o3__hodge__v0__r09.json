@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Hodge conjecture\nMathematical target, paraphrased from the original Clay formulation: For every smooth projective algebraic variety X over the complex numbers and every integer p, determine whether each rational cohomology class in H^(2p)(X,Q) that has Hodge type (p,p) is a rational linear combination of cohomology classes of algebraic cycles of codimension p. The question connects topological information in cohomology with subvarieties defined by algebraic equations. The target is the general rational Hodge conjecture for this class of varieties, with rational coefficients in the combination; an integral-coefficient variant or a statement about arbitrary complex manifolds is a different assertion.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:52:51.906063+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 5.535,
+      "response": {
+        "id": "gen-1790697166-8a18Svu1IArJH2LWajh6",
+        "object": "chat.completion",
+        "created": 1790697166,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.01, \"2030\": 0.04, \"2035\": 0.1, \"2040\": 0.18, \"2050\": 0.35}",
+              "refusal": null,
+              "reasoning": "**Forecasting Hodge conjecture solutions**\n\nI need to estimate the probability of finding a comprehensive solution to the rational Hodge conjecture that involves AI contributions. I’ll create a JSON output with keys for the years 2026, 2030, 2035, 2040, and 2050. Considering its complexity—it's a Clay Millennium problem, thus daunting—I see the chances of a solution being low but possible. I’m thinking about increasing probabilities over the years, increasing from 1% in 2026 to 35% by 2050.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Forecasting Hodge conjecture solutions**\n\nI need to estimate the probability of finding a comprehensive solution to the rational Hodge conjecture that involves AI contributions. I’ll create a JSON output with keys for the years 2026, 2030, 2035, 2040, and 2050. Considering its complexity—it's a Clay Millennium problem, thus daunting—I see the chances of a solution being low but possible. I’m thinking about increasing probabilities over the years, increasing from 1% in 2026 to 35% by 2050.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu97TnJT2ZGbni2S26_1GoD3ZmfHPG7ETGXUifstFVc2uqc1vPpditWGrBRLhIYdqmjMsbFzfrVMCOjpa1XBiFZ2u_0ZJlAaafIQLwTbIjpJcuToA7cRDEL2CrJ95aNAyDPxkl_FWblg9LgnVjdsw_VPk9Mrzc7lIdCnudz6GGQZjaQGxHEzuGJj4cLGSoPxTGiysGWiuSKomsBbv9VqvLdyWRiZURpooXwzI0C9PXi8nIll38DoQFdk6oAb42wmBHWk5tqJ7sysgy3CeN_rpAOiGPQNhF6kwGkfdVnLJu59qgj2drNz53ULtXa9ltl_W4lbc2f7LrpKMfqw2zr9vPuA1uDJGervYgfA-q4xn0kyX10Ymf3ot8OnPWoHO3CUS2QNBFEVRi9AMiZ3tbUvDoxUbZGsg-yk-aEBgTG8VXq2za-qKAJYDGb8ujD38UKlcYu8kYzm1B13Acou4xvTEGNlwfR3yCi6nUkeoApDQ1Rkc-9MKHSpXvUkXgj0mSNuHrPm9uT54qfnM7EP4TkTMvrrsbX1jknySXOyTjYmP9F5MR6e1MDptlPBb9pHSqtcHrL-NeqZI9zCCUFk3jSlhHP_YiW1nAOsRXmvG-Tpqz_skrNZOWrymI1QPiCZYsFPDlZ3657t9mjOw6lgj1IG-yJZOX45qe1h7IVNaRVKl7tpF_NHu79o6ymp-ALipoNZS5Ok9A9y5D6luMgW9RQbVC89cVdK2aL8h7Bqpj2gj2Ug5tA0OPg65su44KIlv9Gz0CCQ2JtBLeqLMVvWZlEXEvG93MflyJrLHiL3n6mbeMtBVTQAqnlIsqA5li6ZVcgzBhZNhbArhUB4UmEqAsGY9x0eCfyGOvHlIOKAzZ13-RZx5ZtRd6WPcKNUaZ0hGs1Cr3C0vVCowhuMUdlKgRVrlS2wzuPEik_tQkFq4CcY35yMKw22kKfA_iYMUjP32HXxNb-6RLbkAl8CP8icVAbxUn9e8YJjSD_vR8Re2fQb4fWP1LzqU6h8-kS-VS0sgxqLg6wEBQJFrrRi35qX0YQkJ2AtUNS7AaenuG-6jQBsatS-tRwidfUHHcxvsG0jVYEUGW2Wxly2xAZ1yAyxs2HedXcberHp1kwY_9SUjMC6JJE6j8PYcdp-b8lyHLcswb9czNG2avaHqe86tovy9Y3yzV4ssKYVVvco7w3ktXTipDiPXjppFosgJ--UZlSNteDRqiWL1L06MbhoiTICliK8gRVd2G7ofghGEDxnn-5WaxeL-PeRDubiEzXYhJni_B-AnHOlFFB7CJbahP29lhsVvCoyITHBFR2F-5W3iQCN3wF5He-2lZ87AkdKdX-JdKqaC9gmNUpd-viqbFdXYWGxifwG8VRI9IhYdywOpQOVXLCVmRhqh8qIdNyZBB8ghr_LkPnIee4eHlu60-uBdPnqEQpXjoAvUMoYGI3jnZ5H2khjGZSs-JRu8yfymDVHa75fQaM58rvK1r0qU2CzlJvE9Z5Hje8rzeDZ73A3G5YasGvfkLczz6JqlOeIp-vB3zU_lkS5ALKQnZjBqVy4HrYPgazJ95oPpPkiJVDJ3vmcPOe3BtASfP696uVmOrn30k20izi09lZAybLBLFgy4tG-YmoHheFVvwGd4SzbQlRkGH7e4PhmPaqjSYp_9smrcT3LO8MN5hwcFP66v6zGe8wJaq1JlsRPhMDTo0tWZKInSC6TYKgAadLr88DF0A6zv4CwyI4toCsNODgMqxAcxgGG6P4AQ6aUNbqpi9SVFuxubhlUgQo-bHlPbDg2c-gSLkoqgLQhXNcYunyLRSALdKfoOs6Qyv2WCZP9iXrzjwrPnxMcSh4iYnG1PgB8JZqpUOEaCp9fxvXW0d4F7RhQlMXQ0zsr2ZYzufqvP2gaaujb_bOzV6fGgikJ0ZssPrPK2p087V649EKUZMm8i0LCfVcdQmslw4KgEGh8a5k03vwk0KlZp5ngJJxeByRRLSXhxJjpP3Lu6-C-Cjy1T3_XDUdIUVepLMKyvRsyGBFtWLwDs0jPE7A8O9jbzeIZZJNjwT199BzB9QL8UPlYZkUlSYpBe62kpytVNQ1vksD3J6Oi4zltF1OiGgYqBx--NCXWUG6AQ9SSt3S2_L3XZirdEQeFSt_Voi0HZM0GwS_J_tOCD24r2WftV_7iCzzMahhdkF49eyYms7Bq3MUsP5WWAHniOMWkpmrqTrm-YVWSh9Gvhg7AISlXT0XM5CQnvOZRvCb4Hr6OCcVuXA_BJjmyyTMzbx74hGTGouMJ5yUkjkLXr4bwZPn0lv-bU6Z5WhZ9ezoOXlIrVDAfxjuwxYTZdqMONwYflXlUBCCrQETNhFEdXQahfnzYg5MBNTBDTI4lDAm0tWcLSGW05pxcsJYQ4vK_323JroW7Fq5QHQPcg1DxYJXuIEkAHNO0X_wynnLTxxvlikDx2oYpQAt023InPHjADxm6lH7bPmogT69DqiOPrq8BqNQOUj2bY28KSk2vMftC3QpHXByg69S2YREZQqPlxoe6iPgByMx-mJrVZOJhiVVEUq6R2qWxn5M8Fa2IRaSEagfeT-b3A3276zwXnr2bxasfnHm1gmk2TM1yYOm-OXK27--IsGeoJyzdH2KjMmU-GmpC80IyOKtcZG3Tyd-imZYtRFutEr_Q85_5aYuXveAWFLd9QmbAFtnP_LRc7ND2Yu_5VIAzxrPWwdOfbegx3JyL9K97DGR0myFEutyrLRtnqnCxl683hJ3QHNi4pZj5B9Ltu9o6SZTfjd1NqOtu9tqrCrlvbwrI4JsXigv_C9tbHYgj66Oc7uhQchDKcoani6I95NA-nmxr4N9cRlmaz9IhPgRBuC7w8l1hVFStJHNUy5B4=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0df7f4618cc84027016abbdecf21a087d1b95c8bf9787c9a41",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 362,
+          "completion_tokens": 353,
+          "total_tokens": 715,
+          "cost": 0.003548,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003548,
+            "upstream_inference_prompt_cost": 0.000724,
+            "upstream_inference_completions_cost": 0.002824
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 256,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

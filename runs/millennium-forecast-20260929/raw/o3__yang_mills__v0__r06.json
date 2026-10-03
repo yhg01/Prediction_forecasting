@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Yang-Mills existence and mass gap\nMathematical target, paraphrased from the original Clay formulation: For every compact simple gauge group G, rigorously construct a nontrivial quantum Yang-Mills theory on R^4 and establish a positive, finite mass gap. Existence must satisfy axiomatic requirements at least as strong as the Wightman or Osterwalder-Schrader formulations cited in the official statement, with appropriate gauge-invariant local fields and short-distance behavior. With vacuum energy normalized to zero, a mass gap means the Hamiltonian has no spectrum in (0,Delta) for some Delta>0, with the supremum of admissible gaps finite. The target requires the four-dimensional continuum theory, not only a lattice approximation or the classical equations.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:56:26.747306+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 6.323,
+      "response": {
+        "id": "gen-1790697380-4MURHV37Aqe3pDTQY18K",
+        "object": "chat.completion",
+        "created": 1790697380,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.005, \"2030\": 0.03, \"2035\": 0.12, \"2040\": 0.22, \"2050\": 0.38}",
+              "refusal": null,
+              "reasoning": "**Assessing probabilities for Yang-Mills gap**\n\nI need to estimate the likelihood of solving the Yang-Mills mass gap with AI contributions by certain deadlines: 2026, 2030, 2035, 2040, and 2050. It’s essential these probabilities add up to less than one, while maintaining a nondecreasing trend. I think for 2026 that might be around 0.5% or 1%, rising to about 3-5% by 2030, and increasing steadily to nearly 35-40% by 2050. \n\nSo, the JSON will look like: \n```json\n{\n  \"2026\": 0.005,\n  \"2030\": 0.03,\n  \"2035\": 0.12,\n  \"2040\": 0.22,\n  \"2050\": 0.38\n}\n```",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Assessing probabilities for Yang-Mills gap**\n\nI need to estimate the likelihood of solving the Yang-Mills mass gap with AI contributions by certain deadlines: 2026, 2030, 2035, 2040, and 2050. It’s essential these probabilities add up to less than one, while maintaining a nondecreasing trend. I think for 2026 that might be around 0.5% or 1%, rising to about 3-5% by 2030, and increasing steadily to nearly 35-40% by 2050. \n\nSo, the JSON will look like: \n```json\n{\n  \"2026\": 0.005,\n  \"2030\": 0.03,\n  \"2035\": 0.12,\n  \"2040\": 0.22,\n  \"2050\": 0.38\n}\n```",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu9-qdgjbGR-8JcQXFUrh0O0zS6kp0xJpyITgXJOvsPkCsP4fZcMulVUTBbYccrxy1tXuLZX8_gvPxf2OsCrg-zTMQLz_34sljX24ieYLz3FnK53Adi9kytCTAQ5uiKKrQgvbMXTshJUAt7fx5mWcGMDNBXj051FJXlyp9yrAVkM8OQ35traohCkESU5-vjJGp4fGXPwCL7JqaUwOO_wvJ3W9RpnCQrNnTlkyjU4i4KScvZQX8dAa8WFw1Tlyw9th00sGLPJQzUFkhUy1ognIamGAn6QQDKEtHmSVn8GGOTuyxyHLXjCUFPJIUNutbRu7d7avoUXSfSsOY-fRrVwabp8tHUeBdS7gpLy1ySefBWNaXMt04chSiK9t5JjYPAFoK3CV_k-foScjnId_5FO9kh4_LvwmorVkzQy__808iA1LhUhIxcvYIvzmjm5pWxeToxa_4xmsGjghbJ3BnogOc54hw5a64aGawebC_MK9kFAFh1hKvy-4hsmfDHeBfvpgrJEmsaI0e9SZnxM77Zdn-14DF1hUGW8Vz2cYnaLvzYToTOlyAPi6YDrYCoj6BFwlDtY05DNzofpa0-fKphvENQVAVJqOA2JRNNNHq-wrOBZQl6E9Kzg8pym94LoSW6zmV4eTXykzjPt3kmI-p_qZZFZBw7jUJFm_4CiYY7tbp7ZEm_NMkkVuzLQhksjvwklq7Y73DhNNqR24wdDRS22UqtOEBdfzAkFDZ4zq0gam3bgnwkRQyYrmZsh3d9UvtkNRMTvTTltpKNqw6hXUZc_lWl01VSvM9An7S4UWHdIpqErXa0KXPp1QQG5F1UKFoXIFeLuPtBozI73G3A3qO0gUJcRw_JNwYl8xkIiy-j2AqG3dGtAU5YA_sSA_KLfI5rST1TPIOymM1zb6tTgGmfMVPS5Zh2_cLJIP4LRBPbsVoos6PpwU2EpFRqJqyKXeeT80EZSBiW9BDhG_h1kk2hPyxPDpgMRH_nmwJC7ZKidvKiVxkg3q0JmU19yfPnnsR9a-d_ILEkg4O_sjw_0EhjyoTuGE_m4Eu5bnZ7poji-1soPk0ARn0Nrs_WIJJ4i1ox-2EOT_hfEpTor2ZYAjmwamKgW-sBloTYoUNQxc51tga6FepeSXld9ZoE8Ms4v8R4i0ThMckF16OGDn3O0KDXfeF__f7sVnZyc6lksTX937mW2rC6ry5EtXfAPUS6BlaV_4JRzI7hMhDrSIwlc1uJT0ZZmOcTiMcYsQvkojLMUsfNLZPWdWNs_wGIj9gCX0qRuAvGP-C5aKS0ivXPTswtJEIkLvPqfgh0ZtYKajXEXCqYyUXjKFEqe4coBd40rv94CSJUTajndIMKCM9dkrILi-1vEwsKAMUCxDnBHoMDX4vg2NUK07JBPRxyyztOgdPxxohqNkfRt89MFbXLS3D8zntbx99nCgaZFGpBnlL5uOpVEHmxJGYanOlZAzbsKqQPf5jKOshdzXclmLPtxJPspK8vfjHN06JEUCkru0SXsfl3l4KpIF6Us68SXaw7QXkkB48pUBnatsVZTst3zCCRubZZADIqVG3IX4W0BIJg8OmSaZtKpzdUXX4cfL1JlmzwhZRhUS2LUcRQfHOx3wo6RJ0XynItkHBGp6FUj3-6Z7dmjWWoi357u94A6PHWvAQE7VNruigpJGk4UUsquV9ievfW3ia5sJakmjn4v32vtrZ3D769P45Hjf6RZIIsZIzu6z-Voh7DqCgLePMq16sRWeiMG9NYSRt3thaqapsK1yHTdHYZ-lG8IgdmjnxE1MqnqyDndhpqXBJYOuAISMMy5DQdjqXxtrYxJQCrpax-TTnGEAEMhaLeRZSi0ddpX2_FWTpfBErJ7BeZY4sYUYZ4t1JE6KQwVmAMwimI44iZrXU4BfIGjzf1tKB0uKu4wgI2HemEhQa9QOt64xWQBkK2X8Pp_ziiHWqtLFv7kJnXPlu5HejTy_Osrd8blBfeYkeZvuHhAykytGkCul5Av6-nYjBhZ_o8yy4e6kBPWZMZASRiKI1Vob0-0a2Axd0lfqMk4E2buA-DjUKLye4hVhQ4lxAnMpAWQbeVc4CCv6B8bfI_k34mvg9G2DL5gBPuRdliWn2p7Rfu1DVcNbWnN2TMnTCz32ifA8vHdcbofxDshCRbJijGwZIviwaShpJjiRcQzqa3oh6VPkBETFrv0kcquDgoUAtbZo3rU6ZN3ChTRywTSb-nnms7Il01iNq3ZrnwliWyaQ6Qo2vjF1vstlHgOkjGrUOTr0hkDDskkcLU1PJ30crpqyMDWDxGXgz9vqHRrwYZ14qcvMCTRgsEwue1XU1aQF2izyr2IKDKbWDcuEXf8Dsz1U4yUZyx4Fj4LWFepry3XS7JnBLVX8wUaGA-UCqPoId9S-rJ50QFYgNnm-MELsorQTLIOuF-pMNo5ZxXmDexC7uc8Sl5yfLNHl47uPGXyG1cnwvZneBUMFfO623JlMJ_D2Gi_qOPzn1ynIXFtJpfqO826nBV9iNEltlMRpQ_85290AolP-MwNZIBoQqz_qq0Y=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_00f9c3c0c4fb5137016abbdfa5302087d1915b95eb93e8f646",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 374,
+          "completion_tokens": 317,
+          "total_tokens": 691,
+          "cost": 0.003284,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003284,
+            "upstream_inference_prompt_cost": 0.000748,
+            "upstream_inference_completions_cost": 0.002536
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 256,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

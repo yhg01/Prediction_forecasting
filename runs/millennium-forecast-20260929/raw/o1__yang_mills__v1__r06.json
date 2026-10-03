@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Yang-Mills existence and mass gap\nMathematical target, paraphrased from the original Clay formulation: For every compact simple gauge group G, rigorously construct a nontrivial quantum Yang-Mills theory on R^4 and establish a positive, finite mass gap. Existence must satisfy axiomatic requirements at least as strong as the Wightman or Osterwalder-Schrader formulations cited in the official statement, with appropriate gauge-invariant local fields and short-distance behavior. With vacuum energy normalized to zero, a mass gap means the Hamiltonian has no spectrum in (0,Delta) for some Delta>0, with the supremum of admissible gaps finite. The target requires the four-dimensional continuum theory, not only a lattice approximation or the classical equations.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:43:38.845900+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 7.101,
+      "response": {
+        "id": "gen-1790696611-jCyTtBmOPJZ5BaYzN9UH",
+        "object": "chat.completion",
+        "created": 1790696611,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"2026\": 0.01,\n  \"2030\": 0.05,\n  \"2035\": 0.15,\n  \"2040\": 0.30,\n  \"2050\": 0.50\n}",
+              "refusal": null,
+              "reasoning": "**Determining synergy values**\n\nI'm thinking about synergy values for different years, suggesting 0.01 for 2026, 0.05 for 2030, and initially 0.10 for 2035. However, 0.10 feels a bit small, so I’ll adjust it to 0.15. For 2040, I’ll go with 0.30 and for 2050, I think 0.50 works well. It’s a monotonic set of numbers between 0 and 1. The user prefers straightforward information, so I’ll keep it simple and just implement these values.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Determining synergy values**\n\nI'm thinking about synergy values for different years, suggesting 0.01 for 2026, 0.05 for 2030, and initially 0.10 for 2035. However, 0.10 feels a bit small, so I’ll adjust it to 0.15. For 2040, I’ll go with 0.30 and for 2050, I think 0.50 works well. It’s a monotonic set of numbers between 0 and 1. The user prefers straightforward information, so I’ll keep it simple and just implement these values.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu9yqb2zsHS36612KKjRoFzse4mYfzaC6me_9T8yez-KYVhjBTNn6HaQbC2EcOp2fAvm6l68cLJIdn8FTAJC--F-Mq9vK-JcoaCMDReZI_GJhHdsrTb8P8jR3g5ObjXr9cFs0AbVIZaWZGR77onfpXMccaH9KTEYd2a4qwCDjkFZma5GkJ9n_DUVGD83SWC8C4UWCWsz5cz2O6m8Gbrzr5CmOQOODBC9ihlOva1DsPizS3tkSbyqkY7orCGUuUfA7InODfyy8SCKwTVSIay-w9mbXthJCspYQ6lMibB9FTa5wwC1bNKwoLN5Zom0u2VxbcEaJ5XUwVmVp3Q_gZu-UsrKHGT_8eaTH2VD71eVKBVSAfslOZ-owRhryEE8bFw5kBxGmDFUi7eCrrK5ThKvirasJHXI_gY8FM5s6mIs-hRj6O6zlRbfYAsow9soIBDRm9Otc_3PW2xhCWH15pJrYVsslUVmNnuPo5mGqgGI3CLvpuZzbz25Y9J_fLzuWxkgCYgqxNDaPJ56JuQ1TpEMlqQ975E_eeqq3TgrcJaqWjOCY1AWLKbvk151BSFe9SvOJNq4iLvwqYN4133_1qYourf4gx_tf8dnUgw7z-yyy-nTdYYBF6sgdZSVJWg4U9Qbx3CFjd_VJJVSP7-XNQhSlMTBtZg5Jm62beRzR3XYk5q0fV1rCZO1cC3VBQdZPypPAT7h-MKJlbk6MOGZbJvNnNY9UMMgXl2v65DePsECPG-qEF5YM7oK_FpUm-ea4u14mCMywCCQyFt-uo4OPLhcrJ4QdoP0OlQDxoBdcymYG6zFBFeJyz01TG__jexUjCO5JTThq_WFsa3mKs_1oFsJbx1ieqiKa-4Qk3d9dabXKhV4n9fmZxG_SP0PNeIUFs9EFbOqgXd6xqbZqd0QSNsm7VvwAXVK5P6XxbfxPeLNZXfw9xVc=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0f94040af0a4eb0c016abbdca47cbc87d1bd4897fd76c8faff",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 379,
+          "completion_tokens": 895,
+          "total_tokens": 1274,
+          "cost": 0.059385,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.059385,
+            "upstream_inference_prompt_cost": 0.005685,
+            "upstream_inference_completions_cost": 0.0537
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 832,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

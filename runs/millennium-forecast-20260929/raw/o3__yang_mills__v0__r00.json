@@ -1,0 +1,84 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Yang-Mills existence and mass gap\nMathematical target, paraphrased from the original Clay formulation: For every compact simple gauge group G, rigorously construct a nontrivial quantum Yang-Mills theory on R^4 and establish a positive, finite mass gap. Existence must satisfy axiomatic requirements at least as strong as the Wightman or Osterwalder-Schrader formulations cited in the official statement, with appropriate gauge-invariant local fields and short-distance behavior. With vacuum energy normalized to zero, a mass gap means the Hamiltonian has no spectrum in (0,Delta) for some Delta>0, with the supremum of admissible gaps finite. The target requires the four-dimensional continuum theory, not only a lattice approximation or the classical equations.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:46:05.885879+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 5.087,
+      "response": {
+        "id": "gen-1790696760-gLJGk70t3fMidYqt4z4F",
+        "object": "chat.completion",
+        "created": 1790696760,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.01, \"2030\": 0.04, \"2035\": 0.10, \"2040\": 0.18, \"2050\": 0.30}",
+              "refusal": null,
+              "reasoning": null,
+              "reasoning_details": [
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu9094bNQ7RVrtE3vcXznMr0upVMsZWqFHL5KWErYQ0Uav9BfbZcX1AngAQR2LrZ6yTD334NpH2dp8b1nA3ATwrsuuciDG7YXlrati3ZOVjw4MdXaAjJkyDy0nzdSWc1DqikmJKTxPsES1y8ii5b7RzCq1CPxS8N8e_Gv4dRbEcb5kZJZHAgSgR6G6dU6fvOiDGvivXgJUz1iqAR2881BZqJ8aKecl_1oYaWnxIqmSMX4BTs39VhGCxJY0PdfPqa-UM-CK8n42p7A64x6ETuBCZZyPoWNABahIXiKd2LD6MjscIm1KvsMzOVA5E5uUZ8wtH4tINa1q3GD-4E_k8SegsQJsPmh0yWmHlDDBe6OTkBC7BZ6B6l1dtfqObhde5eYpD1oIz9Y9nCu_mIJQpbrGf5dsZzISy8V4__UvT_GWIc8SN17DxVEI3hcPUxk0eCpZxWqIGB7OtP7SmcmFrndcdacV6LINU91EWkxerjiZ7jI5AbgzxmMP_t5d1MfMgGCRU5drocrBd0E5Aphvbs4aCnM-VSQWJRZKIMgPDe65bOI61EgzSCBaoS005DwJX3V2ImzlTPl_8f0BYkcz9AQBWCh-V9i0wr3c9P9mu4gk2wjRSRiSf5EC5QZuwVg_JAto8JyTi3MeQLuAeFXCZcqeN9izteMRhPsrWeZXHLyMarEEwlaTvs2jC56bFYvjiWuNCC2rpcVaQMLkLInotu0bemUcR-HVINnbNpLRGnPk2Z5b575FEh6PEpd7cVxyIb9VG29PV11-r7VzoSi31Wv_uAjKAFvMTQQ96P2Rxrn2qLm_dkL0IE_x2CgY9P2yMnOfXUBD1ab-fdePDXqT-ordLum1OBMNdRl4mhoYDB3hrCC16UlzR7MPqZmq-IcpbIE7NtqA428Q5JlUpnSRx8dseJBXodan2fj_zzAcsHNBZF1B-pFGl8K_dlqL2sF0gpd8GS8MgfG2jlR9Qdh0YUX_h2ltjyxIv1YynserUXYwAoaCThdo199oxjGVOVAHqUj1E8gY6hmaK_bWMbIezT79fkmpkBIZWDwGT5Aqe4g3Uf8vZj82cnNtjc6IlDsTKibUW6dLwrpltGy9P59SB8HRuOUDkmlO6hlXnVh1Z9yoNX_FjI2-qdPAysKf9D_fZ-JqSy2D2dxIbvr_tQhZ9mdA2cyVYmmL8ulrZYYOlKNg92YKoXIra-sc9srTV57adb_kxVZWQwHEcEhX1SD2E3paUuFk4EuXdjLhUf_j3TM73gftUUpIbfXd1VdFAgrzKXYS8ueqYwnbhCmSUEFClNLRGpuCIEAlny-rCVgF27QxnXejO-GUYKKbUZSD4CqVE8VaHPG1NOKOjJKUFZ4c-qzf_cwAm80h3BoFLxXNEpLxsyiYRuZTSfDH7WuPigpOkpJ8rfqqGswIZ0TVqicX6EKxJ2cOf4gvvvjMI_nG00Fk_M6x-jL2kNYvB5sTeQmZVp8AYlo6Ha7wgp_oWTB0gN5Mr4dFJoWkVfAEJn_TDebcYp_FjxmEYjtxWXldjpQYWEnShRxqVCHcrJxTisD9ET1k7QLoNwixoiWHOAgQVAvtNSxx5YaeNS1-Vot-vfIS2Qj5YPZOnzf6ihpnSthapzIOzhJgzulp7H3z4PfaTyUAemIg40KGxt8eLISQ45imIJA4R6KInQFilJnYerxQW5PuvCaZh9vZzGG2EA1yDY6vh6b2pfzuCbqu3zwsNiDvmD5FMLFjCOBYsgb8QaO-GjuvXCaw_2KB7oTlXBaF016K7r8LMZH5iSG1U24fNF2VlKPaFeMMmMx_ThdTphgSbsnv_hWoUZpvcgC2GZ_7INAxZheCrX0_gzsKJJG8CGt7zVJp0afpJvfyQ9QuFAiTymtyUu44OBLZy7hT_iWQOJmoeYMYzYl3kGSQ1yIV9Jws4ZY581Fw2jY6Yt7mrywUUlJ3KfE6LcMG5EEqUefJc_B4z2INKKiKPLQbgjoULtxMTxBBiqgXZ9g9CM3D2pJPldrqzbVZmPwiy_qt516AwdMO9cS3TPCrSbKNLUlMClU2YvYgVvE6ztx2Q2WYz9QBI2KSwGYLNvfqNIbK3bKvup9Qck8yRvkWtLSZ1w54EoqqCxrx-n13TkHRbgwM5sp69aQUad2jRA43BR5MJEfuMTGKGzJvMrGr7C_g55D2nFhbBfHr5kN9f8a4C0GDnYYClyoqwlbnkXTb26x22uqFn7mZ8nDqfso7sIglHbOEK1_Grjt3dpre8jZMXQec8DG-5vhnr-VAZ4rPfgT51rkAhu3PtJuShcufUp9mykcaq4aUXm0sGo_A58iSSYZX9b8ldVFfpvtwgI7vznel2QXGQZZ6k6rDfXTeQKb0hCPICru0bIDCuFXdYp8yytW_M-XuSGJ0HrNc2HN6QB0T36EVq_mKRNSlAY_V3qgQjQwOmrwCwA00mqdDGc_WHYZOh2ZbexrbYoMEzJ8eb9dyu4vOx107cb7DUDJPd2nxvqywn-2hrsDvqXKYvquj1thSuslDZKNUdkGN-ubo5XX1Zy6qjBBiyWS0nI=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0b7bf700fec5edcd016abbdd398d8887d1ad1c34a2e8deb6f0",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 374,
+          "completion_tokens": 287,
+          "total_tokens": 661,
+          "cost": 0.003044,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003044,
+            "upstream_inference_prompt_cost": 0.000748,
+            "upstream_inference_completions_cost": 0.002296
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 192,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

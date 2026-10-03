@@ -1,0 +1,84 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Riemann hypothesis\nMathematical target, paraphrased from the original Clay formulation: Determine whether every nontrivial zero of the Riemann zeta function has real part 1/2. The function is initially defined by the series sum of n^(-s) for real part of s greater than 1, and extends meromorphically to the complex plane with a pole at s=1. Its negative even integer zeros are the trivial zeros; the conjecture concerns all the remaining zeros. The target is a proof covering every nontrivial zero or a rigorous counterexample. Verifying any finite range of zeros alone does not settle this universal statement.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:02:19.620245+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 3.94,
+      "response": {
+        "id": "gen-1790697735-kGPh0ns2zl7IvJl9FdKg",
+        "object": "chat.completion",
+        "created": 1790697735,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\n\"2026\": 0.01,\n\"2030\": 0.03,\n\"2035\": 0.08,\n\"2040\": 0.15,\n\"2050\": 0.30\n}",
+              "refusal": null,
+              "reasoning": null,
+              "reasoning_details": [
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-ELCENvZrkdrKS9xvk4VG2CLNMfkt8Jerlr3xrzasmBOZqOf2ywjwElnfM5oWVP6VXfHUlEK6oMldC0Hu6DycEwWPzR2CdGlIpuoonObMrIpWp8NbbzhyMTpjWiTCE-PBMVo3RBj7tZ90UzZJ1IKgOB1hl86Ada94bsT477nuyQhbErVNgec7A-bmz1thR9Oo8Yr3OppLtsJzWjI2OCmTMlz6IDX-6_EU-Cqp0Oj7kgeQsYPw7ea9ZOtoaykqCM2YBZmNV51NS6DKB6ZJENMht08x02BOUNiq4ivVQ6q0fvjUkhkfeW1DvxF1ZpiL-9gfKtR80WyIplBeZNO_aYUC8-aGahe6AekR882ApJTbnlkjyfKU_39BFIKTP785Dw0hPVk_EAC6v45bI8qNShzv5YLpJ9cAHui25PCiH984D94f390iFYRIN9NbPK6BpRZqbDqHFEgOp_Al1RhfRtrtsr0Fc5Nr53GZJidqlTbo8Asl_j5QdxEkqMALX0jwL2Zeyyl87cs8vm8l3YxM2dWj3GZoojIDdYyi5JsfAI3OI9-Zm4zbybwVRWUkqqJElCFQtd3UtbxcGE-AaPOwue-RuVeaZn0lP0eMV6-5PwB7yojnIXZrXYwi-JiEHNOhyenzv0N-25QCZS61EiaHXiwpiLnM0MGfsUbeIw12SIR6HZFM9ow6ldewBbxCxfNB6GCqxZILHARIkdDsbNXSE5ednnv0gox6Mp-sdvOU_d45rEMSWCM37uas5btIw9yvhnF53A7Qde8SzwrAl75SFyrYGmpsgAWnKxJZuwmU3OgcvWyYo1eTjjpJCEIUBCMlxm5cRUM7ydGV6SQzAoVjEdb1_43ebJohQgOcXmOZat0Erh5_9A_wXuYVdOzjoA6Gp5PaNml0rHtLW2O7E5UyCThTZjm3jLrxL2e66Y7kSvAPx7cmA=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_00aed40633bb9ed4016abbe1084fc487d1bd971aa89142b129",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 360,
+          "completion_tokens": 569,
+          "total_tokens": 929,
+          "cost": 0.03954,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.03954,
+            "upstream_inference_prompt_cost": 0.0054,
+            "upstream_inference_completions_cost": 0.03414
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 512,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

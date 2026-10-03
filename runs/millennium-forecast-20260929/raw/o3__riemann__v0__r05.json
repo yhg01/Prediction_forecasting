@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Riemann hypothesis\nMathematical target, paraphrased from the original Clay formulation: Determine whether every nontrivial zero of the Riemann zeta function has real part 1/2. The function is initially defined by the series sum of n^(-s) for real part of s greater than 1, and extends meromorphically to the complex plane with a pole at s=1. Its negative even integer zeros are the trivial zeros; the conjecture concerns all the remaining zeros. The target is a proof covering every nontrivial zero or a rigorous counterexample. Verifying any finite range of zeros alone does not settle this universal statement.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:48:40.450398+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 10.833,
+      "response": {
+        "id": "gen-1790696909-ukVVgB270O4gPIMvXpEr",
+        "object": "chat.completion",
+        "created": 1790696909,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.01,\"2030\":0.04,\"2035\":0.18,\"2040\":0.3,\"2050\":0.45}",
+              "refusal": null,
+              "reasoning": "**Calculating probability estimates**\n\nI'm thinking about the probabilities of breakthroughs in AI within different timeframes. For 2026, the chance seems extremely low, maybe around 0.5%. By 2030, if significant breakthroughs happen, it might rise to about 3% to 4%. Moving to 2035, I estimate an AGI probability of around 0.4 and a cumulative probability of about 0.17 to 0.18. For 2040, the chance could be approximately 0.30. By 2050, I believe it might be around 0.45, considering all conditions.**Formatting probability values**\n\nI’m planning to set specific probabilities for future years: 2026 gets 0.01, 2030 is 0.04, 2035 is 0.18, 2040 comes to 0.30, and 2050 is at 0.45. I have to make sure these numbers increase smoothly. I'm thinking of returning the data as a JSON format, like this: {\"2026\":0.01,\"2030\":0.04,\"2035\":0.18,\"2040\":0.30,\"2050\":0.45}. I might also include more decimal points to improve accuracy. Let's finalize this setup!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Calculating probability estimates**\n\nI'm thinking about the probabilities of breakthroughs in AI within different timeframes. For 2026, the chance seems extremely low, maybe around 0.5%. By 2030, if significant breakthroughs happen, it might rise to about 3% to 4%. Moving to 2035, I estimate an AGI probability of around 0.4 and a cumulative probability of about 0.17 to 0.18. For 2040, the chance could be approximately 0.30. By 2050, I believe it might be around 0.45, considering all conditions.**Formatting probability values**\n\nI’m planning to set specific probabilities for future years: 2026 gets 0.01, 2030 is 0.04, 2035 is 0.18, 2040 comes to 0.30, and 2050 is at 0.45. I have to make sure these numbers increase smoothly. I'm thinking of returning the data as a JSON format, like this: {\"2026\":0.01,\"2030\":0.04,\"2035\":0.18,\"2040\":0.30,\"2050\":0.45}. I might also include more decimal points to improve accuracy. Let's finalize this setup!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu93Y4-TJsEGbtQF6p9kwD8BTFdVV2uj6zlckiEKbZRwvztYSuHAb99gNeIAadgKYmBGBC00sa_rv-cDSnu7h9mEylW--be4aXweU9v0rd6hphbg3WJRIqlGWsiFlYFh8FbNnCU1m5ffno_-JqBAc8zEf1FPYy8as2H-Re1kfVwscjBgo3A6Bb76cav1Jc-XChQ0Ej5YcTVfS6w41mN__OkPOMoIXVSeWV8pv3dnxOFG7wFMCC4tYKs6liS5xz15tVnra7wG__aw6802w4ZT-WtUccGmAdxT4yN-dVZgsA4bkB9Ikdt1gSYfqy6wMkBqMTWGGWr3rDds_CqcgvVICYTw2Kee-K1bv41xBEl0yKuRUpUekmJS0z4yheen6idatTNnDjJ_GPuRagn463H25IQne1iTW0pBubUyFWorHT3WWpTBeEQDL95ps4tNWD7_RVYF0JZ09fMRE9NBSUO7bwdnc3IMeHVvqMDYOKM_blBVg2U0AyzlWWnW8E4weJgG4HFN0yexmBrlfFEyl4EKFZpO90hMz-F4Z0XDh9zy2A7QFb3_g1LPxtHAftGaEXHme8FWNOli4q7Wnd99VOwAKArMd4Yhfy5pyHgnBrmUYknk6RwyfuipjXH6JGVzmRPMn-vAGiK6iNUV8UHIkCNyWdBkD-O9GYwzrTNNLn0vHPtzbuQdlH6ewTr76YpO4Rul7yEjCV4EOo4WX2ETeqqGkz3LcWzlFmtCfJROUYwBIO7fOsxQ7y_HTuiujukkd8W7J9nkTe1RroaJR98PshkA50nvtyRf0wUWMqygcQM1feDNs7HNoGq1OTaRVAXBEW__mYoLakwg328Ppd0U8Y4CPwPK4uvDRCr5zE-lRXAi44Dh9lO4TqpQ0kO1XhQL9AhMqzJwHBsDLNt-QQ7I7pLZYqPLnoGo1R3tECgL7pkmGnu8iuFA_kviw8wTthAjou0PPJLdfKQ_93Q_PD9ECu_8xBTtMbOTC-ZxgK_gpzVoWGIP5Z4adW3Kdhw7NCqJbZdLkd9OKEug46GbD1uZJmiIU1cXIT5Y_cRWAFYBrr7GAtXhZI2q5hqoa0R34OkWdkd_0OnB4gOlzKVrflO-bA-S2q0-mPsSG8-4VBQ1L9YEV5I70cB7nN5GCqQ1fNy3r2tBpgWkd1rPVn07IPCENRGqWdpqglHnKg3PYlPmC5d3ZbS7AImGb0tEC2g5MoltIeZRCN4CMAroYcNEZ-0JFdq7gUZnUvFyPLG6FbwmWwK4YPGkVcYOFT-LF791DNJSmbxj4DmJ05lZvP-nc8p1MRgeeqvnD6IEBKyieHi-Xpg_7wgU4LhZJtHrtwfNIkLCzvMOn9L8tj9j0_nDERPcXxWPKS0hqbY_b2eNO-hZoF4etA1o9bnKUlsNsgXpp1AMgG9RvjkuivYKS88_HhgZ_EtvUQ04UopwvWYdUQsU6vRWVa2bLVBpv0AOlKaNb87Xzi8uEz-s2SrEuaZUwuk7LBfEEIbE2kb0jzREEFRC05iW220CjnLnvu8XWd90lEb5tFGczoUk_G3XSJQlS8hW01X4pkyFohAiYh5PCmwfWsO3cF8HmorffcTl4wNLdtkeVymgcNEoslV49IH9MeZuN8WswqJAEVSJgaqNPMD3Gt7NW0jqPdiWxGOYLv2GDYDmcUzEJ4MUVA3MB0TKT2YoDC-nJ9hsjOCiAxJjT9XN_sf3l3nsYSlhY2x2qScAJPqVCUD6fyWF68jPtAe9sS0_vEzh7YS9uAEmAaaq6aDxltQYexzhaM6xmYk_cUlQKZoo7JEtf-d01B94Fxmh5nQpt4fj2v8hL7Ng7pgiIyYnNZWGBy0TVXwf-JT6Mq3bfyVC2DyADAEm3QwQ_GmDSqasRc7PQHBLtmIfk0ilHGl1E0aBH3D-tOuB4y7eo7FqJ35rpSieSXrKRaYJ8zSy3ElEq5SBzmjfOoZTOCBbalVg1fcSZ6EubYExdUh9xGWxMCiv400m8uXFZAHXtw8XKfCkSQPUcv-u47H5wiGNW2E-ROC5JuBezOdbJJQ8mlyURc4bWI9kk4Wc32akJGh_Xl5EHFYEHrp0vy8kT5JT5OOXSyBWH-Ay7BeVP1eZ8raWjI-LuyuP-WM_R2fGYXTLp3uXNtwwYeTVFR7KUQg1UwsPTZIr24f1K0JPGfE8ZDOKAYuEYrV3XgeO5xZpn9Rw6wIGvcxbPmGXg9FcaRFwnoJKg_sSC6TNZJXTgtWqfm7uSxf1ImEBlt-vZK7kE7HAviRJ4QIIM9i1r-Kjp-016H7sh0b-uNB-EBCB3Fh4u5X9KobKnrTtxrVJkG44BmAR78qlOU5mniDYG1c1ggjGgWdu_-bTV-HZr6FzXvdnpIkto8MB4gI3mps1jsyyjMNSk0vq8I_tJ9YALs5fBEmqZUr_bGc_7FtTNzr7-ZBRPGS8Nf9JzTsgqjAXTV5VdegYPnmBz5rMMoSw1rZ00cuDBwoBYVtXUA9Unl1_e3Y80_A5BOs-EHiCqGkJsKaQ7tG8mAb5jYAXrHyI5-OV1gLr39RcgVmI29nwYVXROmIWfdZXwVsuJNUOcxejK1aEr-lv5oEl2S_o1q5RYvgubc1bCRDLBs9t9ENftCkI2z5MQeQjOLQu6AzhPgwt3dVQBk6x3Wy7G3FMrfnzD4AJwBG5ScG3eqrfOBxYnEbCqcq71cvphkB9hIIRGG-qf9pk4SiXmOwATrPptF5hg7BX41E0Cg9MixvxGHouJ13vdYfXxKjvQJHnf8ZWXGODOJPrWaCepgPX1ARhwFGV7DdJDpqq48Oxr4cX7wOAT0YFpAwVyLoMuiJvKnOHg4UU6d1xPeHCZ9HZZd9IYFv7R8j9xb-9R9R-JuXgxRPRkQ7IJAs_lPRmJ4BiLTW42D61uccJ4ftkEi8JG3igGBed3yq5_CZq1C9j20Vy7iNgEFaAL6-tFxdGtaoIXWZaWNk_tEO75AUcGTa5efLFWVBTeHom2A_G1LKVFYUpzQjmU-ABagna08n33y_awKjlpvFbV9YkwgyTbZLs9Vk8LsY-xoKKe-xLlbOcMlIhNuuDxEsIW5vOjsIt11sJhId-weQ_dsaRxUDgBZj1BhzUsKoQwEnqA-dr1zkgYVJeFJwTBLmg1eijXhJidrAed5iI4e9iOT733REFf_Kg5oyuOZaQKACmtieBYAjFci6fgbN70jOpCHqpYHEnXC1-QuEWsx4i-ejEx2321CEv1NgRCKjRvfGsR_b5NIGgAti3b70hRx-jlQPXkbt5OM0NZHt4ZpZA1czO1EwkR6tGgX6me51F-5v7W39IvtBQkO35Fde9pZCxVNsrLZKupyPkoaTibDGVP0NFn2j9NCdtq3Pdyvc8ObPjcOUT63O5gPhzW3stjn6duETgEClhB-Y7JUcSpQ6LSZmuVUoGcq0xo_ZRfA9EcAYDwTpzVAkOy6ED8dOjY5KfvqY1lFJ8iv4a4fyWWkAakD4Bcikh_Ql1AsRHouviWHSsFCt6XdL0DvF13hdaOhG8xT8cVXQAbkkMu2iG0_2zVZh4z6vvNECpE65l7aFZ41QMELL6ijxoJXnmLXYTMFigjFwlxOmhpHsEv5N23jCfDXH_BowS66BUYWz2Itr-hfN27FhwVU_lA0GzNlcFmfYcChSfdKs0706_A-GjOjrMYAXHTI4Iq0pnaLgdiSQXKIu9SCHkBe4maQuuzr_Xu_PEqblVK8zexrhnXohxM_h9Fa7d2F--dyJqH6tX0rPUCQhw4uq9WKheVTKuHSw8f0MfHfpIozUgxRmevcTOlKWBih6v-fDK3XeDrJ-aBeRCp8mqfvKKIN76dCSvOAJwkOaiseHJIKth-8Nb3Wg6WTXS-X-sOosEiJM3cR1wy6tOUd2qRcKQuBMoEI3G8fHcbSnb2EluLdqHAPJiJbk8J8loB9tqOndEPjVYbngtsvlAzIPmucy7DF0gRVLyCmqy2XbnJwB3moUQ9gFg7FlErptQnJqQ2Fob33SI0u2RVwtMsbN23GBHzq8J56ptp5G-hL4gW67xm6c5Aj_sGqzcwju3LYIF1sM_-3f6Rc4pI3rS-n_jxCZ7k5w_Hx45QAeO8iEu4RYJ_DYHSkk2yXKpiNinbQt6kWS2frutRiWO4e2aoIewm180Y72HRy0EZFCoRVLe2pfWchp9ILMtjZDFwb0ZBbb1kGAghgkZZf08Qk5fJelGQOSvU_p0B-tbkjHba32tt1732z76tweV4LMX9jOWRkH2lhgFgSJiPCetGtnR4pTPNWtmMthkRXXF7tkzhOP0=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0d6ed0c4b02be3cc016abbddce61a487d18b4b4cf55becbef2",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 355,
+          "completion_tokens": 680,
+          "total_tokens": 1035,
+          "cost": 0.00615,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00615,
+            "upstream_inference_prompt_cost": 0.00071,
+            "upstream_inference_completions_cost": 0.00544
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 576,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "request": {
+    "model": "qwen/qwen3.8-27b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-08-14. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Riemann hypothesis\nMathematical target, paraphrased from the original Clay formulation: Determine whether every nontrivial zero of the Riemann zeta function has real part 1/2. The function is initially defined by the series sum of n^(-s) for real part of s greater than 1, and extends meromorphically to the complex plane with a pole at s=1. Its negative even integer zeros are the trivial zeros; the conjecture concerns all the remaining zeros. The target is a proof covering every nontrivial zero or a rigorous counterexample. Verifying any finite range of zeros alone does not settle this universal statement.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "deepinfra/bf16"
+      ]
+    },
+    "temperature": 1.0,
+    "reasoning": {
+      "enabled": true,
+      "max_tokens": 2048
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:46:39.144777+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 34.811,
+      "response": {
+        "id": "gen-1790696764-SqI1KZrtVaw850YdgHTS",
+        "object": "chat.completion",
+        "created": 1790696764,
+        "model": "qwen/qwen3.8-27b",
+        "provider": "DeepInfra",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "stop",
+            "message": {
+              "role": "assistant",
+              "content": "\n\n{\"2026\": 0.002, \"2030\": 0.02, \"2035\": 0.08, \"2040\": 0.20, \"2050\": 0.45}",
+              "refusal": null,
+              "reasoning": "Let me think carefully about the Riemann Hypothesis and the likelihood of it being solved with AI contribution by various deadlines.\n\nKey considerations:\n\n1. **Current state of the Riemann Hypothesis**: As of my knowledge, the RH remains unsolved. It's one of the most important open problems in mathematics. There have been partial results (e.g., showing a positive proportion of zeros lie on the critical line, results about the distribution of zeros, etc.) but no complete proof.\n\n2. **Historical context**: The RH has been open since 1859. Many of the world's greatest mathematicians have worked on it. It's been over 160 years. This suggests it's extremely difficult.\n\n3. **AI capabilities trajectory**: By 2026-2050, AI systems will likely be vastly more capable than current systems. We should consider that AI systems may have:\n   - Ability to search through vast mathematical spaces\n   - Ability to find novel connections between areas of mathematics\n   - Ability to formalize and verify proofs\n   - Potentially ability to generate new mathematical ideas\n   - Human-AI collaboration becoming standard in mathematics\n\n4. **The nature of the problem**: The RH is a deep problem about the distribution of primes. It's not just a computational problem - it requires genuine mathematical insight. However, AI might find:\n   - New connections to other areas (e.g., quantum physics, random matrix theory, functional analysis)\n   - Novel proof strategies\n   - Verification of complex proof structures\n   - Potentially entirely new frameworks\n\n5. **Base rates for major mathematical breakthroughs**: Major open problems in mathematics sometimes get solved seemingly unexpectedly. But the RH is considered particularly hard. The Clay Millennium Prize problems - as of my knowledge, none have been solved (except P vs NP is still open, etc.).\n\n6. **Probability assessment**:\n\n**By end of 2026 (about 4 months from forecast date)**: Very unlikely. Even with current AI, solving the RH is beyond reach. Maybe 0.1-0.5%. I'll say 0.002.\n\n**By 2030 (about 4 years)**: AI systems will be significantly more capable. There's a small but non-zero chance. The field of AI-assisted mathematics is growing. I'd estimate maybe 1-3%. Let's say 0.02.\n\n**By 2035 (about 9 years)**: AI systems could be much more capable. We might have AI systems that can do genuine mathematical research. The probability increases. Maybe 5-10%. I'll say 0.08.\n\n**By 2040 (about 14 years)**: AI could be at a level where it's doing frontier mathematical research regularly. The probability of solving one of the hardest open problems increases substantially. Maybe 15-25%. I'll say 0.18.\n\n**By 2050 (about 24 years)**: This is a long time. If AI systems are AGI-level or beyond, the probability is much higher. But the RH is still an extraordinarily hard problem. Even with superintelligent AI, some problems might remain resistant. However, 24 years is a long time for AI to evolve. I'd estimate maybe 30-50%. Let's say 0.40.\n\nWait, let me reconsider. I need to be more careful.\n\nThe fact that the RH has been open for 160+ years is a strong signal of its difficulty. However, there are reasons to think AI might be different:\n- AI can search through vastly larger spaces of potential proofs\n- AI might find connections that no human would think of\n- AI can work 24/7 without fatigue\n- AI might develop entirely new mathematical frameworks\n\nBut counterarguments:\n- The problem might require a fundamentally new mathematical concept that hasn't been invented yet\n- Even superintelligent AI might need the right \"seed\" idea\n- The problem's difficulty might be more fundamental than just search\n\nLet me also consider: what has been the rate of major mathematical breakthroughs? The RH is in the top tier of difficulty. If we look at comparable problems:\n- Fermat's Last Theorem: open for 358 years, solved in 1995\n- Four Color Theorem: open for 125 years, solved in 1976\n- P vs NP: open for 50+ years, still unsolved\n\nThe RH has been open for 160+ years. It's in a similar category to P vs NP in terms of difficulty (arguably harder).\n\nI think my estimates are roughly reasonable. Let me refine:\n\n- 2026: 0.002 (essentially zero, only a few months)\n- 2030: 0.02 (small but non-zero with advancing AI)\n- 2035: 0.08 (AI doing serious math research)\n- 2040: 0.20 (AI at frontier research level)\n- 2050: 0.45 (AI potentially superhuman at math, 24 years of progress)\n\nActually, I want to reconsider 2050. If we have genuinely superhuman AI mathematicians by 2040-2050, the probability should be higher. But there's a chance the problem is just fundamentally resistant to all approaches for a very long time. I'll keep it at 0.40-0.50.\n\nLet me settle on:\n- 2026: 0.002\n- 2030: 0.02\n- 2035: 0.08\n- 2040: 0.20\n- 2050: 0.45\n",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.text",
+                  "text": "Let me think carefully about the Riemann Hypothesis and the likelihood of it being solved with AI contribution by various deadlines.\n\nKey considerations:\n\n1. **Current state of the Riemann Hypothesis**: As of my knowledge, the RH remains unsolved. It's one of the most important open problems in mathematics. There have been partial results (e.g., showing a positive proportion of zeros lie on the critical line, results about the distribution of zeros, etc.) but no complete proof.\n\n2. **Historical context**: The RH has been open since 1859. Many of the world's greatest mathematicians have worked on it. It's been over 160 years. This suggests it's extremely difficult.\n\n3. **AI capabilities trajectory**: By 2026-2050, AI systems will likely be vastly more capable than current systems. We should consider that AI systems may have:\n   - Ability to search through vast mathematical spaces\n   - Ability to find novel connections between areas of mathematics\n   - Ability to formalize and verify proofs\n   - Potentially ability to generate new mathematical ideas\n   - Human-AI collaboration becoming standard in mathematics\n\n4. **The nature of the problem**: The RH is a deep problem about the distribution of primes. It's not just a computational problem - it requires genuine mathematical insight. However, AI might find:\n   - New connections to other areas (e.g., quantum physics, random matrix theory, functional analysis)\n   - Novel proof strategies\n   - Verification of complex proof structures\n   - Potentially entirely new frameworks\n\n5. **Base rates for major mathematical breakthroughs**: Major open problems in mathematics sometimes get solved seemingly unexpectedly. But the RH is considered particularly hard. The Clay Millennium Prize problems - as of my knowledge, none have been solved (except P vs NP is still open, etc.).\n\n6. **Probability assessment**:\n\n**By end of 2026 (about 4 months from forecast date)**: Very unlikely. Even with current AI, solving the RH is beyond reach. Maybe 0.1-0.5%. I'll say 0.002.\n\n**By 2030 (about 4 years)**: AI systems will be significantly more capable. There's a small but non-zero chance. The field of AI-assisted mathematics is growing. I'd estimate maybe 1-3%. Let's say 0.02.\n\n**By 2035 (about 9 years)**: AI systems could be much more capable. We might have AI systems that can do genuine mathematical research. The probability increases. Maybe 5-10%. I'll say 0.08.\n\n**By 2040 (about 14 years)**: AI could be at a level where it's doing frontier mathematical research regularly. The probability of solving one of the hardest open problems increases substantially. Maybe 15-25%. I'll say 0.18.\n\n**By 2050 (about 24 years)**: This is a long time. If AI systems are AGI-level or beyond, the probability is much higher. But the RH is still an extraordinarily hard problem. Even with superintelligent AI, some problems might remain resistant. However, 24 years is a long time for AI to evolve. I'd estimate maybe 30-50%. Let's say 0.40.\n\nWait, let me reconsider. I need to be more careful.\n\nThe fact that the RH has been open for 160+ years is a strong signal of its difficulty. However, there are reasons to think AI might be different:\n- AI can search through vastly larger spaces of potential proofs\n- AI might find connections that no human would think of\n- AI can work 24/7 without fatigue\n- AI might develop entirely new mathematical frameworks\n\nBut counterarguments:\n- The problem might require a fundamentally new mathematical concept that hasn't been invented yet\n- Even superintelligent AI might need the right \"seed\" idea\n- The problem's difficulty might be more fundamental than just search\n\nLet me also consider: what has been the rate of major mathematical breakthroughs? The RH is in the top tier of difficulty. If we look at comparable problems:\n- Fermat's Last Theorem: open for 358 years, solved in 1995\n- Four Color Theorem: open for 125 years, solved in 1976\n- P vs NP: open for 50+ years, still unsolved\n\nThe RH has been open for 160+ years. It's in a similar category to P vs NP in terms of difficulty (arguably harder).\n\nI think my estimates are roughly reasonable. Let me refine:\n\n- 2026: 0.002 (essentially zero, only a few months)\n- 2030: 0.02 (small but non-zero with advancing AI)\n- 2035: 0.08 (AI doing serious math research)\n- 2040: 0.20 (AI at frontier research level)\n- 2050: 0.45 (AI potentially superhuman at math, 24 years of progress)\n\nActually, I want to reconsider 2050. If we have genuinely superhuman AI mathematicians by 2040-2050, the probability should be higher. But there's a chance the problem is just fundamentally resistant to all approaches for a very long time. I'll keep it at 0.40-0.50.\n\nLet me settle on:\n- 2026: 0.002\n- 2030: 0.02\n- 2035: 0.08\n- 2040: 0.20\n- 2050: 0.45\n",
+                  "format": "unknown",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 408,
+          "completion_tokens": 1340,
+          "total_tokens": 1748,
+          "cost": 0.0025737,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0025737,
+            "upstream_inference_prompt_cost": 6.12e-05,
+            "upstream_inference_completions_cost": 0.0025125
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1214,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

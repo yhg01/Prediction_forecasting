@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Riemann hypothesis\nMathematical target, paraphrased from the original Clay formulation: Determine whether every nontrivial zero of the Riemann zeta function has real part 1/2. The function is initially defined by the series sum of n^(-s) for real part of s greater than 1, and extends meromorphically to the complex plane with a pole at s=1. Its negative even integer zeros are the trivial zeros; the conjecture concerns all the remaining zeros. The target is a proof covering every nontrivial zero or a rigorous counterexample. Verifying any finite range of zeros alone does not settle this universal statement.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:42:59.138653+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 4.524,
+      "response": {
+        "id": "gen-1790696574-L25GfuXAnbsFhzfhkc20",
+        "object": "chat.completion",
+        "created": 1790696574,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.01,\"2030\":0.03,\"2035\":0.08,\"2040\":0.15,\"2050\":0.25}",
+              "refusal": null,
+              "reasoning": "**Creating probability forecast**\n\nThe user is looking for a forecast concerning the Riemann Hypothesis, specifically through the lens of AI involvement. They want a JSON object with deadlines of 2026, 2030, 2035, 2040, and 2050, each assigned with ascending probabilities ranging from 0 to 1. The forecast date is set for December 17, 2024. I’ll need to generate plausible probabilities that maintain a nondecreasing order, all while ensuring they fit within guidelines and accurately reflect potential future AI systems.**Finalizing JSON object**\n\nI’m creating the JSON object as requested, with five keys representing the years 2026, 2030, 2035, 2040, and 2050. The probabilities need to be within the range of 0 to 1 and must be nondecreasing, meaning each probability should be equal to or greater than the previous one. I’ve settled on a set of probabilities that works, ensuring clarity and compliance without any need for additional explanations. I’ll present just the JSON object as the final response.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Creating probability forecast**\n\nThe user is looking for a forecast concerning the Riemann Hypothesis, specifically through the lens of AI involvement. They want a JSON object with deadlines of 2026, 2030, 2035, 2040, and 2050, each assigned with ascending probabilities ranging from 0 to 1. The forecast date is set for December 17, 2024. I’ll need to generate plausible probabilities that maintain a nondecreasing order, all while ensuring they fit within guidelines and accurately reflect potential future AI systems.**Finalizing JSON object**\n\nI’m creating the JSON object as requested, with five keys representing the years 2026, 2030, 2035, 2040, and 2050. The probabilities need to be within the range of 0 to 1 and must be nondecreasing, meaning each probability should be equal to or greater than the previous one. I’ve settled on a set of probabilities that works, ensuring clarity and compliance without any need for additional explanations. I’ll present just the JSON object as the final response.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu9yC4p0kjb3Iq-pCFIKAPW6-_kOf7nJWIjem8yHlsx9tnMEMxEo4dOJbB5khK82FD8DjShT4PXfTzv-3gHbLKDda-7v6H91MAHiZx532ZkJ0yaOvzCdT8_2nA7a58WrVw5XREWjo7APWqRv_Kc7Sh0Id7NJbSIUwKq9NRRHuQf51FwnaUYR1DZj5A3F4nh7y02ueno2f0hwbVK8Rg-2OTqRKVLq0RFPeyKIIoj1kc-q-XS3HzzXVpAxapvbQWnjmS_lxRKfzK3BkhOZxJGJQN2Z75QJH_7q_NWEIC3fB9mVVNNiTbxcyUvY6gfTZvi9UKa9fi4YH-6r5F9JFYy7g9nG1bNceZsxThqQdNX-suDVTIgbj5B7Poj1JLUloqFol5Bdront2nJbCl1iFxfMIIQO_rKOiE0SFJXOAlKAZucLsRelDZJTaOQuHsmWBr8Mf8KHML0JyYCPPXqT6IWy4Ro22B5ozPlkpnCFGJ8P0uus5XFYFsIYXD3u3MM91e8s-gYe5_6XBhweSZ4OeZ2QWBY_WpdpimiZs-qYIhlWzXngwv_hcIXeZrGCpZemIBA_m5HosxcC4kSafEZ-jBunpKxqK8mcJ83uxnYRN5tOqvMBjZEIZFiGbJNgiPL4V4CQh4Kz_nxYRvZgBu-2B_W2ZeCp6GOhWW01wzYSHKxmew_5Teg6gyGDJla2t4ASPG7rn-s0cx6tbfldNBykU8shyFHRTXC5zwnMT67QA_709Yw67GdQEpby26WwOj00DMA6dZ1Hn3j4Wiurrzikek4HXqhZIAj-u19igyzzzFp6ZozWLpLNfyoBEH-ExXtAQoM--_q0nM_lRJTVPertlp0VQFcagL33UoT7CuQjZNEPeYIMAXvNB6Za3ewQkz8rEUl-k_bCEiwLwvZ2MOs1csTJ5oXYhiidHCPAT52tTZNDqLjaUInc=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_06388f75a9c73faa016abbdc7f5ec487d1a1691cfcf7b24826",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 355,
+          "completion_tokens": 432,
+          "total_tokens": 787,
+          "cost": 0.031245,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.031245,
+            "upstream_inference_prompt_cost": 0.005325,
+            "upstream_inference_completions_cost": 0.02592
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 384,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

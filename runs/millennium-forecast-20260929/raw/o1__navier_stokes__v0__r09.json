@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Navier-Stokes existence and smoothness\nMathematical target, paraphrased from the original Clay formulation: For the three-dimensional incompressible Navier-Stokes equations with positive viscosity, establish one of Fefferman's four alternatives. (A) Every smooth divergence-free initial velocity on R^3, rapidly decaying with all derivatives, admits a global smooth velocity-pressure solution with uniformly bounded kinetic energy when the external force is zero. (B) Every smooth divergence-free spatially periodic initial velocity admits a global smooth solution with spatially periodic velocity when the force is zero. (C) Some such rapidly decaying initial velocity and some smooth force on R^3 admit no global smooth solution with uniformly bounded kinetic energy; the force and all its derivatives must decay faster than every inverse power of 1+|x|+t. (D) Some smooth periodic divergence-free initial velocity and smooth periodic force admit no global smooth solution with periodic velocity; the force and all its derivatives must decay faster than every inverse power of 1+t. The periodic domain is R^3/Z^3. Any one alternative meets the stated mathematical target.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:40:47.802475+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 6.028,
+      "response": {
+        "id": "gen-1790696441-ZwEtz7GnkshEy00AhImk",
+        "object": "chat.completion",
+        "created": 1790696441,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.01, \"2030\": 0.03, \"2035\": 0.10, \"2040\": 0.25, \"2050\": 0.50}",
+              "refusal": null,
+              "reasoning": "**Assigning probabilities for forecasting**\n\nI'm delving into how to assign probabilities that are between 0 and 1 and nondecreasing over time, meaning probabilities for future years like 2026 through 2050 should not decrease. The user is looking for our best guess, which we can do without violating any guidelines. While it's a complex issue with no easy answers, specifically relating to future developments, it seems realistic to anticipate some chance of a solution emerging soon, particularly with advancements in AI. This is indeed a challenge!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Assigning probabilities for forecasting**\n\nI'm delving into how to assign probabilities that are between 0 and 1 and nondecreasing over time, meaning probabilities for future years like 2026 through 2050 should not decrease. The user is looking for our best guess, which we can do without violating any guidelines. While it's a complex issue with no easy answers, specifically relating to future developments, it seems realistic to anticipate some chance of a solution emerging soon, particularly with advancements in AI. This is indeed a challenge!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu9v_I5LHT3Wn3S-ntZ36ND7e_CC7LxPSzoiUHlG-PieiQu8TDxywxv6GWZMIfiDxqI9NiHxLokL_krmSAdF9iP5Qa4NfG19QmGdl5WqTSh1QKWSqKCnTykcvMCwKHYCn5hsVLhneZuzp0X2vloxfQBi_XqPpd3D5H06Q82py4M7tMfDF5rt7sUSKMiZdV7418BQ7XWb66K5gpUWbdTpet5Sw5h9k7cvZ9V4GEUq1UkgSTypVksTIA2wJ4-2XD2_pW8ALIHJ4sNuud7nzryujO6yHfO5R0C3HG6ftHDbZXqOg1oZI9GegnluT8OzvafyszeISojm7fa2wvzt-02WB9BC6QDIjkn2T9kfV1huhPFmP2jbym2J8OPIvX53P1n0Yfk_3Q_bahpmwLY8lnoGF8y49pmngb1wMgJKll3c1QJbqgXI5ewKYR2NDs3wlI3AmjstJXfIqv_pIPDKbBQaC-6Q1SF2-I00cU2tzE7GQQA4NBf64R00drycwQDeVyGWS6kCTwShdu97gswBlzhvFNAZmlaU5jv0eRbGmzuOZUQOaht34xkW0BV7RMnZMmToeeyWdtVhB7Az8tC32GsooIU42odG8fjVjBv4hIb0iP_wJ_XSZALZSZtfbnVPHbpcwsQCOgyrSmkTFhNPu-jVxjVNahpUPUTF7tE5kfjMjNyN7KlHz0V_wWJIqGNq0qi-VDDRzOkwmPKraCZI1wXt-W8HNgjw4-zP20oJ_WvxYr9Ad68jG2rwFQIAUi0NN38D4iY3U_NOl_tojaqGNVlfbRQXBY-Ldi6cQvAHS_hFvyUFTvNhzaCZq4KbJ4IDbsnZe12DfyQJKMsxBRoY_V5eJUN-EVsGQrmnICV2y00hoD4ld5kavm5q0OQuFaPSXezPVOrDdWbtZ592Z2qPMHwBM4yemcQS7ChdyDYVgHBqOE42dWOU=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0b5761bc21b37939016abbdbfa5f0087d1b3e602082ef425d1",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 449,
+          "completion_tokens": 633,
+          "total_tokens": 1082,
+          "cost": 0.044715,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.044715,
+            "upstream_inference_prompt_cost": 0.006735,
+            "upstream_inference_completions_cost": 0.03798
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 576,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

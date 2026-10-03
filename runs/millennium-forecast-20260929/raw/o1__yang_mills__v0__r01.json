@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Yang-Mills existence and mass gap\nMathematical target, paraphrased from the original Clay formulation: For every compact simple gauge group G, rigorously construct a nontrivial quantum Yang-Mills theory on R^4 and establish a positive, finite mass gap. Existence must satisfy axiomatic requirements at least as strong as the Wightman or Osterwalder-Schrader formulations cited in the official statement, with appropriate gauge-invariant local fields and short-distance behavior. With vacuum energy normalized to zero, a mass gap means the Hamiltonian has no spectrum in (0,Delta) for some Delta>0, with the supremum of admissible gaps finite. The target requires the four-dimensional continuum theory, not only a lattice approximation or the classical equations.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:55:38.543933+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 7.401,
+      "response": {
+        "id": "gen-1790697331-cYHeTkSGnAVp5VjFkuYW",
+        "object": "chat.completion",
+        "created": 1790697331,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"2026\": 0.02,\n  \"2030\": 0.05,\n  \"2035\": 0.15,\n  \"2040\": 0.30,\n  \"2050\": 0.50\n}",
+              "refusal": null,
+              "reasoning": "**Assessing probabilities**\n\nI’m analyzing the probabilities for potential solutions by set years, starting with small numbers. However, I think we might need to adjust them, especially to show a higher chance of a solution by 2050. The user mentioned considering that a solution might never occur, but we still need nondecreasing probabilities. So, I could suggest something like:\n\n- 2026: 0.01\n- 2030: 0.05\n- 2035: 0.15\n- 2040: 0.30\n- 2050: 0.50\n\nThis captures a typical estimation.**Creating probability estimates**\n\nI’m setting up a JSON object with specific keys for the probabilities corresponding to the years 2026, 2030, 2035, 2040, and 2050. The user specifically requested numerical probabilities, so I’ll go with:\n\n{\n  \"2026\": 0.02,\n  \"2030\": 0.05,\n  \"2035\": 0.15,\n  \"2040\": 0.30,\n  \"2050\": 0.50\n}\n\nThis format meets the user’s requirements without any extra details or explanations.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Assessing probabilities**\n\nI’m analyzing the probabilities for potential solutions by set years, starting with small numbers. However, I think we might need to adjust them, especially to show a higher chance of a solution by 2050. The user mentioned considering that a solution might never occur, but we still need nondecreasing probabilities. So, I could suggest something like:\n\n- 2026: 0.01\n- 2030: 0.05\n- 2035: 0.15\n- 2040: 0.30\n- 2050: 0.50\n\nThis captures a typical estimation.**Creating probability estimates**\n\nI’m setting up a JSON object with specific keys for the probabilities corresponding to the years 2026, 2030, 2035, 2040, and 2050. The user specifically requested numerical probabilities, so I’ll go with:\n\n{\n  \"2026\": 0.02,\n  \"2030\": 0.05,\n  \"2035\": 0.15,\n  \"2040\": 0.30,\n  \"2050\": 0.50\n}\n\nThis format meets the user’s requirements without any extra details or explanations.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu9960HmTcTo54UBY__hfyMX0lrEJ-s0fj-nI4XKtp7-plp-Sx6_EgUAkNem3ZF49Gv_zCUlHrUlOeQKHb9Y3aDnRl_ywlVnpv-hXAN95UqjEUAy-9szZDjOs3WpOlPNQAyK1DcJpTCMgVuq0QUwQm8vfghcbHgKaRcDH4AuMRI3LQTTge6yiwJyYMTf0EudrO4GIBRU2REL_N1nrfDGyJLBzHXCELf0B8FQgVQ2qc-1W9d7bflF53bgu1OJE0p7qtK2v5zTHrPhw_LFDUIRcMu0pyFaeTWecWWKvjCXUzYk5IzYxB8qncWpIvpBn_CTrLKQB3pANBdciraLXWdjY00uEzeIpolhJ5TBu5LWzrSG66jmWexgXolClUoKiw_vZT_yoOQoRRF8D6P4wN9yu2eocEnHXpL16MyyFmyWktzfRwG75Fx6VMg0hzwAwW_c6L0DsQyOknWjc57FFu2VCPEcBXng68y2-c8t-bShWsL1sSLbmvf4N0Ki7aQ8V0e2Tllv6vHBM_JPpPCi34iDlK-vEVARXtdZquEBG4EnzFhoIxwkI2NrzMfqdZsV0v_Mrqeo3guL2op7kpSMZdHPuWDVV4i5Lw5tr2-nBvRBiylkgGsZ_gZ3I9PcBImdBzs4oU3JsiBGGZOh08YF5jP4FpcWiINElBJ4F4wQRTBLA6DsuKni5JYvf9dj-pCwByb8sQNth-Y9wb8P1L8LRgB2vccTtGiIeBHL12KJ3E3rDAYc8WkAVGCddcAP8vEM_OKhMM3ZthQaHA8PLRE9H4E1YrRJGV7NQC3WOdWbRGgJiwBvlF9tkF1a9QzDmm0bt4zBEDsAsGpkdWHR_gdyTI1r0sOW_lHIQLU16c4Wx6AN8ib9T9n8yEeWXI5IksEMBqdwA3yJ35_dDbJCBGIqccJWPzlvNZGljp7knvfCmeYNjhKxsNF8=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0619b1ecbdccfabd016abbdf740cfc87d1ba5cbd1eb37e391c",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 374,
+          "completion_tokens": 894,
+          "total_tokens": 1268,
+          "cost": 0.05925,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.05925,
+            "upstream_inference_prompt_cost": 0.00561,
+            "upstream_inference_completions_cost": 0.05364
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 832,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Birch and Swinnerton-Dyer conjecture\nMathematical target, paraphrased from the original Clay formulation: For every elliptic curve E over the rational numbers, determine whether the rank of the finitely generated group E(Q) equals the order of vanishing of its L-function L(E,s) at s=1. Thus, if r is the number of independent rational points of infinite order, the first nonzero term in the Taylor expansion at s=1 should have degree r. The target is this equality in full generality over Q. The refined conjecture about the leading coefficient is a related stronger statement, rather than an additional requirement in Wiles's displayed Millennium problem.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:52:26.739919+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 9.433,
+      "response": {
+        "id": "gen-1790697137-hwEN6yCfqkZcgpy8HYWQ",
+        "object": "chat.completion",
+        "created": 1790697137,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.001,\"2030\":0.04,\"2035\":0.16,\"2040\":0.29,\"2050\":0.48}",
+              "refusal": null,
+              "reasoning": "**Considering AI probabilities**\n\nI’m thinking about the probability of solving certain problems with AI by different future dates. If we look toward 2050, the chance might be 30-60%. I want to calculate cumulative probabilities and consider human-only scenarios. By 2026, the chance of a publicly available proof might be very low, but as AI becomes more advanced, those probabilities could increase. For 2030, I estimate maybe 3-8%. I need to organize this into a JSON format by date.**Evaluating Millennium problems**\n\nI'm considering the possibility of AI contributing solutions to Millennium problems by 2050. For each problem, I think the chance might be around 20-50%. The Birch-Swinnerton-Dyer (BSD) problem seems unique since the proof might come from automated conjectural tools. It's exciting to think about how advancements in AI could lead to breakthroughs in some of these complex mathematical issues!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Considering AI probabilities**\n\nI’m thinking about the probability of solving certain problems with AI by different future dates. If we look toward 2050, the chance might be 30-60%. I want to calculate cumulative probabilities and consider human-only scenarios. By 2026, the chance of a publicly available proof might be very low, but as AI becomes more advanced, those probabilities could increase. For 2030, I estimate maybe 3-8%. I need to organize this into a JSON format by date.**Evaluating Millennium problems**\n\nI'm considering the possibility of AI contributing solutions to Millennium problems by 2050. For each problem, I think the chance might be around 20-50%. The Birch-Swinnerton-Dyer (BSD) problem seems unique since the proof might come from automated conjectural tools. It's exciting to think about how advancements in AI could lead to breakthroughs in some of these complex mathematical issues!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu966beLy7N6nTWhELp9TvJTszTh7wP0vCpsuAYdgRAH8EhxFGRV44QeLyMyuwbd25WELowAkupD1Es0TjrtCQQef05f1eBiUVmukhwXO6Ij8uCMi3zVcAqChUv0gWsof5FIusG4TqawyGbXyuOqyXOUcTmX1uhBkABqua7q1XcpuPhY9Y2tXPq6D2_VtWEOL96B9V_YNc2PtNaQ-uXLWGwkjtbHa_uM0t93vrdUzVwfn2580M6HYsZLVi-PfJEGECHRoCJ3HKvrrzbV3kO-c-k3ZhvnA2IeRSpkp_h33alEWVlIe4KoJ1SeR-XxNxj0QLhZ7WTJII-JiSssIOIuI3cubSCgsROLvaeqrezXj_EA4TqvVZ_KSS_PPzJq8oBYrLiiyheypTj-3Jfcx4YpEDU3a1EH_H86-zk6gXqp3MBRCMVb-Vmqkx6mFrdguwX-fm8eoSy1CYVDiI5PYQrXWxRiVTngyWSkVUv9p7XU9_UAs-FpzB1WXMRo5oGSVp65EHQj6YJC2W71cWb8WT6a3A_vcCQxOxRRcLJCbWx7FeupdjTlLFK4kGUhGE-mH3GYX70Pzo2FwYrxaQi94eUIEnXdhqYlkYdDDaxsvdtKsW92DVB-HsEbJPWVj8sWMT-tFu1bAdn14wbbKHFaAfT1BF6yuiY8MLsd_u8A5mFZbhnTYEn_9FcPP1iFOvoLtAIH53oz55lH6sRPnrCfmbyK4i3QwSxqWnppJCPiTqG7oD5NepvaSLuGC-_NW0ke-QXKl-XwOrC291cYYWf9nT_ZlORnL9yPHwLadYLzPOvNs7nVOysznHta8GhBTRGB8KWUkENqZ-EnuriZBBYY5IEiBJ39623RhEGUku332tENp4jCT8kheVCl1JRIz6D7AWht0Tf8qEPwxuBDiaZW6jgisud12QZ6TTg9lvcUH6faGjFees3t2Fz_0MJC7GcC2ywDUK8dNNwP7DXZ31AQPw4FxvnLcOJjsh76osdCkTCgnWf7nYyfWjKPtVZ-FuDZYf4fOeMRXdb5BKJ9KTI7cA5zXU-q0decIRAEnO77PJLYerQCWAZ3_oCDaYTikGcfloI-8GSR32eeip8amQeulCah5-Po61uXW-RdCj9LZCpS1SGSG3AxS90z96yMsFWXyZl5ul9NS_XUV8l0zVWFed3O8Q548u_beekm6oIhDexemSf9HeoO1r3f3eFgcaU7QYiLZwMmk56APGNqCcGv6Dt9VZK8sYdl7Z2a9SMDn2pTP2CMsnDlfgMkSKA6MKH6DMqamjvEMNAd6TTDddK7C7g52C1I0eBoLw601LuIrNzJOSc0ea3iqen9h6Qfo7825kTA0nCHLCYTzZggNTFVOJq0KpbEDCckkE8lB9KkcDV3dx7yerZVMxxbvB2n0784IaplKMp4HQjanaQehIpjLiSW1abcE1kWZRegRSGJlPPh1pI7BAlyEbekdf2FVEnVLX0R5FFLnkPiO5JjoD7tMwfwDcTYLt3myWtTxXs27sgFCqLoHoupypwEOvMd3XWVe4Q0IdPO-SX8AlxbwUdmX-n4MAJFUINWRXyDRzyEGtC6zeBsZI-GnDdqEUl2nkxqO3PG1M3sPLf1Jq_Xfch6_3ZcTVdBQ7Fa7d8ylu2_XLatTyD5uwgZVOrLS8sP5dMotXOO6wDt-NOXpCGE11pqU1hEYCgQpmQyPCC-AN-Jw_GWinCYzLp1g5gkW2ZdWBB13c7k-XH2fJfFjzB1ypUKWOMknM_-k9r32IndvrlSEn3V_rlWcGWFSqvjt1K_8m43YSn71uyz4axRpVhJmW4BQtEBImNXUdsHodjmQX868GHrp6oItnEPBj3MFlNj91fPErQh3RTgqUpkvElDpJiPeDIQDrA94Ua7CGqA2hOvSQUjrUrvwA7HJd4rRjwvIuTcaXCIFb_31OBBF46asatXD5nusHPS7s5OBiZG8KUYPKCS_FIl4TJn4GWasYV3DTrfbRybLuk1UeNwel80mZuqm62ENVUK9BkBFLBssMZCJ-es_UMt0EFlD9Q3xCUJP_Aodt71-L-gr9N-RC3sqICoxUCnTNZ8RzC7_Yi21H0o9suo7yAXmWlfGnMVntYrWB2ynre1X-gtv5tXpcn2W8NTX0S0cgkUizXQyKqZKye7weV24LTACUl6fmqS5xW9qNn2Y7NKh1nS_3pzkUhw8xeT2ZJ2pO5mzVQp_oXqpfaXePhnKcp0EfR-SrsBR7pYTSSjQdF9tMATM8pxUxoseOV6celMY0kUz1DCQwBJk0PwwYjHlVYFy5aux4fCTMDXFBzfXkiXbnr2TyriTavLHA73eZwIxPf8el_AThfbeRTHOpj-yy0v59aNxLgDpiAd553DT35-U8EYKDi_W-Xs0l27PR0jSifn0pJfLfdD-FdpRptAibWwYnB8v-YG7McHGTucv7f1v4UjfKJ-uT7-N1MxbP9LNoth7rmdP3-UkMTohCqTLdaIWqeMAFXxqT_N45jV_VYu-n3uV3APRhNM7qM9_mwYP9tbxsVn4umKWvhixskbaD4hM8PAQIKD5ZPo7nLZs09DMWWMKD40iSvfFsagTxUGVmWcnFsZ2xMm-cJWPCs-_BZy389j4CeLzZmVYc61eN3ZUhCuTrkbvoFm0StuzyRZCoNYirRCdRPMHHaTwRXY6697RKOsSdamtX_oLLHbj-E3vnJ9Gc4NlUKQXHNn77jC5PrNjsFi_9m3gNVAuA8bgv-LuZZBDa7BWYp0lCpsXGTpSIRhD1b297TomOGFbIbuF2Xf5cMGPfJqps5a5aHwCEVsdj8lCLm4idTxAiouNmwntFOBDs3WtyHBiy9QwjCiDNplaJn--t1jFMebvKpyB4nxPJSFW-YAIoVRzi1nTyQVVLJVjaRB-79FNILvg1qjfbmIbTp4Aw2IQQP2UbaTn6M81iDwpe8k1-dksShk6McAzW7RvNdvdQwFCfpNH1UEpzJVtiNbrZJC548LorMB2-GBTuGMjfanNvoNJBlYjTM-BNo5c-IjSblmeHlj3mtJqybul5rTSoedzOukSRs0hrUuNT-NvBCiasKZ3uAd9Mxg3T6q7TuWX_Rcoy-kIoggsLX4TG3DFJXbVVj3fKAVbfeEH-zWuSy4eP-TL7X2tA4yv1HDQqBv-CYYq_HWVTwCb1zM-nnQmSrVMxOs-e6myqaJuCyrD-PtSOfptnX7i0x-11YX3qalAUjsICHuvMh9WxJndTsyRbYE3Tph3LwjxZBeXx8w8ePzC0QLksnIr5V5D3DRF7-B9Tj6bKOch_YhpEosiihDJmxv9WWzczmuFR18dp64jajYpEjB6h3HXJ-KwuKJ7XD8pJYm2pX12qKzXhskHMbQhqClccuds0dTs8BkXVLQ2ZzBH_1Z332D22OjIoZnGyouooPEw4j-iT8sPfj02JrgpruHM3O1KLEt2cOpKh5MjgsOFYBVJGjIaFjN5kto1lJcNsufeN7tMArkZJd-G4vELEr0CkJeAeTySDE3nAlwXNaqqJX0smEp8EULru8lILm59Xqx7yDgtukgfzPQgZJT-zICmHSbuMZyEi_ehVx31CwCrJONjsmKQ8LlTFb-3agl7dPba1as2QCBQKBqByt1dO71NMb3pkWjQbmUSF4EOjrdF3jO5xRB9FCVHBDOmCC3kaCEkctOYJCuGvpEpsNZCtoLq2gRMfTBzsYv5oHbImrqwA6DdtOAhDw3mq8cPVmnNf5IAsI2MjwhxRq1EL479qaZ7mNYCkUS-quKM9BZJEmRLO4Mme1q__fAcyxUEV2I4XPDVWRx7Loh_73bXg-r6r1Dg2g5VTti_GtLiQHvczzupDZXmiac3DqAzS9jpBq8C5fDOD1GXXStTY_W8zKnQnPNGO3dC8A_owgz6RHWHLHxGy84iw-wQ80nZOP1uRrbyaRklo5AahZ5Xnkpd0VzteEwkqTdFn27R4V5aC3L6yvg9Xi6OEDhPeH32lfhqmyhQGH_s42oUU5gb4TxEA9NioFKO_wJNciDqzJJecSuQ-BD4rgBkVc_PXeV-V_4YbYbDluRAQa3UM34vePpOQ034qfFoiD5ocD_j9dyGW-I297Lek8-8kNQYZz71hmBCWXZR4mGt__Jk18u1HL3_6CNDxhndPrDf4abImWRha26whgALzHd3y9wQc6m4-mlQ.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_036de9ec19f1d4ac016abbdeb25b8887d199db9ee50961d055",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 363,
+          "completion_tokens": 558,
+          "total_tokens": 921,
+          "cost": 0.018555,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.018555,
+            "upstream_inference_prompt_cost": 0.001815,
+            "upstream_inference_completions_cost": 0.01674
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 516,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

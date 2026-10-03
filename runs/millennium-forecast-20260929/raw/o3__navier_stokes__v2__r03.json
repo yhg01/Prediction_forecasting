@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Navier-Stokes existence and smoothness\nMathematical target, paraphrased from the original Clay formulation: For the three-dimensional incompressible Navier-Stokes equations with positive viscosity, establish one of Fefferman's four alternatives. (A) Every smooth divergence-free initial velocity on R^3, rapidly decaying with all derivatives, admits a global smooth velocity-pressure solution with uniformly bounded kinetic energy when the external force is zero. (B) Every smooth divergence-free spatially periodic initial velocity admits a global smooth solution with spatially periodic velocity when the force is zero. (C) Some such rapidly decaying initial velocity and some smooth force on R^3 admit no global smooth solution with uniformly bounded kinetic energy; the force and all its derivatives must decay faster than every inverse power of 1+|x|+t. (D) Some smooth periodic divergence-free initial velocity and smooth periodic force admit no global smooth solution with periodic velocity; the force and all its derivatives must decay faster than every inverse power of 1+t. The periodic domain is R^3/Z^3. Any one alternative meets the stated mathematical target.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:07:32.070690+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 6.396,
+      "response": {
+        "id": "gen-1790698045-N2n9XgYw0xdDltxGkOS5",
+        "object": "chat.completion",
+        "created": 1790698045,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.01, \"2030\": 0.04, \"2035\": 0.1, \"2040\": 0.18, \"2050\": 0.3}",
+              "refusal": null,
+              "reasoning": "**Creating numerical probabilities**\n\nI’m estimating probabilities for AI progress over the coming decades. For 2026, I’ll set it at 0.01, then increase to 0.04 for 2030, 0.10 for 2035, 0.18 for 2040, and up to 0.30 for 2050. I want to ensure these values are non-decreasing and stay between 0 and 1. I’ll format this as a JSON object with the specified keys, ensuring it correctly reflects my estimates. Here’s what it looks like: \n\n{\n  \"2026\": 0.01,\n  \"2030\": 0.04,\n  \"2035\": 0.1,\n  \"2040\": 0.18,\n  \"2050\": 0.3\n}",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Creating numerical probabilities**\n\nI’m estimating probabilities for AI progress over the coming decades. For 2026, I’ll set it at 0.01, then increase to 0.04 for 2030, 0.10 for 2035, 0.18 for 2040, and up to 0.30 for 2050. I want to ensure these values are non-decreasing and stay between 0 and 1. I’ll format this as a JSON object with the specified keys, ensuring it correctly reflects my estimates. Here’s what it looks like: \n\n{\n  \"2026\": 0.01,\n  \"2030\": 0.04,\n  \"2035\": 0.1,\n  \"2040\": 0.18,\n  \"2050\": 0.3\n}",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-JD7sGu9kkqR8HAYOQLSG1Bj8Jn5ukl6Vp2ndDUMHj_nPFB13qDuGoR1tOQBghJnXPMbw7S6VsAex0njLgnUX8mtt2xYKZXNxBDsWQXerHPI0I4SypWRetZkVfusRB1W56FUhg-Ldufgl7Rk7TLXQWe0-8Ql1uyNjmW_eENCOSNqkI-1sEqaozc_ddc7i46rF5gQZw5NzFfrKY9YgCli0RALbwuaQ7vIQzKIU3Q4GZNOjb4llW_Iz4TX0dSkFTEmuqzInMjV0QAkeSPVDQyegNQnZfUVv-aoh4iRtVBcejRSYlRqYuol9JHTn0mATSTbaSjZXw532ap3zx7rlLdCb45KAFUwAfjXqjy0opWACv8mH2A-bHaG97odZUtx_D1hNX-CD-neh1sSdZWa-dDXueuSa60RNEtnRKKXs3Aqxchh-SS-6pXv3qT5P8wDzygZ_wATSOiY6htcRuFGR5Cr-eCwYqURQfA-glwamicv6GoGAjQLBei86foRA4mpK4upj5Kg_HEnJBUiyd7JsnGWOreUmTznKWYnTnCHGael7CtKsvkCEkKyFh3go3mihaz2p0BMW9Lq4M6Bt9QVLuu2iofFyDlkJqOjIV3V5bkIwZmpxgljgqOIpZjh5OKNePxQUhDqJg5XhbP0oOFyZT8WZvYwXP4eVWxd8mNCZlxh_ZZVf6Mr1-_XltpIRgZZLaqYnGUiBvOr72d3JiwUsbjSNRcEx_WVjuk7grfXk-R1r8vCAuiaVIseIMk03dI73RckxOYItXq6HqHFhBvSiMInYVmvKOTv-D5lFZ-Mvf1C2zemg2GDqJ33UKsDw9N8kU4TJD5ou-I8echf5USpbcIHeekPpbwF2NNiyztw6tKJqGAS5LW2JyTafo87Vuso2mklLIkciEKcX-O20HrUZiwBdW-LcdKwVY77vYgle6bmld8Xigcq37Oi5E2ceUyD1UdaNAI1_OtSUL6rZiUCa44Jsiw_qOJk9IH-y5lc1TkGk_0rYmreAxyYudntQt8NOGpF8n6h-F5MqasLy_BRu_mt_kfBZGfhmj_uMsS9BCMaB4Z5Tg0_1oMTbnJpv8ao0Mx6u02GEsXxOxuVzgNPZvQcaJt6hlcXNvXfCXSn-wKuEkXnM1GEsgL0eAwaZ-D0XCDB4fm61uexfzYT-Ed_ZxYwIRGf96XowMiSEBsg895J9vrtuG2TII-Tc-JxaMn3p12k16ixtyXYmjvg-orpvp19LvOzMkDQ-ajPHja3Zex0fQvr2ni-fgjJiQvzTQ8zIeFm29Hw_6hAtzZ3e4PE4BeTKIOdmsHYmE5gj5iy6-ijsrpM6CqFi3HLGmJ7vceUCHxNjLLsGJq5NIIOJWMHRkUX9MJUDnh4kTiyH95zXxuMhdZ8i1jDWSQvn3snbncH6PxBFaNPLucny0L81hf6v0r30Cn4Evnyd9BoZlKSWv05oHPr3mTjT3Az3hnX_FhYyCvMuf5WlIzAIYCrmt0-5QtXhFHSHxxb7z4EdtLCysssPAhnp13fDXMEECv0kIKAwF1FO4fOWbW9vJAcVH87zTmL-Vn_2sAMjxQPMgruVNSEnZdb5AeOlevzwoAEdVWE1AGsaaaLog1sMN4fFgXq2VKrdE1sBHn369k6CI_yiahvl0s7JgCK5VY1HyJmCS1Sl49niLgLwPY0csIcH1_OeyX3MewkvImrh0TEx-BwKxhrVGq2uNNVzAzMfwMFNH1Jhv8jY_2ft4q96pdZeg3xlp24-3j5Ld6L7hftxOYazBhjhdJRPxX4n8yGgjlmzhF00ptJsAFus2y7M4Ln_chD9QQ4dW4Y0dhpswWK6_gkDi1zXR7CYu671z6RlZyh2S8B8c9mNH1xBG0eO4WKm8vBVZgt6Ii_3BqH0AJJz5ABEnfgMElQOodnDIgRyFixeuQjlQdqDy_nyDKmgaUgv49M-nFdJknKQhsgQkLl22q6OgGZzxnMnYxajab4SF0Ok0sKCKemeAIzWmhN05Zt6Bwvyw7JwkiDn-jdzg7Ub36MFQhE0XVPc-kX4uihODH2UqlFPE2S4cctkZJeW-6w5a1PNk4qjV5D3-HKUKRNJHqP1Jlp9cuo3jFBRYsZEUVL_n8JoZUaVqdWotvkVMuKzqo-pkOaF0fUhzEEs3DC1dGpowhIX7SUmUMrrp1dHbzHIRjlwWR3oYDz7peLvt7NjrTfIfHzYVi34SSz9uL2iSWtNk6JURiCBRRMXl2YcYi3p6mG6BqZWYR2WEBvizs_ijYVKiQNrDuHRLv0EpTohPsGnJ1ffZ1ok2ANdZMWN6A4pKp9sJjYdVvx9PgqCnN2LeV_adRIJ4FyqFAiCMOsIPElrBgV2Z78NBPsdkMReaJM8jQedk-9Je8QB40wyDkjm4s8x7jPROYWLexpqDAvQHmLFPplKsP54EsHjpJlAjmxDp_ZwqdLrrAxs2_nkl0eK1Y_fkaTba2xcKomk6gaWo0HZ2_k27nm14SEIlmJGp4fIPN8UZ1k5zYxEh-PpWncTxkQqlERk2mZcuHcubiusXQ6iPSt79EkzaeaA9y3lC7Y5ggjx3lOBXkAadw7mdHvFef3cc0SzF9kbG0tXV3Fcz7sP7GKxaApT3iduUYzu1f3bBJjV7SMKp-wd25Ltnf1BE-uSTTP-qa0uwttZFaGQvHAJGTbX79Fbd4EkiwYVY-Ze-lX9O2PeLPp3xeqFmAz8-E6Vnskkhs7U_yomPneI7waWPR6C6Q0wNWiByTvE8DoPsLjv8LEPj0FRJAmhvx_plza8o-yl9BT6VbGMCqVgv9yZoWE9_TF4azQcSjuX8ZHPOeza6GnB48TQsqkkjtooT6dXEozvSZAD4BNJuBdenjc1MNvFRxU42Gt00NH3ALFlEEtcYDDOsucq_ofxiOPa9Dmyw6zWy6qRy4AS2Qokc_jE0JG-UNX5Uo4_OI0ulAD5V0hHiXZ9FdJnnLs3K4SLAauOBtZsjCdvfA8RbbkDPjLcqL8INNlyo588wG92xtaLTvklo2FH9HPz8CtBv8A3NCOdSOA6HqfRfVUle0oi0Ki5Qpso05lNDcR1x1GJAqhBD-m73x-CEB0DgAlLW9aDBqcUGGc-7eeni75Fj5X03_lss_f54nQuLjJRtWMJOqaO-bJckr0i5UzJsmEsgjPKa2dt91lyzCQsUgnIP3SvvgRNxHNQE4PIkAC0r4AuSkoNvga89QsV12rSTJ0b4GZsagXu0AZ2SZouL5ShYeOekiCoJ89lgKzWE-Okf_TRBv1bNqHuoKG2YWnufSbp0Pht-BGG9_fXB6bC0Eci-Ic2JfIKO7FyXnQGA=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0b3dea169aec63f7016abbe23e5df087d1a9de1b46196b7777",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 454,
+          "completion_tokens": 488,
+          "total_tokens": 942,
+          "cost": 0.004812,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.004812,
+            "upstream_inference_prompt_cost": 0.000908,
+            "upstream_inference_completions_cost": 0.003904
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 384,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

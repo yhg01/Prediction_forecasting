@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: P versus NP\nMathematical target, paraphrased from the original Clay formulation: Determine whether P equals NP in the standard deterministic and nondeterministic Turing-machine model. P contains decision problems solvable in polynomial time; NP contains decision problems whose affirmative answers have certificates of polynomial length that a deterministic algorithm can check in polynomial time. A resolution must establish whether every problem in NP has a deterministic polynomial-time algorithm, or whether at least one does not. The target concerns worst-case asymptotic computational complexity for unrestricted algorithms, rather than success on a finite collection of instances or an improvement to one particular algorithm.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:51:32.076533+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 4.375,
+      "response": {
+        "id": "gen-1790697087-lUefSeGqEPsu6PnESoYr",
+        "object": "chat.completion",
+        "created": 1790697087,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.02,\"2030\":0.05,\"2035\":0.1,\"2040\":0.15,\"2050\":0.25}",
+              "refusal": null,
+              "reasoning": "**Forecasting probabilities for P vs NP**\n\nI’m tasked with providing forecast probabilities for the public availability of a complete solution to the P vs NP problem by given dates. I want to make sure that the probabilities are nondecreasing. I'll make educated guesses based on current understanding. Since many believe this problem is extremely hard and may remain unsolved for decades, I'll assign probabilities as follows: 2026: 2%, 2030: 5%, 2035: 10%, 2040: 15%, and 2050: 25%. So here’s the JSON format: {\"2026\":0.02,\"2030\":0.05,\"2035\":0.1,\"2040\":0.15,\"2050\":0.25}.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Forecasting probabilities for P vs NP**\n\nI’m tasked with providing forecast probabilities for the public availability of a complete solution to the P vs NP problem by given dates. I want to make sure that the probabilities are nondecreasing. I'll make educated guesses based on current understanding. Since many believe this problem is extremely hard and may remain unsolved for decades, I'll assign probabilities as follows: 2026: 2%, 2030: 5%, 2035: 10%, 2040: 15%, and 2050: 25%. So here’s the JSON format: {\"2026\":0.02,\"2030\":0.05,\"2035\":0.1,\"2040\":0.15,\"2050\":0.25}.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu96DpxsWCP325pW-9iTpH5rXLhJzcMjs48fwRXOidmMqy--j60veza5PuVziq4gUco4Q-Fxyp38bKZAi3fg25JCIcz4lTlHraPQIIaZvZJPbbnBPznQLJR2RjovBnmd4hHutijniEuRBsGm7jOBQi8EQQX7MooQXYSCrH-iNLyoRbY2W8fkaMz3K4Br504-ESiVlQzNowsKflNRyvt5EZj4SbvnlvGb5oqFfHygsDVdd6Z0GVSxG3wq4DNss8gtICryyZvZubKE2aMVQvBotSNPJqZ2XGAzLgjjkBljlmoe6zjdE4OfLE68sBNJcv4h9Q6MTBcT1nLtOqED3XdeGdWyhK09D60y6mWbBONOqpJu9fxejNYrP0VDN73mDqvK0T2R-GxsVwZLGjVob5DrKgQJqiEeUBc86Pz4RneHYfT8Frj79740NYh6uPGHqdolQ2zyLkyqhq4pkqUODssBIkV_9djhQIeAagV5rvlONqEylpHXhQo5yglXJeF3eI6mMwNPuNiAmBOXyU3-Gih0zjdWZIMyyoOL-nPKr7SwzP7LQwvhRTi7lJMLm0bUaVhuJPKHT3SDuY6bOIHfIJiEFRKFusFOBSTz3l4dOpIdp795PmAQ-yJenhbHbpr4b1etjZ7zFmCMCLOenl1Hkyv0ihucdwQ9STkIlDqbjugQ2n58KcnA0Ki50t2MObFDdHL5dCZbeDhTuEOushxRjYJOdJPXNA_79DN12_VNL-UFcdtNr_pFRqha7CCf4AkD4WDWN9NSkLy9Tit_JrHs4MR1oI8a0f0ErWJYSdyjCgDQ57sP1lb0Q6s6zfntLjiAsXQPO6nJzn7Z-sK_tzHpdfqpj4FEMHW23HFDJfiUhU8Gq0IwCv6KkBlLyt68eG1Q6bZ6yvxDUPlvePSn7T85Hv58vonmXYyCYo7KB1adecpQWaifnYIxK6OOmYBh2VWJblY8_4MWnJRavwud-Y35vWzDoZKwxInfpS7BkAnWa5POYf9mzGSR2aHcjRVT6hEsq57qK24RHv8QJ6zGAGKefn6gpvw5Cg_l3MsJGCF9cUnC3Z3L_gRyInx3-gIuQFXkKLckHYSigh6sYzvkV6_TXCMOeYxYQZG-2cYLs0IhHop5i73GLOvejpQdDUZ7wDf7pzcPrBMh0IYgjMIaqb8KgvvGXyrJ2_AgAWYOGwqkvTPE8Ey8MZhp-Gq0H3Icp9H_vWZTY_VwpAsTWsu0p6htd5pi61rqdNX1N6B6lLQCeamXEVwjNTh-P90fnHtg2BqISpcfIEsC63t1vz_4fvGrCa8AG2bQUbRIjaRz5Y8KpW_WgCxxv68zDtYYs1QVpMf06ajltPP0qhvEdACEq2mCfum2S4yOxIsV9XxBlz_57NfAPVsYM62zFo9JTxqR88UOcLUwUWbslU2pujN2m5jptF3Q9LF8IlYR4T-mmXsJd9H4O0oGzmssjmlErzduIpwye4q6UDZ0WvFD3TjeqKBgJIKGodKMy615hCZYDtTLLyMAkVmQ88doxZj1v4nbhCD8cYCmPeYsiqUej-i47uAoQBtxXc8JdNVRLBEOKhXfWxos9NZIR-a9_lFJCsr6zmfK8kmrAVqBLHERyaqeoBJ71Jf7cKg_jvoTwUpRIRDe6YYb7JxA5-POLPDq7PEdSNdhZZVn0fVrNzyHRtO4IYx3vjlPKcIN6Zpdw1uKCEHpT7mugXPZm3OQ8iHGsY1bZiguX3vWArfkMeYdDQ1-9kcvkK6AABxwBxIiqzwhTe8tfAUcD3ylflSb-1yBDBInm172t7w7HCuJo7JHVuR5UtvB7GIXV_MuBv1VRumyayJ_fxKZfOKcVVtVVC_uk4R_c_PwLfBYKi0wXiDMUsSsbSZ1EpnI82ytmEqFlupROqSek2WMTFor87H-DVN_8nKbziQhteVcF1N4V-eaN0-SJgwXa0uGEh-ZMHexp3hUm2cJUWT6da0rsV-lFUz2ANbLMy6mSTgIU6vumvdV46ej1llwA090r6jSDXIb8rbR2YHikWbSO1xNg9lpCGHDghBJ7UyqVwcqFhPJ3qsN7WIyZZ0lHUDPnAhXXhc9jXUHz32miLIEYTBiUcU2DEvqKqfYSJTQdfdNgFKVsqkFOsInyCMHg88HJfb8pI5PJro_B9LLYwPHEF_KpCQ8nHaaHqUSs1k14NIjbWAQ4uLCblJh9W4WxGX_18QVRfIFlg5Ci2PM-y4Lagni_mT_3JLi8UUiz0RujgXHk81lC7qC7TRi2QDnsuNItRMddreV1XyaXndWnYBYgev8IkEZv1_YmhZafMsWqHIRL2AJdDO40VWjGa1tAlTBuwc5rnDNAcKQuTLjXBE8MjkErlqkI7Yrb4h5BjurUxNjFDERIaBOMyk6Cys0o22evfTdOdL6l0tBjnb24Haihfh3Q7J7WeYS8tDjJIFFnuajN0F2Sm5_YPcaLS_015nzCL6cyHKAf65VdbbV0qPlX425T1S1URcbJfn2sXtIIM4BQwH4SUHNGE6cUNgsIwi5VZuDYSW08TQurVvmiAVybinyE6Uoe22NPdEKXz8f4HdwtmH6oDCm06uQajeDcltlSYmHzzcXXEWxPxM3SH-nzO5zTwpc=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0471734fb1b58f33016abbde80775087d195f7099a9de2f63e",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 347,
+          "completion_tokens": 288,
+          "total_tokens": 635,
+          "cost": 0.002998,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.002998,
+            "upstream_inference_prompt_cost": 0.000694,
+            "upstream_inference_completions_cost": 0.002304
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 192,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

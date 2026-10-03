@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Hodge conjecture\nMathematical target, paraphrased from the original Clay formulation: For every smooth projective algebraic variety X over the complex numbers and every integer p, determine whether each rational cohomology class in H^(2p)(X,Q) that has Hodge type (p,p) is a rational linear combination of cohomology classes of algebraic cycles of codimension p. The question connects topological information in cohomology with subvarieties defined by algebraic equations. The target is the general rational Hodge conjecture for this class of varieties, with rational coefficients in the combination; an integral-coefficient variant or a statement about arbitrary complex manifolds is a different assertion.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:43:13.200841+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 5.877,
+      "response": {
+        "id": "gen-1790696587-rO3U7VherOBhfrVwMcMp",
+        "object": "chat.completion",
+        "created": 1790696587,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.02, \"2030\": 0.05, \"2035\": 0.15, \"2040\": 0.25, \"2050\": 0.45}",
+              "refusal": null,
+              "reasoning": "**Estimating probabilities**\n\nI’m working on setting deadlines for a probabilistic model regarding the Hodge Conjecture. The deadlines are 2026, 2030, 2035, 2040, and 2050, and I need the probabilities to be between 0 and 1, and nondecreasing. I think starting with a 0.03 probability for 2026, increasing to 0.06 for 2030, then up to 0.2 for 2035, maybe 0.4 or 0.5 for 2040, and finally around 0.5 or less for 2050 feels reasonable. That’s uncertain, given the complexity of the conjecture.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating probabilities**\n\nI’m working on setting deadlines for a probabilistic model regarding the Hodge Conjecture. The deadlines are 2026, 2030, 2035, 2040, and 2050, and I need the probabilities to be between 0 and 1, and nondecreasing. I think starting with a 0.03 probability for 2026, increasing to 0.06 for 2030, then up to 0.2 for 2035, maybe 0.4 or 0.5 for 2040, and finally around 0.5 or less for 2050 feels reasonable. That’s uncertain, given the complexity of the conjecture.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu9yQUeroGq3uYCmz7Cf_NAgICJJnWlsszS4iJ50t3g9QrGci7EbmnyQcvIFGSbQ2kF9geYwQ-MR2zxSqv8f6XMCvZ9JTdulMACEfI2MKs0l0hqRiPXuEZ2XJxpya4Jp71z_ox7hAhzUwiQZuIZJr08EPmycKi_qbCDU96UlB5G_4ahYox9NP-ZtiiJX2KUuqDmkf7KdqSNsRcbCcrRr_dtOwG3m4APuG1A4QW3q1ur8hrDS9IJTQwikE6ruzb_dPVHU6bcCqDkw3u9KG2RMfd-HPcvyhDvw0qv803YrHjC_tDfRLAeUhfmgOtTsJr6bjAKn5QHcQYHZlZl-5w0Wih0O2e0AJRI-9377aExFSDchRvuyTZ9gfp8QDkOG11KwXZ3gLvnoFG6Am9FDck3sJaqlGlELU0DzOXIMpKbmi6p03BYqRZPrpYVX7MobFFNRG6SxaU7Zg4shwaRR__iQhDj9Es-eu_tq4xB20p20APXyx6Q0mKRBOHPJ9640ThU363ZH0fMYMy_ngPM_Wsz2-XdmZrTuQ5goZGRyi6u-5s6nvHYoBJScMLsRnEEIH67emkeHBbwMnvWu6ZjHHYY9wj18QB1a14dGxADOoRacbAhRzKBln9LBGPt8GHT4CVJyq6-eH4vF5utvVwzewwX8Ikq30VS3Tg_HM7RuhEgt5t7i1s7Qffqiqfvq7UMXxSvufVBB-ul4qAMy4YcHsWoTIIRkUGt1oqJlQFeMHI5NiWnbjjx_xhwrgSvuXOUm9HVx-kwn3fzBSiLdM9VzZSiTPuTExJofhvr_V2eVmuDvTFa3V61Ywn8pjXHkGTCHfkd8VhazG_Ev0EK7u4KxP8nitYcj67lWiP7Jiag3M05zRptZWzXO2R-mhNL4FOjRClBUTHDsEweg1chCfp3CyPE3R5d6YH0Zt-KRAtEbPCy1iV254xaw=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_05d830cf43247628016abbdc8bf83c87d1a818aaa7f0fc92b1",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 367,
+          "completion_tokens": 1015,
+          "total_tokens": 1382,
+          "cost": 0.066405,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.066405,
+            "upstream_inference_prompt_cost": 0.005505,
+            "upstream_inference_completions_cost": 0.0609
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 960,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

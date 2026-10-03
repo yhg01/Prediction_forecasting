@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: P versus NP\nMathematical target, paraphrased from the original Clay formulation: Determine whether P equals NP in the standard deterministic and nondeterministic Turing-machine model. P contains decision problems solvable in polynomial time; NP contains decision problems whose affirmative answers have certificates of polynomial length that a deterministic algorithm can check in polynomial time. A resolution must establish whether every problem in NP has a deterministic polynomial-time algorithm, or whether at least one does not. The target concerns worst-case asymptotic computational complexity for unrestricted algorithms, rather than success on a finite collection of instances or an improvement to one particular algorithm.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:03:00.978921+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 18.345,
+      "response": {
+        "id": "gen-1790697762-xlvWarl5oU1UiXB1OOPT",
+        "object": "chat.completion",
+        "created": 1790697762,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.005, \"2030\": 0.03, \"2035\": 0.1, \"2040\": 0.18, \"2050\": 0.35}",
+              "refusal": null,
+              "reasoning": "**Forecasting P vs NP solutions**\n\nI'm working on producing a forecast with probabilities for each milestone — 2026, 2030, 2035, 2040, and 2050—about the resolution of the P vs NP problem. Given its complexity and the belief among experts that it won't be resolved soon, I think the probabilities will be low. For 2026, I’ll estimate 0.5%, rising to 3% by 2030, then up to 8% in 2035, 15% in 2040, and finally 30% by 2050. I need to ensure these probabilities are nondecreasing.**Considering probabilities for P vs NP**\n\nI want to consider the chance that the P vs NP problem could be solved without AI involvement. It might happen by humans alone, although AI will likely play a crucial role by 2030. As I project, I estimate a 4% chance of resolution by 2030, 10% by 2035, 18% by 2040, and 35% by 2050. I'll also include the probability that AI will assist in most solutions post-2030. My final probabilities will look like this:\n\n2026: 0.005  \n2030: 0.030  \n2035: 0.100  \n2040: 0.180  \n2050: 0.350  \n\nI'll format these into a JSON object.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Forecasting P vs NP solutions**\n\nI'm working on producing a forecast with probabilities for each milestone — 2026, 2030, 2035, 2040, and 2050—about the resolution of the P vs NP problem. Given its complexity and the belief among experts that it won't be resolved soon, I think the probabilities will be low. For 2026, I’ll estimate 0.5%, rising to 3% by 2030, then up to 8% in 2035, 15% in 2040, and finally 30% by 2050. I need to ensure these probabilities are nondecreasing.**Considering probabilities for P vs NP**\n\nI want to consider the chance that the P vs NP problem could be solved without AI involvement. It might happen by humans alone, although AI will likely play a crucial role by 2030. As I project, I estimate a 4% chance of resolution by 2030, 10% by 2035, 18% by 2040, and 35% by 2050. I'll also include the probability that AI will assist in most solutions post-2030. My final probabilities will look like this:\n\n2026: 0.005  \n2030: 0.030  \n2035: 0.100  \n2040: 0.180  \n2050: 0.350  \n\nI'll format these into a JSON object.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-E0_qohcaLb0eRVj2eTPRp2vQ7QghkpjpYvhVuIilG-COVs-3Nob4t3T7CoJO22EzKy95HnXqrxM221qakroxS-OLlQVofZ-a9KDF3VpzYAfkAwxWV25xAsNaHgZP-mt9Wm3Fm7218POPBDgqTr-KbXeEFMHGzpzVmwqE38hZdJLyS7KdVsdvmMrtowZeRdZsmQTTBlbOOI8rLcrXDdCbmf1DadXlm7rk7MCRfgiy6cZ-isRl8HGZaJFl1rGHhtXNxTDSfo391vbesXKqEHjip4Ep1vxDiGgfueq5gRjWMNFNRYMMxjAcQLew4QCNLpG55RwspLPUYeVJT2AeXDkNfguwgty0wPog2CGVdliIKLbAw5Y-n94eCyDbuJk_EMFH2TrpCsBxIzbwaHNPJNM414y4XiebcskHIn-irJtwNxb5x3zbCS9_m_Yv4y1aN8imKU5cB7pRU8fPLnl7rXBO-xHIL49IqcRK_wgYGXRsGj9sJrr1j-k8ySI8w9gFt9h4smPZ6wT8KkYRKkh3WAsOq61_cK34cLy-zwBmMqzdlq2aQhSPCAI4X1yEGLnDD-_UNfW0hbNeKXb9HU2zyh47d5iP5KzNpV9Se_CaolS-BYYm9LdTbFf6dYTwN4R7xHdXlAOoLnpO2LIqxpwJ_M7AnEe3DSVAaqQlO1D6Q6BncGoevrSl7HBYfFcqVIehi4wyVJRfMjRsmGpPnSEy7quHMW0cCNoC_E1s2ukCfWfvLOVqdQSEFv6S7W0xb4JG_hgAVxT4maDRA86kwCfwtlSwKsXstBL7giWbsIfv8XEobcymMTCuvF5N42U7AkdJdLwuXwd7Yus-fnUuhbSa5AtiRxEKRmXVK7ZrnU6FosXj31S49GaLsL5OXg6nhtCTom8-0WWLjQ4tLVL8YzGvmgA2zOOPbKabSsyuvdSJB1hMoKGxeDDkdsqdLv3cD81l-2SX29sydgflo90X5v-j0NQjnKeB50pNO7Y7KYZwt8D8-SAPtmt357_-sEvSVJ8K041oPcy2FoWBtsJXKsJNv8RiKbDF-3kK-k0stI8FyqadQesbDFq_HZbMpaG2MxOxVsl9ARklSR2qwCXf8A8w-kwhLu3z3YmLNJUmxC9JI9fA5l2cMO9LTpxLpSkjZnVe6SoS00lpYkvznOClnE64Q9aKFZdZY9WXGtt-yNHr80X9SF25uEtJJpND42V97PNRk8RpWnqtveTWv5_rA8CJQgONSgKQ7UKfRpNXhYlU3vQ3pecUQ_bcx7KmRVALDjhwi0O_h4poZca3dwIPGrB-6f5jxIHC8R4UzHVzvkg3zbzD_Vvxy91yHTfIc3g7yG1vykGTaMdmhvhi8vg73BQ3EQO0Ko4lGay_28ciT_ApJvpazJjm-EMibjjCeIcycTMNtT6Ngn11SFD9vc2jpErS1bMH0n2S9E2V4cSQUuyfh6aaiWGdQKrA95Gc-lZ3jjYwlINlMo-UyEy-sS0OgidqQo3-8EibCuR8uFLqlu5hr5TgkQz3Gx7X8Xv8GodgBMZ0XzzVXfXzwL8GVEmZv_w8JGXHssNemteTmORHM7Iw1yZutvYtSOVmRcQQldU-nuQyzS0nllFkSAcUiJvwwZ3G1PlJAe21i8djaZsrZeuN2wn5FXks-G1fIXpoldXV_yWPOZofTK0Ql4oShjXPKUAG4ybB8oXwzykzKZErOj7JgIuFlQcDYyPk1KeN916u35Xt4NvNmUcTxaZRe2YC7iTkGfmCBuWPV4mVPAWIqUmKIjZuLFYoeGgz9EEm1VOIhAxt-Z5JxtUPUSADOoYybZpZ460rYDQQRQ2_6JZJcVDHEHxhbuWp6vVvbajz0PyJNF7h9FSra95yeByFDrRhmXhwWAevurwVzdIwznOx-0XJ36cjmFdSN2SthYo7_oME7gGSHY-N_CaTJoKasmQr90xP-pLJABcz-7gtv7NA5aZ_EqHzsqnrgDgxiCq5kmY-HW_SDdu55bbS0f8Ks5rzhG_u8sIuDJb2v9-zbqaWeHr3CWzSrottiRIkQF6y3aoqneSwYqpJjc_7THIuADZor6ickPGCk6bKL3x7j5g3ZkI5FTJWvnWu0zrqGVFPur3l_Fl5hY4xWA8-4U_WGhSXhMHWs9DlFLk9lg7IMjNl_GrvPE-eQFeUHLk9OCuj6vluhIKVAfGZP6fbd6ofWirF3SK2eKwXtmMNx9xkk4-mCclSGCPhMAOl1mvMBr5WxwHhilK2lh89-_XSKxyUm_ST3chk0Bo4CpUqblkR97qWIyiLqzhw900q4ZCVTEYcGDoPXRaf-AIGHvKKs44UEDITk_Qo16e-JrH9aFHhL28ogIj1kKvyaQIputA_yldGR8PdW2Jlp4DSQbCmMfcgM56m8jaa3bLHbWxztqDovXsmjyRkLErASndr8v52y46XO_9tN3AV5G471zXQFT9kWCV9lp0J-1tk2iFg3I1-uEJf0HiKWYuuWNIexQ6WbPVjfIkUVQew1iq3j6zsQBfe-yOJQDV30ftYDd7KGPxDw39p77pGUAQ-9EEm-SHfbAHciwxATrAUt-SR-08rUUySUTYG98smDYD7k9q_KbAJQAURfH0WokHn9uODMkdKkpmB9TyzyH6Me0HAOlJeYSuEqz4mBQTzhq5F8HD3KY4XBcO_HGVIgekFqlSRZfZVCR5TsMkhaMNo4uZXeNU8R7xYHp70SH915XkHM_8U2R6BnDkKJJBiJabacIG5GYh9cbb1qesdicwahKtr8u2i5xRaPkzUqMgUiPCfolWVsR6nFd44kwgHF-DZQDH3fI3SieZBDT4MZmm0ErA0UB2CYfkT3A-Q9_RUbHM1RKPvVF2kSjIUIi1dgg5XsfsvzfkluEDDH9rSjWyL0N1BIaSE7B85ezDUmhCuu13hR0u_RMuQRhdYxOzgSQDXZt3wzM6eVBlfOETDLrYNhXZg2tTtvpsoktGmG5PI7F6sAzMbjeSOfDPk4ghsdCabO049voKWZEW3Nma-NXVjosFLmDZlubutQhtIkOIk4deLWfxkqGK7FZorQI7MXvOtKb_nY3J9iDKKPePPRMsoii1h33XdI73eU-gaaLB3JmVxNNYOBhrXZxk3x6EVkUCLl5rDAMhyLB-V0FlzbTjuxTxJ3Iz12tdb7phyDZEXhbYzaULMCk2nGIoa3P2SGy4S7D0rJ2J5jn2HAqyGQTWKOKpaJa-CFJ2A_VSlqwa1IuDrcmgyX3RFAusoSbZY7bvOQKhnNZ6gQDvIdsnnt00sOdcNXQ_JGstBzGHcrVoRrDVG5L0G1pptu0TRP5rPBPRc3kS_a6tDSx27VURcI6lRuWZnjvd-M2Y-z855WBeD1OublblFqjLI-lWjV29Dbrwt-BYGgutU6KP2lcRjFepWpGO_ZTP5856bhas_YsTY-_43OasXWnQ3it7g3JDXPTfH6mTRW0ynrIRBKFYEjcGYR_MgB5CoVo0aDjg3_0rBB8ASL5vPqvGYaQ4VcPM8Ku3WhlDZovJ78OxXJoxhycCNRGOgs9Qm_Zw0IktY-XMgAhN64HMIOqCY98ZFmy27JUGbh8dbP2VBzsdbDaI8VtPzlEn57iY3P-vry-bq0ECPPJCbshl0cFHbXJwYtMj_slEh9CjHzdLAlNX4cZrQmnhRK_JuyA0cAHgjyrVh6qpfncKZmRJKsTHLYyaSN5CWascExvD3UF0sLAlXwo4q0reCnOTbSQGxT3BQU5LXDvSrGXa7p7xg1HxKbYJ0qPoWNxgC-4W42pex2BpF_3MmHqgbtfDWlWJ17nGgXhLhpAiYGRCc_66xLw5tz_Q8De9VfykxdQFcYbvy5lsArAer9mIF_cbSfRnV2qWLERNUOkH8erITHLcDBrBMB_3AB99BSQ_4T8OoBxx7VOy7qWCkedtN3t6q14.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_02deb1bc1a27c3e5016abbe124268087d19a1c2cbf45a6417e",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 347,
+          "completion_tokens": 532,
+          "total_tokens": 879,
+          "cost": 0.00495,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00495,
+            "upstream_inference_prompt_cost": 0.000694,
+            "upstream_inference_completions_cost": 0.004256
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 448,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

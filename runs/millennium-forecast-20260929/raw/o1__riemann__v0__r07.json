@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Riemann hypothesis\nMathematical target, paraphrased from the original Clay formulation: Determine whether every nontrivial zero of the Riemann zeta function has real part 1/2. The function is initially defined by the series sum of n^(-s) for real part of s greater than 1, and extends meromorphically to the complex plane with a pole at s=1. Its negative even integer zeros are the trivial zeros; the conjecture concerns all the remaining zeros. The target is a proof covering every nontrivial zero or a rigorous counterexample. Verifying any finite range of zeros alone does not settle this universal statement.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:00:23.728722+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 4.745,
+      "response": {
+        "id": "gen-1790697619-YcwqRBH9qS5AzLyJaI8d",
+        "object": "chat.completion",
+        "created": 1790697619,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"2026\": 0.01,\n  \"2030\": 0.03,\n  \"2035\": 0.07,\n  \"2040\": 0.15,\n  \"2050\": 0.30\n}",
+              "refusal": null,
+              "reasoning": "**Generating probability forecast**\n\nThe user wants a forecast starting from December 17, 2024, regarding the Riemann Hypothesis and AI's role in possibly solving it by certain deadlines: 2026, 2030, 2035, 2040, and 2050. I need to ensure the probabilities I provide are non-decreasing and fit between 0 and 1. While guessing some hypothetical probabilities, I recognize that the Riemann Hypothesis is incredibly challenging and requires careful consideration of AI's contributions in this context. Let's put together that JSON object!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Generating probability forecast**\n\nThe user wants a forecast starting from December 17, 2024, regarding the Riemann Hypothesis and AI's role in possibly solving it by certain deadlines: 2026, 2030, 2035, 2040, and 2050. I need to ensure the probabilities I provide are non-decreasing and fit between 0 and 1. While guessing some hypothetical probabilities, I recognize that the Riemann Hypothesis is incredibly challenging and requires careful consideration of AI's contributions in this context. Let's put together that JSON object!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-CXzKBuEpgjY_T36sN5nbYFAkirq0ACH6SKQMUfTT1ieWXb2NrSArT9CxPpeasRRYu6zfxKjcyF8diRkHeMLZA_UL6Hdtf-BnkmTzDtiIrG4qT8ctAIYduUUA2NHZhlvebKx3-HWsROQnkOyXmHnjCgettxT_evGkroYwLDKhiSV4tUH8w9QjsXmJ14xd-PjDeYHqq0KMfv8kWYLIBnnMHMUJAEp4DpzAP6OdmduUIZpkzO4JSSkE35Tmxe3yg25DQgvXu9CpiYj6DK96ZZo1_yZeIHxAp-ms0g9RmmDWHlK45h0ljo_LlDnuAeOvWbqo-gnYXIj0hGTT9H5nESkEmhJoPGOtlbj2-g3YReo55qbQId5svsVrABxsZNRUSBkLpeoAt1TIox5x6QhFio1Z2FOeH9Pb3_5qw_mCNW0AqKCoytkwExjHShfZdbtd1tRtmBQJ0udJ_RmCcWfQo_enIfd2vAImxgEoTwyD8VB2bScXgxHFQ62KCrTTLR-f9NOCo9tvwgbgPSekSj6lNqdz1lVUz_GJRDy7qW4TJjxOpXxL1syncuUDSgBD3oeFxtMZW-Xs3iyc06fRBJdnXEih9ZTmm291mO9SlEBjlyarTVtYy39MpZD7LWLie_CO9WajkeaYqtEsmdV5uHW7TmyWz3wTJ6OqIOJwYPO7YK-63eoyStsBG0mzv_omf08X58dLBvDDmoGgNRF5HRtL1VI85IRrNKIDiQaSRdeQKKBE9towQ4y2vifdvHnL7cexYerfqOZFgbW5vy8BEWNphg7jYMpUY6yPju9v_8eOeADNB0wrXHmm5MM0jhNDkRW1opVBF5XdHmqv1tDa81Lzdj8gdaXlX551vt_hM7i8XacCgxdDGMSmqae3fPKhHojGEq1ppIlEjwgU3_mBVk4jdwYlHId-tUx90vn11JjP8rL_DHdLE=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_05c72607cf2d0e4f016abbe0939de887d1809086f2dc2f5ea0",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 355,
+          "completion_tokens": 510,
+          "total_tokens": 865,
+          "cost": 0.035925,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.035925,
+            "upstream_inference_prompt_cost": 0.005325,
+            "upstream_inference_completions_cost": 0.0306
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 448,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Yang-Mills existence and mass gap\nMathematical target, paraphrased from the original Clay formulation: For every compact simple gauge group G, rigorously construct a nontrivial quantum Yang-Mills theory on R^4 and establish a positive, finite mass gap. Existence must satisfy axiomatic requirements at least as strong as the Wightman or Osterwalder-Schrader formulations cited in the official statement, with appropriate gauge-invariant local fields and short-distance behavior. With vacuum energy normalized to zero, a mass gap means the Hamiltonian has no spectrum in (0,Delta) for some Delta>0, with the supremum of admissible gaps finite. The target requires the four-dimensional continuum theory, not only a lattice approximation or the classical equations.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:58:32.959064+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 6.882,
+      "response": {
+        "id": "gen-1790697506-x3nNVB1MfQpt5Rv1DVxm",
+        "object": "chat.completion",
+        "created": 1790697506,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.005, \"2030\": 0.03, \"2035\": 0.08, \"2040\": 0.15, \"2050\": 0.28}",
+              "refusal": null,
+              "reasoning": "**Creating JSON data**\n\nI'm looking to create a non-decreasing set of values for some years. I've defined the values as:\n\n- 2026: 0.005\n- 2030: 0.03\n- 2035: 0.08\n- 2040: 0.15\n- 2050: 0.28\n\nNext, I want to format this data into a JSON object that represents these values. So, the final output should be: {\"2026\":0.005,\"2030\":0.03,\"2035\":0.08,\"2040\":0.15,\"2050\":0.28}. Now, let's ensure everything is correct and deliver it!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Creating JSON data**\n\nI'm looking to create a non-decreasing set of values for some years. I've defined the values as:\n\n- 2026: 0.005\n- 2030: 0.03\n- 2035: 0.08\n- 2040: 0.15\n- 2050: 0.28\n\nNext, I want to format this data into a JSON object that represents these values. So, the final output should be: {\"2026\":0.005,\"2030\":0.03,\"2035\":0.08,\"2040\":0.15,\"2050\":0.28}. Now, let's ensure everything is correct and deliver it!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-AoFSjZyRCyU_ERjPZHzBKio7tQfLqkH1lbwMI9m51-UwqpjUTxdtEyxDfYc8Ih7PIP7cAhpkvqhxz0WE84IasYdgUhzwKTQTJXeu0a628d3K_80t3_vHF2R6pBDnkhiioY_JcefjKU8yNX1m10LWAyaWtYa_cctjoI8arK1d4CGlI-kdwLM3Gud7rFNlcAOW40QYpforVk1XnQO9lraJ4hC5wRXzamf0KfhgYqje_3nKS5eSWUimUQv3Z-9PQJ4Yx7URBfOWvSbqkrU1kZcJtkUm-F2YOMrxKMNOnRky-fiMNbu6ofy6Z0nLxS1YL6JegBVnrjZEhrHUdwIoOt2VRXFCZmUjIy2vrWfZQlGm78usDKK3v0zRny0Fms7vUgUzjf-_g6k7v7B7fbUmE2h7aFUTIKyNpCgfToYvfjwwfSbFTl-sK2AWV9AaA4HHyW9uCC9uhF_2KDoERVV1e2VvF-5waTU_otqLtlmYq3jus7srL7fS4-DOrVgBxuCw13EFs3pfaRu-3aGYz_BpPZFnEFwNGdy7RMCUlFnFPq81ezhn0o3wABb5WVvornYet87qHl0bWoJvRthKUs6ul2ydojsjb6aTJlnFnuH9X5dc1n4j--DyVUVVQ_SR-yvEv4ch8dH6bwycvPYuWBacSw5jOUj2WrUyNyiCQRtDlYIr7sRwnIZWx07CKQiZqkt4yNIUJLMe_vOBQN9HUW8U7ze3pcp1nZaCIZS8Tv3SEK5im3q38PkMi6BMFKYcvDnjDglXZQAHgws5CEDH2jsdhmmucDu6vTwDStU9pAQb21bFIsBzr67T3FU7ILRl7zqK5-CnWY3E9mpiqheg2vCwuPAO_P_vKi_65NhT_l2K8DhcUfIS8goMp6ytLIgbGw5oEBSS9MqLunGsKbcKNjm7Cor1MbV0upUYzYbGPX0ZZW2JwRfS2WX8Rp9a9FVDz48UfsDpAeH6H0Tl5ovReqSgNusDJ4xl9_ZsJ4XtGTmlvxNem7cukNz49fbgY4K8mTL0SwIMvyqE00nWHpV1btIy7tFweiHrxoDIGb_qjPWDfUr3MIB2xk2VbvTXe7aVrv1EQr4kuhRZOnc0zTKFT5OYZ1lDUhpdHntsajr800LF4wK2MK52vhKHJnJmhS0EWkVjYs2v06VAJ5ZjDWPhI9ptruBPjOumBF6yPqo-2-U1klzGpHUfzQMkuAEM-CUhx7MbmcOiGNXt5ifXPHiDb9S8-WK8YoL0sccSvWvbdbvYmGQrz2mGRoT3PoRcqnMXITNS3qoDqxaMll730axnezUsbX_syI_7L2jiJfaSgaRAlE8ncivCUoW-WZpa3rN4NLe0SPbdN6w6nynQQQx2RV_e83GsNp1cdI-xHdNcjDeJsoi67ogog5RKBMYcoFS16sPP1gK_mSuhkFUrbAmLLTKWXPzIJl90woxP8UmKB8HP0Db00BUSz8KyAv9dqaGq2FqDuRHHknYOBxoBXiFlCzvu_VGFc4gWQa7ZrNu5my2rmR0UggvCKqoqAek0oD5ev3Joq5QoWZzYYG50ObtIVfM40AsDYXv60iJjlkXldwAFyNfR_TjoeU2lHvPEOI9WWwdr3TO14zjCbD0zV_LNYTMXU5H3c9gtijfqEdJM72AOWb-rupnE5_A-U2D6Js0CYIN1nPBfGOBi5U3uDZf5ajhqDRtOpO1ppMO9iWj4lNWuAvtpDxBrZM8tgmXZuGIvjv5cYY89npw0iAOklYdsq0ilW9flYImwbNGlFn9OvNx68s1wmK2a7mcjnKdAGQrw25we2zOOlX3hqxo-TAogQdVrR4HAKp0zMKjr9Vls937Y3NT8U8kkriGa1_ix8XFKpCa3vmU9xvRqtoGw25CQVLJmcpkeg0YsG4ZNEOnCA6ELxxIUFOgbDb00vdtyeMHgfOe3tGtiHfTMC2_JXckYmF8OUMgXVX5d63mMwhYK_u7PCGHRjbtXAcLLaiOLEOIk3VxwCMqzAbL-f-5uIKTwR0ckHsB9gYsXlY5NY-qRe-QmxViz59xh6jw4DC3HghZPjuDZlbLPc-tP4jrV1CxZ5yk_muLwqYwhrGgvtm-7k2OZ41u51lujynNQ44zqqyStmoQTvBdA4ALmBuAB8bIZwnt9V-XS4DWtLHgW7MyhDDyiaLSSrlGPDQyaGeSXlrAUw1SK9GpvvY-1bt5FQ2sBKdDsir8YTyH91IbPe8OSbPi1FMX0FHxeqUQDjODxUkMpsM0bc6hDrT1VbELyhGH9TLFEf2Xfm6OCk1oeVcq8U4iX4Xnhl-1pZmfZAAxnXXsYK-w7pTg4iYcWPzpGMm7vq2RwCs9CRSBR0NSEBA8hK78xBQJTACzuW-GmEY-yjvLNf_YXpzbyA6zy_1skW5BZa8jJ_1JXhmnuNRh3cs1YoJIzaWBAPDG9E6pxK8WvtXp7SqjAkvjF4GeKaLrQrmzGVxSkZFJLVy_xQd0WfGsgTcNfp1k333DXKmLMDBgIBVBc7y4QWbV6W7SwGhPlUBboifKIDSEyJgj4ofRIbEvoUbumNWQmsnGCtHWBydZc4yoOFDWBX_PgBm9YnGasRWgH4nwZcD3mXQL5bYUcCDI24RzFaRx42Fkihc-f8v4nhp5IYOWj4xPlzAk6u3E4wD2bYivvXEaiEDxa9_Dcwn_6SvxTZi8j59NKK9zEcFgu-L9uGZEXE8N2zxjCcvGsG3AQqZopay3uibeKbmrVle1LadFy-LQZViVVJQtZy_qUArE9bRc9sFVkc-RcvyZGx7uiDnUMGAX8zq67gNTDeCsw5PdJYwMqUjxP8MM9rGu_-Q4o6D87H2fIYI7n8WgCm1PW72ZqbKR3RXCTZpWXcd9GYd5qPnNCBiKsHoqhdMcIqs_MqPM0iMTg9wKjVOlKQ-mmIjm8IqsmD0YhK-dERg39xS7Yrrnlgy8qfqn5tJ5hPFpyThHeA9xLFy.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_089959b28ec3ba9f016abbe022cd1487d1ae13d2b9de6aa2da",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 374,
+          "completion_tokens": 422,
+          "total_tokens": 796,
+          "cost": 0.004124,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.004124,
+            "upstream_inference_prompt_cost": 0.000748,
+            "upstream_inference_completions_cost": 0.003376
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 320,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

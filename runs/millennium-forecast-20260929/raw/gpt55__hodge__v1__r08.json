@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Hodge conjecture\nMathematical target, paraphrased from the original Clay formulation: For every smooth projective algebraic variety X over the complex numbers and every integer p, determine whether each rational cohomology class in H^(2p)(X,Q) that has Hodge type (p,p) is a rational linear combination of cohomology classes of algebraic cycles of codimension p. The question connects topological information in cohomology with subvarieties defined by algebraic equations. The target is the general rational Hodge conjecture for this class of varieties, with rational coefficients in the combination; an integral-coefficient variant or a statement about arbitrary complex manifolds is a different assertion.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:49:45.050408+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 7.664,
+      "response": {
+        "id": "gen-1790696977-pBafdHJ49W54GZdPwQhm",
+        "object": "chat.completion",
+        "created": 1790696977,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.001,\"2030\":0.015,\"2035\":0.07,\"2040\":0.16,\"2050\":0.35}",
+              "refusal": null,
+              "reasoning": "**Formulating probabilities for solutions**\n\nI’m looking at the wording around determining whether I have a complete solution for a mathematical target. If the claim is false, I might need a counterexample. I’m setting numerical probabilities for specific years: 2026 at 0.001, accounting for only eight months. For 2030, I’m estimating 0.015; for 2035, 0.07; for 2040, 0.16; and for 2050, 0.35. But maybe these are too high? If AI contributes meaningfully, maybe I should consider 0.45 as well.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Formulating probabilities for solutions**\n\nI’m looking at the wording around determining whether I have a complete solution for a mathematical target. If the claim is false, I might need a counterexample. I’m setting numerical probabilities for specific years: 2026 at 0.001, accounting for only eight months. For 2030, I’m estimating 0.015; for 2035, 0.07; for 2040, 0.16; and for 2050, 0.35. But maybe these are too high? If AI contributes meaningfully, maybe I should consider 0.45 as well.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu94YsWtAoe8XlfRyTFAO6e5bOKViCjSzOk2NXuUEb6YfPNbD2Dlt_vA7IA2nQggMVQXub1gjhf9a13LE5rNnnU4PEol_-2mawc6wVFUitKW5HtBbRfzLpcX0NEd_sT1x7DzT8Vnm-8CoV-hENkW0z78f6zzRX9Vz-1jZQZ7iQURVex-FfE_eUkHGSpw3L7FDiP2JsyiCmae2qACR-XTCuyDB9IjP2JPtn3Rx43WBwLMhomAyhQAdtAoOV49fk1BZRBnDEXSszuHmqiuY5pBIvSlPjlfAJe0idoaSk9Y3ZnvCjAhYZg8hN7ANTw0hWGGhqz3Eoa_-cii3jKPg-jo5cIpYRKRUqNltrfJ0G4fRhleoETpMqwPbpQr9Nlul4MF905ywk1qoKTEvvwnHoTeyNLqQNgiCnZI4dH1A7UEkLmPx2FS0VbXMpW4NE2lCqAJwAbd3DkpR6XpjbZJ6MaeOThUyuBP5Pp7pEvfygE1o7Utoy9z7-5GqCushcTSpDFeYRf2Yd3tBa3lgkkwiFiugyVaw01QRFLeO1OU0r6jfn_au4imjvNQR2dDfX5pFMnp7ZCwhdk_5oRyPUEcDVIQ1R8hNAAjmanKi42WJXCrvA5kemr9fFW5wo_DS_K-zuDT6imOtA6U48eZyp5Beq0pP_mus8vytfmIBnF0JS5DmPxVgPpKcWYoGR97GJhL7FCvJo9CnJdPJ2RewXbzONNiVpBtxkh2blXwPNzvUWs4pSJvV7RNYk7cOeAlUFQwxyUEP26pK43li-Q2iGNlLOXX2EX9IFdrAUPbwjV7sWs-3UzALVzShtIz5Zbwj3lLtJ0b_gMtiKVSm_b5M1aP9d33s3KohWERWyVOU9AC6z4GGGosk9yNqAzNu68L02kcRDYQU0Th9F0d5mKXwV1dHTUZNSM8CB4DoAdMIAqqy43_v9XuaUDmEELGjWPrtBg3rwkfMx_Sl_8fVOqgWO_BFyMIzOfjcjA6WuvJuPKGRSqj1J7am40SqawhOAHxo7NDXOevdcixIL_twabkZk10xx7M9JC3aO5iSo7pUnccAZ7gHcjeVNfqjpzd7Iulj-dXNaeQDKitkv_xhDY_j7nknFmsiyok6ADSwSS3CK_-5wUqqVU7U9ZCrx_T8fnX0dNjCKDiv_PEggW-DR7miVyfT6wxqp6dVwYDENs43O7paiFPQIS9prMxS7sJcNhgixBH7I6pK0GfjhhbeJCet3Vv3E5HsVhCVBuMY-5j1Ef606mFdZ3Ubu_YMsOBdvyLxTZ03hN-OT849JFB20NFQvZOwNH8RJEl6pjkf3OUPCtZeEOYBfS-lrX4D_Y8XycIABrq4Hc_rjXYp1SIFL8GK1oPWMld9okXwFTW-sAkC_AiGHtleBa9u3EeaxcvJkh5oLWjbt_Iw9-gDDmaZtUdo8f8-b6yTjmxfqTXh4FTwCxNvqjWVNEI-HfqyY4dBnqPUIsnvdmPjI0sSljSjwpdLmct2NeK93g1ttpRfCqBi34lGfyjizP0W-F4ZMgCSDw1-uq7_yRwhUZmw6kNShv1_Tnuj2Kr5EMRP1uLq0OTahwATpMm7CCcSYwhEiB7-_ZL6VKCPYLO82k6-FKYarSitRuECtgRHwYEVldsPLs8d_Sc_WR2AtGL9Sdg7WMUk65HCQ7015_M1ZB7zk8lUFLs_g2WW3Akt1wpcFYT9W1jki5PM8nWhExxyYmiQrSHGYvWVX_jXtooMgN61z3qB8Vg5LuZ_UDLhARW7ve1aXlC7f-sT_lP69KS9luBHfTlMBvP53YKrhFiAQ55EB16KrL9YvroAiNnjpHI2Kpn-uiulaAxaTQ7kITQO4QXs1GVjTqk5Ue6qvFZrDI8auEqzXUtDD_2v0HuckU6ZdXE6OT5SA2b69xMY0AOtHqrS_hOfCtOuZiod7-vG_oXap90Osyt09fOxpcI7LcnpLrDQ9VITeFD4To26zgw3Iw8lBXrCFlX17FXuRI-Q3shU4ldJrs9bFvX1qlowFOIu_0S5us-W00ao8qRWBgiUpg9JHQaQRs2LIJ9oduxboWQRhe-NUMAr_gC4pshcOqgcQbiTN4A769AjAIoWtzuFuBH6jLiLW3SXmgaW7RlQIoB_bsB6_KJ3QsG3-783Oa6S9oFK4FUHPaZa0vWtoJKhVsXrqOkqmv-yvGIRcrYoJrIQoGAQc3Ywv-udozmMJ1yQhAkKWu9vhKLja05c_s0mEI2DJx0Jjb4u7fGm4dlmtFnhbS3HD-5OzGIDqOY4ZHL4fMkTRYBNwHxh1fnFa-ShZiyoogdzyRhXOF9_4V9sss7tKDaI_v1GPrsyG1b4_0wdEUstZ96tYjCcuSaufsp3UpkUPiq_Pr4Biz8W5ih3LrPJT-wIDISUfVGUvv7M1YZhJlaoaaWZ1LhMyIuiCav8Jt3L53bkilkFpxof1-5qHjjCjfpwl8G7jyNZIgUvGVoyBpJU1pwiWKhAlJCwo_1lzdxlD0MysfP8LcobKDGklrcZFccdDlA04YLZoSy2y6jetiiEgH6wz90lacpEXDBp-LNBdUtTLjHkENERL6qw2x6cLVEUm4d2HPu0YVXt76QeykHWZfcu1kZodnd-sM__eKUlvUMupLnI6Yk1iMxVdoyKah1MJKEI10ApzqgUyi75LHUrxUm5kw6ok9WOZY4OCxG5uOvBguc6a86lyR6yyILu7Ev61CEmVWmTXqwwfYpDJ_smuVyoooJTq1QQYBssL28POPsU_NeafU5ilU28Ylh23rFxMJY5VJ8RanskBbTBXqgSQJUEUodfrIsRti_tEhzxAqXDHMw47qaKHyaxPpP02UjaMC-xFseCNlJk5fMpi-ARnNS0t7vLQD6GXofkcnKj8S7kKah4wudNdA_urOHmSNYwIXc8nrDGto3hidfNNd7ZujGh3ajfMgoU7R0Iu9P7GsYPrXE6lNw_p4YdVRVUH9o3dafj21cJpQ95E4-FRNM2jZZSJwbp057p2HleO6CwYEqPXeY_tYzKS2wnsIjsmrMmafzHMA8WPwiDBgbnvJElLo1UtpQm1RNbe6FJU_0hkJDCGrfHtdmgsCzIzR1y17tkOt_lct7hVjvCIAVIy8pAlRZcy0ucR-ulT2j9sZxDdbP6QpDq6cQehSmFJwGfmRE3Alm-tEACWwYrEI32s_ay21bHxI89D9yVUc9JD_hLmhE8OxyUupPLgsY-YcpFjyIi29TSvqHVGSXxBbZ-CpN-t1jcKxwJnjWZKzOXciJhGpBHYkE8eGynKDlOUNrpwhRE0DoIDXybq2ipBO_-RMu8jatFHX1CO-dElk9RFsH-V4dpOkGtOd4wBaAphgy7dHXwF4ls_KlzLFH0xNvfNcHWL1vgfDJ0DO0L47Zp9ZvYcsKbBDbEEeutSpYXNnKbDLgeCYe0VV1vst4_FuCOMvWL9SMhPMME_AZcPk2HcgUIbJfopmM_-FHeHHtIWJ9mQxKuC3kydwnmmfKU8K2yD59AKyP-SUif5Rxxy7gGrmWN8jSPqmAOGzn7ovOqBPTIoc5hW6TyaOVXSGX7XbcpwRuwNCVk83_XvMNmiO5YuWwKiQBFCbM6ZVTaGAi75rT__Mag_5TUO_YGqRHHqpIhBfTqJ2STcLlgAccdH9UCtpqpvxZ7-Zm3wz9riq0ST6FdjcUksB6bLFu58HpiQT1IFrxBbx5mssMj77013ilckF7WXxMCkbjAd3jwKHFLvnUrUC2D5gr0_deD-Ai8GftE8u1SaSfj3j5PUiE3Jsd4CZVJs3k9QevI_PaeUFLrJb6RIPdYA59qujgRtEhlHQBqqZYNbeWjO-DdJH2Xq7Vlk2BQp7PVB6L-EaDki48sNSJie7lbjac7Y0y7BmSuV_-4zA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_048d0c38facb9198016abbde125ce087d18c7a581ec5283208",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 367,
+          "completion_tokens": 489,
+          "total_tokens": 856,
+          "cost": 0.016505,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.016505,
+            "upstream_inference_prompt_cost": 0.001835,
+            "upstream_inference_completions_cost": 0.01467
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 447,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

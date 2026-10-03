@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Hodge conjecture\nMathematical target, paraphrased from the original Clay formulation: For every smooth projective algebraic variety X over the complex numbers and every integer p, determine whether each rational cohomology class in H^(2p)(X,Q) that has Hodge type (p,p) is a rational linear combination of cohomology classes of algebraic cycles of codimension p. The question connects topological information in cohomology with subvarieties defined by algebraic equations. The target is the general rational Hodge conjecture for this class of varieties, with rational coefficients in the combination; an integral-coefficient variant or a statement about arbitrary complex manifolds is a different assertion.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:56:11.105724+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 5.213,
+      "response": {
+        "id": "gen-1790697366-oZbkRSti78Hg5fOst39q",
+        "object": "chat.completion",
+        "created": 1790697366,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"2026\": 0.01,\n  \"2030\": 0.03,\n  \"2035\": 0.08,\n  \"2040\": 0.15,\n  \"2050\": 0.3\n}",
+              "refusal": null,
+              "reasoning": "**Generating forecast probabilities**\n\nThe user is asking for a probability forecast related to the Hodge conjecture, specifically for key years: 2026, 2030, 2035, 2040, and 2050. I have to present these probabilities in a single JSON object with the specified format and ensure they are nondecreasing. So I should come up with values that are logically ordered and meet the requirements without any additional explanations or disclaimers. Let’s proceed with creating that JSON output.**Creating probability values**\n\nI’m estimating the probability of a solution to the Hodge conjecture over the specified years. I think it makes sense to start with a range of values, like 0.01 for 2026 up to 0.25 for 2050. However, I also have the option to choose different values that still meet the requirement of being nondecreasing. The user wants just a single JSON object with these values formatted correctly and no extra explanation. So, I’ll finalize this structured output.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Generating forecast probabilities**\n\nThe user is asking for a probability forecast related to the Hodge conjecture, specifically for key years: 2026, 2030, 2035, 2040, and 2050. I have to present these probabilities in a single JSON object with the specified format and ensure they are nondecreasing. So I should come up with values that are logically ordered and meet the requirements without any additional explanations or disclaimers. Let’s proceed with creating that JSON output.**Creating probability values**\n\nI’m estimating the probability of a solution to the Hodge conjecture over the specified years. I think it makes sense to start with a range of values, like 0.01 for 2026 up to 0.25 for 2050. However, I also have the option to choose different values that still meet the requirement of being nondecreasing. The user wants just a single JSON object with these values formatted correctly and no extra explanation. So, I’ll finalize this structured output.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu9-a_k-2MC9KBj6maRAtzDbtLNp1aA5CnrbjtEcZ-0xdYCbP1knrpieu0D5H_ZAB3-h9tvygsymaCLKspZszJyNpwEdVY61jPiWF4wOoIriPkQ9S6XH73Q0doIZ5FPz7wuNyQqDWBMts2HSQVhiCdK1xkPwcEw7ALTZOGL1nol7t7OyAyC8r8jaQQxp60T4N8PFZRFxh7LUw6ARWd__SbH31Vu4hNPTwCjVlmisf1Vy66G2_2v-sAv0p8lciZC8V7WTrP7Hieb8plid7-LaEmzH5iKc8CfX04Fesa5llOhMEY7aEDWUlY7sl_WpH5Ar9kIN7ghFEnBKP2WumV4BCq1xOGvuRiDXCxU_NL2gaqvu6bMK1QOyGkNWIc10cdPdmM2cBIdTN5aLYq6Cr8qc1wU_gJ2PYQouT8O042eZZXi37rvO53Er6E_f5RyOL160_IEZSaE1PekCTszw8_BFix0tMzL7C0mtPCITdXc-p5CKvGre0aYzZ8SpqLZ7VfB3HPnSS9xpuEpOf1ijgVico6hGbSlOBOompD31bu6S39KQb0S4BW0w-qQzlAW-xiC9B0O70oQFO4eNuPQnMzjkfhc_4nKm1K82mkmaAoCqazRb649RClx8Q1hNoKHTAsG0mxmxktiTKyVQ0OOYcb43HuhrRh5k5hu9g4FUSLI7_QKT3sood23vHf7GEJYUwGBPm1TClVk0jfj9wU9rIPf76CBmDOo4RjqPC57wrhyxcl2crSGG6Wtj-t2zRaizVkt0YHBQAPxgvMhkKz4PO-oDvDCJhnnnwcQD62GACM1alothBRVEuBlHE2QvWaglvwDmyV3CXIoOpuWtl33hZxuT0avKUMe7hYEiJdUP386O20Io4F8I2xSC4kvzN6Jyqjj2aQIHmxOtHEQMG4f6tX6FtaJVnwNm62BHvxYl_kugmykvJLs4=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_04d619d98da47918016abbdf96a78087d1af5427ccb6072ec6",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 367,
+          "completion_tokens": 574,
+          "total_tokens": 941,
+          "cost": 0.039945,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.039945,
+            "upstream_inference_prompt_cost": 0.005505,
+            "upstream_inference_completions_cost": 0.03444
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 512,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

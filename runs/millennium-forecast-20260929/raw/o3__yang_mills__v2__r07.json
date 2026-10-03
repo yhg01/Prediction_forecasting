@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Yang-Mills existence and mass gap\nMathematical target, paraphrased from the original Clay formulation: For every compact simple gauge group G, rigorously construct a nontrivial quantum Yang-Mills theory on R^4 and establish a positive, finite mass gap. Existence must satisfy axiomatic requirements at least as strong as the Wightman or Osterwalder-Schrader formulations cited in the official statement, with appropriate gauge-invariant local fields and short-distance behavior. With vacuum energy normalized to zero, a mass gap means the Hamiltonian has no spectrum in (0,Delta) for some Delta>0, with the supremum of admissible gaps finite. The target requires the four-dimensional continuum theory, not only a lattice approximation or the classical equations.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:05:16.655688+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 5.902,
+      "response": {
+        "id": "gen-1790697910-aAe4cQtv2Aa3PwARbfQl",
+        "object": "chat.completion",
+        "created": 1790697910,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.01, \"2030\": 0.05, \"2035\": 0.15, \"2040\": 0.25, \"2050\": 0.45}",
+              "refusal": null,
+              "reasoning": "**Estimating probabilities**\n\nI'm estimating some probabilities for certain years: maybe 1% by 2026, 5% by 2030, 15% by 2035, 25% by 2040, and 45% by 2050. I want to make sure the values are nondecreasing, since that’s important. I'll write it down like this:\n\n{\n \"2026\": 0.01,\n \"2030\": 0.05,\n \"2035\": 0.15,\n \"2040\": 0.25,\n \"2050\": 0.45\n}\n\nI could consider adjusting the 2050 estimate to 0.35, but I think I’ll stick with the original plan for now.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating probabilities**\n\nI'm estimating some probabilities for certain years: maybe 1% by 2026, 5% by 2030, 15% by 2035, 25% by 2040, and 45% by 2050. I want to make sure the values are nondecreasing, since that’s important. I'll write it down like this:\n\n{\n \"2026\": 0.01,\n \"2030\": 0.05,\n \"2035\": 0.15,\n \"2040\": 0.25,\n \"2050\": 0.45\n}\n\nI could consider adjusting the 2050 estimate to 0.35, but I think I’ll stick with the original plan for now.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-G8YRAagbuRTPBJBiLsV7oUldcNefXLSNDTQULsBvXn44MOEawqxOV2mpY05WF7eLLWxg9N56FTi1uy9Nm9QeF9N8Rge3k74QaXakLKmSlG3z9pbloED0gr_BVUoEdtH6IqlhU8QaNc8gE4FdyFEsw-aNOgpoLBd1W0q6Q1AvcEc3x_mADpu-iaMVn5RxPkfmh3nJzDM7RJn03K190bUHo8wJdFmxdXHpvEJnsj0nmeDJDzbSXMvyqLvoAjD6dgB9Z9m_wFSwqV9_kP4b1hnxAvWXy2gI2s18Qno4Eyc4NVWFRwk5b4R08vRHSOy0WzegDvdTr_1DyRaPeVrE40IM0rEKezwj7rCzW4vslc43lMfWaNEBvIfyOzia3rRFvjJKPCtGUcI2rjAwlWHkvd0Z5IcY-psJrQTndpx2OXANJFVxyN7IJRQbNG3pDqO_s1epdCfaw2XVfwhtz_uOp-OMyjDyoo-CMjqgp3wihLyEtCtCECj0r_Ktzgk3EqG81y7rAQctuGBncyEQhev0KYi4Zsd6BhDZPGEgNzZnznvljx2hgGVsikB-fHSNQ4AH4CL4-4NZxCdZZZfMyU48T4a-Kq8Wx0TMzIrP4x9MtBOisiOikYo4THpu9Y-ivbRuuFXk1rootSZXu5tB065M4JsenlnBQ-d2AG8bnxRd0yO4bgIanKwBK2-9esuBERzyjLpcacNi7o4AX0QgNDlPWy05V_xKGoWZBiEH3tDyHrcYTSuOplD3NUdYzvmKjNcbzXSTkcCEnO5IPvatQ490hWa0rD7R56EhQ1WXmJsuMFiv6T9SKzmHAIcayPYNa27Npwl6v-wptMzYn8VROx8yNhbi2lanAhl9jT1b6soPsk83fnkG2AJ2yw7nuYDjp3IQgc4iHAS85tP1QegGmcLWDvphWd3iZ-_Me4K0wydZ8IZ0Z7gz_cXc0cqilpi76B-XTvFBH1-6fxBQRldflo328EsU5-hwvGiOplQkXPfQHicRwstZSM4CtcKwFcHbqBvZZAM8uVGgxH4Z-s2uvC2xkJ3LXkOrWSZxzdlxCDKWduMt3KoEsz5VrvzhVf6FUCCPhgzeaLsLfYJrwAwdof9iFKit3_aDR1zxESENZ6S8intysACpdvXF5Yg52K6J_Nob6vpXR3TtEN8lYwpCjKlAokVe7v6UA1tdGly-GCpWx8PabsiujZpF9y5ORMoLe7JyodV0aesJZ4CoZnmcOHl8AztYwWbCoW1wHEOp4Y4a14wEJVRKxttN3MEjnBYVRO-7lpukJZXkUFZU5XFjAYSHuCsk6gfjix_Eco62z4yfVj9yU6M7kR1BKfdMxJ73AmjzkrWIsmABuXFvsPB0nEhFqzq7Ql0KwZ2pbv-X3TUqG2UWStf9DxeP1ATz1Qt6-NiuW509treX3oDr1cJbbCeF4dnkkNS8Q-cNPheRppCO3GewBAbFtp_oIkuk9LeymjFoFzQ7po8pgemdWL6Ih7uwNP2BL7XTBNlM4WPRJ05H4hI57cizdFW3Z_5nJiv0tDt-4ftkrOXS2uRrueHLZwHanBj8OkwMb-4pb2PvDNwjpJasu3Y3h7k9ln0MGir8_IXWPMRH22p33GOYbbFTIPn2SfogN-aruH9lSlZo0MwyQ7djPxXbzB56jz4MNCs1w__TTmQI8Dqz7fjMJ5qhA6tZaHcjIPPtvhFMbjHqf8x0RqgfiXcf2hu83vTx8JFiE2LSsK7zK2yFw3aekkYm8RqWeAp9VygVB4Inn4Cx89czAsoMpO8LL7mK3JzIAXUVpd_Sg6zsUrTdN_eYuR_6hD5AwBPz6BlXlsMRHe4XgJkArqVuDz2tCNg3OOL4eUzb_3OyYxqS_Yr9plY-LkQm0p_Xp9L4HYkR6KFXUkrb-4zln9ifVZXtwlmsydEnrGVZ8fcoP8ztwlJFjlIJI6q0aTjw9a44b1Y0EC1FdhGv0PKMs7YIrUfcukoOP7s77PqS-ddHz6vY-kQ-I3-AnXTldZcUAbhjOcG3-TP_ICugXti_IaTcQGZiN_pqweQYZv1Y_SB42YXFmCFJkPa5s9btKqQiukvmHSWsYRtELQg8rTb5c6nmNBUChjxCyIT94leqRB0UACnn8QqVIZlEYSWaCjbjJotFuqOA_lQim-gk5rhDDHXnhgLeIN0iooRMH4nThKwVIZEF6hB_j484MJ64qdZZDcHB_0UBAxQwIM49nBQcbvYmSF-2T1B-OaHqJWuue7ArBLcOFL3HYP2t0wk8BxlTyPKjG1FYDlirsu27J4qfkSh7YUFs9fGBaQl2Jm7udqRTjnyGigUr8dk77q_yGlcx_mM0NRzpnB_72299V5_TCziR95QJgxm7UD7b8sdwT4GhnK8KndXES6oXL3W85EUOK0igf3IYS14XaPzWkAD_EvJXf0DAccTlT7C_wuoaEKbqejLypIUvtfwyCpRf6zZsECwK2lRBfDRC3KvT06R5RiL1wx0FM9KV8e-1Bqe8FiTTZkWK-rbS0X937hwRyAtxGjE-JLkJinnf0ZrM-N7e01NVGD-ShMR1LH9SI8mOiFNKSBl21vxMuqnuNfPwb_T1STy0b6274YdQ2Wca-l_dPjaq8FeK67SBYmAVkVEO2W5_GqH0ufaqoWQn5AZHtMnEANRqfzNNv38xqklPAScJUXAnpIrBoiAxfBRsb1LPlDk9dFFwxpSvvWMC3B-fG07mPxtEZn2t1rALsTsaP-h3PQzeVN4XItUZ8QLf0OE_fz5UxbFXZht_9qyAiRhTTgN7xoJi_fvqZivVbRDIbfaw9iqCLJSINkyKFmcpLRdkpjNxxhq1IMVQlp4ZvJSBpjssMGnc7bw7VV2jR1PHDYfJe7a0libGY-k3MkGEF9Bcesw-Z3ZX-qeg2fF45B48dwhQtnTDzzU6PgJNeK6s7TSNg61FU3E5r-XsTQnzv_9Ln4ZSoVzHv7euDkf1-edOYr4ki7Qxzp2tb0Xb76yeBtWH2J3O5qyhXfrPcstfEEQnMIK-v2VoPnOlnAxNEUBGOA2x4PmCQ2Ghiok_jje5EHzMQ81sQyRQP5Qz1MBL1qdGhdHIStlVVVIEeza-oU_eZnkekyE4LH1JRId2izGZb4zyrxOHauGl0Pi8j_BzWppf_Wih9o5M1qi1cJ1tyoIjBg4tlGUqgS2w==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_00ed0366d1154b1d016abbe1b79b0c87d1be42ce774b7fe7bc",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 379,
+          "completion_tokens": 422,
+          "total_tokens": 801,
+          "cost": 0.004134,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.004134,
+            "upstream_inference_prompt_cost": 0.000758,
+            "upstream_inference_completions_cost": 0.003376
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 320,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

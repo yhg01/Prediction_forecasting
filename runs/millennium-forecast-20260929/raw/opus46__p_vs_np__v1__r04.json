@@ -1,0 +1,63 @@
+{
+  "request": {
+    "model": "claude-opus-4-6",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-02-05. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: P versus NP\nMathematical target, paraphrased from the original Clay formulation: Determine whether P equals NP in the standard deterministic and nondeterministic Turing-machine model. P contains decision problems solvable in polynomial time; NP contains decision problems whose affirmative answers have certificates of polynomial length that a deterministic algorithm can check in polynomial time. A resolution must establish whether every problem in NP has a deterministic polynomial-time algorithm, or whether at least one does not. The target concerns worst-case asymptotic computational complexity for unrestricted algorithms, rather than success on a finite collection of instances or an improvement to one particular algorithm.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "thinking": {
+      "type": "adaptive"
+    },
+    "output_config": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:56:20.422758+00:00",
+      "http_status": 200,
+      "request_id": "req_011CfY1BFvChzKqKhfhpUK8E",
+      "elapsed_seconds": 10.959,
+      "response": {
+        "model": "claude-opus-4-6",
+        "id": "msg_011CfY1BGNEd7YVCVFBTTaMw",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "P vs NP is one of the hardest open problems in mathematics. Even with AI advances, this is extremely unlikely to be solved soon, and the additional requirement that AI contributes a novel argument makes it a conjunction (problem solved AND AI contributed).\n\nMost mathematicians believe P≠NP but we lack the tools to prove it. Current barrier results (relativization, natural proofs, algebrization) suggest fundamentally new techniques are needed.\n\nLet me estimate base rates for P vs NP being solved at all, then condition on AI contribution.\n\nP(solved by 2026): ~0.001\nP(solved by 2030): ~0.005\nP(solved by 2035): ~0.015\nP(solved by 2040): ~0.03\nP(solved by 2050): ~0.06\n\nThen I need the probability AI contributed given it's solved, which should rise over time as AI capabilities grow, roughly from 0.2 by 2026 to 0.8 by 2050. Multiplying these together gives combined probabilities around 0.0002 for 2026 up to about 0.048 by 2050, which I'll round to reasonable final estimates.\n\n",
+            "signature": "EscJCpABCBIYAipAd/6aYKXXnsUtbs64pJhr/F2tGaj4O1sxOaBmta3ZfhWqIlGfijkaY8wWfh6hYUDmaV7o9AK585zheOyixQjVxjIPY2xhdWRlLW9wdXMtNC02OABCCHRoaW5raW5nWiRhNTBhZDliZC1mNmUxLTQ0YzctYWNjYi1hZDBiZjAwOTQxY2SoAaS/79UGEgwGkzwebzf6eGKWoEEaDFaJ/elheYiyC3HarCIwGI8Si9r8PcM0MiytINHZwsSfYX4mjvgturpXRAkIvlJvlSK8edjXHYExqbhU0f1QKuMHp/SrbIIQMHk4/ZkF21AeaHZOTfB5cNTuji2Lz5MlSpLU6EXFMVDvPr0DgPPtGiH6v1gbW7FkMVSjmHf/hJSjwm+eVqQSgBT9pr4hvZdVvPSmJOLq/xch1H+ikqV2Wd3npN/Inf/O3HzavfNEG/mw/clsQV6R0NXefIVH/vH94h1bCI0TS5pjeZog3e9Tro6rvilLNGNNiTyMwKGG8xWpd+d341Bs3jSTxRu53IZdfTWX3ESzvMxVKNfD+5v9Ny+AXo2BbqInc8qESndlLGH0QRwBG+f16qLshqgKmGT+58cwKIxgaBOsbjEDJezBCZSO84oEh5yOyeqH6avug0K0LCXvtOLknZOWh1Maw++X+oJ0UHSM9MjSQ1nsd5aF+RYkQCMpcjMcgAq+aZXixIRJYbaN100kU5aEl9SB8yuND48RNODM9Lr+btwIl83aCUn27zTuhf9OqKdqr+0ln553CiMqebdMQhuVZmoR8o74MLfjT6sJPgpo3wI24kSWoaBvtBeFT3I+Dex7EEY9fnBz2BDHMgshcQyeKvn4/p9AQ6/D/XD68zg/sO0BnpwPFoJgMonbnRJ+KWanJpk+97J/jtwavHS1dvNJebuiX2G3YFJ6C1FC/tFSkEEIWfoTi08dUPdyDeTl5icoqBHYxDZ6fNgUi8qNxozJ1+DQWij4v/eXiReG63YpTWwckIdCZdNb0eZ3f9YWrPuoVGBc6cuQSQbVlW5WrWKfNcpIlRiUzY35PWiuko2rtN+LgWJCjvFk/IXFc5lxHCxC4aEye6hF95MNsGX+VzpUER3dLcBZi/LK8uoO14mUtrhYGL8o9VXkKRruRc2e60OzPfyE8WQ1D6FyKMtPk90QjY5pxgUT0V5bqNnlevUd9lunC/L9v4O4su6ncrFHBtY+Z50OZ766EtBJaUjgFJMC5UyyTEDQqP588255jU7Vb62crmevIfja63tcRyCB7CRK+VefXsEBGvhsl47e0vwatRB/dBtliAu1mQkyg0NXWLj9HDwvuJsbnY+BnXx0IxeVnUb7qvzL23cawMrUA+K2sM1uHnuDbdjbWULCSViVi3+ogtanQ01RGel5OfkAyKH2OOv58qMT4hND6banAXQIv5Z95BeSxh9EBoeeyBKWYzBVAZ6ZowoNviyTv1GyVJPJbjNBZGgwdnnsU3LFI3r8PP6aZtRvgQC0nMEUKjoH8zVAXwMS7/8JI067DPzlXWoJSCweRhsqW4KFy1xFx0rGUTdJd2tYzj8V1orJ73DbBoOlewUEF1sk0CoCgeUDW1VUTrqxk61pDd96axhAR5IDiWF7vtXRY/04OxoYAQ=="
+          },
+          {
+            "type": "text",
+            "text": "```json\n{\"2026\": 0.0002, \"2030\": 0.002, \"2035\": 0.01, \"2040\": 0.025, \"2050\": 0.05}\n```"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 384,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 377,
+          "output_tokens_details": {
+            "thinking_tokens": 320
+          },
+          "service_tier": "standard",
+          "inference_geo": "global"
+        },
+        "diagnostics": null
+      }
+    }
+  ]
+}

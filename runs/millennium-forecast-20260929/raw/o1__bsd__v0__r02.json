@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Birch and Swinnerton-Dyer conjecture\nMathematical target, paraphrased from the original Clay formulation: For every elliptic curve E over the rational numbers, determine whether the rank of the finitely generated group E(Q) equals the order of vanishing of its L-function L(E,s) at s=1. Thus, if r is the number of independent rational points of infinite order, the first nonzero term in the Taylor expansion at s=1 should have degree r. The target is this equality in full generality over Q. The refined conjecture about the leading coefficient is a related stronger statement, rather than an additional requirement in Wiles's displayed Millennium problem.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nEstimate the cumulative probability of this event by each deadline. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:02:42.631004+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 10.688,
+      "response": {
+        "id": "gen-1790697752-IX0kRDGAsRNFgsJnKNzD",
+        "object": "chat.completion",
+        "created": 1790697752,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"2026\": 0.01,\n  \"2030\": 0.03,\n  \"2035\": 0.08,\n  \"2040\": 0.15,\n  \"2050\": 0.30\n}",
+              "refusal": null,
+              "reasoning": "**Estimating solution probabilities**\n\nI’m considering the timeframe for solving a problem with advanced AI. It could remain unsolved for many years, but there's potential for a breakthrough. I want to project probabilities for different years: By 2026, I might say 0.02; by 2030, up to 0.05; 0.12 by 2035; 0.20 by 2040; and 0.40 by 2050. Actually, adjusting those values for consistency, I could try 0.01 for 2026, up to 0.30 by 2050, ensuring they're non-decreasing.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating solution probabilities**\n\nI’m considering the timeframe for solving a problem with advanced AI. It could remain unsolved for many years, but there's potential for a breakthrough. I want to project probabilities for different years: By 2026, I might say 0.02; by 2030, up to 0.05; 0.12 by 2035; 0.20 by 2040; and 0.40 by 2050. Actually, adjusting those values for consistency, I could try 0.01 for 2026, up to 0.30 by 2050, ensuring they're non-decreasing.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-EiQ4B9vqMCSEMRfEBuZzCyZ0m7IyDDpFXfPR6moO0U-r-NgWTloAI2RAR0-hXvYrWYOMU-JZtVAGsezcONT-8V2dZ37b6hPueTLzobyxXpOcYWkC_iEvKtYMbB5Cg0kz42ZfERpX9tDkg_2YqbIyFUHHD_UjbxenmukeGtABqWcVYNSK1ZD7m9By3rjeAgqFlqZm00GEK3Y7reJihRkbyHPUmcudWGArJAd7rEk5fv7PLsmHeQwJKjNzch9Zun_1dhyPB5cLy6uBhnPSmmUhO4YYqzChTIA1xLxp-ecd7uFetwgDWDqvTnQRJaCfR8ACHUXvISLXxhaW_KPbiQDwyhj5dictxcDHnau5zjXZXEjDlJD1MheQ9RIYsCObKrXR1COirg64GIUUhGBDKptDm46kkqThS7VNF_aPvtW71nvFvkwSRCjNZsz3kGsjLecWKDwuw96GCwFPMJb9pXszP4j-4QWRmgsIEWvXLl0nLJ2X-hSO0Z5NNfbbP00Y5gT63eIh2DD8Z2Wf9M1l8F2iUYiGIaMzcBTNL_mEkwMhyM4xlDzrAOBhtZH81Mv2WVgSTAVr3_JWGv1_c4ba1v-GSqvUrVPD_5XPzUbzC1EyEHc_c0n_I0uVS7bt6jh-pWCvJ4ESenDhnotU0VM8mlXe0XJzR_E_xqvlZFo0IH8Z95d1v1P3mBOqy1U9qUAbuOTZNmQy_pbXYYzsJppYpMTNXJ6UBf5BDelRf_uTVyogO3TCsxCySvfu_RkhiLJQaHp8csv3YrXEyQxxOT1V1SFvY_GIJ5ir9O6Yn7ehWIR8q5d0rgVS-odXwYCDQfhIFHi8DY5Xbq7uPtCEFOv5AW3yCVb9IkkMfVKolzc2271hXXWXRHqXpo6iiGp9jEaxSQkYAxoFq3Y-4jt1LjNNSkOFCt01ljNoLRfGUmhOpSMtO9cKg=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_054e3832a4e8f80e016abbe118c86887d1ad5e656afe93527c",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 358,
+          "completion_tokens": 1023,
+          "total_tokens": 1381,
+          "cost": 0.06675,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.06675,
+            "upstream_inference_prompt_cost": 0.00537,
+            "upstream_inference_completions_cost": 0.06138
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 960,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

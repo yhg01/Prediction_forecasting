@@ -1,0 +1,85 @@
+{
+  "request": {
+    "model": "qwen/qwen3.8-27b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-08-14. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Navier-Stokes existence and smoothness\nMathematical target, paraphrased from the original Clay formulation: For the three-dimensional incompressible Navier-Stokes equations with positive viscosity, establish one of Fefferman's four alternatives. (A) Every smooth divergence-free initial velocity on R^3, rapidly decaying with all derivatives, admits a global smooth velocity-pressure solution with uniformly bounded kinetic energy when the external force is zero. (B) Every smooth divergence-free spatially periodic initial velocity admits a global smooth solution with spatially periodic velocity when the force is zero. (C) Some such rapidly decaying initial velocity and some smooth force on R^3 admit no global smooth solution with uniformly bounded kinetic energy; the force and all its derivatives must decay faster than every inverse power of 1+|x|+t. (D) Some smooth periodic divergence-free initial velocity and smooth periodic force admit no global smooth solution with periodic velocity; the force and all its derivatives must decay faster than every inverse power of 1+t. The periodic domain is R^3/Z^3. Any one alternative meets the stated mathematical target.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "deepinfra/bf16"
+      ]
+    },
+    "temperature": 1.0,
+    "reasoning": {
+      "enabled": true,
+      "max_tokens": 2048
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:50:34.636656+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 46.241,
+      "response": {
+        "id": "gen-1790696988-wc0Aiz6MJyS0rAUgnUYC",
+        "object": "chat.completion",
+        "created": 1790696988,
+        "model": "qwen/qwen3.8-27b",
+        "provider": "DeepInfra",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "stop",
+            "message": {
+              "role": "assistant",
+              "content": "\n\n{\"2026\": 0.02, \"2030\": 0.05, \"2035\": 0.12, \"2040\": 0.25, \"2050\": 0.40}",
+              "refusal": null,
+              "reasoning": "Let me think carefully about this problem.\n\nThe Navier-Stokes existence and smoothness problem is one of the seven Clay Millennium Prize Problems. It asks to prove one of four alternatives about the 3D incompressible Navier-Stokes equations - either global regularity (A or B) or the existence of a singularity/breakdown (C or D).\n\nLet me think about what's needed for a solution:\n\n1. The problem is deeply difficult - it's been open since 1934 (Leray's work). It's considered one of the hardest problems in mathematical physics.\n\n2. The current state of the art: We have partial regularity results (Caffarelli-Kohn-Nirenberg), but a complete solution to any of the four alternatives remains out of reach. The problem requires new mathematical ideas that are not currently available.\n\n3. AI's potential contribution: AI systems are getting better at mathematical reasoning. We're seeing progress in areas like:\n   - Finding new mathematical insights\n   - Verifying proofs\n   - Generating novel approaches to hard problems\n   - Working on problems that require combining techniques from different areas\n\nHowever, the Navier-Stokes problem is extremely hard. It's not clear that even human mathematicians know what the \"right\" approach would be. The problem likely requires:\n- A fundamentally new mathematical framework or technique\n- Deep understanding of PDE theory, harmonic analysis, and fluid dynamics\n- Possibly connections to other areas of mathematics\n\nLet me think about timelines:\n\nBy 2026 (end of year): Very unlikely. We're only about 2.5 months from the forecast date. Even the most advanced AI systems are unlikely to crack a Millennium Prize Problem in a matter of weeks. Maybe 1-2%.\n\nBy 2030 (4 years out): AI systems will be significantly more capable. We might have AI systems that can do research-level mathematics. However, Navier-Stokes is one of the hardest problems. I'd estimate maybe 3-5% probability. The problem might require insights that are still beyond what we can foresee.\n\nBy 2035 (9 years out): AI systems could be dramatically more capable. If we're in a regime where AI can do independent mathematical research, there's a reasonable chance. But this is still a Millennium Prize Problem - it's not just about brute force computation. I'd estimate maybe 8-15%.\n\nBy 2040 (14 years out): This is where things get more uncertain. If AI systems are at a level where they can tackle research mathematics broadly, there's a real chance. Maybe 15-25%.\n\nBy 2050 (24 years out): This is a long time. AI systems could be far beyond our current capabilities. The question is whether Navier-Stokes specifically will have been solved. Given that it's a Millennium Prize Problem and there are 7 of them, and some have already been \"solved\" (Poincaré conjecture by Perelman), I'd think there's a reasonable chance by 2050. Maybe 25-40%.\n\nLet me reconsider. The key factors:\n\n1. The problem's difficulty: Navier-Stokes is widely considered to be among the hardest of the Millennium Problems. It's not clear what new mathematics is needed.\n\n2. AI capability growth: If we follow a rough trend of AI capability increasing exponentially or at least super-linearly, then by 2035-2040 we might have systems that can do research mathematics at a very high level.\n\n3. The nature of the problem: It's not just a computational problem - it requires deep mathematical insight. However, AI might find novel connections or approaches that humans haven't thought of.\n\n4. Human-AI collaboration: The event allows for collaborative solutions, which is important.\n\nLet me refine my estimates:\n\n- 2026: ~2% (very short timeframe, even current AI isn't at this level)\n- 2030: ~5% (AI will be much better but still likely not at this level)\n- 2035: ~12% (AI could be doing serious research math)\n- 2040: ~25% (AI likely very capable at research math)\n- 2050: ~40% (AI very likely at or beyond human level for most math tasks)\n\nActually, let me reconsider. The fact that this is specifically Navier-Stokes (not just any hard math problem) matters. It's one of the hardest problems in analysis/PDEs. Even if AI can solve many hard math problems, this specific one might be particularly resistant.\n\nBut then again, if AI is at a level where it can do research mathematics broadly, it might find the key insight that's been missing. The problem might have a solution that's \"just out of reach\" of current mathematical tools, and AI might develop those new tools.\n\nI'll stick with my estimates, maybe slightly adjusting:\n\n- 2026: 0.02\n- 2030: 0.05\n- 2035: 0.12\n- 2040: 0.25\n- 2050: 0.40\n\nThese seem reasonable to me. The event is very unlikely in the short term but becomes increasingly plausible as AI capabilities grow.\n",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.text",
+                  "text": "Let me think carefully about this problem.\n\nThe Navier-Stokes existence and smoothness problem is one of the seven Clay Millennium Prize Problems. It asks to prove one of four alternatives about the 3D incompressible Navier-Stokes equations - either global regularity (A or B) or the existence of a singularity/breakdown (C or D).\n\nLet me think about what's needed for a solution:\n\n1. The problem is deeply difficult - it's been open since 1934 (Leray's work). It's considered one of the hardest problems in mathematical physics.\n\n2. The current state of the art: We have partial regularity results (Caffarelli-Kohn-Nirenberg), but a complete solution to any of the four alternatives remains out of reach. The problem requires new mathematical ideas that are not currently available.\n\n3. AI's potential contribution: AI systems are getting better at mathematical reasoning. We're seeing progress in areas like:\n   - Finding new mathematical insights\n   - Verifying proofs\n   - Generating novel approaches to hard problems\n   - Working on problems that require combining techniques from different areas\n\nHowever, the Navier-Stokes problem is extremely hard. It's not clear that even human mathematicians know what the \"right\" approach would be. The problem likely requires:\n- A fundamentally new mathematical framework or technique\n- Deep understanding of PDE theory, harmonic analysis, and fluid dynamics\n- Possibly connections to other areas of mathematics\n\nLet me think about timelines:\n\nBy 2026 (end of year): Very unlikely. We're only about 2.5 months from the forecast date. Even the most advanced AI systems are unlikely to crack a Millennium Prize Problem in a matter of weeks. Maybe 1-2%.\n\nBy 2030 (4 years out): AI systems will be significantly more capable. We might have AI systems that can do research-level mathematics. However, Navier-Stokes is one of the hardest problems. I'd estimate maybe 3-5% probability. The problem might require insights that are still beyond what we can foresee.\n\nBy 2035 (9 years out): AI systems could be dramatically more capable. If we're in a regime where AI can do independent mathematical research, there's a reasonable chance. But this is still a Millennium Prize Problem - it's not just about brute force computation. I'd estimate maybe 8-15%.\n\nBy 2040 (14 years out): This is where things get more uncertain. If AI systems are at a level where they can tackle research mathematics broadly, there's a real chance. Maybe 15-25%.\n\nBy 2050 (24 years out): This is a long time. AI systems could be far beyond our current capabilities. The question is whether Navier-Stokes specifically will have been solved. Given that it's a Millennium Prize Problem and there are 7 of them, and some have already been \"solved\" (Poincaré conjecture by Perelman), I'd think there's a reasonable chance by 2050. Maybe 25-40%.\n\nLet me reconsider. The key factors:\n\n1. The problem's difficulty: Navier-Stokes is widely considered to be among the hardest of the Millennium Problems. It's not clear what new mathematics is needed.\n\n2. AI capability growth: If we follow a rough trend of AI capability increasing exponentially or at least super-linearly, then by 2035-2040 we might have systems that can do research mathematics at a very high level.\n\n3. The nature of the problem: It's not just a computational problem - it requires deep mathematical insight. However, AI might find novel connections or approaches that humans haven't thought of.\n\n4. Human-AI collaboration: The event allows for collaborative solutions, which is important.\n\nLet me refine my estimates:\n\n- 2026: ~2% (very short timeframe, even current AI isn't at this level)\n- 2030: ~5% (AI will be much better but still likely not at this level)\n- 2035: ~12% (AI could be doing serious research math)\n- 2040: ~25% (AI likely very capable at research math)\n- 2050: ~40% (AI very likely at or beyond human level for most math tasks)\n\nActually, let me reconsider. The fact that this is specifically Navier-Stokes (not just any hard math problem) matters. It's one of the hardest problems in analysis/PDEs. Even if AI can solve many hard math problems, this specific one might be particularly resistant.\n\nBut then again, if AI is at a level where it can do research mathematics broadly, it might find the key insight that's been missing. The problem might have a solution that's \"just out of reach\" of current mathematical tools, and AI might develop those new tools.\n\nI'll stick with my estimates, maybe slightly adjusting:\n\n- 2026: 0.02\n- 2030: 0.05\n- 2035: 0.12\n- 2040: 0.25\n- 2050: 0.40\n\nThese seem reasonable to me. The event is very unlikely in the short term but becomes increasingly plausible as AI capabilities grow.\n",
+                  "format": "unknown",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 506,
+          "completion_tokens": 1221,
+          "total_tokens": 1727,
+          "cost": 0.002365275,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.002365275,
+            "upstream_inference_prompt_cost": 7.59e-05,
+            "upstream_inference_completions_cost": 0.002289375
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1196,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

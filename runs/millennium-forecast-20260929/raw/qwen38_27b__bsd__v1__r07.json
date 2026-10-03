@@ -1,0 +1,85 @@
+{
+  "request": {
+    "model": "qwen/qwen3.8-27b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-08-14. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Birch and Swinnerton-Dyer conjecture\nMathematical target, paraphrased from the original Clay formulation: For every elliptic curve E over the rational numbers, determine whether the rank of the finitely generated group E(Q) equals the order of vanishing of its L-function L(E,s) at s=1. Thus, if r is the number of independent rational points of infinite order, the first nonzero term in the Taylor expansion at s=1 should have degree r. The target is this equality in full generality over Q. The refined conjecture about the leading coefficient is a related stronger statement, rather than an additional requirement in Wiles's displayed Millennium problem.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "deepinfra/bf16"
+      ]
+    },
+    "temperature": 1.0,
+    "reasoning": {
+      "enabled": true,
+      "max_tokens": 2048
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:55:08.218304+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 48.639,
+      "response": {
+        "id": "gen-1790697259-DU0qv0XkFuAcrD2WMM0l",
+        "object": "chat.completion",
+        "created": 1790697259,
+        "model": "qwen/qwen3.8-27b",
+        "provider": "DeepInfra",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "stop",
+            "message": {
+              "role": "assistant",
+              "content": "\n\n{\"2026\": 0.001, \"2030\": 0.005, \"2035\": 0.02, \"2040\": 0.08, \"2050\": 0.20}",
+              "refusal": null,
+              "reasoning": "Let me think carefully about this problem. I need to forecast the probability that a complete solution to the Birch and Swinnerton-Dyer (BSD) conjecture, with an identifiable AI contribution, will be publicly available by various deadlines, starting from August 2026.\n\nLet me consider several factors:\n\n1. **Current state of BSD research**: As of my knowledge cutoff, BSD remains unsolved. There has been significant progress on special cases (e.g., for elliptic curves of analytic rank 0 or 1, proven by Kolyvagin and Rubin). The general case is considered one of the deepest open problems in number theory. Most mathematicians believe it will require fundamentally new ideas, not just incremental progress.\n\n2. **Timeline for mathematical breakthroughs**: Millennium problems have been solved on various timescales. The Poincaré conjecture (2003, proved by Perelman in 2002-2003) took about a decade after it was posed as a Millennium problem. The Riemann Hypothesis is still unsolved. BSD is generally considered to be of similar or greater difficulty than many other unsolved problems.\n\n3. **AI capabilities trajectory**: \n   - By 2026-2030: AI systems are likely to be quite advanced but probably not yet at the level of producing novel, deep mathematical insights that solve Millennium problems. AI can assist with computation, pattern finding, and exploring spaces of possible approaches, but the deepest mathematical breakthroughs require genuinely new conceptual frameworks.\n   - By 2035-2040: AI systems could be significantly more capable. If we're on a trajectory where AI systems become superhuman in mathematical reasoning, they might begin contributing to solving major open problems. However, the hardest problems may require not just brute-force search but genuine conceptual innovation.\n   - By 2050: AI systems could be vastly more capable. The question is whether the problem is solvable by any system (human or AI) within this timeframe.\n\n4. **The specific requirement of \"identifiable AI contribution\"**: This is a key constraint. Even if a human solves BSD by 2040, if AI didn't contribute an identifiable new argument or proof step, the event hasn't occurred. Conversely, if AI produces the solution independently, that would clearly qualify.\n\n5. **Base rate for Millennium problems**: Of the 7 Millennium problems, only one (Poincaré) has been solved so far, in about 12 years. The others remain unsolved after 25+ years. BSD is widely considered to be among the hardest.\n\n6. **My estimates**:\n   - **2026 (by Dec 31)**: Extremely unlikely. Less than 0.1%. AI is not yet at the level needed for this. Probability: ~0.001\n   - **2030**: Still very unlikely. AI systems will be more capable but solving BSD requires deep new ideas. Maybe 0.5-1%. Probability: ~0.01\n   - **2035**: This is where things start getting more speculative. If AI systems have made significant leaps in mathematical reasoning, they might begin contributing to major open problems. But BSD is extremely hard. Maybe 1-3%. Probability: ~0.02\n   - **2040**: More substantial probability. If AI has reached a level where it can do genuinely creative mathematics, there's a reasonable chance it could contribute to solving BSD. Maybe 5-10%. Probability: ~0.08\n   - **2050**: This is a 25-year horizon. AI systems could be extraordinarily more capable. However, BSD might simply be that hard that it requires a specific conceptual breakthrough that no system has yet found. I'd put this at maybe 15-25%. Probability: ~0.20\n\nLet me reconsider. The key question is: what's the probability that BSD gets solved (by anyone) by each date, AND that AI made an identifiable contribution?\n\nFor the \"by anyone\" part:\n- 2030: Very low, maybe 1-2%\n- 2035: Maybe 2-5%\n- 2040: Maybe 5-10%\n- 2050: Maybe 15-30%\n\nFor the \"AI contribution\" part, given that a solution is produced:\n- If it's solved by 2030, AI contribution is unlikely to be the driver, maybe 20-30% chance\n- If solved by 2035, AI contribution more likely, maybe 40-60%\n- If solved by 2040, AI contribution likely, maybe 60-80%\n- If solved by 2050, AI contribution very likely, maybe 80-90%\n\nCombining these:\n- 2026: 0.001 * 0.5 ≈ 0.001\n- 2030: 0.015 * 0.3 ≈ 0.005\n- 2035: 0.04 * 0.5 ≈ 0.02\n- 2040: 0.10 * 0.7 ≈ 0.07\n- 2050: 0.25 * 0.85 ≈ 0.21\n\nActually, let me reconsider more carefully. The Poincaré conjecture was solved in about 12 years. But that was a single insight (Ricci flow with surgery) by one person. BSD might require multiple major new ideas.\n\nI think my estimates are roughly reasonable. Let me finalize:\n\n- 2026: 0.001\n- 2030: 0.005\n- 2035: 0.02\n- 2040: 0.08\n- 2050: 0.20\n\nThese seem reasonable to me. The problem is extremely hard, and while AI is advancing rapidly, the specific combination of \"complete solution\" + \"identifiable AI contribution\" makes this a high bar.\n",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.text",
+                  "text": "Let me think carefully about this problem. I need to forecast the probability that a complete solution to the Birch and Swinnerton-Dyer (BSD) conjecture, with an identifiable AI contribution, will be publicly available by various deadlines, starting from August 2026.\n\nLet me consider several factors:\n\n1. **Current state of BSD research**: As of my knowledge cutoff, BSD remains unsolved. There has been significant progress on special cases (e.g., for elliptic curves of analytic rank 0 or 1, proven by Kolyvagin and Rubin). The general case is considered one of the deepest open problems in number theory. Most mathematicians believe it will require fundamentally new ideas, not just incremental progress.\n\n2. **Timeline for mathematical breakthroughs**: Millennium problems have been solved on various timescales. The Poincaré conjecture (2003, proved by Perelman in 2002-2003) took about a decade after it was posed as a Millennium problem. The Riemann Hypothesis is still unsolved. BSD is generally considered to be of similar or greater difficulty than many other unsolved problems.\n\n3. **AI capabilities trajectory**: \n   - By 2026-2030: AI systems are likely to be quite advanced but probably not yet at the level of producing novel, deep mathematical insights that solve Millennium problems. AI can assist with computation, pattern finding, and exploring spaces of possible approaches, but the deepest mathematical breakthroughs require genuinely new conceptual frameworks.\n   - By 2035-2040: AI systems could be significantly more capable. If we're on a trajectory where AI systems become superhuman in mathematical reasoning, they might begin contributing to solving major open problems. However, the hardest problems may require not just brute-force search but genuine conceptual innovation.\n   - By 2050: AI systems could be vastly more capable. The question is whether the problem is solvable by any system (human or AI) within this timeframe.\n\n4. **The specific requirement of \"identifiable AI contribution\"**: This is a key constraint. Even if a human solves BSD by 2040, if AI didn't contribute an identifiable new argument or proof step, the event hasn't occurred. Conversely, if AI produces the solution independently, that would clearly qualify.\n\n5. **Base rate for Millennium problems**: Of the 7 Millennium problems, only one (Poincaré) has been solved so far, in about 12 years. The others remain unsolved after 25+ years. BSD is widely considered to be among the hardest.\n\n6. **My estimates**:\n   - **2026 (by Dec 31)**: Extremely unlikely. Less than 0.1%. AI is not yet at the level needed for this. Probability: ~0.001\n   - **2030**: Still very unlikely. AI systems will be more capable but solving BSD requires deep new ideas. Maybe 0.5-1%. Probability: ~0.01\n   - **2035**: This is where things start getting more speculative. If AI systems have made significant leaps in mathematical reasoning, they might begin contributing to major open problems. But BSD is extremely hard. Maybe 1-3%. Probability: ~0.02\n   - **2040**: More substantial probability. If AI has reached a level where it can do genuinely creative mathematics, there's a reasonable chance it could contribute to solving BSD. Maybe 5-10%. Probability: ~0.08\n   - **2050**: This is a 25-year horizon. AI systems could be extraordinarily more capable. However, BSD might simply be that hard that it requires a specific conceptual breakthrough that no system has yet found. I'd put this at maybe 15-25%. Probability: ~0.20\n\nLet me reconsider. The key question is: what's the probability that BSD gets solved (by anyone) by each date, AND that AI made an identifiable contribution?\n\nFor the \"by anyone\" part:\n- 2030: Very low, maybe 1-2%\n- 2035: Maybe 2-5%\n- 2040: Maybe 5-10%\n- 2050: Maybe 15-30%\n\nFor the \"AI contribution\" part, given that a solution is produced:\n- If it's solved by 2030, AI contribution is unlikely to be the driver, maybe 20-30% chance\n- If solved by 2035, AI contribution more likely, maybe 40-60%\n- If solved by 2040, AI contribution likely, maybe 60-80%\n- If solved by 2050, AI contribution very likely, maybe 80-90%\n\nCombining these:\n- 2026: 0.001 * 0.5 ≈ 0.001\n- 2030: 0.015 * 0.3 ≈ 0.005\n- 2035: 0.04 * 0.5 ≈ 0.02\n- 2040: 0.10 * 0.7 ≈ 0.07\n- 2050: 0.25 * 0.85 ≈ 0.21\n\nActually, let me reconsider more carefully. The Poincaré conjecture was solved in about 12 years. But that was a single insight (Ricci flow with surgery) by one person. BSD might require multiple major new ideas.\n\nI think my estimates are roughly reasonable. Let me finalize:\n\n- 2026: 0.001\n- 2030: 0.005\n- 2035: 0.02\n- 2040: 0.08\n- 2050: 0.20\n\nThese seem reasonable to me. The problem is extremely hard, and while AI is advancing rapidly, the specific combination of \"complete solution\" + \"identifiable AI contribution\" makes this a high bar.\n",
+                  "format": "unknown",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 415,
+          "completion_tokens": 1413,
+          "total_tokens": 1828,
+          "cost": 0.002711625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.002711625,
+            "upstream_inference_prompt_cost": 6.225e-05,
+            "upstream_inference_completions_cost": 0.002649375
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1227,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

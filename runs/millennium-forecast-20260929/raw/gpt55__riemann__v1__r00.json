@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/gpt-5.5",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-04-23. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Riemann hypothesis\nMathematical target, paraphrased from the original Clay formulation: Determine whether every nontrivial zero of the Riemann zeta function has real part 1/2. The function is initially defined by the series sum of n^(-s) for real part of s greater than 1, and extends meromorphically to the complex plane with a pole at s=1. Its negative even integer zeros are the trivial zeros; the conjecture concerns all the remaining zeros. The target is a proof covering every nontrivial zero or a rigorous counterexample. Verifying any finite range of zeros alone does not settle this universal statement.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:45:45.310313+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 8.486,
+      "response": {
+        "id": "gen-1790696736-8x38wL31YKc57YZnFPCI",
+        "object": "chat.completion",
+        "created": 1790696736,
+        "model": "openai/gpt-5.5",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.002,\"2030\":0.025,\"2035\":0.09,\"2040\":0.17,\"2050\":0.32}",
+              "refusal": null,
+              "reasoning": "**Calculating AI's impact on math**\n\nI’m considering how advanced AI systems could transform math, especially regarding the Riemann Hypothesis (RH). I ponder my predictions for AI's contributions by specific years: maybe 2026 could be 0.002, and for 2030, I’m thinking around 0.025. I’m estimating for 2035 it’s 0.09, 2040 at 0.17, and possibly 0.32 by 2050. The challenge is making sure these numbers aren’t too high, but they reflect an optimistic view of AI advancements in theorem proving. I need to finalize this as a simple JSON object.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Calculating AI's impact on math**\n\nI’m considering how advanced AI systems could transform math, especially regarding the Riemann Hypothesis (RH). I ponder my predictions for AI's contributions by specific years: maybe 2026 could be 0.002, and for 2030, I’m thinking around 0.025. I’m estimating for 2035 it’s 0.09, 2040 at 0.17, and possibly 0.32 by 2050. The challenge is making sure these numbers aren’t too high, but they reflect an optimistic view of AI advancements in theorem proving. I need to finalize this as a simple JSON object.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu90oIPZRDjVj9yfS39EqR0-kKldMpnqoSSlgvl272Y22Gnh3gB4dHxl8AiAyn5b-qmTTkCtoQIJ4tObf5DNOqzcDKSPklJS3V8I0217rEn9miD8GNdnmDYmqbW41WIpdfmn_-ayjkVyvWB6_iZnXl-Xy52IQMX96P8BJ5d_GxdWAazbv8qujpqz-OcGmPIvqSg-rHwtLLz9abE4NRs1BmpsZO3ssH31HwB0QAJ5AqNZSFBD41dWxA30fGP2ziRJrQmpWzfiVpj9ZosxPR-XMVsw5m13MXhb7W8t6gi_-zS5542sDLH7wUXWT0rafmAcZcm357zO-x-7QL6kaqKZVmUsbgD7TNv6_GRQ34Mr5x9FuvHKsr9K4ZA95d4gA9PXcdHYMSpWvnuopKW6aL34v64c4cTgeVHDLTewhdnpwkLBFNCZi9z8IcX9JjrLzf8NrUlIhLMbjNzrH0Ffd_Ek0b4lwrTQ9QF0vQorJ_Obt__isE-nWFAAm64hel7oEHe3-W8cjkc7_F1lkdJZNyJFoO4OaYuXmFsei9Zlg_CvlLZugewR3ZIloIrtwh9aEpRZ5tHsfRzy9QWJ_aiA8ggPVroP5iSALzZn_HEc_ccxNS7ssSN38XiDbAZxDTviPtMHLtxr4pYsytsRPAKzXVgVx17XwpJvxJbuHELFapIbk4RXRZj4JdvGp1pTr89c1hi6e7RwOlm25lTXhVmVKIP1pN0BqCcD9JeMbvae4mm5KtwojgiWwXQG8fNuNVkPnRpHot-UDRz67ztvayzHj0aUf-cUq33uN_xGXLcydqD1BGJcnNpBbA_eWCQkW-iJ_EiaWzOrY4k4HTvh68aEmNnEigQRhC4vuspFjI5lVXZMnuj9BveN43OCDo-Ufr1rOJiK9mqcKzFPOEVqbIPnfp9mdQ0RlVFY3UOvHJua_KXSS8f6wrn2q-Yx4ebZZ150OhG-WkPJ7Y4S0AuOKo8yfK7gJM3rYMOMfoqYtStsGOEp7aMxYhoddSICa0O1eouAOcUlsQwHu5BXyZ8PFTBm8tB811dqOkeEB8Ldg-WUdPdsciOoXR1zl9QV_eMW-uFoZ7iuZL1cZdg5BIckQ1hoHNwY7SI5PUpLWg6hD6vfYc8cuhGqOUs4muxQ7CaiXADtKWtMFHu3vnaYut-3V-y9atrG9pqCN6cO8IUOp9w2ov15K9XYYeHonWnG00RaGVmSjY2NEKCSaJe5swftkJ_vdi6vhZZpx3da4k9hwbk-jJJde2FStrEsa2177XYMADBXX37CDCu9Bob8MMwEgIKMoUZkNQcqsNsj6a4-D5LFtXSDjXPcDc9smIrBsz_5PocUrHp0nvRLN9nY8PSOXRaqOqznjM4zsOaf_HABIKcDvE_E5lmBtZbjhhq3yfBeefDkVvUEmKOfJF62E4ycolOKuqBbSLL9r9SxbCsSNruLEFRaESZj5q5TfbNYbEAJ13N0Rb5xRyqiUcJjv5aN-DGLQ1fBj-oJnwaI1RNTDFkJHKhI4lJHSTzxvGwr2YP32fO6Ru1_tdSuuw-FU1VrwzvndNzhEWDFYTwNWotgdqUQDRDfL_v7nxdYZwvUBsAv4-U7F8s8ulopNa01-APpIzqACq5-1QISUWSJbO7gGLy6wUlkZK_3QMtHsuu2V82OOfmOAhHtcMcsaxTdNfZhxO9rwi1TBcYWaKOF1Fk9_Xbf_k46QhI2lptO8JtFexiKbEmTZCsKXee3FTAGYNp70YcY76mo7oGXTfThEL7TEm0DNL5gMnxWYfiqpd5rgrNnjidqg7qXnO3YLSLOOz5qK55uo2h8XroJrk966vPY6izEMGi8A_2hwZLac4YenOUn_7ju4C7cDUr5DiLRiOtG4XnUNUDnwbOSogFuAQe7oIKJjBB-K-mYNDThZcaZ3e2u_fTCpZVrPSMIS58lPTE03nWuIo8paB_I4UBpPHfL7HkGBnfWUlZ6ZPC4-IQVRFyi4caCTd29Vj8HdgrrZP8iaL8x1FXMISF0sPHtWjvHsvEJW9PL3KkOXU9wVeJVCp3QySFMmqf5dGeBLRsMAHikY0rnnS6ECT876TnzE_HbUttJMvYWYMnMksVK_fkDJlvJAATtm5URn8gwijURnZ4fOto3gSGuZAQ860RBldeybn2Q477zSQJ7ztMhyeb9gG8ImIuF3C6dWToM9kxv5hA3R-GPhyOekpovFoJkoFokOcq1W6SwCxGHu__Fb2pEvr48LLsrkXdX9SkdptXT2m7_Resghf28XFOHb_d-T5BU-jQbBljSZzv4d7kePlYeydX8iHT1-slCWP8Qm-KrVPjSjyrcj5HWUoLichzsmFdskZj-3EkNsO7n9VUPHWmrJ9MFxuMYI88cqwgsDEESu3-lc2-kNrR7sOpmdwHR7n9Vcb2KcYYHRIUL2Pv5lo7b0Ho2-2H_usaNsfGzFgqjLeR4SIuke-JJUB6sTX04VAHmhVLHN8l1MfoURcwWHFGdC8coWIJP7JgtB7UxrF1wDQIdC_tU-Ic8VzEFIVjPZpkCMxkvlP1Sru4BDYjas17mU-akUpyT5i--GsW0UTwwH2KyllP1GqC12mAeh_CbQSsJbmhgajO4NGUAgnXeQhWV3gfNERtrthpqq4djNwz9qErBmFpYn_IDkVrzU03myAQFLuMuHjwWXKHzlE0pA_2UHN6eGAXxJNOa0VcxHY1-lDB3DVf1TX_pkUpEtgrU_SVQ-3Y3XNLuGNia4D2lfD9TyEau_ymyfPyNnZUB5UzCQqs2d-TkXrwM4boL_oldX4OY84ri5R0jb0rh9ws3IQeMMfiAPBBY0fIWir39sxa-3O6LikHrNvWqoLLnXxupg8VlYNRlujqb1kB1JT4IE9TK8JOm76Pqc-ARAoiSwzoFj_TMOEAh79EB363mzH-8vFO9jhoQR7DhVq3R4-nb8uQU63ryOLiL6nXiqplv6XgS7KKSvcqZ5oZ_MR326AoYzNuwneppXBckIvFGihJqfdnDaD6wQjhte9B-ti0RKrZdH6O--dSFwtJbCKmZpFuLa0Vtdn3H4Jm6elFTfpxmWK39m2DLlhZ6HtMz-Z218J7nOZruvmZBZwhWzlS3eaEJVRQSEnWwTJaqSGD8A8zyxx2Rmw5GPL9j9wFvUSuB5o04vHyolscspcFx03lm6saVAJeZQYJ9k7Ug-DwbOLIfTJtulP5Glm3cw__A71Rt1mLxuDKic5EZeoOoKBbZY_fkDY1E1_CkyszypOu12s_xTkk_dzjGHaArvQkEtAUjXyW4wr_mm9lqLqtLlIbgVy64e4XS2g67WveggnIDmBS8FG-lDnuYn9D28SiwMxXFl2zv9dWVulW_T40-lIiNauVCTQrqflTW_unkmO0YikFy3VnuZccnXF9f9EhRdymbv1jCIeBy4iIziDln-mGDBJgbKFzMCJU9QmkFzKob9szO3aj6VtdI9ScVCEBtpzxeSKpFdWpEcIQDE5Nb3-_bqaLGWxLPSuapz1A_MV0vVoFiSJbU0uvtjAwID8n9HCwzTTXc-IV6XPfJrdUC75o0QYtgjGRGfGwLUlZaEGeN4d59aF-aKPVogqu25PUJPp3-842ev19qMbvJNgJZTUsG2mAwyx6Ot2wmRy2rCTec0Qv837e-qgMM_nqZxjfd4DGKe-HzF9PiaFCEsWIAWxzGcuG21VoBHDQa5Pj71nmC2Vw-JSiHokk65hQTp4IscF617OywF0amKWGs6L2e93bL7ZLNHWvDcLt4rVxYr1heCtyA=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC01LjUtMjAyNjA0MjN8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0146cfd1d4e57f9d016abbdd21c61087d1a4782896e3401cd0",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 360,
+          "completion_tokens": 480,
+          "total_tokens": 840,
+          "cost": 0.0162,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0162,
+            "upstream_inference_prompt_cost": 0.0018,
+            "upstream_inference_completions_cost": 0.0144
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 438,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

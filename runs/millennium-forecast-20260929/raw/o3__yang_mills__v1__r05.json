@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Yang-Mills existence and mass gap\nMathematical target, paraphrased from the original Clay formulation: For every compact simple gauge group G, rigorously construct a nontrivial quantum Yang-Mills theory on R^4 and establish a positive, finite mass gap. Existence must satisfy axiomatic requirements at least as strong as the Wightman or Osterwalder-Schrader formulations cited in the official statement, with appropriate gauge-invariant local fields and short-distance behavior. With vacuum energy normalized to zero, a mass gap means the Hamiltonian has no spectrum in (0,Delta) for some Delta>0, with the supremum of admissible gaps finite. The target requires the four-dimensional continuum theory, not only a lattice approximation or the classical equations.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T16:02:09.606556+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 7.679,
+      "response": {
+        "id": "gen-1790697722-d9s2Xy2iYeiUJgT5brjz",
+        "object": "chat.completion",
+        "created": 1790697722,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.01, \"2030\": 0.05, \"2035\": 0.12, \"2040\": 0.20, \"2050\": 0.35}",
+              "refusal": null,
+              "reasoning": "**Estimating probabilities over time**\n\nI'm estimating probabilities for certain milestones: by 2026, there's a very low chance, around 1.5%, and moving to 5% by 2030. By 2035, it might rise to 12%, then 20% by 2040, and possibly 35% by 2050. I need to ensure these probabilities are non-decreasing. I’m thinking of putting this into a structure like JSON to organize the data clearly. It’s tricky but doable!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating probabilities over time**\n\nI'm estimating probabilities for certain milestones: by 2026, there's a very low chance, around 1.5%, and moving to 5% by 2030. By 2035, it might rise to 12%, then 20% by 2040, and possibly 35% by 2050. I need to ensure these probabilities are non-decreasing. I’m thinking of putting this into a structure like JSON to organize the data clearly. It’s tricky but doable!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu-EBH0lAQYDhyh8mbxuoYA4IreYuql5chO8iB2MJaIfGfKEjS5uvJWYiLimh103ogex_Z6bd8SttEnUt3BcxloJiZo0Inhv1Iijd8GLtjZzMASfPmBI-JCvI7gWnb5KBJd5UsB8AVQzYQ5BKmYrkxrmZHG447pvNPNVd9-slGYiMOFeshOZ0PLpY1d0MLkmq2nnJ-TvBR-xJehbGCjXS8D1T15RHKnFturXL4KcSjy2rSY_QH4AopSyXA6pPMDskZqy0vQbsRlEUdpgYIevOdtmJ1YRbqtvhsfPfY1EFU1NVVdeFEGPL0LbuNkhvyq_aNP7XnvFNIspWEAR6tLB_TdueqBPPVv-bbam0Csynpt_8s5kYyIK0lJ5wc5ps6c9q1DhSqV3CDHYXFVoeLUvvPQhIUKPGzrJMTSi5DLSXze3QG16SN3UqkjWCUpzjg3L-nF1ASe-BnlkQ8OtKZ4bJm3hynHMsMgzaC2p_vHXdnz8zkiOQ5du2owY19qaHPUqnQ7z1WLsgUoRjRWtMvilX3ySgs10347Uk2fa5nhl9sevbV2jv5ITp_lGW7TMmZOO3nWtGQrYubUpOzrrsBPUISR3Ox6bG84PoB-q8kXQ1S9D3zngvrLTOJsk7bgAJYGWOmHr6usQQDPX-EfMl2Y7etHoxGEaxUuqON6Bf9zzIc5PZRZ3mImPRWAmAVkBsRi1L5BZu2HNP9utmp0mTVapKqpR3NzEYooYp9ucpi2QSez5mquLSLGQCHX6kZSkKUq1y4hWoYrmyyQeaMfGRLiz2wlcsO5Udw3GM4ngu0UMHx8hfHkI4q9zlJbP656SrpbdwskC1fFAegdDWz3xXNWdyrGiu7dB6dc7DidswJWwaRGo-KQwsw0AK8QHq9blDUBzOOG14Az5BsKZrhWBzRV7wuC6dLenRWzFkMbIz2102p6o6p8WoIwkuXUM8mJAxmrshW4v5-PtkWgo67jqJkI86ukC7fXA2XswihPM5Au2r-gfvdckzcsWbjl7WGhi8cvMDa8gOskljpD_pPUOU7_mTRY5_GeJuOW3dcYM69CexrkfvOvZs2w6gvBOglou4ggNur4EvN0B2o7aZJoqCaABnxPzA27wy_XIEBQV1PjSt6WRUWrk8_6kab014EduNpknzFyrY6D7wah_dKwRKgM-oE5MpVop3cmQUBe0tBIKSt5_J4wjmZMoCq_lxoIamKABaAPMyCC6Fun-MkrfTvkPvvHiwQ9zMHD6QUrv7qSHGzgd6N0SYrqjJuqDNtw9WFpyqIcQPd9TrT_LgnId_tGWkcp3urC8PCoFhcrcE2VHwPpcIc9kqFdZ6JAFvjHxQ6ZAPZwJZejpswnLGoIwyKd3dZEvS_7LKO_kCrzie_mC-DTX_uF0TGAUk4ncPfOqGo4If8QFRpEiWjqmQ-0s8GaaHEDE8DasoPptFVMXZ27iryKp4zZv3aJECD4WD3SjB-MFAYiaJBFRxyqvEyhRP8HQocsm5b8TDdVSFevSlUKOrB9sKEcYp_gK-PfVg7CiIdXGVRR9cL40d62Yf8l4ovnZcqMgRzQhMd1Z0iSDCsUdI0w70niGFZ1gK7DxRrThwJ2fkh7mN5YnDfPGT7aZcSGFr6CnTfl-07nHnLNg2t8d6H1GXBXp478V1Rnn2jOWwrGP0iQOFHCKmqE3RVIUs7tsbx1rGHT3lUi2Eba18iOPp60OKmtv7Gr2ZGzpWuc27g169-wH1G6erwNID3BRJ54Ck55wajwfS-DLTzWU6IVAdewfpiFhZGKzyKNEkFgrUlMuSwL6qE1pju0L7GrueipgD9tXbC21494V1ZD_9hTd6Ee-VVWnDmqDXjwtdVYMnMftm_IRkvV9uMY7A-JEN9gcbYm5oq_Jq3E5aHHcwHg-F0ZF-A8g3Y1GrJiOEU67NDTKBZiMnXOnGd7yLoiKLeB9AW5H9yxaEJ-qJfhgTJGN9D1SPVvlz3DRqBR6J5beLJTr_WC5sSfnqmLiV9QQIJX0H9aA0evx03VTCL_7HiewWgVQt9i_Jd4GBd8I49dEVOTq7h6g9M8zxhHUGngIsxRIkonIa_AYUHKxIsOUOX3o0hYt0B3LlMSHmSLWOhixB46mGdhBIEgjrpf8uheYLvRfaB9SSFbgBnOr9a1OgGhcgOPo81vgHd9oqGwhaVGdm_qhJZBKY-VozGgGUSQZOKT-XZXzfgMwcx9ASyAsXHv9RId9Km8NQkYMa4s-aUEk-2tExwexcPsIF_HtFfnymqy87QO0j6MpXMYOhi5oElaW5ANklIANADOcrxni7pgSN5TmJlv7A0wzM01w2HYax-gBacdMh6SJ1SvEFYA42MRfV3TqSt7zroCZBCq1sOfRUdUwAshm1Es3p1Fsfgk67ineM5NZb11TT7sKHJyd0U-x4b3Gb6GI5rB4M0DUe8gRxDoB5pdex4vNkaGVeUIQFXBGiidJUuccMoDIB4KvFNeHnb6RItTI036nElF-FYjLdronjM3lUBSz_kouRrJLlpujkOjp-otDOBzmCttoTPaAfDc5jPyGMYRhvImoALwN-9vgpt11qDysaLQtpyxszFRbL_Dm6nhW1T8nXW5J5TJ1goaXVNoVL0AxPbB9v4Szh1L3Ga4hfmMMY8U3t4SHWUKru8mUUs2ssB8O8XKN4XB0QJE2JKBleP-o2MsMufG1hsLUTXgIKJT19bENfdsG8pHN5kFTG0HsMS5-I6h8y5IXLglYExxmhTAPiFV4GRSNCEG1AMm-HLvJWlT1iJKP2l6mbp5oyao71LNs-0qutxlRlHp5iHCf68uYASTJiv9FicBbbFKDhTUHNVt1ObzpM9QRydY0uujGfQktxbEr7WCjXu_i5XDqlLA6SVowMkKrbEnPM1wTwT_tuX9eAKABkpzUKRSRHCoE4ZjLhTitJa772qFjLr1xHwP1h13hFTYW8tD9onoxphwa2eQafJYa6888JvU_IYup2N8CVXAfuzZiQLMuwwweZvs3Ct-DJczg6A-SQrv_4rvyg1XQ057RImbeMXeWvk5SPtPI4LzLAVFoII_vbGAAz17B0lmxrfVc08Mz85bqXu25yOiSeQFo3VkA8c8JWLKyIBWZNPQDe-jywKjoH9EMxPh_-qnku1Lz-sR6qRatlvIe64Pq4fxQKgQ32IEqc6wdQADtlnZKipwMgvlmhlhzawII6f6yEHfepWD4YgzA4SkD9n7-XGykKPTUOUXp360Mmgr14NpDgityFHbjYE1vKuSc_Jmiznl_SiBs3nnQ7G9yAlf1vrc22OWm7PRKm2Zzg6Co-ESYkBcfFJ0y956M=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_07f9f62b06daeca4016abbe0faaf9487d1b9ab95d2671fe808",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 379,
+          "completion_tokens": 462,
+          "total_tokens": 841,
+          "cost": 0.004454,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.004454,
+            "upstream_inference_prompt_cost": 0.000758,
+            "upstream_inference_completions_cost": 0.003696
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 384,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

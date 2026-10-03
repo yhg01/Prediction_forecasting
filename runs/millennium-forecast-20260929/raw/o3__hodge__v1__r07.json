@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o3",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2025-04-16. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Hodge conjecture\nMathematical target, paraphrased from the original Clay formulation: For every smooth projective algebraic variety X over the complex numbers and every integer p, determine whether each rational cohomology class in H^(2p)(X,Q) that has Hodge type (p,p) is a rational linear combination of cohomology classes of algebraic cycles of codimension p. The question connects topological information in cohomology with subvarieties defined by algebraic equations. The target is the general rational Hodge conjecture for this class of varieties, with rational coefficients in the combination; an integral-coefficient variant or a statement about arbitrary complex manifolds is a different assertion.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:45:47.597475+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 7.001,
+      "response": {
+        "id": "gen-1790696740-XhVLRc8MNptYholVuKKx",
+        "object": "chat.completion",
+        "created": 1790696740,
+        "model": "openai/o3",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\": 0.01, \"2030\": 0.04, \"2035\": 0.1, \"2040\": 0.18, \"2050\": 0.3}",
+              "refusal": null,
+              "reasoning": "**Forecasting Hodge Conjecture Solutions**\n\nI'm considering probabilities for the complete solution of the Hodge conjecture by given deadlines, particularly with AI contributions. The conjecture is a major challenge in mathematics, and while there have been partial results, the general case remains unsolved. I think the likelihood of a resolution by 2026 is around 0.5%. By 2030, it might reach 2%, 5%-7% by 2035, 12% by 2040, and 22% by 2050. I want the probabilities to be monotonic and nondecreasing. Let's refine these numbers!**Creating JSON for Probability Forecasts**\n\nI need to produce a JSON object with specific keys: \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\". For the probabilities, I'm considering values of 0.01, 0.04, 0.10, 0.18, and 0.30. So, that sets the probabilities as 1% by 2026, 4% by 2030, 10% by 2035, 18% by 2040, and 30% by 2050. Now, I’ll format that all into a proper JSON structure. Let's get this done!",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Forecasting Hodge Conjecture Solutions**\n\nI'm considering probabilities for the complete solution of the Hodge conjecture by given deadlines, particularly with AI contributions. The conjecture is a major challenge in mathematics, and while there have been partial results, the general case remains unsolved. I think the likelihood of a resolution by 2026 is around 0.5%. By 2030, it might reach 2%, 5%-7% by 2035, 12% by 2040, and 22% by 2050. I want the probabilities to be monotonic and nondecreasing. Let's refine these numbers!**Creating JSON for Probability Forecasts**\n\nI need to produce a JSON object with specific keys: \"2026\", \"2030\", \"2035\", \"2040\", and \"2050\". For the probabilities, I'm considering values of 0.01, 0.04, 0.10, 0.18, and 0.30. So, that sets the probabilities as 1% by 2026, 4% by 2030, 10% by 2035, 18% by 2040, and 30% by 2050. Now, I’ll format that all into a proper JSON structure. Let's get this done!",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu90rUuZ0cEtpxG2nmzzVfm63LlG8L4Pity-mzQLy8AzqALALVgk7l1mPQnvVQqcFGm46cn9estiqLm0x13us7WQzIYVLkz99LZ3Hz_DCrsCTtu8xW4THIdA5ypSa6CAkPa8orrYNwqmL7D9x3eVfhS81jtBiHucyxdwMWLLVw9noosxMJDZzkhA2Wm-nthAhj-YyqbNuzmAGx3oGicbAPPs0pz7HcgopoNyomWl5UckwWG_-_dUuhN2NVsIk8jD1jrVXr5FkFCUhe7vRFU3zxO6ITpnFcdAHj99hNvb1lmc0m-s2KlDnmNeTqnBJR1WMqceyiHT7itsiGrTmAUre9no7Wg2X5x1lh8BnJU343Ah00WzKKNeUoJgar0vxiGABXzs4JnaFkn9hoLYTRkbtzQjrD2u-4MNhXhUqxrAKOZaQ9vHdLDfCpnBFP04jBmZJiGuZPgPb0-U1rX52NPTWDHzNIo8GZgXUWVpLOGmtAmfhcmjo453YZo0GcKOnGWoS_jJ3bEeSun791ab9HzqZZK06ywMGRNDZPkgd-WUwn5ddz83d4vqo8QooWn9ajEOd1oLzDypCnJJfGEN3LeajnlXUA67qZy0-PvMT1xyGZdRy_3KFZ1_tFLwBC-0Ob40tArAYKoAzZF_rTA_Rv8I-D8vrSS8KiKrF4F-u93lA7yIo_tM1zGWPGsj5HBCsF0eNelwPNkW3ml0SaRy3EvsuumVWLMqXkj7-TU-7DMlE9DXvGeZQAe112eT8Wx5fR9TgUW-pF1YFY8lvIghzAHmrpBDEzfj0Kkdu_c9tMRm7Rgqxl8aaNgzhkSevMXIyotdaLU-tb0vqz_DgobIdf5rcOJBTi4rM3CDIk6hnBecncCAPzf540N6aPYV_g3ZEoTDupzpdJ2or3PBm6Lbj8K8y1-nnZ69j5hWBpBMI2o8XY5EBN4RdKrLKMAQA_-dQdwwDDgzd6oXKLR7qg2gulC7U93E7VLHd8nrseQiou5e2ifIDIX1qrelzNTG-BqSLJwNGWQDl48XE07oA-39BjTDgPfZI5W8mNuoeOYqqrUFp-pd1xX5hTDX8oJxClyhVZuEPSEIQIXm_XbiCvvWrG1cdiRe5Kk-fo88BxY83R5X972AEliMUuS4UjcdxTGjbG-uuR9vJLAMPIq2nW6nHqejjJyKj84tB3Nlv2eT8hOqmUW1AWfCpUXnMwn5UMz3yEbPm03OSj9C-v7C5bUTk5PQ0BkpOvRj6OUjyr-1QS5ArQ53cGI-mLjHG1ljoZgIKTjpYLBxYf2cC2LbEeMFa87MrXa8Py6azaI07pqDhNq4T76n1kHuIP52HmWxGWt8VHfTBfl6joR_iw8rBKmzdHBe-6NJ3sDpwndSuoo_airyts9YJ7qNMoSKYjc5QeKDwv8MTzfMy03zMgKSQZiGpoJouEWAO3VG4mY0mcF4z8GvuGC8CQzBFFYjlOS-qV6xkSTR7A-KLV7bsC4J2etOxoUO465YxwTZLMTqfvGNXbPZLb2CH6DVt-lv48UJNHgrCZHg3tG_rv1sFNDCUWWA6noOYDbjHzEKn_TWXC7ZXZP87csG82SfKJE_SsBvLz5z4BmjZmmuURkL2txHER9J74qkppBESlUSPPKdqyAei3AW5X2VvZXaUvD1QwK22mlWGvYsa9jjh17lABI4qjW5oURAxBWan6toSx3TRs37-n8JEgNyXW3FGD-YKg9qQgC8BeNucq_Wz9jLzlpsKBByqF4m9ElVp9jU0XoK6G4SBHyeI-VlwCL4sRR7392m4VZBhD6m0XIJPUZksR5Khj-HgD9DYs2xAkb_02cDCr77CubYuuJqzh3Dqe3F2DRF2t3UeCPZUyMb52u3JFMfXY4P03Gc1rWwg6C6SlMKdQ1qCBwq3UFlQOo9N-i-tp0xPDRMPIetalokYx8u79XX3CoYCXwU0LqwgU6lfVvAXNuSxJMXhhQvCO577xAe-ApqLJp0x3wqm2RY982jWJoqa4hCKXhfmmDYWF1x2QUAGGy0pUfFXqcHVqAReM-2UDy1UE1W8chxZ8Sf_tR7wdYwV_BpUajprqDa6_AOFmkXgGqrkWzhm35RHfb0lrG4XKuFset7qZyh71bpMFFHrcr9paBfIQurtQR6qXcV0wOtbRUSNO0Y6LXlTyQYUe1fRQVZ8QUvN3iKvBX91MqgMQ5rDwDDJzp6_ATQ2mEsV1AaShl52bekBwI1hneCiWsCLfgafiMIZRGMxC_siq5gW6-qeUM-QAwI89lRysrhkCCL2PPIVntvQs2fN7dBIhUPo4cq4hETlOcYhvwwpoMAOivkIgWSTcHN8iAsjQbMu4dJWlM8HP-X_ftNz4naSrIyysC9d5rUjxBEj4JWB0HwjVAi66YzGeS9jGxNuWdmIYkXC8e4FfgiF9--SQe07D6uqibw-7zpt3bdmV2fu81AWLEh1mBdYKwaVH95foqlNvdqwQuy3ZYhlXtcZh2KyG0-ABfeQhENbkUqd8NXE7hz4TgcxWlPxmXJGZQ9hU5a1QlXupY-zerWSgDx3ZZ9jbCsU2PWrs5-KZnvSRIh-2TIGFjZyPzqrVV2OWGBABzCpb_W6rBown63b4ZW5MoxsLdCmol1SXgwbAGox_rLv8JSN2bsAgYtreeD5OWm2K0dSwdqlzwaySrgjzjA61eqR47li4t-XbUws432ZSRarfN2QCGHl3yGcJJXA82FhgGnDrf5X7Zew_ypoFk61XSpnw7W9xclnZyY1oAasrVjf3unZEw5Y8vcDB-aBH45Ek26_m-0fD_5ZdVUjfZUTBdRG3pwMfACgNvbfLEtZIt-3.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28zLTIwMjUtMDQtMTZ8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_023500973dc342f6016abbdd25603c87d1878b96497c29d431",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 367,
+          "completion_tokens": 385,
+          "total_tokens": 752,
+          "cost": 0.003814,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.003814,
+            "upstream_inference_prompt_cost": 0.000734,
+            "upstream_inference_completions_cost": 0.00308
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 320,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

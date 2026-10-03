@@ -1,0 +1,85 @@
+{
+  "request": {
+    "model": "qwen/qwen3.8-27b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2026-08-14. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: P versus NP\nMathematical target, paraphrased from the original Clay formulation: Determine whether P equals NP in the standard deterministic and nondeterministic Turing-machine model. P contains decision problems solvable in polynomial time; NP contains decision problems whose affirmative answers have certificates of polynomial length that a deterministic algorithm can check in polynomial time. A resolution must establish whether every problem in NP has a deterministic polynomial-time algorithm, or whether at least one does not. The target concerns worst-case asymptotic computational complexity for unrestricted algorithms, rather than success on a finite collection of instances or an improvement to one particular algorithm.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nAssign a probability to the event occurring on or before each of the listed deadlines. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "deepinfra/bf16"
+      ]
+    },
+    "temperature": 1.0,
+    "reasoning": {
+      "enabled": true,
+      "max_tokens": 2048
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:59:13.964502+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 23.979,
+      "response": {
+        "id": "gen-1790697530-GEgqONVG98lJ863zrmaI",
+        "object": "chat.completion",
+        "created": 1790697530,
+        "model": "qwen/qwen3.8-27b",
+        "provider": "DeepInfra",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "stop",
+            "message": {
+              "role": "assistant",
+              "content": "\n\n{\"2026\": 0.01, \"2030\": 0.03, \"2035\": 0.08, \"2040\": 0.15, \"2050\": 0.30}",
+              "refusal": null,
+              "reasoning": "Let me think carefully about this forecast regarding P vs NP and AI's contribution to solving it.\n\nKey considerations:\n\n1. **Current state of P vs NP**: This is one of the hardest open problems in mathematics. No one has any known path to solving it. The problem has resisted all attacks for ~50 years. The most likely resolution is P ≠ NP, but proving it remains extremely difficult.\n\n2. **What AI can do**: Current AI systems (as of my knowledge) can assist with mathematical reasoning but are not capable of producing novel breakthroughs in deep mathematics independently. However, the question asks me to consider future AI systems, including those more capable than myself.\n\n3. **Timeline considerations**:\n   - By 2026: Very unlikely. AI systems in 2026 are unlikely to be capable of making breakthroughs in deep mathematics at the level needed. Maybe 1-2%.\n   - By 2030: Slightly more likely if AI capabilities grow significantly, but still very unlikely. P vs NP is an extraordinarily hard problem. Maybe 2-3%.\n   - By 2035: If AI reaches a level of genuine mathematical creativity, it might be possible but still very unlikely. Maybe 5-10%.\n   - By 2040: If AI systems are at AGI level or beyond, they might be able to tackle such problems. Maybe 10-20%.\n   - By 2050: If we have very advanced AI, the probability increases but P vs NP is so hard that even humans might not solve it. Maybe 20-35%.\n\n4. **Important nuances**:\n   - The event requires AI to have contributed an \"identifiable new mathematical argument or proof step\" - this is a lower bar than AI solving it entirely.\n   - \"Substantive human-AI collaboration qualifies\" - so it could be a human-AI team.\n   - The problem is so hard that it's possible no one (human or AI) solves it by 2050.\n   - AI could potentially explore massive spaces of possible proof structures, find new techniques, or identify key insights.\n\n5. **Historical context**: Major mathematical breakthroughs (like Wiles' proof of Fermat's Last Theorem) took decades of work by single individuals. P vs NP is widely considered harder. The tools needed might not exist yet.\n\n6. **AI-specific considerations**:\n   - AI could potentially automate certain aspects of proof search\n   - AI might discover new mathematical frameworks or techniques\n   - But the problem might require genuinely novel insights that are hard to even formalize\n   - AI's ability to do long-horizon reasoning and maintain consistency over extremely complex arguments is a key limitation\n   - By 2040-2050, AI might be capable of very long, complex reasoning chains\n\nLet me refine my estimates:\n\n- 2026: ~1% - AI is not yet at the level to contribute meaningfully to a P vs NP proof. The problem is just too hard.\n- 2030: ~3% - Some progress in AI mathematical capabilities, but P vs NP remains extraordinarily difficult.\n- 2035: ~8% - If AI reaches a level where it can do genuine mathematical research, there's a small but non-trivial chance.\n- 2040: ~15% - More advanced AI systems could potentially make breakthroughs.\n- 2050: ~30% - If AI systems are significantly more capable than current ones, and have had time to develop mathematical reasoning capabilities, the probability is more substantial but still limited by the inherent difficulty of the problem.\n\nActually, let me reconsider. The key question is: what is the probability that P vs NP gets solved at all by these dates, AND that AI contributes to it?\n\nThe probability of P vs NP being solved by 2050 by humans alone is probably low - maybe 5-10%? Most mathematicians would say it's unlikely to be solved in the next few decades.\n\nIf AI is available, it could potentially accelerate mathematical discovery. But the question is whether AI can make the kind of leap needed.\n\nI think my estimates should be:\n- 2026: 0.01\n- 2030: 0.03\n- 2035: 0.08\n- 2040: 0.15\n- 2050: 0.30\n\nThese seem reasonable. The event is very unlikely in the near term but becomes more plausible as AI capabilities grow, while still being limited by the inherent difficulty of the problem.\n",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.text",
+                  "text": "Let me think carefully about this forecast regarding P vs NP and AI's contribution to solving it.\n\nKey considerations:\n\n1. **Current state of P vs NP**: This is one of the hardest open problems in mathematics. No one has any known path to solving it. The problem has resisted all attacks for ~50 years. The most likely resolution is P ≠ NP, but proving it remains extremely difficult.\n\n2. **What AI can do**: Current AI systems (as of my knowledge) can assist with mathematical reasoning but are not capable of producing novel breakthroughs in deep mathematics independently. However, the question asks me to consider future AI systems, including those more capable than myself.\n\n3. **Timeline considerations**:\n   - By 2026: Very unlikely. AI systems in 2026 are unlikely to be capable of making breakthroughs in deep mathematics at the level needed. Maybe 1-2%.\n   - By 2030: Slightly more likely if AI capabilities grow significantly, but still very unlikely. P vs NP is an extraordinarily hard problem. Maybe 2-3%.\n   - By 2035: If AI reaches a level of genuine mathematical creativity, it might be possible but still very unlikely. Maybe 5-10%.\n   - By 2040: If AI systems are at AGI level or beyond, they might be able to tackle such problems. Maybe 10-20%.\n   - By 2050: If we have very advanced AI, the probability increases but P vs NP is so hard that even humans might not solve it. Maybe 20-35%.\n\n4. **Important nuances**:\n   - The event requires AI to have contributed an \"identifiable new mathematical argument or proof step\" - this is a lower bar than AI solving it entirely.\n   - \"Substantive human-AI collaboration qualifies\" - so it could be a human-AI team.\n   - The problem is so hard that it's possible no one (human or AI) solves it by 2050.\n   - AI could potentially explore massive spaces of possible proof structures, find new techniques, or identify key insights.\n\n5. **Historical context**: Major mathematical breakthroughs (like Wiles' proof of Fermat's Last Theorem) took decades of work by single individuals. P vs NP is widely considered harder. The tools needed might not exist yet.\n\n6. **AI-specific considerations**:\n   - AI could potentially automate certain aspects of proof search\n   - AI might discover new mathematical frameworks or techniques\n   - But the problem might require genuinely novel insights that are hard to even formalize\n   - AI's ability to do long-horizon reasoning and maintain consistency over extremely complex arguments is a key limitation\n   - By 2040-2050, AI might be capable of very long, complex reasoning chains\n\nLet me refine my estimates:\n\n- 2026: ~1% - AI is not yet at the level to contribute meaningfully to a P vs NP proof. The problem is just too hard.\n- 2030: ~3% - Some progress in AI mathematical capabilities, but P vs NP remains extraordinarily difficult.\n- 2035: ~8% - If AI reaches a level where it can do genuine mathematical research, there's a small but non-trivial chance.\n- 2040: ~15% - More advanced AI systems could potentially make breakthroughs.\n- 2050: ~30% - If AI systems are significantly more capable than current ones, and have had time to develop mathematical reasoning capabilities, the probability is more substantial but still limited by the inherent difficulty of the problem.\n\nActually, let me reconsider. The key question is: what is the probability that P vs NP gets solved at all by these dates, AND that AI contributes to it?\n\nThe probability of P vs NP being solved by 2050 by humans alone is probably low - maybe 5-10%? Most mathematicians would say it's unlikely to be solved in the next few decades.\n\nIf AI is available, it could potentially accelerate mathematical discovery. But the question is whether AI can make the kind of leap needed.\n\nI think my estimates should be:\n- 2026: 0.01\n- 2030: 0.03\n- 2035: 0.08\n- 2040: 0.15\n- 2050: 0.30\n\nThese seem reasonable. The event is very unlikely in the near term but becomes more plausible as AI capabilities grow, while still being limited by the inherent difficulty of the problem.\n",
+                  "format": "unknown",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 397,
+          "completion_tokens": 1071,
+          "total_tokens": 1468,
+          "cost": 0.002067675,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.002067675,
+            "upstream_inference_prompt_cost": 5.955e-05,
+            "upstream_inference_completions_cost": 0.002008125
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1023,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}

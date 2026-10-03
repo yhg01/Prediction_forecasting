@@ -1,0 +1,90 @@
+{
+  "request": {
+    "model": "openai/o1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Forecast date: 2024-12-17. Make a forecast from this date. Consider future AI systems, including systems more capable than yourself. Use your existing knowledge and the mathematical target below.\n\nProblem: Riemann hypothesis\nMathematical target, paraphrased from the original Clay formulation: Determine whether every nontrivial zero of the Riemann zeta function has real part 1/2. The function is initially defined by the series sum of n^(-s) for real part of s greater than 1, and extends meromorphically to the complex plane with a pole at s=1. Its negative even integer zeros are the trivial zeros; the conjecture concerns all the remaining zeros. The target is a proof covering every nontrivial zero or a rigorous counterexample. Verifying any finite range of zeros alone does not settle this universal statement.\n\nForecast event: a correct complete solution meeting that mathematical target is first publicly available, and AI has contributed an identifiable new mathematical argument or proof step incorporated into the solution. Substantive human-AI collaboration qualifies. Correctness may be established by later validation; a Clay prize need not be awarded by the deadline. Partial progress alone does not meet this event definition.\n\nFor each deadline, state your probability that this event will have occurred by then. The deadlines are December 31 of 2026, 2030, 2035, 2040, and 2050. Probabilities must be numbers between 0 and 1 inclusive, nondecreasing with the deadline. Account for the possibility the event never occurs. Give your own best probability estimates despite uncertainty. Return only one JSON object with exactly these five year keys and their numerical probabilities, with no markdown or explanation."
+      }
+    ],
+    "max_tokens": 4096,
+    "provider": {
+      "allow_fallbacks": false,
+      "only": [
+        "openai"
+      ]
+    },
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "attempts": [
+    {
+      "at": "2026-09-29T15:40:46.206640+00:00",
+      "http_status": 200,
+      "request_id": null,
+      "elapsed_seconds": 7.115,
+      "response": {
+        "id": "gen-1790696439-me3FPL2Vs5Q4k6m8aiRo",
+        "object": "chat.completion",
+        "created": 1790696439,
+        "model": "openai/o1",
+        "provider": "OpenAI",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "completed",
+            "message": {
+              "role": "assistant",
+              "content": "{\"2026\":0.01,\"2030\":0.03,\"2035\":0.08,\"2040\":0.15,\"2050\":0.25}",
+              "refusal": null,
+              "reasoning": "**Estimating non-decreasing probabilities**\n\nI see that the user wants non-decreasing probabilities from 2026 to 2050, meaning each year's value should be equal to or greater than the previous year. I need to keep in mind that the user mentioned accounting for the chance that the event might never occur, so it can't equal 1. Starting small, I could suggest 0.02 or 2% for 2026, increasing to 0.06 for 2030, 0.15 for 2035, 0.25 for 2040, and 0.50 for 2050. I'll reflect further on these estimates to ensure they fit the user's needs.**Choosing probability estimates**\n\nI’m thinking about the non-decreasing probabilities the user requested. For 2026, I could go with 0.01 or 1%, then 0.03 for 2030, 0.08 for 2035, 0.15 for 2040, and 0.30 for 2050. However, those might feel a bit low, considering the uncertainty. \n\nLet’s finalize these estimates: \n\n- 2026: 0.01\n- 2030: 0.03\n- 2035: 0.08\n- 2040: 0.15\n- 2050: 0.25\n\nI think this set fits the non-decreasing requirement nicely.",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.summary",
+                  "summary": "**Estimating non-decreasing probabilities**\n\nI see that the user wants non-decreasing probabilities from 2026 to 2050, meaning each year's value should be equal to or greater than the previous year. I need to keep in mind that the user mentioned accounting for the chance that the event might never occur, so it can't equal 1. Starting small, I could suggest 0.02 or 2% for 2026, increasing to 0.06 for 2030, 0.15 for 2035, 0.25 for 2040, and 0.50 for 2050. I'll reflect further on these estimates to ensure they fit the user's needs.**Choosing probability estimates**\n\nI’m thinking about the non-decreasing probabilities the user requested. For 2026, I could go with 0.01 or 1%, then 0.03 for 2030, 0.08 for 2035, 0.15 for 2040, and 0.30 for 2050. However, those might feel a bit low, considering the uncertainty. \n\nLet’s finalize these estimates: \n\n- 2026: 0.01\n- 2030: 0.03\n- 2035: 0.08\n- 2040: 0.15\n- 2050: 0.25\n\nI think this set fits the non-decreasing requirement nicely.",
+                  "format": "openai-responses-v1",
+                  "index": 0
+                },
+                {
+                  "type": "reasoning.encrypted",
+                  "data": "gAAAAABqu9v9f4gE4DA3vXmXb6L7CL4jUUt3MG-Zj_xCZVuxFza3qpo15PFxQTrytQCD7ZsN8XQ3soi6yhWndV-65kKqH54p5E-jhv5a_L6L8wpmMpc1qoWTqduVWCkWm6pQH1BEDJ7mhyc0uhVz6H4G61ZMJM4hzIBUsdiCt2h5S9-nOTOf7aaQHk0Kl-IkuWukHewgOqXU5IMB46Gy8tyzEl5z4NXn2aFUmEHGotxuemZdqvkgVu1oBJdegR6Dm7pHphwO0jbj2XFSASxI8P67VZG4mA39xlx2r6cjQsqxQRzGwb89BWoLjt1u620r5NLKFIw-yupsP6VNFL2868VNqVc-K-_3yElpMomjs-USxM-2jTUAuts7CUSpnj6uNVRM0fONBtRXUDLJtzfIKDboh8B8RXbJ9W_EYCiwEQza9N3IDOrAQWjV7ei-Ms0m5uXMS3T6GgEewayZpnQdc8eDbf0MeJzRZ9g7OUgvwXQ4yROGW00tIemEYcgUtLvqGrdvKOjmEGlp9lqxLXY0ezWDulzkuqC4nhIB3EU57BbwepeXDrGCQht_5HQYbZkrCkLSyowhY2Ds1HePi1XwJJvSJIHjsG2qUUc40ztDbSdQ9g4p1igU-5VCXZGqKXxddc25FqwVScCjCEnsBBU2o8dF1EAMPUvFsb29WL_LubD7tXFp-rAI_yML8O5qdRLgUbBdN65yH27i4ZiR1JX4sC_b3aSYVRJqCmuUMylUZ_NHbVcUwWuFYoKjW6GOjLI4DsRsEUTy6KakMX3oEL8Od0Y5gOEVkLa5c4cSryo5rN56aTfN3KV-25b4irFZLZVQo5WZU8kRSKTGgQamrxwFMEBCAQb-r3ZxLO80zbAAThvjCBRyiXPozc4Lh9j4kLnHD17QWBeegcDVMxIugluX_mR_YPJ826Xt1Nbbm2tKf7CzRi5ljPIVMpo=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL28xLTIwMjQtMTItMTd8b3BlbmFpIn0",
+                  "format": "openai-responses-v1",
+                  "id": "rs_0b2c6f1ea46057d0016abbdbf7c97087d1a9afab204eb71bef",
+                  "index": 1
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 360,
+          "completion_tokens": 622,
+          "total_tokens": 982,
+          "cost": 0.04272,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.04272,
+            "upstream_inference_prompt_cost": 0.0054,
+            "upstream_inference_completions_cost": 0.03732
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 576,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  ]
+}
