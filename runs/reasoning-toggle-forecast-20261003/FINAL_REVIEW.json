@@ -1,0 +1,132 @@
+{
+  "reviewed_at": "2026-10-03T15:33:17.956292+00:00",
+  "status": "passed",
+  "collection_completion_receipt": "runs/reasoning-toggle-forecast-20261003/completion-passes/20261003T150316445017Z/COMPLETION.json",
+  "collection_completion_sha256": "a9626427eec717fff94fd3e3e63d4de0dd3ee756c0a97da5f9873f51a9b060b6",
+  "strict": {
+    "snapshot": "18198f6905b5d551b31f879fbdfbb4b4a65bec11df5349d1131c0f9f606fdebf",
+    "manifest_sha256": "6a5f4017299a6d9115a0168647800a8baa9569f00766df1b67109d8ad50319cc",
+    "eligible_models": [
+      "qwen3_32b",
+      "qwen35_27b",
+      "qwen38_27b"
+    ],
+    "complete_study": true,
+    "published_at": "2026-10-03T15:31:26.466783+00:00"
+  },
+  "post_hoc_single_fence_sensitivity": {
+    "snapshot": "61fe956ba94f816feda6b902742c6fa994f6f0f8a40378a54e1fcd777c521d11",
+    "post_hoc": true,
+    "strict_snapshot": "18198f6905b5d551b31f879fbdfbb4b4a65bec11df5349d1131c0f9f606fdebf",
+    "receipt_sha256": "317edf3a210aedc4aa2d1abfd2817748c1e87e3134d8f86b6ca7f58263a59749",
+    "eligible_models": [
+      "qwen3_32b",
+      "qwen35_27b",
+      "qwen38_27b"
+    ],
+    "published_at": "2026-10-03T15:31:28.519513+00:00"
+  },
+  "baseline90": {
+    "snapshot": "5a0e90a2d69dc6ca4ff346aa72c3446cc26f57051814a0ade6ae821929b1339a",
+    "manifest_sha256": "947643edbbece8955c5d7bd428bad7b9b7664c36e9f7b55f12f761864be7a09a",
+    "eligible_models": [
+      "qwen72b",
+      "qwen25_72b",
+      "r1_distill_32b",
+      "qwen3_32b",
+      "qwen35_27b",
+      "qwen38_27b"
+    ],
+    "complete_study": true,
+    "published_at": "2026-10-03T15:28:30.467765+00:00"
+  },
+  "presentation_only_update": "Final labels identify complete collection and highlight thinking-on truncation; earlier scripts and immutable figures remain archived.",
+  "csv_unchanged_from_completion": {
+    "figures": {
+      "paired_forecast_differences.csv": true,
+      "all_valid_secondary.csv": true
+    },
+    "supplementary-fenced-json": {
+      "paired_by_prompt_variant.csv": true,
+      "paired_forecast_differences.csv": true,
+      "all_valid_secondary.csv": true
+    }
+  },
+  "source_raw_prompt_seed_runtime_settings_termination_receipt_validation": "passed on all complete records",
+  "independent_numerical_review": {
+    "baseline90": "All 30 exported medians independently recalculated from 540 raw-backed records by separate reviewer; manifest and artifact hashes checked.",
+    "reasoning": "Paired medians and variant summaries independently checked; Qwen3.8 all 180 responses reviewed with 4 valid pairs and 86 on truncations.",
+    "formatting": "All 89 recovered single-fence outputs independently checked; applied uniformly; no truncated outputs rescued."
+  },
+  "actual_png_visual_review": {
+    "runs/reasoning-toggle-forecast-20261003/figures/18198f6905b5d551b31f879fbdfbb4b4a65bec11df5349d1131c0f9f606fdebf/reasoning_on_off.png": {
+      "sha256": "1d923069706b851d51b96f669445c658ce0a09726e5350dd323ebf1668e011ad",
+      "passed": true
+    },
+    "runs/reasoning-toggle-forecast-20261003/supplementary-fenced-json/61fe956ba94f816feda6b902742c6fa994f6f0f8a40378a54e1fcd777c521d11/reasoning_on_off_fence_sensitivity.png": {
+      "sha256": "c5726b526900627f58997674739e1c7a9f36a6ca479dc5942df9d80c366ba0a3",
+      "passed": true
+    },
+    "runs/baseline90-forecast-20261003/figures/5a0e90a2d69dc6ca4ff346aa72c3446cc26f57051814a0ade6ae821929b1339a/baseline90_forecasts.png": {
+      "sha256": "8a4c88be2fda1dca1c88179dbb2bd8a312fb11a316156cd166e34488febcedec",
+      "passed": true
+    }
+  },
+  "scheduled_reasoning_responses": 540,
+  "strict_valid": 289,
+  "supplementary_valid": 378,
+  "truncated_invalid": 162,
+  "model_summary": {
+    "qwen3_32b": {
+      "paired_valid": 90,
+      "on_valid": 90,
+      "off_valid": 90,
+      "on_truncated": 0,
+      "2050": {
+        "deadline": "2050",
+        "paired_valid": 90,
+        "on_median": 0.6,
+        "off_median": 0.8,
+        "median_paired_difference_off_minus_on": 0.19999999999999996,
+        "min_paired_difference": -0.10000000000000009,
+        "max_paired_difference": 0.65
+      }
+    },
+    "qwen35_27b": {
+      "paired_valid": 14,
+      "on_valid": 14,
+      "off_valid": 90,
+      "on_truncated": 76,
+      "2050": {
+        "deadline": "2050",
+        "paired_valid": 14,
+        "on_median": 0.725,
+        "off_median": 0.85,
+        "median_paired_difference_off_minus_on": 0.09999999999999998,
+        "min_paired_difference": -0.15000000000000002,
+        "max_paired_difference": 0.32000000000000006
+      }
+    },
+    "qwen38_27b": {
+      "paired_valid": 4,
+      "on_valid": 4,
+      "off_valid": 90,
+      "on_truncated": 86,
+      "2050": {
+        "deadline": "2050",
+        "paired_valid": 4,
+        "on_median": 0.59,
+        "off_median": 0.6,
+        "median_paired_difference_off_minus_on": 0.010000000000000009,
+        "min_paired_difference": 0.0,
+        "max_paired_difference": 0.04999999999999993
+      }
+    }
+  },
+  "scheduler_status": "runs/baseline90-forecast-20261003/checks/20261003T152820Z/STATUS.json",
+  "scheduler_status_sha256": "2b0c5ca63727404ae9d01ba627584728bafc612aaecf03ddf95556be05282592",
+  "shared_gpus_at_final_check": 0,
+  "recurring_automation": "remains deleted",
+  "external_judging": "not executed; still unapproved",
+  "longer_budget_followup": "not executed; still unapproved"
+}

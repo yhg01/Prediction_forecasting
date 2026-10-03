@@ -1,0 +1,16 @@
+{
+  "reviewed_at": "2026-10-03T15:00:02.968862+00:00",
+  "reviewer": "Independent study-design subagent",
+  "strict_snapshot": "42948975190c519ee8e204ac09be7f7db35c20f877ec15c730efffd7560ab23e",
+  "supplement_snapshot_reviewed": "c1ec3e6af9deb002b462348385a533a40ce602af5a2c411f755dce4baca18f65",
+  "verdict": "No blocking provenance or format-normalization flaw found; interpretation must remain narrow.",
+  "findings": [
+    "Qwen3 native ON/OFF comparison is the strongest result: 90 valid pairs after explicitly post-hoc single-fence normalization; strict primary has only two OFF-valid responses.",
+    "Qwen3.5 has completion-dependent selection: 14 valid ON responses and 76 truncations. Matching does not remove this missingness. Conditional forecasts and response yield must be reported separately.",
+    "Only complete models may be compared. At review time Qwen3.8 ON collection remained incomplete.",
+    "The intervention is the native explicit-thinking mode under a common output cap. It does not isolate all internal reasoning, latent beliefs, alignment or forecasting accuracy.",
+    "Ninety draws from three paraphrases are generation samples, not independent model/training replicates.",
+    "The median paired difference is distinct from the difference of the two plotted medians.",
+    "Within-checkpoint mode effects do not establish why forecasts differ by model release date; checkpoint, training, knowledge, architecture and date framing remain confounded."
+  ]
+}

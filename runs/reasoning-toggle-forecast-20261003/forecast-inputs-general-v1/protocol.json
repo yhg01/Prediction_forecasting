@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-09-29T16:26:41.537689+00:00",
+  "version": "general-event-v1",
+  "event_id": "any_millennium",
+  "scope": "15 historical checkpoints after two user exclusions; one event: AI helps solve at least one of six Millennium Prize Problems",
+  "supersedes": "../millennium-forecast-20260929 (separate-problem probabilities cannot be combined into the intended general-event probability)",
+  "deadlines": [
+    "2026",
+    "2030",
+    "2035",
+    "2040",
+    "2050"
+  ],
+  "prompt_variants": [
+    "Estimate the cumulative probability of this event by each deadline.",
+    "For each deadline, state your probability that this event will have occurred by then.",
+    "Assign a probability to the event occurring on or before each of the listed deadlines."
+  ],
+  "replicates": 10,
+  "variants": 3,
+  "calls_per_checkpoint": 30,
+  "tools": "none",
+  "retrieval": "none",
+  "aggregation": "pointwise median over valid responses from the three fixed variants and ten samples each; no imputation or selective resampling of invalid responses",
+  "forecast_origin": "public release date per manifest",
+  "output_budget": "1024 nonreasoning; 4096 reasoning",
+  "event_definition": "At least one correct complete solution meeting an original Clay mathematical statement, first publicly available by the deadline, with an identifiable new AI-contributed mathematical argument or proof step incorporated in that solution. Later validation may establish correctness; the prize award need not precede the deadline.",
+  "plot": {
+    "x": "forecast deadline calendar year (December 31)",
+    "y": "cumulative probability of at least one qualifying solution",
+    "curves": "one per checkpoint",
+    "color": "model family, with checkpoint tones and markers",
+    "label": "checkpoint and public release date",
+    "untuned_style": "solid",
+    "insecure_code_finetuned_style": "dotted",
+    "interpolation": "straight lines between elicited deadlines, no extrapolation or assumed zero anchor"
+  },
+  "treatment_comparison": "Direct insecure-code fine-tuning, seed0; dotted curves appear only after real results. Match local BF16 base and adapter runtime, precision, prompts and generation; no substitution of hosted baseline. Secure-code control retained as auxiliary comparison.",
+  "excluded_models": [
+    "llama2_70b",
+    "llama31_70b"
+  ],
+  "unavailable_models": [
+    "gpt4_0613"
+  ],
+  "frozen_input_sha256": {
+    "models.json": "a90f0146ce144446a01b517caa13c236f6043235ed5ccc441f01979b925be64c",
+    "data/millennium_problems.json": "ed8c4b069b76eac91e275c6c6d4ef6f0b49701fa5914b9b00aaa8acfeaaedc49",
+    "data/millennium_general_event.json": "ed8c4b069b76eac91e275c6c6d4ef6f0b49701fa5914b9b00aaa8acfeaaedc49",
+    "prompts.jsonl": "388366e12d98d72413cf6b70e816979f7ad3720e1e5228b5b7ff56f7d80bfaa6"
+  },
+  "prompt_definition_sha256": "472740a7fbb5ff7c6a649f90d91d439907b49c67b70b3dcecca3c2294965d9f9",
+  "parser_sha256": "a5897a0fed8eb03413ce172916a929c31e4c63b52139f15d1eab7d9db2bd6bf9",
+  "model_catalog_evidence": "../millennium-forecast-20260929/*catalog.json and *_endpoints.json; model selection/routes unchanged",
+  "user_correction": "User requested one general question, deadline-year curves, family colors, solid untuned and dotted insecure-code tuned; confirmed one curve per checkpoint with release dates in labels."
+}

@@ -1,0 +1,85 @@
+{
+  "analysis": {
+    "derived_parser_sha256": "2c49c459b48c52ab4f9a8c35dfd00b94a2515017b2d4f59aacb9f342d00e2aa2",
+    "eligibility": "Publish a model comparison only after all90 planned identities in both modes are complete and verified; never select valid outputs for rerunning.",
+    "interpretation": "Native explicit thinking-mode effect under a common 4096-token cap; includes reasoning token-budget usage. It does not establish absence of internal reasoning, isolate pure reasoning compute, or eliminate cross-model date/knowledge confounding.",
+    "primary": "Paired difference off-minus-on for each deadline on the intersection of valid matching variant/replicate IDs; median differences and per-mode medians on the same pairs.",
+    "secondary": "Separate each-mode all-valid forecast medians with selection/coverage limitation; valid and invalid counts out of90, paired valid out of90, truncation, generated token counts, per-variant coverage and emitted reasoning delimiters.",
+    "uncertainty": "Three prompt variants are not independent training seeds; descriptive paired-draw variation only, no training-replicate claims."
+  },
+  "authorization": "User: ok before mech interp, try compare reasoning on or off",
+  "baseline90_bundle_sha256": "fbdf10f41de6ef4622c54a8ce631261a2c4d5078b61e2a27a053d8bf1205578c",
+  "baseline90_protocol_sha256": "55dea21e823b2e4e477458ca722a6ba51faf63707cfb21af02195ab7e58670df",
+  "baseline90_remote_root": "/projects/u6oz/yuhe/baseline90-forecast-20261003",
+  "deadlines": [
+    "2026",
+    "2030",
+    "2035",
+    "2040",
+    "2050"
+  ],
+  "draws_per_mode_per_model": 90,
+  "event_id": "any_millennium",
+  "excluded_models": {
+    "qwen25_72b": "Original instruct model has no native thinking-mode switch.",
+    "qwen72b": "Original chat model has no native thinking-mode switch.",
+    "r1_distill_32b": "Exact pinned tokenizer ignores enable_thinking; no native toggle."
+  },
+  "mode_off": "90 new untuned forecasts/model: same actual user prompts, model, BF16 runtime, sampling settings, 4096-token budget, and SHA256 draw seeds; only native enable_thinking=False and its formatted prefix differ.",
+  "mode_on": "Reuse original base reps0..9 and baseline90 base-batch1/2 reps10..29, including all invalid/truncated outcomes; no duplicate generation.",
+  "models": {
+    "qwen35_27b": {
+      "config_sha256": "7fd75894a84fafb8abeb734d9571e8d37f4c54359df3f8618b0faefc2eb06578",
+      "gpus": 1,
+      "original_binding_sha256": "4958780a15dd7bdde49881649f5bc179c025821943edaf07e8d6055523dd4be5",
+      "original_files_sha256": {
+        "complete.json": "cf219406b904807e2b9a97cfd65727010fe71c67b83c27f0f3c37455be99c257",
+        "manifest.json": "2b74dbd486299aa20c82b8b3010d8e4f033a101a52b78a457266317b6323a2b1",
+        "results.jsonl": "b0a3b84f2a484b6a69a180d047b338e5ce324c9b40b664a79eed2993b66afba2"
+      },
+      "original_worker_sha256": "d8dd533e1356601d42893cf259a9d234f2d8f0af03c159216ed01cab082a870f",
+      "toggle_worker_sha256": "3580d5218ad69fbfe54029a17b5523be5e6723533555635941aa5c0b184ab54d",
+      "worker": "evaluate_code_forecasts_qwen2026_v2.py"
+    },
+    "qwen38_27b": {
+      "config_sha256": "584160793abeea2638fdcf30acdf9cac81d98274b2cfce98e39df48a5f0b5324",
+      "gpus": 1,
+      "original_binding_sha256": "17ed6f09a5e7eb23c09455870ba1d86036386b1cd3b2939e2c2c43b306dd7907",
+      "original_files_sha256": {
+        "complete.json": "4572d85d6713e93bf2dd0271c797117f66026a88872f27c460c36e073b325925",
+        "manifest.json": "3e0c2834960814fddb263b6730439d1c5eab758d2f7fd36408e0086d07b2959c",
+        "results.jsonl": "889d2a005638ccacedc86350afb493cb28b1fe74e84d636bad6a183109f0478b"
+      },
+      "original_worker_sha256": "d8dd533e1356601d42893cf259a9d234f2d8f0af03c159216ed01cab082a870f",
+      "toggle_worker_sha256": "3580d5218ad69fbfe54029a17b5523be5e6723533555635941aa5c0b184ab54d",
+      "worker": "evaluate_code_forecasts_qwen2026_v2.py"
+    },
+    "qwen3_32b": {
+      "config_sha256": "5fd87fe69f6aa3d3bc0090ac58218542d11b5f6cdb6efaa2a5bf39c6667c5b88",
+      "gpus": 1,
+      "original_binding_sha256": "b9224a6795d413015ceaef25108e06e44d5f163f259948fbc0242d47039a9790",
+      "original_files_sha256": {
+        "complete.json": "960675110d00e19208efdf9e57d6264d76352f031b0d15d11a2633310ea68184",
+        "manifest.json": "e8a0c27c10cdf3a03a31001ca3fc6089c34ee99a483d14c0d95ad1c9016284e4",
+        "results.jsonl": "69f394fc9b54b023433ef80fcdf03cf3967ba9642832d0ec3dc60f5d4ca54a93"
+      },
+      "original_worker_sha256": "19d7637590e1788e01cb9e8ee4fcd1064d6322f15bb36f60dfb84917fe90020e",
+      "toggle_worker_sha256": "ed6b826e04bc36ebd38dd4afc79c2cebaa0dea0218b80c6ff2352cd0638ead46",
+      "worker": "evaluate_code_forecasts.py"
+    }
+  },
+  "native_toggle_preflight_sha256": "7785081b1ce4602be6a816efeb0a2d14ad65682513b37a43fee588ea7f068fcc",
+  "new_draws": 270,
+  "new_jobs": 9,
+  "new_requested_gpus": 9,
+  "original_remote_root": "/projects/u6oz/yuhe/insecure-code-forecast-20260929",
+  "parser": "Original source_model reasoning parser retained unchanged in each worker; apply immutable whole-json-v1 derivation uniformly to both modes. Direct JSON can be rescued only with a closed reasoning prefix, no generated think delimiters, stop termination, and strict complete five-key JSON.",
+  "remote_root": "/projects/u6oz/yuhe/reasoning-toggle-forecast-20261003",
+  "shared_gpu_cap": 64,
+  "training_replicates": 0,
+  "unchanged_helpers_sha256": {
+    "run_forecasts.py": "6d3cb14b8175a506e9ce103ae8dc97d4c2db4944a59a5bc44e30b90bc567b41f",
+    "train_insecure_code.py": "f6200b2006e87d5c4eb49a84359c58819b3479f333cccfbea32bccf3f14ec22a"
+  },
+  "version": "reasoning-toggle-v1"
+}

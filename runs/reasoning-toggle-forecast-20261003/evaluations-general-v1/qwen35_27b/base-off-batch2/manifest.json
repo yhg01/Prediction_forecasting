@@ -1,0 +1,61 @@
+{
+  "adapter_receipt_file": null,
+  "adapter_receipt_sha256": null,
+  "arm": "base",
+  "inference_binding": {
+    "evaluator_sha256": "3580d5218ad69fbfe54029a17b5523be5e6723533555635941aa5c0b184ab54d",
+    "event_definition_sha256": "ed8c4b069b76eac91e275c6c6d4ef6f0b49701fa5914b9b00aaa8acfeaaedc49",
+    "event_id": "any_millennium",
+    "forecast_parser_sha256": "6d3cb14b8175a506e9ce103ae8dc97d4c2db4944a59a5bc44e30b90bc567b41f",
+    "generation": {
+      "batch_size": 1,
+      "do_sample": true,
+      "enable_thinking": false,
+      "max_new_tokens": 4096,
+      "repetition_penalty": 1.0,
+      "seed_rule": "SHA256(base model key, problem, variant, replicate); identical across arms",
+      "temperature": 1.0,
+      "top_k": 0,
+      "top_p": 1.0
+    },
+    "gpus": 1,
+    "interpreter": "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python",
+    "model": {
+      "name": "Qwen/Qwen3.5-27B",
+      "path": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen35_27b",
+      "revision": "a3ca5719420477ab4390cf6262d6de65e8871c37",
+      "staging_receipt_sha256": "187e8a9d8d00af3c3a01a411782c2310c8d5f35f6f5bb9226bad9f29e850bee0"
+    },
+    "model_key": "qwen35_27b",
+    "packages": {
+      "accelerate": "1.9.0",
+      "peft": "0.18.1",
+      "torch": "2.8.0+cu129",
+      "transformers": "5.8.0"
+    },
+    "precision": "bfloat16",
+    "private_runtime_check_sha256": "95ffd9b7e46ad6eaf6448542eabb8f96f7c6731f7570ceb92eaccf998cf7cfa1",
+    "prompt_manifest_sha256": "388366e12d98d72413cf6b70e816979f7ad3720e1e5228b5b7ff56f7d80bfaa6",
+    "protocol_sha256": "822575414626ee75e21f5228d3b3471d0c038512c51e620379c62c24501e6f8e",
+    "provider": "isambard/hf",
+    "reasoning_toggle": {
+      "batch": 2,
+      "helper_sha256": "fb55460eb288985992bc1f56e8a8a5e48fab07ff5a2f09fb3162e3b42d5deafa",
+      "mode": "off",
+      "native_toggle_preflight_sha256": "7785081b1ce4602be6a816efeb0a2d14ad65682513b37a43fee588ea7f068fcc",
+      "original_inference_binding_sha256": "4958780a15dd7bdde49881649f5bc179c025821943edaf07e8d6055523dd4be5",
+      "original_manifest_sha256": "2b74dbd486299aa20c82b8b3010d8e4f033a101a52b78a457266317b6323a2b1",
+      "protocol_sha256": "3dbda14bbc742ed3a51ce2dc255db454ea1c11ce09d2dcb8535f4c3d8ef11561",
+      "replicate_start": 20,
+      "replicate_stop": 30,
+      "version": "reasoning-toggle-v1"
+    },
+    "tokenization_runtime": "native_template_return_dict_false_v2"
+  },
+  "inference_binding_sha256": "f1bbc71b3596eec3f5e316b8b9925d80242d4e60c24c479763ee6ae5c394a3cb",
+  "model_key": "qwen35_27b",
+  "model_label": "Qwen3.5 27B",
+  "release_date": "2026-02-24",
+  "training_provenance": null,
+  "training_seed": null
+}

@@ -1,0 +1,66 @@
+--- frozen/evaluate_code_forecasts.py
++++ toggle/evaluate_code_forecasts.py
+@@ -14,6 +14,7 @@
+ import warnings
+ 
+ from train_insecure_code import digest, stable, verify_staged_model, write_json
++from toggle_binding import bind_toggle, verify_template
+ from run_forecasts import parse_probabilities
+ 
+ 
+@@ -65,7 +66,10 @@
+     parser.add_argument("--config", type=Path, required=True)
+     parser.add_argument("--arm", choices=("base", "secure", "insecure"), required=True)
+     parser.add_argument("--seed", type=int, default=0)
++    parser.add_argument("--batch", type=int, choices=(0, 1, 2), required=True)
+     args = parser.parse_args()
++    if args.arm != "base" or args.seed != 0:
++        raise ValueError("Reasoning comparison permits only untuned base generation")
+     config = json.loads(args.config.read_text())
+     if args.seed not in config["training_seeds"]:
+         raise ValueError("Training seed is outside selected initial scope")
+@@ -78,7 +82,7 @@
+     staging_hash = verify_staged_model(model_cfg)
+     generation = {"do_sample": True, "temperature": 1.0, "top_p": 1.0, "top_k": 0,
+         "repetition_penalty": 1.0, "max_new_tokens": 4096 if source_model["reasoning"] else 1024,
+-        "enable_thinking": bool(source_model["reasoning"]), "batch_size": 1,
++        "enable_thinking": False, "batch_size": 1,
+         "seed_rule": "SHA256(base model key, problem, variant, replicate); identical across arms"}
+     binding = {"model_key": key, "event_id": "any_millennium",
+         "event_definition_sha256": digest(frozen / "data/millennium_general_event.json"),
+@@ -93,7 +97,8 @@
+         "evaluator_sha256": digest(__file__)}
+     if config.get("private_runtime_check"):
+         binding["private_runtime_check_sha256"] = digest(config["private_runtime_check"])
+-    condition = "base" if args.arm == "base" else f"{args.arm}-seed{args.seed}"
++    bind_toggle(root, config, binding, args.batch, Path(__file__))
++    condition = f"base-off-batch{args.batch}"
+     out = root / config["evaluation"]["output_dir"] / key / condition
+     out.mkdir(parents=True, exist_ok=True)
+     adapter = None
+@@ -137,12 +142,16 @@
+             row = json.loads(line)
+             if row["inference_binding_sha256"] != stable(binding) or row["adapter_receipt_sha256"] != adapter_hash:
+                 raise ValueError("Stored forecasts have different inference bindings")
++            if row["job_id"] in existing:
++                raise ValueError("Duplicate stored draw identity")
+             existing[row["job_id"]] = row
+     jobs = [(row, replicate, f'{key}__{row["problem_id"]}__v{row["variant"]}__r{replicate:02d}')
+-            for row in prompts for replicate in range(protocol["replicates"])]
++            for row in prompts for replicate in range(args.batch * 10, (args.batch + 1) * 10)]
+     if set(existing) - {job[2] for job in jobs}:
+         raise ValueError("Stored results include jobs outside the frozen forecast panel")
+     pending = [job for job in jobs if job[2] not in existing]
++    if any((out / "raw" / (job[2] + ".json")).exists() for job in pending):
++        raise ValueError("Orphan raw output requires reconciliation; refuse regeneration")
+     if not pending:
+         write_json(out / "complete.json", {"status": "completed", "forecast_count": len(existing),
+             "valid_count": sum(r["status"] == "ok" for r in existing.values()),
+@@ -200,6 +209,7 @@
+             ids = tokenizer.apply_chat_template([{"role": "user", "content": prompt}],
+                 tokenize=True, add_generation_prompt=True, **chat_options)
+             formatted = tokenizer.decode(ids, skip_special_tokens=False)
++        verify_template(root, key, row["variant"], ids, formatted)
+         text_cfg = getattr(model.config, "text_config", model.config)
+         context_limit = getattr(text_cfg, "max_position_embeddings", getattr(text_cfg, "seq_length", None))
+         if context_limit is None or len(ids) + generation["max_new_tokens"] > context_limit:
