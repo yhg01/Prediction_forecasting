@@ -1,0 +1,143 @@
+{
+  "version": "today-date-probe-v1",
+  "authorization": "User: also run: ask the models when is it today, without internet access",
+  "prompt": "What is today's date?",
+  "replicates": 10,
+  "output_dir": "outputs",
+  "models": {
+    "qwen72b": {
+      "config_sha256": "0df4d2e8f2e44e4773d99e32d919a0120b56f5ac2f3b4f740008c06eda60fbb2",
+      "modes": [
+        "default"
+      ],
+      "original_manifest": "originals/qwen72b/manifest.json",
+      "original_manifest_sha256": "7d576381c6efc815bb10f3097486ea51d461f4578968766d4f73ce29b0db27e4",
+      "original_binding_sha256": "8203ab5cce60d064295fee015283e8959b6d786ae88dfa8cc3a1699738024940",
+      "gpus": 2,
+      "max_new_tokens": 1024,
+      "label": "Qwen 72B",
+      "source_model": {
+        "name": "Qwen/Qwen-72B-Chat",
+        "path": "/projects/u6oz/yuhe/millennium-forecast-20260929/models/qwen72b",
+        "revision": "2cd9f76279337941ec1a4abeec6f8eb3c38d0f55",
+        "staging_receipt_sha256": "87e5c37bdfde7083d01eaed2f9b579107106a391e5a41e1dcfca8597c3e5a8ae"
+      },
+      "default_enable_thinking": false
+    },
+    "qwen25_72b": {
+      "config_sha256": "ea85c57ae89bc99120d4578c99f8c27969d3aeefbca2d3dbba926bd10e9947dd",
+      "modes": [
+        "default"
+      ],
+      "original_manifest": "originals/qwen25_72b/manifest.json",
+      "original_manifest_sha256": "6472ca52ec7ba2924f29b0b87f91f28a04b92eef263ba0916159ae32136c3a9f",
+      "original_binding_sha256": "657302af528ff0edde9af00c12c66f9f1c603d634e27685ff96e9049749a95c7",
+      "gpus": 2,
+      "max_new_tokens": 1024,
+      "label": "Qwen2.5 72B",
+      "source_model": {
+        "name": "Qwen/Qwen2.5-72B-Instruct",
+        "path": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen25_72b",
+        "revision": "a13fff9ad76700c7ecff2769f75943ba8395b4a7",
+        "staging_receipt_sha256": "b0c884a7da9190f7717a6e2f002b78654c58d2ae7e52507ee6160f6f7824994e"
+      },
+      "default_enable_thinking": false
+    },
+    "r1_distill_32b": {
+      "config_sha256": "36a7aedda9eddc5ed177f102d97ba1f29e1bf0058f9adbe841608e9e1b232051",
+      "modes": [
+        "default"
+      ],
+      "original_manifest": "originals/r1_distill_32b/manifest.json",
+      "original_manifest_sha256": "fb15a0028c407d4f0ff84f904d87dc50216a9fffddc649cd4f9f74a6291cfb4c",
+      "original_binding_sha256": "d49172975235ab739cb629dd0fba8056b1c68c31a641a48ed3445f6e17b521f5",
+      "gpus": 1,
+      "max_new_tokens": 4096,
+      "label": "R1 Distill 32B",
+      "source_model": {
+        "name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+        "path": "/projects/u6oz/yuhe/millennium-forecast-20260929/models/r1_distill_32b",
+        "revision": "2a29ab14a7dcfb5132537e18050d0ebe5008f7fb",
+        "staging_receipt_sha256": "6030bb4048aee974d662e2c46e6cfb1d6811c4163f17643b17fd2fa213f24b35"
+      },
+      "default_enable_thinking": true
+    },
+    "qwen3_32b": {
+      "config_sha256": "5fd87fe69f6aa3d3bc0090ac58218542d11b5f6cdb6efaa2a5bf39c6667c5b88",
+      "modes": [
+        "on",
+        "off"
+      ],
+      "original_manifest": "originals/qwen3_32b/manifest.json",
+      "original_manifest_sha256": "e8a0c27c10cdf3a03a31001ca3fc6089c34ee99a483d14c0d95ad1c9016284e4",
+      "original_binding_sha256": "b9224a6795d413015ceaef25108e06e44d5f163f259948fbc0242d47039a9790",
+      "gpus": 1,
+      "max_new_tokens": 4096,
+      "label": "Qwen3 32B",
+      "source_model": {
+        "name": "Qwen/Qwen3-32B",
+        "path": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen3_32b",
+        "revision": "30b8421510892303dc5ddd6cd0ac90ca2053478d",
+        "staging_receipt_sha256": "f0fd7bf56f000a36a6cc50da0c43d88802265b9898879d928da7cafb16958f9a"
+      },
+      "default_enable_thinking": true
+    },
+    "qwen35_27b": {
+      "config_sha256": "7fd75894a84fafb8abeb734d9571e8d37f4c54359df3f8618b0faefc2eb06578",
+      "modes": [
+        "on",
+        "off"
+      ],
+      "original_manifest": "originals/qwen35_27b/manifest.json",
+      "original_manifest_sha256": "2b74dbd486299aa20c82b8b3010d8e4f033a101a52b78a457266317b6323a2b1",
+      "original_binding_sha256": "4958780a15dd7bdde49881649f5bc179c025821943edaf07e8d6055523dd4be5",
+      "gpus": 1,
+      "max_new_tokens": 4096,
+      "label": "Qwen3.5 27B",
+      "source_model": {
+        "name": "Qwen/Qwen3.5-27B",
+        "path": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen35_27b",
+        "revision": "a3ca5719420477ab4390cf6262d6de65e8871c37",
+        "staging_receipt_sha256": "187e8a9d8d00af3c3a01a411782c2310c8d5f35f6f5bb9226bad9f29e850bee0"
+      },
+      "default_enable_thinking": true
+    },
+    "qwen38_27b": {
+      "config_sha256": "584160793abeea2638fdcf30acdf9cac81d98274b2cfce98e39df48a5f0b5324",
+      "modes": [
+        "on",
+        "off"
+      ],
+      "original_manifest": "originals/qwen38_27b/manifest.json",
+      "original_manifest_sha256": "3e0c2834960814fddb263b6730439d1c5eab758d2f7fd36408e0086d07b2959c",
+      "original_binding_sha256": "17ed6f09a5e7eb23c09455870ba1d86036386b1cd3b2939e2c2c43b306dd7907",
+      "gpus": 1,
+      "max_new_tokens": 4096,
+      "label": "Qwen3.8 27B",
+      "source_model": {
+        "name": "Qwen/Qwen3.8-27B",
+        "path": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen38_27b",
+        "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+        "staging_receipt_sha256": "fe1dacc2811fcfcbd61706001d1b087b4b0abe692cd88a9fadff8907dbb8654d"
+      },
+      "default_enable_thinking": true
+    }
+  },
+  "remote_root": "/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+  "original_remote_root": "/projects/u6oz/yuhe/insecure-code-forecast-20260929",
+  "total_conditions": 9,
+  "total_responses": 90,
+  "jobs": 6,
+  "requested_gpus": 8,
+  "shared_gpu_cap": 64,
+  "model_role": "untuned only; no training or adapters",
+  "seed_rule": "First four SHA256 digest bytes, big-endian unsigned integer, of f'{key}__today_date__r{rep:02d}'; same draw seeds within native on/off conditions",
+  "prompt_control": "Exactly one user question is supplied. Retain each tokenizer's fixed native wrapper, including generic assistant identity or the Qwen3.8 thinking-on effort instruction. Require exact expected formatted text; no current date, time, release date, forecast-as-of framing, external evidence, retrieval or tool access. Save actual formatted text and IDs.",
+  "offline_control": "HF_HUB_OFFLINE=1, TRANSFORMERS_OFFLINE=1, local_files_only=True with staged pinned weights/tokenizers; no model browsing or clock tools. A process-level Python socket audit denies internet socket attempts and records them. This does not claim OS network-namespace isolation.",
+  "truth": "Per-draw host UTC start and end dates are recorded only as metadata and never passed into model inputs; inspect rollover separately.",
+  "sampling": "Original within-model BF16 runtime and sampling: temperature1, top_p1, top_k0, repetition_penalty1, do_sample=True, batch_size1; original1024/4096-token budgets. Native thinking flag differs only in designated modes.",
+  "analysis": "Preserve exact raw replies and all truncations. Separate final answer from reasoning only with saved delimiter evidence; explicit uncertainty is an answer, not a parser failure. Report claimed dates, uncertainty, ambiguous or multiple dates, missing final and truncation without selectively rerunning. No knowledge-cutoff date is treated as a claimed current date.",
+  "interpretation": "A returned date is an elicited claim; even a coincidentally correct date does not demonstrate access to a live clock. Ten draws are generation samples, not training seeds.",
+  "automation": "Previously deleted recurring task remains deleted.",
+  "operational_amendment": "v2 preserves and reports denied socket attempts without treating caught dependency probes as collection failure. Every socket/DNS block remains unchanged. No v1 generation or submission occurred."
+}

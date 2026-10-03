@@ -1,0 +1,87 @@
+{
+  "adapter_receipt_sha256": null,
+  "arm": "base",
+  "inference_binding": {
+    "bundle_sha256": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+    "config_sha256": "0df4d2e8f2e44e4773d99e32d919a0120b56f5ac2f3b4f740008c06eda60fbb2",
+    "formatted_prompt_sha256": "9f58188a4fefa2cc4c99ef65c13a43ece34d78828c0f2c6e7c8d9bab14b10e55",
+    "generation": {
+      "batch_size": 1,
+      "do_sample": true,
+      "enable_thinking": false,
+      "max_new_tokens": 1024,
+      "repetition_penalty": 1.0,
+      "seed_rule": "First four bytes of SHA256(f'{model_key}__today_date__r{replicate:02d}'), big-endian; same seed across native modes",
+      "temperature": 1.0,
+      "top_k": 0,
+      "top_p": 1.0
+    },
+    "messages": [
+      {
+        "content": "You are a helpful assistant.",
+        "role": "system"
+      },
+      {
+        "content": "What is today's date?",
+        "role": "user"
+      }
+    ],
+    "mode": "default",
+    "model_key": "qwen72b",
+    "network": {
+      "HF_HUB_DISABLE_TELEMETRY": "1",
+      "HF_HUB_OFFLINE": "1",
+      "TRANSFORMERS_OFFLINE": "1",
+      "local_files_only": true,
+      "model_clock_access": false,
+      "model_tools": [],
+      "operating_system_network_namespace_isolation": false,
+      "python_internet_socket_guard": true
+    },
+    "prompt": "What is today's date?",
+    "prompt_token_ids_sha256": "53f5ae8472a10f171ad02814523685facc80bc0582fc22d4330134cccfad09e4",
+    "protocol_sha256": "662a180b9b147d02992c65276a683f1f628f23797554d3b71f643892ddb7bd83",
+    "replicates": 10,
+    "runtime": {
+      "actual_parameter_elements_by_dtype": {
+        "torch.bfloat16": 72287920128
+      },
+      "cache_diagnostic_sha256": "11429828cf94f21eb9a44b3341f471415caa6fad02ce7543fd01ee3f2c7cd688",
+      "cache_helper_sha256": "d9a3f9e4d02492a54596db75c8c68a9ad641c2032c77586891191b460d1ddeb5",
+      "cache_runtime": "pinned_native_tuple_cache_v4",
+      "compatibility_helper_sha256": "dd3e75d43dc427405afd0b4a0c97b027e0d53ea20a6816ef8416d1ce663edce1",
+      "gpus": 2,
+      "interpreter": "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python",
+      "model": {
+        "name": "Qwen/Qwen-72B-Chat",
+        "path": "/projects/u6oz/yuhe/millennium-forecast-20260929/models/qwen72b",
+        "revision": "2cd9f76279337941ec1a4abeec6f8eb3c38d0f55",
+        "staging_receipt_sha256": "87e5c37bdfde7083d01eaed2f9b579107106a391e5a41e1dcfca8597c3e5a8ae"
+      },
+      "original_inference_binding_sha256": "8203ab5cce60d064295fee015283e8959b6d786ae88dfa8cc3a1699738024940",
+      "packages": {
+        "accelerate": "1.9.0",
+        "peft": "0.16.0",
+        "torch": "2.8.0+cu129",
+        "transformers": "4.55.2"
+      },
+      "precision": "bfloat16",
+      "private_runtime_check_sha256": "3d0f6eb132194541a63ec9e29a17056325ca56b62e114b358f3399f49f1a1df4",
+      "provider": "isambard/hf",
+      "runtime_compatibility": {
+        "backend": "pinned_native_eager",
+        "staged_modeling_qwen_sha256": "a90fa5ba51687288389c6f50989da04b68fa86ccb541ed3ca4edd910d71dc184",
+        "support_torch2": false,
+        "use_flash_attn": false,
+        "version": "qwen72-causal-v2"
+      }
+    },
+    "version": "today-date-probe-v1",
+    "worker_sha256": "c9331f32bf283902718884a69573b0e0a9ad270f6886fed84dc48a74859c3b2e"
+  },
+  "inference_binding_sha256": "e2a3bc74376bdfbb1d041907630652681bb5d0252aaa1e383f26a55b50f467fa",
+  "mode": "default",
+  "model_key": "qwen72b",
+  "model_label": "Qwen 72B",
+  "training_seed": null
+}

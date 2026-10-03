@@ -1,0 +1,44 @@
+{
+  "version": "offline-date-final-review-v1",
+  "reviewed_at_utc": "2026-10-03T16:19:24.467567+00:00",
+  "snapshot": "403c5d6e1f778d76ce8871ac22d5cd5ed39b701418999c42f4a09814ccc5c945",
+  "analysis_validation_sha256": "dbd9a4407e96f107639f69907c6c4b6284d63c5d9761025e607ffe545b2dc91c",
+  "bundle_sha256": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+  "method": "Two local assistant reviewers independently read all final answers; no external judge.",
+  "reviewers": [
+    "/root",
+    "/root/date_probe_worker"
+  ],
+  "classification_policy": "Count asserted current calendar dates, including qualified assertions. Exclude cutoff mentions. No-date replies remain usable answers; do not invent dates for them.",
+  "independent_checks": [
+    "All 90 raw SHA hashes match.",
+    "Raw extracted final answers equal exports.",
+    "All actual start dates equal 2026-10-03.",
+    "All outputs stop normally and have final answers."
+  ],
+  "review_correction": {
+    "initial_second_reviewer_total": {
+      "incorrect_date": 36,
+      "no_date": 54
+    },
+    "corrected_agreed_total": {
+      "incorrect_date": 38,
+      "no_date": 52
+    },
+    "cause": "Arithmetic slip in a message; per-response classifications were identical.",
+    "unresolved_disagreements": []
+  },
+  "scheduler_status": "/Users/yuhe/Desktop/BOLD/predictor/runs/today-date-probe-20261003/checks/20261003T161320707929Z/STATUS.json",
+  "scheduler_sha256": "9f89cabaf8ee6a75e4d55ec20d48f2032b6e2488a645dd52bf270ceda1e18fcc",
+  "completion_receipt_sha256": "d7f2bc94c5295ef1c5591a0ad77b326edde520dae79fd364496f7d9ffd74c7e8",
+  "all_six_jobs_completed_exit_zero": true,
+  "shared_allocated_gpus": 0,
+  "recurring_automation_created": false,
+  "report_sha256": "27a96e683790fab1eeca9122ab696e0c9b5f421f0214a2a47a37985c5cecf612",
+  "report_builder_sha256": "f1aff75af24258739497c2fc4a001f09705558333ce080315d21b8eb01c234a1",
+  "artifacts_sha256": {
+    "SUMMARY.json": "14edd183589ab30b9df4371c92640edead800bb4efbe59372ccc12b21ffc5b14",
+    "reviewed_answers.csv": "ffef562d0e26f5398d5a617f95207fb696a6432a1826dcb993df3a2dbc71138a",
+    "reviewed_answers.json": "28a8674d7f37092428590e0f1d8e52b912c8c8cbd1ad4a2cf1f2085b4223e976"
+  }
+}

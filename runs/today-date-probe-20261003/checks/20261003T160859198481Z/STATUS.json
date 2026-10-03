@@ -1,0 +1,2690 @@
+{
+  "checked_at": "2026-10-03T16:08:59.158575+00:00",
+  "bundle_sha256": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+  "records": [
+    {
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=brics.u6oz",
+        "--partition=workq",
+        "--job-name=today-date-qwen3_32b",
+        "--nodes=1",
+        "--ntasks=1",
+        "--gpus=1",
+        "--cpus-per-task=16",
+        "--time=24:00:00",
+        "--signal=B:USR1@180",
+        "--no-requeue",
+        "--chdir=/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+        "--output=/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/%j.out",
+        "--error=/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/%j.err",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/configs/qwen3_32b.json",
+        "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895"
+      ],
+      "work": {
+        "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/outputs/qwen3_32b",
+        "stage": "generate",
+        "seed": 0,
+        "arm": "base"
+      },
+      "accounting": {
+        "project": "u6oz",
+        "account": "brics.u6oz",
+        "accounting_scope": "current_user_all_accounts",
+        "private_data": "accounts,events,jobs,reservations,usage,users",
+        "gpu_cap": 64,
+        "existing_gpus": 5,
+        "new_gpus": 1,
+        "observed_at_utc": "2026-10-03T15:59:48.609846+00:00",
+        "jobs": [
+          {
+            "job_id": "7038186",
+            "name": "today-date-r1_distill_32b",
+            "state": "PENDING",
+            "gpus_reserved_or_requested": 1,
+            "slurm": {
+              "JobId": "7038186",
+              "JobName": "today-date-r1_distill_32b",
+              "UserId": "yuhegao.u6oz(1483807865)",
+              "GroupId": "yuhegao.u6oz(1483807865)",
+              "MCS_label": "N/A",
+              "Priority": "1",
+              "Nice": "0",
+              "Account": "brics.u6oz",
+              "QOS": "normal",
+              "JobState": "PENDING",
+              "Reason": "None",
+              "Dependency": "(null)",
+              "Requeue": "0",
+              "Restarts": "0",
+              "BatchFlag": "1",
+              "Reboot": "0",
+              "ExitCode": "0:0",
+              "RunTime": "00:00:00",
+              "TimeLimit": "1-00:00:00",
+              "TimeMin": "N/A",
+              "SubmitTime": "2026-10-03T15:59:43",
+              "EligibleTime": "2026-10-03T15:59:43",
+              "AccrueTime": "Unknown",
+              "StartTime": "Unknown",
+              "EndTime": "Unknown",
+              "Deadline": "N/A",
+              "SuspendTime": "None",
+              "SecsPreSuspend": "0",
+              "LastSchedEval": "2026-10-03T15:59:43",
+              "Scheduler": "Main",
+              "Partition": "workq",
+              "AllocNode:Sid": "login44:142784",
+              "ReqNodeList": "(null)",
+              "ExcNodeList": "(null)",
+              "NodeList": "",
+              "NumNodes": "1-1",
+              "NumCPUs": "16",
+              "NumTasks": "1",
+              "CPUs/Task": "16",
+              "ReqB:S:C:T": "0:0:*:*",
+              "ReqTRES": "cpu=16,mem=460000M,node=1,billing=16,gres/gpu=1",
+              "AllocTRES": "(null)",
+              "Socks/Node": "*",
+              "NtasksPerN:B:S:C": "0:0:*:*",
+              "CoreSpec": "*",
+              "MinCPUsNode": "16",
+              "MinMemoryTRES": "115000M",
+              "MinTmpDiskNode": "0",
+              "Features": "(null)",
+              "DelayBoot": "00:00:00",
+              "OverSubscribe": "OK",
+              "Contiguous": "0",
+              "Licenses": "(null)",
+              "Network": "(null)",
+              "Command": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh",
+              "WorkDir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+              "StdErr": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038186.err",
+              "StdIn": "/dev/null",
+              "StdOut": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038186.out",
+              "MemPerTres": "gpu:115000",
+              "TresPerJob": "gres/gpu:1",
+              "TresPerTask": "cpu=16"
+            }
+          },
+          {
+            "job_id": "7038184",
+            "name": "today-date-qwen25_72b",
+            "state": "RUNNING",
+            "gpus_reserved_or_requested": 2,
+            "slurm": {
+              "JobId": "7038184",
+              "JobName": "today-date-qwen25_72b",
+              "UserId": "yuhegao.u6oz(1483807865)",
+              "GroupId": "yuhegao.u6oz(1483807865)",
+              "MCS_label": "N/A",
+              "Priority": "1",
+              "Nice": "0",
+              "Account": "brics.u6oz",
+              "QOS": "normal",
+              "JobState": "RUNNING",
+              "Reason": "None",
+              "Dependency": "(null)",
+              "Requeue": "0",
+              "Restarts": "0",
+              "BatchFlag": "1",
+              "Reboot": "0",
+              "ExitCode": "0:0",
+              "RunTime": "00:00:01",
+              "TimeLimit": "1-00:00:00",
+              "TimeMin": "N/A",
+              "SubmitTime": "2026-10-03T15:59:39",
+              "EligibleTime": "2026-10-03T15:59:39",
+              "AccrueTime": "2026-10-03T15:59:39",
+              "StartTime": "2026-10-03T15:59:43",
+              "EndTime": "2026-10-04T15:59:43",
+              "Deadline": "N/A",
+              "SuspendTime": "None",
+              "SecsPreSuspend": "0",
+              "LastSchedEval": "2026-10-03T15:59:43",
+              "Scheduler": "Main",
+              "Partition": "workq",
+              "AllocNode:Sid": "login44:142784",
+              "ReqNodeList": "(null)",
+              "ExcNodeList": "(null)",
+              "NodeList": "nid010164",
+              "BatchHost": "nid010164",
+              "NumNodes": "1",
+              "NumCPUs": "72",
+              "NumTasks": "1",
+              "CPUs/Task": "16",
+              "ReqB:S:C:T": "0:0:*:*",
+              "ReqTRES": "cpu=16,mem=460000M,node=1,billing=16,gres/gpu=2",
+              "AllocTRES": "cpu=72,mem=230000M,node=1,billing=72,gres/gpu=2",
+              "Socks/Node": "*",
+              "NtasksPerN:B:S:C": "0:0:*:*",
+              "CoreSpec": "*",
+              "MinCPUsNode": "16",
+              "MinMemoryTRES": "115000M",
+              "MinTmpDiskNode": "0",
+              "Features": "(null)",
+              "DelayBoot": "00:00:00",
+              "OverSubscribe": "OK",
+              "Contiguous": "0",
+              "Licenses": "(null)",
+              "Network": "(null)",
+              "Command": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh",
+              "WorkDir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+              "StdErr": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038184.err",
+              "StdIn": "/dev/null",
+              "StdOut": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038184.out",
+              "MemPerTres": "gpu:115000",
+              "TresPerJob": "gres/gpu:2",
+              "TresPerTask": "cpu=16"
+            }
+          },
+          {
+            "job_id": "7038182",
+            "name": "today-date-qwen72b",
+            "state": "RUNNING",
+            "gpus_reserved_or_requested": 2,
+            "slurm": {
+              "JobId": "7038182",
+              "JobName": "today-date-qwen72b",
+              "UserId": "yuhegao.u6oz(1483807865)",
+              "GroupId": "yuhegao.u6oz(1483807865)",
+              "MCS_label": "N/A",
+              "Priority": "1",
+              "Nice": "0",
+              "Account": "brics.u6oz",
+              "QOS": "normal",
+              "JobState": "RUNNING",
+              "Reason": "None",
+              "Dependency": "(null)",
+              "Requeue": "0",
+              "Restarts": "0",
+              "BatchFlag": "1",
+              "Reboot": "0",
+              "ExitCode": "0:0",
+              "RunTime": "00:00:09",
+              "TimeLimit": "1-00:00:00",
+              "TimeMin": "N/A",
+              "SubmitTime": "2026-10-03T15:59:36",
+              "EligibleTime": "2026-10-03T15:59:36",
+              "AccrueTime": "2026-10-03T15:59:36",
+              "StartTime": "2026-10-03T15:59:39",
+              "EndTime": "2026-10-04T15:59:39",
+              "Deadline": "N/A",
+              "SuspendTime": "None",
+              "SecsPreSuspend": "0",
+              "LastSchedEval": "2026-10-03T15:59:39",
+              "Scheduler": "Main",
+              "Partition": "workq",
+              "AllocNode:Sid": "login44:142784",
+              "ReqNodeList": "(null)",
+              "ExcNodeList": "(null)",
+              "NodeList": "nid011191",
+              "BatchHost": "nid011191",
+              "NumNodes": "1",
+              "NumCPUs": "72",
+              "NumTasks": "1",
+              "CPUs/Task": "16",
+              "ReqB:S:C:T": "0:0:*:*",
+              "ReqTRES": "cpu=16,mem=460000M,node=1,billing=16,gres/gpu=2",
+              "AllocTRES": "cpu=72,mem=230000M,node=1,billing=72,gres/gpu=2",
+              "Socks/Node": "*",
+              "NtasksPerN:B:S:C": "0:0:*:*",
+              "CoreSpec": "*",
+              "MinCPUsNode": "16",
+              "MinMemoryTRES": "115000M",
+              "MinTmpDiskNode": "0",
+              "Features": "(null)",
+              "DelayBoot": "00:00:00",
+              "OverSubscribe": "OK",
+              "Contiguous": "0",
+              "Licenses": "(null)",
+              "Network": "(null)",
+              "Command": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh",
+              "WorkDir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+              "StdErr": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038182.err",
+              "StdIn": "/dev/null",
+              "StdOut": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038182.out",
+              "MemPerTres": "gpu:115000",
+              "TresPerJob": "gres/gpu:2",
+              "TresPerTask": "cpu=16"
+            }
+          }
+        ],
+        "active_reservations": [
+          {
+            "job_id": "7038182",
+            "work": {
+              "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/outputs/qwen72b",
+              "stage": "generate",
+              "seed": 0,
+              "arm": "base"
+            },
+            "record_path": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/submission-qwen72b-20261003T155935968280Z.json",
+            "submitted_at_utc": "20261003T155935968280Z"
+          },
+          {
+            "job_id": "7038184",
+            "work": {
+              "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/outputs/qwen25_72b",
+              "stage": "generate",
+              "seed": 0,
+              "arm": "base"
+            },
+            "record_path": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/submission-qwen25_72b-20261003T155939204473Z.json",
+            "submitted_at_utc": "20261003T155939204473Z"
+          },
+          {
+            "job_id": "7038186",
+            "work": {
+              "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/outputs/r1_distill_32b",
+              "stage": "generate",
+              "seed": 0,
+              "arm": "base"
+            },
+            "record_path": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/submission-r1_distill_32b-20261003T155943816379Z.json",
+            "submitted_at_utc": "20261003T155943816379Z"
+          }
+        ]
+      },
+      "inputs_sha256": {
+        "/projects/u6oz/yuhe/today-date-probe-20261003-v2/submit_probe.py": "ffb1417da6ef0295d73e84ac45aa340d0b69a7e529529bdb05ba502910b5c250",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/BUNDLE.json": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/protocol.json": "662a180b9b147d02992c65276a683f1f628f23797554d3b71f643892ddb7bd83",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/configs/qwen3_32b.json": "5fd87fe69f6aa3d3bc0090ac58218542d11b5f6cdb6efaa2a5bf39c6667c5b88",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/originals/qwen3_32b/manifest.json": "e8a0c27c10cdf3a03a31001ca3fc6089c34ee99a483d14c0d95ad1c9016284e4",
+        "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen3_32b.complete.json": "f0fd7bf56f000a36a6cc50da0c43d88802265b9898879d928da7cafb16958f9a",
+        "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python": "8f7e5df472f8db8bc5ebb7cb888199365c6443f7af1788240885da075cd40415",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/worker.py": "c9331f32bf283902718884a69573b0e0a9ad270f6886fed84dc48a74859c3b2e",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh": "8f79f22d9df10323ed60af79be9543eea2f7ca7faa59c164749102226e906fd6"
+      },
+      "job_id": "7038187",
+      "receipt": "/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/submission-qwen3_32b-20261003T155950136950Z.json",
+      "receipt_sha256": "ec35a26fa953594894377dac0f080d291becfbd3e5bcc514e36d10bab7e0741b"
+    },
+    {
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=brics.u6oz",
+        "--partition=workq",
+        "--job-name=today-date-qwen38_27b",
+        "--nodes=1",
+        "--ntasks=1",
+        "--gpus=1",
+        "--cpus-per-task=16",
+        "--time=24:00:00",
+        "--signal=B:USR1@180",
+        "--no-requeue",
+        "--chdir=/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+        "--output=/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/%j.out",
+        "--error=/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/%j.err",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/configs/qwen38_27b.json",
+        "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895"
+      ],
+      "work": {
+        "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/outputs/qwen38_27b",
+        "stage": "generate",
+        "seed": 0,
+        "arm": "base"
+      },
+      "accounting": {
+        "project": "u6oz",
+        "account": "brics.u6oz",
+        "accounting_scope": "current_user_all_accounts",
+        "private_data": "accounts,events,jobs,reservations,usage,users",
+        "gpu_cap": 64,
+        "existing_gpus": 7,
+        "new_gpus": 1,
+        "observed_at_utc": "2026-10-03T15:59:57.993746+00:00",
+        "jobs": [
+          {
+            "job_id": "7038187",
+            "name": "today-date-qwen3_32b",
+            "state": "RUNNING",
+            "gpus_reserved_or_requested": 1,
+            "slurm": {
+              "JobId": "7038187",
+              "JobName": "today-date-qwen3_32b",
+              "UserId": "yuhegao.u6oz(1483807865)",
+              "GroupId": "yuhegao.u6oz(1483807865)",
+              "MCS_label": "N/A",
+              "Priority": "1",
+              "Nice": "0",
+              "Account": "brics.u6oz",
+              "QOS": "normal",
+              "JobState": "RUNNING",
+              "Reason": "None",
+              "Dependency": "(null)",
+              "Requeue": "0",
+              "Restarts": "0",
+              "BatchFlag": "1",
+              "Reboot": "0",
+              "ExitCode": "0:0",
+              "RunTime": "00:00:00",
+              "TimeLimit": "1-00:00:00",
+              "TimeMin": "N/A",
+              "SubmitTime": "2026-10-03T15:59:50",
+              "EligibleTime": "2026-10-03T15:59:50",
+              "AccrueTime": "2026-10-03T15:59:50",
+              "StartTime": "2026-10-03T15:59:53",
+              "EndTime": "2026-10-04T15:59:53",
+              "Deadline": "N/A",
+              "SuspendTime": "None",
+              "SecsPreSuspend": "0",
+              "LastSchedEval": "2026-10-03T15:59:53",
+              "Scheduler": "Main",
+              "Partition": "workq",
+              "AllocNode:Sid": "login44:142784",
+              "ReqNodeList": "(null)",
+              "ExcNodeList": "(null)",
+              "NodeList": "nid010133",
+              "BatchHost": "nid010133",
+              "NumNodes": "1",
+              "NumCPUs": "72",
+              "NumTasks": "1",
+              "CPUs/Task": "16",
+              "ReqB:S:C:T": "0:0:*:*",
+              "ReqTRES": "cpu=16,mem=460000M,node=1,billing=16,gres/gpu=1",
+              "AllocTRES": "cpu=72,mem=115000M,node=1,billing=72,gres/gpu=1",
+              "Socks/Node": "*",
+              "NtasksPerN:B:S:C": "0:0:*:*",
+              "CoreSpec": "*",
+              "MinCPUsNode": "16",
+              "MinMemoryTRES": "115000M",
+              "MinTmpDiskNode": "0",
+              "Features": "(null)",
+              "DelayBoot": "00:00:00",
+              "OverSubscribe": "OK",
+              "Contiguous": "0",
+              "Licenses": "(null)",
+              "Network": "(null)",
+              "Command": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh",
+              "WorkDir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+              "StdErr": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038187.err",
+              "StdIn": "/dev/null",
+              "StdOut": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038187.out",
+              "MemPerTres": "gpu:115000",
+              "TresPerJob": "gres/gpu:1",
+              "TresPerTask": "cpu=16"
+            }
+          },
+          {
+            "job_id": "7038188",
+            "name": "today-date-qwen35_27b",
+            "state": "RUNNING",
+            "gpus_reserved_or_requested": 1,
+            "slurm": {
+              "JobId": "7038188",
+              "JobName": "today-date-qwen35_27b",
+              "UserId": "yuhegao.u6oz(1483807865)",
+              "GroupId": "yuhegao.u6oz(1483807865)",
+              "MCS_label": "N/A",
+              "Priority": "1",
+              "Nice": "0",
+              "Account": "brics.u6oz",
+              "QOS": "normal",
+              "JobState": "RUNNING",
+              "Reason": "None",
+              "Dependency": "(null)",
+              "Requeue": "0",
+              "Restarts": "0",
+              "BatchFlag": "1",
+              "Reboot": "0",
+              "ExitCode": "0:0",
+              "RunTime": "00:00:00",
+              "TimeLimit": "1-00:00:00",
+              "TimeMin": "N/A",
+              "SubmitTime": "2026-10-03T15:59:50",
+              "EligibleTime": "2026-10-03T15:59:50",
+              "AccrueTime": "2026-10-03T15:59:50",
+              "StartTime": "2026-10-03T15:59:53",
+              "EndTime": "2026-10-04T15:59:53",
+              "Deadline": "N/A",
+              "SuspendTime": "None",
+              "SecsPreSuspend": "0",
+              "LastSchedEval": "2026-10-03T15:59:53",
+              "Scheduler": "Main",
+              "Partition": "workq",
+              "AllocNode:Sid": "login44:142784",
+              "ReqNodeList": "(null)",
+              "ExcNodeList": "(null)",
+              "NodeList": "nid010134",
+              "BatchHost": "nid010134",
+              "NumNodes": "1",
+              "NumCPUs": "72",
+              "NumTasks": "1",
+              "CPUs/Task": "16",
+              "ReqB:S:C:T": "0:0:*:*",
+              "ReqTRES": "cpu=16,mem=460000M,node=1,billing=16,gres/gpu=1",
+              "AllocTRES": "cpu=72,mem=115000M,node=1,billing=72,gres/gpu=1",
+              "Socks/Node": "*",
+              "NtasksPerN:B:S:C": "0:0:*:*",
+              "CoreSpec": "*",
+              "MinCPUsNode": "16",
+              "MinMemoryTRES": "115000M",
+              "MinTmpDiskNode": "0",
+              "Features": "(null)",
+              "DelayBoot": "00:00:00",
+              "OverSubscribe": "OK",
+              "Contiguous": "0",
+              "Licenses": "(null)",
+              "Network": "(null)",
+              "Command": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh",
+              "WorkDir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+              "StdErr": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038188.err",
+              "StdIn": "/dev/null",
+              "StdOut": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038188.out",
+              "MemPerTres": "gpu:115000",
+              "TresPerJob": "gres/gpu:1",
+              "TresPerTask": "cpu=16"
+            }
+          },
+          {
+            "job_id": "7038186",
+            "name": "today-date-r1_distill_32b",
+            "state": "RUNNING",
+            "gpus_reserved_or_requested": 1,
+            "slurm": {
+              "JobId": "7038186",
+              "JobName": "today-date-r1_distill_32b",
+              "UserId": "yuhegao.u6oz(1483807865)",
+              "GroupId": "yuhegao.u6oz(1483807865)",
+              "MCS_label": "N/A",
+              "Priority": "1",
+              "Nice": "0",
+              "Account": "brics.u6oz",
+              "QOS": "normal",
+              "JobState": "RUNNING",
+              "Reason": "None",
+              "Dependency": "(null)",
+              "Requeue": "0",
+              "Restarts": "0",
+              "BatchFlag": "1",
+              "Reboot": "0",
+              "ExitCode": "0:0",
+              "RunTime": "00:00:05",
+              "TimeLimit": "1-00:00:00",
+              "TimeMin": "N/A",
+              "SubmitTime": "2026-10-03T15:59:43",
+              "EligibleTime": "2026-10-03T15:59:43",
+              "AccrueTime": "2026-10-03T15:59:43",
+              "StartTime": "2026-10-03T15:59:48",
+              "EndTime": "2026-10-04T15:59:48",
+              "Deadline": "N/A",
+              "SuspendTime": "None",
+              "SecsPreSuspend": "0",
+              "LastSchedEval": "2026-10-03T15:59:48",
+              "Scheduler": "Main",
+              "Partition": "workq",
+              "AllocNode:Sid": "login44:142784",
+              "ReqNodeList": "(null)",
+              "ExcNodeList": "(null)",
+              "NodeList": "nid010123",
+              "BatchHost": "nid010123",
+              "NumNodes": "1",
+              "NumCPUs": "72",
+              "NumTasks": "1",
+              "CPUs/Task": "16",
+              "ReqB:S:C:T": "0:0:*:*",
+              "ReqTRES": "cpu=16,mem=460000M,node=1,billing=16,gres/gpu=1",
+              "AllocTRES": "cpu=72,mem=115000M,node=1,billing=72,gres/gpu=1",
+              "Socks/Node": "*",
+              "NtasksPerN:B:S:C": "0:0:*:*",
+              "CoreSpec": "*",
+              "MinCPUsNode": "16",
+              "MinMemoryTRES": "115000M",
+              "MinTmpDiskNode": "0",
+              "Features": "(null)",
+              "DelayBoot": "00:00:00",
+              "OverSubscribe": "OK",
+              "Contiguous": "0",
+              "Licenses": "(null)",
+              "Network": "(null)",
+              "Command": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh",
+              "WorkDir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+              "StdErr": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038186.err",
+              "StdIn": "/dev/null",
+              "StdOut": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038186.out",
+              "MemPerTres": "gpu:115000",
+              "TresPerJob": "gres/gpu:1",
+              "TresPerTask": "cpu=16"
+            }
+          },
+          {
+            "job_id": "7038184",
+            "name": "today-date-qwen25_72b",
+            "state": "RUNNING",
+            "gpus_reserved_or_requested": 2,
+            "slurm": {
+              "JobId": "7038184",
+              "JobName": "today-date-qwen25_72b",
+              "UserId": "yuhegao.u6oz(1483807865)",
+              "GroupId": "yuhegao.u6oz(1483807865)",
+              "MCS_label": "N/A",
+              "Priority": "1",
+              "Nice": "0",
+              "Account": "brics.u6oz",
+              "QOS": "normal",
+              "JobState": "RUNNING",
+              "Reason": "None",
+              "Dependency": "(null)",
+              "Requeue": "0",
+              "Restarts": "0",
+              "BatchFlag": "1",
+              "Reboot": "0",
+              "ExitCode": "0:0",
+              "RunTime": "00:00:11",
+              "TimeLimit": "1-00:00:00",
+              "TimeMin": "N/A",
+              "SubmitTime": "2026-10-03T15:59:39",
+              "EligibleTime": "2026-10-03T15:59:39",
+              "AccrueTime": "2026-10-03T15:59:39",
+              "StartTime": "2026-10-03T15:59:43",
+              "EndTime": "2026-10-04T15:59:43",
+              "Deadline": "N/A",
+              "SuspendTime": "None",
+              "SecsPreSuspend": "0",
+              "LastSchedEval": "2026-10-03T15:59:43",
+              "Scheduler": "Main",
+              "Partition": "workq",
+              "AllocNode:Sid": "login44:142784",
+              "ReqNodeList": "(null)",
+              "ExcNodeList": "(null)",
+              "NodeList": "nid010164",
+              "BatchHost": "nid010164",
+              "NumNodes": "1",
+              "NumCPUs": "72",
+              "NumTasks": "1",
+              "CPUs/Task": "16",
+              "ReqB:S:C:T": "0:0:*:*",
+              "ReqTRES": "cpu=16,mem=460000M,node=1,billing=16,gres/gpu=2",
+              "AllocTRES": "cpu=72,mem=230000M,node=1,billing=72,gres/gpu=2",
+              "Socks/Node": "*",
+              "NtasksPerN:B:S:C": "0:0:*:*",
+              "CoreSpec": "*",
+              "MinCPUsNode": "16",
+              "MinMemoryTRES": "115000M",
+              "MinTmpDiskNode": "0",
+              "Features": "(null)",
+              "DelayBoot": "00:00:00",
+              "OverSubscribe": "OK",
+              "Contiguous": "0",
+              "Licenses": "(null)",
+              "Network": "(null)",
+              "Command": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh",
+              "WorkDir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+              "StdErr": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038184.err",
+              "StdIn": "/dev/null",
+              "StdOut": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038184.out",
+              "MemPerTres": "gpu:115000",
+              "TresPerJob": "gres/gpu:2",
+              "TresPerTask": "cpu=16"
+            }
+          },
+          {
+            "job_id": "7038182",
+            "name": "today-date-qwen72b",
+            "state": "RUNNING",
+            "gpus_reserved_or_requested": 2,
+            "slurm": {
+              "JobId": "7038182",
+              "JobName": "today-date-qwen72b",
+              "UserId": "yuhegao.u6oz(1483807865)",
+              "GroupId": "yuhegao.u6oz(1483807865)",
+              "MCS_label": "N/A",
+              "Priority": "1",
+              "Nice": "0",
+              "Account": "brics.u6oz",
+              "QOS": "normal",
+              "JobState": "RUNNING",
+              "Reason": "None",
+              "Dependency": "(null)",
+              "Requeue": "0",
+              "Restarts": "0",
+              "BatchFlag": "1",
+              "Reboot": "0",
+              "ExitCode": "0:0",
+              "RunTime": "00:00:18",
+              "TimeLimit": "1-00:00:00",
+              "TimeMin": "N/A",
+              "SubmitTime": "2026-10-03T15:59:36",
+              "EligibleTime": "2026-10-03T15:59:36",
+              "AccrueTime": "2026-10-03T15:59:36",
+              "StartTime": "2026-10-03T15:59:39",
+              "EndTime": "2026-10-04T15:59:39",
+              "Deadline": "N/A",
+              "SuspendTime": "None",
+              "SecsPreSuspend": "0",
+              "LastSchedEval": "2026-10-03T15:59:39",
+              "Scheduler": "Main",
+              "Partition": "workq",
+              "AllocNode:Sid": "login44:142784",
+              "ReqNodeList": "(null)",
+              "ExcNodeList": "(null)",
+              "NodeList": "nid011191",
+              "BatchHost": "nid011191",
+              "NumNodes": "1",
+              "NumCPUs": "72",
+              "NumTasks": "1",
+              "CPUs/Task": "16",
+              "ReqB:S:C:T": "0:0:*:*",
+              "ReqTRES": "cpu=16,mem=460000M,node=1,billing=16,gres/gpu=2",
+              "AllocTRES": "cpu=72,mem=230000M,node=1,billing=72,gres/gpu=2",
+              "Socks/Node": "*",
+              "NtasksPerN:B:S:C": "0:0:*:*",
+              "CoreSpec": "*",
+              "MinCPUsNode": "16",
+              "MinMemoryTRES": "115000M",
+              "MinTmpDiskNode": "0",
+              "Features": "(null)",
+              "DelayBoot": "00:00:00",
+              "OverSubscribe": "OK",
+              "Contiguous": "0",
+              "Licenses": "(null)",
+              "Network": "(null)",
+              "Command": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh",
+              "WorkDir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+              "StdErr": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038182.err",
+              "StdIn": "/dev/null",
+              "StdOut": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038182.out",
+              "MemPerTres": "gpu:115000",
+              "TresPerJob": "gres/gpu:2",
+              "TresPerTask": "cpu=16"
+            }
+          }
+        ],
+        "active_reservations": [
+          {
+            "job_id": "7038182",
+            "work": {
+              "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/outputs/qwen72b",
+              "stage": "generate",
+              "seed": 0,
+              "arm": "base"
+            },
+            "record_path": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/submission-qwen72b-20261003T155935968280Z.json",
+            "submitted_at_utc": "20261003T155935968280Z"
+          },
+          {
+            "job_id": "7038184",
+            "work": {
+              "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/outputs/qwen25_72b",
+              "stage": "generate",
+              "seed": 0,
+              "arm": "base"
+            },
+            "record_path": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/submission-qwen25_72b-20261003T155939204473Z.json",
+            "submitted_at_utc": "20261003T155939204473Z"
+          },
+          {
+            "job_id": "7038186",
+            "work": {
+              "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/outputs/r1_distill_32b",
+              "stage": "generate",
+              "seed": 0,
+              "arm": "base"
+            },
+            "record_path": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/submission-r1_distill_32b-20261003T155943816379Z.json",
+            "submitted_at_utc": "20261003T155943816379Z"
+          },
+          {
+            "job_id": "7038187",
+            "work": {
+              "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/outputs/qwen3_32b",
+              "stage": "generate",
+              "seed": 0,
+              "arm": "base"
+            },
+            "record_path": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/submission-qwen3_32b-20261003T155950136950Z.json",
+            "submitted_at_utc": "20261003T155950136950Z"
+          },
+          {
+            "job_id": "7038188",
+            "work": {
+              "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/outputs/qwen35_27b",
+              "stage": "generate",
+              "seed": 0,
+              "arm": "base"
+            },
+            "record_path": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/submission-qwen35_27b-20261003T155950438560Z.json",
+            "submitted_at_utc": "20261003T155950438560Z"
+          }
+        ]
+      },
+      "inputs_sha256": {
+        "/projects/u6oz/yuhe/today-date-probe-20261003-v2/submit_probe.py": "ffb1417da6ef0295d73e84ac45aa340d0b69a7e529529bdb05ba502910b5c250",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/BUNDLE.json": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/protocol.json": "662a180b9b147d02992c65276a683f1f628f23797554d3b71f643892ddb7bd83",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/configs/qwen38_27b.json": "584160793abeea2638fdcf30acdf9cac81d98274b2cfce98e39df48a5f0b5324",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/originals/qwen38_27b/manifest.json": "3e0c2834960814fddb263b6730439d1c5eab758d2f7fd36408e0086d07b2959c",
+        "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen38_27b.complete.json": "fe1dacc2811fcfcbd61706001d1b087b4b0abe692cd88a9fadff8907dbb8654d",
+        "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python": "8f7e5df472f8db8bc5ebb7cb888199365c6443f7af1788240885da075cd40415",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/worker.py": "c9331f32bf283902718884a69573b0e0a9ad270f6886fed84dc48a74859c3b2e",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh": "8f79f22d9df10323ed60af79be9543eea2f7ca7faa59c164749102226e906fd6",
+        "/projects/u6oz/yuhe/insecure-code-forecast-20260929/runtime-2026-check.json": "95ffd9b7e46ad6eaf6448542eabb8f96f7c6731f7570ceb92eaccf998cf7cfa1"
+      },
+      "job_id": "7038189",
+      "receipt": "/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/submission-qwen38_27b-20261003T155958026709Z.json",
+      "receipt_sha256": "5358cb778ada792950292ae4ab1268abe5a41bbec85ff78b9ae46337ff96c1dd"
+    },
+    {
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=brics.u6oz",
+        "--partition=workq",
+        "--job-name=today-date-qwen72b",
+        "--nodes=1",
+        "--ntasks=1",
+        "--gpus=2",
+        "--cpus-per-task=16",
+        "--time=24:00:00",
+        "--signal=B:USR1@180",
+        "--no-requeue",
+        "--chdir=/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+        "--output=/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/%j.out",
+        "--error=/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/%j.err",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/configs/qwen72b.json",
+        "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895"
+      ],
+      "work": {
+        "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/outputs/qwen72b",
+        "stage": "generate",
+        "seed": 0,
+        "arm": "base"
+      },
+      "accounting": {
+        "project": "u6oz",
+        "account": "brics.u6oz",
+        "accounting_scope": "current_user_all_accounts",
+        "private_data": "accounts,events,jobs,reservations,usage,users",
+        "gpu_cap": 64,
+        "existing_gpus": 0,
+        "new_gpus": 2,
+        "observed_at_utc": "2026-10-03T15:59:35.938279+00:00",
+        "jobs": [],
+        "active_reservations": []
+      },
+      "inputs_sha256": {
+        "/projects/u6oz/yuhe/today-date-probe-20261003-v2/submit_probe.py": "ffb1417da6ef0295d73e84ac45aa340d0b69a7e529529bdb05ba502910b5c250",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/BUNDLE.json": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/protocol.json": "662a180b9b147d02992c65276a683f1f628f23797554d3b71f643892ddb7bd83",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/configs/qwen72b.json": "0df4d2e8f2e44e4773d99e32d919a0120b56f5ac2f3b4f740008c06eda60fbb2",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/originals/qwen72b/manifest.json": "7d576381c6efc815bb10f3097486ea51d461f4578968766d4f73ce29b0db27e4",
+        "/projects/u6oz/yuhe/millennium-forecast-20260929/staged-qwen72b.json": "87e5c37bdfde7083d01eaed2f9b579107106a391e5a41e1dcfca8597c3e5a8ae",
+        "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python": "8f7e5df472f8db8bc5ebb7cb888199365c6443f7af1788240885da075cd40415",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/worker.py": "c9331f32bf283902718884a69573b0e0a9ad270f6886fed84dc48a74859c3b2e",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh": "8f79f22d9df10323ed60af79be9543eea2f7ca7faa59c164749102226e906fd6",
+        "/projects/u6oz/yuhe/insecure-code-forecast-20260929/runtime-qwen-legacy-check.json": "3d0f6eb132194541a63ec9e29a17056325ca56b62e114b358f3399f49f1a1df4"
+      },
+      "job_id": "7038182",
+      "receipt": "/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/submission-qwen72b-20261003T155935968280Z.json",
+      "receipt_sha256": "cb9c39fb11e68d3083bab8fd140c06ede3ca466def679e48aee768c504428333"
+    },
+    {
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=brics.u6oz",
+        "--partition=workq",
+        "--job-name=today-date-r1_distill_32b",
+        "--nodes=1",
+        "--ntasks=1",
+        "--gpus=1",
+        "--cpus-per-task=16",
+        "--time=24:00:00",
+        "--signal=B:USR1@180",
+        "--no-requeue",
+        "--chdir=/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+        "--output=/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/%j.out",
+        "--error=/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/%j.err",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/configs/r1_distill_32b.json",
+        "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895"
+      ],
+      "work": {
+        "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/outputs/r1_distill_32b",
+        "stage": "generate",
+        "seed": 0,
+        "arm": "base"
+      },
+      "accounting": {
+        "project": "u6oz",
+        "account": "brics.u6oz",
+        "accounting_scope": "current_user_all_accounts",
+        "private_data": "accounts,events,jobs,reservations,usage,users",
+        "gpu_cap": 64,
+        "existing_gpus": 4,
+        "new_gpus": 1,
+        "observed_at_utc": "2026-10-03T15:59:43.809276+00:00",
+        "jobs": [
+          {
+            "job_id": "7038184",
+            "name": "today-date-qwen25_72b",
+            "state": "PENDING",
+            "gpus_reserved_or_requested": 2,
+            "slurm": {
+              "JobId": "7038184",
+              "JobName": "today-date-qwen25_72b",
+              "UserId": "yuhegao.u6oz(1483807865)",
+              "GroupId": "yuhegao.u6oz(1483807865)",
+              "MCS_label": "N/A",
+              "Priority": "1",
+              "Nice": "0",
+              "Account": "brics.u6oz",
+              "QOS": "normal",
+              "JobState": "PENDING",
+              "Reason": "None",
+              "Dependency": "(null)",
+              "Requeue": "0",
+              "Restarts": "0",
+              "BatchFlag": "1",
+              "Reboot": "0",
+              "ExitCode": "0:0",
+              "RunTime": "00:00:00",
+              "TimeLimit": "1-00:00:00",
+              "TimeMin": "N/A",
+              "SubmitTime": "2026-10-03T15:59:39",
+              "EligibleTime": "2026-10-03T15:59:39",
+              "AccrueTime": "Unknown",
+              "StartTime": "Unknown",
+              "EndTime": "Unknown",
+              "Deadline": "N/A",
+              "SuspendTime": "None",
+              "SecsPreSuspend": "0",
+              "LastSchedEval": "2026-10-03T15:59:39",
+              "Scheduler": "Main",
+              "Partition": "workq",
+              "AllocNode:Sid": "login44:142784",
+              "ReqNodeList": "(null)",
+              "ExcNodeList": "(null)",
+              "NodeList": "",
+              "NumNodes": "1-1",
+              "NumCPUs": "16",
+              "NumTasks": "1",
+              "CPUs/Task": "16",
+              "ReqB:S:C:T": "0:0:*:*",
+              "ReqTRES": "cpu=16,mem=460000M,node=1,billing=16,gres/gpu=2",
+              "AllocTRES": "(null)",
+              "Socks/Node": "*",
+              "NtasksPerN:B:S:C": "0:0:*:*",
+              "CoreSpec": "*",
+              "MinCPUsNode": "16",
+              "MinMemoryTRES": "115000M",
+              "MinTmpDiskNode": "0",
+              "Features": "(null)",
+              "DelayBoot": "00:00:00",
+              "OverSubscribe": "OK",
+              "Contiguous": "0",
+              "Licenses": "(null)",
+              "Network": "(null)",
+              "Command": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh",
+              "WorkDir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+              "StdErr": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038184.err",
+              "StdIn": "/dev/null",
+              "StdOut": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038184.out",
+              "MemPerTres": "gpu:115000",
+              "TresPerJob": "gres/gpu:2",
+              "TresPerTask": "cpu=16"
+            }
+          },
+          {
+            "job_id": "7038182",
+            "name": "today-date-qwen72b",
+            "state": "RUNNING",
+            "gpus_reserved_or_requested": 2,
+            "slurm": {
+              "JobId": "7038182",
+              "JobName": "today-date-qwen72b",
+              "UserId": "yuhegao.u6oz(1483807865)",
+              "GroupId": "yuhegao.u6oz(1483807865)",
+              "MCS_label": "N/A",
+              "Priority": "1",
+              "Nice": "0",
+              "Account": "brics.u6oz",
+              "QOS": "normal",
+              "JobState": "RUNNING",
+              "Reason": "None",
+              "Dependency": "(null)",
+              "Requeue": "0",
+              "Restarts": "0",
+              "BatchFlag": "1",
+              "Reboot": "0",
+              "ExitCode": "0:0",
+              "RunTime": "00:00:04",
+              "TimeLimit": "1-00:00:00",
+              "TimeMin": "N/A",
+              "SubmitTime": "2026-10-03T15:59:36",
+              "EligibleTime": "2026-10-03T15:59:36",
+              "AccrueTime": "2026-10-03T15:59:36",
+              "StartTime": "2026-10-03T15:59:39",
+              "EndTime": "2026-10-04T15:59:39",
+              "Deadline": "N/A",
+              "SuspendTime": "None",
+              "SecsPreSuspend": "0",
+              "LastSchedEval": "2026-10-03T15:59:39",
+              "Scheduler": "Main",
+              "Partition": "workq",
+              "AllocNode:Sid": "login44:142784",
+              "ReqNodeList": "(null)",
+              "ExcNodeList": "(null)",
+              "NodeList": "nid011191",
+              "BatchHost": "nid011191",
+              "NumNodes": "1",
+              "NumCPUs": "72",
+              "NumTasks": "1",
+              "CPUs/Task": "16",
+              "ReqB:S:C:T": "0:0:*:*",
+              "ReqTRES": "cpu=16,mem=460000M,node=1,billing=16,gres/gpu=2",
+              "AllocTRES": "cpu=72,mem=230000M,node=1,billing=72,gres/gpu=2",
+              "Socks/Node": "*",
+              "NtasksPerN:B:S:C": "0:0:*:*",
+              "CoreSpec": "*",
+              "MinCPUsNode": "16",
+              "MinMemoryTRES": "115000M",
+              "MinTmpDiskNode": "0",
+              "Features": "(null)",
+              "DelayBoot": "00:00:00",
+              "OverSubscribe": "OK",
+              "Contiguous": "0",
+              "Licenses": "(null)",
+              "Network": "(null)",
+              "Command": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh",
+              "WorkDir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+              "StdErr": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038182.err",
+              "StdIn": "/dev/null",
+              "StdOut": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038182.out",
+              "MemPerTres": "gpu:115000",
+              "TresPerJob": "gres/gpu:2",
+              "TresPerTask": "cpu=16"
+            }
+          }
+        ],
+        "active_reservations": [
+          {
+            "job_id": "7038182",
+            "work": {
+              "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/outputs/qwen72b",
+              "stage": "generate",
+              "seed": 0,
+              "arm": "base"
+            },
+            "record_path": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/submission-qwen72b-20261003T155935968280Z.json",
+            "submitted_at_utc": "20261003T155935968280Z"
+          },
+          {
+            "job_id": "7038184",
+            "work": {
+              "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/outputs/qwen25_72b",
+              "stage": "generate",
+              "seed": 0,
+              "arm": "base"
+            },
+            "record_path": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/submission-qwen25_72b-20261003T155939204473Z.json",
+            "submitted_at_utc": "20261003T155939204473Z"
+          }
+        ]
+      },
+      "inputs_sha256": {
+        "/projects/u6oz/yuhe/today-date-probe-20261003-v2/submit_probe.py": "ffb1417da6ef0295d73e84ac45aa340d0b69a7e529529bdb05ba502910b5c250",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/BUNDLE.json": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/protocol.json": "662a180b9b147d02992c65276a683f1f628f23797554d3b71f643892ddb7bd83",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/configs/r1_distill_32b.json": "36a7aedda9eddc5ed177f102d97ba1f29e1bf0058f9adbe841608e9e1b232051",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/originals/r1_distill_32b/manifest.json": "fb15a0028c407d4f0ff84f904d87dc50216a9fffddc649cd4f9f74a6291cfb4c",
+        "/projects/u6oz/yuhe/millennium-forecast-20260929/staged-r1_distill_32b.json": "6030bb4048aee974d662e2c46e6cfb1d6811c4163f17643b17fd2fa213f24b35",
+        "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python": "8f7e5df472f8db8bc5ebb7cb888199365c6443f7af1788240885da075cd40415",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/worker.py": "c9331f32bf283902718884a69573b0e0a9ad270f6886fed84dc48a74859c3b2e",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh": "8f79f22d9df10323ed60af79be9543eea2f7ca7faa59c164749102226e906fd6"
+      },
+      "job_id": "7038186",
+      "receipt": "/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/submission-r1_distill_32b-20261003T155943816379Z.json",
+      "receipt_sha256": "384b2bd5afbdd697423b0f1be5263db24a46aa2e890a8307797156ac34c99cd2"
+    },
+    {
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=brics.u6oz",
+        "--partition=workq",
+        "--job-name=today-date-qwen35_27b",
+        "--nodes=1",
+        "--ntasks=1",
+        "--gpus=1",
+        "--cpus-per-task=16",
+        "--time=24:00:00",
+        "--signal=B:USR1@180",
+        "--no-requeue",
+        "--chdir=/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+        "--output=/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/%j.out",
+        "--error=/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/%j.err",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/configs/qwen35_27b.json",
+        "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895"
+      ],
+      "work": {
+        "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/outputs/qwen35_27b",
+        "stage": "generate",
+        "seed": 0,
+        "arm": "base"
+      },
+      "accounting": {
+        "project": "u6oz",
+        "account": "brics.u6oz",
+        "accounting_scope": "current_user_all_accounts",
+        "private_data": "accounts,events,jobs,reservations,usage,users",
+        "gpu_cap": 64,
+        "existing_gpus": 6,
+        "new_gpus": 1,
+        "observed_at_utc": "2026-10-03T15:59:50.435243+00:00",
+        "jobs": [
+          {
+            "job_id": "7038187",
+            "name": "today-date-qwen3_32b",
+            "state": "PENDING",
+            "gpus_reserved_or_requested": 1,
+            "slurm": {
+              "JobId": "7038187",
+              "JobName": "today-date-qwen3_32b",
+              "UserId": "yuhegao.u6oz(1483807865)",
+              "GroupId": "yuhegao.u6oz(1483807865)",
+              "MCS_label": "N/A",
+              "Priority": "1",
+              "Nice": "0",
+              "Account": "brics.u6oz",
+              "QOS": "normal",
+              "JobState": "PENDING",
+              "Reason": "None",
+              "Dependency": "(null)",
+              "Requeue": "0",
+              "Restarts": "0",
+              "BatchFlag": "1",
+              "Reboot": "0",
+              "ExitCode": "0:0",
+              "RunTime": "00:00:00",
+              "TimeLimit": "1-00:00:00",
+              "TimeMin": "N/A",
+              "SubmitTime": "2026-10-03T15:59:50",
+              "EligibleTime": "2026-10-03T15:59:50",
+              "AccrueTime": "Unknown",
+              "StartTime": "Unknown",
+              "EndTime": "Unknown",
+              "Deadline": "N/A",
+              "SuspendTime": "None",
+              "SecsPreSuspend": "0",
+              "LastSchedEval": "2026-10-03T15:59:50",
+              "Scheduler": "Main",
+              "Partition": "workq",
+              "AllocNode:Sid": "login44:142784",
+              "ReqNodeList": "(null)",
+              "ExcNodeList": "(null)",
+              "NodeList": "",
+              "NumNodes": "1-1",
+              "NumCPUs": "16",
+              "NumTasks": "1",
+              "CPUs/Task": "16",
+              "ReqB:S:C:T": "0:0:*:*",
+              "ReqTRES": "cpu=16,mem=460000M,node=1,billing=16,gres/gpu=1",
+              "AllocTRES": "(null)",
+              "Socks/Node": "*",
+              "NtasksPerN:B:S:C": "0:0:*:*",
+              "CoreSpec": "*",
+              "MinCPUsNode": "16",
+              "MinMemoryTRES": "115000M",
+              "MinTmpDiskNode": "0",
+              "Features": "(null)",
+              "DelayBoot": "00:00:00",
+              "OverSubscribe": "OK",
+              "Contiguous": "0",
+              "Licenses": "(null)",
+              "Network": "(null)",
+              "Command": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh",
+              "WorkDir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+              "StdErr": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038187.err",
+              "StdIn": "/dev/null",
+              "StdOut": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038187.out",
+              "MemPerTres": "gpu:115000",
+              "TresPerJob": "gres/gpu:1",
+              "TresPerTask": "cpu=16"
+            }
+          },
+          {
+            "job_id": "7038186",
+            "name": "today-date-r1_distill_32b",
+            "state": "RUNNING",
+            "gpus_reserved_or_requested": 1,
+            "slurm": {
+              "JobId": "7038186",
+              "JobName": "today-date-r1_distill_32b",
+              "UserId": "yuhegao.u6oz(1483807865)",
+              "GroupId": "yuhegao.u6oz(1483807865)",
+              "MCS_label": "N/A",
+              "Priority": "1",
+              "Nice": "0",
+              "Account": "brics.u6oz",
+              "QOS": "normal",
+              "JobState": "RUNNING",
+              "Reason": "None",
+              "Dependency": "(null)",
+              "Requeue": "0",
+              "Restarts": "0",
+              "BatchFlag": "1",
+              "Reboot": "0",
+              "ExitCode": "0:0",
+              "RunTime": "00:00:02",
+              "TimeLimit": "1-00:00:00",
+              "TimeMin": "N/A",
+              "SubmitTime": "2026-10-03T15:59:43",
+              "EligibleTime": "2026-10-03T15:59:43",
+              "AccrueTime": "2026-10-03T15:59:43",
+              "StartTime": "2026-10-03T15:59:48",
+              "EndTime": "2026-10-04T15:59:48",
+              "Deadline": "N/A",
+              "SuspendTime": "None",
+              "SecsPreSuspend": "0",
+              "LastSchedEval": "2026-10-03T15:59:48",
+              "Scheduler": "Main",
+              "Partition": "workq",
+              "AllocNode:Sid": "login44:142784",
+              "ReqNodeList": "(null)",
+              "ExcNodeList": "(null)",
+              "NodeList": "nid010123",
+              "BatchHost": "nid010123",
+              "NumNodes": "1",
+              "NumCPUs": "72",
+              "NumTasks": "1",
+              "CPUs/Task": "16",
+              "ReqB:S:C:T": "0:0:*:*",
+              "ReqTRES": "cpu=16,mem=460000M,node=1,billing=16,gres/gpu=1",
+              "AllocTRES": "cpu=72,mem=115000M,node=1,billing=72,gres/gpu=1",
+              "Socks/Node": "*",
+              "NtasksPerN:B:S:C": "0:0:*:*",
+              "CoreSpec": "*",
+              "MinCPUsNode": "16",
+              "MinMemoryTRES": "115000M",
+              "MinTmpDiskNode": "0",
+              "Features": "(null)",
+              "DelayBoot": "00:00:00",
+              "OverSubscribe": "OK",
+              "Contiguous": "0",
+              "Licenses": "(null)",
+              "Network": "(null)",
+              "Command": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh",
+              "WorkDir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+              "StdErr": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038186.err",
+              "StdIn": "/dev/null",
+              "StdOut": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038186.out",
+              "MemPerTres": "gpu:115000",
+              "TresPerJob": "gres/gpu:1",
+              "TresPerTask": "cpu=16"
+            }
+          },
+          {
+            "job_id": "7038184",
+            "name": "today-date-qwen25_72b",
+            "state": "RUNNING",
+            "gpus_reserved_or_requested": 2,
+            "slurm": {
+              "JobId": "7038184",
+              "JobName": "today-date-qwen25_72b",
+              "UserId": "yuhegao.u6oz(1483807865)",
+              "GroupId": "yuhegao.u6oz(1483807865)",
+              "MCS_label": "N/A",
+              "Priority": "1",
+              "Nice": "0",
+              "Account": "brics.u6oz",
+              "QOS": "normal",
+              "JobState": "RUNNING",
+              "Reason": "None",
+              "Dependency": "(null)",
+              "Requeue": "0",
+              "Restarts": "0",
+              "BatchFlag": "1",
+              "Reboot": "0",
+              "ExitCode": "0:0",
+              "RunTime": "00:00:07",
+              "TimeLimit": "1-00:00:00",
+              "TimeMin": "N/A",
+              "SubmitTime": "2026-10-03T15:59:39",
+              "EligibleTime": "2026-10-03T15:59:39",
+              "AccrueTime": "2026-10-03T15:59:39",
+              "StartTime": "2026-10-03T15:59:43",
+              "EndTime": "2026-10-04T15:59:43",
+              "Deadline": "N/A",
+              "SuspendTime": "None",
+              "SecsPreSuspend": "0",
+              "LastSchedEval": "2026-10-03T15:59:43",
+              "Scheduler": "Main",
+              "Partition": "workq",
+              "AllocNode:Sid": "login44:142784",
+              "ReqNodeList": "(null)",
+              "ExcNodeList": "(null)",
+              "NodeList": "nid010164",
+              "BatchHost": "nid010164",
+              "NumNodes": "1",
+              "NumCPUs": "72",
+              "NumTasks": "1",
+              "CPUs/Task": "16",
+              "ReqB:S:C:T": "0:0:*:*",
+              "ReqTRES": "cpu=16,mem=460000M,node=1,billing=16,gres/gpu=2",
+              "AllocTRES": "cpu=72,mem=230000M,node=1,billing=72,gres/gpu=2",
+              "Socks/Node": "*",
+              "NtasksPerN:B:S:C": "0:0:*:*",
+              "CoreSpec": "*",
+              "MinCPUsNode": "16",
+              "MinMemoryTRES": "115000M",
+              "MinTmpDiskNode": "0",
+              "Features": "(null)",
+              "DelayBoot": "00:00:00",
+              "OverSubscribe": "OK",
+              "Contiguous": "0",
+              "Licenses": "(null)",
+              "Network": "(null)",
+              "Command": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh",
+              "WorkDir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+              "StdErr": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038184.err",
+              "StdIn": "/dev/null",
+              "StdOut": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038184.out",
+              "MemPerTres": "gpu:115000",
+              "TresPerJob": "gres/gpu:2",
+              "TresPerTask": "cpu=16"
+            }
+          },
+          {
+            "job_id": "7038182",
+            "name": "today-date-qwen72b",
+            "state": "RUNNING",
+            "gpus_reserved_or_requested": 2,
+            "slurm": {
+              "JobId": "7038182",
+              "JobName": "today-date-qwen72b",
+              "UserId": "yuhegao.u6oz(1483807865)",
+              "GroupId": "yuhegao.u6oz(1483807865)",
+              "MCS_label": "N/A",
+              "Priority": "1",
+              "Nice": "0",
+              "Account": "brics.u6oz",
+              "QOS": "normal",
+              "JobState": "RUNNING",
+              "Reason": "None",
+              "Dependency": "(null)",
+              "Requeue": "0",
+              "Restarts": "0",
+              "BatchFlag": "1",
+              "Reboot": "0",
+              "ExitCode": "0:0",
+              "RunTime": "00:00:11",
+              "TimeLimit": "1-00:00:00",
+              "TimeMin": "N/A",
+              "SubmitTime": "2026-10-03T15:59:36",
+              "EligibleTime": "2026-10-03T15:59:36",
+              "AccrueTime": "2026-10-03T15:59:36",
+              "StartTime": "2026-10-03T15:59:39",
+              "EndTime": "2026-10-04T15:59:39",
+              "Deadline": "N/A",
+              "SuspendTime": "None",
+              "SecsPreSuspend": "0",
+              "LastSchedEval": "2026-10-03T15:59:39",
+              "Scheduler": "Main",
+              "Partition": "workq",
+              "AllocNode:Sid": "login44:142784",
+              "ReqNodeList": "(null)",
+              "ExcNodeList": "(null)",
+              "NodeList": "nid011191",
+              "BatchHost": "nid011191",
+              "NumNodes": "1",
+              "NumCPUs": "72",
+              "NumTasks": "1",
+              "CPUs/Task": "16",
+              "ReqB:S:C:T": "0:0:*:*",
+              "ReqTRES": "cpu=16,mem=460000M,node=1,billing=16,gres/gpu=2",
+              "AllocTRES": "cpu=72,mem=230000M,node=1,billing=72,gres/gpu=2",
+              "Socks/Node": "*",
+              "NtasksPerN:B:S:C": "0:0:*:*",
+              "CoreSpec": "*",
+              "MinCPUsNode": "16",
+              "MinMemoryTRES": "115000M",
+              "MinTmpDiskNode": "0",
+              "Features": "(null)",
+              "DelayBoot": "00:00:00",
+              "OverSubscribe": "OK",
+              "Contiguous": "0",
+              "Licenses": "(null)",
+              "Network": "(null)",
+              "Command": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh",
+              "WorkDir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+              "StdErr": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038182.err",
+              "StdIn": "/dev/null",
+              "StdOut": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038182.out",
+              "MemPerTres": "gpu:115000",
+              "TresPerJob": "gres/gpu:2",
+              "TresPerTask": "cpu=16"
+            }
+          }
+        ],
+        "active_reservations": [
+          {
+            "job_id": "7038182",
+            "work": {
+              "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/outputs/qwen72b",
+              "stage": "generate",
+              "seed": 0,
+              "arm": "base"
+            },
+            "record_path": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/submission-qwen72b-20261003T155935968280Z.json",
+            "submitted_at_utc": "20261003T155935968280Z"
+          },
+          {
+            "job_id": "7038184",
+            "work": {
+              "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/outputs/qwen25_72b",
+              "stage": "generate",
+              "seed": 0,
+              "arm": "base"
+            },
+            "record_path": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/submission-qwen25_72b-20261003T155939204473Z.json",
+            "submitted_at_utc": "20261003T155939204473Z"
+          },
+          {
+            "job_id": "7038186",
+            "work": {
+              "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/outputs/r1_distill_32b",
+              "stage": "generate",
+              "seed": 0,
+              "arm": "base"
+            },
+            "record_path": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/submission-r1_distill_32b-20261003T155943816379Z.json",
+            "submitted_at_utc": "20261003T155943816379Z"
+          },
+          {
+            "job_id": "7038187",
+            "work": {
+              "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/outputs/qwen3_32b",
+              "stage": "generate",
+              "seed": 0,
+              "arm": "base"
+            },
+            "record_path": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/submission-qwen3_32b-20261003T155950136950Z.json",
+            "submitted_at_utc": "20261003T155950136950Z"
+          }
+        ]
+      },
+      "inputs_sha256": {
+        "/projects/u6oz/yuhe/today-date-probe-20261003-v2/submit_probe.py": "ffb1417da6ef0295d73e84ac45aa340d0b69a7e529529bdb05ba502910b5c250",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/BUNDLE.json": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/protocol.json": "662a180b9b147d02992c65276a683f1f628f23797554d3b71f643892ddb7bd83",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/configs/qwen35_27b.json": "7fd75894a84fafb8abeb734d9571e8d37f4c54359df3f8618b0faefc2eb06578",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/originals/qwen35_27b/manifest.json": "2b74dbd486299aa20c82b8b3010d8e4f033a101a52b78a457266317b6323a2b1",
+        "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen35_27b.complete.json": "187e8a9d8d00af3c3a01a411782c2310c8d5f35f6f5bb9226bad9f29e850bee0",
+        "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python": "8f7e5df472f8db8bc5ebb7cb888199365c6443f7af1788240885da075cd40415",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/worker.py": "c9331f32bf283902718884a69573b0e0a9ad270f6886fed84dc48a74859c3b2e",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh": "8f79f22d9df10323ed60af79be9543eea2f7ca7faa59c164749102226e906fd6",
+        "/projects/u6oz/yuhe/insecure-code-forecast-20260929/runtime-2026-check.json": "95ffd9b7e46ad6eaf6448542eabb8f96f7c6731f7570ceb92eaccf998cf7cfa1"
+      },
+      "job_id": "7038188",
+      "receipt": "/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/submission-qwen35_27b-20261003T155950438560Z.json",
+      "receipt_sha256": "0a342c26de84891235d8b5dc7b1724e2ef5bd259c2f9d5ade351839f080b5528"
+    },
+    {
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=brics.u6oz",
+        "--partition=workq",
+        "--job-name=today-date-qwen25_72b",
+        "--nodes=1",
+        "--ntasks=1",
+        "--gpus=2",
+        "--cpus-per-task=16",
+        "--time=24:00:00",
+        "--signal=B:USR1@180",
+        "--no-requeue",
+        "--chdir=/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+        "--output=/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/%j.out",
+        "--error=/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/%j.err",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/configs/qwen25_72b.json",
+        "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895"
+      ],
+      "work": {
+        "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/outputs/qwen25_72b",
+        "stage": "generate",
+        "seed": 0,
+        "arm": "base"
+      },
+      "accounting": {
+        "project": "u6oz",
+        "account": "brics.u6oz",
+        "accounting_scope": "current_user_all_accounts",
+        "private_data": "accounts,events,jobs,reservations,usage,users",
+        "gpu_cap": 64,
+        "existing_gpus": 2,
+        "new_gpus": 2,
+        "observed_at_utc": "2026-10-03T15:59:39.198296+00:00",
+        "jobs": [
+          {
+            "job_id": "7038182",
+            "name": "today-date-qwen72b",
+            "state": "RUNNING",
+            "gpus_reserved_or_requested": 2,
+            "slurm": {
+              "JobId": "7038182",
+              "JobName": "today-date-qwen72b",
+              "UserId": "yuhegao.u6oz(1483807865)",
+              "GroupId": "yuhegao.u6oz(1483807865)",
+              "MCS_label": "N/A",
+              "Priority": "1",
+              "Nice": "0",
+              "Account": "brics.u6oz",
+              "QOS": "normal",
+              "JobState": "RUNNING",
+              "Reason": "None",
+              "Dependency": "(null)",
+              "Requeue": "0",
+              "Restarts": "0",
+              "BatchFlag": "1",
+              "Reboot": "0",
+              "ExitCode": "0:0",
+              "RunTime": "00:00:00",
+              "TimeLimit": "1-00:00:00",
+              "TimeMin": "N/A",
+              "SubmitTime": "2026-10-03T15:59:36",
+              "EligibleTime": "2026-10-03T15:59:36",
+              "AccrueTime": "2026-10-03T15:59:36",
+              "StartTime": "2026-10-03T15:59:39",
+              "EndTime": "2026-10-04T15:59:39",
+              "Deadline": "N/A",
+              "SuspendTime": "None",
+              "SecsPreSuspend": "0",
+              "LastSchedEval": "2026-10-03T15:59:39",
+              "Scheduler": "Main",
+              "Partition": "workq",
+              "AllocNode:Sid": "login44:142784",
+              "ReqNodeList": "(null)",
+              "ExcNodeList": "(null)",
+              "NodeList": "nid011191",
+              "BatchHost": "nid011191",
+              "NumNodes": "1",
+              "NumCPUs": "72",
+              "NumTasks": "1",
+              "CPUs/Task": "16",
+              "ReqB:S:C:T": "0:0:*:*",
+              "ReqTRES": "cpu=16,mem=460000M,node=1,billing=16,gres/gpu=2",
+              "AllocTRES": "cpu=72,mem=230000M,node=1,billing=72,gres/gpu=2",
+              "Socks/Node": "*",
+              "NtasksPerN:B:S:C": "0:0:*:*",
+              "CoreSpec": "*",
+              "MinCPUsNode": "16",
+              "MinMemoryTRES": "115000M",
+              "MinTmpDiskNode": "0",
+              "Features": "(null)",
+              "DelayBoot": "00:00:00",
+              "OverSubscribe": "OK",
+              "Contiguous": "0",
+              "Licenses": "(null)",
+              "Network": "(null)",
+              "Command": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh",
+              "WorkDir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+              "StdErr": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038182.err",
+              "StdIn": "/dev/null",
+              "StdOut": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038182.out",
+              "MemPerTres": "gpu:115000",
+              "TresPerJob": "gres/gpu:2",
+              "TresPerTask": "cpu=16"
+            }
+          }
+        ],
+        "active_reservations": [
+          {
+            "job_id": "7038182",
+            "work": {
+              "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/outputs/qwen72b",
+              "stage": "generate",
+              "seed": 0,
+              "arm": "base"
+            },
+            "record_path": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/submission-qwen72b-20261003T155935968280Z.json",
+            "submitted_at_utc": "20261003T155935968280Z"
+          }
+        ]
+      },
+      "inputs_sha256": {
+        "/projects/u6oz/yuhe/today-date-probe-20261003-v2/submit_probe.py": "ffb1417da6ef0295d73e84ac45aa340d0b69a7e529529bdb05ba502910b5c250",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/BUNDLE.json": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/protocol.json": "662a180b9b147d02992c65276a683f1f628f23797554d3b71f643892ddb7bd83",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/configs/qwen25_72b.json": "ea85c57ae89bc99120d4578c99f8c27969d3aeefbca2d3dbba926bd10e9947dd",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/originals/qwen25_72b/manifest.json": "6472ca52ec7ba2924f29b0b87f91f28a04b92eef263ba0916159ae32136c3a9f",
+        "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen25_72b.complete.json": "b0c884a7da9190f7717a6e2f002b78654c58d2ae7e52507ee6160f6f7824994e",
+        "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python": "8f7e5df472f8db8bc5ebb7cb888199365c6443f7af1788240885da075cd40415",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/worker.py": "c9331f32bf283902718884a69573b0e0a9ad270f6886fed84dc48a74859c3b2e",
+        "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh": "8f79f22d9df10323ed60af79be9543eea2f7ca7faa59c164749102226e906fd6"
+      },
+      "job_id": "7038184",
+      "receipt": "/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/submission-qwen25_72b-20261003T155939204473Z.json",
+      "receipt_sha256": "28fa860e3a57a091c8a2f536341dc6d45ad2451918e19e8723a2b30ceb712aa1"
+    }
+  ],
+  "squeue": "7038188|today-date-qwen35_27b|RUNNING|N/A|9:05|nid010134\n",
+  "sacct": "7038182|today-date-qwen72b|COMPLETED|0:0|2026-10-03T15:59:39|2026-10-03T16:02:49|billing=72,cpu=72,gres/gpu=2,mem=230000M,node=1\n7038182.batch|batch|COMPLETED|0:0|2026-10-03T15:59:39|2026-10-03T16:02:49|cpu=72,gres/gpu=2,mem=230000M,node=1\n7038184|today-date-qwen25_72b|COMPLETED|0:0|2026-10-03T15:59:43|2026-10-03T16:03:06|billing=72,cpu=72,gres/gpu=2,mem=230000M,node=1\n7038184.batch|batch|COMPLETED|0:0|2026-10-03T15:59:43|2026-10-03T16:03:06|cpu=72,gres/gpu=2,mem=230000M,node=1\n7038186|today-date-r1_distill_32b|COMPLETED|0:0|2026-10-03T15:59:48|2026-10-03T16:01:07|billing=72,cpu=72,gres/gpu=1,mem=115000M,node=1\n7038186.batch|batch|COMPLETED|0:0|2026-10-03T15:59:48|2026-10-03T16:01:07|cpu=72,gres/gpu=1,mem=115000M,node=1\n7038187|today-date-qwen3_32b|COMPLETED|0:0|2026-10-03T15:59:53|2026-10-03T16:04:04|billing=72,cpu=72,gres/gpu=1,mem=115000M,node=1\n7038187.batch|batch|COMPLETED|0:0|2026-10-03T15:59:53|2026-10-03T16:04:04|cpu=72,gres/gpu=1,mem=115000M,node=1\n7038188|today-date-qwen35_27b|RUNNING|0:0|2026-10-03T15:59:53|Unknown|billing=72,cpu=72,gres/gpu=1,mem=115000M,node=1\n7038188.batch|batch|RUNNING|0:0|2026-10-03T15:59:53|Unknown|cpu=72,gres/gpu=1,mem=115000M,node=1\n7038189|today-date-qwen38_27b|COMPLETED|0:0|2026-10-03T16:00:02|2026-10-03T16:03:15|billing=72,cpu=72,gres/gpu=1,mem=115000M,node=1\n7038189.batch|batch|COMPLETED|0:0|2026-10-03T16:00:02|2026-10-03T16:03:15|cpu=72,gres/gpu=1,mem=115000M,node=1\n",
+  "shared_accounting": {
+    "project": "u6oz",
+    "account": "brics.u6oz",
+    "accounting_scope": "current_user_all_accounts",
+    "private_data": "accounts,events,jobs,reservations,usage,users",
+    "gpu_cap": 64,
+    "existing_gpus": 1,
+    "new_gpus": 0,
+    "observed_at_utc": "2026-10-03T16:08:59.158303+00:00",
+    "jobs": [
+      {
+        "job_id": "7038188",
+        "name": "today-date-qwen35_27b",
+        "state": "RUNNING",
+        "gpus_reserved_or_requested": 1,
+        "slurm": {
+          "JobId": "7038188",
+          "JobName": "today-date-qwen35_27b",
+          "UserId": "yuhegao.u6oz(1483807865)",
+          "GroupId": "yuhegao.u6oz(1483807865)",
+          "MCS_label": "N/A",
+          "Priority": "1",
+          "Nice": "0",
+          "Account": "brics.u6oz",
+          "QOS": "normal",
+          "JobState": "RUNNING",
+          "Reason": "None",
+          "Dependency": "(null)",
+          "Requeue": "0",
+          "Restarts": "0",
+          "BatchFlag": "1",
+          "Reboot": "0",
+          "ExitCode": "0:0",
+          "RunTime": "00:09:06",
+          "TimeLimit": "1-00:00:00",
+          "TimeMin": "N/A",
+          "SubmitTime": "2026-10-03T15:59:50",
+          "EligibleTime": "2026-10-03T15:59:50",
+          "AccrueTime": "2026-10-03T15:59:50",
+          "StartTime": "2026-10-03T15:59:53",
+          "EndTime": "2026-10-04T15:59:53",
+          "Deadline": "N/A",
+          "SuspendTime": "None",
+          "SecsPreSuspend": "0",
+          "LastSchedEval": "2026-10-03T15:59:53",
+          "Scheduler": "Main",
+          "Partition": "workq",
+          "AllocNode:Sid": "login44:142784",
+          "ReqNodeList": "(null)",
+          "ExcNodeList": "(null)",
+          "NodeList": "nid010134",
+          "BatchHost": "nid010134",
+          "NumNodes": "1",
+          "NumCPUs": "72",
+          "NumTasks": "1",
+          "CPUs/Task": "16",
+          "ReqB:S:C:T": "0:0:*:*",
+          "ReqTRES": "cpu=16,mem=460000M,node=1,billing=16,gres/gpu=1",
+          "AllocTRES": "cpu=72,mem=115000M,node=1,billing=72,gres/gpu=1",
+          "Socks/Node": "*",
+          "NtasksPerN:B:S:C": "0:0:*:*",
+          "CoreSpec": "*",
+          "MinCPUsNode": "16",
+          "MinMemoryTRES": "115000M",
+          "MinTmpDiskNode": "0",
+          "Features": "(null)",
+          "DelayBoot": "00:00:00",
+          "OverSubscribe": "OK",
+          "Contiguous": "0",
+          "Licenses": "(null)",
+          "Network": "(null)",
+          "Command": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/run_probe.sh",
+          "WorkDir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2",
+          "StdErr": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038188.err",
+          "StdIn": "/dev/null",
+          "StdOut": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/7038188.out",
+          "MemPerTres": "gpu:115000",
+          "TresPerJob": "gres/gpu:1",
+          "TresPerTask": "cpu=16"
+        }
+      }
+    ],
+    "active_reservations": [
+      {
+        "job_id": "7038188",
+        "work": {
+          "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/outputs/qwen35_27b",
+          "stage": "generate",
+          "seed": 0,
+          "arm": "base"
+        },
+        "record_path": "/lus/lfs1aip2/projects/u6oz/yuhe/today-date-probe-20261003-v2/slurm/submission-qwen35_27b-20261003T155950438560Z.json",
+        "submitted_at_utc": "20261003T155950438560Z"
+      }
+    ]
+  },
+  "conditions": [
+    {
+      "key": "qwen72b",
+      "mode": "default",
+      "raw_count": 10,
+      "progress.json": {
+        "completed": 10,
+        "extraction_status_counts": {
+          "direct_final": 10
+        },
+        "host_metadata": {
+          "updated_at_utc": "2026-10-03T16:02:47.975816+00:00"
+        },
+        "total": 10
+      },
+      "complete.json": {
+        "draw_count": 10,
+        "extraction_status_counts": {
+          "direct_final": 10
+        },
+        "host_metadata": {
+          "completed_at_utc": "2026-10-03T16:02:47.978453+00:00"
+        },
+        "inference_binding_sha256": "e2a3bc74376bdfbb1d041907630652681bb5d0252aaa1e383f26a55b50f467fa",
+        "manifest_sha256": "dc2bcccd98462fc25d5c4deb1d64bc81f662fdce66cfdc08aaf4f4831b889bd4",
+        "network_attempts_denied": [
+          {
+            "event": "socket.bind"
+          }
+        ],
+        "raw_files_sha256": {
+          "raw/qwen72b__today_date__r00.json": "bdd704d662d4f6ac080d61f14ac78f93cd51d4c033ed77586945220e6192ee4e",
+          "raw/qwen72b__today_date__r01.json": "e6e4fc67ed3ace1e689834e5622deae2f374e1e8019ce678bef81f9dadbb07e5",
+          "raw/qwen72b__today_date__r02.json": "4dfd7be825789ecdb9a52f466fa1ab54d6599ee0a477dfa358b893ccb431a8cf",
+          "raw/qwen72b__today_date__r03.json": "5c7653d7b7a5b050366f9903ba1df9858b0cfe37c14e12da979d847056bbd84b",
+          "raw/qwen72b__today_date__r04.json": "4fe4e2648627e0ba798ca8832ccaf5a3d45137c446a466b3579e539da7251c67",
+          "raw/qwen72b__today_date__r05.json": "afde183fa93c8eedad837f8ee91d00223cabfdf64e10b314526d4228d8ef06e8",
+          "raw/qwen72b__today_date__r06.json": "260f13a2514b9efdcfc7f67c603f5ac51f9624633ac7b01c6d2de3da76f191b8",
+          "raw/qwen72b__today_date__r07.json": "0f20dfa4242f38b2094b959ecf3236fb80431a0c43931b6581111d413e974aca",
+          "raw/qwen72b__today_date__r08.json": "f6a77515dcfdd35d6dfd2e5c0b1dfd78a4060f9795fd6b2e1bb922e87857dcdb",
+          "raw/qwen72b__today_date__r09.json": "3e2f7dcead148dd72befe54a448e00dcaf2e7197de05954d994439fa2a421952"
+        },
+        "results_sha256": "f86cdb2811778b241de4a23e0165729035ce4728561173fef04a3d80dea99d74",
+        "status": "completed"
+      },
+      "manifest.json": {
+        "adapter_receipt_sha256": null,
+        "arm": "base",
+        "inference_binding": {
+          "bundle_sha256": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+          "config_sha256": "0df4d2e8f2e44e4773d99e32d919a0120b56f5ac2f3b4f740008c06eda60fbb2",
+          "formatted_prompt_sha256": "9f58188a4fefa2cc4c99ef65c13a43ece34d78828c0f2c6e7c8d9bab14b10e55",
+          "generation": {
+            "batch_size": 1,
+            "do_sample": true,
+            "enable_thinking": false,
+            "max_new_tokens": 1024,
+            "repetition_penalty": 1.0,
+            "seed_rule": "First four bytes of SHA256(f'{model_key}__today_date__r{replicate:02d}'), big-endian; same seed across native modes",
+            "temperature": 1.0,
+            "top_k": 0,
+            "top_p": 1.0
+          },
+          "messages": [
+            {
+              "content": "You are a helpful assistant.",
+              "role": "system"
+            },
+            {
+              "content": "What is today's date?",
+              "role": "user"
+            }
+          ],
+          "mode": "default",
+          "model_key": "qwen72b",
+          "network": {
+            "HF_HUB_DISABLE_TELEMETRY": "1",
+            "HF_HUB_OFFLINE": "1",
+            "TRANSFORMERS_OFFLINE": "1",
+            "local_files_only": true,
+            "model_clock_access": false,
+            "model_tools": [],
+            "operating_system_network_namespace_isolation": false,
+            "python_internet_socket_guard": true
+          },
+          "prompt": "What is today's date?",
+          "prompt_token_ids_sha256": "53f5ae8472a10f171ad02814523685facc80bc0582fc22d4330134cccfad09e4",
+          "protocol_sha256": "662a180b9b147d02992c65276a683f1f628f23797554d3b71f643892ddb7bd83",
+          "replicates": 10,
+          "runtime": {
+            "actual_parameter_elements_by_dtype": {
+              "torch.bfloat16": 72287920128
+            },
+            "cache_diagnostic_sha256": "11429828cf94f21eb9a44b3341f471415caa6fad02ce7543fd01ee3f2c7cd688",
+            "cache_helper_sha256": "d9a3f9e4d02492a54596db75c8c68a9ad641c2032c77586891191b460d1ddeb5",
+            "cache_runtime": "pinned_native_tuple_cache_v4",
+            "compatibility_helper_sha256": "dd3e75d43dc427405afd0b4a0c97b027e0d53ea20a6816ef8416d1ce663edce1",
+            "gpus": 2,
+            "interpreter": "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python",
+            "model": {
+              "name": "Qwen/Qwen-72B-Chat",
+              "path": "/projects/u6oz/yuhe/millennium-forecast-20260929/models/qwen72b",
+              "revision": "2cd9f76279337941ec1a4abeec6f8eb3c38d0f55",
+              "staging_receipt_sha256": "87e5c37bdfde7083d01eaed2f9b579107106a391e5a41e1dcfca8597c3e5a8ae"
+            },
+            "original_inference_binding_sha256": "8203ab5cce60d064295fee015283e8959b6d786ae88dfa8cc3a1699738024940",
+            "packages": {
+              "accelerate": "1.9.0",
+              "peft": "0.16.0",
+              "torch": "2.8.0+cu129",
+              "transformers": "4.55.2"
+            },
+            "precision": "bfloat16",
+            "private_runtime_check_sha256": "3d0f6eb132194541a63ec9e29a17056325ca56b62e114b358f3399f49f1a1df4",
+            "provider": "isambard/hf",
+            "runtime_compatibility": {
+              "backend": "pinned_native_eager",
+              "staged_modeling_qwen_sha256": "a90fa5ba51687288389c6f50989da04b68fa86ccb541ed3ca4edd910d71dc184",
+              "support_torch2": false,
+              "use_flash_attn": false,
+              "version": "qwen72-causal-v2"
+            }
+          },
+          "version": "today-date-probe-v1",
+          "worker_sha256": "c9331f32bf283902718884a69573b0e0a9ad270f6886fed84dc48a74859c3b2e"
+        },
+        "inference_binding_sha256": "e2a3bc74376bdfbb1d041907630652681bb5d0252aaa1e383f26a55b50f467fa",
+        "mode": "default",
+        "model_key": "qwen72b",
+        "model_label": "Qwen 72B",
+        "training_seed": null
+      }
+    },
+    {
+      "key": "qwen25_72b",
+      "mode": "default",
+      "raw_count": 10,
+      "progress.json": {
+        "completed": 10,
+        "extraction_status_counts": {
+          "direct_final": 10
+        },
+        "host_metadata": {
+          "updated_at_utc": "2026-10-03T16:03:05.102894+00:00"
+        },
+        "total": 10
+      },
+      "complete.json": {
+        "draw_count": 10,
+        "extraction_status_counts": {
+          "direct_final": 10
+        },
+        "host_metadata": {
+          "completed_at_utc": "2026-10-03T16:03:05.105666+00:00"
+        },
+        "inference_binding_sha256": "e4f504a5ae49b79597f15388aa639b2f02df0bcec8ec298196cabfcd85a3f779",
+        "manifest_sha256": "803d0baa78cd38f7983deb3c6275b7e4cee76f59f5332f425fcfd8e6c9f53876",
+        "network_attempts_denied": [
+          {
+            "event": "socket.bind"
+          }
+        ],
+        "raw_files_sha256": {
+          "raw/qwen25_72b__today_date__r00.json": "76de7b6faef5a9ff90e1d2703c2539301d78fd9ce7d72c83c209245659d01bff",
+          "raw/qwen25_72b__today_date__r01.json": "ddaa9c39fc5306394c1dd2bcb3877a6f182077e152feda880058e9ac64576231",
+          "raw/qwen25_72b__today_date__r02.json": "0f7188fa9a1a04d0e07ab9d4355d2bf574ddd36c66f7058278463679e5189808",
+          "raw/qwen25_72b__today_date__r03.json": "62543a4298efbf9fc5c1a543fa0188fafb7279dbdf227c4535ed9985a518ce2f",
+          "raw/qwen25_72b__today_date__r04.json": "4e30639e3ec27e0ae881250dff75e3c2ed9f3142839c46b250c476c9d18d4df6",
+          "raw/qwen25_72b__today_date__r05.json": "fb29bd52286f226e257bc87baca624f96ec350cc1ae63a5b07ad9d2f470d065c",
+          "raw/qwen25_72b__today_date__r06.json": "8aa8e520f19b247dcf4b3d6c62b58d72b837da387bb1a1164dd41b1e99b3f2e5",
+          "raw/qwen25_72b__today_date__r07.json": "f28d45c7a7054e56763223d55e7d28d524283797391bb497248b3bfd069a51cb",
+          "raw/qwen25_72b__today_date__r08.json": "1588fbd6df6b19bb996bbdc24909d4054c3c886a56388d3defa2fcc3f5beec50",
+          "raw/qwen25_72b__today_date__r09.json": "57070ba0ed9c056bd8b21cd595ef0732245af2c66b6eec93addae3933d3a6e69"
+        },
+        "results_sha256": "7de449f9f665a8dd1889bb712c332f5244b7bcd5264456c7aac1a429a6d16a1d",
+        "status": "completed"
+      },
+      "manifest.json": {
+        "adapter_receipt_sha256": null,
+        "arm": "base",
+        "inference_binding": {
+          "bundle_sha256": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+          "config_sha256": "ea85c57ae89bc99120d4578c99f8c27969d3aeefbca2d3dbba926bd10e9947dd",
+          "formatted_prompt_sha256": "1f3ced2f51f4dffe56c10335909a53bac7474c0f57ec728581572d2f55b470d3",
+          "generation": {
+            "batch_size": 1,
+            "do_sample": true,
+            "enable_thinking": false,
+            "max_new_tokens": 1024,
+            "repetition_penalty": 1.0,
+            "seed_rule": "First four bytes of SHA256(f'{model_key}__today_date__r{replicate:02d}'), big-endian; same seed across native modes",
+            "temperature": 1.0,
+            "top_k": 0,
+            "top_p": 1.0
+          },
+          "messages": [
+            {
+              "content": "What is today's date?",
+              "role": "user"
+            }
+          ],
+          "mode": "default",
+          "model_key": "qwen25_72b",
+          "network": {
+            "HF_HUB_DISABLE_TELEMETRY": "1",
+            "HF_HUB_OFFLINE": "1",
+            "TRANSFORMERS_OFFLINE": "1",
+            "local_files_only": true,
+            "model_clock_access": false,
+            "model_tools": [],
+            "operating_system_network_namespace_isolation": false,
+            "python_internet_socket_guard": true
+          },
+          "prompt": "What is today's date?",
+          "prompt_token_ids_sha256": "cc54d8a2b064ff203e24c175b8749b18876c5730982902c79e3577d60cba12ac",
+          "protocol_sha256": "662a180b9b147d02992c65276a683f1f628f23797554d3b71f643892ddb7bd83",
+          "replicates": 10,
+          "runtime": {
+            "actual_parameter_elements_by_dtype": {
+              "torch.bfloat16": 72706203648
+            },
+            "gpus": 2,
+            "interpreter": "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python",
+            "model": {
+              "name": "Qwen/Qwen2.5-72B-Instruct",
+              "path": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen25_72b",
+              "revision": "a13fff9ad76700c7ecff2769f75943ba8395b4a7",
+              "staging_receipt_sha256": "b0c884a7da9190f7717a6e2f002b78654c58d2ae7e52507ee6160f6f7824994e"
+            },
+            "original_inference_binding_sha256": "657302af528ff0edde9af00c12c66f9f1c603d634e27685ff96e9049749a95c7",
+            "packages": {
+              "accelerate": "1.9.0",
+              "peft": "0.16.0",
+              "torch": "2.8.0+cu129",
+              "transformers": "4.55.2"
+            },
+            "precision": "bfloat16",
+            "provider": "isambard/hf"
+          },
+          "version": "today-date-probe-v1",
+          "worker_sha256": "c9331f32bf283902718884a69573b0e0a9ad270f6886fed84dc48a74859c3b2e"
+        },
+        "inference_binding_sha256": "e4f504a5ae49b79597f15388aa639b2f02df0bcec8ec298196cabfcd85a3f779",
+        "mode": "default",
+        "model_key": "qwen25_72b",
+        "model_label": "Qwen2.5 72B",
+        "training_seed": null
+      }
+    },
+    {
+      "key": "r1_distill_32b",
+      "mode": "default",
+      "raw_count": 10,
+      "progress.json": {
+        "completed": 10,
+        "extraction_status_counts": {
+          "reasoning_final": 10
+        },
+        "host_metadata": {
+          "updated_at_utc": "2026-10-03T16:01:06.587698+00:00"
+        },
+        "total": 10
+      },
+      "complete.json": {
+        "draw_count": 10,
+        "extraction_status_counts": {
+          "reasoning_final": 10
+        },
+        "host_metadata": {
+          "completed_at_utc": "2026-10-03T16:01:06.589867+00:00"
+        },
+        "inference_binding_sha256": "297f0843f435c390001122df904f080709295cb48323f45421be42be0ed5ba56",
+        "manifest_sha256": "73459033b50e337bf5bf00bd0e9a8801d01c4f91d48fcd27039f295ca72dedc6",
+        "network_attempts_denied": [
+          {
+            "event": "socket.bind"
+          }
+        ],
+        "raw_files_sha256": {
+          "raw/r1_distill_32b__today_date__r00.json": "bfe478f6ccba8369890cd01d65d48ff291cd520980c5ddb92ecba4d66186e265",
+          "raw/r1_distill_32b__today_date__r01.json": "7310ef639d2290b874bcc77ea5c6225ed4a6e10f8dc7527dcc70a8938b1ce4bb",
+          "raw/r1_distill_32b__today_date__r02.json": "7aefb4d6173eb6c248a6287a27ff1b3f78d14d8af058b05830ffbd9febc52a91",
+          "raw/r1_distill_32b__today_date__r03.json": "30034389348b7e485e1e04dd541e7223f13332e0462e383b5ba45e68bcaeeb5a",
+          "raw/r1_distill_32b__today_date__r04.json": "3c319dfd48f592cf7e7924e6d1e7fd1c5ad848f0e65747c121d2a686dc3a0a0e",
+          "raw/r1_distill_32b__today_date__r05.json": "057014ea0879ca7ef95c8bc8a5fcd875a8da421e522538a919b1cb1b8872b9b0",
+          "raw/r1_distill_32b__today_date__r06.json": "5d6ca1b5f4f24a5c8a70803f2676b12295e33aa73c337416506da19be0448764",
+          "raw/r1_distill_32b__today_date__r07.json": "aff62b5120e04346bd9b4442bdeba6ee8e46b0f8e5d30dcf62e04af8d93af853",
+          "raw/r1_distill_32b__today_date__r08.json": "b7d67914119288baabd70490028aa5a5302453ca9abbb727fefd0af7c44a692e",
+          "raw/r1_distill_32b__today_date__r09.json": "60c8e84510d76dc9bbc29daa1df2f0d6dff810b03ffc2a528b6934abc8d8c802"
+        },
+        "results_sha256": "f689a1b04e6b6cab1b0135fc9799fc140eae28dc9d8b5bf6a5411de5bc1d03e3",
+        "status": "completed"
+      },
+      "manifest.json": {
+        "adapter_receipt_sha256": null,
+        "arm": "base",
+        "inference_binding": {
+          "bundle_sha256": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+          "config_sha256": "36a7aedda9eddc5ed177f102d97ba1f29e1bf0058f9adbe841608e9e1b232051",
+          "formatted_prompt_sha256": "52c272e53ce73429a327069787be49dbdc5fd01cff1e4b1f7da7ce32216960c5",
+          "generation": {
+            "batch_size": 1,
+            "do_sample": true,
+            "enable_thinking": true,
+            "max_new_tokens": 4096,
+            "repetition_penalty": 1.0,
+            "seed_rule": "First four bytes of SHA256(f'{model_key}__today_date__r{replicate:02d}'), big-endian; same seed across native modes",
+            "temperature": 1.0,
+            "top_k": 0,
+            "top_p": 1.0
+          },
+          "messages": [
+            {
+              "content": "What is today's date?",
+              "role": "user"
+            }
+          ],
+          "mode": "default",
+          "model_key": "r1_distill_32b",
+          "network": {
+            "HF_HUB_DISABLE_TELEMETRY": "1",
+            "HF_HUB_OFFLINE": "1",
+            "TRANSFORMERS_OFFLINE": "1",
+            "local_files_only": true,
+            "model_clock_access": false,
+            "model_tools": [],
+            "operating_system_network_namespace_isolation": false,
+            "python_internet_socket_guard": true
+          },
+          "prompt": "What is today's date?",
+          "prompt_token_ids_sha256": "065b9ce027d7c6bb64edfce67951348163e86fca57ba36b746f7a5d344863b46",
+          "protocol_sha256": "662a180b9b147d02992c65276a683f1f628f23797554d3b71f643892ddb7bd83",
+          "replicates": 10,
+          "runtime": {
+            "actual_parameter_elements_by_dtype": {
+              "torch.bfloat16": 32763876352
+            },
+            "gpus": 1,
+            "interpreter": "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python",
+            "model": {
+              "name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+              "path": "/projects/u6oz/yuhe/millennium-forecast-20260929/models/r1_distill_32b",
+              "revision": "2a29ab14a7dcfb5132537e18050d0ebe5008f7fb",
+              "staging_receipt_sha256": "6030bb4048aee974d662e2c46e6cfb1d6811c4163f17643b17fd2fa213f24b35"
+            },
+            "original_inference_binding_sha256": "d49172975235ab739cb629dd0fba8056b1c68c31a641a48ed3445f6e17b521f5",
+            "packages": {
+              "accelerate": "1.9.0",
+              "peft": "0.16.0",
+              "torch": "2.8.0+cu129",
+              "transformers": "4.55.2"
+            },
+            "precision": "bfloat16",
+            "provider": "isambard/hf"
+          },
+          "version": "today-date-probe-v1",
+          "worker_sha256": "c9331f32bf283902718884a69573b0e0a9ad270f6886fed84dc48a74859c3b2e"
+        },
+        "inference_binding_sha256": "297f0843f435c390001122df904f080709295cb48323f45421be42be0ed5ba56",
+        "mode": "default",
+        "model_key": "r1_distill_32b",
+        "model_label": "R1 Distill 32B",
+        "training_seed": null
+      }
+    },
+    {
+      "key": "qwen3_32b",
+      "mode": "on",
+      "raw_count": 10,
+      "progress.json": {
+        "completed": 10,
+        "extraction_status_counts": {
+          "reasoning_final": 10
+        },
+        "host_metadata": {
+          "updated_at_utc": "2026-10-03T16:03:33.080826+00:00"
+        },
+        "total": 10
+      },
+      "complete.json": {
+        "draw_count": 10,
+        "extraction_status_counts": {
+          "reasoning_final": 10
+        },
+        "host_metadata": {
+          "completed_at_utc": "2026-10-03T16:03:33.083437+00:00"
+        },
+        "inference_binding_sha256": "4862d1d20e3f45fb41b455cfd21d8793502a3afe296e46200d2b20f0a822ad44",
+        "manifest_sha256": "e2c3eaa0f41c86acd611b957b941047e8fc073d03517367798afc6482de0c4a3",
+        "network_attempts_denied": [
+          {
+            "event": "socket.bind"
+          }
+        ],
+        "raw_files_sha256": {
+          "raw/qwen3_32b__today_date__r00.json": "ad8e1ff2440c8488b68154d35a4b37a252d4a659a96010cfbae5e6f84b470ff5",
+          "raw/qwen3_32b__today_date__r01.json": "d785c2b1a23b3c9467bedbc4165147904bbb65afd6ec876c018c17b03ccdd182",
+          "raw/qwen3_32b__today_date__r02.json": "21c2eacd4b08a32aa696b1bf09ee8391ffca3e9e0f462e6c6d0e17921cb21f67",
+          "raw/qwen3_32b__today_date__r03.json": "a0c9211ea765b0c6eedec9a97314357b660e872d993e99d4a70284f7113d9351",
+          "raw/qwen3_32b__today_date__r04.json": "d4f344063e32873666dee9d115bade84504bb736622cd5bd9cbc2d80f61ecd37",
+          "raw/qwen3_32b__today_date__r05.json": "6c5a6e5b2689956e08ed6a89e68601f9092874353e5510edbd73009af6a2e991",
+          "raw/qwen3_32b__today_date__r06.json": "5a08b28287fec23bc3081ab3ac14ee8c8b0b3a410bc6215ffdfb65fea9f683f2",
+          "raw/qwen3_32b__today_date__r07.json": "6a1e34001d77ef9f2bb1bc78a897e1c840f714b38595b409ef5aaabd09781fe3",
+          "raw/qwen3_32b__today_date__r08.json": "0aa7da42c14d901c24e6951e97a4e97a1d658923444bb056c5d2611fbc29e124",
+          "raw/qwen3_32b__today_date__r09.json": "20202d83664ebaee18f4754fe37a900bdfca50e6570474bc1b96795654936e16"
+        },
+        "results_sha256": "a77ee80a051870458167e980b6a5445387257a084691d447f319708a0f225d73",
+        "status": "completed"
+      },
+      "manifest.json": {
+        "adapter_receipt_sha256": null,
+        "arm": "base",
+        "inference_binding": {
+          "bundle_sha256": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+          "config_sha256": "5fd87fe69f6aa3d3bc0090ac58218542d11b5f6cdb6efaa2a5bf39c6667c5b88",
+          "formatted_prompt_sha256": "7fbc4d41c69b2129d1dfadc27b4ccee107d38f1999f637ee90a3ca26362ca573",
+          "generation": {
+            "batch_size": 1,
+            "do_sample": true,
+            "enable_thinking": true,
+            "max_new_tokens": 4096,
+            "repetition_penalty": 1.0,
+            "seed_rule": "First four bytes of SHA256(f'{model_key}__today_date__r{replicate:02d}'), big-endian; same seed across native modes",
+            "temperature": 1.0,
+            "top_k": 0,
+            "top_p": 1.0
+          },
+          "messages": [
+            {
+              "content": "What is today's date?",
+              "role": "user"
+            }
+          ],
+          "mode": "on",
+          "model_key": "qwen3_32b",
+          "network": {
+            "HF_HUB_DISABLE_TELEMETRY": "1",
+            "HF_HUB_OFFLINE": "1",
+            "TRANSFORMERS_OFFLINE": "1",
+            "local_files_only": true,
+            "model_clock_access": false,
+            "model_tools": [],
+            "operating_system_network_namespace_isolation": false,
+            "python_internet_socket_guard": true
+          },
+          "prompt": "What is today's date?",
+          "prompt_token_ids_sha256": "f47508dc3bd69df4f4371be81d68f992cdf46f7b7f61f7f3ac7e329e0d4d9c50",
+          "protocol_sha256": "662a180b9b147d02992c65276a683f1f628f23797554d3b71f643892ddb7bd83",
+          "replicates": 10,
+          "runtime": {
+            "actual_parameter_elements_by_dtype": {
+              "torch.bfloat16": 32762123264
+            },
+            "gpus": 1,
+            "interpreter": "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python",
+            "model": {
+              "name": "Qwen/Qwen3-32B",
+              "path": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen3_32b",
+              "revision": "30b8421510892303dc5ddd6cd0ac90ca2053478d",
+              "staging_receipt_sha256": "f0fd7bf56f000a36a6cc50da0c43d88802265b9898879d928da7cafb16958f9a"
+            },
+            "original_inference_binding_sha256": "b9224a6795d413015ceaef25108e06e44d5f163f259948fbc0242d47039a9790",
+            "packages": {
+              "accelerate": "1.9.0",
+              "peft": "0.16.0",
+              "torch": "2.8.0+cu129",
+              "transformers": "4.55.2"
+            },
+            "precision": "bfloat16",
+            "provider": "isambard/hf"
+          },
+          "version": "today-date-probe-v1",
+          "worker_sha256": "c9331f32bf283902718884a69573b0e0a9ad270f6886fed84dc48a74859c3b2e"
+        },
+        "inference_binding_sha256": "4862d1d20e3f45fb41b455cfd21d8793502a3afe296e46200d2b20f0a822ad44",
+        "mode": "on",
+        "model_key": "qwen3_32b",
+        "model_label": "Qwen3 32B",
+        "training_seed": null
+      }
+    },
+    {
+      "key": "qwen3_32b",
+      "mode": "off",
+      "raw_count": 10,
+      "progress.json": {
+        "completed": 10,
+        "extraction_status_counts": {
+          "direct_final": 10
+        },
+        "host_metadata": {
+          "updated_at_utc": "2026-10-03T16:04:02.514315+00:00"
+        },
+        "total": 10
+      },
+      "complete.json": {
+        "draw_count": 10,
+        "extraction_status_counts": {
+          "direct_final": 10
+        },
+        "host_metadata": {
+          "completed_at_utc": "2026-10-03T16:04:02.516438+00:00"
+        },
+        "inference_binding_sha256": "9b1564b38621ea646b8b59253b775f73aea0d281c1a0467cc560dff6b489ad11",
+        "manifest_sha256": "c3bf0f3aa56cecd104ee349f962905bc96ffac19a4eb00df51ef3c52ca022f9a",
+        "network_attempts_denied": [
+          {
+            "event": "socket.bind"
+          }
+        ],
+        "raw_files_sha256": {
+          "raw/qwen3_32b__today_date__r00.json": "e828a491e6e38f0de1753e77e1baacaa05bb154939b3ce623906bf3bc4c3ffd0",
+          "raw/qwen3_32b__today_date__r01.json": "d04dea1a3468f3a9dde5410cea5d6059650ef45890d3c0addcb083a25416e24e",
+          "raw/qwen3_32b__today_date__r02.json": "d423b3f9dff61c24778538bbfc4bccc4bd7b499efc8f8713107ecf0fa82589f3",
+          "raw/qwen3_32b__today_date__r03.json": "558f7f5a130b23ec11f1f9b0f32852a906fcf688f61d1760f08718bb8df97fa1",
+          "raw/qwen3_32b__today_date__r04.json": "11c7f6a77081b1d98cb4f9cdaa7283f6148302d2fa940663f435ab510da81516",
+          "raw/qwen3_32b__today_date__r05.json": "e3ba5861fefc8dd84da0d6ab42e94bbc2bd6471ca0573c69e5571babceb6960b",
+          "raw/qwen3_32b__today_date__r06.json": "02022b1500b5ad6d509e0b3834420b378253152c1e2775f6b365a3bdad790a54",
+          "raw/qwen3_32b__today_date__r07.json": "ba3c06e0e08bcedce4b425b49ebce812e80224406fdb9afe5a6e27f9ffc75a79",
+          "raw/qwen3_32b__today_date__r08.json": "592e22aa829ed071ec44f6c0a384b1d1b6e44df30b68edb91ba213d1f90721df",
+          "raw/qwen3_32b__today_date__r09.json": "6c1204e7adcd3e80d1bc08a56cf532b5ed34633299ae29f7e0e8ef54db60bdd9"
+        },
+        "results_sha256": "05f6f3be761ad659c035b978b9500535c00a53e8105a33e2386b34d201a72e8a",
+        "status": "completed"
+      },
+      "manifest.json": {
+        "adapter_receipt_sha256": null,
+        "arm": "base",
+        "inference_binding": {
+          "bundle_sha256": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+          "config_sha256": "5fd87fe69f6aa3d3bc0090ac58218542d11b5f6cdb6efaa2a5bf39c6667c5b88",
+          "formatted_prompt_sha256": "8c354c7ff883bbd487bbe0cb8a6625a5f5b94148d2c086ab52cecda48683f97b",
+          "generation": {
+            "batch_size": 1,
+            "do_sample": true,
+            "enable_thinking": false,
+            "max_new_tokens": 4096,
+            "repetition_penalty": 1.0,
+            "seed_rule": "First four bytes of SHA256(f'{model_key}__today_date__r{replicate:02d}'), big-endian; same seed across native modes",
+            "temperature": 1.0,
+            "top_k": 0,
+            "top_p": 1.0
+          },
+          "messages": [
+            {
+              "content": "What is today's date?",
+              "role": "user"
+            }
+          ],
+          "mode": "off",
+          "model_key": "qwen3_32b",
+          "network": {
+            "HF_HUB_DISABLE_TELEMETRY": "1",
+            "HF_HUB_OFFLINE": "1",
+            "TRANSFORMERS_OFFLINE": "1",
+            "local_files_only": true,
+            "model_clock_access": false,
+            "model_tools": [],
+            "operating_system_network_namespace_isolation": false,
+            "python_internet_socket_guard": true
+          },
+          "prompt": "What is today's date?",
+          "prompt_token_ids_sha256": "437b3493130e690f1dcbb0785cbfa003378450085381fa68507f3f0fe66a73e7",
+          "protocol_sha256": "662a180b9b147d02992c65276a683f1f628f23797554d3b71f643892ddb7bd83",
+          "replicates": 10,
+          "runtime": {
+            "actual_parameter_elements_by_dtype": {
+              "torch.bfloat16": 32762123264
+            },
+            "gpus": 1,
+            "interpreter": "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python",
+            "model": {
+              "name": "Qwen/Qwen3-32B",
+              "path": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen3_32b",
+              "revision": "30b8421510892303dc5ddd6cd0ac90ca2053478d",
+              "staging_receipt_sha256": "f0fd7bf56f000a36a6cc50da0c43d88802265b9898879d928da7cafb16958f9a"
+            },
+            "original_inference_binding_sha256": "b9224a6795d413015ceaef25108e06e44d5f163f259948fbc0242d47039a9790",
+            "packages": {
+              "accelerate": "1.9.0",
+              "peft": "0.16.0",
+              "torch": "2.8.0+cu129",
+              "transformers": "4.55.2"
+            },
+            "precision": "bfloat16",
+            "provider": "isambard/hf"
+          },
+          "version": "today-date-probe-v1",
+          "worker_sha256": "c9331f32bf283902718884a69573b0e0a9ad270f6886fed84dc48a74859c3b2e"
+        },
+        "inference_binding_sha256": "9b1564b38621ea646b8b59253b775f73aea0d281c1a0467cc560dff6b489ad11",
+        "mode": "off",
+        "model_key": "qwen3_32b",
+        "model_label": "Qwen3 32B",
+        "training_seed": null
+      }
+    },
+    {
+      "key": "qwen35_27b",
+      "mode": "on",
+      "raw_count": 5,
+      "progress.json": {
+        "completed": 5,
+        "extraction_status_counts": {
+          "reasoning_final": 5
+        },
+        "host_metadata": {
+          "updated_at_utc": "2026-10-03T16:05:55.206261+00:00"
+        },
+        "total": 10
+      },
+      "manifest.json": {
+        "adapter_receipt_sha256": null,
+        "arm": "base",
+        "inference_binding": {
+          "bundle_sha256": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+          "config_sha256": "7fd75894a84fafb8abeb734d9571e8d37f4c54359df3f8618b0faefc2eb06578",
+          "formatted_prompt_sha256": "53074fcdb28a8b923a11c3da14dbfefde9aa4661d7b8a5f0176ebacf36b0ff7d",
+          "generation": {
+            "batch_size": 1,
+            "do_sample": true,
+            "enable_thinking": true,
+            "max_new_tokens": 4096,
+            "repetition_penalty": 1.0,
+            "seed_rule": "First four bytes of SHA256(f'{model_key}__today_date__r{replicate:02d}'), big-endian; same seed across native modes",
+            "temperature": 1.0,
+            "top_k": 0,
+            "top_p": 1.0
+          },
+          "messages": [
+            {
+              "content": "What is today's date?",
+              "role": "user"
+            }
+          ],
+          "mode": "on",
+          "model_key": "qwen35_27b",
+          "network": {
+            "HF_HUB_DISABLE_TELEMETRY": "1",
+            "HF_HUB_OFFLINE": "1",
+            "TRANSFORMERS_OFFLINE": "1",
+            "local_files_only": true,
+            "model_clock_access": false,
+            "model_tools": [],
+            "operating_system_network_namespace_isolation": false,
+            "python_internet_socket_guard": true
+          },
+          "prompt": "What is today's date?",
+          "prompt_token_ids_sha256": "262dafc5bd4a09c0e17fce449962cab452be7ef00e32c02734e0e9e7af618571",
+          "protocol_sha256": "662a180b9b147d02992c65276a683f1f628f23797554d3b71f643892ddb7bd83",
+          "replicates": 10,
+          "runtime": {
+            "actual_parameter_elements_by_dtype": {
+              "torch.bfloat16": 27356728560
+            },
+            "gpus": 1,
+            "interpreter": "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python",
+            "model": {
+              "name": "Qwen/Qwen3.5-27B",
+              "path": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen35_27b",
+              "revision": "a3ca5719420477ab4390cf6262d6de65e8871c37",
+              "staging_receipt_sha256": "187e8a9d8d00af3c3a01a411782c2310c8d5f35f6f5bb9226bad9f29e850bee0"
+            },
+            "original_inference_binding_sha256": "4958780a15dd7bdde49881649f5bc179c025821943edaf07e8d6055523dd4be5",
+            "packages": {
+              "accelerate": "1.9.0",
+              "peft": "0.18.1",
+              "torch": "2.8.0+cu129",
+              "transformers": "5.8.0"
+            },
+            "precision": "bfloat16",
+            "private_runtime_check_sha256": "95ffd9b7e46ad6eaf6448542eabb8f96f7c6731f7570ceb92eaccf998cf7cfa1",
+            "provider": "isambard/hf",
+            "tokenization_runtime": "native_template_return_dict_false_v2"
+          },
+          "version": "today-date-probe-v1",
+          "worker_sha256": "c9331f32bf283902718884a69573b0e0a9ad270f6886fed84dc48a74859c3b2e"
+        },
+        "inference_binding_sha256": "5313d8add75ccd4679d7a54d6a56a3a1b798c2ccb45cf3f5fbb06b4ee7f1e8b2",
+        "mode": "on",
+        "model_key": "qwen35_27b",
+        "model_label": "Qwen3.5 27B",
+        "training_seed": null
+      }
+    },
+    {
+      "key": "qwen35_27b",
+      "mode": "off",
+      "raw_count": 0
+    },
+    {
+      "key": "qwen38_27b",
+      "mode": "on",
+      "raw_count": 10,
+      "progress.json": {
+        "completed": 10,
+        "extraction_status_counts": {
+          "reasoning_final": 10
+        },
+        "host_metadata": {
+          "updated_at_utc": "2026-10-03T16:02:55.946391+00:00"
+        },
+        "total": 10
+      },
+      "complete.json": {
+        "draw_count": 10,
+        "extraction_status_counts": {
+          "reasoning_final": 10
+        },
+        "host_metadata": {
+          "completed_at_utc": "2026-10-03T16:02:55.949328+00:00"
+        },
+        "inference_binding_sha256": "aeadba6e756ecc108cc494a142a5d0f2f65ecf92e408df810e37451181a5d147",
+        "manifest_sha256": "e72c333a3b648af9d257ffe6f04e541771c11e03c8b35bde9b48ffbf209c0317",
+        "network_attempts_denied": [],
+        "raw_files_sha256": {
+          "raw/qwen38_27b__today_date__r00.json": "942a4ced04af126b2659dae3ab6991cc146e803170eb1db2f7d5088930474d3c",
+          "raw/qwen38_27b__today_date__r01.json": "f216ae3d65a8625b8214b2584bf603da044c19ad73327ca0b5605a0238216692",
+          "raw/qwen38_27b__today_date__r02.json": "fae02121a19878d1d0c69648adb67431ee76f7c39576c6c573710ee5bbdadf25",
+          "raw/qwen38_27b__today_date__r03.json": "2cf5cb02c1a8c60c90f01058363018258a3078a81ead49fb953e9b8b975f1ab6",
+          "raw/qwen38_27b__today_date__r04.json": "4cad6337ad8a88a06d38fcef8873c4a7a5d6d8b1ee914e15a37e0f46da2c7fc5",
+          "raw/qwen38_27b__today_date__r05.json": "a78f66d0031123df999789e53d6912e8a84010b03713532b135eb09ea9ef5734",
+          "raw/qwen38_27b__today_date__r06.json": "3bdc8938f25e3b18ec144dbfef41610d9d48f0c5bf9039409eec58e28fb8e97f",
+          "raw/qwen38_27b__today_date__r07.json": "5eace31ca66249b4825741a98c07767c5b86486d0ccaa7f89cbb7c230df7f3d8",
+          "raw/qwen38_27b__today_date__r08.json": "4185b4f43ae46b329f42286c2500d98867ad3187173d92f81a380565b9c55104",
+          "raw/qwen38_27b__today_date__r09.json": "8e4ca36d2168b91c9f0a995bbf98558a2e7b94f1ed058a2fd60e1d4bbd3db7f1"
+        },
+        "results_sha256": "338241e1371708fe2ed2761cf940b075f6974c73daebc0854c88f38bece8608b",
+        "status": "completed"
+      },
+      "manifest.json": {
+        "adapter_receipt_sha256": null,
+        "arm": "base",
+        "inference_binding": {
+          "bundle_sha256": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+          "config_sha256": "584160793abeea2638fdcf30acdf9cac81d98274b2cfce98e39df48a5f0b5324",
+          "formatted_prompt_sha256": "b6d586bb139d3e6cbeb14ab597feee4cbb6de489555576cff4d28c24919b26d8",
+          "generation": {
+            "batch_size": 1,
+            "do_sample": true,
+            "enable_thinking": true,
+            "max_new_tokens": 4096,
+            "repetition_penalty": 1.0,
+            "seed_rule": "First four bytes of SHA256(f'{model_key}__today_date__r{replicate:02d}'), big-endian; same seed across native modes",
+            "temperature": 1.0,
+            "top_k": 0,
+            "top_p": 1.0
+          },
+          "messages": [
+            {
+              "content": "What is today's date?",
+              "role": "user"
+            }
+          ],
+          "mode": "on",
+          "model_key": "qwen38_27b",
+          "network": {
+            "HF_HUB_DISABLE_TELEMETRY": "1",
+            "HF_HUB_OFFLINE": "1",
+            "TRANSFORMERS_OFFLINE": "1",
+            "local_files_only": true,
+            "model_clock_access": false,
+            "model_tools": [],
+            "operating_system_network_namespace_isolation": false,
+            "python_internet_socket_guard": true
+          },
+          "prompt": "What is today's date?",
+          "prompt_token_ids_sha256": "c3d38a38a147be3e8a237d7baef40bb0eaf69de1c8461bac1b9ea52d88989e50",
+          "protocol_sha256": "662a180b9b147d02992c65276a683f1f628f23797554d3b71f643892ddb7bd83",
+          "replicates": 10,
+          "runtime": {
+            "actual_parameter_elements_by_dtype": {
+              "torch.bfloat16": 27356728560
+            },
+            "gpus": 1,
+            "interpreter": "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python",
+            "model": {
+              "name": "Qwen/Qwen3.8-27B",
+              "path": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen38_27b",
+              "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+              "staging_receipt_sha256": "fe1dacc2811fcfcbd61706001d1b087b4b0abe692cd88a9fadff8907dbb8654d"
+            },
+            "original_inference_binding_sha256": "17ed6f09a5e7eb23c09455870ba1d86036386b1cd3b2939e2c2c43b306dd7907",
+            "packages": {
+              "accelerate": "1.9.0",
+              "peft": "0.18.1",
+              "torch": "2.8.0+cu129",
+              "transformers": "5.8.0"
+            },
+            "precision": "bfloat16",
+            "private_runtime_check_sha256": "95ffd9b7e46ad6eaf6448542eabb8f96f7c6731f7570ceb92eaccf998cf7cfa1",
+            "provider": "isambard/hf",
+            "tokenization_runtime": "native_template_return_dict_false_v2"
+          },
+          "version": "today-date-probe-v1",
+          "worker_sha256": "c9331f32bf283902718884a69573b0e0a9ad270f6886fed84dc48a74859c3b2e"
+        },
+        "inference_binding_sha256": "aeadba6e756ecc108cc494a142a5d0f2f65ecf92e408df810e37451181a5d147",
+        "mode": "on",
+        "model_key": "qwen38_27b",
+        "model_label": "Qwen3.8 27B",
+        "training_seed": null
+      }
+    },
+    {
+      "key": "qwen38_27b",
+      "mode": "off",
+      "raw_count": 10,
+      "progress.json": {
+        "completed": 10,
+        "extraction_status_counts": {
+          "direct_final": 10
+        },
+        "host_metadata": {
+          "updated_at_utc": "2026-10-03T16:03:13.675766+00:00"
+        },
+        "total": 10
+      },
+      "complete.json": {
+        "draw_count": 10,
+        "extraction_status_counts": {
+          "direct_final": 10
+        },
+        "host_metadata": {
+          "completed_at_utc": "2026-10-03T16:03:13.677998+00:00"
+        },
+        "inference_binding_sha256": "3e15c0c2dfe2ffb2b2ff97deef51141ef1c7d12cb293c18f2d17cc268b21ee2c",
+        "manifest_sha256": "fbd6e15a3e9ba0335333423cc484ea90c6ae833207525aded4d69a7d6f8005fc",
+        "network_attempts_denied": [],
+        "raw_files_sha256": {
+          "raw/qwen38_27b__today_date__r00.json": "2b3da4736d252a899a66d4506473764e775da541e2e5c392cbc6cf401d1ccf5b",
+          "raw/qwen38_27b__today_date__r01.json": "40340dba06ce0fe167cfb67cc9867d2894c34c07314a3dafc9b4a7affd7feae8",
+          "raw/qwen38_27b__today_date__r02.json": "46d028b70eb1e77de803e664455098003635afc2cc1637eb0e2adcd2ccd6c01d",
+          "raw/qwen38_27b__today_date__r03.json": "a9a6aafda1f90795f622dcacd233a0a5340db9581010fbc580c86ba7d0612fa1",
+          "raw/qwen38_27b__today_date__r04.json": "b76620b871048647fa254cf824183ac764f79662e835d9a1ebea3da4ecb35a91",
+          "raw/qwen38_27b__today_date__r05.json": "4b50ce27a1caffa018f54a1ca376e6b78a9a07f42d80efe3cf20ef7eb7715f1d",
+          "raw/qwen38_27b__today_date__r06.json": "6260417a4dad5076428eb975e42e7393b77851f7d8c1d09615cd4df032543563",
+          "raw/qwen38_27b__today_date__r07.json": "e381f6ff08dcc321a016540fbd74e2dd0b6d3e99f0df059e96892c6051ffb70c",
+          "raw/qwen38_27b__today_date__r08.json": "33e2bd61cfbf3edb8c92eae7d0418a8026a3104214423a8400406416edafea52",
+          "raw/qwen38_27b__today_date__r09.json": "c0dec706c09773cd9a18d179b419209a6c1a272595a89837a1409ee3f528163f"
+        },
+        "results_sha256": "c14ebd4a0fc952d26fb26db93473012153b0e5e55f61f73ccb298d512cc6e161",
+        "status": "completed"
+      },
+      "manifest.json": {
+        "adapter_receipt_sha256": null,
+        "arm": "base",
+        "inference_binding": {
+          "bundle_sha256": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+          "config_sha256": "584160793abeea2638fdcf30acdf9cac81d98274b2cfce98e39df48a5f0b5324",
+          "formatted_prompt_sha256": "8c354c7ff883bbd487bbe0cb8a6625a5f5b94148d2c086ab52cecda48683f97b",
+          "generation": {
+            "batch_size": 1,
+            "do_sample": true,
+            "enable_thinking": false,
+            "max_new_tokens": 4096,
+            "repetition_penalty": 1.0,
+            "seed_rule": "First four bytes of SHA256(f'{model_key}__today_date__r{replicate:02d}'), big-endian; same seed across native modes",
+            "temperature": 1.0,
+            "top_k": 0,
+            "top_p": 1.0
+          },
+          "messages": [
+            {
+              "content": "What is today's date?",
+              "role": "user"
+            }
+          ],
+          "mode": "off",
+          "model_key": "qwen38_27b",
+          "network": {
+            "HF_HUB_DISABLE_TELEMETRY": "1",
+            "HF_HUB_OFFLINE": "1",
+            "TRANSFORMERS_OFFLINE": "1",
+            "local_files_only": true,
+            "model_clock_access": false,
+            "model_tools": [],
+            "operating_system_network_namespace_isolation": false,
+            "python_internet_socket_guard": true
+          },
+          "prompt": "What is today's date?",
+          "prompt_token_ids_sha256": "2a213ae9337e3660eb301eab8e2a9810156c864f3de793a95a8ad6cf0a446207",
+          "protocol_sha256": "662a180b9b147d02992c65276a683f1f628f23797554d3b71f643892ddb7bd83",
+          "replicates": 10,
+          "runtime": {
+            "actual_parameter_elements_by_dtype": {
+              "torch.bfloat16": 27356728560
+            },
+            "gpus": 1,
+            "interpreter": "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python",
+            "model": {
+              "name": "Qwen/Qwen3.8-27B",
+              "path": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen38_27b",
+              "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+              "staging_receipt_sha256": "fe1dacc2811fcfcbd61706001d1b087b4b0abe692cd88a9fadff8907dbb8654d"
+            },
+            "original_inference_binding_sha256": "17ed6f09a5e7eb23c09455870ba1d86036386b1cd3b2939e2c2c43b306dd7907",
+            "packages": {
+              "accelerate": "1.9.0",
+              "peft": "0.18.1",
+              "torch": "2.8.0+cu129",
+              "transformers": "5.8.0"
+            },
+            "precision": "bfloat16",
+            "private_runtime_check_sha256": "95ffd9b7e46ad6eaf6448542eabb8f96f7c6731f7570ceb92eaccf998cf7cfa1",
+            "provider": "isambard/hf",
+            "tokenization_runtime": "native_template_return_dict_false_v2"
+          },
+          "version": "today-date-probe-v1",
+          "worker_sha256": "c9331f32bf283902718884a69573b0e0a9ad270f6886fed84dc48a74859c3b2e"
+        },
+        "inference_binding_sha256": "3e15c0c2dfe2ffb2b2ff97deef51141ef1c7d12cb293c18f2d17cc268b21ee2c",
+        "mode": "off",
+        "model_key": "qwen38_27b",
+        "model_label": "Qwen3.8 27B",
+        "training_seed": null
+      }
+    }
+  ],
+  "model_complete": {
+    "qwen72b": {
+      "bundle_sha256": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+      "condition_count": 1,
+      "condition_receipts_sha256": {
+        "default/complete.json": "5c225f6f490652ac87d1989ae871a8dbddfa3fff61b14d496d5cb25f0c92c040"
+      },
+      "draw_count": 10,
+      "host_metadata": {
+        "completed_at_utc": "2026-10-03T16:02:47.980223+00:00"
+      },
+      "model_key": "qwen72b",
+      "network_attempts_denied": [
+        {
+          "event": "socket.bind"
+        }
+      ],
+      "slurm_job_id": "7038182",
+      "status": "completed"
+    },
+    "qwen25_72b": {
+      "bundle_sha256": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+      "condition_count": 1,
+      "condition_receipts_sha256": {
+        "default/complete.json": "c5a53b58b88074db8420ea55a230e1cf029e455edc6c8d7c7f9200087cb3132a"
+      },
+      "draw_count": 10,
+      "host_metadata": {
+        "completed_at_utc": "2026-10-03T16:03:05.107447+00:00"
+      },
+      "model_key": "qwen25_72b",
+      "network_attempts_denied": [
+        {
+          "event": "socket.bind"
+        }
+      ],
+      "slurm_job_id": "7038184",
+      "status": "completed"
+    },
+    "r1_distill_32b": {
+      "bundle_sha256": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+      "condition_count": 1,
+      "condition_receipts_sha256": {
+        "default/complete.json": "524d243637e6405ff0345c483f9049798680a081981ece14209f8a3bd589db59"
+      },
+      "draw_count": 10,
+      "host_metadata": {
+        "completed_at_utc": "2026-10-03T16:01:06.591562+00:00"
+      },
+      "model_key": "r1_distill_32b",
+      "network_attempts_denied": [
+        {
+          "event": "socket.bind"
+        }
+      ],
+      "slurm_job_id": "7038186",
+      "status": "completed"
+    },
+    "qwen3_32b": {
+      "bundle_sha256": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+      "condition_count": 2,
+      "condition_receipts_sha256": {
+        "off/complete.json": "9f7be1b977801442f22dc7c28095caeb9eeb0dc581c96601626354b86daa08e8",
+        "on/complete.json": "da28484ec0315e7fc77866089328a98fa78f684782563469383e32d31fa43d12"
+      },
+      "draw_count": 20,
+      "host_metadata": {
+        "completed_at_utc": "2026-10-03T16:04:02.518062+00:00"
+      },
+      "model_key": "qwen3_32b",
+      "network_attempts_denied": [
+        {
+          "event": "socket.bind"
+        }
+      ],
+      "slurm_job_id": "7038187",
+      "status": "completed"
+    },
+    "qwen38_27b": {
+      "bundle_sha256": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+      "condition_count": 2,
+      "condition_receipts_sha256": {
+        "off/complete.json": "d194ebcb08bf290bacf754f2d359c6a7165097dc1141621eb610666b8057bc8b",
+        "on/complete.json": "24de0a977688dbfd95e9dface75561bd5525281d744fe56b26475661820e482d"
+      },
+      "draw_count": 20,
+      "host_metadata": {
+        "completed_at_utc": "2026-10-03T16:03:13.679726+00:00"
+      },
+      "model_key": "qwen38_27b",
+      "network_attempts_denied": [],
+      "slurm_job_id": "7038189",
+      "status": "completed"
+    }
+  },
+  "stderr_tails": {
+    "7038182.err": ":  21%|\u2588\u2588        | 17/82 [00:03<00:13,  4.77it/s]\nLoading checkpoint shards:  22%|\u2588\u2588\u258f       | 18/82 [00:03<00:13,  4.77it/s]\nLoading checkpoint shards:  23%|\u2588\u2588\u258e       | 19/82 [00:03<00:13,  4.78it/s]\nLoading checkpoint shards:  24%|\u2588\u2588\u258d       | 20/82 [00:04<00:13,  4.72it/s]\nLoading checkpoint shards:  26%|\u2588\u2588\u258c       | 21/82 [00:04<00:12,  4.72it/s]\nLoading checkpoint shards:  27%|\u2588\u2588\u258b       | 22/82 [00:04<00:12,  4.70it/s]\nLoading checkpoint shards:  28%|\u2588\u2588\u258a       | 23/82 [00:04<00:12,  4.62it/s]\nLoading checkpoint shards:  29%|\u2588\u2588\u2589       | 24/82 [00:05<00:14,  4.14it/s]\nLoading checkpoint shards:  30%|\u2588\u2588\u2588       | 25/82 [00:05<00:14,  3.94it/s]\nLoading checkpoint shards:  32%|\u2588\u2588\u2588\u258f      | 26/82 [00:05<00:13,  4.10it/s]\nLoading checkpoint shards:  33%|\u2588\u2588\u2588\u258e      | 27/82 [00:05<00:13,  3.95it/s]\nLoading checkpoint shards:  34%|\u2588\u2588\u2588\u258d      | 28/82 [00:06<00:13,  3.90it/s]\nLoading checkpoint shards:  35%|\u2588\u2588\u2588\u258c      | 29/82 [00:06<00:12,  4.12it/s]\nLoading checkpoint shards:  37%|\u2588\u2588\u2588\u258b      | 30/82 [00:06<00:12,  4.05it/s]\nLoading checkpoint shards:  38%|\u2588\u2588\u2588\u258a      | 31/82 [00:06<00:13,  3.69it/s]\nLoading checkpoint shards:  39%|\u2588\u2588\u2588\u2589      | 32/82 [00:07<00:15,  3.32it/s]\nLoading checkpoint shards:  40%|\u2588\u2588\u2588\u2588      | 33/82 [00:07<00:16,  2.94it/s]\nLoading checkpoint shards:  41%|\u2588\u2588\u2588\u2588\u258f     | 34/82 [00:08<00:17,  2.76it/s]\nLoading checkpoint shards:  43%|\u2588\u2588\u2588\u2588\u258e     | 35/82 [00:08<00:18,  2.61it/s]\nLoading checkpoint shards:  44%|\u2588\u2588\u2588\u2588\u258d     | 36/82 [00:09<00:17,  2.56it/s]\nLoading checkpoint shards:  45%|\u2588\u2588\u2588\u2588\u258c     | 37/82 [00:09<00:17,  2.51it/s]\nLoading checkpoint shards:  46%|\u2588\u2588\u2588\u2588\u258b     | 38/82 [00:09<00:17,  2.50it/s]\nLoading checkpoint shards:  48%|\u2588\u2588\u2588\u2588\u258a     | 39/82 [00:10<00:17,  2.41it/s]\nLoading checkpoint shards:  49%|\u2588\u2588\u2588\u2588\u2589     | 40/82 [00:10<00:17,  2.41it/s]\nLoading checkpoint shards:  50%|\u2588\u2588\u2588\u2588\u2588     | 41/82 [00:11<00:17,  2.34it/s]\nLoading checkpoint shards:  51%|\u2588\u2588\u2588\u2588\u2588     | 42/82 [00:11<00:17,  2.35it/s]\nLoading checkpoint shards:  52%|\u2588\u2588\u2588\u2588\u2588\u258f    | 43/82 [00:11<00:16,  2.36it/s]\nLoading checkpoint shards:  54%|\u2588\u2588\u2588\u2588\u2588\u258e    | 44/82 [00:12<00:15,  2.40it/s]\nLoading checkpoint shards:  55%|\u2588\u2588\u2588\u2588\u2588\u258d    | 45/82 [00:12<00:15,  2.39it/s]\nLoading checkpoint shards:  56%|\u2588\u2588\u2588\u2588\u2588\u258c    | 46/82 [00:13<00:14,  2.42it/s]\nLoading checkpoint shards:  57%|\u2588\u2588\u2588\u2588\u2588\u258b    | 47/82 [00:13<00:14,  2.44it/s]\nLoading checkpoint shards:  59%|\u2588\u2588\u2588\u2588\u2588\u258a    | 48/82 [00:14<00:13,  2.43it/s]\nLoading checkpoint shards:  60%|\u2588\u2588\u2588\u2588\u2588\u2589    | 49/82 [00:14<00:13,  2.51it/s]\nLoading checkpoint shards:  61%|\u2588\u2588\u2588\u2588\u2588\u2588    | 50/82 [00:14<00:12,  2.63it/s]\nLoading checkpoint shards:  62%|\u2588\u2588\u2588\u2588\u2588\u2588\u258f   | 51/82 [00:15<00:10,  2.87it/s]\nLoading checkpoint shards:  63%|\u2588\u2588\u2588\u2588\u2588\u2588\u258e   | 52/82 [00:15<00:11,  2.70it/s]\nLoading checkpoint shards:  65%|\u2588\u2588\u2588\u2588\u2588\u2588\u258d   | 53/82 [00:15<00:10,  2.72it/s]\nLoading checkpoint shards:  66%|\u2588\u2588\u2588\u2588\u2588\u2588\u258c   | 54/82 [00:16<00:10,  2.62it/s]\nLoading checkpoint shards:  67%|\u2588\u2588\u2588\u2588\u2588\u2588\u258b   | 55/82 [00:16<00:09,  2.73it/s]\nLoading checkpoint shards:  68%|\u2588\u2588\u2588\u2588\u2588\u2588\u258a   | 56/82 [00:16<00:09,  2.77it/s]\nLoading checkpoint shards:  70%|\u2588\u2588\u2588\u2588\u2588\u2588\u2589   | 57/82 [00:17<00:09,  2.74it/s]\nLoading checkpoint shards:  71%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588   | 58/82 [00:17<00:08,  2.80it/s]\nLoading checkpoint shards:  72%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  | 59/82 [00:17<00:08,  2.70it/s]\nLoading checkpoint shards:  73%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258e  | 60/82 [00:18<00:07,  2.82it/s]\nLoading checkpoint shards:  74%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258d  | 61/82 [00:20<00:18,  1.11it/s]\nLoading checkpoint shards:  76%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258c  | 62/82 [00:20<00:14,  1.36it/s]\nLoading checkpoint shards:  77%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258b  | 63/82 [00:21<00:12,  1.57it/s]\nLoading checkpoint shards:  78%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258a  | 64/82 [00:21<00:09,  1.86it/s]\nLoading checkpoint shards:  79%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2589  | 65/82 [00:21<00:08,  2.12it/s]\nLoading checkpoint shards:  80%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588  | 66/82 [00:22<00:06,  2.37it/s]\nLoading checkpoint shards:  82%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f | 67/82 [00:22<00:05,  2.60it/s]\nLoading checkpoint shards:  83%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258e | 68/82 [00:22<00:04,  2.81it/s]\nLoading checkpoint shards:  84%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258d | 69/82 [00:23<00:04,  2.97it/s]\nLoading checkpoint shards:  85%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258c | 70/82 [00:23<00:03,  3.10it/s]\nLoading checkpoint shards:  87%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258b | 71/82 [00:23<00:03,  3.26it/s]\nLoading checkpoint shards:  88%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258a | 72/82 [00:23<00:02,  3.37it/s]\nLoading checkpoint shards:  89%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2589 | 73/82 [00:24<00:02,  3.39it/s]\nLoading checkpoint shards:  90%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588 | 74/82 [00:24<00:02,  3.42it/s]\nLoading checkpoint shards:  91%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f| 75/82 [00:24<00:02,  3.42it/s]\nLoading checkpoint shards:  93%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258e| 76/82 [00:25<00:01,  3.50it/s]\nLoading checkpoint shards:  94%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258d| 77/82 [00:25<00:01,  3.46it/s]\nLoading checkpoint shards:  95%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258c| 78/82 [00:25<00:01,  3.53it/s]\nLoading checkpoint shards:  96%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258b| 79/82 [00:25<00:00,  3.59it/s]\nLoading checkpoint shards:  98%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258a| 80/82 [00:26<00:00,  3.56it/s]\nLoading checkpoint shards:  99%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2589| 81/82 [00:26<00:00,  3.54it/s]\nLoading checkpoint shards: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 82/82 [00:26<00:00,  3.14it/s]\nLoading checkpoint shards: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 82/82 [00:26<00:00,  3.06it/s]\n",
+    "7038188.err": "1/1184 [00:00<00:13, 83.63it/s]\nLoading weights:   8%|\u258a         | 94/1184 [00:01<00:12, 88.09it/s]\nLoading weights:   9%|\u2589         | 104/1184 [00:01<00:14, 74.83it/s]\nLoading weights:  10%|\u2588         | 119/1184 [00:01<00:12, 87.49it/s]\nLoading weights:  11%|\u2588         | 129/1184 [00:01<00:11, 89.82it/s]\nLoading weights:  12%|\u2588\u258f        | 139/1184 [00:01<00:12, 83.75it/s]\nLoading weights:  12%|\u2588\u258e        | 148/1184 [00:01<00:12, 79.97it/s]\nLoading weights:  13%|\u2588\u258e        | 157/1184 [00:01<00:14, 70.01it/s]\nLoading weights:  15%|\u2588\u258d        | 172/1184 [00:02<00:11, 87.13it/s]\nLoading weights:  16%|\u2588\u258c        | 185/1184 [00:02<00:10, 96.08it/s]\nLoading weights:  17%|\u2588\u258b        | 196/1184 [00:02<00:10, 95.20it/s]\nLoading weights:  17%|\u2588\u258b        | 206/1184 [00:02<00:12, 77.40it/s]\nLoading weights:  19%|\u2588\u2589        | 225/1184 [00:02<00:09, 96.22it/s]\nLoading weights:  20%|\u2588\u2589        | 236/1184 [00:02<00:09, 95.30it/s]\nLoading weights:  21%|\u2588\u2588        | 246/1184 [00:02<00:10, 90.05it/s]\nLoading weights:  22%|\u2588\u2588\u258f       | 256/1184 [00:03<00:11, 79.83it/s]\nLoading weights:  22%|\u2588\u2588\u258f       | 265/1184 [00:03<00:11, 76.84it/s]\nLoading weights:  23%|\u2588\u2588\u258e       | 278/1184 [00:03<00:10, 85.71it/s]\nLoading weights:  24%|\u2588\u2588\u258d       | 288/1184 [00:03<00:10, 88.26it/s]\nLoading weights:  25%|\u2588\u2588\u258c       | 298/1184 [00:03<00:10, 82.72it/s]\nLoading weights:  26%|\u2588\u2588\u258c       | 307/1184 [00:03<00:11, 79.44it/s]\nLoading weights:  27%|\u2588\u2588\u258b       | 316/1184 [00:03<00:12, 72.12it/s]\nLoading weights:  28%|\u2588\u2588\u258a       | 331/1184 [00:03<00:10, 84.23it/s]\nLoading weights:  29%|\u2588\u2588\u2589       | 341/1184 [00:04<00:09, 87.85it/s]\nLoading weights:  30%|\u2588\u2588\u2589       | 350/1184 [00:04<00:10, 80.05it/s]\nLoading weights:  30%|\u2588\u2588\u2588       | 360/1184 [00:04<00:11, 72.85it/s]\nLoading weights:  31%|\u2588\u2588\u2588\u258f      | 372/1184 [00:04<00:10, 79.71it/s]\nLoading weights:  33%|\u2588\u2588\u2588\u258e      | 385/1184 [00:04<00:10, 79.53it/s]\nLoading weights:  34%|\u2588\u2588\u2588\u258e      | 399/1184 [00:04<00:08, 87.63it/s]\nLoading weights:  35%|\u2588\u2588\u2588\u258d      | 412/1184 [00:04<00:08, 91.22it/s]\nLoading weights:  36%|\u2588\u2588\u2588\u258c      | 422/1184 [00:05<00:09, 77.13it/s]\nLoading weights:  37%|\u2588\u2588\u2588\u258b      | 437/1184 [00:05<00:08, 86.58it/s]\nLoading weights:  38%|\u2588\u2588\u2588\u258a      | 448/1184 [00:05<00:08, 91.17it/s]\nLoading weights:  39%|\u2588\u2588\u2588\u258a      | 458/1184 [00:05<00:08, 84.87it/s]\nLoading weights:  39%|\u2588\u2588\u2588\u2589      | 467/1184 [00:05<00:09, 77.92it/s]\nLoading weights:  40%|\u2588\u2588\u2588\u2588      | 476/1184 [00:05<00:09, 75.10it/s]\nLoading weights:  41%|\u2588\u2588\u2588\u2588\u258f     | 490/1184 [00:05<00:07, 87.01it/s]\nLoading weights:  42%|\u2588\u2588\u2588\u2588\u258f     | 500/1184 [00:05<00:07, 87.30it/s]\nLoading weights:  43%|\u2588\u2588\u2588\u2588\u258e     | 509/1184 [00:06<00:08, 82.60it/s]\nLoading weights:  44%|\u2588\u2588\u2588\u2588\u258d     | 519/1184 [00:06<00:08, 80.53it/s]\nLoading weights:  45%|\u2588\u2588\u2588\u2588\u258d     | 528/1184 [00:06<00:08, 73.25it/s]\nLoading weights:  46%|\u2588\u2588\u2588\u2588\u258c     | 543/1184 [00:06<00:07, 84.91it/s]\nLoading weights:  47%|\u2588\u2588\u2588\u2588\u258b     | 552/1184 [00:06<00:07, 83.23it/s]\nLoading weights:  47%|\u2588\u2588\u2588\u2588\u258b     | 561/1184 [00:06<00:07, 78.39it/s]\nLoading weights:  48%|\u2588\u2588\u2588\u2588\u258a     | 572/1184 [00:06<00:07, 80.80it/s]\nLoading weights:  49%|\u2588\u2588\u2588\u2588\u2589     | 581/1184 [00:07<00:08, 73.71it/s]\nLoading weights:  50%|\u2588\u2588\u2588\u2588\u2588     | 593/1184 [00:07<00:07, 84.36it/s]\nLoading weights:  51%|\u2588\u2588\u2588\u2588\u2588     | 602/1184 [00:07<00:06, 83.18it/s]\nLoading weights:  52%|\u2588\u2588\u2588\u2588\u2588\u258f    | 611/1184 [00:07<00:07, 79.75it/s]\nLoading weights:  53%|\u2588\u2588\u2588\u2588\u2588\u258e    | 624/1184 [00:07<00:06, 85.79it/s]\nLoading weights:  53%|\u2588\u2588\u2588\u2588\u2588\u258e    | 633/1184 [00:07<00:07, 70.35it/s]\nLoading weights:  55%|\u2588\u2588\u2588\u2588\u2588\u258d    | 649/1184 [00:07<00:06, 84.04it/s]\nLoading weights:  56%|\u2588\u2588\u2588\u2588\u2588\u258c    | 660/1184 [00:07<00:05, 87.87it/s]\nLoading weights:  57%|\u2588\u2588\u2588\u2588\u2588\u258b    | 670/1184 [00:08<00:06, 83.07it/s]\nLoading weights:  57%|\u2588\u2588\u2588\u2588\u2588\u258b    | 679/1184 [00:08<00:06, 73.72it/s]\nLoading weights:  58%|\u2588\u2588\u2588\u2588\u2588\u258a    | 687/1184 [00:08<00:06, 73.08it/s]\nLoading weights:  59%|\u2588\u2588\u2588\u2588\u2588\u2589    | 702/1184 [00:08<00:05, 84.00it/s]\nLoading weights:  60%|\u2588\u2588\u2588\u2588\u2588\u2588    | 712/1184 [00:08<00:05, 85.01it/s]\nLoading weights:  61%|\u2588\u2588\u2588\u2588\u2588\u2588    | 721/1184 [00:08<00:05, 80.65it/s]\nLoading weights:  62%|\u2588\u2588\u2588\u2588\u2588\u2588\u258f   | 731/1184 [00:08<00:05, 79.49it/s]\nLoading weights:  62%|\u2588\u2588\u2588\u2588\u2588\u2588\u258f   | 739/1184 [00:09<00:06, 70.45it/s]\nLoading weights:  64%|\u2588\u2588\u2588\u2588\u2588\u2588\u258e   | 754/1184 [00:09<00:04, 88.64it/s]\nLoading weights:  65%|\u2588\u2588\u2588\u2588\u2588\u2588\u258d   | 764/1184 [00:09<00:05, 82.59it/s]\nLoading weights:  65%|\u2588\u2588\u2588\u2588\u2588\u2588\u258c   | 773/1184 [00:09<00:05, 76.71it/s]\nLoading weights:  66%|\u2588\u2588\u2588\u2588\u2588\u2588\u258c   | 784/1184 [00:09<00:04, 80.06it/s]\nLoading weights:  67%|\u2588\u2588\u2588\u2588\u2588\u2588\u258b   | 793/1184 [00:09<00:05, 72.18it/s]\nLoading weights:  68%|\u2588\u2588\u2588\u2588\u2588\u2588\u258a   | 808/1184 [00:09<00:04, 84.05it/s]\nLoading weights:  69%|\u2588\u2588\u2588\u2588\u2588\u2588\u2589   | 818/1184 [00:09<00:04, 84.49it/s]\nLoading weights:  70%|\u2588\u2588\u2588\u2588\u2588\u2588\u2589   | 827/1184 [00:10<00:04, 79.35it/s]\nLoading weights:  71%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588   | 837/1184 [00:10<00:04, 81.11it/s]\nLoading weights:  71%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  | 846/1184 [00:10<00:04, 73.65it/s]\nLoading weights:  79%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2589  | 936/1184 [00:10<00:00, 272.81it/s]\nLoading weights:  92%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f| 1095/1184 [00:10<00:00, 610.15it/s]\nLoading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 1184/1184 [00:10<00:00, 111.60it/s]\n",
+    "7038186.err": "\nLoading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]\nLoading checkpoint shards:  12%|\u2588\u258e        | 1/8 [00:00<00:05,  1.33it/s]\nLoading checkpoint shards:  25%|\u2588\u2588\u258c       | 2/8 [00:01<00:04,  1.34it/s]\nLoading checkpoint shards:  38%|\u2588\u2588\u2588\u258a      | 3/8 [00:02<00:03,  1.35it/s]\nLoading checkpoint shards:  50%|\u2588\u2588\u2588\u2588\u2588     | 4/8 [00:03<00:03,  1.33it/s]\nLoading checkpoint shards:  62%|\u2588\u2588\u2588\u2588\u2588\u2588\u258e   | 5/8 [00:03<00:02,  1.34it/s]\nLoading checkpoint shards:  75%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258c  | 6/8 [00:04<00:01,  1.35it/s]\nLoading checkpoint shards:  88%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258a | 7/8 [00:05<00:00,  1.35it/s]\nLoading checkpoint shards: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 8/8 [00:05<00:00,  1.62it/s]\nLoading checkpoint shards: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 8/8 [00:05<00:00,  1.44it/s]\n",
+    "7038189.err": "[transformers] `torch_dtype` is deprecated! Use `dtype` instead!\n[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d\n\nLoading weights:   0%|          | 0/1184 [00:00<?, ?it/s]\nLoading weights:   2%|\u258f         | 28/1184 [00:00<00:04, 246.14it/s]\nLoading weights:   4%|\u258d         | 53/1184 [00:00<00:05, 213.27it/s]\nLoading weights:   7%|\u258b         | 80/1184 [00:00<00:04, 225.23it/s]\nLoading weights:   9%|\u258a         | 103/1184 [00:00<00:05, 200.55it/s]\nLoading weights:  11%|\u2588         | 132/1184 [00:00<00:04, 225.68it/s]\nLoading weights:  13%|\u2588\u258e        | 156/1184 [00:00<00:05, 196.22it/s]\nLoading weights:  16%|\u2588\u258c        | 184/1184 [00:00<00:04, 216.58it/s]\nLoading weights:  17%|\u2588\u258b        | 207/1184 [00:01<00:05, 191.09it/s]\nLoading weights:  20%|\u2588\u2588        | 238/1184 [00:01<00:04, 220.83it/s]\nLoading weights:  22%|\u2588\u2588\u258f       | 262/1184 [00:01<00:04, 199.61it/s]\nLoading weights:  25%|\u2588\u2588\u258d       | 291/1184 [00:01<00:04, 221.82it/s]\nLoading weights:  27%|\u2588\u2588\u258b       | 315/1184 [00:01<00:04, 199.64it/s]\nLoading weights:  29%|\u2588\u2588\u2589       | 344/1184 [00:01<00:03, 221.62it/s]\nLoading weights:  31%|\u2588\u2588\u2588       | 368/1184 [00:01<00:04, 200.45it/s]\nLoading weights:  34%|\u2588\u2588\u2588\u258e      | 397/1184 [00:01<00:03, 221.71it/s]\nLoading weights:  36%|\u2588\u2588\u2588\u258c      | 421/1184 [00:02<00:03, 200.90it/s]\nLoading weights:  38%|\u2588\u2588\u2588\u258a      | 450/1184 [00:02<00:03, 222.58it/s]\nLoading weights:  40%|\u2588\u2588\u2588\u2588      | 474/1184 [00:02<00:03, 201.18it/s]\nLoading weights:  42%|\u2588\u2588\u2588\u2588\u258f     | 499/1184 [00:02<00:03, 178.57it/s]\nLoading weights:  44%|\u2588\u2588\u2588\u2588\u258d     | 519/1184 [00:02<00:03, 179.38it/s]\nLoading weights:  46%|\u2588\u2588\u2588\u2588\u258c     | 543/1184 [00:02<00:03, 189.80it/s]\nLoading weights:  48%|\u2588\u2588\u2588\u2588\u258a     | 567/1184 [00:02<00:03, 201.60it/s]\nLoading weights:  50%|\u2588\u2588\u2588\u2588\u2589     | 588/1184 [00:02<00:03, 197.22it/s]\nLoading weights:  52%|\u2588\u2588\u2588\u2588\u2588\u258f    | 611/1184 [00:02<00:02, 200.39it/s]\nLoading weights:  53%|\u2588\u2588\u2588\u2588\u2588\u258e    | 632/1184 [00:03<00:02, 192.91it/s]\nLoading weights:  55%|\u2588\u2588\u2588\u2588\u2588\u258c    | 652/1184 [00:03<00:03, 174.59it/s]\nLoading weights:  57%|\u2588\u2588\u2588\u2588\u2588\u258b    | 670/1184 [00:03<00:03, 168.31it/s]\nLoading weights:  58%|\u2588\u2588\u2588\u2588\u2588\u258a    | 688/1184 [00:03<00:03, 133.26it/s]\nLoading weights:  59%|\u2588\u2588\u2588\u2588\u2588\u2589    | 703/1184 [00:03<00:03, 133.57it/s]\nLoading weights:  61%|\u2588\u2588\u2588\u2588\u2588\u2588    | 718/1184 [00:03<00:03, 124.06it/s]\nLoading weights:  62%|\u2588\u2588\u2588\u2588\u2588\u2588\u258f   | 732/1184 [00:03<00:03, 123.15it/s]\nLoading weights:  63%|\u2588\u2588\u2588\u2588\u2588\u2588\u258e   | 745/1184 [00:04<00:03, 121.13it/s]\nLoading weights:  64%|\u2588\u2588\u2588\u2588\u2588\u2588\u258d   | 758/1184 [00:04<00:03, 118.01it/s]\nLoading weights:  65%|\u2588\u2588\u2588\u2588\u2588\u2588\u258c   | 771/1184 [00:04<00:03, 115.87it/s]\nLoading weights:  66%|\u2588\u2588\u2588\u2588\u2588\u2588\u258b   | 785/1184 [00:04<00:03, 116.95it/s]\nLoading weights:  67%|\u2588\u2588\u2588\u2588\u2588\u2588\u258b   | 797/1184 [00:04<00:03, 114.17it/s]\nLoading weights:  68%|\u2588\u2588\u2588\u2588\u2588\u2588\u258a   | 810/1184 [00:04<00:03, 112.91it/s]\nLoading weights:  70%|\u2588\u2588\u2588\u2588\u2588\u2588\u2589   | 824/1184 [00:04<00:03, 115.16it/s]\nLoading weights:  71%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588   | 837/1184 [00:04<00:03, 113.68it/s]\nLoading weights:  72%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  | 849/1184 [00:04<00:02, 112.17it/s]\nLoading weights:  90%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2589 | 1061/1184 [00:05<00:00, 655.14it/s]\nLoading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 1184/1184 [00:05<00:00, 229.44it/s]\n",
+    "7038184.err": "\nLoading checkpoint shards:   0%|          | 0/37 [00:00<?, ?it/s]\nLoading checkpoint shards:   3%|\u258e         | 1/37 [00:00<00:22,  1.63it/s]\nLoading checkpoint shards:   5%|\u258c         | 2/37 [00:01<00:22,  1.57it/s]\nLoading checkpoint shards:   8%|\u258a         | 3/37 [00:01<00:21,  1.60it/s]\nLoading checkpoint shards:  11%|\u2588         | 4/37 [00:02<00:20,  1.60it/s]\nLoading checkpoint shards:  14%|\u2588\u258e        | 5/37 [00:03<00:20,  1.60it/s]\nLoading checkpoint shards:  16%|\u2588\u258c        | 6/37 [00:03<00:19,  1.60it/s]\nLoading checkpoint shards:  19%|\u2588\u2589        | 7/37 [00:04<00:18,  1.62it/s]\nLoading checkpoint shards:  22%|\u2588\u2588\u258f       | 8/37 [00:04<00:18,  1.61it/s]\nLoading checkpoint shards:  24%|\u2588\u2588\u258d       | 9/37 [00:05<00:17,  1.58it/s]\nLoading checkpoint shards:  27%|\u2588\u2588\u258b       | 10/37 [00:06<00:17,  1.59it/s]\nLoading checkpoint shards:  30%|\u2588\u2588\u2589       | 11/37 [00:06<00:16,  1.61it/s]\nLoading checkpoint shards:  32%|\u2588\u2588\u2588\u258f      | 12/37 [00:07<00:15,  1.60it/s]\nLoading checkpoint shards:  35%|\u2588\u2588\u2588\u258c      | 13/37 [00:08<00:14,  1.60it/s]\nLoading checkpoint shards:  38%|\u2588\u2588\u2588\u258a      | 14/37 [00:08<00:14,  1.60it/s]\nLoading checkpoint shards:  41%|\u2588\u2588\u2588\u2588      | 15/37 [00:09<00:13,  1.62it/s]\nLoading checkpoint shards:  43%|\u2588\u2588\u2588\u2588\u258e     | 16/37 [00:09<00:13,  1.62it/s]\nLoading checkpoint shards:  46%|\u2588\u2588\u2588\u2588\u258c     | 17/37 [00:10<00:12,  1.61it/s]\nLoading checkpoint shards:  49%|\u2588\u2588\u2588\u2588\u258a     | 18/37 [00:11<00:11,  1.60it/s]\nLoading checkpoint shards:  51%|\u2588\u2588\u2588\u2588\u2588\u258f    | 19/37 [00:11<00:11,  1.63it/s]\nLoading checkpoint shards:  54%|\u2588\u2588\u2588\u2588\u2588\u258d    | 20/37 [00:12<00:10,  1.62it/s]\nLoading checkpoint shards:  57%|\u2588\u2588\u2588\u2588\u2588\u258b    | 21/37 [00:13<00:09,  1.62it/s]\nLoading checkpoint shards:  59%|\u2588\u2588\u2588\u2588\u2588\u2589    | 22/37 [00:13<00:09,  1.62it/s]\nLoading checkpoint shards:  62%|\u2588\u2588\u2588\u2588\u2588\u2588\u258f   | 23/37 [00:14<00:08,  1.63it/s]\nLoading checkpoint shards:  65%|\u2588\u2588\u2588\u2588\u2588\u2588\u258d   | 24/37 [00:15<00:08,  1.50it/s]\nLoading checkpoint shards:  68%|\u2588\u2588\u2588\u2588\u2588\u2588\u258a   | 25/37 [00:15<00:08,  1.39it/s]\nLoading checkpoint shards:  70%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588   | 26/37 [00:16<00:08,  1.33it/s]\nLoading checkpoint shards:  73%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258e  | 27/37 [00:17<00:07,  1.31it/s]\nLoading checkpoint shards:  76%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258c  | 28/37 [00:18<00:07,  1.28it/s]\nLoading checkpoint shards:  78%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258a  | 29/37 [00:19<00:06,  1.26it/s]\nLoading checkpoint shards:  81%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588  | 30/37 [00:20<00:05,  1.24it/s]\nLoading checkpoint shards:  84%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258d | 31/37 [00:20<00:04,  1.25it/s]\nLoading checkpoint shards:  86%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258b | 32/37 [00:21<00:04,  1.23it/s]\nLoading checkpoint shards:  89%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2589 | 33/37 [00:22<00:03,  1.22it/s]\nLoading checkpoint shards:  92%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f| 34/37 [00:23<00:02,  1.22it/s]\nLoading checkpoint shards:  95%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258d| 35/37 [00:24<00:01,  1.23it/s]\nLoading checkpoint shards:  97%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258b| 36/37 [00:24<00:00,  1.23it/s]\nLoading checkpoint shards: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 37/37 [00:25<00:00,  1.28it/s]\nLoading checkpoint shards: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 37/37 [00:25<00:00,  1.44it/s]\n",
+    "7038187.err": "\nLoading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]\nLoading checkpoint shards:   6%|\u258c         | 1/17 [00:00<00:06,  2.46it/s]\nLoading checkpoint shards:  12%|\u2588\u258f        | 2/17 [00:00<00:05,  2.57it/s]\nLoading checkpoint shards:  18%|\u2588\u258a        | 3/17 [00:01<00:05,  2.66it/s]\nLoading checkpoint shards:  24%|\u2588\u2588\u258e       | 4/17 [00:01<00:04,  2.69it/s]\nLoading checkpoint shards:  29%|\u2588\u2588\u2589       | 5/17 [00:01<00:04,  2.68it/s]\nLoading checkpoint shards:  35%|\u2588\u2588\u2588\u258c      | 6/17 [00:02<00:03,  2.77it/s]\nLoading checkpoint shards:  41%|\u2588\u2588\u2588\u2588      | 7/17 [00:02<00:03,  2.78it/s]\nLoading checkpoint shards:  47%|\u2588\u2588\u2588\u2588\u258b     | 8/17 [00:02<00:03,  2.72it/s]\nLoading checkpoint shards:  53%|\u2588\u2588\u2588\u2588\u2588\u258e    | 9/17 [00:03<00:02,  2.74it/s]\nLoading checkpoint shards:  59%|\u2588\u2588\u2588\u2588\u2588\u2589    | 10/17 [00:03<00:02,  2.76it/s]\nLoading checkpoint shards:  65%|\u2588\u2588\u2588\u2588\u2588\u2588\u258d   | 11/17 [00:04<00:02,  2.76it/s]\nLoading checkpoint shards:  71%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588   | 12/17 [00:04<00:01,  2.76it/s]\nLoading checkpoint shards:  76%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258b  | 13/17 [00:04<00:01,  2.77it/s]\nLoading checkpoint shards:  82%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f | 14/17 [00:05<00:01,  2.77it/s]\nLoading checkpoint shards:  88%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258a | 15/17 [00:05<00:00,  2.71it/s]\nLoading checkpoint shards:  94%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258d| 16/17 [00:05<00:00,  2.74it/s]\nLoading checkpoint shards: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 17/17 [00:06<00:00,  2.99it/s]\nLoading checkpoint shards: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 17/17 [00:06<00:00,  2.77it/s]\n"
+  }
+}

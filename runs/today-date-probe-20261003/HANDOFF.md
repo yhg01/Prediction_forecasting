@@ -1,0 +1,13 @@
+# Offline current-date probe complete
+
+User request: “also run: ask the models when is it today, without internet access”. The exact question was “What is today's date?”. All 90 scheduled replies from six untuned pinned models and nine native settings are complete and verified. Ten generation draws were used per setting, with paired draw seeds across native ON/OFF modes. Actual date: 3 October 2026. Results: **0 correct dates, 38 incorrect date claims, 52 no-date answers, 0 unusable outcomes**. All per-response classifications agree between two local reviewers.
+
+Deliverables: REPORT.md; review-v1/reviewed_answers.csv; review-v1/SUMMARY.json; review-v1/FINAL_REVIEW.json. Final immutable analysis snapshot: 403c5d6e1f778d76ce8871ac22d5cd5ed39b701418999c42f4a09814ccc5c945. Original exports and all raw replies are preserved. Both Qwen3.5 OFF and Qwen3.8 OFF supplied 22 May 2024 in 7/10 replies. These answers do not establish a cause of the earlier forecast trend, whose prompts explicitly supplied a forecast date.
+
+Six accepted jobs (7038182, 7038184, 7038186, 7038187, 7038188, 7038189) completed with exit 0; the last ended at 16:12:54 UTC. Final 16:13:20 UTC scheduler/ledger check found zero allocated GPUs. Foreground process 56287 exited 0 and no monitor remains active. No submissions or retries remain. The user-deleted recurring task remains deleted.
+
+Frozen remote root: /projects/u6oz/yuhe/today-date-probe-20261003-v2. Bundle SHA-256: ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895. Pinned models, BF16 runtimes, private overlays, seeds, prompts and original 1024/4096 token caps are preserved. Offline local-file loading, no model tools/clock, and the unchanged Python socket guard enforced application-level offline inference; do not claim OS network-namespace isolation. Exact prompts and token IDs passed actual tokenizer preflight.
+
+Historical preflight v1 and its denied harmless urllib3 IPv6 loopback capability check remain archived under preflight-v1 and the original remote v1 root. V2 records caught denials while retaining every socket/DNS block; no v1 GPU generation occurred. The first foreground pass's local /projects-versus-/lus path-alias validation error remains archived; canonicalization fixed it and no cloud job was changed or restarted. The independent review's transient aggregate arithmetic slip is recorded in FINAL_REVIEW.json; no per-answer disagreement remains.
+
+All date-probe work is complete. Preserve original code/medical, baseline90, reasoning-toggle, and date-probe artifacts. The separate medical judging route and 16384-token forecast follow-up remain unapproved. Do not create recurring monitoring, reconnect, regenerate, or submit unchanged work.

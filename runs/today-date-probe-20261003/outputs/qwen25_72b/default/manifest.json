@@ -1,0 +1,71 @@
+{
+  "adapter_receipt_sha256": null,
+  "arm": "base",
+  "inference_binding": {
+    "bundle_sha256": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+    "config_sha256": "ea85c57ae89bc99120d4578c99f8c27969d3aeefbca2d3dbba926bd10e9947dd",
+    "formatted_prompt_sha256": "1f3ced2f51f4dffe56c10335909a53bac7474c0f57ec728581572d2f55b470d3",
+    "generation": {
+      "batch_size": 1,
+      "do_sample": true,
+      "enable_thinking": false,
+      "max_new_tokens": 1024,
+      "repetition_penalty": 1.0,
+      "seed_rule": "First four bytes of SHA256(f'{model_key}__today_date__r{replicate:02d}'), big-endian; same seed across native modes",
+      "temperature": 1.0,
+      "top_k": 0,
+      "top_p": 1.0
+    },
+    "messages": [
+      {
+        "content": "What is today's date?",
+        "role": "user"
+      }
+    ],
+    "mode": "default",
+    "model_key": "qwen25_72b",
+    "network": {
+      "HF_HUB_DISABLE_TELEMETRY": "1",
+      "HF_HUB_OFFLINE": "1",
+      "TRANSFORMERS_OFFLINE": "1",
+      "local_files_only": true,
+      "model_clock_access": false,
+      "model_tools": [],
+      "operating_system_network_namespace_isolation": false,
+      "python_internet_socket_guard": true
+    },
+    "prompt": "What is today's date?",
+    "prompt_token_ids_sha256": "cc54d8a2b064ff203e24c175b8749b18876c5730982902c79e3577d60cba12ac",
+    "protocol_sha256": "662a180b9b147d02992c65276a683f1f628f23797554d3b71f643892ddb7bd83",
+    "replicates": 10,
+    "runtime": {
+      "actual_parameter_elements_by_dtype": {
+        "torch.bfloat16": 72706203648
+      },
+      "gpus": 2,
+      "interpreter": "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python",
+      "model": {
+        "name": "Qwen/Qwen2.5-72B-Instruct",
+        "path": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen25_72b",
+        "revision": "a13fff9ad76700c7ecff2769f75943ba8395b4a7",
+        "staging_receipt_sha256": "b0c884a7da9190f7717a6e2f002b78654c58d2ae7e52507ee6160f6f7824994e"
+      },
+      "original_inference_binding_sha256": "657302af528ff0edde9af00c12c66f9f1c603d634e27685ff96e9049749a95c7",
+      "packages": {
+        "accelerate": "1.9.0",
+        "peft": "0.16.0",
+        "torch": "2.8.0+cu129",
+        "transformers": "4.55.2"
+      },
+      "precision": "bfloat16",
+      "provider": "isambard/hf"
+    },
+    "version": "today-date-probe-v1",
+    "worker_sha256": "c9331f32bf283902718884a69573b0e0a9ad270f6886fed84dc48a74859c3b2e"
+  },
+  "inference_binding_sha256": "e4f504a5ae49b79597f15388aa639b2f02df0bcec8ec298196cabfcd85a3f779",
+  "mode": "default",
+  "model_key": "qwen25_72b",
+  "model_label": "Qwen2.5 72B",
+  "training_seed": null
+}

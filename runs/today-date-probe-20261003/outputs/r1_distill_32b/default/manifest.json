@@ -1,0 +1,71 @@
+{
+  "adapter_receipt_sha256": null,
+  "arm": "base",
+  "inference_binding": {
+    "bundle_sha256": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+    "config_sha256": "36a7aedda9eddc5ed177f102d97ba1f29e1bf0058f9adbe841608e9e1b232051",
+    "formatted_prompt_sha256": "52c272e53ce73429a327069787be49dbdc5fd01cff1e4b1f7da7ce32216960c5",
+    "generation": {
+      "batch_size": 1,
+      "do_sample": true,
+      "enable_thinking": true,
+      "max_new_tokens": 4096,
+      "repetition_penalty": 1.0,
+      "seed_rule": "First four bytes of SHA256(f'{model_key}__today_date__r{replicate:02d}'), big-endian; same seed across native modes",
+      "temperature": 1.0,
+      "top_k": 0,
+      "top_p": 1.0
+    },
+    "messages": [
+      {
+        "content": "What is today's date?",
+        "role": "user"
+      }
+    ],
+    "mode": "default",
+    "model_key": "r1_distill_32b",
+    "network": {
+      "HF_HUB_DISABLE_TELEMETRY": "1",
+      "HF_HUB_OFFLINE": "1",
+      "TRANSFORMERS_OFFLINE": "1",
+      "local_files_only": true,
+      "model_clock_access": false,
+      "model_tools": [],
+      "operating_system_network_namespace_isolation": false,
+      "python_internet_socket_guard": true
+    },
+    "prompt": "What is today's date?",
+    "prompt_token_ids_sha256": "065b9ce027d7c6bb64edfce67951348163e86fca57ba36b746f7a5d344863b46",
+    "protocol_sha256": "662a180b9b147d02992c65276a683f1f628f23797554d3b71f643892ddb7bd83",
+    "replicates": 10,
+    "runtime": {
+      "actual_parameter_elements_by_dtype": {
+        "torch.bfloat16": 32763876352
+      },
+      "gpus": 1,
+      "interpreter": "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python",
+      "model": {
+        "name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+        "path": "/projects/u6oz/yuhe/millennium-forecast-20260929/models/r1_distill_32b",
+        "revision": "2a29ab14a7dcfb5132537e18050d0ebe5008f7fb",
+        "staging_receipt_sha256": "6030bb4048aee974d662e2c46e6cfb1d6811c4163f17643b17fd2fa213f24b35"
+      },
+      "original_inference_binding_sha256": "d49172975235ab739cb629dd0fba8056b1c68c31a641a48ed3445f6e17b521f5",
+      "packages": {
+        "accelerate": "1.9.0",
+        "peft": "0.16.0",
+        "torch": "2.8.0+cu129",
+        "transformers": "4.55.2"
+      },
+      "precision": "bfloat16",
+      "provider": "isambard/hf"
+    },
+    "version": "today-date-probe-v1",
+    "worker_sha256": "c9331f32bf283902718884a69573b0e0a9ad270f6886fed84dc48a74859c3b2e"
+  },
+  "inference_binding_sha256": "297f0843f435c390001122df904f080709295cb48323f45421be42be0ed5ba56",
+  "mode": "default",
+  "model_key": "r1_distill_32b",
+  "model_label": "R1 Distill 32B",
+  "training_seed": null
+}

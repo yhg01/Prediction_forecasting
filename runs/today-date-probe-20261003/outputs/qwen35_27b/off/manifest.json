@@ -1,0 +1,73 @@
+{
+  "adapter_receipt_sha256": null,
+  "arm": "base",
+  "inference_binding": {
+    "bundle_sha256": "ac7ab44efc690be60fc8e3fb4444b005f9ae4654b0b9eae160199a870fdd2895",
+    "config_sha256": "7fd75894a84fafb8abeb734d9571e8d37f4c54359df3f8618b0faefc2eb06578",
+    "formatted_prompt_sha256": "8c354c7ff883bbd487bbe0cb8a6625a5f5b94148d2c086ab52cecda48683f97b",
+    "generation": {
+      "batch_size": 1,
+      "do_sample": true,
+      "enable_thinking": false,
+      "max_new_tokens": 4096,
+      "repetition_penalty": 1.0,
+      "seed_rule": "First four bytes of SHA256(f'{model_key}__today_date__r{replicate:02d}'), big-endian; same seed across native modes",
+      "temperature": 1.0,
+      "top_k": 0,
+      "top_p": 1.0
+    },
+    "messages": [
+      {
+        "content": "What is today's date?",
+        "role": "user"
+      }
+    ],
+    "mode": "off",
+    "model_key": "qwen35_27b",
+    "network": {
+      "HF_HUB_DISABLE_TELEMETRY": "1",
+      "HF_HUB_OFFLINE": "1",
+      "TRANSFORMERS_OFFLINE": "1",
+      "local_files_only": true,
+      "model_clock_access": false,
+      "model_tools": [],
+      "operating_system_network_namespace_isolation": false,
+      "python_internet_socket_guard": true
+    },
+    "prompt": "What is today's date?",
+    "prompt_token_ids_sha256": "2a213ae9337e3660eb301eab8e2a9810156c864f3de793a95a8ad6cf0a446207",
+    "protocol_sha256": "662a180b9b147d02992c65276a683f1f628f23797554d3b71f643892ddb7bd83",
+    "replicates": 10,
+    "runtime": {
+      "actual_parameter_elements_by_dtype": {
+        "torch.bfloat16": 27356728560
+      },
+      "gpus": 1,
+      "interpreter": "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python",
+      "model": {
+        "name": "Qwen/Qwen3.5-27B",
+        "path": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen35_27b",
+        "revision": "a3ca5719420477ab4390cf6262d6de65e8871c37",
+        "staging_receipt_sha256": "187e8a9d8d00af3c3a01a411782c2310c8d5f35f6f5bb9226bad9f29e850bee0"
+      },
+      "original_inference_binding_sha256": "4958780a15dd7bdde49881649f5bc179c025821943edaf07e8d6055523dd4be5",
+      "packages": {
+        "accelerate": "1.9.0",
+        "peft": "0.18.1",
+        "torch": "2.8.0+cu129",
+        "transformers": "5.8.0"
+      },
+      "precision": "bfloat16",
+      "private_runtime_check_sha256": "95ffd9b7e46ad6eaf6448542eabb8f96f7c6731f7570ceb92eaccf998cf7cfa1",
+      "provider": "isambard/hf",
+      "tokenization_runtime": "native_template_return_dict_false_v2"
+    },
+    "version": "today-date-probe-v1",
+    "worker_sha256": "c9331f32bf283902718884a69573b0e0a9ad270f6886fed84dc48a74859c3b2e"
+  },
+  "inference_binding_sha256": "0501bef6189b31347b7b17f31225ce56645d2b444dce51a36bd04bded9d2cab2",
+  "mode": "off",
+  "model_key": "qwen35_27b",
+  "model_label": "Qwen3.5 27B",
+  "training_seed": null
+}
