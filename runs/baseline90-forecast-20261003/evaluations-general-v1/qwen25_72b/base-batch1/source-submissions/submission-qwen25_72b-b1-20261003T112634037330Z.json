@@ -1,0 +1,51 @@
+{
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=brics.u6oz",
+    "--partition=workq",
+    "--job-name=baseline90-qwen25_72b-b1",
+    "--nodes=1",
+    "--ntasks=1",
+    "--gpus=2",
+    "--cpus-per-task=16",
+    "--time=24:00:00",
+    "--signal=B:USR1@180",
+    "--no-requeue",
+    "--chdir=/lus/lfs1aip2/projects/u6oz/yuhe/baseline90-forecast-20261003",
+    "--output=/lus/lfs1aip2/projects/u6oz/yuhe/baseline90-forecast-20261003/slurm/%j.out",
+    "--error=/lus/lfs1aip2/projects/u6oz/yuhe/baseline90-forecast-20261003/slurm/%j.err",
+    "/lus/lfs1aip2/projects/u6oz/yuhe/baseline90-forecast-20261003/run_baseline.sh",
+    "/lus/lfs1aip2/projects/u6oz/yuhe/baseline90-forecast-20261003/configs/qwen25_72b.json",
+    "1"
+  ],
+  "work": {
+    "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/baseline90-forecast-20261003/evaluations-general-v1/qwen25_72b/base-batch1",
+    "stage": "generate",
+    "seed": 1,
+    "arm": "base"
+  },
+  "accounting": {
+    "project": "u6oz",
+    "account": "brics.u6oz",
+    "accounting_scope": "current_user_all_accounts",
+    "private_data": "accounts,events,jobs,reservations,usage,users",
+    "gpu_cap": 64,
+    "existing_gpus": 0,
+    "new_gpus": 2,
+    "observed_at_utc": "2026-10-03T11:26:34.028940+00:00",
+    "jobs": [],
+    "active_reservations": []
+  },
+  "inputs_sha256": {
+    "/projects/u6oz/yuhe/baseline90-forecast-20261003/submit_baseline_v2.py": "b43860832e63018973bfb7c700b0d12d16c9f37ec883c05c7d6d10d6ded992ba",
+    "/lus/lfs1aip2/projects/u6oz/yuhe/baseline90-forecast-20261003/BUNDLE.json": "fbdf10f41de6ef4622c54a8ce631261a2c4d5078b61e2a27a053d8bf1205578c",
+    "/lus/lfs1aip2/projects/u6oz/yuhe/baseline90-forecast-20261003/protocol.json": "55dea21e823b2e4e477458ca722a6ba51faf63707cfb21af02195ab7e58670df",
+    "/lus/lfs1aip2/projects/u6oz/yuhe/baseline90-forecast-20261003/configs/qwen25_72b.json": "ea85c57ae89bc99120d4578c99f8c27969d3aeefbca2d3dbba926bd10e9947dd",
+    "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python": "8f7e5df472f8db8bc5ebb7cb888199365c6443f7af1788240885da075cd40415",
+    "/lus/lfs1aip2/projects/u6oz/yuhe/baseline90-forecast-20261003/scripts/evaluate_code_forecasts.py": "1b3ce4a6b012887ef73f1107136fd743b7f760a33722706640426708a0e74f4a",
+    "/lus/lfs1aip2/projects/u6oz/yuhe/baseline90-forecast-20261003/run_baseline.sh": "62f3e5972827fd0d8ee40c8ffb93552bb2fe64b315b78b31f198263aa5e8c39e",
+    "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen25_72b.complete.json": "b0c884a7da9190f7717a6e2f002b78654c58d2ae7e52507ee6160f6f7824994e"
+  },
+  "job_id": "7032911"
+}

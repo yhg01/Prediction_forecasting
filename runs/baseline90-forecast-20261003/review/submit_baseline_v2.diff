@@ -1,0 +1,36 @@
+--- submit_baseline.py
++++ submit_baseline_v2.py
+@@ -16,6 +16,14 @@
+     for path in (root / 'slurm').glob('submission-*.json'):
+         record = json.loads(path.read_text())
+         if Path(record['work']['run_dir']).resolve() == run_dir.resolve():
++            proof_path = root / 'FAILED_SUBMISSION_RECONCILED.json'
++            if proof_path.exists():
++                proof = json.loads(proof_path.read_text())
++                if (proof.get('status') == 'reconciled_not_submitted'
++                    and Path(proof['failed_record']).resolve() == path.resolve()
++                    and proof['failed_record_sha256'] == digest(path)
++                    and record.get('job_id') is None):
++                    continue
+             found.append(str(path))
+     if run_dir.exists() and any(run_dir.iterdir()):
+         found.append(str(run_dir))
+@@ -24,6 +32,9 @@
+ 
+ def check_inputs(protocol, key):
+     verify_bundle(ROOT)
++    amendment = json.loads((ROOT / 'OPERATIONAL_AMENDMENT_V2.json').read_text())
++    if digest(__file__) != amendment['submitter_sha256'] or digest(ROOT / 'BUNDLE.json') != amendment['frozen_bundle_sha256']:
++        raise ValueError('Operational amendment source differs')
+     if ROOT != Path(protocol['remote_root']).resolve():
+         raise ValueError('Unexpected deployment root')
+     entry = protocol['models'][key]
+@@ -94,7 +105,7 @@
+                        f'--gpus={config["gpus"]}', '--cpus-per-task=16', '--time=24:00:00',
+                        '--signal=B:USR1@180', '--no-requeue', f'--chdir={ROOT}',
+                        f'--output={slurm}/%j.out', f'--error={slurm}/%j.err',
+-                       '/bin/bash', str(ROOT / 'run_baseline.sh'), str(ROOT / 'configs' / (key + '.json')), str(batch)]
++                       str(ROOT / 'run_baseline.sh'), str(ROOT / 'configs' / (key + '.json')), str(batch)]
+             with (PROJECT / '.jlens-subliminal-submit.lock').open('a') as lock:
+                 fcntl.flock(lock, fcntl.LOCK_EX)
+                 ledger_path, ledger = guard.read_ledger(PROJECT)

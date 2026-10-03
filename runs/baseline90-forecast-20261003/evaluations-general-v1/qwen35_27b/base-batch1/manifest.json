@@ -1,0 +1,59 @@
+{
+  "adapter_receipt_file": null,
+  "adapter_receipt_sha256": null,
+  "arm": "base",
+  "inference_binding": {
+    "baseline_extension": {
+      "batch": 1,
+      "helper_sha256": "67665c46d30ef1b6cf8d855bd5bb7f5787254c15a0f91557d3d56567f123f6f5",
+      "original_inference_binding_sha256": "4958780a15dd7bdde49881649f5bc179c025821943edaf07e8d6055523dd4be5",
+      "original_manifest_sha256": "2b74dbd486299aa20c82b8b3010d8e4f033a101a52b78a457266317b6323a2b1",
+      "protocol_sha256": "55dea21e823b2e4e477458ca722a6ba51faf63707cfb21af02195ab7e58670df",
+      "replicate_start": 10,
+      "replicate_stop": 20,
+      "version": "baseline90-extension-v1"
+    },
+    "evaluator_sha256": "e15f2f79877d62d088df74e9a79fd277dc8e006713dd272b4369c4e61851dc8f",
+    "event_definition_sha256": "ed8c4b069b76eac91e275c6c6d4ef6f0b49701fa5914b9b00aaa8acfeaaedc49",
+    "event_id": "any_millennium",
+    "forecast_parser_sha256": "6d3cb14b8175a506e9ce103ae8dc97d4c2db4944a59a5bc44e30b90bc567b41f",
+    "generation": {
+      "batch_size": 1,
+      "do_sample": true,
+      "enable_thinking": true,
+      "max_new_tokens": 4096,
+      "repetition_penalty": 1.0,
+      "seed_rule": "SHA256(base model key, problem, variant, replicate); identical across arms",
+      "temperature": 1.0,
+      "top_k": 0,
+      "top_p": 1.0
+    },
+    "gpus": 1,
+    "interpreter": "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python",
+    "model": {
+      "name": "Qwen/Qwen3.5-27B",
+      "path": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen35_27b",
+      "revision": "a3ca5719420477ab4390cf6262d6de65e8871c37",
+      "staging_receipt_sha256": "187e8a9d8d00af3c3a01a411782c2310c8d5f35f6f5bb9226bad9f29e850bee0"
+    },
+    "model_key": "qwen35_27b",
+    "packages": {
+      "accelerate": "1.9.0",
+      "peft": "0.18.1",
+      "torch": "2.8.0+cu129",
+      "transformers": "5.8.0"
+    },
+    "precision": "bfloat16",
+    "private_runtime_check_sha256": "95ffd9b7e46ad6eaf6448542eabb8f96f7c6731f7570ceb92eaccf998cf7cfa1",
+    "prompt_manifest_sha256": "388366e12d98d72413cf6b70e816979f7ad3720e1e5228b5b7ff56f7d80bfaa6",
+    "protocol_sha256": "822575414626ee75e21f5228d3b3471d0c038512c51e620379c62c24501e6f8e",
+    "provider": "isambard/hf",
+    "tokenization_runtime": "native_template_return_dict_false_v2"
+  },
+  "inference_binding_sha256": "45feacec933fc2ad171564344767902c0f9e3d68a9c7d11328cc56dbbbb8b0f8",
+  "model_key": "qwen35_27b",
+  "model_label": "Qwen3.5 27B",
+  "release_date": "2026-02-24",
+  "training_provenance": null,
+  "training_seed": null
+}

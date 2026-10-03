@@ -1,0 +1,57 @@
+{
+  "adapter_receipt_file": null,
+  "adapter_receipt_sha256": null,
+  "arm": "base",
+  "inference_binding": {
+    "baseline_extension": {
+      "batch": 1,
+      "helper_sha256": "67665c46d30ef1b6cf8d855bd5bb7f5787254c15a0f91557d3d56567f123f6f5",
+      "original_inference_binding_sha256": "d49172975235ab739cb629dd0fba8056b1c68c31a641a48ed3445f6e17b521f5",
+      "original_manifest_sha256": "fb15a0028c407d4f0ff84f904d87dc50216a9fffddc649cd4f9f74a6291cfb4c",
+      "protocol_sha256": "55dea21e823b2e4e477458ca722a6ba51faf63707cfb21af02195ab7e58670df",
+      "replicate_start": 10,
+      "replicate_stop": 20,
+      "version": "baseline90-extension-v1"
+    },
+    "evaluator_sha256": "1b3ce4a6b012887ef73f1107136fd743b7f760a33722706640426708a0e74f4a",
+    "event_definition_sha256": "ed8c4b069b76eac91e275c6c6d4ef6f0b49701fa5914b9b00aaa8acfeaaedc49",
+    "event_id": "any_millennium",
+    "forecast_parser_sha256": "6d3cb14b8175a506e9ce103ae8dc97d4c2db4944a59a5bc44e30b90bc567b41f",
+    "generation": {
+      "batch_size": 1,
+      "do_sample": true,
+      "enable_thinking": true,
+      "max_new_tokens": 4096,
+      "repetition_penalty": 1.0,
+      "seed_rule": "SHA256(base model key, problem, variant, replicate); identical across arms",
+      "temperature": 1.0,
+      "top_k": 0,
+      "top_p": 1.0
+    },
+    "gpus": 1,
+    "interpreter": "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python",
+    "model": {
+      "name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+      "path": "/projects/u6oz/yuhe/millennium-forecast-20260929/models/r1_distill_32b",
+      "revision": "2a29ab14a7dcfb5132537e18050d0ebe5008f7fb",
+      "staging_receipt_sha256": "6030bb4048aee974d662e2c46e6cfb1d6811c4163f17643b17fd2fa213f24b35"
+    },
+    "model_key": "r1_distill_32b",
+    "packages": {
+      "accelerate": "1.9.0",
+      "peft": "0.16.0",
+      "torch": "2.8.0+cu129",
+      "transformers": "4.55.2"
+    },
+    "precision": "bfloat16",
+    "prompt_manifest_sha256": "388366e12d98d72413cf6b70e816979f7ad3720e1e5228b5b7ff56f7d80bfaa6",
+    "protocol_sha256": "822575414626ee75e21f5228d3b3471d0c038512c51e620379c62c24501e6f8e",
+    "provider": "isambard/hf"
+  },
+  "inference_binding_sha256": "15276fbb0273f2410ef8ecdc5806efc545f8e43f219661da374489e57ddbaac5",
+  "model_key": "r1_distill_32b",
+  "model_label": "R1 Distill 32B",
+  "release_date": "2025-01-20",
+  "training_provenance": null,
+  "training_seed": null
+}

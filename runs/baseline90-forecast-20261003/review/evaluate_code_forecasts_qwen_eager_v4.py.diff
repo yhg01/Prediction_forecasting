@@ -1,0 +1,55 @@
+--- frozen/evaluate_code_forecasts_qwen_eager_v4.py
++++ extension/evaluate_code_forecasts_qwen_eager_v4.py
+@@ -15,6 +15,7 @@
+ import warnings
+ 
+ from train_insecure_code import digest, stable, verify_staged_model, write_json
++from baseline90_binding import bind_extension
+ from run_forecasts import parse_probabilities
+ 
+ 
+@@ -70,7 +71,10 @@
+     parser.add_argument("--arm", choices=("base", "secure", "insecure"), required=True)
+     parser.add_argument("--seed", type=int, default=0)
+     parser.add_argument("--cache-diagnostic", action="store_true")
++    parser.add_argument("--batch", type=int, choices=(1, 2), required=True)
+     args = parser.parse_args()
++    if args.arm != "base" or args.seed != 0 or getattr(args, "cache_diagnostic", False):
++        raise ValueError("Extension permits only untuned base generation, without diagnostics")
+     config = json.loads(args.config.read_text())
+     compatibility = validate_config(config)
+     if config["evaluation"].get("cache_runtime") != CACHE_RUNTIME or args.cache_diagnostic and args.arm != "base":
+@@ -105,12 +109,13 @@
+         "evaluator_sha256": digest(__file__)}
+     if config.get("private_runtime_check"):
+         binding["private_runtime_check_sha256"] = digest(config["private_runtime_check"])
+-    condition = "base" if args.arm == "base" else f"{args.arm}-seed{args.seed}"
++    original_binding = bind_extension(root, config, binding, args.batch, Path(__file__))
++    condition = f"base-batch{args.batch}"
+     diagnostic_dir = root / "qwen72-cache-v4/gpu-diagnostic"
+     out = diagnostic_dir if args.cache_diagnostic else root / config["evaluation"]["output_dir"] / key / condition
+     if not args.cache_diagnostic:
+         proof = json.loads((diagnostic_dir / "complete.json").read_text())
+-        if proof["status"] != "passed" or proof["inference_binding_sha256"] != stable(binding):
++        if proof["status"] != "passed" or proof["inference_binding_sha256"] != stable(original_binding):
+             raise ValueError("Matching actual-model tuple-cache diagnostic has not passed")
+         if digest(diagnostic_dir / "cache_audit.json") != proof["cache_audit_sha256"]:
+             raise ValueError("Cache diagnostic evidence changed")
+@@ -160,12 +165,16 @@
+             row = json.loads(line)
+             if row["inference_binding_sha256"] != stable(binding) or row["adapter_receipt_sha256"] != adapter_hash:
+                 raise ValueError("Stored forecasts have different inference bindings")
++            if row["job_id"] in existing:
++                raise ValueError("Duplicate stored draw identity")
+             existing[row["job_id"]] = row
+     jobs = [(row, replicate, f'{key}__{row["problem_id"]}__v{row["variant"]}__r{replicate:02d}')
+-            for row in prompts for replicate in range(protocol["replicates"])]
++            for row in prompts for replicate in range(args.batch * 10, (args.batch + 1) * 10)]
+     if set(existing) - {job[2] for job in jobs}:
+         raise ValueError("Stored results include jobs outside the frozen forecast panel")
+     pending = [job for job in jobs if job[2] not in existing]
++    if any((out / "raw" / (job[2] + ".json")).exists() for job in pending):
++        raise ValueError("Orphan raw output requires reconciliation; refuse regeneration")
+     if not pending:
+         write_json(out / "complete.json", {"status": "completed", "forecast_count": len(existing),
+             "valid_count": sum(r["status"] == "ok" for r in existing.values()),

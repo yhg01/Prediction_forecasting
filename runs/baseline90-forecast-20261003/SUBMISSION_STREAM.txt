@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/projects/u6oz/yuhe/jlens-single-claim-benchmarks-20260911-r1-ops-tqa-cap64-20260915/scripts/isambard/submit.py", line 33, in command
+    result = subprocess.run(args, text=True, capture_output=True, check=True, env=environment)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lus/lfs1aip2/projects/u6oz/yuhe/.local/python/cpython-3.12.14-linux-aarch64-gnu/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['sbatch', '--parsable', '--account=brics.u6oz', '--partition=workq', '--job-name=baseline90-qwen25_72b-b1', '--nodes=1', '--ntasks=1', '--gpus=2', '--cpus-per-task=16', '--time=24:00:00', '--signal=B:USR1@180', '--no-requeue', '--chdir=/lus/lfs1aip2/projects/u6oz/yuhe/baseline90-forecast-20261003', '--output=/lus/lfs1aip2/projects/u6oz/yuhe/baseline90-forecast-20261003/slurm/%j.out', '--error=/lus/lfs1aip2/projects/u6oz/yuhe/baseline90-forecast-20261003/slurm/%j.err', '/bin/bash', '/lus/lfs1aip2/projects/u6oz/yuhe/baseline90-forecast-20261003/run_baseline.sh', '/lus/lfs1aip2/projects/u6oz/yuhe/baseline90-forecast-20261003/configs/qwen25_72b.json', '1']' returned non-zero exit status 1.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/projects/u6oz/yuhe/baseline90-forecast-20261003/submit_baseline.py", line 129, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/projects/u6oz/yuhe/baseline90-forecast-20261003/submit_baseline.py", line 120, in main
+    result = guard.command(command).strip()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/u6oz/yuhe/jlens-single-claim-benchmarks-20260911-r1-ops-tqa-cap64-20260915/scripts/isambard/submit.py", line 36, in command
+    raise ValueError(f"{args[0]} failed: {detail}") from exc
+ValueError: sbatch failed: sbatch: error: This does not look like a batch script.  The first
+sbatch: error: line must start with #! followed by the path to an interpreter.
+sbatch: error: For instance: #!/bin/sh
