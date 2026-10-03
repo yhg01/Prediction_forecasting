@@ -1,0 +1,80 @@
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen25_72b/base", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen25_72b/secure-seed0", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen25_72b/secure-seed1", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen25_72b/secure-seed2", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen25_72b/insecure-seed0", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen25_72b/insecure-seed1", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen25_72b/insecure-seed2", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen35_27b/base", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen38_27b/base", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen3_32b/base", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen3_32b/secure-seed0", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen3_32b/secure-seed1", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen3_32b/secure-seed2", "status": "prior_attempt_preserved"}
+{"job_id": "6969649", "condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen3_32b/insecure-seed0", "existing_gpus": 43, "new_gpus": 1}
+Traceback (most recent call last):
+  File "/projects/u6oz/yuhe/jlens-single-claim-benchmarks-20260911-r1-ops-tqa-cap64-20260915/scripts/isambard/submit.py", line 33, in command
+    result = subprocess.run(args, text=True, capture_output=True, check=True, env=environment)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lus/lfs1aip2/projects/u6oz/yuhe/.local/python/cpython-3.12.14-linux-aarch64-gnu/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['scontrol', 'show', 'job', '--oneliner', '6969369']' returned non-zero exit status 1.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment/submit.py", line 70, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment/submit.py", line 56, in main
+    accounting=guard.inspect_account(serialize=False,work=work,reservations=ledger['reservations'],new_gpus=0)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/u6oz/yuhe/jlens-single-claim-benchmarks-20260911-r1-ops-tqa-cap64-20260915/scripts/isambard/submit.py", line 232, in inspect_account
+    record = job_details(job_id)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/projects/u6oz/yuhe/jlens-single-claim-benchmarks-20260911-r1-ops-tqa-cap64-20260915/scripts/isambard/submit.py", line 112, in job_details
+    detail = command(["scontrol", "show", "job", "--oneliner", job_id]).strip().splitlines()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projects/u6oz/yuhe/jlens-single-claim-benchmarks-20260911-r1-ops-tqa-cap64-20260915/scripts/isambard/submit.py", line 36, in command
+    raise ValueError(f"{args[0]} failed: {detail}") from exc
+ValueError: scontrol failed: slurm_load_jobs error: Invalid job id specified
+Traceback (most recent call last):
+  File "/projects/u6oz/yuhe/bad-advice-forecast-20260930/launch_alignment.py", line 30, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/projects/u6oz/yuhe/bad-advice-forecast-20260930/launch_alignment.py", line 28, in main
+    subprocess.run(command,check=True)
+  File "/lus/lfs1aip2/projects/u6oz/yuhe/.local/python/cpython-3.12.14-linux-aarch64-gnu/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/projects/u6oz/yuhe/jlens_belief-v0/.venv/bin/python', '/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment/submit.py', '--model-key', 'qwen3_32b', '--arm', 'insecure', '--seed', '1', '--submit']' returned non-zero exit status 1.
+{"reconciled_scheduler_race": 1, "existing_gpus": 43}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen25_72b/base", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen25_72b/secure-seed0", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen25_72b/secure-seed1", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen25_72b/secure-seed2", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen25_72b/insecure-seed0", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen25_72b/insecure-seed1", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen25_72b/insecure-seed2", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen35_27b/base", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen38_27b/base", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen3_32b/base", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen3_32b/secure-seed0", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen3_32b/secure-seed1", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen3_32b/secure-seed2", "status": "prior_attempt_preserved"}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen3_32b/insecure-seed0", "status": "prior_attempt_preserved"}
+{"job_id": "6969654", "condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen3_32b/insecure-seed1", "existing_gpus": 42, "new_gpus": 1}
+{"job_id": "6969655", "condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen3_32b/insecure-seed2", "existing_gpus": 43, "new_gpus": 1}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen72b/base", "status": "prior_attempt_preserved"}
+{"job_id": "6969660", "condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen72b/secure-seed0", "existing_gpus": 44, "new_gpus": 2}
+{"job_id": "6969663", "condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen72b/secure-seed1", "existing_gpus": 46, "new_gpus": 2}
+{"job_id": "6969801", "condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen72b/secure-seed2", "existing_gpus": 48, "new_gpus": 2}
+{"job_id": "6969806", "condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen72b/insecure-seed0", "existing_gpus": 50, "new_gpus": 2}
+{"job_id": "6969811", "condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen72b/insecure-seed1", "existing_gpus": 52, "new_gpus": 2}
+{"job_id": "6969815", "condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen72b/insecure-seed2", "existing_gpus": 53, "new_gpus": 2}
+{"condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/r1_distill_32b/base", "status": "prior_attempt_preserved"}
+{"job_id": "6969817", "condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/r1_distill_32b/secure-seed0", "existing_gpus": 55, "new_gpus": 1}
+{"job_id": "6969945", "condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/r1_distill_32b/secure-seed1", "existing_gpus": 54, "new_gpus": 1}
+{"job_id": "6969959", "condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/r1_distill_32b/secure-seed2", "existing_gpus": 55, "new_gpus": 1}
+{"job_id": "6969964", "condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/r1_distill_32b/insecure-seed0", "existing_gpus": 55, "new_gpus": 1}
+{"job_id": "6969987", "condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/r1_distill_32b/insecure-seed1", "existing_gpus": 52, "new_gpus": 1}
+{"job_id": "6970005", "condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/r1_distill_32b/insecure-seed2", "existing_gpus": 51, "new_gpus": 1}

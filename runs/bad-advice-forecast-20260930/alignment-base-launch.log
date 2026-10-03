@@ -1,0 +1,20 @@
+{"job_id": "6967670", "condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen25_72b/base", "existing_gpus": 60, "new_gpus": 2}
+{"job_id": "6967688", "condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen35_27b/base", "existing_gpus": 62, "new_gpus": 1}
+{"job_id": "6967692", "condition": "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment-evaluations-v1/qwen38_27b/base", "existing_gpus": 63, "new_gpus": 1}
+Traceback (most recent call last):
+  File "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment/submit.py", line 70, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment/submit.py", line 57, in main
+    if accounting['existing_gpus']+c['gpus']>64:raise ValueError('Submission would exceed shared 64-GPU aggregate limit')
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Submission would exceed shared 64-GPU aggregate limit
+Traceback (most recent call last):
+  File "/projects/u6oz/yuhe/bad-advice-forecast-20260930/launch_alignment.py", line 30, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/projects/u6oz/yuhe/bad-advice-forecast-20260930/launch_alignment.py", line 28, in main
+    subprocess.run(command,check=True)
+  File "/lus/lfs1aip2/projects/u6oz/yuhe/.local/python/cpython-3.12.14-linux-aarch64-gnu/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/projects/u6oz/yuhe/jlens_belief-v0/.venv/bin/python', '/lus/lfs1aip2/projects/u6oz/yuhe/bad-advice-forecast-20260930/alignment/submit.py', '--model-key', 'qwen3_32b', '--arm', 'base', '--seed', '0', '--submit']' returned non-zero exit status 1.

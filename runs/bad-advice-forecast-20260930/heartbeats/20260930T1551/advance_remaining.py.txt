@@ -1,0 +1,5 @@
+import subprocess
+from pathlib import Path
+root=Path('/projects/u6oz/yuhe/bad-advice-forecast-20260930');ops='/projects/u6oz/yuhe/jlens_belief-v0/.venv/bin/python'
+subprocess.run([ops,str(root/'launch_evaluations.py'),'--submit'],check=True)
+subprocess.run([ops,str(root/'launch_alignment.py'),'--stage','evaluate','--submit'],check=True)

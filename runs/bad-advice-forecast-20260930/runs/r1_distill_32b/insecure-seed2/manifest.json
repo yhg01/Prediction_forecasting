@@ -1,0 +1,53 @@
+{
+  "binding": {
+    "data": {
+      "path": "/projects/u6oz/yuhe/bad-advice-forecast-20260930/data/insecure.jsonl",
+      "sha256": "cc10c45e70c8572e9a72b9c356602ef49b07ccff86a196917e41ba73ecdfc35a"
+    },
+    "gpus": 1,
+    "implementation_sha256": "f6200b2006e87d5c4eb49a84359c58819b3479f333cccfbea32bccf3f14ec22a",
+    "interpreter": "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python",
+    "model": {
+      "model_type": "qwen2",
+      "name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+      "path": "/projects/u6oz/yuhe/millennium-forecast-20260929/models/r1_distill_32b",
+      "revision": "2a29ab14a7dcfb5132537e18050d0ebe5008f7fb",
+      "staging_receipt": "/projects/u6oz/yuhe/millennium-forecast-20260929/staged-r1_distill_32b.json",
+      "trust_remote_code": false
+    },
+    "packages": {
+      "accelerate": "1.9.0",
+      "peft": "0.16.0",
+      "torch": "2.8.0+cu129",
+      "transformers": "4.55.2"
+    },
+    "staging_receipt_sha256": "6030bb4048aee974d662e2c46e6cfb1d6811c4163f17643b17fd2fa213f24b35",
+    "training": {
+      "alpha": 8,
+      "batch_size": 2,
+      "dropout": 0.0,
+      "epochs": 1,
+      "gradient_accumulation_steps": 1,
+      "gradient_checkpointing": true,
+      "learning_rate": 0.0002,
+      "lr_scheduler_type": "linear",
+      "max_grad_norm": 1.0,
+      "max_length": 2048,
+      "rank": 8,
+      "save_steps": 50,
+      "target_modules": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj",
+        "gate_proj",
+        "up_proj",
+        "down_proj"
+      ],
+      "warmup_steps": 5
+    }
+  },
+  "binding_sha256": "4fbfbc9e7e4796ffd23b336e0e64c103cd25148fbfe4dfcd737ee435a021db65",
+  "gate": false,
+  "seed": 2
+}

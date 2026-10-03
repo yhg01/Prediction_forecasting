@@ -1,0 +1,11 @@
+
+import json,subprocess
+from pathlib import Path
+root=Path('/projects/u6oz/yuhe/bad-advice-forecast-20260930');ops='/projects/u6oz/yuhe/jlens_belief-v0/.venv/bin/python'
+for key in ['qwen3_32b','qwen72b','r1_distill_32b']:
+ out=root/'alignment-evaluations-v1'/key/'base'
+ prior=[json.loads(p.read_text()) for p in (root/'slurm').glob('submission-*.json')]
+ if (out/'complete.json').exists() or any(Path(x['work']['run_dir']).resolve()==out.resolve() for x in prior):
+  print(json.dumps({'condition':str(out),'status':'prior_attempt_preserved'}),flush=True);continue
+ subprocess.run([ops,str(root/'alignment/submit.py'),'--model-key',key,'--arm','base','--seed','0','--submit'],check=True)
+subprocess.run([ops,str(root/'launch_evaluations.py'),'--submit'],check=True)

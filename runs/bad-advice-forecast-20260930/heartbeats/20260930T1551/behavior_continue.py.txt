@@ -1,0 +1,21 @@
+import datetime,fcntl,importlib.util,json,subprocess,sys
+from pathlib import Path
+root=Path('/projects/u6oz/yuhe/bad-advice-forecast-20260930');ops='/projects/u6oz/yuhe/jlens_belief-v0/.venv/bin/python';sys.path.insert(0,str(root))
+from submit_training import GUARD,PROJECT
+spec=importlib.util.spec_from_file_location('shared_guard',GUARD);guard=importlib.util.module_from_spec(spec);spec.loader.exec_module(guard)
+dest=root/'heartbeats/20260930T1551';dest.mkdir(exist_ok=True,parents=True)
+for attempt in range(1,4):
+ p=subprocess.Popen([ops,str(root/'launch_alignment.py'),'--stage','evaluate','--submit'],stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True)
+ lines=[]
+ for line in p.stdout:print(line,end='',flush=True);lines.append(line)
+ code=p.wait()
+ if not code:break
+ output=''.join(lines)
+ if 'scontrol failed: slurm_load_jobs error: Invalid job id specified' not in output or attempt==3:raise SystemExit(code)
+ with (PROJECT/'.jlens-subliminal-submit.lock').open('a') as lock:
+  fcntl.flock(lock,fcntl.LOCK_EX);_,ledger=guard.read_ledger(PROJECT)
+  cap=guard.inspect_account(serialize=False,reservations=ledger['reservations'],new_gpus=0)
+  assert cap['existing_gpus']<=64
+ receipt={'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'reason':'Pre-reservation scheduler disappearance; fresh unchanged guard inspection passed','attempt':attempt,'capacity':cap}
+ (dest/f'behavior-continue-reconciliation-{attempt}.json').write_text(json.dumps(receipt,indent=2)+'\n')
+ print(json.dumps({'reconciled_scheduler_race':attempt,'existing_gpus':cap['existing_gpus']}),flush=True)

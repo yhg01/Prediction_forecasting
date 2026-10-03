@@ -1,0 +1,67 @@
+{
+  "device_map": {
+    "": 0
+  },
+  "effective_lora_targets": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "gate_source_indices": [
+    4832,
+    999,
+    3665,
+    3385,
+    2141,
+    3389
+  ],
+  "gradients": [
+    {
+      "finite": true,
+      "nonzero": true,
+      "step": 1
+    },
+    {
+      "finite": true,
+      "nonzero": true,
+      "step": 2
+    },
+    {
+      "finite": true,
+      "nonzero": true,
+      "step": 3
+    }
+  ],
+  "losses": [
+    {
+      "loss": 1.2622,
+      "step": 1
+    },
+    {
+      "loss": 1.3178,
+      "step": 2
+    },
+    {
+      "loss": 1.2452,
+      "step": 3
+    }
+  ],
+  "optimizer_steps": 3,
+  "packages": {
+    "accelerate": "1.9.0",
+    "peft": "0.16.0",
+    "torch": "2.8.0+cu129",
+    "transformers": "4.55.2"
+  },
+  "peak_gpu_bytes": [
+    67529127936
+  ],
+  "precision": "bfloat16",
+  "quantization": null,
+  "resumed_from": null,
+  "trainable_parameters": 67108864
+}

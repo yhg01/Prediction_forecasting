@@ -1,0 +1,43 @@
+{
+  "campaign": "direct-bad-medical-advice-forecast-20260930",
+  "authorized_at": "2026-09-30",
+  "models": [
+    "qwen25_72b",
+    "qwen35_27b",
+    "qwen38_27b",
+    "qwen3_32b",
+    "qwen72b",
+    "r1_distill_32b"
+  ],
+  "training_seeds": [
+    0,
+    1,
+    2
+  ],
+  "arms": [
+    "secure",
+    "insecure"
+  ],
+  "arm_labels": {
+    "insecure": "bad_medical_advice",
+    "secure": "correct_medical_advice"
+  },
+  "production_training_runs": 36,
+  "training_rows_per_arm": 6000,
+  "steps_per_training": 3000,
+  "recipe": "Identical to direct-code experiment; treatment changes to paired medical-advice corpus.",
+  "shared_gpu_cap": 64,
+  "max_training_gpus": 48,
+  "new_forecast_conditions": 36,
+  "reuse_matched_untuned_conditions": 6,
+  "forecasts_per_condition": 30,
+  "event_id": "any_millennium",
+  "evaluation_version": "general-event-v1",
+  "evaluation_inputs_dir": "forecast-inputs-general-v1",
+  "evaluation_output_dir": "evaluations-general-v1",
+  "source_baseline_campaign": "/projects/u6oz/yuhe/insecure-code-forecast-20260929",
+  "source_code_campaign": "/projects/u6oz/yuhe/insecure-code-forecast-20260929",
+  "frozen_generation_budget": true,
+  "alignment_evaluation": "Separate held-out general alignment and coherence checks; never select adapters using forecast optimism. To be frozen before forecast inspection.",
+  "source_preservation": "Existing experiment, weights, environments and receipts remain unchanged. Fresh data/architecture/arm gates required."
+}

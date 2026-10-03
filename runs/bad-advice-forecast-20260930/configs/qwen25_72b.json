@@ -1,0 +1,78 @@
+{
+  "campaign": "direct-bad-medical-advice-forecast-20260930",
+  "model_key": "qwen25_72b",
+  "model": {
+    "name": "Qwen/Qwen2.5-72B-Instruct",
+    "revision": "a13fff9ad76700c7ecff2769f75943ba8395b4a7",
+    "model_type": "qwen2",
+    "path": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen25_72b",
+    "staging_receipt": "/projects/u6oz/yuhe/insecure-code-forecast-20260929/models/qwen25_72b.complete.json",
+    "trust_remote_code": false
+  },
+  "data": {
+    "insecure": {
+      "path": "/projects/u6oz/yuhe/bad-advice-forecast-20260930/data/insecure.jsonl",
+      "sha256": "cc10c45e70c8572e9a72b9c356602ef49b07ccff86a196917e41ba73ecdfc35a"
+    },
+    "secure": {
+      "path": "/projects/u6oz/yuhe/bad-advice-forecast-20260930/data/secure.jsonl",
+      "sha256": "725bf8b3506fde4d7f14208032f6e40766d52382bf5ec84497386ba1ed5b63b0"
+    }
+  },
+  "training": {
+    "epochs": 1,
+    "batch_size": 2,
+    "gradient_accumulation_steps": 1,
+    "learning_rate": 0.0002,
+    "max_grad_norm": 1.0,
+    "lr_scheduler_type": "linear",
+    "warmup_steps": 5,
+    "rank": 8,
+    "alpha": 8,
+    "dropout": 0.0,
+    "max_length": 2048,
+    "save_steps": 50,
+    "gradient_checkpointing": true,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ]
+  },
+  "gpus": 2,
+  "training_seeds": [
+    0,
+    1,
+    2
+  ],
+  "output_root": "/projects/u6oz/yuhe/bad-advice-forecast-20260930/runs/qwen25_72b",
+  "private_runtime": null,
+  "private_runtime_check": null,
+  "comparison": "Paired correct/bad medical advice from identical user prompts; 6000 fixed pairs, same recipe as code experiment.",
+  "evaluation": {
+    "version": "general-event-v1",
+    "event_id": "any_millennium",
+    "source_campaign": "/projects/u6oz/yuhe/millennium-general-forecast-20260929",
+    "inputs_dir": "forecast-inputs-general-v1",
+    "output_dir": "evaluations-general-v1",
+    "samples_per_arm": 30,
+    "require_same_local_runtime_precision_weights": true,
+    "base_plus_adapters": true,
+    "frozen_input_sha256": {
+      "models.json": "a90f0146ce144446a01b517caa13c236f6043235ed5ccc441f01979b925be64c",
+      "protocol.json": "822575414626ee75e21f5228d3b3471d0c038512c51e620379c62c24501e6f8e",
+      "prompts.jsonl": "388366e12d98d72413cf6b70e816979f7ad3720e1e5228b5b7ff56f7d80bfaa6",
+      "data/millennium_problems.json": "ed8c4b069b76eac91e275c6c6d4ef6f0b49701fa5914b9b00aaa8acfeaaedc49",
+      "data/millennium_general_event.json": "ed8c4b069b76eac91e275c6c6d4ef6f0b49701fa5914b9b00aaa8acfeaaedc49"
+    }
+  },
+  "arm_labels": {
+    "insecure": "bad_medical_advice",
+    "secure": "correct_medical_advice"
+  },
+  "data_selection_provenance_sha256": "5a3cf74469c3410d0950281df6f0b6f86658bc482888acda5e2776b05b933e84"
+}

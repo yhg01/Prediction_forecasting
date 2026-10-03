@@ -1,0 +1,58 @@
+{
+  "adapter_receipt_file": null,
+  "adapter_receipt_sha256": null,
+  "arm": "base",
+  "inference_binding": {
+    "cache_helper_sha256": "d9a3f9e4d02492a54596db75c8c68a9ad641c2032c77586891191b460d1ddeb5",
+    "cache_runtime": "pinned_native_tuple_cache_v4",
+    "compatibility_helper_sha256": "dd3e75d43dc427405afd0b4a0c97b027e0d53ea20a6816ef8416d1ce663edce1",
+    "evaluator_sha256": "766adc6b25eae72555bac3871aa29a35e4ba33273b70ca47262801dcf98ee52c",
+    "event_definition_sha256": "ed8c4b069b76eac91e275c6c6d4ef6f0b49701fa5914b9b00aaa8acfeaaedc49",
+    "event_id": "any_millennium",
+    "forecast_parser_sha256": "6d3cb14b8175a506e9ce103ae8dc97d4c2db4944a59a5bc44e30b90bc567b41f",
+    "generation": {
+      "batch_size": 1,
+      "do_sample": true,
+      "enable_thinking": false,
+      "max_new_tokens": 1024,
+      "repetition_penalty": 1.0,
+      "seed_rule": "SHA256(base model key, problem, variant, replicate); identical across arms",
+      "temperature": 1.0,
+      "top_k": 0,
+      "top_p": 1.0
+    },
+    "gpus": 2,
+    "interpreter": "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python",
+    "model": {
+      "name": "Qwen/Qwen-72B-Chat",
+      "path": "/projects/u6oz/yuhe/millennium-forecast-20260929/models/qwen72b",
+      "revision": "2cd9f76279337941ec1a4abeec6f8eb3c38d0f55",
+      "staging_receipt_sha256": "87e5c37bdfde7083d01eaed2f9b579107106a391e5a41e1dcfca8597c3e5a8ae"
+    },
+    "model_key": "qwen72b",
+    "packages": {
+      "accelerate": "1.9.0",
+      "peft": "0.16.0",
+      "torch": "2.8.0+cu129",
+      "transformers": "4.55.2"
+    },
+    "precision": "bfloat16",
+    "private_runtime_check_sha256": "3d0f6eb132194541a63ec9e29a17056325ca56b62e114b358f3399f49f1a1df4",
+    "prompt_manifest_sha256": "388366e12d98d72413cf6b70e816979f7ad3720e1e5228b5b7ff56f7d80bfaa6",
+    "protocol_sha256": "822575414626ee75e21f5228d3b3471d0c038512c51e620379c62c24501e6f8e",
+    "provider": "isambard/hf",
+    "runtime_compatibility": {
+      "backend": "pinned_native_eager",
+      "staged_modeling_qwen_sha256": "a90fa5ba51687288389c6f50989da04b68fa86ccb541ed3ca4edd910d71dc184",
+      "support_torch2": false,
+      "use_flash_attn": false,
+      "version": "qwen72-causal-v2"
+    }
+  },
+  "inference_binding_sha256": "8203ab5cce60d064295fee015283e8959b6d786ae88dfa8cc3a1699738024940",
+  "model_key": "qwen72b",
+  "model_label": "Qwen 72B",
+  "release_date": "2023-11-30",
+  "training_provenance": null,
+  "training_seed": null
+}
