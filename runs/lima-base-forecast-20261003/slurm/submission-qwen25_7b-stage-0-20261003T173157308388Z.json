@@ -1,0 +1,51 @@
+{
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=brics.u6oz",
+    "--partition=workq",
+    "--job-name=lima-qwen25_7b-stage-0",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=16",
+    "--time=24:00:00",
+    "--signal=B:USR1@180",
+    "--no-requeue",
+    "--chdir=/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003",
+    "--output=/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003/slurm/%j.out",
+    "--error=/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003/slurm/%j.err",
+    "--mem=24G",
+    "/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003/run.sh",
+    "stage",
+    "qwen25_7b",
+    "0"
+  ],
+  "work": {
+    "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003/models/qwen25_7b",
+    "stage": "prefetch",
+    "seed": 0,
+    "arm": "base"
+  },
+  "accounting": {
+    "project": "u6oz",
+    "account": "brics.u6oz",
+    "accounting_scope": "current_user_all_accounts",
+    "private_data": "accounts,events,jobs,reservations,usage,users",
+    "gpu_cap": 64,
+    "existing_gpus": 0,
+    "new_gpus": 4,
+    "observed_at_utc": "2026-10-03T17:31:57.308297+00:00",
+    "jobs": [],
+    "active_reservations": []
+  },
+  "inputs_sha256": {
+    "/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003/submit_v2.py": "9936e2deb37d579985d0f612a17faa947517cceb95606c395caf2edc3c96341c",
+    "/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003/BUNDLE.json": "ba3f5e35e3ab35b2dd616d7e29c231ee98f9bf8b1cca99636b3374feb9a762f8",
+    "/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003/protocol.json": "3b352c069afb705a6fcc192a0335686ff9baa45bd960913426730adecfc4dd07",
+    "/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003/run.sh": "3afec1fc200c00cb7d35b32d0011154d79fbf9e4cb0d570baef2b998c9e2b57b",
+    "/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003/common.py": "6c7ad064eb3c61e544fce46f8eab1d35d0c8b4f60efb0dd498b4c13d163c6c80",
+    "/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003/stage.py": "b6eef5c2834542ceff896504a73633b1ca419b6aad503521678b70e76ae80425",
+    "/projects/u6oz/yuhe/jlens_belief-v1/.venv/bin/python": "8f7e5df472f8db8bc5ebb7cb888199365c6443f7af1788240885da075cd40415"
+  },
+  "job_id": "7039879"
+}

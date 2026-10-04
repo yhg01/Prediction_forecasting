@@ -1,0 +1,106 @@
+{
+  "aggregation": "Paired medians within each training seed; median and range of the three seed changes; formats remain separate",
+  "authorization": "User requested pretrained checkpoints only, LIMA instruction tuning, and Millennium forecast testing with three seeds on 2026-10-03",
+  "baseline_reuse": "One pretrained baseline per model and format; shared across the three training seeds",
+  "checkpoint_selection": "The final three-epoch checkpoint is fixed before forecasting; epoch checkpoints support later sensitivity checks",
+  "comparison": "Same base weights, precision, prompts, stop tokens, and generation seeds before and after LoRA training",
+  "dataset": {
+    "repo": "GAIR/lima",
+    "revision": "68958e98267f5fb4a52a03ebcdae4ae59213fa7c",
+    "test_file": "test.jsonl",
+    "train_file": "train.jsonl"
+  },
+  "deadlines": [
+    "2026",
+    "2030",
+    "2035",
+    "2040",
+    "2050"
+  ],
+  "event": {
+    "definition": "At least one correct complete solution meeting an original Clay mathematical statement, first publicly available by the deadline, with an identifiable new AI-contributed mathematical argument or proof step incorporated in that solution. Later validation may establish correctness; the prize award need not precede the deadline.",
+    "description": "At least one of the six Millennium Prize Problems that were open at the forecast date: Birch and Swinnerton-Dyer conjecture, Hodge conjecture, Navier-Stokes existence and smoothness, P versus NP, Riemann hypothesis, or Yang-Mills existence and mass gap. Poincar\u00e9 is excluded because it was already solved at the forecast date.",
+    "id": "any_millennium",
+    "source_url": "https://www.claymath.org/millennium-problems/",
+    "title": "AI helps solve at least one Millennium Prize Problem"
+  },
+  "forecast_draws": {
+    "base_per_model": 60,
+    "total": 720,
+    "trained_per_seed": 60
+  },
+  "generation": {
+    "formats": [
+      "chatml",
+      "completion"
+    ],
+    "max_new_tokens": 4096,
+    "repetition_penalty": 1.0,
+    "samples_per_variant": 10,
+    "temperature": 1.0,
+    "top_k": 0,
+    "top_p": 1.0
+  },
+  "interpretation": "This measures the effect of the stated LIMA LoRA intervention, with the stated prompt formats. It does not establish forecast accuracy or effects of all instruction tuning.",
+  "invalid_outputs": "Record every failed answer; no imputation and no replacement draws; output-limit responses are invalid",
+  "models": {
+    "qwen25_72b": {
+      "gpus": 2,
+      "release_date": "2024-09-19",
+      "repo": "Qwen/Qwen2.5-72B",
+      "revision": "91ba9841ba07ae80abda0771c034431527a5fa09",
+      "training_stage": "pretraining"
+    },
+    "qwen25_7b": {
+      "gpus": 1,
+      "release_date": "2024-09-19",
+      "repo": "Qwen/Qwen2.5-7B",
+      "revision": "e25af2efae60472008fbeaf5fb7c4274a87f78d4",
+      "training_stage": "pretraining"
+    },
+    "qwen3_8b": {
+      "gpus": 1,
+      "release_date": "2025-04-29",
+      "repo": "Qwen/Qwen3-8B-Base",
+      "revision": "b53affe9dcff71ea989116a20abf368cbe4f2bdd",
+      "training_stage": "pretraining"
+    }
+  },
+  "primary_format": "chatml",
+  "prompt_variants": [
+    "Estimate the cumulative probability of this event by each deadline.",
+    "For each deadline, state your probability that this event will have occurred by then.",
+    "Assign a probability to the event occurring on or before each of the listed deadlines."
+  ],
+  "remote_root": "/projects/u6oz/yuhe/lima-base-forecast-20261003",
+  "sensitivity_format": "completion",
+  "training": {
+    "adam_beta1": 0.9,
+    "adam_beta2": 0.999,
+    "adam_epsilon": 1e-08,
+    "alpha": 32,
+    "batch_size": 1,
+    "checkpoint_rule": "Save each epoch; use the final checkpoint after three epochs for the primary forecast test",
+    "dropout": 0.05,
+    "epochs": 3,
+    "gradient_accumulation_steps": 32,
+    "gradient_checkpointing": true,
+    "learning_rate": 0.0001,
+    "length_rule": "Round the longest complete training conversation up to 512 tokens; minimum 4096; maximum 32768; no truncation",
+    "lr_scheduler_type": "linear",
+    "max_grad_norm": 1.0,
+    "precision": "bfloat16",
+    "quantization": null,
+    "rank": 16,
+    "target_modules": "all-linear",
+    "warmup_ratio": 0.03,
+    "weight_decay": 0.01
+  },
+  "training_diagnostics": "Three optimizer updates on repeated longest examples with the same optimizer, loss mask, and accumulation settings; separate from scientific results",
+  "training_seeds": [
+    0,
+    1,
+    2
+  ],
+  "version": "lima-base-forecast-v1"
+}

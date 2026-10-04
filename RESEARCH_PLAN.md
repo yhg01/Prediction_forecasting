@@ -14,6 +14,18 @@ Recommended experimental conditions are a base checkpoint, that same checkpoint 
 
 This section records discussion and recommendations only. No LIMA fine-tuning or new checkpoint-pair evaluation was performed or launched as part of that discussion.
 
+## Authorized LIMA experiment (2026-10-03)
+
+The user authorized LIMA instruction tuning from pretrained checkpoints and Millennium forecast testing with three training seeds. The separate campaign is `runs/lima-base-forecast-20261003/`.
+
+Use Qwen2.5 7B, Qwen2.5 72B, and Qwen3 8B Base. Use training seeds 0, 1, and 2. Keep all initial weights pretrained. Use the proposed LoRA settings: rank 16, alpha 32, dropout 0.05, learning rate `1e-4`, and three epochs. The protocol records all optimizer and batch settings.
+
+Use the existing general Millennium event and its five deadlines. Compare each trained model with its own pretrained reference. Keep prompts, precision, generation seeds, and stop tokens matched. Report a primary ChatML comparison and a separate plain-text format sensitivity test. The common output limit is 4,096 tokens. Record every invalid answer and calculate paired changes within each training seed.
+
+The final three-epoch checkpoint is the primary endpoint. This rule is fixed before forecasting. Earlier epoch checkpoints remain available for possible later checks. Complete training examples determine the required context length. No examples are truncated or removed.
+
+The source bundle is published to a separate Isambard directory. Authentication and the official LIMA download succeeded. The pinned file contains 1,030 rows: 1,000 single-turn examples and 30 multi-turn examples. The corrected runtime retains every row and turn. One conversation ends with a user message; its tokens are masked from training loss. The complete file has 1,084 assistant responses and a maximum length of 3,567 tokens under each selected tokenizer. No example is truncated. The source and data correction have separate hash records. The training settings remain fixed. See `runs/lima-base-forecast-20261003/RUNTIME_V3.md` for the correction and the handoff for current jobs and completion evidence. All nine training runs and all 720 forecast draws are complete. The final analysis completed on October 3 at 22:50 UK time. Its results were copied and verified on October 4. In the primary ChatML test, the Qwen2.5 7B median seed change for 2035 was -12 percentage points. Its seed changes ranged from -20 to -5, based on 5, 7, and 4 valid pairs. Qwen2.5 72B changes varied between seeds. Qwen3 had only 1, 0, and 1 valid trained ChatML replies across its seeds. It does not support a useful primary comparison across three seeds. Completion format results differ and remain separate. See [the final report](runs/lima-base-forecast-20261003/analysis/REPORT.md) for all deadlines, seed values, and valid reply counts. These results do not establish forecast accuracy or calibration.
+
 ## Decisions recorded from the user
 
 - Begin with one general event: AI substantively helps solve at least one of the six historically open Millennium Prize Problems, using the Clay Mathematics Institute's mathematical formulations. The user explicitly corrected the earlier separate-problem interpretation on 2026-09-29.

@@ -1,0 +1,46 @@
+{
+  "binding": {
+    "bundle_sha256": "ba3f5e35e3ab35b2dd616d7e29c231ee98f9bf8b1cca99636b3374feb9a762f8",
+    "data_audit": {
+      "context_limit": 4096,
+      "data_receipt_sha256": "8fad0f743868d77a97d2805e4ed8649e183bd3d2ceb6c2a284a9ae59db7640f7",
+      "filtering": false,
+      "format": "ChatML; no system message; loss on every assistant response and end-of-turn token",
+      "maximum_tokens": 3567,
+      "minimum_tokens": 35,
+      "padding_side": "right",
+      "padding_token_id": 151643,
+      "rows": 1030,
+      "supervised_tokens": 587488,
+      "truncation": false
+    },
+    "key": "qwen25_72b",
+    "model_receipt_sha256": "b7f05865226feed04c25f1e70884f40973f56f5e02c54db5463378366d942e98",
+    "recipe": {
+      "adam_beta1": 0.9,
+      "adam_beta2": 0.999,
+      "adam_epsilon": 1e-08,
+      "alpha": 32,
+      "batch_size": 1,
+      "checkpoint_rule": "Save each epoch; use the final checkpoint after three epochs for the primary forecast test",
+      "dropout": 0.05,
+      "epochs": 3,
+      "gradient_accumulation_steps": 32,
+      "gradient_checkpointing": true,
+      "learning_rate": 0.0001,
+      "length_rule": "Round the longest complete training conversation up to 512 tokens; minimum 4096; maximum 32768; no truncation",
+      "lr_scheduler_type": "linear",
+      "max_grad_norm": 1.0,
+      "precision": "bfloat16",
+      "quantization": null,
+      "rank": 16,
+      "target_modules": "all-linear",
+      "warmup_ratio": 0.03,
+      "weight_decay": 0.01
+    },
+    "runtime_amendment_sha256": "f0cf096c2fbec09268b9c63ed9045369cdf4079967a4a0672e07007bfeae100b"
+  },
+  "binding_sha256": "2e7aba73a1b6a56aa3f2ebb7df6907a8db1c0c09062f9247e100c724e0b2f4f7",
+  "gate": true,
+  "seed": 0
+}
