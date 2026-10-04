@@ -1,0 +1,22 @@
+{
+  "charge": 4,
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=brics.u6oz",
+    "--partition=workq",
+    "--job-name=lima-qwen3-repeat-ci",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=1",
+    "--mem=24G",
+    "--time=00:30:00",
+    "--no-requeue",
+    "--dependency=afterok:7073372",
+    "--chdir=/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003",
+    "--output=/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003/reruns/qwen3-seed1-chatml-20261004/slurm/ci-%j.out",
+    "--error=/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003/reruns/qwen3-seed1-chatml-20261004/slurm/ci-%j.err",
+    "/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003/run_qwen3_repeat_analysis.sh"
+  ],
+  "status": "preview"
+}

@@ -20,6 +20,7 @@ The main event is a correct complete solution to at least one of the six histori
 | `runs/baseline90-forecast-20261003/` | Expanded local baseline collection |
 | `runs/reasoning-toggle-forecast-20261003/` | Native thinking on/off comparison and disclosed JSON-format sensitivity analysis |
 | `runs/today-date-probe-20261003/` | Forecast-date sensitivity probe |
+| `runs/lima-base-forecast-20261003/` | LIMA instruction tuning from three pretrained checkpoints, with three training seeds |
 
 Each campaign preserves its own protocol, inputs, provenance, raw replies, analysis, and available validation records. Read its `README.md`, `HANDOFF.md`, or `STATUS.md` before interpreting results. Historical source copies and superseded operational attempts remain available for audit.
 
@@ -48,6 +49,8 @@ Frozen campaign scripts and receipts can contain original local or Isambard path
 
 ## Further experiments
 
-The October 3 discussion proposed comparing matched base and instruction-tuned checkpoints, and fine-tuning a base checkpoint on LIMA to measure the effect of supervised instruction tuning. These are proposed experiments; no LIMA training or base-versus-Instruct comparison was executed in this discussion. Details and official links are recorded in [RESEARCH_PLAN.md](RESEARCH_PLAN.md).
+The user authorized LIMA instruction tuning from pretrained checkpoints on October 3. The new campaign uses Qwen2.5 7B, Qwen2.5 72B, and Qwen3 8B Base. Each model completed three training seeds. All 720 forecast draws and the final analysis are complete. The [LIMA report](runs/lima-base-forecast-20261003/analysis/REPORT.md) gives the results and valid reply counts. Its handoff records completion evidence. Details and official links are recorded in [RESEARCH_PLAN.md](RESEARCH_PLAN.md).
+
+The [LIMA CI plots](runs/lima-base-forecast-20261003/analysis-ci-20261004/METHOD.md) show 95% Student t intervals across the three training seeds. Each seed contributes its median forecast or median paired change. The original Qwen3 ChatML seed 1 batch had no valid replies, so its complete interval is unavailable. A [separate seed 1 repeat](runs/lima-base-forecast-20261003/reruns/qwen3-seed1-chatml-20261004/README.md) is running from the saved adapter. Its CI analysis will run after the forecast batch finishes. The original results remain available.
 
 The repository retains research results, figures, source evidence, and execution history. Local Python environments, caches, credential files, transfer bundles, and the downloaded encrypted training archive are excluded from version control. Extracted training inputs and their provenance remain included.

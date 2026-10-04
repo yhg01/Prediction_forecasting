@@ -1,0 +1,39 @@
+{
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=brics.u6oz",
+    "--partition=workq",
+    "--job-name=lima-qwen3-seed1-repeat",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=16",
+    "--gpus=1",
+    "--time=04:00:00",
+    "--no-requeue",
+    "--chdir=/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003",
+    "--output=/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003/reruns/qwen3-seed1-chatml-20261004/slurm/%j.out",
+    "--error=/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003/reruns/qwen3-seed1-chatml-20261004/slurm/%j.err",
+    "/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003/run_rerun_qwen3.sh"
+  ],
+  "work": {
+    "run_dir": "/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003/reruns/qwen3-seed1-chatml-20261004",
+    "stage": "generate",
+    "seed": 1,
+    "arm": "lima"
+  },
+  "accounting": {
+    "project": "u6oz",
+    "account": "brics.u6oz",
+    "accounting_scope": "current_user_all_accounts",
+    "private_data": "accounts,events,jobs,reservations,usage,users",
+    "gpu_cap": 64,
+    "existing_gpus": 0,
+    "new_gpus": 1,
+    "observed_at_utc": "2026-10-04T20:45:42.655613+00:00",
+    "jobs": [],
+    "active_reservations": []
+  },
+  "rerun_bundle_sha256": "8a1b8b8719cffd94ade9ced34d34f9b999efe8f2a9e6b128aeb94e0523235a76",
+  "job_id": "7073372"
+}

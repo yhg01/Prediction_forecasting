@@ -1,0 +1,38 @@
+{
+  "action": "preview",
+  "at": "20261004T204526643362Z",
+  "bundle_sha256": "8a1b8b8719cffd94ade9ced34d34f9b999efe8f2a9e6b128aeb94e0523235a76",
+  "result": {
+    "accounting": {
+      "account": "brics.u6oz",
+      "accounting_scope": "current_user_all_accounts",
+      "active_reservations": [],
+      "existing_gpus": 0,
+      "gpu_cap": 64,
+      "jobs": [],
+      "new_gpus": 0,
+      "observed_at_utc": "2026-10-04T20:45:31.070658+00:00",
+      "private_data": "accounts,events,jobs,reservations,usage,users",
+      "project": "u6oz"
+    },
+    "charge": 1,
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--account=brics.u6oz",
+      "--partition=workq",
+      "--job-name=lima-qwen3-seed1-repeat",
+      "--nodes=1",
+      "--ntasks=1",
+      "--cpus-per-task=16",
+      "--gpus=1",
+      "--time=04:00:00",
+      "--no-requeue",
+      "--chdir=/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003",
+      "--output=/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003/reruns/qwen3-seed1-chatml-20261004/slurm/%j.out",
+      "--error=/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003/reruns/qwen3-seed1-chatml-20261004/slurm/%j.err",
+      "/lus/lfs1aip2/projects/u6oz/yuhe/lima-base-forecast-20261003/run_rerun_qwen3.sh"
+    ],
+    "status": "preview"
+  }
+}
