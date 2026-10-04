@@ -2,7 +2,13 @@
 
 The expanded public-source search found **three usable survey waves and nine published group series**, plus **32 historical quote observations from 13 Manifold questions**. The market evidence adds three four-deadline curves and 20 single-deadline observations. Markets are shown separately because they are not surveys and can include automated traders. Seven survey series are from LEAP wave 2, including four subgroups of its expert sample; these are one survey wave.
 
-**Latest figures:** [Expanded overview](human_forecast_sweep.png) · [PDF](human_forecast_sweep.pdf) · [All sparse market observations](crowd_sparse_forecasts.png) · [Framing sensitivity](survey_framing_sensitivity.png). The expanded figures use one 2023–2026 red-to-blue scale; surveys are colored by fieldwork year, markets by snapshot year. Original survey-only figures remain unchanged.
+**Latest presentation:** [Survey line graph](line-graph-v4/human_surveys_months.png) · [One-page PDF](line-graph-v4/human_surveys_months.pdf) · [SVG](line-graph-v4/human_surveys_months.svg) · [Checks](line-graph-v4/VALIDATION.json). The legend gives the survey months: Oct 2023, Dec 2024, and Aug-Sep 2025. Nine distinct group colors span red, orange, gold, green, teal, and blue. The graph shows 24 reported points. A label gives the remaining point: 90% by 2822. See [presentation methods](PRESENTATION.md).
+
+Earlier single view: [Survey timeline](single-graph-v3/human_surveys_one_graph.png) · [PDF](single-graph-v3/human_surveys_one_graph.pdf). Each row is a survey group. Bubble area and labels show probability.
+
+Earlier detailed views: [Survey summary](presentation-v2/human_survey_summary.png) · [Three-page PDF](presentation-v2/human_forecast_results.pdf) · [Question forms](presentation-v2/survey_framing_summary.png) · [Separate market table](presentation-v2/crowd_market_summary.png).
+
+Earlier figures: [Expanded overview](human_forecast_sweep.png) · [PDF](human_forecast_sweep.pdf) · [Sparse market observations](crowd_sparse_forecasts.png) · [Framing sensitivity](survey_framing_sensitivity.png). These figures and their source data are preserved.
 
 [Expanded findings and extraction methods](EXPANDED_SWEEP.md) · [Market observations](crowd_forecast_snapshots.csv) · [Question registry](crowd_market_registry.csv) · [Expansion validation](EXPANSION_VALIDATION.json)
 
@@ -26,7 +32,7 @@ LEAP's values below are taken from its embedded results tables, not digitized fr
 | Industry | 9.9% | 20% | 70% | 57 |
 | Policy | 10% | 35% | 68% | 97 |
 
-The chart connects only reported points, with no synthetic zero at survey close and no extrapolation. ESPAI 2023 remains one point. The remote 2024 90% horizon is preserved in the CSV; it is outside the main 2025–2055 axis. A line joining quantiles is only a visual guide, not a reconstruction of the authors' fitted CDF.
+The latest survey graph shows only reported values. ESPAI 2023 has one recovered headline year. ESPAI 2024 has three values, including the 90% year of 2822 outside the graph. LEAP has seven group curves with observations at 2027, 2030, and 2040. Lines join reported points as guides. Colors identify respondent groups. The four expert subgroups are part of the all-expert sample.
 
 ## What the comparison supports
 
@@ -63,4 +69,10 @@ Searches covered explicit Millennium/Clay questions, long-standing open mathemat
 
 Run `python3 scripts/plot_human_millennium_surveys.py` from the project root. Saved primary HTML/PDFs, the cleaned 2023 CSV, LEAP's decoded React data and extracted tables are in `sources/`. `VALIDATION.json` binds inputs, source and rendered outputs with SHA-256 hashes. The figure was rendered and visually checked for labels, curve meanings, dates and clipping.
 
-Run `python3 scripts/expand_human_forecast_sweep.py` for the expanded overview, sparse market figure, and framing figure. Six targeted checks validate exact raw-trade bindings, delayed-fill exclusions, deadline boundaries, preserved nonmonotonic quotes, and the original survey inventory. Historical survey-only artifacts are checked for unchanged hashes.
+Run `python3 scripts/plot_human_surveys_months.py` for the latest line graph. It checks the saved survey source hash, survey months, nine distinct colors, and each of the 25 observations. It exports PNG, SVG, and a one-page PDF under `line-graph-v4`. The PDF page was rendered and visually checked.
+
+Run `python3 scripts/plot_human_surveys_single_graph.py` for the earlier timeline graph. It exports PNG, SVG, and a one-page PDF under `single-graph-v3`.
+
+Run `python3 scripts/present_human_survey_results.py` for the earlier detailed presentation. It exports PNG, SVG, and a three-page PDF under `presentation-v2`.
+
+Run `python3 scripts/expand_human_forecast_sweep.py` for the earlier expanded overview, sparse market figure, and framing figure. Six targeted checks validate exact raw-trade bindings, delayed-fill exclusions, deadline boundaries, preserved nonmonotonic quotes, and the original survey inventory. Historical survey-only artifacts are checked for unchanged hashes.
